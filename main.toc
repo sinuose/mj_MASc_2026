@@ -4,28 +4,28 @@
 \contentsline {chapter}{\numberline {2}SPT in confinement principles }{5}{}%
 \contentsline {section}{\numberline {2.1}Brownian Motion}{5}{}%
 \contentsline {subsection}{\numberline {2.1.1}Langevin Dynamics}{5}{}%
-\contentsline {subsection}{\numberline {2.1.2}Smoluchowski Equation}{5}{}%
-\contentsline {section}{\numberline {2.2}Confined Diffusion Processes}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}Smoluchowski Equation}{6}{}%
+\contentsline {section}{\numberline {2.2}Confined Diffusion Processes}{6}{}%
 \contentsline {subsection}{\numberline {2.2.1}Hydrodynamic Confinement}{6}{}%
 \contentsline {subsection}{\numberline {2.2.2}Geometric Confinement}{6}{}%
 \contentsline {subsection}{\numberline {2.2.3}Electrostatic Potentials}{6}{}%
 \contentsline {subsection}{\numberline {2.2.4}Example: Polystyrene Bead}{6}{}%
 \contentsline {section}{\numberline {2.3}In-Vivo Considerations}{6}{}%
-\contentsline {subsection}{\numberline {2.3.1}why does this matter for biological applications}{6}{}%
-\contentsline {subsection}{\numberline {2.3.2}Examples of Brownian Motion in Biology}{6}{}%
-\contentsline {section}{\numberline {2.4}Brownian motion as a method for measurements of size in biology}{6}{}%
-\contentsline {subsection}{\numberline {2.4.1}survey of methods using in this field}{6}{}%
-\contentsline {subsection}{\numberline {2.4.2}how confinemen effects these measurements}{6}{}%
-\contentsline {subsection}{\numberline {2.4.3}Probing of surface interactions with these methods}{6}{}%
-\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{7}{}%
-\contentsline {section}{\numberline {3.1}Questions}{7}{}%
-\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{7}{}%
-\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{7}{}%
-\contentsline {section}{\numberline {3.3}Methods}{7}{}%
-\contentsline {subsection}{\numberline {3.3.1}Optical System}{7}{}%
-\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{7}{}%
-\contentsline {section}{\numberline {3.4}Results i guess}{7}{}%
-\contentsline {section}{\numberline {3.5}Discussion of Results}{7}{}%
-\contentsline {chapter}{\numberline {4}Conclusion}{8}{}%
-\contentsline {section}{\numberline {4.1}Conclusion}{8}{}%
-\contentsline {section}{\numberline {4.2}Future outlook}{8}{}%
+\contentsline {subsection}{\numberline {2.3.1}why does this matter for biological applications}{7}{}%
+\contentsline {subsection}{\numberline {2.3.2}Examples of Brownian Motion in Biology}{7}{}%
+\contentsline {section}{\numberline {2.4}Brownian motion as a method for measurements of size in biology}{7}{}%
+\contentsline {subsection}{\numberline {2.4.1}survey of methods using in this field}{7}{}%
+\contentsline {subsection}{\numberline {2.4.2}how confinemen effects these measurements}{7}{}%
+\contentsline {subsection}{\numberline {2.4.3}Probing of surface interactions with these methods}{7}{}%
+\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{8}{}%
+\contentsline {section}{\numberline {3.1}Questions}{8}{}%
+\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{8}{}%
+\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{8}{}%
+\contentsline {section}{\numberline {3.3}Methods}{8}{}%
+\contentsline {subsection}{\numberline {3.3.1}Optical System}{8}{}%
+\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{8}{}%
+\contentsline {section}{\numberline {3.4}Results i guess}{8}{}%
+\contentsline {section}{\numberline {3.5}Discussion of Results}{8}{}%
+\contentsline {chapter}{\numberline {4}Conclusion}{9}{}%
+\contentsline {section}{\numberline {4.1}Conclusion}{9}{}%
+\contentsline {section}{\numberline {4.2}Future outlook}{9}{}%
