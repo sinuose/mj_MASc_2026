@@ -17,8 +17,8 @@
 \usepackage{tikz}
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
 %bibliography
-\usepackage{biblatex}
-\usepackage{hyperref}
+%\usepackage{biblatex}
+%\usepackage{hyperref}
 
 \usepackage{microtype} % Subtle font spacing adjustments
 
@@ -37,6 +37,9 @@
 
 \usepackage{setspace}
 \onehalfspacing % Or \doublespacing for thesis-level spacing
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
 
 
 %\bibliography{references}
@@ -92,13 +95,23 @@
 
     \tableofcontents
 
-
+    test 
+    \cite{intro2realanalysis}
     \chapter{Introduction}
     \input{INTRO}
+
+
+    \chapter{SPT in confinement principles }
+    \input{C1}
 
     \chapter{Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}
     \input{C2}
 
     \chapter{Conclusion}
+    \input{CONC}
+
+
+    \appendix
+    \printbibliography
     
 \end{document}

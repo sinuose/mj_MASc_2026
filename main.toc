@@ -1,19 +1,31 @@
-\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Movivation}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Brownian Motion}{3}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Einstein's Diffusion}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Langevin Dynamics}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Electrostatics, Gravitation, and Potentials}{4}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Confined Diffusion Processes}{4}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}From Langevin Dynamics to the Fokker-Plank}{4}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Geometric Confinement}{4}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Hydrodynamic Confinement}{4}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Example: Polystyrene Bead}{4}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}In-Vivo Considerations}{4}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}why does this matter for biological applications}{4}{subsection.1.4.1}%
-\contentsline {section}{\numberline {1.5}Outline of Thesis Chapters}{4}{section.1.5}%
-\contentsline {chapter}{\numberline {2}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Rayleigh scattering}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Methods}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Questions}{5}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Conclusion}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {1.1}Movivation}{4}{}%
+\contentsline {section}{\numberline {1.2}Outline for Thesis}{4}{}%
+\contentsline {chapter}{\numberline {2}SPT in confinement principles }{5}{}%
+\contentsline {section}{\numberline {2.1}Brownian Motion}{5}{}%
+\contentsline {subsection}{\numberline {2.1.1}Langevin Dynamics}{5}{}%
+\contentsline {subsection}{\numberline {2.1.2}Smoluchowski Equation}{5}{}%
+\contentsline {section}{\numberline {2.2}Confined Diffusion Processes}{5}{}%
+\contentsline {subsection}{\numberline {2.2.1}Hydrodynamic Confinement}{6}{}%
+\contentsline {subsection}{\numberline {2.2.2}Geometric Confinement}{6}{}%
+\contentsline {subsection}{\numberline {2.2.3}Electrostatic Potentials}{6}{}%
+\contentsline {subsection}{\numberline {2.2.4}Example: Polystyrene Bead}{6}{}%
+\contentsline {section}{\numberline {2.3}In-Vivo Considerations}{6}{}%
+\contentsline {subsection}{\numberline {2.3.1}why does this matter for biological applications}{6}{}%
+\contentsline {subsection}{\numberline {2.3.2}Examples of Brownian Motion in Biology}{6}{}%
+\contentsline {section}{\numberline {2.4}Brownian motion as a method for measurements of size in biology}{6}{}%
+\contentsline {subsection}{\numberline {2.4.1}survey of methods using in this field}{6}{}%
+\contentsline {subsection}{\numberline {2.4.2}how confinemen effects these measurements}{6}{}%
+\contentsline {subsection}{\numberline {2.4.3}Probing of surface interactions with these methods}{6}{}%
+\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{7}{}%
+\contentsline {section}{\numberline {3.1}Questions}{7}{}%
+\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{7}{}%
+\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{7}{}%
+\contentsline {section}{\numberline {3.3}Methods}{7}{}%
+\contentsline {subsection}{\numberline {3.3.1}Optical System}{7}{}%
+\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{7}{}%
+\contentsline {section}{\numberline {3.4}Results i guess}{7}{}%
+\contentsline {section}{\numberline {3.5}Discussion of Results}{7}{}%
+\contentsline {chapter}{\numberline {4}Conclusion}{8}{}%
+\contentsline {section}{\numberline {4.1}Conclusion}{8}{}%
+\contentsline {section}{\numberline {4.2}Future outlook}{8}{}%
