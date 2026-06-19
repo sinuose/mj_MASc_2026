@@ -1,0 +1,104 @@
+\documentclass[12pt]{report}
+\usepackage{ circuitikz }
+\usepackage{graphicx} % Required for inserting images
+\usepackage{subcaption}
+\usepackage{tabularx}
+
+\usepackage{svg}
+\usepackage{listings}
+\usepackage{parskip}
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{xcolor}
+\usepackage{bm}% bold math
+\usepackage{mathrsfs}
+\usepackage{amsfonts, amsthm, amsmath, amssymb}
+\usepackage{svg}
+% Tikz diagrams/schematics
+\usepackage{tikz}
+\usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
+%bibliography
+\usepackage{biblatex}
+\usepackage{hyperref}
+
+\usepackage{microtype} % Subtle font spacing adjustments
+
+\usepackage
+[
+        a4paper,% other options: a3paper, a5paper, etc
+        left=0.75in,
+        right=0.75in,
+        top=1in,
+        bottom=1in
+        % use vmargin=2cm to make vertical margins equal to 2cm.
+        % us  hmargin=3cm to make horizontal margins equal to 3cm.
+        % use margin=3cm to make all margins  equal to 3cm.
+]
+{geometry}
+
+\usepackage{setspace}
+\onehalfspacing % Or \doublespacing for thesis-level spacing
+
+
+%\bibliography{references}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newcommand{\sbracket}[1]{\left[ #1\right]}
+\newcommand{\bracket}[1]{\left( #1\right)}
+
+\begin{document}
+
+    \begin{titlepage}
+        \begin{center}
+
+        % University name
+        {\Large\textbf{THE UNIVERSITY OF BRITISH COLUMBIA}}\\[2cm]
+
+        % Thesis title
+        {\Huge\bfseries CONFINED DIFFUSION OF NANOPARTICLES USING iSCAT MICROSCOPY}\\[2cm]
+
+
+        % Author
+        by\\[0.5cm]
+        {\Large Martin Jasinski}\\[2cm]
+
+        % Submission line
+        A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF\\
+        THE REQUIREMENTS FOR THE DEGREE OF\\[0.5cm]
+
+        % Degree type
+        {\Large Master of Applied Science}\\[0.5cm]
+
+        % Program
+        in\\[0.5cm]
+        {\Large (Engineering Physics)}\\[0.5cm]
+
+        % Institution
+        {\Large THE UNIVERSITY OF BRITISH COLUMBIA}\\[0.5cm]
+
+        % Campus (if applicable)
+        {\Large Department of Physics}\\[1cm]
+
+        % Date (month and year only)
+        {\Large \today}
+
+        \vfill
+
+        \end{center}
+    \end{titlepage}
+    
+
+    \input{ABSTRACT}
+
+    \tableofcontents
+
+
+    \chapter{Introduction}
+    \input{INTRO}
+
+    \chapter{Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}
+    \input{C2}
+
+    \chapter{Conclusion}
+    
+\end{document}
