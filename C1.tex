@@ -34,13 +34,20 @@ Methods that are able to detect single nanoparticles are known as single-molecul
 
 
 \section{Brownian Motion}
-
+\iffalse
 - Introduce the concept of Brownian Motion
 - Histroy of brownian Motion
 - applications of simple
 
 - discuss an outlook of what has been done since then
 - outline of this section
+\fi
+
+The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion \cite{brown_xxvii_1828}. 
+
+\subsection{Classical Description of Einstein's Brownian Motion}
+
+The classical description of Brownian motion is concerned with how the molecuar-kinetic theory of heat reates with microscopically visible size suspensions in liquid perform movements such that they can be viewed by a microscope. 
 
 
 \subsection{Langevin Dynamics}
@@ -85,6 +92,66 @@ Although diffusion is interesting, there is a wealth of complexity in confinemen
 \subsection{Example: Polystyrene Bead}
 
 
+\section{Interferometric Scattering Principles}
+
+This section is devoted to the description of physical prinicples associated with light scattering techniques. These techniques are widely used in microscopy, as I have used them in measuring where my parteicles are. Scattering measurements are of interest as they allow for label-free imaging with a high signal to noise and high temporal resolution. 
+
+We begin with the basics of relating light to electromagnetsm, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various abberations and Considerations before introducting iSCAT microscopy. We tease the experimental apparatus used in tthis work and compare the method to other methods currently used in the field. 
+
+\subsection{Maxwell's Equations and field propagations equations}
+
+The photon is the fundamental quanta of the electric field as stated in QFT (cite). It has been shown that because of this, the field equations of light obey the fundamental principle that states
+\begin{equation}
+    I = |\vec E(\vec x, t)|^2
+\end{equation}.
+Thus, it is paramount that we understand how the propagation of the electric fields are described. Luckily for us, this has already been solved in the year 18XX (cite). We present the Maxwell equations in their macroscopic form, which include terms from the material constants.
+\begin{definition}
+    Maxwell's Equations in macroscopic form. Let $\vec x$ be the position vecotr, $t$ the time scalar. The Maxwell equations are defined as the following set of relations; (CITE ZANGWILL, Scattering small particles, Jackson if needed).
+    \begin{align}
+        \nabla \cdot \vec D(\vec{x},t) &= \rho_f(\vec{x},t) \\
+        \nabla \times \vec E(\vec{x},t) + \frac{\partial \vec B(\vec{x},t)}{\partial t} &= 0 \\
+        \nabla \cdot \vec B(\vec{x},t) &= 0 \\
+        \nabla \times \vec H(\vec{x},t) - \frac{\partial \vec D(\vec{x},t)}{\partial t} &= \vec J_f(\vec{x},t)
+    \end{align}
+    In addition, for ease of access, the definitions for the Auxillary fields, and scalar potentials are written. We also add the guage invariance;
+    \begin{align}
+        \vec D(\vec{x}, t) &= \varepsilon_0 \vec E(\vec{x},t) + \vec P (\vec{x},t) \\
+\vec H (\vec{x},t) &= \frac{1}{\mu_0} \vec B(\vec{x},t) - \vec M(\vec{x},t)
+    \end{align}
+    To fully describe the material that the field lies in, we also require constitutive relations;
+    \begin{align}
+        \vec J_f(\vec{x},t) &= \mathbf{\sigma} \vec E (\vec{x},t)\\
+        \vec B(\vec{x},t) &= \mathbf{\mu} \vec H (\vec{x},t)\\
+        \vec P(\vec{x},t) &= \varepsilon_0\mathbf{\chi} \vec E (\vec{x},t)\\
+    \end{align}
+    Where the boldface is reserved for tensor quantities. 
+\end{definition}
+
+- List shit that we need to know before calcualting the Scattering from a sphere.
+
+- Helmholtz Equation
+- Fresnel Equations
+- Polarization
+- General Scattering Transfer Matrices
+\subsection{The Mie and RDG Scattering off of a Sphere}
+- Set the stage, what do we need to solve, how are we going to do it
+- Solutions to the wave equation in spherical coordinates 
+- Mie Theory 
+-- Examples of Mie spheres
+-- What size range ?
+- RDG Theory
+-- What size range ?
+
+- Small comparison from far away, medium (mie), and small (RDG), atomic (too small)
+
+\subsection{Forward, Side, and Backscattering Models}
+- Olsén's thesis
+
+\subsection{Interferometric Light Scattering (iSCAT)}
+- Experimental Setup
+
+\subsection{Comparison of Methods}
+
 \section{In-Vivo Considerations}
 
 - Now that we more or less know how BM works, why is it important in cells?
@@ -105,6 +172,7 @@ Although diffusion is interesting, there is a wealth of complexity in confinemen
 - Literature on why these methods are lacking
 
 \subsection{Probing of surface interactions with these methods}
+
 
 
 

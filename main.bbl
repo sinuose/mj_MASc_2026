@@ -19,6 +19,55 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{brown_xxvii_1828}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5e20f446d2daa6c87a39214f30e3117d}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{bibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorbibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authornamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-5850, 1941-5869}
+      \field{journaltitle}{The Philosophical Magazine}
+      \field{month}{9}
+      \field{number}{21}
+      \field{title}{{XXVII}. \textit{{A} brief account of microscopical observations made in the months of {June}, {July} and {August}} 1827, \textit{on the particles contained in the pollen of plants; and on the general existence of active molecules in organic and inorganic bodies}}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{1828}
+      \field{urldateera}{ce}
+      \field{pages}{161\bibrangedash 173}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/14786442808674769
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\QT3UYI95\\Brown - 1828 - XXVII. A brief account of microscopical observations made in the months of June, July and August.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+    \endentry
     \entry{kamanziSimultaneousSingleParticleMeasurements2021}{article}{}{}
       \name{author}{16}{}{%
         {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
