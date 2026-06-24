@@ -133,7 +133,96 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 - Fresnel Equations
 - Polarization
 - General Scattering Transfer Matrices
-\subsection{The Mie and RDG Scattering off of a Sphere}
+\subsection{Electromagnetic Scattering of of Homogenous Spheres}
+
+To As mentioned, we are tasked with getting the light from the scattered molecules. We approximate them as spheres. Thus, we need to solve the solutions of scattered light from spheres.
+
+We start by using the wave equation for the Electric and Magnetic Fields
+\begin{equation}
+    \nabla^2 \vec E + k^2 \vec E = 0, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E
+\end{equation}
+
+The solutions of these quantities will be harmonics of the laplacian in the coordinate basis that we choose. For isotropic scattering, the spherical basis is the one of choice. The solutions to this are known as the Vector Spherical Harmonics. Let $\psi$ be a solution to the scalar wave equation
+\begin{equation}
+    \nabla^2 \psi + k^2 \psi = 0
+\end{equation}, then we can form a generator of the general solution by taking the simplest form of solutions and summing all components. Citing Jackson, we find that the solution to this form is given by the seperable form;
+\begin{equation}
+    \begin{aligned}
+        \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r) \\
+        \Phi(\phi) & \in \{\cos(m\phi), \sin(m\phi)\} \\
+        \Theta(\theta) &= P^m_n(\cos\theta)\\
+        R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\} \\
+    \end{aligned}
+\end{equation}
+Where $j_n, y_n$ are the spherical Bessel functions, and their complex additions are the hankel functions. Thus, the vector spherical harmonics are best described by seperating these solutions into even and odd solutions as their prefactor will be $\cos$ or $\sin$ respectively. 
+\begin{equation}
+    \begin{aligned}
+        \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}) \\
+        \vec{N}_{emn} = \frac{1}{k}\vec \nabla \times \vec{M}_{emn}, \quad \vec{N}_{omn} = \frac{1}{k}\vec \nabla \times \vec{M}_{omn} \\
+    \end{aligned}
+\end{equation}
+These are found in Eqns 4.17 to 4.20 in Bohren. 
+
+The incident light can be assumed to be polarized along the x axis without loss of generality. The general form of these equation will then be the sum of each of the spherical vector harmonics (SVH). subject to the energy conservation boundary condition
+\begin{equation}
+    (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0
+\end{equation}
+
+Citing Bohren, and stating that using orthongality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
+
+\begin{equation}\label{eqn:lorenzmie}
+    \begin{aligned}
+     \vec E_i &= E_0 e^{ikr\cos \theta}\hat x \\    
+     \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n})\\
+     \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})     
+    \end{aligned}
+\end{equation}
+
+Since we are only interested in the scattered field, the constants that we care about are written below;
+\begin{equation}
+    \begin{aligned}
+        a_n &= \frac{m\Psi(mx)\Psi'(x) - \Psi(x)\Psi'(mx)}{m\Psi(mx)\xi'(x) -\xi(x) \Psi'(mx)}\\
+        b_n &= \frac{\Psi(mx)\Psi'(x) - m\Psi(x)\Psi'(mx)}{\Psi(mx)\xi'(x) - m \xi(x) \Psi'(mx)}\\
+    \end{aligned}
+\end{equation}
+
+where $\Psi, \xi$ are the Riccatti-Bessel functions. 
+
+In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the hankel function approches the limit of a spherical wave,
+\begin{equation}
+    h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}
+\end{equation}
+
+Im this regime, we have that $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$ we have that $\pi_1 = 1, \tau_1 = \cos \theta$, thus
+\begin{equation}
+    \begin{aligned}
+        M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi} \\
+        N^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi} \\
+    \end{aligned}
+\end{equation}
+
+can be written in the Rayleigh approximation simply and in the form of the full scattering field;
+
+\begin{equation}
+    \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}
+\end{equation}
+
+Spoiling the suprise, after plugging in the terms for $n=1$ we have the following simplification;
+
+\begin{equation}
+    \begin{aligned}
+            \vec E_{s, \perp} &=  \vec E_{i, \perp} \frac{k^2 \alpha e^{ikr}}{r}\\
+            \vec E_{s, \parallel} &=  \vec E_{i, \parallel} \frac{k^2 \alpha e^{ikr}}{r} \cos \theta\\
+    \end{aligned}
+\end{equation}
+
+Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambda/n}$, we have the final scattering field in the Rayleigh regime;
+\begin{equation}
+    \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}
+\end{equation}
+
+- Draw some of the iPSFs for Mie theory, from all angles.
+
 - Set the stage, what do we need to solve, how are we going to do it
 - Solutions to the wave equation in spherical coordinates 
 - Mie Theory 
@@ -144,13 +233,62 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 
 - Small comparison from far away, medium (mie), and small (RDG), atomic (too small)
 
-\subsection{Forward, Side, and Backscattering Models}
+\subsection{Types of Microscopy}
+
+Dark field - microscopy where the background is not used
+widefield - microscopy where the full field of view is used
+holography - microscopy with a reference field (?)
+
+\subsection{Scattering Microscopy}
+
+As shown, the description of the scattered light from a sphere is full described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory (CITE). In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
+
+To collect the light, there have been three main schemes used in literature; forward, side, and backscattering micrpscopy schemes.
+
+As shown in Fig. (reference PSF), the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these regimes also varies.
+
+\textbf{do i go into the other models?}
+
+In the backscattering scheme, the light collected is the sum of the incident light and the scattered light.
+
+\begin{equation}
+    I(x,y) = |\vec E_i + \vec E_s|^2 
+\end{equation}
+
+given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scatterd light;
+\begin{equation}
+    \begin{aligned}
+        I = E_iE_i^* + 2\Re{\left[E_iE_s\right]} + E_sE_s^* \\
+    \end{aligned}
+\end{equation}
+The scattering term will be must lower than that of the 
+
+
+
+\dots
+
 - Olsén's thesis
+
+
 
 \subsection{Interferometric Light Scattering (iSCAT)}
 - Experimental Setup
 
-\subsection{Comparison of Methods}
+- manoharan theory and reparam of the main equation
+- schematic
+- ...
+
+\subsection{Abberations and Image formation}
+
+discuss how we go from reality (focus plane) to image (image plane).
+
+- sphereical abberations
+- guoy phase
+\dots 
+
+- final kind of check 
+
+theortical 100 nm particle -> scattering field -> abberations 
 
 \section{In-Vivo Considerations}
 
