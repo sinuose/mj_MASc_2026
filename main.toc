@@ -17,23 +17,23 @@
 \contentsline {subsection}{\numberline {2.3.3}Types of Microscopy}{10}{}%
 \contentsline {subsection}{\numberline {2.3.4}Scattering Microscopy}{10}{}%
 \contentsline {subsection}{\numberline {2.3.5}Interferometric Light Scattering (iSCAT)}{11}{}%
-\contentsline {subsection}{\numberline {2.3.6}Abberations and Image formation}{11}{}%
-\contentsline {section}{\numberline {2.4}In-Vivo Considerations}{11}{}%
-\contentsline {subsection}{\numberline {2.4.1}why does this matter for biological applications}{12}{}%
-\contentsline {subsection}{\numberline {2.4.2}Examples of Brownian Motion in Biology}{12}{}%
-\contentsline {section}{\numberline {2.5}Brownian motion as a method for measurements of size in biology}{12}{}%
-\contentsline {subsection}{\numberline {2.5.1}survey of methods using in this field}{12}{}%
-\contentsline {subsection}{\numberline {2.5.2}how confinemen effects these measurements}{12}{}%
-\contentsline {subsection}{\numberline {2.5.3}Probing of surface interactions with these methods}{12}{}%
-\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{13}{}%
-\contentsline {section}{\numberline {3.1}Questions}{13}{}%
-\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{13}{}%
-\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{13}{}%
-\contentsline {section}{\numberline {3.3}Methods}{13}{}%
-\contentsline {subsection}{\numberline {3.3.1}Optical System}{13}{}%
-\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{13}{}%
-\contentsline {section}{\numberline {3.4}Results i guess}{13}{}%
-\contentsline {section}{\numberline {3.5}Discussion of Results}{13}{}%
-\contentsline {chapter}{\numberline {4}Conclusion}{14}{}%
-\contentsline {section}{\numberline {4.1}Conclusion}{14}{}%
-\contentsline {section}{\numberline {4.2}Future outlook}{14}{}%
+\contentsline {subsection}{\numberline {2.3.6}Resolution limits of optical microscopy}{12}{}%
+\contentsline {section}{\numberline {2.4}In-Vivo Considerations}{14}{}%
+\contentsline {subsection}{\numberline {2.4.1}why does this matter for biological applications}{14}{}%
+\contentsline {subsection}{\numberline {2.4.2}Examples of Brownian Motion in Biology}{14}{}%
+\contentsline {section}{\numberline {2.5}Brownian motion as a method for measurements of size in biology}{14}{}%
+\contentsline {subsection}{\numberline {2.5.1}survey of methods using in this field}{14}{}%
+\contentsline {subsection}{\numberline {2.5.2}how confinemen effects these measurements}{14}{}%
+\contentsline {subsection}{\numberline {2.5.3}Probing of surface interactions with these methods}{14}{}%
+\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{15}{}%
+\contentsline {section}{\numberline {3.1}Questions}{15}{}%
+\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{15}{}%
+\contentsline {section}{\numberline {3.3}Methods}{15}{}%
+\contentsline {subsection}{\numberline {3.3.1}Optical System}{15}{}%
+\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{15}{}%
+\contentsline {section}{\numberline {3.4}Results i guess}{15}{}%
+\contentsline {section}{\numberline {3.5}Discussion of Results}{15}{}%
+\contentsline {chapter}{\numberline {4}Conclusion}{16}{}%
+\contentsline {section}{\numberline {4.1}Conclusion}{16}{}%
+\contentsline {section}{\numberline {4.2}Future outlook}{16}{}%

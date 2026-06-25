@@ -169,13 +169,17 @@ The incident light can be assumed to be polarized along the x axis without loss 
 \end{equation}
 
 Citing Bohren, and stating that using orthongality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
+\begin{definition}
+    Mie Theory of scattering off of homogenous spheres
 
 \begin{equation}\label{eqn:lorenzmie}
+    \boxed{
     \begin{aligned}
      \vec E_i &= E_0 e^{ikr\cos \theta}\hat x \\    
      \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n})\\
      \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})     
     \end{aligned}
+    }
 \end{equation}
 
 Since we are only interested in the scattered field, the constants that we care about are written below;
@@ -187,6 +191,8 @@ Since we are only interested in the scattered field, the constants that we care 
 \end{equation}
 
 where $\Psi, \xi$ are the Riccatti-Bessel functions. 
+
+\end{definition}
 
 In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the hankel function approches the limit of a spherical wave,
 \begin{equation}
@@ -218,10 +224,13 @@ Spoiling the suprise, after plugging in the terms for $n=1$ we have the followin
 
 Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambda/n}$, we have the final scattering field in the Rayleigh regime;
 \begin{equation}
+    \boxed{
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}
+    }
 \end{equation}
 
 - Draw some of the iPSFs for Mie theory, from all angles.
+- manoharan theory and reparam of the main equation
 
 - Set the stage, what do we need to solve, how are we going to do it
 - Solutions to the wave equation in spherical coordinates 
@@ -252,33 +261,101 @@ As shown in Fig. (reference PSF), the scattering distribution taken at different
 In the backscattering scheme, the light collected is the sum of the incident light and the scattered light.
 
 \begin{equation}
-    I(x,y) = |\vec E_i + \vec E_s|^2 
+    I(x,y) = |\vec E_r + \vec E_s|^2 
 \end{equation}
 
 given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scatterd light;
 \begin{equation}
     \begin{aligned}
-        I = E_iE_i^* + 2\Re{\left[E_iE_s\right]} + E_sE_s^* \\
+        I = E_rE_r^* + E_sE_s^* + 2\Re{\left[E_rE_s\right]} \\
     \end{aligned}
 \end{equation}
-The scattering term will be must lower than that of the 
+
+The incident field will be modulated by a scattering term, which is the Rayleigh scattering amplitude, $S$, as well as the reference term, $R$. Thus, the total intensity will be the sum of the scattering amplitude, reference amplitude, and the phase interference between the two fields; 
+\begin{equation}
+    I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right], \quad \Delta \varphi = \varphi_s \varphi_r
+\end{equation}
 
 
+It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. A full discussion of these comparisons can be found in (CITE).
 
 \dots
 
 - Olsén's thesis
 
-
-
 \subsection{Interferometric Light Scattering (iSCAT)}
-- Experimental Setup
 
-- manoharan theory and reparam of the main equation
-- schematic
-- ...
+The key assumption in iSCAT is the relative magnitude of terms. The reference field is constant. The scattering term $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarily, the inference term scales as the square root of this. Thus, the scattering term is dominated by the two fields, which we can ignore. 
 
-\subsection{Abberations and Image formation}
+To accurately measure the positions, we can define the contrast metric, which relates the total field to that of a reference field;
+\begin{equation}
+    \begin{aligned}
+        C &= \frac{I - |E_r|^2}{|E_r|^2} \\
+        &= \frac{|S|^2 + 2|R||S|\cos \Delta \varphi}{|R|^2} \\
+        &\xrightarrow{|S| \ll |R|} \frac{2|S|}{|R|}\cos\Delta \varphi
+    \end{aligned} 
+\end{equation}
+
+The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Gouy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the defocus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michaelson-Interferomer type system. 
+
+Experimentally, this system is described in the set of schematics in Fig. \ref{fig:schematic}.
+ 
+\begin{figure}
+	\centering
+	\begin{subfigure}{0.49 \textwidth}
+		\includegraphics[width=\linewidth]{Figures/schematic}
+	\end{subfigure}
+	\begin{subfigure}{0.49 \textwidth}
+			\includegraphics[width=\linewidth]{Figures/iscat_photo}
+	\end{subfigure}
+	\caption{\textbf{Left}. iSCAT Schematic. \textbf{Right}. Image of physical system. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scatterd light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format. }
+	\label{fig:schematic}
+\end{figure}
+
+
+
+\subsection{Resolution limits of optical microscopy}
+
+The last thing to touch upon is understanding how the image that is being enlarged arrives to the camera, which consists of discussion of optical aberrations. 
+
+As mentioned in the formulation for the electric field scatter we have that any optical field consists of a set of plane waves that construct and deconstruct to form a field. That is, the electric field lies in the basis of a fourier series of terms of complex exponentials. This fact allows one to describe the propagation of a wave in throughout z.
+\begin{equation}
+	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y, \quad \Omega = \{x \in \R : x^2 \leq k^2\} 
+\end{equation}
+We have that the energy of the wave is fixed by the trigonometric relation of the transverse wave vectors. Notably, this is fixed by the relation $|k| = \frac{2\pi}{\lambda}$.
+
+The propagated wave passes through an objective which can be approximated by a lens. Using the ABCD matrix formulation, we can find that to have a clear image, the imaging condition must be satisfied, that is
+\begin{equation}
+	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f}
+\end{equation}
+where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. Thus, the magnification of the lens is defined as $M = z_2/z_1$. However, to understand the aberrations it is nessecary to have a field formulation of this problem. The simplest way to do this is described using linear optics theory.
+ 
+Briefly, we define a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta function through a two lens system. This is given by the fourier transform of the point source masked by the pupil function;
+\begin{eqnarray}
+	H(x,y) = \iint_\Omega P(x',y')e^{\frac{ik}{2}\left(\frac{1}{z_1} - \frac{1}{f_1} - \frac{1}{f_2} + \frac{1}{z_2}\right)\sqrt{{x'}^2} + {y'}^2}e^{-\frac{ik}{z_2}(xx' + yy')}dx'dy'
+\end{eqnarray}
+Expanding this, one can use a zero-order Hankel transform to integrate over the radius and find that the point-spread function, $H$, is defined in terms of the NA and the magnification;
+\begin{equation}
+	H(r, z) = \int_0^1e^{-\frac{ik}{2}\frac{\text{NA}^2}{n}\rho^2 z}J_0\left(\frac{k\text{NA}}{M}\rho r\right) \rho d\rho
+\end{equation}
+where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$.
+
+In perfect focus, we have that $z=0$, for $z\neq0$ we have a defocusing aberration which is defined as the secondary exponential. For a point source, which is diffraction limited, we find that the following is the limit of the optical microscope;
+\begin{equation}
+	H(r,0) = |\frac{J_1(k\text{NA}r)}{k\text{NA} r}|^2 
+\end{equation}
+We can solve that the minimum distance between the peak of the PSF and the minumum is solved by $k\text{NA}r = x_0$ where $x_0$ is the first root of $J_1(x)$. This is classical known as the minimum transverse imaging criterion;
+\begin{equation}
+	r_{\text{min}} = 0.61 \frac{\lambda}{\text{NA}}
+\end{equation}
+Similar results are found for the minimum axial imaging criterion by setting $r=0$ and integrating. 
+\begin{equation}
+	z_{\text{min}} = \frac{2\lambda n}{\text{NA}^2}
+\end{equation}
+
+ At this point, we invite the fact that not all the light that scatters passes through teh lens. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scatteirng pattern is much larger, hwoever, in the limit of two particle near each other, the spatial reoslution limit must be enforced. 
+
+
 
 discuss how we go from reality (focus plane) to image (image plane).
 
