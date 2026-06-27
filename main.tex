@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass[12pt]{book}
 \usepackage{ circuitikz }
 \usepackage{graphicx} % Required for inserting images
 \usepackage{subcaption}
@@ -39,7 +39,7 @@
 \usepackage{setspace}
 \onehalfspacing % Or \doublespacing for thesis-level spacing
 
-\usepackage[backend=biber]{biblatex}
+\usepackage[style=apa, backend=biber]{biblatex}
 \addbibresource{references.bib}
 
 
@@ -110,8 +110,8 @@
     \chapter{Conclusion}
     \input{CONC}
 
-
+	\printbibliography
     \appendix
-    \printbibliography
+    
     
 \end{document}
