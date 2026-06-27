@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  26 JUN 2026 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.8)  27 JUN 2026 10:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1331,49 +1331,39 @@ Chapter 2.
 LaTeX Warning: Citation 'brown_xxvii_1828' on page 7 undefined on input line 46
 .
 
-[7]
-Underfull \vbox (badness 1127) has occurred while \output is active []
+[7] [8]
+Underfull \vbox (badness 1173) has occurred while \output is active []
 
- [8]
-[9]
-Underfull \vbox (badness 6493) has occurred while \output is active []
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
 [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7397) has occurred while \output is active []
 
  [12]
-Underfull \vbox (badness 1360) has occurred while \output is active []
+Underfull \vbox (badness 6876) has occurred while \output is active []
 
  [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
 [15]
-Underfull \vbox (badness 4739) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
 [17]
 <Figures/schematic.png, id=77, 326.72063pt x 208.52907pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
-Package pdftex.def Info: Figures/schematic.png  used on input line 443.
+Package pdftex.def Info: Figures/schematic.png  used on input line 450.
 (pdftex.def)             Requested size: 239.66309pt x 152.96313pt.
 <Figures/iscat_photo.png, id=79, 942.52126pt x 680.5425pt>
 File: Figures/iscat_photo.png Graphic file (type png)
 <use Figures/iscat_photo.png>
-Package pdftex.def Info: Figures/iscat_photo.png  used on input line 446.
+Package pdftex.def Info: Figures/iscat_photo.png  used on input line 453.
 (pdftex.def)             Requested size: 239.66309pt x 173.04279pt.
- [18 <./Figures/schematic.png> <./Figures/iscat_photo.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19]
-[20])
-Overfull \hbox (10.75781pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 2.5.  BROWNIAN MOTION AS A METHOD FOR MEASUREMENTS OF SIZE IN 
-BIOLOGY \OT1/cmr/m/n/12 21
- []
-
+ [18] [19 <./Figures/schematic.png> <./Figures/iscat_photo.png>] [20])
 [21] [22
 
 ]
@@ -1411,11 +1401,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52280 strings out of 467871
- 1271093 string characters out of 5419829
+ 52283 strings out of 467871
+ 1271134 string characters out of 5419829
  2476217 words of memory out of 5000000
- 80407 multiletter control sequences out of 15000+600000
- 649119 words of font info for 190 fonts, out of 8000000 for 9000
+ 80408 multiletter control sequences out of 15000+600000
+ 649163 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,1183b,5050s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/mj/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmb
@@ -1440,7 +1430,7 @@ s/cm/cmsy8.pfb><C:/Users/mj/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmti12.pfb><C:/Users/mj/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/symbols/msbm10.pfb><C:/Users/mj/AppData/Local/Programs/MiKTeX/font
 s/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (25 pages, 2574330 bytes).
+Output written on main.pdf (25 pages, 2578368 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

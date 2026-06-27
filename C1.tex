@@ -43,41 +43,53 @@ Methods that are able to detect single nanoparticles are known as single-molecul
 - outline of this section
 \fi
 
-The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion \cite{brown_xxvii_1828}. 
+The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion, or more colloquially, a diffusive provess \cite{brown_xxvii_1828}. 
+
+Brownian motion describes the random movement of particles suspended in a fluid, driven by collisions with solvent molecules. This chapter explores its theoretical foundations, confinement effects, and connection to optical scattering techniques like iSCAT (interferometric scattering microscopy). These tools are critical for probing nanoparticle dynamics in biological systems.
+
+We begin with Einstein’s diffusion- equation argument and Langevin’s stochastic equation of motion, and then show, through the Fokker–Planck, or Smoluchowski, formalism, that the two are equivalent descriptions of the same process. We next turn to diffusion under confinement, where hydrodynamic wall effects modify the mobility, and to the electrostatic (Debye–H¨uckel) potentials that govern particle–wall interactions in ionic solution.
 
 \subsection{Classical Description of Einstein's Brownian Motion}
 
 The classical description of Brownian motion is concerned with how the molecuar-kinetic theory of heat reates with microscopically visible size suspensions in liquid perform movements such that they can be viewed by a microscope. 
 
 Einstein's argument is one of macroscopic motion. put simply, one can use a taylor series expansion over a general concentration function to show a natural propety of the system. Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
+
 \begin{equation}
 	\int \phi(\Delta) d\Delta = 1
 \end{equation}
-Then, let $f(x,t)$ denote some number of particles at the point $x$. Einstein takes a finite slice of this volume and equates it to a probability space;
+
+Assume that the medium is isotropic such that $\phi$ is even, $\phi(\Delta) = \phi(-\Delta)$. 
+
+Let $f(x,t)$ denote some number of particles at the point $x$. Einstein takes a finite slice of this volume and equates it to a probability space;
+
 \begin{equation}
 	f(x, t + \tau)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta
 \end{equation}
+
 The argument here is that we can taylor expand both sides of this equation,
+
 \begin{equation}
-	f(x, t + \tau) \approx f(x,t) + \frac{\partial f(x,t)}{\partial t} \tau
+	f(x, t + \tau) \approx f(x,t) + \tau\frac{\partial f(x,t)}{\partial t}
 \end{equation}
 And in space;
 \begin{equation}
-	f(x + \Delta, t) \approx f(x,t) + \frac{\partial f(x,t)}{\partial x} \Delta + \frac{\partial^2 f(x,t)}{\partial x^2} \frac{\Delta^2}{2}
+	f(x + \Delta, t) \approx f(x,t) + \Delta \frac{\partial f(x,t)}{\partial x}  + \frac{\Delta^2}{2}\frac{\partial^2 f(x,t)}{\partial x^2} 
 \end{equation}
 Cancelling terms, one finds the classical diffusion equation to nearest order;
 \begin{equation}
-	\frac{\partial f(x,t)}{\partial t} = \frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta \frac{\partial^2 f(x,t)}{\partial x^2}
+	\frac{\partial f(x,t)}{\partial t} = \underbrace{\left[\frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta\right]}_{D} \frac{\partial^2 f(x,t)}{\partial x^2}
 \end{equation}
 Where we typically associate the diffusion coefficient with the second moment of the probability distribution
 \begin{equation}
 	D = \frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta
 \end{equation}
- It can be shown through arguments of free energy that the diffusion coefficient must abide by the rules of osmotic pressure. Noteably, in the case of a spherical particle obeying Stoke's flow, we cite Einstein t find that the diffusion coefficient has the classical form'
+ It can be shown through arguments of thermodynamics that the diffusion coefficient must abide by the rules of osmotic pressure, $\Pi = ck_b T$. \textcolor{red}{Ideally have this laid out, i Don't know this off the top of my head.} Noteably, in the case of a spherical particle obeying Stoke's flow, we cite Einstein t find that the diffusion coefficient has the classical form'
  
 \begin{equation}
-	D = \frac{k_bT}{\gamma_0}, \quad \gamma_0 = 6 \eta k_b T
+	D = \frac{k_bT}{\gamma_0}, \quad \gamma_0 = 6 \pi \eta a
 \end{equation}
+Where $\eta$ is the fluid viscosity, and $a$ is the spherical particle radius. 
 
 \subsection{Langevin Dynamics}
 
@@ -86,16 +98,26 @@ The most intuitive formulation of the Brownian motion is that of Langevin's equa
 	m\vec{\ddot x} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
 \end{equation}
 
-where $B$ is the mobility, which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribuption $f$ for every time step $t$. This model, although easily written, is quite profound and non-trivial to calculate. Here, $x(t)$ is a stochastic process, which has a unique realization for each realization of $F(t)$. 
+where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribuption $f$ for every time step $t$. This model, although easily written, is quite profound and non-trivial to calculate. Here, $x(t)$ is a stochastic process, which has a unique realization for each realization of $F(t)$.
+The statistical contetn of $\vec F(t)$ is fixed by the moments and auto-correlation. Notably, this relation is physically associated with the fluctuation-dissipation theory which relates the drag force to the random force. In Brownian motion, this takes the form
+\begin{equation}
+	\langle \vec F(t)\rangle = 0, \quad \langle \vec{F}_i(t) \vec{F}_j(t')\rangle = \frac{2k_bT}{B}\delta_{ij}\delta(t-t')
+\end{equation}
+Which stands in as delta-correlated noise, or that of a Wiener process
 
 We can, however, take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity
 \begin{equation}
 	m\vec{\dot v} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0
 \end{equation}
-this represents a linear differential equation with a solution hat defines the velocity autocorrelation function. Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, we find the following form of the mean-square displacement. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$
+this represents a linear differential equation with a solution hat defines the velocity autocorrelation function.
+\begin{equation}
+	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}
+\end{equation}
+
+Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, we find the following form of the mean-square displacement. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$
 \begin{equation}
 	\begin{aligned}
-			\langle x^2\rangle &= \frac{6k_b T m B^2}{m}\left[\frac{t}{mB} - (1-e^{-t/(mB)})\right] \\
+			\langle x^2\rangle &= 6k_b T m B^2\left[\frac{t}{mB} - (1-e^{-t/(mB)})\right] \\
 			&\begin{cases} 
 				\xrightarrow{t \ll mB} \frac{3k_b Tt^2}{m}  &  = \langle v^2\rangle t^2 \\
 				\xrightarrow{t \gg mB} \frac{6k_b TmB}{m}t  &  = (6Bk_b T)t\\
@@ -104,52 +126,42 @@ this represents a linear differential equation with a solution hat defines the v
 \end{equation}
 Letting $D = Bk_b T$, we recover Einstein's relation with ease. 
 
-The unique advantage of the Langevin Formulation is that it is readily simulatable. It can be shown that using an Euler-maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, reocovering the dynamics of an ideal brownian system. 
+The unique advantage of the Langevin Formulation is that it is readily simulatable. It can be shown that using an Euler-maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, reocovering the dynamics of an ideal brownian system. \textcolor{red}{Cite Pathria for this section}.
 
-...
+\subsection{From Master Equation to Fokker-Planck}
 
-
-- Brownian motion can alternatively be described using a Langevin Model. 
-- introduce langevin equation
-- velocity correlation
-- Arrive at the  Einstein's relation
-- Discuss simulations 
-
-- Cite Pathria Statistical Mechanics
-
-\subsection{Smoluchowski Equation}
-
-To show that the two methods are equal, we can use the typical approach to equilibrium provided by the master equation.  Suppose that $f(x,t)dx$ representation that he probability of an arbitrayr oarticle in the ensemble has a displacement between $x$ and $x + dx$. We find that if $f$ is a probability distribution, we can write down the master equation, let $W$ represent the traditional probability transition rate;
+To show that the two methods are equal, we can use the typical approach to equilibrium provided by the master equation.  Suppose that $f(x,t)dx$ representation that he probability of an arbitrary particle in the ensemble has a displacement between $x$ and $x + dx$. We find that if $f$ is a probability distribution, we can write down the master equation, let $W$ represent the traditional probability transition rate;
 \begin{equation}
 	\frac{\partial f(x,t)}{\partial t} = \int_{-\infty}^\infty \left[ f(x', t)W(x'|x) - f(x, t)W(x|x')\right] dx'
 \end{equation}
 
-This strcutre is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a markovian system.} The right hand side can be taylor expanded and parameterized to a drift and diffusive term
+This structure is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation.,
 \begin{equation}
-	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right]
+	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right],
 \end{equation}
 
-where the diffusive and drift terms are parameterized over the transition probalities;
+where the diffusive and drift terms are parameterized over the transition probalities,
 \begin{equation}
 	\begin{aligned}
 		\sigma(x) &= \int_{-\infty}^\infty \xi W(x| \xi)d\xi\\
-		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi\\
+		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi\\.
 	\end{aligned}
 \end{equation}
 
-In the case of zero drift, we can clearly see that this form equates to the diffusion equation of the Langevin formulation and the Einsteinian formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangably. In particular, relating expected results from simulatory behavior of Langevin problems.
+In the case of zero drift, we can clearly see that this form equates to the diffusion equation of the Langevin formulation and the Eisensteinian formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulatory behavior of Langevin problems.
 
-- Since Langevin is kind of convient, how do we acctualy link the two methods?
+%- Since Langevin is kind of convient, how do we acctualy link the two methods?
 
-- Fokker plank introdution motivated from the master equation
-- - ideally summarize van kampen. 
+% Fokker plank introdution motivated from the master equation
+% - ideally summarize van kampen. 
 
-- arrive at the general Smoluchowski equation for a random walker
-- simple plots for descriptive purposes.
+%- arrive at the general Smoluchowski equation for a random walker
+%- simple plots for descriptive purposes.
+%\fi
 
-\section{Confined Diffusion Processes}
+\subsection{Confined Diffusion Processes}
 
-The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxen derived the relations in no-slip boundary conditions near a brownian particle;
+The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxén derived the relations in no-slip boundary conditions near a brownian particle;
 \begin{equation}
 	\begin{aligned}
 		\mu_\parallel\left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{16} \left(\frac{a}{h}\right)  + \frac{1}{8} \left(\frac{a}{h}\right)^3 - \frac{45}{256} \left(\frac{a}{h}\right)^4 - \frac{1}{16} \left(\frac{a}{h}\right)^5\right]\\
@@ -166,12 +178,9 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 
 \subsection{Electrostatic Potentials}
 
-Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds.
-
-
-The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
+A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
 \begin{equation}
-	\nabla^2 \Psi(\mathbf{r}) = -4 \pi \frac{\rho(\mathbf{r})}{\varepsilon}
+	\nabla^2 \Psi(\mathbf{r}) = - \frac{\rho(\mathbf{r})}{\varepsilon_0 \varepsilon_r}
 \end{equation}
 In a sea of ions, we must carefully define the charge density as it pertains to the system. In a general solution of ions, there will be $j$ species of ions.
 \begin{align*}
@@ -180,7 +189,7 @@ In a sea of ions, we must carefully define the charge density as it pertains to 
 The charge distribution of a single ion concentration is essentially the density of the ionic positions. It would be tedious and unfeasible to count every ion's position exactly as we are assuming too many things. Rather, one can use a statistical ensemble of ions via a cannonical ensemble, which is a good approximation here.
 
 \begin{equation}
-	\rho_i(\mathbf{r}) = C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(r)\right]}
+	\rho_i(\mathbf{r}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(r)\right]}
 \end{equation}
 
 Here the energy of the system is defined as the potential energy scaled by the charge defined as $U = qV$. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space.
@@ -197,24 +206,20 @@ There is a nice approximation we can make given that the potential of the soluti
 \end{align*}
 Where $\kappa_i^2$ is related to the debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
 
+When the bulk solution is electroneutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
 \begin{equation}
-	\kappa_i^2 = \frac{\beta C_i Z_i^2 e_0^2}{\varepsilon_0 \varepsilon_r}
-\end{equation}
-
-Suppose there is a single type of ion in the mixture. The sum collapses into a single term and the constant term is dropped.
-\begin{equation}
-	\nabla^2 \Psi(\mathbf{r}) = \kappa^2 \Psi(\mathbf{r})
+	\nabla^2 \Psi(\mathbf{r}) = \kappa^2 \Psi(\mathbf{r}), \quad \kappa_i^2 = \frac{\beta e_0^2}{\varepsilon_0 \varepsilon_r} \sum_i C_i Z_i^2.
 \end{equation}
 This equation has an obvious solution which are the real exponentials;
 \begin{equation}
-	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}
+	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}.
 \end{equation}
 
 \subsection{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
 
 In the case of interfaces, we have boundary conditions that case the particle to reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Then, we need to solve the adjusted Fokker-Plank equation;
 \begin{equation}
-	j = -\frac{\partial D(x)f(x)}{\partial x} - \nabla V(x) f(x) 
+	j = -\frac{\partial}{\partial x}\left[D(x)f(x)\right] - \nabla V(x) f(x) 
 \end{equation}
 
 Using the forward or reverse Ito discretisation, we have that the general solution is;
@@ -228,7 +233,7 @@ This equation defines the equilibrium distribution of the brownian diffusion aft
 
 
 
-- Run through a full calculation and simulation using Langevin Theory. 
+\textcolor{red}{Run through a full calculation and simulation using Langevin Theory.} 
 
 
 \section{Interferometric Scattering Principles}
