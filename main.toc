@@ -4,11 +4,11 @@
 \contentsline {chapter}{\numberline {2}Brownian Motion}{7}{}%
 \contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{8}{}%
 \contentsline {section}{\numberline {2.2}Langevin Dynamics}{9}{}%
-\contentsline {subsection}{\numberline {2.2.1}From Master Equation to Fokker-Planck}{10}{}%
-\contentsline {subsection}{\numberline {2.2.2}Confined Diffusion Processes}{11}{}%
-\contentsline {subsection}{\numberline {2.2.3}Electrostatic Potentials}{11}{}%
-\contentsline {subsection}{\numberline {2.2.4}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
-\contentsline {subsection}{\numberline {2.2.5}Example: Polystyrene Bead}{13}{}%
+\contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{10}{}%
+\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{11}{}%
+\contentsline {section}{\numberline {2.5}Electrostatic Potentials}{12}{}%
+\contentsline {section}{\numberline {2.6}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
+\contentsline {section}{\numberline {2.7}Example: Polystyrene Bead}{13}{}%
 \contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{15}{}%
 \contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{16}{}%
 \contentsline {section}{\numberline {3.2}Types of Microscopy}{18}{}%

@@ -31,7 +31,15 @@ Appendix 4.
 
 In the scope of biological processes, there are many such examples involving the particles in the nano size regime. For example, viruses and vesicles are two examples of small molecules which have immense importance in the field. To investigate such systems, it is often the case that to maintain long measurements of the same particle, it is necessary to have some form of confinement. The full understanding of the behavior of these nanoparticles under confinement is thus important, and not complete. 
 
-Nanoparticles move around stochastically under the rules of brownian motion. To be able to measure the particle's characteristics, one can relate their motion and stochasticity to their properties. This chapter will discuss the phenomena of Brownian motion and how it relates to particle properties, environmental ion concentration, viscosity, hydrodynamic boundaries, and confinement. To directly measure particle position, one can use optical methods, specifically, optical scattering measurements. In this chapter, the theoretical background regarding the particle's stochastic motion is presented, with particular focus on how the processes evolve in confined geometries. There will be a discussion on relating optical signals to their motion, as well as optical methods for particle detection. 
+\begin{figure}[hbtp!]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/size-comp.png}
+    \caption{Size comparison of various nanoparticles. Nanoparticles are defined as particles where the largest dimension is at most $\SI{1000}{\nm}$. }
+\end{figure}
+
+Nanoparticles move around stochastically under the rules of brownian motion. To be able to measure the particle's characteristics, one can relate their motion and stochasticity to their properties. This chapter will discuss the phenomena of Brownian motion and how it relates to particle properties, environmental ion concentration, viscosity, hydrodynamic boundaries, and confinement. 
+
+%To directly measure particle position, one can use optical methods, specifically, optical scattering measurements.
 
 In this chapter we discuss the process of Brownian motion and Diffusion-type processes. We begin with Einstein's diffusion- equation argument and Langevin's stochastic equation of motion, and then show, through the Fokker-Planck, or Smoluchowski, formalism, that the two are equivalent descriptions of the same process. We next turn to diffusion under confinement, where hydrodynamic wall effects modify the mobility, and to the electrostatic (Debye-Huckel) potentials that govern particle-wall interactions in ionic solution.
 
@@ -47,7 +55,7 @@ In this chapter we discuss the process of Brownian motion and Diffusion-type pro
 
 \section{Classical Description of Einstein's Brownian Motion}
 
-The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion, or more colloquially, a diffusive process \cite{brown_xxvii_1828}. 
+The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion, or more colloquially, a diffusive process \cite{brownXXVIIBriefAccount1828}. 
 
 The classical description of Brownian motion is concerned with how the molecular-kinetic theory of heat relates with microscopically visible size suspensions in liquid perform movements such that they can be viewed by a microscope. Einstein's argument is one of macroscopic motion. put simply, one can use a taylor series expansion over a general concentration function to show a natural property of the system. Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
 
@@ -89,45 +97,46 @@ Where $\eta$ is the fluid viscosity, and $a$ is the spherical particle radius.
 
 \section{Langevin Dynamics}
 
-In typical experiments, such as that of Robert Brown, the observed Brownian particle was moving around in a fluid volume. The motion, in a sense, is a result of the bombardment of the particles around it. In particular, the system experiences a 'random' force on it at every time step. 
+In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. The motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
 	m\vec{\ddot x} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
 \end{equation}
 
 where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and non-trivial to calculate. Here, $x(t)$ is a stochastic process, which has a unique realization for each realization of $F(t)$.
+
 The statistical content of $\vec F(t)$ is fixed by the moments and auto-correlation. Notably, this relation is physically associated with the fluctuation-dissipation theory which relates the drag force to the random force. In Brownian motion, this takes the form
 \begin{equation}
 	\langle \vec F(t)\rangle = 0, \quad \langle \vec{F}_i(t) \vec{F}_j(t')\rangle = \Gamma\delta_{ij}\delta(t-t')
 \end{equation}
 Which stands in as delta-correlated noise, or that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function (VACF) and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions. This fixes the fluctuation constant to being
 \begin{equation}
-    \Gamma = \frac{2k_bT}{B}
-\end{equation}.
-
-We can, however, take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity
-\begin{equation}
-	m\vec{\dot v} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0
-\end{equation}
-this represents a linear differential equation with a solution hat defines the velocity autocorrelation function.
-\begin{equation}
-	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}
+    \Gamma = \frac{2k_bT}{B}.
 \end{equation}
 
-Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, we find the following form of the mean-square displacement. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$
+One can take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity one finds
+\begin{equation}
+	m\vec{\dot v} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
+\end{equation}
+This represents a linear differential equation with a solution hat defines the velocity autocorrelation function. This solution is 
+\begin{equation}
+	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}.
+\end{equation}
+
+Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, we find the following form of the mean-square displacement. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$, then the solutions of the position mean-squared displacement are written as
 \begin{equation}
 	\begin{aligned}
 			\langle x^2\rangle &= 6k_b T m B^2\left[\frac{t}{mB} - (1-e^{-t/(mB)})\right] \\
 			&\begin{cases} 
 				\xrightarrow{t \ll mB} \frac{3k_b Tt^2}{m}  &  = \langle v^2\rangle t^2 \\
 				\xrightarrow{t \gg mB} \frac{6k_b TmB}{m}t  &  = (6Bk_b T)t\\
-			\end{cases}
+			\end{cases}.
 	\end{aligned}
 \end{equation}
 Letting $D = Bk_b T$, we recover Einstein's relation with ease. 
 
-The unique advantage of the Langevin Formulation is that it is readily simulatable. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system. \textcolor{red}{Cite Pathria for this section}.
+The unique advantage of the Langevin Formulation is that it is readily simulatable \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \textcolor{red}{Cite Pathria for this section}.
 
-\subsection{From Master Equation to Fokker-Planck}
+\section{From Master Equation to Fokker-Planck}
 
 To show that the two methods are equal, we can use the typical approach to equilibrium provided by the master equation.  Suppose that $f(x,t)dx$ representation that he probability of an arbitrary particle in the ensemble has a displacement between $x$ and $x + dx$. We find that if $f$ is a probability distribution, we can write down the master equation, let $W$ represent the traditional probability transition rate;
 \begin{equation}
@@ -143,7 +152,7 @@ where the diffusive and drift terms are parameterized over the transition probal
 \begin{equation}
 	\begin{aligned}
 		\sigma(x) &= \int_{-\infty}^\infty \xi W(x| \xi)d\xi\\
-		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi\\.
+		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi.\\
 	\end{aligned}
 \end{equation}
 
@@ -158,7 +167,7 @@ In the case of zero drift, we can clearly see that this form equates to the diff
 %- simple plots for descriptive purposes.
 %\fi
 
-\subsection{Confined Diffusion Processes}
+\section{Confined Diffusion Processes}
 
 The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxén derived the relations in no-slip boundary conditions near a brownian particle;
 \begin{equation}
@@ -175,7 +184,7 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 
 - Discuss Greens function alternative, but cite Dresfrene paper.
 
-\subsection{Electrostatic Potentials}
+\section{Electrostatic Potentials}
 
 A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
 \begin{equation}
@@ -214,7 +223,7 @@ This equation has an obvious solution which are the real exponentials;
 	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}.
 \end{equation}
 
-\subsection{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
+\section{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
 
 In the case of interfaces, we have boundary conditions that case the particle to reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Then, we need to solve the adjusted Fokker-Plank equation;
 \begin{equation}
@@ -228,8 +237,21 @@ Using the forward or reverse Ito discretisation, we have that the general soluti
 
 This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
 
-\subsection{Example: Polystyrene Bead}
+\section{Example: Polystyrene Bead}
 
+To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environemnt. 
+
+The simulation scheme used here is the Euler-Maruyama scheme using a discrete time integration. The equations used to siumulate these particles are adapted from \cite{millanNumericalSimulationsConfined2023}, and are listed below. 
+
+% list experiment equations
+\begin{equation}
+    \begin{aligned}
+        eq1 &= 1\\
+        eq2 &= 1\\
+    \end{aligned}
+\end{equation}
+
+We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the differnt cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model.
 
 
 \textcolor{red}{Run through a full calculation and simulation using Langevin Theory.} 

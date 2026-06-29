@@ -19,6 +19,55 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{brownXXVIIBriefAccount1828}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5e20f446d2daa6c87a39214f30e3117d}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{bibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorbibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authornamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-5850, 1941-5869}
+      \field{journaltitle}{The Philosophical Magazine}
+      \field{month}{9}
+      \field{number}{21}
+      \field{title}{{XXVII}. \textit{{A} brief account of microscopical observations made in the months of {June}, {July} and {August}} 1827, \textit{on the particles contained in the pollen of plants; and on the general existence of active molecules in organic and inorganic bodies}}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{1828}
+      \field{urldateera}{ce}
+      \field{pages}{161\bibrangedash 173}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/14786442808674769
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\QT3UYI95\\Brown - 1828 - XXVII. A brief account of microscopical observations made in the months of June, July and August.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+    \endentry
     \entry{garciarodriguezOpticalLabelfreeMicroscopy2025}{article}{}{}
       \name{author}{6}{}{%
         {{hash=e9641c1f4aef042a321218518ff6706d}{%
@@ -218,8 +267,71 @@
       \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
       \endverb
     \endentry
+    \entry{millanNumericalSimulationsConfined2023}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=174529734880b6430b441999bcfaefc8}{%
+           family={Millan},
+           familyi={M\bibinitperiod},
+           given={Elodie},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2f6c433aa5c414b6a38a252acecb092f}{%
+           family={Lavaud},
+           familyi={L\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod}}}%
+        {{hash=708d2165af22a874a38359b95246536e}{%
+           family={Amarouchene},
+           familyi={A\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=563d39a1a2bbe25f939ae31722333d95}{%
+           family={Salez},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{fullhash}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{fullhashraw}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{bibnamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authorbibnamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authornamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authorfullhash}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{authorfullhashraw}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Brownian motion is a central scientific paradigm. Recently, due to increasing efforts and interests towards miniaturization and small-scale physics or biology, the effects of confinement on such a motion have become a key topic of investigation. Essentially, when confined near a wall, a particle moves much slower than in the bulk due to friction at the boundaries. The mobility is therefore locally hindered and space-dependent, which in turn leads to the apparition of so-called multiplicative noises, and associated non-Gaussianities which remain difficult to resolve at all times. Here, we exploit simple, optimized and efficient numerical simulations to address Brownian motion in confinement in a broadrange and quantitative way. To do so, we integrate the overdamped Langevin equation governing the thermal dynamics of a negatively-buoyant single spherical colloid within a viscous fluid confined by two rigid walls, including surface charges. From the produced large set of long random trajectories, we perform a complete statistical analysis and extract all the key quantities, such as the probability distributions in displacements and their main moments. In particular, we propose a novel method to compute high-order cumulants by reducing convergence problems, and employ it to efficiently characterize the inherent non-Gaussianity of the confined process.}
+      \field{month}{3}
+      \field{note}{arXiv:2210.15942 [cond-mat.stat-mech]}
+      \field{title}{Numerical simulations of confined {Brownian}-yet-non-{Gaussian} motion}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2210.15942
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\W6RWMYFH\\Millan et al. - 2023 - Numerical simulations of confined Brownian-yet-non-Gaussian motion.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2210.15942
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2210.15942
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,Physics - Classical Physics,Physics - Fluid Dynamics}
+    \endentry
   \enddatalist
-  \missing{brown_xxvii_1828}
 \endrefsection
 \endinput
 
