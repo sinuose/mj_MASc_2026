@@ -1,48 +1,17 @@
-This is BibTeX, Version 0.99e
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-I found no \citation commands---while reading file main.aux
-I found no \bibdata command---while reading file main.aux
-I found no \bibstyle command---while reading file main.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 482 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
-quote$ -- 0
-skip$ -- 0
-stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[80] biber-MSWIN64:342> INFO - === 
+[113] Biber.pm:421> INFO - Reading 'main.bcf'
+[190] Biber.pm:1002> INFO - Found 3 citekeys in bib section 0
+[199] Biber.pm:4487> INFO - Processing section 0
+[207] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[254] bibtex.pm:1713> INFO - LaTeX decoding ...
+[287] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[326] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[326] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[326] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[326] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[331] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[335] bbl.pm:779> INFO - Output to main.bbl
+[335] Biber.pm:132> WARN - I didn't find a database entry for 'brown_xxvii_1828' (section 0)
+[335] Biber.pm:134> INFO - WARNINGS: 1

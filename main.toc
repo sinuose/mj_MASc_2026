@@ -1,38 +1,36 @@
 \contentsline {chapter}{\numberline {1}Introduction}{5}{}%
 \contentsline {section}{\numberline {1.1}Movivation}{5}{}%
 \contentsline {section}{\numberline {1.2}Outline for Thesis}{5}{}%
-\contentsline {chapter}{\numberline {2}SPT in confinement principles }{7}{}%
-\contentsline {section}{\numberline {2.1}Brownian Motion}{7}{}%
-\contentsline {subsection}{\numberline {2.1.1}Classical Description of Einstein's Brownian Motion}{8}{}%
-\contentsline {subsection}{\numberline {2.1.2}Langevin Dynamics}{9}{}%
-\contentsline {subsection}{\numberline {2.1.3}From Master Equation to Fokker-Planck}{10}{}%
-\contentsline {subsection}{\numberline {2.1.4}Confined Diffusion Processes}{11}{}%
-\contentsline {subsection}{\numberline {2.1.5}Electrostatic Potentials}{11}{}%
-\contentsline {subsection}{\numberline {2.1.6}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
-\contentsline {subsection}{\numberline {2.1.7}Example: Polystyrene Bead}{13}{}%
-\contentsline {section}{\numberline {2.2}Interferometric Scattering Principles}{13}{}%
-\contentsline {subsection}{\numberline {2.2.1}Maxwell's Equations and field propagations equations}{14}{}%
-\contentsline {subsection}{\numberline {2.2.2}Electromagnetic Scattering of of Homogenous Spheres}{15}{}%
-\contentsline {subsection}{\numberline {2.2.3}Types of Microscopy}{17}{}%
-\contentsline {subsection}{\numberline {2.2.4}Scattering Microscopy}{17}{}%
-\contentsline {subsection}{\numberline {2.2.5}Interferometric Light Scattering (iSCAT)}{18}{}%
-\contentsline {subsection}{\numberline {2.2.6}Resolution limits of optical microscopy}{19}{}%
-\contentsline {section}{\numberline {2.3}In-Vivo Considerations}{21}{}%
-\contentsline {subsection}{\numberline {2.3.1}why does this matter for biological applications}{21}{}%
-\contentsline {subsection}{\numberline {2.3.2}Examples of Brownian Motion in Biology}{21}{}%
-\contentsline {section}{\numberline {2.4}Brownian motion as a method for measurements of size in biology}{21}{}%
-\contentsline {subsection}{\numberline {2.4.1}survey of methods using in this field}{21}{}%
-\contentsline {subsection}{\numberline {2.4.2}how confinemen effects these measurements}{21}{}%
-\contentsline {subsection}{\numberline {2.4.3}Probing of surface interactions with these methods}{21}{}%
-\contentsline {chapter}{\numberline {3}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{23}{}%
-\contentsline {section}{\numberline {3.1}Questions}{23}{}%
-\contentsline {section}{\numberline {3.2}Rayleigh scattering of nanoparticles}{23}{}%
-\contentsline {subsection}{\numberline {3.2.1}Parameterization used in this thesis}{23}{}%
-\contentsline {section}{\numberline {3.3}Methods}{23}{}%
-\contentsline {subsection}{\numberline {3.3.1}Optical System}{23}{}%
-\contentsline {subsection}{\numberline {3.3.2}Convex-lens induced confinement}{23}{}%
-\contentsline {section}{\numberline {3.4}Results i guess}{23}{}%
-\contentsline {section}{\numberline {3.5}Discussion of Results}{23}{}%
-\contentsline {chapter}{\numberline {4}Conclusion}{25}{}%
-\contentsline {section}{\numberline {4.1}Conclusion}{25}{}%
-\contentsline {section}{\numberline {4.2}Future outlook}{25}{}%
+\contentsline {chapter}{\numberline {2}Brownian Motion}{7}{}%
+\contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{8}{}%
+\contentsline {section}{\numberline {2.2}Langevin Dynamics}{9}{}%
+\contentsline {subsection}{\numberline {2.2.1}From Master Equation to Fokker-Planck}{10}{}%
+\contentsline {subsection}{\numberline {2.2.2}Confined Diffusion Processes}{11}{}%
+\contentsline {subsection}{\numberline {2.2.3}Electrostatic Potentials}{11}{}%
+\contentsline {subsection}{\numberline {2.2.4}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
+\contentsline {subsection}{\numberline {2.2.5}Example: Polystyrene Bead}{13}{}%
+\contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{15}{}%
+\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{16}{}%
+\contentsline {section}{\numberline {3.2}Types of Microscopy}{18}{}%
+\contentsline {section}{\numberline {3.3}Scattering Microscopy}{18}{}%
+\contentsline {section}{\numberline {3.4}Interferometric Light Scattering (iSCAT)}{19}{}%
+\contentsline {section}{\numberline {3.5}Resolution limits of optical microscopy}{20}{}%
+\contentsline {chapter}{\numberline {4}In-Vivo Considerations}{23}{}%
+\contentsline {section}{\numberline {4.1}why does this matter for biological applications}{23}{}%
+\contentsline {section}{\numberline {4.2}Examples of Brownian Motion in Biology}{23}{}%
+\contentsline {section}{\numberline {4.3}Brownian motion as a method for measurements of size in biology}{23}{}%
+\contentsline {section}{\numberline {4.4}survey of methods using in this field}{23}{}%
+\contentsline {section}{\numberline {4.5}how confinemen effects these measurements}{23}{}%
+\contentsline {section}{\numberline {4.6}Probing of surface interactions with these methods}{23}{}%
+\contentsline {chapter}{\numberline {5}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{25}{}%
+\contentsline {section}{\numberline {5.1}Questions}{25}{}%
+\contentsline {section}{\numberline {5.2}Rayleigh scattering of nanoparticles}{25}{}%
+\contentsline {subsection}{\numberline {5.2.1}Parameterization used in this thesis}{25}{}%
+\contentsline {section}{\numberline {5.3}Methods}{25}{}%
+\contentsline {subsection}{\numberline {5.3.1}Optical System}{25}{}%
+\contentsline {subsection}{\numberline {5.3.2}Convex-lens induced confinement}{25}{}%
+\contentsline {section}{\numberline {5.4}Results i guess}{25}{}%
+\contentsline {section}{\numberline {5.5}Discussion of Results}{25}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{27}{}%
+\contentsline {section}{\numberline {6.1}Conclusion}{27}{}%
+\contentsline {section}{\numberline {6.2}Future outlook}{27}{}%
