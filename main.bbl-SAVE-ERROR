@@ -1,0 +1,365 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{brownXXVIIBriefAccount1828}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5e20f446d2daa6c87a39214f30e3117d}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{fullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{bibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorbibnamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authornamehash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhash}{5e20f446d2daa6c87a39214f30e3117d}
+      \strng{authorfullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1941-5850, 1941-5869}
+      \field{journaltitle}{The Philosophical Magazine}
+      \field{month}{9}
+      \field{number}{21}
+      \field{title}{{XXVII}. \textit{{A} brief account of microscopical observations made in the months of {June}, {July} and {August}} 1827, \textit{on the particles contained in the pollen of plants; and on the general existence of active molecules in organic and inorganic bodies}}
+      \field{urlday}{19}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{4}
+      \field{year}{1828}
+      \field{urldateera}{ce}
+      \field{pages}{161\bibrangedash 173}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/14786442808674769
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\QT3UYI95\\Brown - 1828 - XXVII. A brief account of microscopical observations made in the months of June, July and August.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+      \verb{url}
+      \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+    \endentry
+    \entry{garciarodriguezOpticalLabelfreeMicroscopy2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=e9641c1f4aef042a321218518ff6706d}{%
+           family={García\bibnamedelima Rodríguez},
+           familyi={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Berenice},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7352c6203cfd781fce4562cf174d1656}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a2dc2bede35f9d6ee0857ab51413fa32}{%
+           family={Skärberg},
+           familyi={S\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1428577017aa20ae5b57b5c7895e901d}{%
+           family={Volpe},
+           familyi={V\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=123f4ecdd19af0a4298d1188791105af}{%
+           family={Höök},
+           familyi={H\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a3620cca422aa163d779d86850ff2247}{%
+           family={Midtvedt},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima Sundås},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6aba19dc1f19248cc99bf48458706845}
+      \strng{fullhash}{0f5445997099854d8e457390a25db7e1}
+      \strng{fullhashraw}{0f5445997099854d8e457390a25db7e1}
+      \strng{bibnamehash}{6aba19dc1f19248cc99bf48458706845}
+      \strng{authorbibnamehash}{6aba19dc1f19248cc99bf48458706845}
+      \strng{authornamehash}{6aba19dc1f19248cc99bf48458706845}
+      \strng{authorfullhash}{0f5445997099854d8e457390a25db7e1}
+      \strng{authorfullhashraw}{0f5445997099854d8e457390a25db7e1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Different optical microscopy methods provide different but related single particle information. This tutorial reviews how optical microscopy images can be related to particle properties, including optical theory and strategies for image analysis. , In order to relate nanoparticle properties to function, fast and detailed particle characterization is needed. The ability to characterize nanoparticle samples using optical microscopy techniques has drastically improved over the past few decades; consequently, there are now numerous microscopy methods available for detailed characterization of particles with nanometric size. However, there is currently no “one size fits all” solution to the problem of nanoparticle characterization. Instead, since the available techniques have different detection limits and deliver related but different quantitative information, the measurement and analysis approaches need to be selected and adapted for the sample at hand. In this tutorial, we review the optical theory of single particle scattering and how it relates to the differences and similarities in the quantitative particle information obtained from commonly used label-free microscopy techniques, with an emphasis on nanometric (submicron) sized dielectric particles. Particular emphasis is placed on how the optical signal relates to mass, size, structure, and material properties of the detected particles and to its combination with diffusivity-based particle sizing. We also discuss emerging opportunities in the wake of new technology development, including examples of adaptable python notebooks for deep learning image analysis, with the ambition to guide the choice of measurement strategy based on various challenges related to different types of nanoparticle samples and associated analytical demands.}
+      \field{issn}{2040-3364, 2040-3372}
+      \field{journaltitle}{Nanoscale}
+      \field{number}{14}
+      \field{title}{Optical label-free microscopy characterization of dielectric nanoparticles}
+      \field{urlday}{24}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{17}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{8336\bibrangedash 8362}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1039/D4NR03860F
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\IJKJPQKX\\García Rodríguez et al. - 2025 - Optical label-free microscopy characterization of dielectric nanoparticles.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://xlink.rsc.org/?DOI=D4NR03860F
+      \endverb
+      \verb{url}
+      \verb https://xlink.rsc.org/?DOI=D4NR03860F
+      \endverb
+    \endentry
+    \entry{israelachviliIntermolecularSurfaceForces}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca29df22dd26c2e9accbd893b1185453}{%
+           family={Israelachvili},
+           familyi={I\bibinitperiod},
+           given={Jacob\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{fullhash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{fullhashraw}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{bibnamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorbibnamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authornamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorfullhash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorfullhashraw}{ca29df22dd26c2e9accbd893b1185453}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intermolecular and {Surface} {Forces}}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\BGA8DQDX\\Israelachvili - Intermolecular and Surface Forces.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{kamanziSimultaneousSingleParticleMeasurements2021}{article}{}{}
+      \name{author}{16}{}{%
+        {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
+           family={Kamanzi},
+           familyi={K\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f2e801f71a1a5301e2cb1c6d0fcfab5c}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Yifei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d99beb39b9d1826ab1f2f90f2d90c227}{%
+           family={Tahvildari},
+           familyi={T\bibinitperiod},
+           given={Radin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ad52ab6ddebb9fe36effee986fe4cf98}{%
+           family={Friedenberger},
+           familyi={F\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f3a1c4cd701e4cc756552e0b85a6a1a3}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xingqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=818787a94ebf2914bfec9f575f58a9d6}{%
+           family={Berti},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=80333528c6351b552e796ccc87fe9f80}{%
+           family={Kurylowicz},
+           familyi={K\bibinitperiod},
+           given={Marty},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dad4bb633d1ad67d6098cadc1beac79e}{%
+           family={Witzigmann},
+           familyi={W\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f42db1f71f42617b807cbad672817b01}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Jayesh\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=882652527e662ac234ac6214b4e66955}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ed5a8e56b4f861b081461c1531a7cdc0}{%
+           family={Andersson},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8984dcba661ad9a1b29ed8ae4d75fba0}{%
+           family={Dahlin},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=123f4ecdd19af0a4298d1188791105af}{%
+           family={Höök},
+           familyi={H\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7cf8b198e245599736e4f3d24b84efac}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a099450f6a6b03f168444a5050586954}{%
+           family={Cullis},
+           familyi={C\bibinitperiod},
+           given={Pieter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fef62eaf34e139fc495954494ef2c2cf}{%
+           family={Leslie},
+           familyi={L\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{fullhash}{9d58b9650a995aa38b337ad014d19820}
+      \strng{fullhashraw}{9d58b9650a995aa38b337ad014d19820}
+      \strng{bibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorbibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authornamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorfullhash}{9d58b9650a995aa38b337ad014d19820}
+      \strng{authorfullhashraw}{9d58b9650a995aa38b337ad014d19820}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nanoparticles are a promising solution for delivery of a wide range of medicines and vaccines. Optimizing their design depends on being able to resolve, understand, and predict biophysical and therapeutic properties, as a function of design parameters. While existing tools have made great progress, gaps in understanding remain because of the inability to make detailed measurements of multiple correlated properties. Typically, an average measurement is made across a heterogeneous population, obscuring potentially important information. In this work, we develop and apply a method for characterizing nanoparticles with single-particle resolution. We use convex lens-induced conﬁnement (CLiC) microscopy to isolate and quantify the diﬀusive trajectories and ﬂuorescent intensities of individual nanoparticles trapped in microwells for long times. First, we benchmark detailed measurements of ﬂuorescent polystyrene nanoparticles against prior data to validate our approach. Second, we apply our method to investigate the size and loading properties of lipid nanoparticle (LNP) vehicles containing silencing RNA (siRNA), as a function of lipid formulation, solution pH, and drug-loading. By taking a comprehensive look at the correlation between the intensity and size measurements, we gain insights into LNP structure and how the siRNA is distributed in the LNP. Beyond introducing an analytic for size and loading, this work allows for future studies of dynamics with single-particle resolution, such as LNP fusion and drug-release kinetics. The prime contribution of this work is to better understand the connections between microscopic and macroscopic properties of drug-delivery vehicles, enabling and accelerating their discovery and development.}
+      \field{issn}{1936-0851, 1936-086X}
+      \field{journaltitle}{ACS Nano}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Simultaneous, {Single}-{Particle} {Measurements} of {Size} and {Loading} {Give} {Insights} into the {Structure} of {Drug}-{Delivery} {Nanoparticles}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{19244\bibrangedash 19255}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acsnano.1c04862
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\ZAT9NU2H\\Kamanzi et al. - 2021 - Simultaneous, Single-Particle Measurements of Size and Loading Give Insights into the Structure of D.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
+      \endverb
+    \endentry
+    \entry{millanNumericalSimulationsConfined2023}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=174529734880b6430b441999bcfaefc8}{%
+           family={Millan},
+           familyi={M\bibinitperiod},
+           given={Elodie},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2f6c433aa5c414b6a38a252acecb092f}{%
+           family={Lavaud},
+           familyi={L\bibinitperiod},
+           given={Maxime},
+           giveni={M\bibinitperiod}}}%
+        {{hash=708d2165af22a874a38359b95246536e}{%
+           family={Amarouchene},
+           familyi={A\bibinitperiod},
+           given={Yacine},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=563d39a1a2bbe25f939ae31722333d95}{%
+           family={Salez},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{fullhash}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{fullhashraw}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{bibnamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authorbibnamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authornamehash}{45389f35e5a3070f43cec2cdc88a5de3}
+      \strng{authorfullhash}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \strng{authorfullhashraw}{8d5e8d4155ba910e19d73dca0265cb5c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Brownian motion is a central scientific paradigm. Recently, due to increasing efforts and interests towards miniaturization and small-scale physics or biology, the effects of confinement on such a motion have become a key topic of investigation. Essentially, when confined near a wall, a particle moves much slower than in the bulk due to friction at the boundaries. The mobility is therefore locally hindered and space-dependent, which in turn leads to the apparition of so-called multiplicative noises, and associated non-Gaussianities which remain difficult to resolve at all times. Here, we exploit simple, optimized and efficient numerical simulations to address Brownian motion in confinement in a broadrange and quantitative way. To do so, we integrate the overdamped Langevin equation governing the thermal dynamics of a negatively-buoyant single spherical colloid within a viscous fluid confined by two rigid walls, including surface charges. From the produced large set of long random trajectories, we perform a complete statistical analysis and extract all the key quantities, such as the probability distributions in displacements and their main moments. In particular, we propose a novel method to compute high-order cumulants by reducing convergence problems, and employ it to efficiently characterize the inherent non-Gaussianity of the confined process.}
+      \field{month}{3}
+      \field{note}{arXiv:2210.15942 [cond-mat.stat-mech]}
+      \field{title}{Numerical simulations of confined {Brownian}-yet-non-{Gaussian} motion}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2210.15942
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\W6RWMYFH\\Millan et al. - 2023 - Numerical simulations of confined Brownian-yet-non-Gaussian motion.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2210.15942
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2210.15942
+      \endverb
+      \keyw{Condensed Matter - Statistical Mechanics,Physics - Classical Physics,Physics - Fluid Dynamics}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -8,7 +8,6 @@
 \contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{11}{}%
 \contentsline {section}{\numberline {2.5}Electrostatic Potentials}{12}{}%
 \contentsline {section}{\numberline {2.6}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
-\contentsline {section}{\numberline {2.7}Example: Polystyrene Bead}{13}{}%
 \contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{15}{}%
 \contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{16}{}%
 \contentsline {section}{\numberline {3.2}Types of Microscopy}{18}{}%
@@ -22,16 +21,23 @@
 \contentsline {section}{\numberline {4.4}survey of methods using in this field}{23}{}%
 \contentsline {section}{\numberline {4.5}how confinemen effects these measurements}{23}{}%
 \contentsline {section}{\numberline {4.6}Probing of surface interactions with these methods}{23}{}%
-\contentsline {chapter}{\numberline {5}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{25}{}%
-\contentsline {section}{\numberline {5.1}Questions}{25}{}%
-\contentsline {section}{\numberline {5.2}Reparameterization of Rayleigh scattering of nanoparticles}{25}{}%
-\contentsline {section}{\numberline {5.3}Fitting model developed in this thesis}{25}{}%
-\contentsline {section}{\numberline {5.4}Methods}{25}{}%
-\contentsline {subsection}{\numberline {5.4.1}Sample Details}{25}{}%
-\contentsline {subsection}{\numberline {5.4.2}Optical System}{26}{}%
-\contentsline {subsection}{\numberline {5.4.3}Convex-lens induced confinement}{26}{}%
-\contentsline {section}{\numberline {5.5}Results i guess}{26}{}%
-\contentsline {section}{\numberline {5.6}Discussion of Results}{26}{}%
-\contentsline {chapter}{\numberline {6}Conclusion}{27}{}%
-\contentsline {section}{\numberline {6.1}Conclusion}{27}{}%
-\contentsline {section}{\numberline {6.2}Future outlook}{27}{}%
+\contentsline {chapter}{\numberline {5}Langevin Simulations and Surface Charge inference of Polystyrene beads}{25}{}%
+\contentsline {section}{\numberline {5.1}Simulation Equations}{25}{}%
+\contentsline {section}{\numberline {5.2}Surface Charge Estimator}{26}{}%
+\contentsline {section}{\numberline {5.3}Results}{27}{}%
+\contentsline {chapter}{\numberline {6}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{29}{}%
+\contentsline {section}{\numberline {6.1}Questions}{29}{}%
+\contentsline {section}{\numberline {6.2}Reparameterization of Rayleigh scattering of nanoparticles}{29}{}%
+\contentsline {section}{\numberline {6.3}Fitting model developed in this thesis}{29}{}%
+\contentsline {section}{\numberline {6.4}Methods}{29}{}%
+\contentsline {subsection}{\numberline {6.4.1}Sample Details}{29}{}%
+\contentsline {subsection}{\numberline {6.4.2}Optical System}{30}{}%
+\contentsline {subsection}{\numberline {6.4.3}Convex-lens induced confinement}{30}{}%
+\contentsline {section}{\numberline {6.5}Results i guess}{30}{}%
+\contentsline {section}{\numberline {6.6}Discussion of Results}{30}{}%
+\contentsline {chapter}{\numberline {7}Conclusion}{31}{}%
+\contentsline {section}{\numberline {7.1}Conclusion}{31}{}%
+\contentsline {section}{\numberline {7.2}Future outlook}{31}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{35}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{35}{}%
+\contentsline {section}{\numberline {A.2}Exact $\hat B$ MLE}{36}{}%

@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1783185277.32046 "main.bcf" "main.bbl" "main" 1783185461.49683 0
-  "main.bcf" 1783185461.37237 109054 8c5b29fff9bc2a2e538929fb075a1825 "pdflatex"
+["biber main"] 1783202399.55606 "main.bcf" "main.bbl" "main" 1783209989.22896 0
+  "main.bcf" 1783209989.11265 109149 bf865a7e4cff450db18b68ff51c48ea9 "pdflatex"
   "references.bib" 1782761755.90641 44264 782206a674162e2540de3d1d7826133d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1783185459.56718 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1783185461.49713 0
-  "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1782761755.90603 2662 9f27b9f260f01dab11ea0fce79161429 ""
+["pdflatex"] 1783209987.3965 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1783209989.22936 0
+  "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1783202395.47933 2779 10044eb959be3eb9368e31c9b458869a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -255,19 +255,21 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1753406041 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "A1.tex" 1783209985.19174 2205 a6db4112ac3d6eb74e9819c2fbe9a0a2 ""
   "ABSTRACT.tex" 1781903733.12393 1280 6ca2d75c93a7c949bc9280f2879d5f2d ""
-  "C1.tex" 1783185459.18611 37361 43aae1af414dff7c3003b680fbcf6328 ""
+  "C1.tex" 1783198200.84432 35362 1bd1f63c1f7b040024a378b9c94ae8d8 ""
   "C2.tex" 1782766927.73306 1199 134ab51148a39e54b7aadbac29d4fbaf ""
+  "C3.tex" 1783202309.80143 4962 41bf400a656cd4098f935b389909a295 ""
   "CONC.tex" 1781830520.37875 46 7f6d75627a266a38fcb70d012f03b37d ""
   "Figures/iscat_photo.png" 1782352118.82529 1621039 496228467131bb27e7332b912232ae8c ""
   "Figures/schematic.png" 1782352118.82688 40575 e0d391acb20d303097c4a9c2a4604922 ""
   "Figures/size-comp.png" 1782761897.4234 195926 6cb0641223326530b032e8abeb056754 ""
   "INTRO.tex" 1781903733.12442 1554 0522b72ddd70dd477d2fdc93bacfa2f1 ""
-  "main.aux" 1783185461.37024 7360 a32561a844ad8a7b2fe1b26f0db50138 "pdflatex"
-  "main.bbl" 1783185279.06987 18001 5cf68a70380d50780784a2f37cac0372 "biber main"
-  "main.run.xml" 1783185461.37333 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
-  "main.tex" 1782761755.90603 2662 9f27b9f260f01dab11ea0fce79161429 ""
-  "main.toc" 1783185461.37339 2978 e87e92754a92e7a1b8ed55b71c21e02b "pdflatex"
+  "main.aux" 1783209989.11054 8444 576eaa40b3ecffa50822eca8a5faf656 "pdflatex"
+  "main.bbl" 1783202401.28289 19281 d1cf0f8b58fadf95b2d5f2f8de69a237 "biber main"
+  "main.run.xml" 1783209989.11338 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
+  "main.tex" 1783202395.47933 2779 10044eb959be3eb9368e31c9b458869a ""
+  "main.toc" 1783209989.11346 3435 19c4e517d557f3a5b7f8773a32765020 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

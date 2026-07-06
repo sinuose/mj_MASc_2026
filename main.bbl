@@ -142,6 +142,34 @@
       \verb https://xlink.rsc.org/?DOI=D4NR03860F
       \endverb
     \endentry
+    \entry{israelachviliIntermolecularSurfaceForces}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ca29df22dd26c2e9accbd893b1185453}{%
+           family={Israelachvili},
+           familyi={I\bibinitperiod},
+           given={Jacob\bibnamedelima N},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{fullhash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{fullhashraw}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{bibnamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorbibnamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authornamehash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorfullhash}{ca29df22dd26c2e9accbd893b1185453}
+      \strng{authorfullhashraw}{ca29df22dd26c2e9accbd893b1185453}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intermolecular and {Surface} {Forces}}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\BGA8DQDX\\Israelachvili - Intermolecular and Surface Forces.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{kamanziSimultaneousSingleParticleMeasurements2021}{article}{}{}
       \name{author}{16}{}{%
         {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%

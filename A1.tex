@@ -1,0 +1,47 @@
+\chapter{Surface Charge Estimator Derivation}
+
+This is a section for the derivation of the surface charge estimator used in the axial diffusion estimation.
+
+\section{$\hat B$ MLE}
+
+The Force used in the modelling is given by;
+\begin{equation}
+    V'(z)= B  \frac{k_b T}{\lambda_D} \cdot \exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))
+\end{equation}
+
+The dynamics are governed by the equation, written in the Ito convention, 
+\begin{equation}
+    \Delta z = D'(z) \Delta t - \beta D(z) V'(z) \Delta t + \sqrt{2 D_z} W_t.
+\end{equation}
+Re-writing in terms of drift and diffusion coefficients;
+\begin{equation}
+    \Delta z = \left[ D_z'(z)  - \beta B D(z) \phi(z)  \right] \Delta t+ \sqrt{2 D_z} W_t.
+\end{equation}
+where $\phi(z) = \frac{k_b T}{\lambda_D}\exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))$. This is a Markov-process that has a propagator probability from the Onsager-Machlup path integral representation, 
+\begin{equation}
+    P(z_{n+1}|z_n) = \frac{1}{4D_z\Delta t} \exp\left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right].
+\end{equation} 
+
+To obtain an estimator for $B$, we can take the log-likelihood and differentiate, maximizing it. 
+
+\begin{align*}
+l(B) &= \sum_{n=0}^\infty \left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right] + \text{const} \\
+&= - \frac{1}{2}\sum_{n=0}^\infty\frac{1}{2D_z \Delta t} \left(\Delta z_n - D_z'(z)  + \beta B D(z)\phi(z)\right)^2 + \text{const}. \\
+\end{align*}
+Define $r_n = \Delta z_n - D_z'(z)$ and $w_n = \frac{1}{2D_z}$. Find the maximum of the log-likelihood by taking the derivative of $l$ with respect to $B$.
+\begin{align*}
+    l'(B) = -\sum_{n=0}^\infty\frac{w_n}{\Delta t} \left(r_n  + \beta B D(z)\phi(z)\right)\beta D(z) \phi(z) \\
+\end{align*}
+We can set this to 0 and solve for $\hat B$.
+\begin{equation}
+    \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}
+\end{equation}
+
+Now we can find the variance of this MLE
+
+\textcolor{red}{Get the fisher information matrix and solve.}
+
+\section{Exact $\hat B$ MLE}
+Here can we get an exact
+
+

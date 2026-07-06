@@ -1,0 +1,70 @@
+
+To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environemnt. 
+
+The goal of this project was to model the diffusion process of confined diffusion using literature, and utilize pre-existing theory to for a statistical estimator of surface charge from diffusion dyanmics.
+
+\section{Simulation Equations}
+
+The simulation scheme follows that descirbed in \cite{millanNumericalSimulationsConfined2023}. A brownian particle diffuses between two walls such that $(x,y)$ are perpendicular to the walls, and $z$ is parallel. The electrostatic force that the particle feels is then only in the $z$ direction. The diffusivity of the particle will depend on the distance of the walls. The langevin equation simulated, 
+\begin{equation}
+    m\ddot{\vec{x}(t)} = - \lambda \dot{\vec{x}(t)} + \vec F(\vec{x}(t)) + \sqrt{2k_b T \lambda} \vec{W}(t),
+\end{equation}
+is first seperated into transverse and axial components, where $F$ is the electrostatic force, $\lambda$ is the friction. Here, we can re-write the diffusion coefficient using the Stokes-Einstein relation,
+\begin{equation}
+    D(z) = \frac{k_b T}{\lambda(z)}.
+\end{equation}
+
+Then, in overdamped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the equations of motion as
+\begin{equation}
+    \begin{aligned}
+        \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
+        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\lambda(z)},
+    \end{aligned}
+\end{equation}
+as descirbed in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the overdamped regime for many particle materials, such as PMMA or coated polystyrene.
+
+To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, we can rewrite the above equations in the Ito form, replacing lowercase variables with their captial, stochastic, equivalents:
+\begin{equation}
+    \begin{aligned}
+        dX_t &= \sqrt{2D_x(z)} dW_x \\
+        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\lambda(z)} dt,
+    \end{aligned}
+\end{equation}
+
+The simulated system of equations is then the pair of equations;
+\begin{equation}
+    \begin{aligned}
+        x_{n+1} &= x_n + \sqrt{2D_x(z_n)} W_{x,n}\Delta t\\
+        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} W_{x,n}\right]\Delta t\\
+    \end{aligned}
+\end{equation}
+where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ is the discretized time. 
+
+\section{Surface Charge Estimator}
+
+As described earlier, the relations for the effective potential are described if one knows the particle properties and surface charge. In terms of measureables, electrostatic interactions can be fully described by the following  equation,
+
+\begin{equation}
+    U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right],
+\end{equation}
+where the prefactor is described by the map $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$,
+\begin{align}
+    B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
+    C & = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
+    \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right]
+\end{align}
+where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potenital for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the debye-length. 
+
+The 
+
+
+\section{Results}
+
+We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the differnt cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model.
+
+
+\textcolor{red}{Run through a full calculation and simulation using Langevin Theory.} 
+
+The avergae, modelled parameters of the polystyrene bead are defined below. Using the ensemble measurements reffered to commericial beads (Thermofisher FluoSpheres™ Carboxylate-Modified Microspheres $\SI{0.1}{\micro \meter}$); $\rho = \SI{1.04}{\g \per \cm^3}$, $\zeta = -\SI{40}{\milli \volt}$, $a = \SI{50}{\nm}$. The system is modelled in phosphate-buffered saline which will have a varied debye length, $\eta = \SI{1}{\milli \pascal \s}$. 
+
+\textcolor{red}{Here we need to put in the followig sections 1. Parameters (done) 2. Simulation results  - (Histogram of positions vs. Boltzman Distribution for varying conditions) - (MSD of the particle vs. varying conditions) 3. Write about how to estimate the charge using a maximum likelihood estimator. 4. Estimation of surface charge vs. varied conditions}

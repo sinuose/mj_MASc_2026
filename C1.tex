@@ -223,6 +223,24 @@ This equation has an obvious solution which are the real exponentials;
 	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}.
 \end{equation}
 
+The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the prefactor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
+
+In the approximations done in this thesis, we assume a linear symmetric potential, as well as a spherical particle between them. The form of this potential is given by 
+\begin{equation}
+    B = |\psi| \Gamma_p \Gamma_w,
+\end{equation}
+where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle;
+\begin{equation}
+    \begin{aligned}
+        |\psi| &= \\
+        \Gamma_w &= \tanh\left(\frac{e \psi_w}{4k_b T}\right)\\
+        \Gamma_p &= \tanh\left(\frac{e \zeta_p}{4k_b T}\right)\\
+        \psi_w & = \frac{2 k_b T}{e} \text{asinh}\frac{e\lambda_D \sigma_w}{2 \varepsilon_0 \varepsilon_r k_b T}.
+    \end{aligned}
+\end{equation}
+Note that $\psi_w$ is the Stern layer of the wall related to the surface charge density of the wall \cite{israelachviliIntermolecularSurfaceForces}. This is chosen for a more intuitave measureable of a wall-like strucutre. 
+
+
 \section{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
 
 In the case of interfaces, we have boundary conditions that case the particle to reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Then, we need to solve the adjusted Fokker-Plank equation;
@@ -230,63 +248,12 @@ In the case of interfaces, we have boundary conditions that case the particle to
 	j = -\frac{\partial}{\partial x}\left[D(x)f(x)\right] - \nabla V(x) f(x) 
 \end{equation}
 
-Using the forward or reverse Ito discretisation, we have that the general solution is;
+Setting $j$ to 0, we find that the solution of this equation defines the equilibrium distribution after a long time. 
 \begin{equation}
-	f(x) = N e^{H_0 + \int_{0}^{x}\frac{\nabla V(y)}{D(y)} dy}
+	f(x) = \frac{\exp \left[-\beta\int_0^x (\frac{\nabla V(y)}{D(y)}) dy \right]}{\exp \left[-\beta \int_{-H}^{H}(\frac{\nabla V(y)}{D(y)}) dy \right]}
 \end{equation}
 
 This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
-
-\section{Example: Polystyrene Bead}
-
-To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environemnt. 
-
-The simulation scheme follows that descirbed in \cite{millanNumericalSimulationsConfined2023}. A brownian particle diffuses between two walls such that $(x,y)$ are perpendicular to the walls, and $z$ is parallel. The electrostatic force that the particle feels is then only in the $z$ direction. The diffusivity of the particle will depend on the distance of the walls. The langevin equation simulated, 
-\begin{equation}
-    m\ddot{\vec{x}(t)} = - \lambda \dot{\vec{x}(t)} + \vec F(\vec{x}(t)) + \sqrt{2k_b T \lambda} \vec{W}(t),
-\end{equation}
-is first seperated into transverse and axial components, where $F$ is the electrostatic force, $\lambda$ is the friction. Here, we can re-write the diffusion coefficient using the Stokes-Einstein relation,
-\begin{equation}
-    D(z) = \frac{k_b T}{\lambda(z)}.
-\end{equation}
-
-Then, in overdamped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the equations of motion as
-\begin{equation}
-    \begin{aligned}
-        \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
-        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\lambda(z)},
-    \end{aligned}
-\end{equation}
-as descirbed in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the overdamped regime for many particle materials, such as PMMA or coated polystyrene.
-
-To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, we can rewrite the above equations in the Ito form, replacing lowercase variables with their captial, stochastic, equivalents:
-\begin{equation}
-    \begin{aligned}
-        dX_t &= \sqrt{2D_x(z)} dW_x \\
-        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\lambda(z)} dt,
-    \end{aligned}
-\end{equation}
-
-The simulated system of equations is then the pair of equations;
-\begin{equation}
-    \begin{aligned}
-        x_{n+1} &= x_n + \sqrt{2D_x(z_n)} W_{x,n}\Delta t\\
-        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} W_{x,n}\right]\Delta t\\
-    \end{aligned}
-\end{equation}
-where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ is the discretized time. 
-
-
-
-We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the differnt cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model.
-
-
-\textcolor{red}{Run through a full calculation and simulation using Langevin Theory.} 
-
-The avergae, modelled parameters of the polystyrene bead are defined below. Using the ensemble measurements reffered to commericial beads (Thermofisher FluoSpheres™ Carboxylate-Modified Microspheres $\SI{0.1}{\micro \meter}$); $\rho = \SI{1.04}{\g \per \cm^3}$, $\zeta = -\SI{40}{\milli \volt}$, $a = \SI{50}{\nm}$. The system is modelled in phosphate-buffered saline which will have a varied debye length, $\eta = \SI{1}{\milli \pascal \s}$. 
-
-
-
 
 \chapter{Interferometric Scattering Principles}
 
