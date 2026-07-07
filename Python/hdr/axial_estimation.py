@@ -867,16 +867,20 @@ def getAxialInference(  roi,
         ax2.grid()
         plt.show(block=False)
 
+    sel = (rad_av_arr - np.array([iPSF_radial(r_common_nm, k, zxx, E0_best, 0, ef_best) for zxx in z_traj]))**2
     ssr = np.sum((rad_av_arr - np.array([iPSF_radial(r_common_nm, k, zxx, E0_best, 0, ef_best) for zxx in z_traj]))**2, axis=1)
     sst = np.sum((rad_av_arr - np.mean(rad_av_arr, axis=1, keepdims=True))**2, axis=1)
 
     r2score = 1 - ssr/sst
     
     opt = {}
+    opt['resdf'] = res_df
+
     opt['z']  = z_traj
     opt['E0'] = E0_best
     opt['ef'] = ef_best
     opt['r2'] = r2score
+    opt['sel'] = sel
 
     if debug == True:
         opt['r_arr'] = r_common_nm

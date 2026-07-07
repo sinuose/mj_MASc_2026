@@ -109,7 +109,49 @@ This chapter first discusses the overview of the fitting method. The theory and 
 \dots
 \section{Simulated iPSF localization}
 
-Introduce model, look at data and run it!
+To validate the proposed method, one performs simulated axial-estimation. Simulated iSCAT point spread functions were generated using the PySCAT library for $\lambda=\SI{405}{\nm}$. The iPSF was generated for the focal range $z_{f} \in [-1000, 0]$. The assumed particle is spherical with radius $a = \SI{50}{\nm}$. The iPSF is shown in Fig. \ref{fig:ipsf_sim}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/sim_ipsf.pdf}
+    \caption{Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI{400}{\nm}$. pixel size is $\SI{55}{\nm}/\text{pixel}$. $\lambda = \SI{405}{\nm}$. Assumed particle radius $a = \SI{50}{\nm}$.}
+    \label{fig:ipsf_sim}
+\end{figure}
+
+As mentioned, the localization pipeline utilizes a weighting scheme to account for objective abberation and misalignments to non-modelled regions of the data, such as the central fringe. This is accounted for by using a binary weighting array, $\mathbf{w}$. In the case of these idealized simulations, we will show the effect of changing the weighting scheme as we proceed. This demonstrates a loss of absolute precision, however, maintains the relative precision, which is that of interest in measurements of axial trajectory. 
+
+\subsection{3-parameter Estimation}
+
+As a reminder, the model for the iPSF is a multivariate function $\text{iPSF}:(z, E_0, \gamma) \rightarrow \R^2$. It has been shown that the statistical model of $\text{iPSF}$ takes;
+\begin{equation}
+    \begin{aligned}
+        \hat{E_0} &\sim \text{Gamma}(\mu_{E_0}, \sigma_{E_0}) \\
+        \hat{\gamma} &\sim \text{logNorm}(\mu_{\gamma}, \sigma_{\gamma}) \\
+    \end{aligned}
+\end{equation}
+
+The so-called 3-parameter estimation is a sampling of nuisance parameters in the model. The nuisance parameters here are $\hat{E_0}, \hat \gamma$, where $\hat{E_0}$ is an ampltiude factor, and $\gamma$ is an exponential decay factor used to account for spatial decay in signal. The amplitude factor can be analytically solved for using a grid-search sweep along $z$. The $\gamma$ factor is fitted to using the L-BFGS-B minimization algorithm. This nuisance parameter fit is shown in the histograms of these two parameters shown in Fig. \ref{fig:nuisance_fit}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/nuisance_param.pdf}
+    \caption{Nuisance Parameter estimation for iPSF fits. Left. Ampltiude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}
+    \label{fig:nuisance_fit}
+\end{figure}
+
+\subsection{Grid-Search Estimation}
+
+Once the nuisance parameters are chosen, a gridsearch with a dynamic linking is performed. Each frame is assumed to have a maximal diffusion time. This is in place to optimize for noise and have coherent, physical traces without outliers. The grid search takes the difference between the data and a scan over the model with the nuisance parameters in place. The best loss is chosen. In the case of linking, the minimal loss over the path is chosen. The full algorithm is discussed elsewhere. the residuals of this using no fitting are shown in Fig. \ref{fig:fit_residuals}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/simulation_fit_residual.pdf}
+    \caption{Fit resdiuals using no weighting scheme. reportng an absolut bias of 1 nm with variance of 2 nanometers.}
+    \label{fig:fit_residuals}
+\end{figure}
+
+
+
 
 \section{Conclusions}
 
