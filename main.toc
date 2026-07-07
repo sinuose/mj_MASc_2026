@@ -28,6 +28,9 @@
 \contentsline {section}{\numberline {5.4}Applied Models}{28}{}%
 \contentsline {section}{\numberline {5.5}Conclusion}{28}{}%
 \contentsline {chapter}{\numberline {6}iSCAT z-estimation Simulations}{29}{}%
+\contentsline {section}{\numberline {6.1}Method Overview}{29}{}%
+\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{29}{}%
+\contentsline {section}{\numberline {6.3}Conclusions}{29}{}%
 \contentsline {chapter}{\numberline {7}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{31}{}%
 \contentsline {section}{\numberline {7.1}Questions}{31}{}%
 \contentsline {section}{\numberline {7.2}Reparameterization of Rayleigh scattering of nanoparticles}{31}{}%
