@@ -106,7 +106,105 @@ here we discuss the estimation of z-estimation on rayleigh length diffraction. T
 This chapter first discusses the overview of the fitting method. The theory and statistical tools used are discussed. A general pseudocode is provided. Following this, the model is evaluated on simulated iPSF data using Mie Theory using a published iSCAT iPSF Python library. Speed and performance are taken into account. 
 
 \section{Method Overview}
-\dots
+
+The Axial inference pipeline is described in order of operation on image data. 
+
+\subsection{Image Background Subtraction and Noise Consideration}
+
+\subsection{Radial Integral}
+
+Image data will have background misalignment due to iSCAT hardware setup. To optimize for fitting speed and misalignement property, radial scattering profile are assumed as in the rayleigh regime model is symmetric. The radial integration method is described in Alg \ref{alg:rad_int}.
+
+\begin{algorithm}[H]
+    \caption{Discrete Radial Integral}
+    \label{alg:rad_int}
+    \begin{algorithmic}[1]
+        \Require $\text{I}\{F, H, W\}$, list of image ROIs\\
+        $\theta_0$, starting angle
+        $\Delta \theta$, Angular integration distance
+        $R$, polar integration bound
+        \State $\text{rad\_av\_arr}$ = []
+        \State $m = \text{Disk}[R, \theta_0, \theta_0 + \Delta \theta]$
+        \For {$t=1$ to $F$}
+            \State $v = I[m]$
+            \State $\text{rad\_av\_arr}[t] = \sum_\theta v$ 
+        \EndFor
+        \State \Return $\text{rad\_av\_arr}$
+    \end{algorithmic}
+\end{algorithm}
+
+\subsection{Nuisance parameter Estimation}
+
+To obtain accurate estimation of the $z$ position relative to nearby frames, nuisance estimation is done to focus on $z$ fitting. To do this, L-BFGS-B Fitting is performed. alongside amplitude fitting. This is described in the algorithm below. 
+
+\subsection{2D Chainlink}
+
+To link consequent positions in space, a dynamic programming algorithm is used. The algorithm is descirbed in Alg. \ref{alg:best_chain_2d}
+
+\begin{algorithm}[H]
+\caption{Dynamic Programming for Best 2D Chain of Points}
+\label{alg:best_chain_2d}
+\begin{algorithmic}[1]
+\Require 
+    $\text{min\_idx} = \{ \text{min\_idx}[t] \}_{t=0}^{F-1}$, list of candidate positions per frame\\
+    $\text{min\_vals} = \{ \text{min\_vals}[t] \}_{t=0}^{F-1}$, list of candidate values per frame\\
+    $w = (w_x, w_y)$, weighting for distance computation (default $(1,1)$)\\
+    $\text{max\_step}$, optional maximum allowed step distance
+\Ensure
+    $\text{idx\_chain}, \text{x\_chain}, \text{y\_chain}$, the indices, positions, and values of the optimal path
+
+\State Initialize $F \gets |\text{min\_idx}|$
+\State Initialize $cost[i] \gets 0$ for all $i$ in frame $0$
+\State Initialize $prev \gets []$ \Comment{to store predecessor indices}
+
+\For{$t = 1$ to $F-1$}
+    \State $A_x \gets \text{min\_idx}[t-1]$, $B_x \gets \text{min\_idx}[t]$
+    \State $A_y \gets \text{min\_vals}[t-1]$, $B_y \gets \text{min\_vals}[t]$
+    \State Compute pairwise differences:
+        \[
+        \Delta_x[i,j] = |A_x[i] - B_x[j]|, \quad 
+        \Delta_y[i,j] = |A_y[i] - B_y[j]|
+        \]
+    \State Compute weighted Euclidean distances:
+        \[
+        D[i,j] = \sqrt{ (w_x \Delta_x[i,j])^2 + (w_y \Delta_y[i,j])^2 }
+        \]
+    \If{max\_step is not None}
+        \State Set $D[i,j] \gets \infty$ if $D[i,j] > \text{max\_step}$
+        \If{no finite $D[i,j]$ exists}
+            \State \Return empty path
+        \EndIf
+    \EndIf
+
+    \State Compute cumulative path cost matrix:
+        \[
+        M[i,j] = cost[i] + D[i,j]
+        \]
+    \State For each node $j$ in frame $t$, find predecessor $p[j]$ minimizing $M[:,j]$:
+        \[
+        p[j] = \arg\min_i M[i,j], \quad
+        new\_cost[j] = M[p[j], j]
+        \]
+    \State Update $cost \gets new\_cost$
+    \State Append $p$ to $prev$
+\EndFor
+
+\State Initialize $j \gets \arg\min_i cost[i]$  \Comment{index of minimal total cost in last frame}
+\State Initialize $\text{idx\_chain} \gets [0]^{F}$, set $\text{idx\_chain}[F-1] \gets j$
+\For{$t = F-2$ down to $0$}
+    \State $\text{idx\_chain}[t] \gets prev[t][\text{idx\_chain}[t+1]]$
+\EndFor
+
+\State Compute chains:
+\[
+\text{x\_chain}[t] = \text{min\_idx}[t][\text{idx\_chain}[t]], \quad
+\text{y\_chain}[t] = \text{min\_vals}[t][\text{idx\_chain}[t]]
+\]
+
+\State \Return $\text{idx\_chain}, \text{x\_chain}, \text{y\_chain}$
+\end{algorithmic}
+\end{algorithm}
+
 \section{Simulated iPSF localization}
 
 To validate the proposed method, one performs simulated axial-estimation. Simulated iSCAT point spread functions were generated using the PySCAT library for $\lambda=\SI{405}{\nm}$. The iPSF was generated for the focal range $z_{f} \in [-1000, 0]$. The assumed particle is spherical with radius $a = \SI{50}{\nm}$. The iPSF is shown in Fig. \ref{fig:ipsf_sim}

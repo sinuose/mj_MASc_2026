@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber main"] 1783445113.1727 "main.bcf" "main.bbl" "main" 1783465052.54786 0
-  "main.bcf" 1783465052 109210 54be4c4a3f1ba79878e089f572ed8fdd "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1783466079.52609 -1
+  "main.bcf" 1783466079 109210 54be4c4a3f1ba79878e089f572ed8fdd "pdflatex"
   "references.bib" 1782757482 44264 782206a674162e2540de3d1d7826133d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1783465050.56343 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1783465052.54844 0
+["pdflatex"] 1783466077.39892 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1783466079.52664 0
   "A1.tex" 1783374879 2252 a6db4112ac3d6eb74e9819c2fbe9a0a2 ""
   "ABSTRACT.tex" 1781899394 1295 6ca2d75c93a7c949bc9280f2879d5f2d ""
   "C1.tex" 1783374879 35930 1bd1f63c1f7b040024a378b9c94ae8d8 ""
   "C2.tex" 1782768669 1237 134ab51148a39e54b7aadbac29d4fbaf ""
-  "C3.tex" 1783465050 12089 df3ded7366b96e4626fe91606cd39b68 ""
-  "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1782755742 318203 ded6def68845cd324d278c83e332d82c ""
+  "C3.tex" 1783466074 16136 345e8844980bb86372e4c4af8826ba65 ""
+  "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783465222 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1781733618 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs7.tfm" 1782755744 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
@@ -167,6 +167,9 @@
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-common.tex" 1756451143 30029 c49ea8f95207c46731469c614daf4e33 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/generic/pgf/utilities/pgfutil-latex.def" 1756451143 7067 11553488d1600cac6a0cfca012fca111 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg" 1616067285 584 2a1075dd71571459f59146da9f7502ad ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/algorithmicx/algorithmicx.sty" 1114664400 26750 ce139c05a983e19ddca355b43e29c395 ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/algorithmicx/algpseudocode.sty" 1114664520 3457 d9077efe6b74c5a094199256af8d7d9a ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/algorithms/algorithm.sty" 1251549064 3349 15763257e50278eef5db1952ccde229c ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/amscls/amsthm.sty" 1591023609 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty" 1358197772 13829 94730e64147574077f8ecfea9bb69af4 ""
@@ -197,6 +200,7 @@
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/circuitikz/circuitikz.sty" 1779786409 13862 0c2488bbaa5b029a7da55760c1f6f23a ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1759409308 46885 8953c67ffba03252c6090aa19568b8ba ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/float/float.sty" 1469023953 6916 16d2656a1984957e674b149555f1ea1d ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1773583286 1083 f69f5eb2d8e249286c59dd1340122e59 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1773583286 41904 7711079366884e0d15963c9d40019853 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/graphics-cfg/color.cfg" 1465894292 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -266,12 +270,12 @@
   "Python/Figures/nuisance_param.pdf" 1783464452 36943 741b075c19999eacfca1fb0d481bed8a ""
   "Python/Figures/sim_ipsf.pdf" 1783464170 223410 71686008cd59aa2eb15b2f086a541895 ""
   "Python/Figures/simulation_fit_residual.pdf" 1783464887 71236 3fa5b9bab854402bd319310435021689 ""
-  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1783444297 2905 402aae18cd7ee589ce60a00de942e199 ""
-  "main.aux" 1783465052 11001 9088b48299180c607218ff60d814653e "pdflatex"
+  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1783465212 2957 a79b6182d2019b2070042200f6174e6f ""
+  "main.aux" 1783466079 11882 2cab963b8b512842204cfee22466a811 "pdflatex"
   "main.bbl" 1783445115 19646 d1cf0f8b58fadf95b2d5f2f8de69a237 "biber main"
-  "main.run.xml" 1783465052 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
-  "main.tex" 1783444297 2905 402aae18cd7ee589ce60a00de942e199 ""
-  "main.toc" 1783465052 3944 1d8c1089e2525e85ff740e897b492f58 "pdflatex"
+  "main.run.xml" 1783466079 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
+  "main.tex" 1783465212 2957 a79b6182d2019b2070042200f6174e6f ""
+  "main.toc" 1783466079 4272 dd99cbaf8f5dee76f88bd99b93654f7e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
