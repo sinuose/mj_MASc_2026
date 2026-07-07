@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  6 JUL 2026 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  6 JUL 2026 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1035,7 +1035,7 @@ Overfull \hbox (119.81216pt too wide) has occurred while \output is active
 <Figures/simulations/realization_and_boltzmann.pdf, id=119, 713.53282pt x 255.1245pt>
 File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
 <use Figures/simulations/realization_and_boltzmann.pdf>
-Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 69.
+Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 67.
 (pdftex.def)             Requested size: 489.10287pt x 174.88379pt.
 )
 Overfull \hbox (119.81216pt too wide) has occurred while \output is active
@@ -1044,34 +1044,29 @@ Overfull \hbox (119.81216pt too wide) has occurred while \output is active
 
 [28
 
- <./Figures/simulations/realization_and_boltzmann.pdf>] [29]
-Overfull \hbox (119.81216pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 5.  LANGEVIN SIMULATIONS AND SURFACE CHARGE INFERENCE OF POLYSTYRENE BEADS
- []
-
-[30
-
-]
+ <./Figures/simulations/realization_and_boltzmann.pdf>]
 Chapter 6.
-(C2.tex [31])
+(C2.tex [29
+
+])
 Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 32 \OT1/cmr/m/sl/12 CHAPTER 6.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS
+\OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 6.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS
  []
 
-[32]
+[30]
 Chapter 7.
-(CONC.tex) [33
+(CONC.tex) [31
 
-] [34
+] [32
 
-] (A1.tex [35] [36
+] (A1.tex [33] [34
 
 ]
 Appendix A.
 
 Underfull \vbox (badness 4981) has occurred while \output is active []
 
- [37]) [38] (main.aux)
+ [35]) [36] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1089,9 +1084,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2021b,1287s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (38 pages, 3438443 bytes).
+Output written on main.pdf (36 pages, 3437149 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  49697 words of extra memory for PDF output out of 51595 (max. 10000000)
 
