@@ -1,4 +1,6 @@
 
+\chapter{Langevin Simulations}
+
 To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environemnt. 
 
 The goal of this project was to model the diffusion process of confined diffusion using literature, and utilize pre-existing theory to for a statistical estimator of surface charge from diffusion dyanmics.
@@ -71,8 +73,34 @@ We will simulate the priors of a Polystyrene bead diffusing with neutral charged
 
 For a given experiment, one aims to measure something from knowing the trajectory of the particle. The simplest is an estimate of the size of the particle. One can do this using the transverse and axial trajectories obtained from the Langevin equation as a method to test the variance of the estimator given a known ground truth. In the case of an eletrostatic potential, we can directly how measurements which do not account for screening effects change the measurment. 
 
-\textcolor{red}{Run through a full calculation and simulation using Langevin Theory.} 
+\textcolor{red}{Figure of the z trajectory and z msd for two highly different charges}
+
+\textcolor{blue}{Figure of the x trajectory and x msd for two highly different charges}
+
+The MSD is an estimator of the particle radius. The following is  an evaluation of this relationship.
+
+\textcolor{red}{Figure of the recovered radius from z msd, x msd vs. particle zeta potential (?)}
+
+This exploration of the size shows a clear dependence on a drift due to the electrostatics. This drfit is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. 
+
+We can also vary the debye length in experiments using the addition  of ionic solutions. 
+
+\textcolor{red}{Figure of the recovered radius from z msd, x msd vs. Debye length (?)}
+
+\textcolor{red}{plot of likelihood of charge or something vs groud truth. }
+
+\section{Applied Models}
 
 The avergae, modelled parameters of the polystyrene bead are defined below. Using the ensemble measurements reffered to commericial beads (Thermofisher FluoSpheres™ Carboxylate-Modified Microspheres $\SI{0.1}{\micro \meter}$); $\rho = \SI{1.04}{\g \per \cm^3}$, $\zeta = -\SI{40}{\milli \volt}$, $a = \SI{50}{\nm}$. The system is modelled in phosphate-buffered saline which will have a varied debye length, $\eta = \SI{1}{\milli \pascal \s}$. 
 
 \textcolor{red}{Here we need to put in the followig sections 1. Parameters (done) 2. Simulation results  - (Histogram of positions vs. Boltzman Distribution for varying conditions) - (MSD of the particle vs. varying conditions) 3. Write about how to estimate the charge using a maximum likelihood estimator. 4. Estimation of surface charge vs. varied conditions}
+
+\section{Conclusion}
+
+In conclusion, we have shown that confined simulations can be readily simulated with physical parameters as per literature. we have introduced a new MLE for the amplitude based on ito drift calculations. 
+
+\chapter{iSCAT z-estimation Simulations}
+
+here we discuss the estimation of z-estimation on rayleigh length diffraction.
+
+
