@@ -71,29 +71,43 @@ We will simulate the priors of a Polystyrene bead diffusing with neutral charged
     \label{fig:brown_realization}
 \end{figure}
 
+\subsection{mean-squared displacement in confinement}
+
 For a given experiment, one aims to measure something from knowing the trajectory of the particle. The simplest is an estimate of the size of the particle. One can do this using the transverse and axial trajectories obtained from the Langevin equation as a method to test the variance of the estimator given a known ground truth. In the case of an eletrostatic potential, we can directly how measurements which do not account for screening effects change the measurment. 
 
-\textcolor{red}{Figure of the z trajectory and z msd for two highly different charges}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/xz_msd_comparison.pdf}
+    \caption{Comparison between MSd curves of two highly differnet confined diffusors. Exposure time $\tau = \SI{200}{\micro \second}$, $\lambda_D = \SI{10}{\nm}$. }
+    \label{fig:xz_msd_comparison}
+\end{figure}
 
-\textcolor{blue}{Figure of the x trajectory and x msd for two highly different charges}
+The notation of a higher confinement with respect to the zeta-potenital is intrinsically linked to the electrostatic potential that the particle feels as it explores the well. This relationship between the effective confinement length can be solved by solving the Green's function for the FP-equation in the presence of an electrostatic potential. However, this happens to be non-analytical in the case of the Poisson-Boltzmann potenital approximated in the Debye-Huckel theory. However, using the developed simulation class, this relationship can be directly measured. The same settings were used while fixing the zeta-potential of the particle, and varying the ionic concentration of the solution, which is inversely proportional to the debye-length,
+\begin{equation}
+    \lambda_D \propto \frac{1}{\sqrt{C}},
+\end{equation}
+where $C$ is the ionic concentration of a dilute eletrolyte compound [CITE]. To model this, the simulation settings are chosen as such $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. The relationship between the effective confinement length and the ionic concentration is shown in Fig. \ref{fig:conf_debyelen}
 
-The MSD is an estimator of the particle radius. The following is  an evaluation of this relationship.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/conf_debyelength.pdf}
+    \caption{Effective Confinement length plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \label{fig:conf_debyelen}
+\end{figure}
 
-\textcolor{red}{Figure of the recovered radius from z msd, x msd vs. particle zeta potential (?)}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/diff_debye.pdf}
+    \caption{Effective diffusion plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \label{fig:diff_debyelen}
+\end{figure}
 
-This exploration of the size shows a clear dependence on a drift due to the electrostatics. This drfit is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. 
 
-We can also vary the debye length in experiments using the addition  of ionic solutions. 
+\subsection{Surface Charge estimation}
 
-\textcolor{red}{Figure of the recovered radius from z msd, x msd vs. Debye length (?)}
+The particle's exploration demonstrated a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. 
 
 \textcolor{red}{plot of likelihood of charge or something vs groud truth. }
-
-\section{Applied Models}
-
-The avergae, modelled parameters of the polystyrene bead are defined below. Using the ensemble measurements reffered to commericial beads (Thermofisher FluoSpheres™ Carboxylate-Modified Microspheres $\SI{0.1}{\micro \meter}$); $\rho = \SI{1.04}{\g \per \cm^3}$, $\zeta = -\SI{40}{\milli \volt}$, $a = \SI{50}{\nm}$. The system is modelled in phosphate-buffered saline which will have a varied debye length, $\eta = \SI{1}{\milli \pascal \s}$. 
-
-\textcolor{red}{Here we need to put in the followig sections 1. Parameters (done) 2. Simulation results  - (Histogram of positions vs. Boltzman Distribution for varying conditions) - (MSD of the particle vs. varying conditions) 3. Write about how to estimate the charge using a maximum likelihood estimator. 4. Estimation of surface charge vs. varied conditions}
 
 \section{Conclusion}
 

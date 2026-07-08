@@ -542,13 +542,13 @@ theortical 100 nm particle -> scattering field -> abberations
 
 \chapter{In-Vivo Considerations}
 
-Given that we understand how brownian motion works and more or less
+As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequaetly understand the confinement effect of diffusion in a given system. 
 
-- Now that we more or less know how BM works, why is it important in cells?
+Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
 
 \section{Diffusion in Vivo}
 
-The cellular system consists of many differfent components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $\SI{1-10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $\SI{10-100}{\nano \meter}$. 
+The cellular system consists of many differfent components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
 
 This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an overdamped langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate we need that the diffusive timescale is must shorter. Here, we find that since the Peclet number is proportional to the characteristics length $L$, while the reynolds number is $L^2$. for small characteristic lengths, such as those proposed, we see that the diffusive term is clearly shorter. 
 
@@ -564,19 +564,14 @@ However, there are other methods that can be used. As this thesis is not concern
 
 In complicment to single molcule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of moelcules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are illposed for polydisperse sample, which is one of the weaknesses of the DLS method. 
 
-
-- Bulk: DLS, 
-- Single Molecule: SPT, NTA, FCS, 
-
 \section{lipid nanoparticles as a test subject}
 
 The bioligcal molcuel of choice for this investigation of cofninemetn is a useful one with lots of applications - the lipid nanoparticle (LNP).
 
-we start by discussing the liposome as a macroscopic object. The liposome is a spherical membrane of lipid subunits, each carring a charge, and a hydrophobicity. These molecules can be made and are roughly $\SI{100}{\nm}$ in diameter. 
+The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$
 
+In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
 
-
-In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. This paper will apply the investigations into confined diffusion to improve upon the size-determination methods using in CLiC and SPT diffusion style techniques in confined geometries.
 
 
 

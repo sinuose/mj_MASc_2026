@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  7 JUL 2026 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  8 JUL 2026 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1047,71 +1047,94 @@ Underfull \vbox (badness 2809) has occurred while \output is active []
 
 ]
 Chapter 4.
-) (C3.tex [23] [24
 
-]
+Underfull \vbox (badness 3049) has occurred while \output is active []
+
+ [23]) (C3.tex [24]
 Chapter 5.
-[25] [26]
+[25
+
+] [26]
 <Figures/simulations/realization_and_boltzmann.pdf, id=116, 713.53282pt x 255.1245pt>
 File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
 <use Figures/simulations/realization_and_boltzmann.pdf>
 Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 69.
 (pdftex.def)             Requested size: 489.10287pt x 174.88379pt.
- [27
+<Python/Figures/xz_msd_comparison.pdf, id=117, 497.94029pt x 224.037pt>
+File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
+<use Python/Figures/xz_msd_comparison.pdf>
+Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 80.
+(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
 
- <./Figures/simulations/realization_and_boltzmann.pdf>] [28]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27
+
+ <./Figures/simulations/realization_and_boltzmann.pdf>]
+<Python/Figures/conf_debyelength.pdf, id=137, 497.94029pt x 224.037pt>
+File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
+<use Python/Figures/conf_debyelength.pdf>
+Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 93.
+(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
+<Python/Figures/diff_debye.pdf, id=138, 439.63855pt x 217.36655pt>
+File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
+<use Python/Figures/diff_debye.pdf>
+Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 100.
+(pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
+ [28 <./Python/Figures/xz_msd_comparison.pdf>] [29 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>] [30]
 Chapter 6.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29
+ [31
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]
+ [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-<Python/Figures/sim_ipsf.pdf, id=149, 687.70567pt x 246.92203pt>
+ [33]
+<Python/Figures/sim_ipsf.pdf, id=212, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 214.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 228.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
- [32 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=186, 563.70598pt x 274.626pt>
+ [34 <./Python/Figures/sim_ipsf.pdf>]
+<Python/Figures/nuisance_param.pdf, id=249, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 235.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 249.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=187, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=250, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 246.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 260.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
-) [33 <./Python/Figures/nuisance_param.pdf>] [34 <./Python/Figures/simulation_fit_residual.pdf>]
+) [35 <./Python/Figures/nuisance_param.pdf>] [36 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 7.
-(C2.tex [35
+(C2.tex [37
 
 ])
 Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/n/12 36 \OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS
+\OT1/cmr/m/n/12 38 \OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS
  []
 
-[36]
+[38]
 Chapter 8.
-(CONC.tex) [37
+(CONC.tex) [39
 
-] [38
+] [40
 
-] (A1.tex [39] [40
+] (A1.tex [41] [42
 
 ]
 Appendix A.
 
 Underfull \vbox (badness 4981) has occurred while \output is active []
 
- [41]) [42] (main.aux)
+ [43]) [44] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1121,17 +1144,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52271 strings out of 467871
- 1272579 string characters out of 5416924
- 2373906 words of memory out of 5000000
- 80384 multiletter control sequences out of 15000+600000
- 652349 words of font info for 210 fonts, out of 8000000 for 9000
+ 52292 strings out of 467871
+ 1273519 string characters out of 5416924
+ 2372987 words of memory out of 5000000
+ 80407 multiletter control sequences out of 15000+600000
+ 652305 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2021b,1287s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (42 pages, 3650902 bytes).
+<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (44 pages, 3714211 bytes).
 PDF statistics:
- 347 PDF objects out of 1000 (max. 8388607)
+ 408 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 49712 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49727 words of extra memory for PDF output out of 51595 (max. 10000000)
 
