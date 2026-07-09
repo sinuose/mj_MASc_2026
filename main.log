@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  8 JUL 2026 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  9 JUL 2026 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1082,7 +1082,12 @@ File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
 <use Python/Figures/diff_debye.pdf>
 Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 100.
 (pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
- [28 <./Python/Figures/xz_msd_comparison.pdf>] [29 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>] [30]
+<Python/Figures/conf_zeta_debye.png, id=139, 572.01704pt x 223.91655pt>
+File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
+<use Python/Figures/conf_zeta_debye.png>
+Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 108.
+(pdftex.def)             Requested size: 489.10287pt x 191.4643pt.
+ [28 <./Python/Figures/xz_msd_comparison.pdf>] [29 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>] [30 <./Python/Figures/conf_zeta_debye.png>]
 Chapter 6.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1096,21 +1101,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [33]
-<Python/Figures/sim_ipsf.pdf, id=212, 687.70567pt x 246.92203pt>
+<Python/Figures/sim_ipsf.pdf, id=214, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 228.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 235.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
  [34 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=249, 563.70598pt x 274.626pt>
+<Python/Figures/nuisance_param.pdf, id=251, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 249.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 256.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=250, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=252, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 260.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 267.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
 ) [35 <./Python/Figures/nuisance_param.pdf>] [36 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 7.
@@ -1144,17 +1149,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52292 strings out of 467871
- 1273519 string characters out of 5416924
- 2372987 words of memory out of 5000000
- 80407 multiletter control sequences out of 15000+600000
+ 52300 strings out of 467871
+ 1273826 string characters out of 5416924
+ 2374014 words of memory out of 5000000
+ 80415 multiletter control sequences out of 15000+600000
  652305 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2021b,1287s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (44 pages, 3714211 bytes).
+Output written on main.pdf (44 pages, 4044621 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
+ 410 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 49727 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 49732 words of extra memory for PDF output out of 51595 (max. 10000000)
 

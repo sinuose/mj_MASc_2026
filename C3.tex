@@ -102,6 +102,13 @@ where $C$ is the ionic concentration of a dilute eletrolyte compound [CITE]. To 
     \label{fig:diff_debyelen}
 \end{figure}
 
+The relationship between the effective confinement length, as well as the relationship between relative diffusion and concentration of ions begs the question of if this can be used as a particle filter to distinguish classes of particles. Here we investigate that question regarding the amount of confinement length compared to the zeta-potential of a particle at various debye-lengths. This relationship is described in Fig. \ref{fig:conf_zeta_debye}.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/conf_zeta_debye.png}
+    \caption{Effective confinement plotted against the particle's zeta-potential. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The surface charge of the wall are chosen to resemble glass, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.}
+    \label{fig:conf_zeta_debye}
+\end{figure}
 
 \subsection{Surface Charge estimation}
 
