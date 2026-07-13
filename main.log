@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 JUL 2026 11:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 JUL 2026 12:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -844,8 +844,7 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 56.
 \@quotelevel=\count481
 \@quotereset=\count482
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
@@ -862,7 +861,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
 LaTeX Font Info:    ... okay on input line 56.
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count483
 \scratchdimen=\dimen315
@@ -972,45 +971,45 @@ Package biblatex Info: Reference segment=0 on input line 56.
 
 [4
 
-]
-No file main.toc.
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
-
-
-[5
-
-]
-
-[6
-
-]
-Chapter 1.
-(./INTRO.tex
-<Figures/size-comp.png, id=28, 2007.5pt x 800.9925pt>
-File: Figures/size-comp.png Graphic file (type png)
-<use Figures/size-comp.png>
-Package pdftex.def Info: Figures/size-comp.png  used on input line 19.
-(pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 20.
+] (./main.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 20.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 
-[7]) (./C1.tex
+[5
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+[6]
+Chapter 1.
+(./INTRO.tex
+<Figures/size-comp.png, id=30, 2007.5pt x 800.9925pt>
+File: Figures/size-comp.png Graphic file (type png)
+<use Figures/size-comp.png>
+Package pdftex.def Info: Figures/size-comp.png  used on input line 19.
+(pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
+
+
+[7
+
+]) (./C1.tex
 
 [8 <./Figures/size-comp.png>]
 Chapter 2.
@@ -1053,27 +1052,17 @@ Chapter 3.
 ]
 
 [19]
-
-LaTeX Warning: Reference `eqn:lorenzmie' on page 20 undefined on input line 412.
-
-
-LaTeX Warning: Reference `fig:ipsf_sim' on page 20 undefined on input line 416.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [20]
-
-LaTeX Warning: Reference `fig:schematic' on page 21 undefined on input line 452.
-
-<Figures/schematic.png, id=90, 326.72063pt x 208.52907pt>
+<Figures/schematic.png, id=91, 326.72063pt x 208.52907pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
 Package pdftex.def Info: Figures/schematic.png  used on input line 457.
 (pdftex.def)             Requested size: 239.66309pt x 152.96313pt.
-<Figures/iscat_photo.png, id=91, 942.52126pt x 680.5425pt>
+<Figures/iscat_photo.png, id=92, 942.52126pt x 680.5425pt>
 File: Figures/iscat_photo.png Graphic file (type png)
 <use Figures/iscat_photo.png>
 Package pdftex.def Info: Figures/iscat_photo.png  used on input line 460.
@@ -1099,13 +1088,6 @@ File: Figures/imaging_diagram.pdf Graphic file (type pdf)
 <use Figures/imaging_diagram.pdf>
 Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 517.
 (pdftex.def)             Requested size: 220.09479pt x 170.37198pt.
-
-
-LaTeX Warning: Reference `fig:schematic' on page 23 undefined on input line 523.
-
-
-LaTeX Warning: Reference `fig:imaging_diagram_simple' on page 23 undefined on input line 523.
-
 
 
 [23 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>]
@@ -1135,17 +1117,7 @@ Chapter 5.
 
 ]
 
-LaTeX Warning: Reference `app:1' on page 30 undefined on input line 60.
-
-
-
 [30]
-
-LaTeX Warning: Reference `eqn:electrostatic_forces' on page 31 undefined on input line 66.
-
-
-LaTeX Warning: Reference `fig:brown_realization' on page 31 undefined on input line 70.
-
 <Figures/simulations/realization_and_boltzmann.pdf, id=139, 713.53282pt x 255.1245pt>
 File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
 <use Figures/simulations/realization_and_boltzmann.pdf>
@@ -1157,14 +1129,12 @@ File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
 Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 85.
 (pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
 [31 <./Figures/simulations/realization_and_boltzmann.pdf>]
-
-LaTeX Warning: Reference `fig:conf_debyelen' on page 32 undefined on input line 94.
-
 <Python/Figures/conf_debyelength.pdf, id=161, 497.94029pt x 224.037pt>
 File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
 <use Python/Figures/conf_debyelength.pdf>
@@ -1175,9 +1145,6 @@ File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
 <use Python/Figures/diff_debye.pdf>
 Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 105.
 (pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
-
-LaTeX Warning: Reference `fig:conf_zeta_debye' on page 32 undefined on input line 110.
-
 <Python/Figures/conf_zeta_debye.png, id=163, 572.01704pt x 223.91655pt>
 File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
 <use Python/Figures/conf_zeta_debye.png>
@@ -1191,21 +1158,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [32 <./Python/Figures/xz_msd_comparison.pdf>]
 
 [33 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>]
-./C3.tex:122: You can't use `macro parameter character #' in vertical mode.
-l.122 #
-        TODO TODAY
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
 
 [34 <./Python/Figures/conf_zeta_debye.png>]
 Chapter 6.
-
-LaTeX Warning: Reference `alg:rad_int' on page 35 undefined on input line 144.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1214,19 +1169,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [35
 
 ]
-
-LaTeX Warning: Reference `alg:best_chain_2d' on page 36 undefined on input line 170.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 [36]
-
-LaTeX Warning: Reference `fig:ipsf_sim' on page 37 undefined on input line 238.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1239,20 +1186,12 @@ Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 242.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
 
 
-LaTeX Warning: Reference `fig:nuisance_fit' on page 38 undefined on input line 259.
-
-
-
 [38 <./Python/Figures/sim_ipsf.pdf>]
 <Python/Figures/nuisance_param.pdf, id=276, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
 Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 263.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-
-
-LaTeX Warning: Reference `fig:fit_residuals' on page 39 undefined on input line 270.
-
 <Python/Figures/simulation_fit_residual.pdf, id=277, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
@@ -1310,32 +1249,20 @@ Underfull \vbox (badness 4981) has occurred while \output is active []
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51416 strings out of 473190
- 1240011 string characters out of 5715801
- 2308808 words of memory out of 5000000
- 73917 multiletter control sequences out of 15000+600000
+ 51423 strings out of 473190
+ 1240104 string characters out of 5715801
+ 2310156 words of memory out of 5000000
+ 73920 multiletter control sequences out of 15000+600000
  583210 words of font info for 203 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2003b,1279s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (48 pages, 4019650 bytes).
+Output written on main.pdf (48 pages, 4021532 bytes).
 PDF statistics:
  437 PDF objects out of 1000 (max. 8388607)
  308 compressed objects within 4 object streams
