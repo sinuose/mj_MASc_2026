@@ -405,6 +405,86 @@
       \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
       \endverb
     \endentry
+    \entry{kashkanovaPrecisionSingleparticleLocalization2021}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=f6ad9870aeabd2fced16ed32bef1352f}{%
+           family={Kashkanova},
+           familyi={K\bibinitperiod},
+           given={Anna\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=33383766fe73e498f9074be86df611bb}{%
+           family={Shkarin},
+           familyi={S\bibinitperiod},
+           given={Alexey\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=9a4d3c6b71e75bcb037f603c5cc6ad3a}{%
+           family={Mahmoodabadi},
+           familyi={M\bibinitperiod},
+           given={Reza\bibnamedelima Gholami},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=0c29e976f566de7c21e6f95085566b1d}{%
+           family={Blessing},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6690bdf752f09865152ace37337f6f7e}{%
+           family={Tuna},
+           familyi={T\bibinitperiod},
+           given={Yazgan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1afaa8bf0d4e4789f45b850ce10fe665}{%
+           family={Gemeinhardt},
+           familyi={G\bibinitperiod},
+           given={André},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ad287b767cb31b0532f34e8f962e0792}{%
+           family={Sandoghdar},
+           familyi={S\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{048b0af7c873b68a508918fd6798907c}
+      \strng{fullhash}{42ed6d159ee983b15a2d3c044fbc28e7}
+      \strng{fullhashraw}{42ed6d159ee983b15a2d3c044fbc28e7}
+      \strng{bibnamehash}{048b0af7c873b68a508918fd6798907c}
+      \strng{authorbibnamehash}{048b0af7c873b68a508918fd6798907c}
+      \strng{authornamehash}{048b0af7c873b68a508918fd6798907c}
+      \strng{authorfullhash}{42ed6d159ee983b15a2d3c044fbc28e7}
+      \strng{authorfullhashraw}{42ed6d159ee983b15a2d3c044fbc28e7}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We introduce an image transform designed to highlight features with high degree of radial symmetry for identification and subpixel localization of particles in microscopy images. The transform is based on analyzing pixel value variations in radial and angular directions. We compare the subpixel localization performance of this algorithm to other common methods based on radial or mirror symmetry (such as fast radial symmetry transform, orientation alignment transform, XCorr, and quadrant interpolation), using both synthetic and experimentally obtained data. We find that in all cases it achieves the same or lower localization error, frequently reaching the theoretical limit.}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{month}{3}
+      \field{number}{7}
+      \field{title}{Precision single-particle localization using radial variance transform}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{29}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{11070}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.420670
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\4797K26C\\Kashkanova et al. - 2021 - Precision single-particle localization using radial variance transform.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-29-7-11070
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-29-7-11070
+      \endverb
+    \endentry
     \entry{millanNumericalSimulationsConfined2023}{misc}{}{}
       \name{author}{4}{}{%
         {{hash=174529734880b6430b441999bcfaefc8}{%
@@ -468,6 +548,55 @@
       \verb http://arxiv.org/abs/2210.15942
       \endverb
       \keyw{Condensed Matter - Statistical Mechanics,Physics - Classical Physics,Physics - Fluid Dynamics}
+    \endentry
+    \entry{parthasarathyRapidAccurateParticle2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5a6d5ac2d0c4265d8660d01e0628cc90}{%
+           family={Parthasarathy},
+           familyi={P\bibinitperiod},
+           given={Raghuveer},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{fullhash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{fullhashraw}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{bibnamehash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{authorbibnamehash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{authornamehash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{authorfullhash}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \strng{authorfullhashraw}{5a6d5ac2d0c4265d8660d01e0628cc90}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1548-7091, 1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Rapid, accurate particle tracking by calculation of radial symmetry centers}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{9}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{724\bibrangedash 726}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nmeth.2071
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\8LFDMT9D\\Parthasarathy - 2012 - Rapid, accurate particle tracking by calculation of radial symmetry centers.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmeth.2071
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmeth.2071
+      \endverb
     \endentry
     \entry{pathriaStatisticalMechanics2011}{book}{}{}
       \name{author}{2}{}{%

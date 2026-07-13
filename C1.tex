@@ -95,7 +95,7 @@ In typical experiments, such as that of Robert Brown's pollen molecules, the obs
 
 This missing component of motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
-	m\vec{\ddot x} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
+	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
 \end{equation}
 
 where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and non-trivial to calculate. Here, $x(t)$ is a stochastic process, which has a unique realization for each realization of $F(t)$.
@@ -111,7 +111,7 @@ Which stands in as delta-correlated noise, or that of a Wiener process. Notably,
 
 One can take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity one finds
 \begin{equation}
-	m\vec{\dot v} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
+	m\dot{\vec{v}} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
 \end{equation}
 This represents a linear differential equation with a solution hat defines the velocity autocorrelation function. This solution is 
 \begin{equation}
