@@ -1,53 +1,51 @@
-\contentsline {chapter}{\numberline {1}Introduction}{5}{}%
-\contentsline {section}{\numberline {1.1}Movivation}{5}{}%
-\contentsline {section}{\numberline {1.2}Outline for Thesis}{5}{}%
-\contentsline {chapter}{\numberline {2}Brownian Motion}{7}{}%
-\contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{8}{}%
-\contentsline {section}{\numberline {2.2}Langevin Dynamics}{9}{}%
-\contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{10}{}%
-\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{11}{}%
-\contentsline {section}{\numberline {2.5}Electrostatic Potentials}{12}{}%
-\contentsline {section}{\numberline {2.6}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{13}{}%
-\contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{15}{}%
-\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{16}{}%
-\contentsline {section}{\numberline {3.2}Types of Microscopy}{18}{}%
-\contentsline {section}{\numberline {3.3}Scattering Microscopy}{18}{}%
-\contentsline {section}{\numberline {3.4}Interferometric Light Scattering (iSCAT)}{19}{}%
-\contentsline {section}{\numberline {3.5}Resolution limits of optical microscopy}{20}{}%
-\contentsline {chapter}{\numberline {4}In-Vivo Considerations}{23}{}%
-\contentsline {section}{\numberline {4.1}Diffusion in Vivo}{23}{}%
-\contentsline {section}{\numberline {4.2}Brownian motion as a method for measurements of size in biology}{24}{}%
-\contentsline {section}{\numberline {4.3}lipid nanoparticles as a test subject}{24}{}%
-\contentsline {chapter}{\numberline {5}Langevin Simulations}{25}{}%
-\contentsline {section}{\numberline {5.1}Simulation Equations}{25}{}%
-\contentsline {section}{\numberline {5.2}Surface Charge Estimator}{26}{}%
-\contentsline {section}{\numberline {5.3}Results}{27}{}%
-\contentsline {subsection}{\numberline {5.3.1}mean-squared displacement in confinement}{27}{}%
-\contentsline {subsection}{\numberline {5.3.2}Surface Charge estimation}{28}{}%
-\contentsline {section}{\numberline {5.4}Conclusion}{30}{}%
-\contentsline {chapter}{\numberline {6}iSCAT z-estimation Simulations}{31}{}%
-\contentsline {section}{\numberline {6.1}Method Overview}{31}{}%
-\contentsline {subsection}{\numberline {6.1.1}Image Background Subtraction and Noise Consideration}{31}{}%
-\contentsline {subsection}{\numberline {6.1.2}Radial Integral}{31}{}%
-\contentsline {subsection}{\numberline {6.1.3}Nuisance parameter Estimation}{32}{}%
-\contentsline {subsection}{\numberline {6.1.4}2D Chainlink}{32}{}%
-\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{34}{}%
-\contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{34}{}%
-\contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{35}{}%
-\contentsline {section}{\numberline {6.3}Conclusions}{35}{}%
-\contentsline {chapter}{\numberline {7}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{37}{}%
-\contentsline {section}{\numberline {7.1}Questions}{37}{}%
-\contentsline {section}{\numberline {7.2}Reparameterization of Rayleigh scattering of nanoparticles}{37}{}%
-\contentsline {section}{\numberline {7.3}Fitting model developed in this thesis}{37}{}%
-\contentsline {section}{\numberline {7.4}Methods}{37}{}%
-\contentsline {subsection}{\numberline {7.4.1}Sample Details}{37}{}%
-\contentsline {subsection}{\numberline {7.4.2}Optical System}{38}{}%
-\contentsline {subsection}{\numberline {7.4.3}Convex-lens induced confinement}{38}{}%
-\contentsline {section}{\numberline {7.5}Results i guess}{38}{}%
-\contentsline {section}{\numberline {7.6}Discussion of Results}{38}{}%
-\contentsline {chapter}{\numberline {8}Conclusion}{39}{}%
-\contentsline {section}{\numberline {8.1}Conclusion}{39}{}%
-\contentsline {section}{\numberline {8.2}Future outlook}{39}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{43}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{43}{}%
-\contentsline {section}{\numberline {A.2}Exact $\hat B$ MLE}{44}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{7}{}%
+\contentsline {chapter}{\numberline {2}Brownian Motion}{9}{}%
+\contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{9}{}%
+\contentsline {section}{\numberline {2.2}Langevin Dynamics}{11}{}%
+\contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{12}{}%
+\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{13}{}%
+\contentsline {section}{\numberline {2.5}Electrostatic Potentials}{13}{}%
+\contentsline {section}{\numberline {2.6}Equilibrium Positional Distributions for Anomalous Confined Diffusion}{15}{}%
+\contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{17}{}%
+\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{18}{}%
+\contentsline {section}{\numberline {3.2}Scattering Microscopy}{20}{}%
+\contentsline {section}{\numberline {3.3}Interferometric Light Scattering (iSCAT)}{21}{}%
+\contentsline {section}{\numberline {3.4}Resolution limits of optical microscopy}{22}{}%
+\contentsline {section}{\numberline {3.5}Sources of noise in imaging}{23}{}%
+\contentsline {chapter}{\numberline {4}Application of confined diffusion to Biological processes}{27}{}%
+\contentsline {section}{\numberline {4.1}Diffusion in cells}{27}{}%
+\contentsline {section}{\numberline {4.2}Brownian motion as a method for measurements of size in biology}{28}{}%
+\contentsline {section}{\numberline {4.3}Lipid Nanoparticles}{28}{}%
+\contentsline {chapter}{\numberline {5}Langevin Simulations}{29}{}%
+\contentsline {section}{\numberline {5.1}Simulation Equations}{29}{}%
+\contentsline {section}{\numberline {5.2}Surface Charge Estimator}{30}{}%
+\contentsline {section}{\numberline {5.3}Results}{31}{}%
+\contentsline {subsection}{\numberline {5.3.1}Mean-Squared Displacement in Confinement}{31}{}%
+\contentsline {subsection}{\numberline {5.3.2}Surface Charge estimation}{34}{}%
+\contentsline {section}{\numberline {5.4}Conclusion}{34}{}%
+\contentsline {chapter}{\numberline {6}iSCAT z-estimation Simulations}{35}{}%
+\contentsline {section}{\numberline {6.1}Method Overview}{35}{}%
+\contentsline {subsection}{\numberline {6.1.1}Image Background Subtraction and Noise Consideration}{35}{}%
+\contentsline {subsection}{\numberline {6.1.2}Radial Integral}{35}{}%
+\contentsline {subsection}{\numberline {6.1.3}Nuisance parameter Estimation}{36}{}%
+\contentsline {subsection}{\numberline {6.1.4}2D Chainlink}{36}{}%
+\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{38}{}%
+\contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{38}{}%
+\contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{39}{}%
+\contentsline {section}{\numberline {6.3}Conclusions}{39}{}%
+\contentsline {chapter}{\numberline {7}Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}{41}{}%
+\contentsline {section}{\numberline {7.1}Questions}{41}{}%
+\contentsline {section}{\numberline {7.2}Reparameterization of Rayleigh scattering of nanoparticles}{41}{}%
+\contentsline {section}{\numberline {7.3}Fitting model developed in this thesis}{41}{}%
+\contentsline {section}{\numberline {7.4}Methods}{41}{}%
+\contentsline {subsection}{\numberline {7.4.1}Sample Details}{41}{}%
+\contentsline {subsection}{\numberline {7.4.2}Optical System}{42}{}%
+\contentsline {subsection}{\numberline {7.4.3}Convex-lens induced confinement}{42}{}%
+\contentsline {section}{\numberline {7.5}Results i guess}{42}{}%
+\contentsline {section}{\numberline {7.6}Discussion of Results}{42}{}%
+\contentsline {chapter}{\numberline {8}Conclusion}{43}{}%
+\contentsline {section}{\numberline {8.1}Conclusion}{43}{}%
+\contentsline {section}{\numberline {8.2}Future outlook}{43}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{47}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{47}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{48}{}%

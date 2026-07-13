@@ -24,20 +24,11 @@ Appendix 4.
 - Grid Search Method (?)
 \fi
 
-
-
-
 \chapter{Brownian Motion}
 
-In the scope of biological processes, there are many such examples involving the particles in the nano size regime. For example, viruses and vesicles are two examples of small molecules which have immense importance in the field. To investigate such systems, it is often the case that to maintain long measurements of the same particle, it is necessary to have some form of confinement. The full understanding of the behavior of these nanoparticles under confinement is thus important, and not complete. 
+In 1827, Robert Brown observed a stochastic motion of pollen molecules under his microscope \cite{brownXXVIIBriefAccount1828}. This observation intrigued the likes of many scientists to understand what causes this and how this observation changes the state of understanding of the world. This motion was coined Brownian motion, and has since been applied in many fields. 
 
-\begin{figure}[hbtp!]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/size-comp.png}
-    \caption{Size comparison of various nanoparticles. Nanoparticles are defined as particles where the largest dimension is at most $\SI{1000}{\nm}$. }
-\end{figure}
-
-Nanoparticles move around stochastically under the rules of brownian motion. To be able to measure the particle's characteristics, one can relate their motion and stochasticity to their properties. This chapter will discuss the phenomena of Brownian motion and how it relates to particle properties, environmental ion concentration, viscosity, hydrodynamic boundaries, and confinement. 
+In the current time, we understand that nanoparticles move around stochastically under the rules of Brownian motion. To be able to measure the particle's characteristics, one can relate their motion and stochasticity to their properties. This chapter will discuss the phenomena of Brownian motion and how it relates to particle properties, environmental ion concentration, viscosity, hydrodynamic boundaries, and confinement. 
 
 %To directly measure particle position, one can use optical methods, specifically, optical scattering measurements.
 
@@ -57,7 +48,7 @@ In this chapter we discuss the process of Brownian motion and Diffusion-type pro
 
 The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion, or more colloquially, a diffusive process \cite{brownXXVIIBriefAccount1828}. 
 
-The classical description of Brownian motion is concerned with how the molecular-kinetic theory of heat relates with microscopically visible size suspensions in liquid perform movements such that they can be viewed by a microscope. Einstein's argument is one of macroscopic motion. put simply, one can use a taylor series expansion over a general concentration function to show a natural property of the system. Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
+The classical description of Brownian motion is concerned with how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas. In particular, how do these particles perform movements such that they can be viewed by a microscope? Einstein's argument is one of macroscopic motion. Put simply, one can use a Taylor series expansion over a general concentration function to show a natural property of the system. Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
 
 \begin{equation}
 	\int \phi(\Delta) d\Delta = 1
@@ -88,16 +79,21 @@ Where we typically associate the diffusion coefficient with the second moment of
 \begin{equation}
 	D = \frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta
 \end{equation}
- It can be shown through arguments of thermodynamics that the diffusion coefficient must abide by the rules of osmotic pressure, $\Pi = ck_b T$. \textcolor{red}{Ideally have this laid out, i Don't know this off the top of my head.} Notably, in the case of a spherical particle obeying Stoke's flow, we cite Einstein t find that the diffusion coefficient has the classical form'
+The friction coefficient here is related to the solution of the Navier-Stokes equations at a low Reynolds number. Specifically, when there are no intertial forces and $\Re \ll 1$, then the drag force on a particle,
+\begin{equation}
+    \vec F_d = 6\pi \eta a v,
+\end{equation}
+where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the spherical particle's radius. This relation can be directly applied to the form of the diffusion coefficient to recover Einstein's famous forumula;
  
 \begin{equation}
-	D = \frac{k_bT}{\gamma_0}, \quad \gamma_0 = 6 \pi \eta a
+	D = \frac{k_bT}{6 \pi \eta a}.
 \end{equation}
-Where $\eta$ is the fluid viscosity, and $a$ is the spherical particle radius. 
 
 \section{Langevin Dynamics}
 
-In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. The motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
+In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. If one assumes that this particle exists in the thermydynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than that of the equipartion at times. This implies something is missing.
+
+This missing component of motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
 	m\vec{\ddot x} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
 \end{equation}
@@ -134,7 +130,7 @@ Furthermore, when one averages the product of the above equation with $\vec x$ a
 \end{equation}
 Letting $D = Bk_b T$, we recover Einstein's relation with ease. 
 
-The unique advantage of the Langevin Formulation is that it is readily simulatable \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \textcolor{red}{Cite Pathria for this section}.
+The unique advantage of the Langevin Formulation is that it is readily simulatable \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
 
 \section{From Master Equation to Fokker-Planck}
 
@@ -181,8 +177,6 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 \begin{equation}
 	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0] 
 \end{equation}
-
-- Discuss Greens function alternative, but cite Dresfrene paper.
 
 \section{Electrostatic Potentials}
 
@@ -342,17 +336,13 @@ The incident light can be assumed to be polarized along the x axis without loss 
 \end{equation}
 
 Citing Bohren, and stating that using orthongality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
-\begin{definition}
-    Mie Theory of scattering off of homogenous spheres
 
 \begin{equation}\label{eqn:lorenzmie}
-    \boxed{
     \begin{aligned}
      \vec E_i &= E_0 e^{ikr\cos \theta}\hat x \\    
      \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n})\\
      \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})     
     \end{aligned}
-    }
 \end{equation}
 
 Since we are only interested in the scattered field, the constants that we care about are written below;
@@ -362,17 +352,14 @@ Since we are only interested in the scattered field, the constants that we care 
         b_n &= \frac{\Psi(mx)\Psi'(x) - m\Psi(x)\Psi'(mx)}{\Psi(mx)\xi'(x) - m \xi(x) \Psi'(mx)}\\
     \end{aligned}
 \end{equation}
-
 where $\Psi, \xi$ are the Riccatti-Bessel functions. 
 
-\end{definition}
-
-\textcolor{red}{This needs to be properly defined.} In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the hankel function approches the limit of a spherical wave,
+In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the hankel function approches the limit of a spherical wave,
 \begin{equation}
     h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}
 \end{equation}
 
-Im this regime, we have that $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$ we have that $\pi_1 = 1, \tau_1 = \cos \theta$, thus
+In this length-scale, we have that $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$ we have that $\pi_1 = 1, \tau_1 = \cos \theta$, thus
 \begin{equation}
     \begin{aligned}
         M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi} \\
@@ -395,13 +382,11 @@ Spoiling the suprise, after plugging in the terms for $n=1$ we have the followin
     \end{aligned}
 \end{equation}
 
-Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambda/n}$, we have the final scattering field in the Rayleigh regime;
+Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambda/n}$, we have the final scattering field in the Rayleigh length-scale;
 \begin{equation}
-    \boxed{
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}
-    }
 \end{equation}
-
+\iffalse
 - Draw some of the iPSFs for Mie theory, from all angles.
 - manoharan theory and reparam of the main equation
 
@@ -414,22 +399,21 @@ Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambd
 -- What size range ?
 
 - Small comparison from far away, medium (mie), and small (RDG), atomic (too small)
+\fi
 
-\section{Types of Microscopy}
+% \section{Types of Microscopy}
 
-Dark field - microscopy where the background is not used
-widefield - microscopy where the full field of view is used
-holography - microscopy with a reference field (?)
+% Dark field - microscopy where the background is not used
+% widefield - microscopy where the full field of view is used
+% holography - microscopy with a reference field (?)
 
 \section{Scattering Microscopy}
 
-As shown, the description of the scattered light from a sphere is full described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory (CITE). In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
+As shown, the description of the scattered light from a sphere is full described by Eqn.\ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
 
 To collect the light, there have been three main schemes used in literature; forward, side, and backscattering micrpscopy schemes.
 
-As shown in Fig. (reference PSF), the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these regimes also varies.
-
-\textbf{do i go into the other models?}
+As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
 
 In the backscattering scheme, the light collected is the sum of the incident light and the scattered light.
 
@@ -450,11 +434,7 @@ The incident field will be modulated by a scattering term, which is the Rayleigh
 \end{equation}
 
 
-It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. A full discussion of these comparisons can be found in (CITE).
-
-\dots
-
-- Olsén's thesis
+It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
 
 \section{Interferometric Light Scattering (iSCAT)}
 
@@ -469,9 +449,7 @@ To accurately measure the positions, we can define the contrast metric, which re
     \end{aligned} 
 \end{equation}
 
-The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Gouy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the defocus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michaelson-Interferomer type system. 
-
-Experimentally, this system is described in the set of schematics in Fig. \ref{fig:schematic}.
+The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Gouy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the defocus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michaelson-Interferomer type system. Experimentally, this system is described in the set of schematics in Fig. \ref{fig:schematic}.
  
 \begin{figure}
 	\centering
@@ -481,11 +459,9 @@ Experimentally, this system is described in the set of schematics in Fig. \ref{f
 	\begin{subfigure}{0.49 \textwidth}
 			\includegraphics[width=\linewidth]{Figures/iscat_photo}
 	\end{subfigure}
-	\caption{\textbf{Left}. iSCAT Schematic. \textbf{Right}. Image of physical system. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scatterd light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format. }
+	\caption{Left. iSCAT Schematic. Right. Image of physical system. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scatterd light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format. }
 	\label{fig:schematic}
 \end{figure}
-
-
 
 \section{Resolution limits of optical microscopy}
 
@@ -526,27 +502,55 @@ Similar results are found for the minimum axial imaging criterion by setting $r=
 	z_{\text{min}} = \frac{2\lambda n}{\text{NA}^2}
 \end{equation}
 
- At this point, we invite the fact that not all the light that scatters passes through teh lens. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scatteirng pattern is much larger, hwoever, in the limit of two particle near each other, the spatial reoslution limit must be enforced. 
+ At this point, we invite the fact that not all the light that scatters passes through the lens. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scatteirng pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
 
+ \section{Sources of noise in imaging}
 
+In imaging, there is a number of sources of abberations that one must account for. To discuss these sources of noise, a list of noises will be formed as one goes through the process of taking an image.
 
-discuss how we go from reality (focus plane) to image (image plane).
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[width=\linewidth]{Figures/imaging_diagram_simple.png}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[width=\linewidth]{Figures/imaging_diagram.pdf}
+    \end{subfigure}
+    \caption{Simplest possible imaging setup. Image consists of a plane wave illumination, a lens, and a camera.}
+    \label{fig:imaging_diagram_simple}
+\end{figure}
 
-- sphereical abberations
-- guoy phase
-\dots 
+The schematic of an iSCAT microscope was already shown in Fig. \ref{fig:schematic}, however, one can use a simplified model system without loss of generality. For a general imaging system, one only requires a single lens for imaging. This simple setup is shown in Fig \ref{fig:imaging_diagram_simple}.
 
-- final kind of check 
+The lens will collects light from the object plane, $U_o$ to the imaging plane, $U_i$, or the camera's plane. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread fucntion is 
+\begin{equation}
+    U_i(x_i, y_i) = \iint_{\R^2} h(x_i, y_i, x_o, y_o) U_o(x_o, y_o) dx_o dy_o,
+\end{equation} 
+where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the response of a lens to a point-source, modelled as a delta-function. The len's magnification is incorporated into this using the following approximation;
+\begin{equation}
+    h(x_i, y_i, x_o, y_o) \approx K \delta(x_i \pm M x_o, y_i \pm M y_o)
+\end{equation}
+where $K$ is a complex constant and $M$ is a real-valued magnification. We can see that because of this, our image is spatially limited by thsi point-spread, which was earlier shown by the diffraction limit. 
 
-theortical 100 nm particle -> scattering field -> abberations 
+In addition to the spatial noise, there is a phase accumulation known as the Guoy phase. As the light, which can be assumed as consisting of an eigen-expansion of plane waves, passes through a lens, these plane waves will converge to a gaussian beam with a beam-waist around the focal point. As this focusing occurs, there is a phase that is accumulated known as the Guoy phase. This phase acumulation is equal to
+\begin{equation}
+    \psi(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
+\end{equation}
+where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, there is a total phase shift of $\pi$. 
 
-\chapter{In-Vivo Considerations}
+In the presence of a background beam, there will be a presence of a background. This background's source is the illumination beam itself, in the case of scattering microscopy. This background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
+
+The camera used will also contain electronic noise associated with it. For CMOS cameras, ther noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modelled as Poisson noise from the photon detections and a gaussian for the readout noise. 
+
+In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical abberations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slighty different depeneding on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
+
+\chapter{Application of confined diffusion to Biological processes}
 
 As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequaetly understand the confinement effect of diffusion in a given system. 
 
 Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
 
-\section{Diffusion in Vivo}
+\section{Diffusion in cells}
 
 The cellular system consists of many differfent components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
 
@@ -564,13 +568,15 @@ However, there are other methods that can be used. As this thesis is not concern
 
 In complicment to single molcule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of moelcules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are illposed for polydisperse sample, which is one of the weaknesses of the DLS method. 
 
-\section{lipid nanoparticles as a test subject}
+\section{Lipid Nanoparticles}
 
-The bioligcal molcuel of choice for this investigation of cofninemetn is a useful one with lots of applications - the lipid nanoparticle (LNP).
+The bioligcal molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
 
-The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$
+First, it is nessecary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
 
 In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
+
+Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a highthroughput, accurate, and realiable method to charaterise these particle's properties. 
 
 
 

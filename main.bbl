@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{bohren1983absorption}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=33233e3e3b3a1b37257c460202afa1e4}{%
+           family={Bohren},
+           familyi={B\bibinitperiod},
+           given={Craig\bibnamedelima F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=1d5725310698290bae735a820f713316}{%
+           family={Huffman},
+           familyi={H\bibinitperiod},
+           given={Donald\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{bc195ae617c294f75772b703d297e316}
+      \strng{fullhash}{bc195ae617c294f75772b703d297e316}
+      \strng{fullhashraw}{bc195ae617c294f75772b703d297e316}
+      \strng{bibnamehash}{bc195ae617c294f75772b703d297e316}
+      \strng{authorbibnamehash}{bc195ae617c294f75772b703d297e316}
+      \strng{authornamehash}{bc195ae617c294f75772b703d297e316}
+      \strng{authorfullhash}{bc195ae617c294f75772b703d297e316}
+      \strng{authorfullhashraw}{bc195ae617c294f75772b703d297e316}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-471-05772-X}
+      \field{title}{Absorption and Scattering of Light by Small Particles}
+      \field{year}{1983}
+    \endentry
     \entry{brownXXVIIBriefAccount1828}{article}{}{}
       \name{author}{1}{}{%
         {{hash=5e20f446d2daa6c87a39214f30e3117d}{%
@@ -66,6 +101,81 @@
       \endverb
       \verb{url}
       \verb https://www.tandfonline.com/doi/full/10.1080/14786442808674769
+      \endverb
+    \endentry
+    \entry{dewitPreciseCharacterizationNanometerscale2023}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=45308fcd7be09043511dca27aa24aac9}{%
+           family={De\bibnamedelima Wit},
+           familyi={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Xander\bibnamedelima M.},
+           giveni={X\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c10be216b6b04dce29d16e1196d8462e}{%
+           family={Paine},
+           familyi={P\bibinitperiod},
+           given={Amelia\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=cf0e3a821ab79e146a9aace8744361a8}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Caroline},
+           giveni={C\bibinitperiod}}}%
+        {{hash=44def7640cae9f8f395e281e7a885b97}{%
+           family={Goldfain},
+           familyi={G\bibinitperiod},
+           given={Aaron\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=396511726add8d355efdc0e2c1a97354}{%
+           family={Garmann},
+           familyi={G\bibinitperiod},
+           given={Rees\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=955b52bb012ef452340ff76860d2255f}{%
+           family={Manoharan},
+           familyi={M\bibinitperiod},
+           given={Vinothan\bibnamedelima N.},
+           giveni={V\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b4e8589c2da08acf65462ca52038ba05}
+      \strng{fullhash}{7a4fc62cb99aacf0214a84733ec83722}
+      \strng{fullhashraw}{7a4fc62cb99aacf0214a84733ec83722}
+      \strng{bibnamehash}{b4e8589c2da08acf65462ca52038ba05}
+      \strng{authorbibnamehash}{b4e8589c2da08acf65462ca52038ba05}
+      \strng{authornamehash}{b4e8589c2da08acf65462ca52038ba05}
+      \strng{authorfullhash}{7a4fc62cb99aacf0214a84733ec83722}
+      \strng{authorfullhashraw}{7a4fc62cb99aacf0214a84733ec83722}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Interferometric scattering microscopy can image the dynamics of nanometer-scale systems. The typical approach to analyzing interferometric images involves intensive processing, which discards data and limits the precision of measurements. We demonstrate an alternative approach: modeling the interferometric point spread function and fitting this model to data within a Bayesian framework. This approach yields best-fit parameters, including the particle’s three-dimensional position and polarizability, as well as uncertainties and correlations between these parameters. Building on recent work, we develop a model that is parameterized for rapid fitting. The model is designed to work with Hamiltonian Monte Carlo techniques that leverage automatic differentiation. We validate this approach by fitting the model to interferometric images of colloidal nanoparticles. We apply the method to track a diffusing particle in three dimensions, to directly infer the diffusion coefficient of a nanoparticle without calculating a mean-square displacement, and to quantify the ejection of DNA from an individual lambda phage virus, demonstrating that the approach can be used to infer both static and dynamic properties of nanoscale systems.}
+      \field{issn}{1559-128X, 2155-3165}
+      \field{journaltitle}{Applied Optics}
+      \field{month}{9}
+      \field{number}{27}
+      \field{title}{Precise characterization of nanometer-scale systems using interferometric scattering microscopy and {Bayesian} analysis}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{62}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{7205}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/AO.499389
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\DSAIWGNR\\De Wit et al. - 2023 - Precise characterization of nanometer-scale systems using interferometric scattering microscopy and.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=ao-62-27-7205
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=ao-62-27-7205
       \endverb
     \endentry
     \entry{garciarodriguezOpticalLabelfreeMicroscopy2025}{article}{}{}
@@ -358,6 +468,43 @@
       \verb http://arxiv.org/abs/2210.15942
       \endverb
       \keyw{Condensed Matter - Statistical Mechanics,Physics - Classical Physics,Physics - Fluid Dynamics}
+    \endentry
+    \entry{pathriaStatisticalMechanics2011}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=638a8ce433064bfa79669a531fcda061}{%
+           family={Pathria},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=473d4b220f7d73dc96f11cdb76c71143}{%
+           family={Beale},
+           familyi={B\bibinitperiod},
+           given={Paul\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam ; Boston}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier/Academic Press}%
+      }
+      \strng{namehash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{fullhash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{fullhashraw}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{bibnamehash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{authorbibnamehash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{authornamehash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{authorfullhash}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \strng{authorfullhashraw}{448d3ae45af4d3e60f57acfa93c86d8d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd ed}
+      \field{isbn}{978-0-12-382188-1}
+      \field{langid}{english}
+      \field{title}{Statistical Mechanics}
+      \field{year}{2011}
     \endentry
   \enddatalist
 \endrefsection

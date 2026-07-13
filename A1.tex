@@ -1,4 +1,5 @@
 \chapter{Surface Charge Estimator Derivation}
+\label{app:1}
 
 This is a section for the derivation of the surface charge estimator used in the axial diffusion estimation.
 
@@ -37,11 +38,25 @@ We can set this to 0 and solve for $\hat B$.
     \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}
 \end{equation}
 
-Now we can find the variance of this MLE
+\section{$\mathbb{V}[\hat{B}]$}
 
-\textcolor{red}{Get the fisher information matrix and solve.}
+The variance of this can be found using the fisher information matrix;
+\begin{align*}
+    \mathcal{I}(B) &= -l''(B) \\
+            &= \sum_{n=0}^\infty\frac{\Delta t \phi^2(z)}{2D(z)}
+\end{align*}
+In the univariate case, the variance is proportional to the inverse of the fisher information, or the denominator of the MLE. 
+\begin{equation}
+    \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)}
+\end{equation}
+This is an appication of the delta-method as
+\begin{equation}
+    \begin{aligned}
+            W_t &\sim \mathcal{N}(0, 1) \\
+            B &= g(W_t).
+    \end{aligned}
+\end{equation}
 
-\section{Exact $\hat B$ MLE}
-Here can we get an exact
+
 
 
