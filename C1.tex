@@ -79,11 +79,11 @@ Where we typically associate the diffusion coefficient with the second moment of
 \begin{equation}
 	D = \frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta
 \end{equation}
-The friction coefficient here is related to the solution of the Navier-Stokes equations at a low Reynolds number. Specifically, when there are no intertial forces and $\Re \ll 1$, then the drag force on a particle,
+The friction coefficient here is related to the solution of the Navier-Stokes equations at a low Reynolds number. Specifically, when there are no inertial forces and $\Re \ll 1$, then the drag force on a particle,
 \begin{equation}
     \vec F_d = 6\pi \eta a v,
 \end{equation}
-where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the spherical particle's radius. This relation can be directly applied to the form of the diffusion coefficient to recover Einstein's famous forumula;
+where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the spherical particle's radius. This relation can be directly applied to the form of the diffusion coefficient to recover Einstein's famous formula;
  
 \begin{equation}
 	D = \frac{k_bT}{6 \pi \eta a}.
@@ -91,7 +91,7 @@ where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the s
 
 \section{Langevin Dynamics}
 
-In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. If one assumes that this particle exists in the thermydynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than that of the equipartion at times. This implies something is missing.
+In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than that of the equipartion at times. This implies something is missing.
 
 This missing component of motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
@@ -130,7 +130,7 @@ Furthermore, when one averages the product of the above equation with $\vec x$ a
 \end{equation}
 Letting $D = Bk_b T$, we recover Einstein's relation with ease. 
 
-The unique advantage of the Langevin Formulation is that it is readily simulatable \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
+The unique advantage of the Langevin Formulation is that it is readily simulate-able \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
 
 \section{From Master Equation to Fokker-Planck}
 
@@ -139,12 +139,12 @@ To show that the two methods are equal, we can use the typical approach to equil
 	\frac{\partial f(x,t)}{\partial t} = \int_{-\infty}^\infty \left[ f(x', t)W(x'|x) - f(x, t)W(x|x')\right] dx'
 \end{equation}
 
-This structure is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation.,
+This structure is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation.,
 \begin{equation}
 	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right],
 \end{equation}
 
-where the diffusive and drift terms are parameterized over the transition probalities,
+where the diffusive and drift terms are parameterized over the transition probabilities,
 \begin{equation}
 	\begin{aligned}
 		\sigma(x) &= \int_{-\infty}^\infty \xi W(x| \xi)d\xi\\
@@ -152,7 +152,7 @@ where the diffusive and drift terms are parameterized over the transition probal
 	\end{aligned}
 \end{equation}
 
-In the case of zero drift, we can clearly see that this form equates to the diffusion equation of the Langevin formulation and the Eisensteinian formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulatory behavior of Langevin problems.
+In the case of zero drift, we can clearly see that this form equates to the diffusion equation of the Langevin formulation and the Einstein-ian formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems.
 
 %- Since Langevin is kind of convient, how do we acctualy link the two methods?
 
@@ -188,7 +188,7 @@ In a sea of ions, we must carefully define the charge density as it pertains to 
 \begin{align*}
 	\nabla^2 \Psi(\mathbf{r}) &=- 4 \pi \frac{\rho_j(\mathbf{r})}{\varepsilon}
 \end{align*}
-The charge distribution of a single ion concentration is essentially the density of the ionic positions. It would be tedious and unfeasible to count every ion's position exactly as we are assuming too many things. Rather, one can use a statistical ensemble of ions via a cannonical ensemble, which is a good approximation here.
+The charge distribution of a single ion concentration is essentially the density of the ionic positions. It would be tedious and unfeasible to count every ion's position exactly as we are assuming too many things. Rather, one can use a statistical ensemble of ions via a canonical ensemble, which is a good approximation here.
 
 \begin{equation}
 	\rho_i(\mathbf{r}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(r)\right]}
@@ -208,16 +208,16 @@ There is a nice approximation we can make given that the potential of the soluti
 \end{align*}
 Where $\kappa_i^2$ is related to the debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
 
-When the bulk solution is electroneutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
+When the bulk solution is electro-neutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
 \begin{equation}
 	\nabla^2 \Psi(\mathbf{r}) = \kappa^2 \Psi(\mathbf{r}), \quad \kappa_i^2 = \frac{\beta e_0^2}{\varepsilon_0 \varepsilon_r} \sum_i C_i Z_i^2.
 \end{equation}
-This equation has an obvious solution which are the real exponentials;
+This equation has an obvious solution which are the real exponential functions;
 \begin{equation}
 	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}.
 \end{equation}
 
-The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the prefactor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
+The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the pre-factor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
 
 In the approximations done in this thesis, we assume a linear symmetric potential, as well as a spherical particle between them. The form of this potential is given by 
 \begin{equation}
@@ -232,7 +232,7 @@ where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamm
         \psi_w & = \frac{2 k_b T}{e} \text{asinh}\frac{e\lambda_D \sigma_w}{2 \varepsilon_0 \varepsilon_r k_b T}.
     \end{aligned}
 \end{equation}
-Note that $\psi_w$ is the Stern layer of the wall related to the surface charge density of the wall \cite{israelachviliIntermolecularSurfaceForces}. This is chosen for a more intuitave measureable of a wall-like strucutre. 
+Note that $\psi_w$ is the Stern layer of the wall related to the surface charge density of the wall \cite{israelachviliIntermolecularSurfaceForces}. This is chosen for a more intuitive measurable of a wall-like structure. 
 
 
 \section{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
@@ -251,9 +251,9 @@ This equation defines the equilibrium distribution of the brownian diffusion aft
 
 \chapter{Interferometric Scattering Principles}
 
-This section is devoted to the description of physical prinicples associated with light scattering techniques. These techniques are widely used in microscopy, as I have used them in measuring where my parteicles are. Scattering measurements are of interest as they allow for label-free imaging with a high signal to noise and high temporal resolution. 
+This section is devoted to the description of physical principles associated with light scattering techniques. These techniques are widely used in microscopy, as I have used them in measuring where my particles are. Scattering measurements are of interest as they allow for label-free imaging with a high signal to noise and high temporal resolution. 
 
-We begin with the basics of relating light to electromagnetsm, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various abberations and Considerations before introducting iSCAT microscopy. We tease the experimental apparatus used in tthis work and compare the method to other methods currently used in the field. 
+We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field. 
 
 The photon is the fundamental quanta of the electric field as stated in QFT (cite). It has been shown that because of this, the field equations of light obey the fundamental principle that states
 \begin{equation}
@@ -312,7 +312,7 @@ We start by using the wave equation for the Electric and Magnetic Fields
 The solutions of these quantities will be harmonics of the laplacian in the coordinate basis that we choose. For isotropic scattering, the spherical basis is the one of choice. The solutions to this are known as the Vector Spherical Harmonics. Let $\psi$ be a solution to the scalar wave equation
 \begin{equation}
     \nabla^2 \psi + k^2 \psi = 0
-\end{equation}, then we can form a generator of the general solution by taking the simplest form of solutions and summing all components. Citing Jackson, we find that the solution to this form is given by the seperable form;
+\end{equation}, then we can form a generator of the general solution by taking the simplest form of solutions and summing all components. Citing Jackson, we find that the solution to this form is given by the separable form;
 \begin{equation}
     \begin{aligned}
         \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r) \\
@@ -321,7 +321,7 @@ The solutions of these quantities will be harmonics of the laplacian in the coor
         R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\} \\
     \end{aligned}
 \end{equation}
-Where $j_n, y_n$ are the spherical Bessel functions, and their complex additions are the hankel functions. Thus, the vector spherical harmonics are best described by seperating these solutions into even and odd solutions as their prefactor will be $\cos$ or $\sin$ respectively. 
+Where $j_n, y_n$ are the spherical Bessel functions, and their complex additions are the hankel functions. Thus, the vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. 
 \begin{equation}
     \begin{aligned}
         \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}) \\
@@ -335,7 +335,7 @@ The incident light can be assumed to be polarized along the x axis without loss 
     (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0
 \end{equation}
 
-Citing Bohren, and stating that using orthongality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
+Citing Bohren, and stating that using orthogonality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
 
 \begin{equation}\label{eqn:lorenzmie}
     \begin{aligned}
@@ -354,7 +354,7 @@ Since we are only interested in the scattered field, the constants that we care 
 \end{equation}
 where $\Psi, \xi$ are the Riccatti-Bessel functions. 
 
-In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the hankel function approches the limit of a spherical wave,
+In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the Hankel function approaches the limit of a spherical wave,
 \begin{equation}
     h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}
 \end{equation}
@@ -411,17 +411,17 @@ Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambd
 
 As shown, the description of the scattered light from a sphere is full described by Eqn.\ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
 
-To collect the light, there have been three main schemes used in literature; forward, side, and backscattering micrpscopy schemes.
+To collect the light, there have been three main schemes used in literature; forward, side, and back-scattering microscopy schemes.
 
 As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
 
-In the backscattering scheme, the light collected is the sum of the incident light and the scattered light.
+In the back-scattering scheme, the light collected is the sum of the incident light and the scattered light.
 
 \begin{equation}
     I(x,y) = |\vec E_r + \vec E_s|^2 
 \end{equation}
 
-given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scatterd light;
+given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scattered light;
 \begin{equation}
     \begin{aligned}
         I = E_rE_r^* + E_sE_s^* + 2\Re{\left[E_rE_s\right]} \\
@@ -438,7 +438,7 @@ It should now be noted that the angle of image formation has not been specified.
 
 \section{Interferometric Light Scattering (iSCAT)}
 
-The key assumption in iSCAT is the relative magnitude of terms. The reference field is constant. The scattering term $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarily, the inference term scales as the square root of this. Thus, the scattering term is dominated by the two fields, which we can ignore. 
+The key assumption in iSCAT is the relative magnitude of terms. The reference field is constant. The scattering term $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the inference term scales as the square root of this. Thus, the scattering term is dominated by the two fields, which we can ignore. 
 
 To accurately measure the positions, we can define the contrast metric, which relates the total field to that of a reference field;
 \begin{equation}
@@ -459,7 +459,7 @@ The phase of the interference consists of a sum of terms consisting of phases ac
 	\begin{subfigure}{0.49 \textwidth}
 			\includegraphics[width=\linewidth]{Figures/iscat_photo}
 	\end{subfigure}
-	\caption{Left. iSCAT Schematic. Right. Image of physical system. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scatterd light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format. }
+	\caption{Left. iSCAT Schematic. Right. Image of physical system. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scattered light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format. }
 	\label{fig:schematic}
 \end{figure}
 
@@ -467,7 +467,7 @@ The phase of the interference consists of a sum of terms consisting of phases ac
 
 The last thing to touch upon is understanding how the image that is being enlarged arrives to the camera, which consists of discussion of optical aberrations. 
 
-As mentioned in the formulation for the electric field scatter we have that any optical field consists of a set of plane waves that construct and deconstruct to form a field. That is, the electric field lies in the basis of a fourier series of terms of complex exponentials. This fact allows one to describe the propagation of a wave in throughout z.
+As mentioned in the formulation for the electric field scatter we have that any optical field consists of a set of plane waves that construct and deconstruct to form a field. That is, the electric field lies in the basis of a fourier series of terms of complex exponential functions. This fact allows one to describe the propagation of a wave in throughout z.
 \begin{equation}
 	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y, \quad \Omega = \{x \in \R : x^2 \leq k^2\} 
 \end{equation}
@@ -477,7 +477,7 @@ The propagated wave passes through an objective which can be approximated by a l
 \begin{equation}
 	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f}
 \end{equation}
-where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. Thus, the magnification of the lens is defined as $M = z_2/z_1$. However, to understand the aberrations it is nessecary to have a field formulation of this problem. The simplest way to do this is described using linear optics theory.
+where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. Thus, the magnification of the lens is defined as $M = z_2/z_1$. However, to understand the aberrations it is necessary to have a field formulation of this problem. The simplest way to do this is described using linear optics theory.
  
 Briefly, we define a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta function through a two lens system. This is given by the fourier transform of the point source masked by the pupil function;
 \begin{eqnarray}
@@ -493,7 +493,7 @@ In perfect focus, we have that $z=0$, for $z\neq0$ we have a defocusing aberrati
 \begin{equation}
 	H(r,0) = |\frac{J_1(k\text{NA}r)}{k\text{NA} r}|^2 
 \end{equation}
-We can solve that the minimum distance between the peak of the PSF and the minumum is solved by $k\text{NA}r = x_0$ where $x_0$ is the first root of $J_1(x)$. This is classical known as the minimum transverse imaging criterion;
+We can solve that the minimum distance between the peak of the PSF and the minimum is solved by $k\text{NA}r = x_0$ where $x_0$ is the first root of $J_1(x)$. This is classical known as the minimum transverse imaging criterion;
 \begin{equation}
 	r_{\text{min}} = 0.61 \frac{\lambda}{\text{NA}}
 \end{equation}
@@ -502,11 +502,11 @@ Similar results are found for the minimum axial imaging criterion by setting $r=
 	z_{\text{min}} = \frac{2\lambda n}{\text{NA}^2}
 \end{equation}
 
- At this point, we invite the fact that not all the light that scatters passes through the lens. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scatteirng pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
+ At this point, we invite the fact that not all the light that scatters passes through the lens. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scattering pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
 
  \section{Sources of noise in imaging}
 
-In imaging, there is a number of sources of abberations that one must account for. To discuss these sources of noise, a list of noises will be formed as one goes through the process of taking an image.
+In imaging, there is a number of sources of aberrations that one must account for. To discuss these sources of noise, a list of noises will be formed as one goes through the process of taking an image.
 
 \begin{figure}
     \centering
@@ -522,7 +522,7 @@ In imaging, there is a number of sources of abberations that one must account fo
 
 The schematic of an iSCAT microscope was already shown in Fig. \ref{fig:schematic}, however, one can use a simplified model system without loss of generality. For a general imaging system, one only requires a single lens for imaging. This simple setup is shown in Fig \ref{fig:imaging_diagram_simple}.
 
-The lens will collects light from the object plane, $U_o$ to the imaging plane, $U_i$, or the camera's plane. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread fucntion is 
+The lens will collects light from the object plane, $U_o$ to the imaging plane, $U_i$, or the camera's plane. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread function is 
 \begin{equation}
     U_i(x_i, y_i) = \iint_{\R^2} h(x_i, y_i, x_o, y_o) U_o(x_o, y_o) dx_o dy_o,
 \end{equation} 
@@ -530,9 +530,9 @@ where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the 
 \begin{equation}
     h(x_i, y_i, x_o, y_o) \approx K \delta(x_i \pm M x_o, y_i \pm M y_o)
 \end{equation}
-where $K$ is a complex constant and $M$ is a real-valued magnification. We can see that because of this, our image is spatially limited by thsi point-spread, which was earlier shown by the diffraction limit. 
+where $K$ is a complex constant and $M$ is a real-valued magnification. We can see that because of this, our image is spatially limited by this point-spread, which was earlier shown by the diffraction limit. 
 
-In addition to the spatial noise, there is a phase accumulation known as the Guoy phase. As the light, which can be assumed as consisting of an eigen-expansion of plane waves, passes through a lens, these plane waves will converge to a gaussian beam with a beam-waist around the focal point. As this focusing occurs, there is a phase that is accumulated known as the Guoy phase. This phase acumulation is equal to
+In addition to the spatial noise, there is a phase accumulation known as the Guoy phase. As the light, which can be assumed as consisting of an Eigen-expansion of plane waves, passes through a lens, these plane waves will converge to a gaussian beam with a beam-waist around the focal point. As this focusing occurs, there is a phase that is accumulated known as the Guoy phase. This phase accumulation is equal to
 \begin{equation}
     \psi(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
 \end{equation}
@@ -540,45 +540,56 @@ where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\l
 
 In the presence of a background beam, there will be a presence of a background. This background's source is the illumination beam itself, in the case of scattering microscopy. This background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
 
-The camera used will also contain electronic noise associated with it. For CMOS cameras, ther noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modelled as Poisson noise from the photon detections and a gaussian for the readout noise. 
+The camera used will also contain electronic noise associated with it. For CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modelled as Poisson noise from the photon detections and a gaussian for the readout noise. 
 
-In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical abberations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slighty different depeneding on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
+In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
 \chapter{Application of confined diffusion to Biological processes}
 
-As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequaetly understand the confinement effect of diffusion in a given system. 
+As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequately understand the confinement effect of diffusion in a given system. 
 
 Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
 
 \section{Diffusion in cells}
 
-The cellular system consists of many differfent components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
+The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
 
 This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an overdamped langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate we need that the diffusive timescale is must shorter. Here, we find that since the Peclet number is proportional to the characteristics length $L$, while the reynolds number is $L^2$. for small characteristic lengths, such as those proposed, we see that the diffusive term is clearly shorter. 
 
 \section{Brownian motion as a method for measurements of size in biology}
 
-As previosuly shown, we can infert the stoke's einstein difusion relation to directly measrue the sive of a biological diffusing particle. In particlular, this relation can be explicitly formalized for the hydrodynamic radius of a spherical nanoparticle.
+As previously shown, we can infer the stoke's einstein diffusion relation to directly measure the size of a biological diffusing particle. In particular, this relation can be explicitly formalized for the hydrodynamic radius of a spherical nanoparticle.
 \begin{equation}
     a_h = \frac{k_b T}{6\pi \eta D}
 \end{equation}
-Methods such as nanoparticle-tractiking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method. 
+Methods such as nanoparticle-tracking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method. 
 
-However, there are other methods that can be used. As this thesis is not concerned with fluorescent methods, they will not be explained in depth, however, fluorescence correlation spectroscopy (FCS) works on similar ideas of measuring diffusion autocorrelation curves using a fluroescent probe. 
+However, there are other methods that can be used. As this thesis is not concerned with fluorescent methods, they will not be explained in depth, however, fluorescence correlation spectroscopy (FCS) works on similar ideas of measuring diffusion autocorrelation curves using a fluorescent probe. 
 
-In complicment to single molcule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of moelcules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are illposed for polydisperse sample, which is one of the weaknesses of the DLS method. 
+In compliment to single molecule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of molecules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are ill-posed for poly-disperse sample, which is one of the weaknesses of the DLS method. 
 
 \section{Lipid Nanoparticles}
 
-The bioligcal molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
+The biological molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
 
-First, it is nessecary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
+First, it is necessary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
 
 In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
 
-Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a highthroughput, accurate, and realiable method to charaterise these particle's properties. 
+Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties. 
 
 \subsection{LNP topology types}
+
+One recent investigation of LNP research is within the functional differences based on the LNP topology type. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in the figure below.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/LNP_types.png}
+    \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core.}
+    \label{fig:LNP_types}
+\end{figure}
+
+
 
 
 

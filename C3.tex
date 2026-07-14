@@ -1,16 +1,16 @@
 \chapter{Langevin Simulations}
 
-To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environemnt. 
+To illustrate the wealth of information and form prior distributions for the confined diffusion model, we can simulate the diffusion process of a control molecule diffusing in a confined electrostatic environment. 
 
-The goal of this project was to model the diffusion process of confined diffusion using literature, and utilize pre-existing theory to for a statistical estimator of surface charge from diffusion dyanmics.
+The goal of this project was to model the diffusion process of confined diffusion using literature, and utilize pre-existing theory to for a statistical estimator of surface charge from diffusion dynamics.
 
 \section{Simulation Equations}
 
-The simulation scheme follows that descirbed in \cite{millanNumericalSimulationsConfined2023}. A brownian particle diffuses between two walls such that $(x,y)$ are perpendicular to the walls, and $z$ is parallel. The electrostatic force that the particle feels is then only in the $z$ direction. The diffusivity of the particle will depend on the distance of the walls. The langevin equation simulated, 
+The simulation scheme follows that described in \cite{millanNumericalSimulationsConfined2023}. A brownian particle diffuses between two walls such that $(x,y)$ are perpendicular to the walls, and $z$ is parallel. The electrostatic force that the particle feels is then only in the $z$ direction. The diffusivity of the particle will depend on the distance of the walls. The Langevin equation simulated, 
 \begin{equation}
     m\ddot{\vec{x}}(t) = - \lambda \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \lambda} \vec{W}(t),
 \end{equation}
-is first seperated into transverse and axial components, where $F$ is the electrostatic force, $\gamma$ is the friction. Here, we can re-write the diffusion coefficient using the Stokes-Einstein relation,
+is first separated into transverse and axial components, where $F$ is the electrostatic force, $\gamma$ is the friction. Here, we can re-write the diffusion coefficient using the Stokes-Einstein relation,
 \begin{equation}
     D(z) = \frac{k_b T}{\gamma(z)}.
 \end{equation}
@@ -22,9 +22,9 @@ Then, in overdamped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the equ
         \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\lambda(z)},
     \end{aligned}
 \end{equation}
-as descirbed in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the overdamped regime for many particle materials, such as PMMA or coated polystyrene.
+as described in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the overdamped regime for many particle materials, such as PMMA or coated polystyrene.
 
-To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, we can rewrite the above equations in the Ito form, replacing lowercase variables with their captial, stochastic, equivalents:
+To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, we can rewrite the above equations in the Ito form, replacing lowercase variables with their capital, stochastic, equivalents:
 \begin{equation}
     \begin{aligned}
         dX_t &= \sqrt{2D_x(z)} dW_x \\
@@ -43,18 +43,18 @@ where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ i
 
 \section{Surface Charge Estimator}
 
-As described earlier, the relations for the effective potential are described if one knows the particle properties and surface charge. In terms of measureables, electrostatic interactions can be fully described by the following  equation,
+As described earlier, the relations for the effective potential are described if one knows the particle properties and surface charge. In terms of measurable electrostatic interactions can be fully described by the following  equation,
 
 \begin{equation}
     U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right],
 \end{equation}
-where the prefactor is described by the map $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$,
+where the pre-factor is described by the map $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$,
 \begin{align}\label{eqn:electrostatic_forces}
     B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
     C & = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
     \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right]
 \end{align}
-where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potenital for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the debye-length. 
+where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potential for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the Debye-length. 
 
 The surface charge of the walls can be estimated if one knows the electrostatic amplitude potential. Since the electrostatic force is a drift term, one can construct a maximum likelihood estimator as a standard result from the SDE. This estimator is derived in App. \ref{app:1}.
 
@@ -62,11 +62,11 @@ The surface charge of the walls can be estimated if one knows the electrostatic 
      \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}} \quad, \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)}.
 \end{equation}
 
-If the amplitude of the electrostatic interactions is known, one can invert the amplitude using relations in Eqn. \ref{eqn:electrostatic_forces}. This inversion requires at least the zeta-potential of the particle, the size, and debye-length. 
+If the amplitude of the electrostatic interactions is known, one can invert the amplitude using relations in Eqn. \ref{eqn:electrostatic_forces}. This inversion requires at least the zeta-potential of the particle, the size, and Debye-length. 
 
 \section{Results}
 
-We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the differnt cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model. For a given simulation, we can generate a realization of the dynamics following  the aforementioned SDEs. These realizations approach the boltzmann limit as $t \gg \tau$. Some such realizations are shown in Fig. \ref{fig:brown_realization}
+We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the different cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model. For a given simulation, we can generate a realization of the dynamics following  the aforementioned SDEs. These realizations approach the boltzmann limit as $t \gg \tau$. Some such realizations are shown in Fig. \ref{fig:brown_realization}
 
 \begin{figure}[hb]
     \centering
@@ -77,32 +77,32 @@ We will simulate the priors of a Polystyrene bead diffusing with neutral charged
 
 \subsection{Mean-Squared Displacement in Confinement}
 
-For a given experiment, one aims to measure something from knowing the trajectory of the particle. The simplest is an estimate of the size of the particle. One can do this using the transverse and axial trajectories obtained from the Langevin equation as a method to test the variance of the estimator given a known ground truth. In the case of an eletrostatic potential, we can directly how measurements which do not account for screening effects change the measurment. 
+For a given experiment, one aims to measure something from knowing the trajectory of the particle. The simplest is an estimate of the size of the particle. One can do this using the transverse and axial trajectories obtained from the Langevin equation as a method to test the variance of the estimator given a known ground truth. In the case of an electrostatic potential, we can directly how measurements which do not account for screening effects change the measurement. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/xz_msd_comparison.pdf}
-    \caption{Comparison between MSd curves of two highly differnet confined diffusors. Exposure time $\tau = \SI{200}{\micro \second}$, $\lambda_D = \SI{10}{\nm}$. }
+    \caption{Comparison between MSd curves of two highly different confined diffusors. Exposure time $\tau = \SI{200}{\micro \second}$, $\lambda_D = \SI{10}{\nm}$. }
     \label{fig:xz_msd_comparison}
 \end{figure}
 
-The notation of a higher confinement with respect to the zeta-potenital is intrinsically linked to the electrostatic potential that the particle feels as it explores the well. This relationship between the effective confinement length can be solved by solving the Green's function for the FP-equation in the presence of an electrostatic potential. However, this happens to be non-analytical in the case of the Poisson-Boltzmann potenital approximated in the Debye-Huckel theory. However, using the developed simulation class, this relationship can be directly measured. The same settings were used while fixing the zeta-potential of the particle, and varying the ionic concentration of the solution, which is inversely proportional to the debye-length,
+The notation of a higher confinement with respect to the zeta-potential is intrinsically linked to the electrostatic potential that the particle feels as it explores the well. This relationship between the effective confinement length can be solved by solving the Green's function for the FP-equation in the presence of an electrostatic potential. However, this happens to be non-analytical in the case of the Poisson-Boltzmann potential approximated in the Debye-Huckle theory. However, using the developed simulation class, this relationship can be directly measured. The same settings were used while fixing the zeta-potential of the particle, and varying the ionic concentration of the solution, which is inversely proportional to the debye-length,
 \begin{equation}
     \lambda_D \propto \frac{1}{\sqrt{C}},
 \end{equation}
-where $C$ is the ionic concentration of a dilute eletrolyte compound [CITE]. To model this, the simulation settings are chosen as such $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. The relationship between the effective confinement length and the ionic concentration is shown in Fig. \ref{fig:conf_debyelen}
+where $C$ is the ionic concentration of a dilute electrolyte compound [CITE]. To model this, the simulation settings are chosen as such $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. The relationship between the effective confinement length and the ionic concentration is shown in Fig. \ref{fig:conf_debyelen}
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_debyelength.pdf}
-    \caption{Effective Confinement length plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \caption{Effective Confinement length plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
     \label{fig:conf_debyelen}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/diff_debye.pdf}
-    \caption{Effective diffusion plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \caption{Effective diffusion plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
     \label{fig:diff_debyelen}
 \end{figure}
 
@@ -133,7 +133,7 @@ With regards of surface charge estimation, we have introduced a new MLE for the 
 
 \chapter{iSCAT z-estimation Simulations}
 
-Here we discuss the estimation of z-estimation on rayleigh length diffraction. To obtain a 3D track, it is paramount that we have a scope of how accurate the detection of the z-axis is. This section aims to rigourously test and investigate the z-localization method in order to have an accurate representation of the performance of the method.
+Here we discuss the estimation of z-estimation on rayleigh length diffraction. To obtain a 3D track, it is paramount that we have a scope of how accurate the detection of the z-axis is. This section aims to rigorously test and investigate the z-localization method in order to have an accurate representation of the performance of the method.
 
 
 \section{Method Overview}
@@ -143,14 +143,14 @@ The Axial inference pipeline is described in order of operation on image data.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\textwidth]{Figures/yikes.png}
-    \caption{Backgrodun substraction outline. }
+    \caption{Background subtraction outline. }
     \label{fig:method_outline}
 \end{figure}
 
 
 \subsection{Image Background Subtraction and Noise Consideration}
 
-To obtain iSCAT images from raw CMOS data, it is important to perform noise subtraction and convert the image into constrast units. To illustrate this, a sketch of a diagram is shown, and pseudocode is provided. These equations follow the theoretical outline, with experimentally selected parameters. 
+To obtain iSCAT images from raw CMOS data, it is important to perform noise subtraction and convert the image into contrast units. To illustrate this, a sketch of a diagram is shown, and pseudocode is provided. These equations follow the theoretical outline, with experimentally selected parameters. 
 
 
 \begin{algorithm}[H]
@@ -240,7 +240,7 @@ To determine the transverse positions of any particles detected in the iSCAT met
 \newpage
 \subsection{Radial Integral}
 
-Image data will have background misalignment due to iSCAT hardware setup. To optimize for fitting speed and misalignement property, radial scattering profile are assumed as in the rayleigh regime model is symmetric. The radial integration method is described in Alg \ref{alg:rad_int}.
+Image data will have background misalignment due to iSCAT hardware setup. To optimize for fitting speed and misalignment property, radial scattering profile are assumed as in the rayleigh regime model is symmetric. The radial integration method is described in Alg \ref{alg:rad_int}.
 
 \begin{algorithm}[H]
 \caption{Discrete radial profile (angular average over a wedge)}
@@ -418,9 +418,9 @@ To obtain accurate estimation of the $z$ position relative to nearby frames, nui
 
 
 
-\subsection{2D Chainlink}
+\subsection{2D Chain-link}
 
-To link consequent positions in space, a dynamic programming algorithm is used. The algorithm is descirbed in Alg. \ref{alg:best_chain_2d}
+To link consequent positions in space, a dynamic programming algorithm is used. The algorithm is described in Alg. \ref{alg:best_chain_2d}
 \begin{algorithm}[H]
 \caption{Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}
 \label{alg:best_chain_2d}
@@ -430,7 +430,7 @@ To link consequent positions in space, a dynamic programming algorithm is used. 
     \Statex \hspace{\algorithmicindent} where $x_t^{(i)} \equiv \texttt{min\_idx}[t][i]$ (position) and $y_t^{(i)} \equiv \texttt{min\_vals}[t][i]$ (value)
 \Require Weights $\mathbf{W} = \operatorname{diag}(w_x, w_y)$, default $\mathbf{W} = \mathbf{I}$
 \Require Maximum step $s_{\max} \in (0, \infty]$ \Comment{$s_{\max} = \infty$ $\Rightarrow$ unconstrained}
-\Ensure  Chain $\mathbf{k} = (k_0,\dots,k_{F-1})$, $k_t \in \{1,\dots,n_t\}$, minimising
+\Ensure  Chain $\mathbf{k} = (k_0,\dots,k_{F-1})$, $k_t \in \{1,\dots,n_t\}$, minimizing
     \[
         J(\mathbf{k}) \;=\; \sum_{t=1}^{F-1}
         \big\| \mathbf{W}\big( \mathbf{p}_{t-1}^{(k_{t-1})} - \mathbf{p}_{t}^{(k_{t})} \big) \big\|_2
@@ -547,7 +547,7 @@ To validate the proposed method, one performs simulated axial-estimation. Simula
     \label{fig:ipsf_sim}
 \end{figure}
 
-As mentioned, the localization pipeline utilizes a weighting scheme to account for objective abberation and misalignments to non-modelled regions of the data, such as the central fringe. This is accounted for by using a binary weighting array, $\mathbf{w}$. In the case of these idealized simulations, we will show the effect of changing the weighting scheme as we proceed. This demonstrates a loss of absolute precision, however, maintains the relative precision, which is that of interest in measurements of axial trajectory. 
+As mentioned, the localization pipeline utilizes a weighting scheme to account for objective aberration and misalignments to non-modelled regions of the data, such as the central fringe. This is accounted for by using a binary weighting array, $\mathbf{w}$. In the case of these idealized simulations, we will show the effect of changing the weighting scheme as we proceed. This demonstrates a loss of absolute precision, however, maintains the relative precision, which is that of interest in measurements of axial trajectory. 
 
 \subsection{3-parameter Estimation}
 
@@ -559,29 +559,29 @@ As a reminder, the model for the iPSF is a multivariate function $\text{iPSF}:(z
     \end{aligned}
 \end{equation}
 
-The so-called 3-parameter estimation is a sampling of nuisance parameters in the model. The nuisance parameters here are $\hat{E_0}, \hat \gamma$, where $\hat{E_0}$ is an ampltiude factor, and $\gamma$ is an exponential decay factor used to account for spatial decay in signal. The amplitude factor can be analytically solved for using a grid-search sweep along $z$. The $\gamma$ factor is fitted to using the L-BFGS-B minimization algorithm. This nuisance parameter fit is shown in the histograms of these two parameters shown in Fig. \ref{fig:nuisance_fit}.
+The so-called 3-parameter estimation is a sampling of nuisance parameters in the model. The nuisance parameters here are $\hat{E_0}, \hat \gamma$, where $\hat{E_0}$ is an amplitude factor, and $\gamma$ is an exponential decay factor used to account for spatial decay in signal. The amplitude factor can be analytically solved for using a grid-search sweep along $z$. The $\gamma$ factor is fitted to using the L-BFGS-B minimization algorithm. This nuisance parameter fit is shown in the histograms of these two parameters shown in Fig. \ref{fig:nuisance_fit}.
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/nuisance_param.pdf}
-    \caption{Nuisance Parameter estimation for iPSF fits. Left. Ampltiude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}
+    \caption{Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}
     \label{fig:nuisance_fit}
 \end{figure}
 
 \subsection{Grid-Search Estimation}
 
-Once the nuisance parameters are chosen, a gridsearch with a dynamic linking is performed. Each frame is assumed to have a maximal diffusion time. This is in place to optimize for noise and have coherent, physical traces without outliers. The grid search takes the difference between the data and a scan over the model with the nuisance parameters in place. The best loss is chosen. In the case of linking, the minimal loss over the path is chosen. The full algorithm is discussed elsewhere. the residuals of this using no fitting are shown in Fig. \ref{fig:fit_residuals}.
+Once the nuisance parameters are chosen, a grid-search with a dynamic linking is performed. Each frame is assumed to have a maximal diffusion time. This is in place to optimize for noise and have coherent, physical traces without outliers. The grid search takes the difference between the data and a scan over the model with the nuisance parameters in place. The best loss is chosen. In the case of linking, the minimal loss over the path is chosen. The full algorithm is discussed elsewhere. the residuals of this using no fitting are shown in Fig. \ref{fig:fit_residuals}.
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/simulation_fit_residual.pdf}
-    \caption{Fit resdiuals using no weighting scheme. reportng an absolut bias of 1 nm with variance of 2 nanometers.}
+    \caption{Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}
     \label{fig:fit_residuals}
 \end{figure}
 
 \section{Conclusions}
 
-In conclusion, the pseudocode for the method was outlined explicitly. The methodology was tested on simulation data with a high degree of accuracy. The method shows an accuract of $\pm \SI{1}{\nm}$ with a forward bias of $\SI{1}{\nm}$.
+In conclusion, the pseudocode for the method was outlined explicitly. The methodology was tested on simulation data with a high degree of accuracy. The method shows an accuracy of $\pm \SI{1}{\nm}$ with a forward bias of $\SI{1}{\nm}$.
 
 
 

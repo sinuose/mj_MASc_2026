@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {6.1.2}iSCAT $(x, y)$ Tracking}{36}{}%
 \contentsline {subsection}{\numberline {6.1.3}Radial Integral}{37}{}%
 \contentsline {subsection}{\numberline {6.1.4}Nuisance parameter Estimation}{38}{}%
-\contentsline {subsection}{\numberline {6.1.5}2D Chainlink}{39}{}%
+\contentsline {subsection}{\numberline {6.1.5}2D Chain-link}{39}{}%
 \contentsline {section}{\numberline {6.2}Simulated iPSF localization}{40}{}%
 \contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{40}{}%
 \contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{41}{}%
@@ -42,11 +42,15 @@
 \contentsline {subsection}{\numberline {7.2.2}Cover-Glass}{44}{}%
 \contentsline {subsection}{\numberline {7.2.3}Convex-lens induced confinement}{45}{}%
 \contentsline {subsection}{\numberline {7.2.4}Sample Details}{45}{}%
-\contentsline {section}{\numberline {7.3}Results}{45}{}%
-\contentsline {section}{\numberline {7.4}Discussion of Results}{45}{}%
-\contentsline {chapter}{\numberline {8}Conclusion}{47}{}%
-\contentsline {section}{\numberline {8.1}Conclusion}{47}{}%
-\contentsline {section}{\numberline {8.2}Future outlook}{47}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{48}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{48}{}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{49}{}%
+\contentsline {subsection}{\numberline {7.2.5}Analysis Method}{45}{}%
+\contentsline {section}{\numberline {7.3}Results}{46}{}%
+\contentsline {subsection}{\numberline {7.3.1}Polystyrene PBS series}{46}{}%
+\contentsline {subsection}{\numberline {7.3.2}Axial Diffusivity}{47}{}%
+\contentsline {subsection}{\numberline {7.3.3}LNP Diffusivity}{47}{}%
+\contentsline {section}{\numberline {7.4}Discussion of Results}{48}{}%
+\contentsline {chapter}{\numberline {8}Conclusion}{49}{}%
+\contentsline {section}{\numberline {8.1}Conclusion}{49}{}%
+\contentsline {section}{\numberline {8.2}Future outlook}{49}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{52}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{52}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{53}{}%
