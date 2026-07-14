@@ -90,6 +90,64 @@
       \verb http://aip.scitation.org/doi/10.1063/1.4822276
       \endverb
     \endentry
+    \entry{bian111YearsBrownian2016}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=400d1b6db26c5796ed0f529416e781c2}{%
+           family={Bian},
+           familyi={B\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7ef8f6a12ad24e1f00f002b62329fd12}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Changho},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bfaf154b1f300f885a75adce4c6b773e}{%
+           family={Karniadakis},
+           familyi={K\bibinitperiod},
+           given={George\bibnamedelima Em},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{fullhash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{fullhashraw}{6aecb05e3735afbc05e55914b259e045}
+      \strng{bibnamehash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{authorbibnamehash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{authornamehash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{authorfullhash}{6aecb05e3735afbc05e55914b259e045}
+      \strng{authorfullhashraw}{6aecb05e3735afbc05e55914b259e045}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1744-683X, 1744-6848}
+      \field{journaltitle}{Soft Matter}
+      \field{number}{30}
+      \field{title}{111 years of {Brownian} motion}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{12}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{6331\bibrangedash 6346}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1039/C6SM01153E
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\JGUZ5TFG\\Bian et al. - 2016 - 111 years of Brownian motion.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://xlink.rsc.org/?DOI=C6SM01153E
+      \endverb
+      \verb{url}
+      \verb https://xlink.rsc.org/?DOI=C6SM01153E
+      \endverb
+    \endentry
     \entry{bohren1983absorption}{book}{}{}
       \name{author}{2}{}{%
         {{hash=33233e3e3b3a1b37257c460202afa1e4}{%
