@@ -340,8 +340,6 @@ INPUT .\main.bbl
 INPUT main.bbl
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 OUTPUT main.pdf
 INPUT C:\Users\martinj1\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\ABSTRACT.tex
@@ -350,6 +348,8 @@ INPUT .\ABSTRACT.tex
 INPUT .\ABSTRACT.tex
 INPUT ABSTRACT.tex
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc

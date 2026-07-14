@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  14 JUL 2026 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  14 JUL 2026 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,220 +998,57 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  [5]
 Chapter 1.
 (INTRO.tex
-<Figures/size-comp.png, id=29, 2007.5pt x 800.9925pt>
+
+LaTeX Warning: Citation 'bian111YearsBrownian2016' on page 6 undefined on input line 25.
+
+[6
+
+]
+<Figures/size-comp.png, id=35, 2007.5pt x 800.9925pt>
 File: Figures/size-comp.png Graphic file (type png)
 <use Figures/size-comp.png>
-Package pdftex.def Info: Figures/size-comp.png  used on input line 16.
+Package pdftex.def Info: Figures/size-comp.png  used on input line 37.
 (pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
- [6
-
- <./Figures/size-comp.png>]) (C1.tex [7]
+) (C1.tex [7 <./Figures/size-comp.png>] [8]
 Chapter 2.
-[8
+[9
 
-] [9] [10] [11] [12] [13] [14]
+] [10] [11] [12] [13] [14] [15]
 Chapter 3.
-[15
+[16
 
-] [16
+] [17
 
-] [17] [18]
-<Figures/schematic.png, id=87, 326.72063pt x 208.52907pt>
+] [18] [19]
+<Figures/schematic.png, id=90, 326.72063pt x 208.52907pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
 Package pdftex.def Info: Figures/schematic.png  used on input line 457.
 (pdftex.def)             Requested size: 239.66309pt x 152.96313pt.
-<Figures/iscat_photo.png, id=88, 942.52126pt x 680.5425pt>
+<Figures/iscat_photo.png, id=91, 942.52126pt x 680.5425pt>
 File: Figures/iscat_photo.png Graphic file (type png)
 <use Figures/iscat_photo.png>
 Package pdftex.def Info: Figures/iscat_photo.png  used on input line 460.
 (pdftex.def)             Requested size: 239.66309pt x 173.04279pt.
- [19 <./Figures/schematic.png> <./Figures/iscat_photo.png>] [20]
-<Figures/imaging_diagram_simple.png, id=99, 327.2225pt x 156.585pt>
+ [20 <./Figures/schematic.png> <./Figures/iscat_photo.png>] [21]
+<Figures/imaging_diagram_simple.png, id=102, 327.2225pt x 156.585pt>
 File: Figures/imaging_diagram_simple.png Graphic file (type png)
 <use Figures/imaging_diagram_simple.png>
 Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 514.
 (pdftex.def)             Requested size: 220.09479pt x 105.32236pt.
-<Figures/imaging_diagram.pdf, id=100, 208.78pt x 161.60374pt>
+<Figures/imaging_diagram.pdf, id=103, 208.78pt x 161.60374pt>
 File: Figures/imaging_diagram.pdf Graphic file (type pdf)
 <use Figures/imaging_diagram.pdf>
 Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 517.
 (pdftex.def)             Requested size: 220.09479pt x 170.37198pt.
- [21 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>] [22] [23]
+ [22 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>] [23] [24]
 Chapter 4.
-[24
+[25
 
 {C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (10.44499pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 4.  APPLICATION OF CONFINED DIFFUSION TO BIOLOGICAL PROCESSES \OT1/cmr/m/n/12 25
- []
-
-[25]
-<Figures/LNP_types.png, id=126, 743.77875pt x 310.91156pt>
-File: Figures/LNP_types.png Graphic file (type png)
-<use Figures/LNP_types.png>
-Package pdftex.def Info: Figures/LNP_types.png  used on input line 587.
-(pdftex.def)             Requested size: 489.10287pt x 204.45741pt.
-) (C3.tex
 Overfull \hbox (10.44499pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 4.  APPLICATION OF CONFINED DIFFUSION TO BIOLOGICAL PROCESSES \OT1/cmr/m/n/12 26
  []
 
-[26 <./Figures/LNP_types.png>]
-Chapter 5.
-[27
-
-] [28]
-<Figures/simulations/realization_and_boltzmann.pdf, id=137, 713.53282pt x 255.1245pt>
-File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
-<use Figures/simulations/realization_and_boltzmann.pdf>
-Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 73.
-(pdftex.def)             Requested size: 489.10287pt x 174.88379pt.
-<Python/Figures/xz_msd_comparison.pdf, id=138, 497.94029pt x 224.037pt>
-File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
-<use Python/Figures/xz_msd_comparison.pdf>
-Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 84.
-(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29 <./Figures/simulations/realization_and_boltzmann.pdf>]
-<Python/Figures/conf_debyelength.pdf, id=158, 497.94029pt x 224.037pt>
-File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
-<use Python/Figures/conf_debyelength.pdf>
-Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 97.
-(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
-<Python/Figures/diff_debye.pdf, id=159, 439.63855pt x 217.36655pt>
-File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
-<use Python/Figures/diff_debye.pdf>
-Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 104.
-(pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
-<Python/Figures/conf_zeta_debye.png, id=160, 572.01704pt x 223.91655pt>
-File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
-<use Python/Figures/conf_zeta_debye.png>
-Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 112.
-(pdftex.def)             Requested size: 489.10287pt x 191.4643pt.
- [30 <./Python/Figures/xz_msd_comparison.pdf>] [31 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>]
-<Python/Figures/B_estimation_hist.pdf, id=222, 433.5274pt x 217.9221pt>
-File: Python/Figures/B_estimation_hist.pdf Graphic file (type pdf)
-<use Python/Figures/B_estimation_hist.pdf>
-Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 123.
-(pdftex.def)             Requested size: 366.82715pt x 184.40335pt.
- [32 <./Python/Figures/conf_zeta_debye.png> <./Python/Figures/B_estimation_hist.pdf>] [33]
-Chapter 6.
-<Figures/yikes.png, id=246, 1023.07219pt x 504.38437pt>
-File: Figures/yikes.png Graphic file (type png)
-<use Figures/yikes.png>
-Package pdftex.def Info: Figures/yikes.png  used on input line 145.
-(pdftex.def)             Requested size: 366.82715pt x 180.84708pt.
-[34
-
- <./Figures/yikes.png>] [35] [36] [37] [38] [39]
-<Python/Figures/sim_ipsf.pdf, id=269, 687.70567pt x 246.92203pt>
-File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
-<use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 545.
-(pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
- [40 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=306, 563.70598pt x 274.626pt>
-File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
-<use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 566.
-(pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=307, 484.49583pt x 284.94914pt>
-File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
-<use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 577.
-(pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
-) [41 <./Python/Figures/nuisance_param.pdf>] [42 <./Python/Figures/simulation_fit_residual.pdf>]
-Chapter 7.
-(C2.tex [43
-
-]
-File: Figures/schematic.png Graphic file (type png)
-<use Figures/schematic.png>
-Package pdftex.def Info: Figures/schematic.png  used on input line 24.
-(pdftex.def)             Requested size: 489.10287pt x 312.16916pt.
-
-Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 44
- []
-
-[44]
-<Figures/Chapter7/CLiC_figure.png, id=350, 682.80093pt x 242.40562pt>
-File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
-<use Figures/Chapter7/CLiC_figure.png>
-Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 41.
-(pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
-<Figures/Chapter7/Figure_2_v8.pdf, id=351, 758.79701pt x 160.56116pt>
-File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
-<use Figures/Chapter7/Figure_2_v8.pdf>
-Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 57.
-(pdftex.def)             Requested size: 489.10287pt x 103.49376pt.
-
-Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 45
- []
-
-[45 <./Figures/Chapter7/CLiC_figure.png>]
-<Figures/Chapter7/c7_fig3.png, id=356, 901.86937pt x 506.6428pt>
-File: Figures/Chapter7/c7_fig3.png Graphic file (type png)
-<use Figures/Chapter7/c7_fig3.png>
-Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 77.
-(pdftex.def)             Requested size: 391.28378pt x 219.81577pt.
-
-Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 46
- []
-
-[46 <./Figures/Chapter7/Figure_2_v8.pdf> <./Figures/Chapter7/c7_fig3.png>]
-<Figures/Chapter7/c7_fig4.png, id=409, 900.36375pt x 505.89pt>
-File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
-<use Figures/Chapter7/c7_fig4.png>
-Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 88.
-(pdftex.def)             Requested size: 489.10287pt x 274.813pt.
-
-Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 47
- []
-
-[47 <./Figures/Chapter7/c7_fig4.png>])
-Overfull \hbox (163.53687pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 48
- []
-
-[48]
-Chapter 8.
-(CONC.tex) [49
-
-] [50
-
-] (A1.tex [51]
-Appendix A.
-[52
-
-]) [53] (main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-24>
- ***********
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 52449 strings out of 467871
- 1278425 string characters out of 5416924
- 2389099 words of memory out of 5000000
- 80547 multiletter control sequences out of 15000+600000
- 655846 words of font info for 229 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 117i,23n,121p,2021b,1536s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (54 pages, 4553954 bytes).
-PDF statistics:
- 527 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 54897 words of extra memory for PDF output out of 61914 (max. 10000000)
-
+[26]
+<Figures/LNP_types.png, id=129, 743.77875pt x 
