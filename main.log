@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 JUL 2026 10:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 JUL 2026 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1252,7 +1252,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 <Python/Figures/sim_ipsf.pdf, id=270, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 546.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 545.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
 
 
@@ -1260,12 +1260,12 @@ Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 546.
 <Python/Figures/nuisance_param.pdf, id=307, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 567.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 566.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
 <Python/Figures/simulation_fit_residual.pdf, id=308, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 578.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 577.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
 )
 
@@ -1293,7 +1293,13 @@ Overfull \hbox (163.53687pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 44
  []
 
-[44])
+[44]
+<Figures/c7_overview.png, id=352, 561.09625pt x 574.145pt>
+File: Figures/c7_overview.png Graphic file (type png)
+<use Figures/c7_overview.png>
+Package pdftex.def Info: Figures/c7_overview.png  used on input line 41.
+(pdftex.def)             Requested size: 489.10287pt x 500.47456pt.
+)
 
 
 Overfull \hbox (163.53687pt too wide) has occurred while \output is active
@@ -1301,6 +1307,13 @@ Overfull \hbox (163.53687pt too wide) has occurred while \output is active
  []
 
 [45]
+
+
+Overfull \hbox (163.53687pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 7.  WIDEFIELD BACKSCATTERING ISCAT FOR SPT IN 3D CONFINEMENT TRACKING AND ANALYSIS \OT1/cmr/m/n/12 46
+ []
+
+[46 <./Figures/c7_overview.png>]
 Chapter 8.
 (./CONC.tex)
 
@@ -1308,17 +1321,17 @@ LaTeX Warning: Empty bibliography on input line 121.
 
 (./A1.tex
 
-[46
+[47
 
 ]
 Appendix A.
 
 
-[47
+[48
 
 ])
 
-[48] (./main.aux)
+[49] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1337,18 +1350,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51414 strings out of 473190
- 1238761 string characters out of 5715801
- 2325350 words of memory out of 5000000
- 73916 multiletter control sequences out of 15000+600000
- 585803 words of font info for 212 fonts, out of 8000000 for 9000
+ 51425 strings out of 473190
+ 1239022 string characters out of 5715801
+ 2325377 words of memory out of 5000000
+ 73925 multiletter control sequences out of 15000+600000
+ 585847 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,1300b,1529s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (49 pages, 4099546 bytes).
+Output written on main.pdf (50 pages, 4346610 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 330 compressed objects within 4 object streams
+ 470 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 54872 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 54877 words of extra memory for PDF output out of 61914 (max. 10000000)
 
