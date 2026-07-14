@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1784068932.64092 "main.bcf" "main.bbl" "main" 1784070455.22803 0
-  "main.bcf" 1784070455 110304 ec3c2046fd92053586355d77470402f8 "pdflatex"
+["biber main"] 1784071511.55032 "main.bcf" "main.bbl" "main" 1784071524.12294 0
+  "main.bcf" 1784071523 110383 0d3deedc2ca243ef2e7604f489bfc6ca "pdflatex"
   "references.bib" 1784068924 46336 297aac5b641894db47d51387c98543f7 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784070451.4437 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784070455.2287 0
+["pdflatex"] 1784071520.95947 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784071524.1235 0
   "A1.tex" 1783971561 2774 5a96520d555e708835269a0e3f31bf9b ""
   "ABSTRACT.tex" 1783971561 4434 8903af78a0fa6ec3cfaec210e256fba5 ""
   "C1.tex" 1784054919 43784 a35fc0a06e4682de0b6671b15ba04bb9 ""
@@ -276,7 +276,7 @@
   "Figures/simulations/realization_and_boltzmann.pdf" 1783379649 703793 0068ca6fa2f8254c9c74545da3dc8405 ""
   "Figures/size-comp.png" 1782768669 195926 3a9489d27de6f7980d44a424af0334a6 ""
   "Figures/yikes.png" 1783983574 70197 8242693b0f76bd4ad4ae78008d847b3c ""
-  "INTRO.tex" 1784070450 7265 b990312c98fef6471f2a9b81e4127788 ""
+  "INTRO.tex" 1784071506 8335 8421103cffb8d01f7057ae7f194b4857 ""
   "Python/Figures/B_estimation_hist.pdf" 1783973251 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
   "Python/Figures/conf_debyelength.pdf" 1783541315 51052 97e65a42bd76a408ca4dfd91cfc700c6 ""
   "Python/Figures/conf_zeta_debye.png" 1783620391 443847 252a0afd645e523bd55b13b77185746a ""
@@ -286,11 +286,11 @@
   "Python/Figures/simulation_fit_residual.pdf" 1783464887 71236 3fa5b9bab854402bd319310435021689 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
   "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784067075 3031 1b633f0fc01b7f6b474094519fb84c65 ""
-  "main.aux" 1784070455 19943 33586edea04fed58a4905a407d93df84 "pdflatex"
-  "main.bbl" 1784068934 41911 f337d04558db7f6a241536c3247d22e4 "biber main"
-  "main.run.xml" 1784070455 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
+  "main.aux" 1784071523 20122 41e1de66e3cb3c9d6c12c83dc5fca3d3 "pdflatex"
+  "main.bbl" 1784071514 44147 b5669549b5645ae2eaed79265641039d "biber main"
+  "main.run.xml" 1784071523 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
   "main.tex" 1784067075 3031 1b633f0fc01b7f6b474094519fb84c65 ""
-  "main.toc" 1784070455 4284 bdfe0baab91d90ca117aa44ce00b3551 "pdflatex"
+  "main.toc" 1784071523 4284 bdfe0baab91d90ca117aa44ce00b3551 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
