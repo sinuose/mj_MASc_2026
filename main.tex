@@ -1,4 +1,6 @@
 \documentclass[12pt, oneside]{book}
+%\documentclass[12pt]{book}
+
 \usepackage{ circuitikz }
 \usepackage{graphicx} % Required for inserting images
 \usepackage{subcaption}
@@ -18,10 +20,10 @@
 % Tikz diagrams/schematics
 \usepackage{tikz}
 \usepackage{siunitx}
+
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
 %bibliography
-%\usepackage{biblatex}
-%\usepackage{hyperref}
+
 
 \usepackage{microtype} % Subtle font spacing adjustments
 \usepackage
@@ -43,8 +45,10 @@
 \usepackage{biblatex}
 \addbibresource{references.bib}
 
-
-%\bibliography{references}
+\usepackage{nomencl}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+\renewcommand{\nompreamble}{The next list describes several symbols that will be later used within the body of the document}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
@@ -100,7 +104,20 @@
     \input{ABSTRACT}
 
     \tableofcontents
+    
+    % list of symbols
+    \nomenclature{\(D\)}{Diffusion coefficient}
+    \nomenclature{\(a\)}{Spherical particle radius}
+    \nomenclature{\(\eta\)}{Fluid viscosity}
+    \nomenclature{\(k_b\)}{Boltzmann Constant}
+    \nomenclature{\(T\)}{Temperature}
+    \nomenclature{\(\mu_\parallel\)}{Transverse mobility coefficient}
+    \nomenclature{\(\mu_\perp\)}{Axial mobility coefficient}
 
+
+    \printnomenclature
+    
+    % start document
     \chapter{Introduction}
     \input{INTRO}
 

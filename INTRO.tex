@@ -17,20 +17,16 @@ The relation between the particle's size and its motion is explained in Einstein
 \begin{equation}
     D(\vec{x}, a) = \frac{k_bT}{\gamma(\vec{x}, a)},
 \end{equation}
+
 where $\gamma(\vec{x}, a)$ is the viscous drag at the position $\vec{x}$ of a particle of hydrodynamic radius $a$. In the case of a spherical paricle in an incompressible fluid, $\gamma(a) = 6\pi \eta a$, where $\eta$ is the fluid viscosity. 
 
-
-In typical measurements of particle motion, it is easiest to work in a confined space. For instance, convex-lens induced confinement (CLiC)measurements typically use micro-apertures, or wells, to confine single molecules for extended temporal measurements via fluorescence microscopy. This is similar in the case of nanoparticle tracking analysis (NTA) measurements, where a flow is applied to particles confined between two plates in a flow-cell. This is done as image data recorded by a microscope takes 2D images in a focal plane, which is typically on the order of a few hundred nanometers (cite). 
+In typical measurements of particle motion, it is easiest to work in a confined space. For instance, convex-lens induced confinement (CLiC) measurements typically use micro-apertures of volume $\SI{1.5}{\micro \meter^3}$ to confine single molecules for extended temporal measurements via fluorescence microscopy. This is similar in the case of nanoparticle tracking analysis (NTA) measurements, where a flow is applied to particles confined between two plates in a flow-cell and are imaged using scattering microscopy. The confinement is performed as microscope images consist of 2D slices of a focal plane, which is typically on the order of a few hundred nanometers (cite). 
 
 Although experimentally easier, the viscous drag relation is spatially varying. In turn, size-diffusivity relation in confinement is intrinsically non-trivial. This non-trivial behavior can been shown to alter the diffusivity of a particle by a significant amount \cite{swanParticleMotionParallel2010,bian111YearsBrownian2016}. 
 
-% In the nano-world, atomic molecules are constantly in motion, exchanging kinetic energy in a chaotic way. The higher the temperature, the more chaos there is - thus, the world is very difficult to describe, predict, and conquer. Since every chemical reaction in biological and chemical world depends on this motion, it is extremely important to understand the rate of diffusion. This is the reason this subject has been studied by many physcisits, chemists and bioligists. 
+Since the diffusivity of a particle in confinement is spatially varying, in order to recover the true size of a particle diffusing, it is necessary to have the full spatial location of the particle's motion with respect to the confinement barriers. This requirement necessitates the 3D tracking in confinement experiments. If one does not have the 3 dimensional position, one cannot recover the true size estimate.
 
-% When doing particle-sizing of particles that are smaller than the diffraction of light, one cannot 'see' the size of the particle. Thus, one requires another means of sizing them using information that goes beyond the physical shape. The physical process of stochastic motion, brownian motion, acts like a physical ruler. The diffusion of a particle is directly related to the size of the molecule. In turn, if one can measure movement of a particle, they can also measure their size. However, this relationship, although related, is non-trivial, especially in confined spaced. Thus, there is a need to understand how paricles move around in confined space. Do to this, we want to be able to measure their movement for a long period of time without loss of signal.
-
-Since the diffusivity of a particle in confinement is spatially varying, in order to recover the true size of a particle diffusing, it is necessary to have the full spatial map of the molecules motion with respect to the confinement barriers. This necessitates 3D tracking in confinement. In addition, one would like to view the molecules for enough frames to collect enough positional information to extrapolate the size. Thus, it would be better to use scattering microscopy over fluorescence as the photobleaching time of fluorescence and SNR is a hinderance to having quality data. 
-
-%In this application, microscopy methods must rely on externally driven input - fluorescence microscopy does not work. This thesis uses scattering microscopy, which does not rely on external signal. This is important as in confinement, the diffusion can change up to a factor of 10 percent simply due to hydrodynamic forces. This is a real variance that causes bias in measurements. My aim is to measure this bias as well as investigate further relationships and recover more information from trajectories.
+In addition, one would like to view the molecules for enough frames to collect enough positional information to extrapolate the size. Thus, it would be better to use scattering microscopy over fluorescence as the photobleaching time of fluorescence and SNR is a hinderance to having quality data. 
 
 \begin{figure}[ht]
     \centering
@@ -39,16 +35,6 @@ Since the diffusivity of a particle in confinement is spatially varying, in orde
 \end{figure}
 
 In the realm of biological processes, there are many such examples involving the particles in the nano size regime. For example, viruses and vesicles are two examples of small molecules which have immense importance in the field. To investigate such systems, it is often the case that to maintain long measurements of the same particle, it is necessary to have some form of confinement. The full understanding of the behavior of these nanoparticles under confinement is thus important, and not complete. 
-
-%Due to recent advantages of computational power, the tracking of nano-events is possible. Usage of high-precision imaging techniques, high-speed analysis methods can furthen the knowledge about biology that was investigated for the last few hundred years.
-
-% Notably, cellular bioligcal molecules such as proteins, vesicles, and organelles fit between the size of \SI{4}{\nano \meter} to \SI{10}{\micro \meter}. 
-
-% In the length-scale of nanoparticles, that is between $20-\SI{100}{\nm}$, the collisions between nearby atomic molecules, such as H2O or O2, induce a non-deterministic stochastic motion. Typcially this motion is investigated in liquids as biological molecules require water to sustain life. In liquids, there is an additional force of hydrodynamic pressure which induces a friction that slows the particle down. 
-
-% In the length-scale of nanoparticles, that is between $20-\SI{100}{\nm}$, many biological particles of utmost importance tend to reside. For instance, in cellular biology, proteins, vesicles, enzymes, and organelles fit between \SI{4}{\nano \meter} to \SI{10}{\micro \meter}. 
-
-%\section{Outline for Thesis}
 
 The thesis consists of 8 chapters. Chapter 2 provides a description of the literature of confined brownian motion over the last century. Chapter 3 describes the theoretical description of interferometric scattering microscopy (iSCAT) and physical limits that apply in optical theory. Chapter 4 discusses the application of Brownian motion and iSCAT in a biological context, which details regarding lipid-nanoparticles and why they need to be studied on the single-molecule level. Chapter 5 consists of investigations of confined diffusion using Langevin simulations. A simulated system was developed and the size-diffusivity relation in an electrostatically screened system was investigated. Chapter 6 describes the 3D iSCAT tracking technique developed during this work. The method overview and validation and explicitly developed and validated Chapter 7 describes the method applied to experimental data and utilizes various nanoparticle species, highlighting their varied diffusions. Chapter 8 concludes the world and provides a future outlook on the topic and steps which need to be advanced.
 
