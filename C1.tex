@@ -183,51 +183,51 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 
 A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
 \begin{equation}
-	\nabla^2 \Psi(\mathbf{r}) = - \frac{\rho(\mathbf{r})}{\varepsilon_0 \varepsilon_r}
+	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}
 \end{equation}
 In a sea of ions, we must carefully define the charge density as it pertains to the system. In a general solution of ions, there will be $j$ species of ions.
 \begin{align*}
-	\nabla^2 \Psi(\mathbf{r}) &=- 4 \pi \frac{\rho_j(\mathbf{r})}{\varepsilon}
+	\nabla^2 \Psi(\vec{x}) &=- 4 \pi \frac{\rho_j(\vec{x})}{\varepsilon}
 \end{align*}
 The charge distribution of a single ion concentration is essentially the density of the ionic positions. It would be tedious and unfeasible to count every ion's position exactly as we are assuming too many things. Rather, one can use a statistical ensemble of ions via a canonical ensemble, which is a good approximation here.
 
 \begin{equation}
-	\rho_i(\mathbf{r}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(r)\right]}
+	\rho_i(\vec{x}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}
 \end{equation}
 
 Here the energy of the system is defined as the potential energy scaled by the charge defined as $U = qV$. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space.
 \begin{equation}
-	\nabla^2 \Psi(\mathbf{r}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(r)\right]}
+	\nabla^2 \Psi(\vec{x}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}
 \end{equation}
 
 There is a nice approximation we can make given that the potential of the solution is small. We linearize the exponential to first order here.
 
 \begin{align*}
-	\nabla^2 \Psi(\mathbf{r}) &\approx -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \left[1-\beta Z_i e_0\Psi(r)\right] \\
-	&= -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty \left[C_i e_0 Z_i-\beta C_i Z_i^2 e_0^2\Psi(r)\right]\\
-	&= -\sum_{i =1}^\infty \left[\frac{C_i e_0 Z_i}{\varepsilon_0 \varepsilon_r}-\kappa^2 \Psi(r)\right]
+	\nabla^2 \Psi(\vec{x}) &\approx -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \left[1-\beta Z_i e_0\Psi(\vec{x})\right] \\
+	&= -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty \left[C_i e_0 Z_i-\beta C_i Z_i^2 e_0^2\Psi(\vec{x})\right]\\
+	&= -\sum_{i =1}^\infty \left[\frac{C_i e_0 Z_i}{\varepsilon_0 \varepsilon_r}-\kappa_i^2 \Psi(\vec{x})\right]
 \end{align*}
 Where $\kappa_i^2$ is related to the debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
 
 When the bulk solution is electro-neutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
 \begin{equation}
-	\nabla^2 \Psi(\mathbf{r}) = \kappa^2 \Psi(\mathbf{r}), \quad \kappa_i^2 = \frac{\beta e_0^2}{\varepsilon_0 \varepsilon_r} \sum_i C_i Z_i^2.
+	\nabla^2 \Psi(\vec{x}) = \kappa^2 \Psi(\vec{x}), \quad \kappa_i^2 = \frac{\beta e_0^2}{\varepsilon_0 \varepsilon_r} \sum_i C_i Z_i^2.
 \end{equation}
 This equation has an obvious solution which are the real exponential functions;
 \begin{equation}
-	\Psi(\mathbf{r}) = A e^{-\kappa\mathbf{r}} + B e^{\kappa\mathbf{r}}.
+	\Psi(\vec{x}) = A e^{-\kappa\vec{x}} + B e^{\kappa\vec{x}}.
 \end{equation}
 
 The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the pre-factor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
 
 In the approximations done in this thesis, we assume a linear symmetric potential, as well as a spherical particle between them. The form of this potential is given by 
 \begin{equation}
-    B = |\psi| \Gamma_p \Gamma_w,
+    B = C \Gamma_p \Gamma_w,
 \end{equation}
 where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle;
 \begin{equation}
     \begin{aligned}
-        |\psi| &= \\
+        C &= \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
         \Gamma_w &= \tanh\left(\frac{e \psi_w}{4k_b T}\right)\\
         \Gamma_p &= \tanh\left(\frac{e \zeta_p}{4k_b T}\right)\\
         \psi_w & = \frac{2 k_b T}{e} \text{asinh}\frac{e\lambda_D \sigma_w}{2 \varepsilon_0 \varepsilon_r k_b T}.

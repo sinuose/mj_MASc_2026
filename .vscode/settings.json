@@ -1,16 +1,62 @@
-{
-    "cSpell.words": [
-        "BFGS",
-        "Debye",
-        "equipartion",
-        "Huckle",
-        "Langevin",
-        "Maruyama",
-        "nanoparticle",
-        "nanoparticles",
-        "numpy",
-        "overdamped",
-        "Sandoghdar",
-        "Viterbi"
-    ]
-}
+    {
+        "cSpell.words": [
+            "BFGS",
+            "Debye",
+            "equipartion",
+            "Huckle",
+            "Langevin",
+            "Maruyama",
+            "nanoparticle",
+            "nanoparticles",
+            "numpy",
+            "overdamped",
+            "Sandoghdar",
+            "Viterbi"
+        ],
+
+        "latex-workshop.latex.tools": [
+            {
+                "name": "pdflatex",
+                "command": "pdflatex",
+                "args": [
+                    "-synctex=1",
+                    "-interaction=nonstopmode",
+                    "-file-line-error",
+                    "%DOC%"
+                ]
+            },
+            {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+            },
+            {
+                "name": "makeindex_nomencl",
+                "command": "makeindex",
+                "args": [
+                    "%DOCFILE%.nlo",
+                    "-s",
+                    "nomencl.ist",
+                    "-o",
+                    "%DOCFILE%.nls"
+                ]
+            }
+        ],
+        "latex-workshop.latex.recipes": [
+            {
+                "name": "pdflatex -> biber -> makeindex -> pdflatex x2",
+                "tools": [
+                    "pdflatex",
+                    "biber",
+                    "makeindex_nomencl",
+                    "pdflatex",
+                    "pdflatex"
+                ]
+            }
+        ]
+
+
+    }
+
