@@ -20,6 +20,7 @@
 % Tikz diagrams/schematics
 \usepackage{tikz}
 \usepackage{siunitx}
+\usepackage{longtable}
 
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
 %bibliography
@@ -44,11 +45,6 @@
 
 \usepackage{biblatex}
 \addbibresource{references.bib}
-
-\usepackage{nomencl}
-\makenomenclature
-\renewcommand{\nomname}{List of Symbols}
-\renewcommand{\nompreamble}{The next list describes several symbols that will be later used within the body of the document}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
@@ -106,41 +102,60 @@
     \tableofcontents
     
     % list of symbols
-    \nomenclature{\(\delta_{ij}\)}{Kronecker's delta function}
-    \nomenclature{\(\delta(\cdot)\)}{Dirac's delta function}
-    \nomenclature{\(\vec{x}\)}{Position Vector}
- 	
-	\nomenclature{\(\vec{v}\)}{Velocity Vector}
-	\nomenclature{\(m\)}{mass}
-	
-	\nomenclature{\(t\)}{time}
-	\nomenclature{\(\kappa\)}{Inverse of Debye-length}
-	\nomenclature{\(\zeta_p\)}{particle zeta-potential}
-	\nomenclature{\(\psi_w\)}{wall zeta-potential}
-	\nomenclature{\(\Gamma_i\)}{Stern Layer of species \(i\)}
-	\nomenclature{\(\Gamma\)}{Fluctuation-dissipation magnitude}
-	\nomenclature{\(j\)}{Probability current}
-	\nomenclature{\(W_t\)}{Gaussian white noise process}
-	\nomenclature{\(\sigma_w\)}{Surface charge density}
-    \nomenclature{\(D\)}{Diffusion coefficient}
-	\nomenclature{\(h\)}{length}
-	\nomenclature{\(\Psi\)}{Electrostatic potential}
-	\nomenclature{\(\rho\)}{volumtric charge density}
-	\nomenclature{\(\varepsilon_0\)}{permitivity of free space}
-	\nomenclature{\(\varepsilon_r\)}{permitivity of material}
-    \nomenclature{\(Z\)}{Ion number}
-    \nomenclature{\(C\)}{Concentration}
-    \nomenclature{\(\beta\)}{\(1/k_bT\)}
-    \nomenclature{\(e_0\)}{Charge of an electron}
-    \nomenclature{\(a\)}{Spherical particle radius}
-    \nomenclature{\(\eta\)}{Fluid viscosity}
-    \nomenclature{\(k_b\)}{Boltzmann Constant}
-    \nomenclature{\(T\)}{Temperature}
-    \nomenclature{\(\mu_\parallel\)}{Transverse mobility coefficient}
-    \nomenclature{\(\mu_\perp\)}{Axial mobility coefficient}
+    \chapter*{Nomenclature}
+    \addcontentsline{toc}{chapter}{Nomenclature}
+    \markboth{Nomenclature}{Nomenclature}
 
+    \begingroup
+    \renewcommand{\arraystretch}{1.3}
+    \setlength{\LTleft}{1pt}          
+    \setlength{\LTright}{1pt plus 1fil}
 
-    \printnomenclature
+    \begin{longtable}{@{} p{0.18\textwidth} @{\hspace{1em}} p{0.75\textwidth} @{}}
+    % ---- header on first page ----
+    \textbf{Symbol} & \textbf{Description} \\[0.3em]
+    \hline
+    \endfirsthead
+    % ---- header on continuation pages ----
+    \textbf{Symbol} & \textbf{Description} \\[0.3em]
+    \hline
+    \endhead
+    
+
+    $\delta_{ij}$        & Kronecker delta \\
+    $\delta(\cdot)$      & Dirac delta distribution \\
+    $\vec{x}$            & Position vector \\
+    $\vec{v}$            & Velocity vector \\
+    $m$                  & Mass \\
+    $t$                  & Time \\
+    $\kappa$             & Inverse Debye length \\
+    $\zeta_p$            & Particle zeta potential \\
+    $\psi_w$             & Wall zeta potential \\
+    $\Gamma_i$           & Stern layer of species $i$ \\
+    $\Gamma$             & Fluctuation--dissipation magnitude \\
+    $j$                  & Probability current \\
+    $W_t$                & Gaussian white-noise process \\
+    $\sigma_w$           & Surface charge density \\
+    $D$                  & Diffusion coefficient \\
+    $h$                  & Length \\
+    $\Psi$               & Electrostatic potential \\
+    $\rho$               & Volumetric charge density \\
+    $\varepsilon_0$      & Permittivity of free space \\
+    $\varepsilon_r$      & Relative permittivity of the material \\
+    $Z$                  & Ion number (valence) \\
+    $C$                  & Concentration \\
+    $\beta$              & $1/k_b T$ \\
+    $e_0$                & Elementary charge \\
+    $a$                  & Spherical particle radius \\
+    $\eta$               & Fluid viscosity \\
+    $k_b$                & Boltzmann constant \\
+    $T$                  & Temperature \\
+    $\mu_\parallel$      & Parallel (axial) mobility coefficient \\
+    $\mu_\perp$          & Perpendicular (transverse) mobility coefficient \\
+    $\mathrm{Re}$        & Reynolds number \\
+
+    \end{longtable}
+    \endgroup
     
     % start document
     \chapter{Introduction}
@@ -153,7 +168,7 @@
     %\chapter{Langevin Simulations and Surface Charge inference of Polystyrene beads}
     \input{C3}
 
-    \chapter{Widefield backscattering iscat for SPT in 3d confinement tracking and analysis}
+    \chapter{3D confinement with iSCAT}
     \input{C2}
 
     \chapter{Conclusion}

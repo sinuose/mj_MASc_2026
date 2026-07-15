@@ -27,13 +27,11 @@ Appendix 4.
 \chapter{Brownian Motion}
 \label{chap:brownianmotion}
 
-As mentioned in the introduction, in cases where particles are smaller than that of the diffraction limit, which is in of itself discussed in \ref{chap:iscatprinciples}, one must resort to using thermal motion as a physical ruler of sorts. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This observation intrigued the likes of many scientists to understand what causes this motion and how the observation changes the state of understanding of the world. This motion was coined \textit{Brownian motion}, and has since been applied in many fields. 
+In cases where particles are smaller than that of the diffraction limit, which is in of itself discussed in \ref{chap:iscatprinciples}, one must resort to using thermal motion as a physical ruler of sorts. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion is known as \textit{Brownian Motion} and is invertibly related to the size of the particle.
 
-In the current time, we understand that nanoparticles move around stochastically under the rules of Brownian motion. To be able to measure the particle's characteristics, one can relate their motion and stochasticity to their properties. This chapter will discuss the phenomena of Brownian motion and how it relates to particle properties, environmental ion concentration, viscosity, hydrodynamic boundaries, and confinement. 
+This chapter aims to establish the background knowledge of the relationships between the diffusivity, size, and spatial coordinate. This process requires sufficient mathematical detail as no sinlge displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
 
-%To directly measure particle position, one can use optical methods, specifically, optical scattering measurements.
-
-In this chapter we discuss the process of Brownian motion and Diffusion-type processes. We begin with Einstein's diffusion- equation argument and Langevin's stochastic equation of motion, and then show, through the Fokker-Planck, or Smoluchowski, formalism, that the two are equivalent descriptions of the same process. We next turn to diffusion under confinement, where hydrodynamic wall effects modify the mobility, and to the electrostatic (Debye-Huckel) potentials that govern particle-wall interactions in ionic solution.
+In this chapter we discuss the process of Brownian motion and Diffusion-type processes. We begin with Einstein's diffusion- equation argument and Langevin's stochastic equation of motion, and then show, through the Fokker-Planck, or Smoluchowski, formalism, that the two are equivalent descriptions of the same process. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility, and to the electrostatic (Debye-Huckel) potentials that govern particle-wall interactions in ionic solution, extra care is made. Lastly, the subject of equilibrium distributions with regards to the probability distributions of positions in confined diffusion processes. 
 
 
 \iffalse
@@ -236,7 +234,7 @@ where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamm
 Note that $\psi_w$ is the Stern layer of the wall related to the surface charge density of the wall \cite{israelachviliIntermolecularSurfaceForces}. This is chosen for a more intuitive measurable of a wall-like structure. 
 
 
-\section{Equilibrium Positional Distributions for Anomalous Confined Diffusion}
+\section{Equilibrium Distributions for Confined Systems}
 
 In the case of interfaces, we have boundary conditions that case the particle to reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Then, we need to solve the adjusted Fokker-Plank equation;
 \begin{equation}
@@ -253,18 +251,20 @@ This equation defines the equilibrium distribution of the brownian diffusion aft
 \chapter{Interferometric Scattering Principles}
 \label{chap:iscatprinciples}
 
-This section is devoted to the description of physical principles associated with light scattering techniques. These techniques are widely used in microscopy, as I have used them in measuring where my particles are. Scattering measurements are of interest as they allow for label-free imaging with a high signal to noise and high temporal resolution. 
+To precisely locate particles of the nano-scale in order to size them, it is important to be able to obtain long, accurate positional traces. To do this, the signal of the particle locations must be relatively constant over time. One method that allows localization of particle traces over time like this is the method of interferometric scattering microscopy \cite{taylor_interferometric_2018}. 
+
+Interferometric light scattering microscopy (iSCAT) is a relatively modern technique that utilizes light scattering to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images the relative axial distance can be measured. Thus, the 3D positional information is encoded in the scattering pattern in iSCAT. Thus, this technique is paramount to being able to measure the diffusivity in confinement, which is why we should talk about it.  
 
 We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field. 
 
-The photon is the fundamental quanta of the electric field as stated in QFT (cite). It has been shown that because of this, the field equations of light obey the fundamental principle that states
+In order to discuss the spatial distribution of light scattering, it is necessary to use a framework to develop the fundamental properties.  On the quantum level, electromagnetic wave field consist of photons \cite{weinberg_quantum_1995}. This fact motivates the use of the theory of electromagnetic waves, in particular Maxwell's equations, to be applied to optical field. The optical field is defined with respect to light intensity, which is defined as the modulus of itself,
 \begin{equation}
     I = |\vec E(\vec x, t)|^2,
 \end{equation}
-where $\vec E(\vec x, t)$ is defined as an optical field\footnote{As opposed to an electric field, where $\vec E_{\text{optic}}(\vec x, t) = \sqrt{\varepsilon_0 n_m c/2}\vec E_{\text{elec}}(\vec x, t)$. The normalization constant affects how the fields relate to the measured light intensity \cite{garciarodriguezOpticalLabelfreeMicroscopy2025}}. This principle relation allows us to form models using electromagnetic theory to map out how the optical fields behave.
+where $\vec E(\vec x, t)$ is defined as the optical field\footnote{As opposed to an electric field, where $\vec E_{\text{optic}}(\vec x, t) = \sqrt{\varepsilon_0 n_m c/2}\vec E_{\text{elec}}(\vec x, t)$. The normalization constant affects how the fields relate to the measured light intensity \cite{garciarodriguezOpticalLabelfreeMicroscopy2025}}. This principle relation allows us to form models using electromagnetic theory to map out how the optical fields behave.
 
 This chapter will discuss the electromagnetic scattering theory of spheres, discussion of general optical scattering microscopy theory, then discuss the principle of iSCAT and its limitations.
-\clearpage
+
 
 \iffalse
 \section{Maxwell's Equations and field propagations equations}
@@ -546,7 +546,7 @@ The camera used will also contain electronic noise associated with it. For CMOS 
 
 In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
-\chapter{Application of confined diffusion to Biological processes}
+\chapter{Biological Application}
 
 As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequately understand the confinement effect of diffusion in a given system. 
 
@@ -586,7 +586,7 @@ One recent investigation of LNP research is within the functional differences ba
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/LNP_types.png}
+    \includegraphics[width=\linewidth]{Figures/LNP_types.png}
     \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core.}
     \label{fig:LNP_types}
 \end{figure}

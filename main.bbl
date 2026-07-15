@@ -359,6 +359,66 @@
       \field{title}{Investigations on the Theory of the Brownian Movement}
       \field{year}{1956}
     \endentry
+    \entry{filipeCriticalEvaluationNanoparticle2010}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=73c32418a508557b209afae0d3412c8f}{%
+           family={Filipe},
+           familyi={F\bibinitperiod},
+           given={Vasco},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9d60de74fad4c5d603f785409da37de0}{%
+           family={Hawe},
+           familyi={H\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=83dd6636af166e94f4a92db7c0fc7ffc}{%
+           family={Jiskoot},
+           familyi={J\bibinitperiod},
+           given={Wim},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{fullhash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{fullhashraw}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{bibnamehash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{authorbibnamehash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{authornamehash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{authorfullhash}{81f2e71c12168d44a3d561a5f4073d61}
+      \strng{authorfullhashraw}{81f2e71c12168d44a3d561a5f4073d61}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose. To evaluate the nanoparticle tracking analysis (NTA) technique, compare it with dynamic light scattering (DLS) and test its performance in characterizing drug delivery nanoparticles and protein aggregates. Methods. Standard polystyrene beads of sizes ranging from 60 to 1,000 nm and physical mixtures thereof were analyzed with NTA and DLS. The inﬂuence of different ratios of particle populations was tested. Drug delivery nanoparticles and protein aggregates were analyzed by NTA and DLS. Live monitoring of heat-induced protein aggregation was performed with NTA. Results. NTA was shown to accurately analyze the size distribution of monodisperse and polydisperse samples. Sample visualization and individual particle tracking are features that enable a thorough size distribution analysis. The presence of small amounts of large (1,000 nm) particles generally does not compromise the accuracy of NTA measurements, and a broad range of population ratios can easily be detected and accurately sized. NTA proved to be suitable to characterize drug delivery nanoparticles and protein aggregates, complementing DLS. Live monitoring of heat-induced protein aggregation provides information about aggregation kinetics and size of submicron aggregates. Conclusion. NTA is a powerful characterization technique that complements DLS and is particularly valuable for analyzing polydisperse nanosized particles and protein aggregates.}
+      \field{issn}{0724-8741, 1573-904X}
+      \field{journaltitle}{Pharmaceutical Research}
+      \field{month}{5}
+      \field{number}{5}
+      \field{title}{Critical {Evaluation} of {Nanoparticle} {Tracking} {Analysis} ({NTA}) by {NanoSight} for the {Measurement} of {Nanoparticles} and {Protein} {Aggregates}}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{27}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \field{pages}{796\bibrangedash 810}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s11095-010-0073-2
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\HQUC9PFL\\Filipe et al. - 2010 - Critical Evaluation of Nanoparticle Tracking Analysis (NTA) by NanoSight for the Measurement of Nano.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s11095-010-0073-2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s11095-010-0073-2
+      \endverb
+    \endentry
     \entry{garciarodriguezOpticalLabelfreeMicroscopy2025}{article}{}{}
       \name{author}{6}{}{%
         {{hash=e9641c1f4aef042a321218518ff6706d}{%
@@ -431,6 +491,101 @@
       \endverb
       \verb{url}
       \verb https://xlink.rsc.org/?DOI=D4NR03860F
+      \endverb
+    \endentry
+    \entry{graves_direct_2026}{article}{}{}
+      \name{author}{10}{}{%
+        {{hash=aac73bbad233b9e1de24ef567c0fe60b}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Sadie},
+           giveni={S\bibinitperiod}}}%
+        {{hash=82e7253d1e83cf3b3f85e4d93c3fd356}{%
+           family={Jasinski},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7352c6203cfd781fce4562cf174d1656}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
+           family={Kamanzi},
+           familyi={K\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=047f7de07364289ade5035d665f1c939}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=882652527e662ac234ac6214b4e66955}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a217be0dbff6dc6252e6787b3c650e9b}{%
+           family={Venier-Karzis},
+           familyi={V\bibinithyphendelim K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0a13c04f0f5b6ca59d0ed8a84a19ee05}{%
+           family={Safaeesirat},
+           familyi={S\bibinitperiod},
+           given={Amin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a099450f6a6b03f168444a5050586954}{%
+           family={Cullis},
+           familyi={C\bibinitperiod},
+           given={Pieter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=2e3e460f138ebc527d3eec585313c751}{%
+           family={Leslie},
+           familyi={L\bibinitperiod},
+           given={Sabrina\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{f4891d9f60666b32f3862008867dd5fa}
+      \strng{fullhash}{d8f6195a38cb31b08d4f7e07da72b579}
+      \strng{fullhashraw}{d8f6195a38cb31b08d4f7e07da72b579}
+      \strng{bibnamehash}{f4891d9f60666b32f3862008867dd5fa}
+      \strng{authorbibnamehash}{f4891d9f60666b32f3862008867dd5fa}
+      \strng{authornamehash}{f4891d9f60666b32f3862008867dd5fa}
+      \strng{authorfullhash}{d8f6195a38cb31b08d4f7e07da72b579}
+      \strng{authorfullhashraw}{d8f6195a38cb31b08d4f7e07da72b579}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The optimization of mRNA-lipid nanoparticles (mRNA-LNPs) for therapeutic applications is limited in part by the inadequate characterization of mRNA payload heterogeneity. One current challenge is accurately measuring the number of mRNA copies within individual LNPs, where the standard method of intensity-based mRNA number determination is sensitive to fluorescent dye−dye interactions and heterogeneity of mRNA labeling. Here we present a single-particle microscopy method that combines direct counting of the mRNA copies per LNP with LNP size measurements. While confined in microwells, individual mRNA-LNPs are lysed to release their cargo and stained with a dye such that the number of mRNA molecules in each well can be directly counted using fluorescence microscopy. Since the method stains the mRNA cargo in situ, it enables characterization of LNPs formulated with therapeutic grade (e.g., unlabeled) mRNA. We applied this approach to two Onpattro-based LNP formulations prepared using different formulation buffers, where the two formulations had different average mRNA copy number, particle size, and fraction of LNPs lacking mRNA. The ability to directly count the number of mRNA molecules in LNPs establishes a complementary method to intensity-based mRNA number determination and supports the characterization and screening of clinically relevant LNP formulations.}
+      \field{issn}{0003-2700, 1520-6882}
+      \field{journaltitle}{Analytical Chemistry}
+      \field{month}{6}
+      \field{number}{22}
+      \field{title}{Direct {Counting} of {mRNA} {Copies} {Inside} {Individual} {Lipid} {Nanoparticles} {Using} {In} {Situ} {Lysis} and {Labeling}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{98}
+      \field{year}{2026}
+      \field{urldateera}{ce}
+      \field{pages}{15961\bibrangedash 15967}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1021/acs.analchem.6c00937
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\6ZL5W6UE\\Graves et al. - 2026 - Direct Counting of mRNA Copies Inside Individual Lipid Nanoparticles Using In Situ Lysis and Labelin.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.analchem.6c00937
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.analchem.6c00937
       \endverb
     \endentry
     \entry{israelachviliIntermolecularSurfaceForces}{article}{}{}
@@ -555,6 +710,7 @@
       \strng{authornamehash}{9109ecd63d01db760120df53bc5e55b8}
       \strng{authorfullhash}{9d58b9650a995aa38b337ad014d19820}
       \strng{authorfullhashraw}{9d58b9650a995aa38b337ad014d19820}
+      \field{extraname}{1}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -584,6 +740,113 @@
       \endverb
       \verb{url}
       \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
+      \endverb
+    \endentry
+    \entry{kamanzi_single-particle_2026}{article}{}{}
+      \name{author}{16}{}{%
+        {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
+           family={Kamanzi},
+           familyi={K\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=683eb86ce747783dc7a46b649ba0b686}{%
+           family={Bido},
+           familyi={B\bibinitperiod},
+           given={Ariadne\bibnamedelima Tuckmantel},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=047f7de07364289ade5035d665f1c939}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7352c6203cfd781fce4562cf174d1656}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=fac5cd1da2ac386111f27113fc0edfb6}{%
+           family={Stibbards-Lyle},
+           familyi={S\bibinithyphendelim L\bibinitperiod},
+           given={Maya},
+           giveni={M\bibinitperiod}}}%
+        {{hash=82e7253d1e83cf3b3f85e4d93c3fd356}{%
+           family={Jasinski},
+           familyi={J\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f2e801f71a1a5301e2cb1c6d0fcfab5c}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Yifei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c7f8667771ff844afb88eff886bf4d3f}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a217be0dbff6dc6252e6787b3c650e9b}{%
+           family={Venier-Karzis},
+           familyi={V\bibinithyphendelim K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=818787a94ebf2914bfec9f575f58a9d6}{%
+           family={Berti},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=afed896a5c89eec380c907130e18fec3}{%
+           family={Jeliazkova},
+           familyi={J\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1bb9eb861f10df6dc848cd9c9de53b84}{%
+           family={Shaheen},
+           familyi={S\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=882652527e662ac234ac6214b4e66955}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=57e7886c7dfeef500f0f0a319ec07254}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Miffy\bibnamedelimb Hok\bibnamedelima Yan},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=a099450f6a6b03f168444a5050586954}{%
+           family={Cullis},
+           familyi={C\bibinitperiod},
+           given={Pieter\bibnamedelima R},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fef62eaf34e139fc495954494ef2c2cf}{%
+           family={Leslie},
+           familyi={L\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{fullhash}{e12544571197be7c0867a5720c5e3945}
+      \strng{fullhashraw}{e12544571197be7c0867a5720c5e3945}
+      \strng{bibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorbibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authornamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorfullhash}{e12544571197be7c0867a5720c5e3945}
+      \strng{authorfullhashraw}{e12544571197be7c0867a5720c5e3945}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deciphering the heterogeneity of mRNA-containing lipid nanoparticles (LNPs) is essential for understanding the relationship between their microscopic properties and therapeutic function. Here, by combining alternating laser excitation (ALEX) with convex lens-induced confinement (CLiC) microscopy, we simultaneously measure size, multicolor fluorescence, mRNA payload, and Förster resonance energy transfer (FRET) of individual suspended LNPs containing labeled lipid and mRNA molecules. By varying formulation parameters, including ionizable lipids, formulation buffers, and molecular ratios, we investigated and correlated key microscopic properties for relevant vaccine formulations. While perparticle lipid fluorescence was lower for empty versus mRNAloaded particles for all formulations, the relative size of empty versus mRNA-loaded particles depended upon the formulation and intraparticle structure. When comparing CLiC-ALEX to cryogenic transmission electron microscopy measurements (Cryo-TEM), for the LNP formulations with a major subpopulation of bleb-LNPs, the subpopulation of bleb-LNPs appears to overlap with the subpopulation of mRNA-containing LNPs. CLiC-ALEX also enabled quantification of per-particle mRNA fluorescence and FRET signals, thereby revealing heterogeneity in the mRNA copy number and mRNA-LNP structural arrangements; where the results were compared with biophysical estimates based on the LNP formulations. These rigorous biophysical insights are critical to inform our understanding of structure−activity relationships and inform the rational design of nanomedicines.}
+      \field{journaltitle}{ACS Nano}
+      \field{title}{Single-{Particle} {Multiparametric} {Microscopy} {Reveals} {Structural}, {Size}, and {Payload} {Heterogeneity} in {mRNA}-{Loaded} {Lipid} {Nanoparticles}}
+      \field{year}{2026}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\GZCWB78X\\Kamanzi et al. - 2026 - Single-Particle Multiparametric Microscopy Reveals Structural, Size, and Payload Heterogeneity in mR.pdf:application/pdf
       \endverb
     \endentry
     \entry{kashkanovaPrecisionSingleparticleLocalization2021}{article}{}{}
@@ -664,6 +927,65 @@
       \endverb
       \verb{url}
       \verb https://opg.optica.org/abstract.cfm?URI=oe-29-7-11070
+      \endverb
+    \endentry
+    \entry{ma_mrna_2025}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f84167a783e3a39fa7b3f99896fe9a18}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Yutian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1e180a089129739626768a015a41742f}{%
+           family={VanKeulen-Miller},
+           familyi={V\bibinithyphendelim M\bibinitperiod},
+           given={Rachel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=989b907525706f462d0d22b5638ca48f}{%
+           family={Fenton},
+           familyi={F\bibinitperiod},
+           given={Owen\bibnamedelima S.},
+           giveni={O\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{fullhash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{fullhashraw}{9877345e9911680ec75d89f2e8754d90}
+      \strng{bibnamehash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{authorbibnamehash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{authornamehash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{authorfullhash}{9877345e9911680ec75d89f2e8754d90}
+      \strng{authorfullhashraw}{9877345e9911680ec75d89f2e8754d90}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1754-2189, 1750-2799}
+      \field{journaltitle}{Nature Protocols}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{{mRNA} lipid nanoparticle formulation, characterization and evaluation}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{20}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{2618\bibrangedash 2651}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1038/s41596-024-01134-4
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\FHHRRXJ4\\Ma et al. - 2025 - mRNA lipid nanoparticle formulation, characterization and evaluation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41596-024-01134-4
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41596-024-01134-4
       \endverb
     \endentry
     \entry{millanNumericalSimulationsConfined2023}{misc}{}{}
@@ -870,6 +1192,149 @@
       \endverb
       \verb{url}
       \verb https://pubs.aip.org/pof/article/22/10/103301/900316/Particle-motion-between-parallel-walls
+      \endverb
+    \endentry
+    \entry{taylor_interferometric_2018}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=a89bb09399de73fdf0782b20d4ea0b9b}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Richard\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=ad287b767cb31b0532f34e8f962e0792}{%
+           family={Sandoghdar},
+           familyi={S\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{fullhash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{fullhashraw}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{bibnamehash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{authorbibnamehash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{authornamehash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{authorfullhash}{ce6c644347fa15163c047e62dcfe3b94}
+      \strng{authorfullhashraw}{ce6c644347fa15163c047e62dcfe3b94}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Interferometric scattering (iSCAT) microscopy is a powerful tool for label-free sensitive detection and imaging of nanoparticles to high spatio-temporal resolution. As it was born out of detection principles central to conventional microscopy, we begin by surveying the historical development of the microscope to examine how the exciting possibility for interferometric scattering microscopy with sensitivities suﬃcient to observe single molecules has become a reality. We discuss the theory of interferometric detection and also issues relevant to achieving a high detection sensitivity and speed. A showcase of numerous applications and avenues of novel research across various disciplines that iSCAT microscopy has opened up is also presented.}
+      \field{annotation}{Comment: Review article: 42 pages, 16 figures}
+      \field{month}{12}
+      \field{note}{arXiv:1812.10765 [physics.optics]}
+      \field{title}{Interferometric {Scattering} ({iSCAT}) {Microscopy} \& {Related} {Techniques}}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1812.10765
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\28254KZL\\Taylor and Sandoghdar - 2018 - Interferometric Scattering (iSCAT) Microscopy & Related Techniques.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1812.10765
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1812.10765
+      \endverb
+      \keyw{Condensed Matter - Mesoscale and Nanoscale Physics,Physics - Optics}
+    \endentry
+    \entry{vestergaardOptimalEstimationDiffusion2014}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=703149a7865d0e4a701a3fe6906a9a21}{%
+           family={Vestergaard},
+           familyi={V\bibinitperiod},
+           given={Christian\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=9569ddeecdef233fda6c7633e5990da6}{%
+           family={Blainey},
+           familyi={B\bibinitperiod},
+           given={Paul\bibnamedelima C.},
+           giveni={P\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4ce9b2a908f915d5107e80f09cb0d362}{%
+           family={Flyvbjerg},
+           familyi={F\bibinitperiod},
+           given={Henrik},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{fullhash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{fullhashraw}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{bibnamehash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{authorbibnamehash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{authornamehash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{authorfullhash}{5bd1b35ae47ec1234b559bc57aabd681}
+      \strng{authorfullhashraw}{5bd1b35ae47ec1234b559bc57aabd681}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1539-3755, 1550-2376}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Optimal estimation of diffusion coefficients from single-particle trajectories}
+      \field{urlday}{15}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{89}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \field{pages}{022726}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.89.022726
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\DXHA24VK\\Vestergaard et al. - 2014 - Optimal estimation of diffusion coefficients from single-particle trajectories.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.89.022726
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.89.022726
+      \endverb
+    \endentry
+    \entry{weinberg_quantum_1995}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=15e144c72b0b9d10db00ddc6d37a19e6}{%
+           family={Weinberg},
+           familyi={W\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{fullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{fullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{bibnamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorbibnamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The {Quantum} {Theory} of {Fields}}
+      \field{year}{1995}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\7DNYWKF7\\Weinberg - The Quantum Theory of Fields.pdf:application/pdf
       \endverb
     \endentry
   \enddatalist
