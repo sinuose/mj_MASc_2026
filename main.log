@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  15 JUL 2026 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  16 JUL 2026 13:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,6 +711,8 @@ Package biblatex Info: ... file 'blx-dm.def' found.
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
 File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
 )
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count419
@@ -818,6 +820,10 @@ File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip22
 \c@smartand=\count495
 )
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric-comp.bbx
+File: numeric-comp.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
@@ -828,11 +834,15 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count496
 \c@bbx:relatedtotal=\count497
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
- (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
-File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+)))
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric-comp.cbx
+File: numeric-comp.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+\c@cbx@tempcnta=\count498
+\c@cbx@tempcntb=\count499
+\c@cbx@tempcntc=\count500
+\c@cbx@tempcntd=\count501
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -856,7 +866,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2025-12-24 L3 programming layer (loader) 
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count498
+\l__color_backend_stack_int=\count502
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2025-12-24 L3 programming layer (loader) 
@@ -867,11 +877,11 @@ Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
 ))
-\c@theorem=\count499
-\c@definition=\count500
+\c@theorem=\count503
+\c@definition=\count504
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 58.
-\@quotelevel=\count501
-\@quotereset=\count502
+\@quotelevel=\count505
+\@quotereset=\count506
  (main.aux)
 \openout1 = `main.aux'.
 
@@ -891,16 +901,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count503
+\scratchcounter=\count507
 \scratchdimen=\dimen323
 \scratchbox=\box88
-\nofMPsegments=\count504
-\nofMParguments=\count505
+\nofMPsegments=\count508
+\nofMParguments=\count509
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count506
+\MPscratchCnt=\count510
 \MPscratchDim=\dimen324
-\MPnumerator=\count507
-\makeMPintoPDFobject=\count508
+\MPnumerator=\count511
+\makeMPintoPDFobject=\count512
 \everyMPtoPDFconversion=\toks53
 ) (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -916,7 +926,7 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count509
+\c@lstlisting=\count513
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
@@ -993,9 +1003,7 @@ Package biblatex Info: Reference segment=0 on input line 58.
  [1
 
 
-{C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (ABSTRACT.tex [1] [2]) [3
-
-] (main.toc
+{C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (ABSTRACT.tex [1]) [2] (main.toc
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
  (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1011,76 +1019,76 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) [4
+) [3
 
 ])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5]
-c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex:157: ignored error: Infinite glue shrinkage found in box being split [6
+ [4]
+c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex:157: ignored error: Infinite glue shrinkage found in box being split [5
 
-] [7]
+] [6]
 Chapter 1.
-(INTRO.tex [8
-
-{C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<Figures/size-comp.png, id=44, 2007.5pt x 800.9925pt>
+(INTRO.tex
+<Figures/size-comp.png, id=37, 2007.5pt x 800.9925pt>
 File: Figures/size-comp.png Graphic file (type png)
 <use Figures/size-comp.png>
-Package pdftex.def Info: Figures/size-comp.png  used on input line 33.
+Package pdftex.def Info: Figures/size-comp.png  used on input line 25.
 (pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
- [9 <./Figures/size-comp.png>]) (C1.tex [10]
+ [7
+
+ <./Figures/size-comp.png>] [8{C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (C1.tex [9]
 Chapter 2.
-[11
+[10
 
-] [12] [13] [14] [15] [16] [17] [18]
+] [11] [12] [13] [14] [15] [16] [17]
 Chapter 3.
-[19
+[18
 
-] [20] [21] [22]
-<Figures/schematic.png, id=99, 326.72063pt x 208.52907pt>
+] [19] [20] [21]
+<Figures/schematic.png, id=96, 326.72063pt x 208.52907pt>
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
-Package pdftex.def Info: Figures/schematic.png  used on input line 459.
+Package pdftex.def Info: Figures/schematic.png  used on input line 460.
 (pdftex.def)             Requested size: 239.66309pt x 152.96313pt.
-<Figures/iscat_photo.png, id=100, 942.52126pt x 680.5425pt>
+<Figures/iscat_photo.png, id=97, 942.52126pt x 680.5425pt>
 File: Figures/iscat_photo.png Graphic file (type png)
 <use Figures/iscat_photo.png>
-Package pdftex.def Info: Figures/iscat_photo.png  used on input line 462.
+Package pdftex.def Info: Figures/iscat_photo.png  used on input line 463.
 (pdftex.def)             Requested size: 239.66309pt x 173.04279pt.
- [23] [24 <./Figures/schematic.png> <./Figures/iscat_photo.png>]
-<Figures/imaging_diagram_simple.png, id=112, 327.2225pt x 156.585pt>
+ [22] [23 <./Figures/schematic.png> <./Figures/iscat_photo.png>]
+<Figures/imaging_diagram_simple.png, id=108, 327.2225pt x 156.585pt>
 File: Figures/imaging_diagram_simple.png Graphic file (type png)
 <use Figures/imaging_diagram_simple.png>
-Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 516.
+Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 517.
 (pdftex.def)             Requested size: 220.09479pt x 105.32236pt.
-<Figures/imaging_diagram.pdf, id=113, 208.78pt x 161.60374pt>
+<Figures/imaging_diagram.pdf, id=109, 208.78pt x 161.60374pt>
 File: Figures/imaging_diagram.pdf Graphic file (type pdf)
 <use Figures/imaging_diagram.pdf>
-Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 519.
+Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 520.
 (pdftex.def)             Requested size: 220.09479pt x 170.37198pt.
- [25] [26 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>] [27]
+ [24] [25 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>] [26]
 Chapter 4.
-[28
+[27
 
-] [29]
-<Figures/LNP_types.png, id=137, 743.77875pt x 310.91156pt>
+] [28]
+<Figures/LNP_types.png, id=134, 743.77875pt x 310.91156pt>
 File: Figures/LNP_types.png Graphic file (type png)
 <use Figures/LNP_types.png>
-Package pdftex.def Info: Figures/LNP_types.png  used on input line 589.
+Package pdftex.def Info: Figures/LNP_types.png  used on input line 590.
 (pdftex.def)             Requested size: 489.10287pt x 204.45741pt.
-) (C3.tex [30 <./Figures/LNP_types.png>]
+) (C3.tex [29 <./Figures/LNP_types.png>]
 Chapter 5.
-[31
+[30
 
-] [32]
-<Figures/simulations/realization_and_boltzmann.pdf, id=149, 713.53282pt x 255.1245pt>
+] [31]
+<Figures/simulations/realization_and_boltzmann.pdf, id=146, 713.53282pt x 255.1245pt>
 File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
 <use Figures/simulations/realization_and_boltzmann.pdf>
 Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 73.
 (pdftex.def)             Requested size: 489.10287pt x 174.88379pt.
-<Python/Figures/xz_msd_comparison.pdf, id=150, 497.94029pt x 224.037pt>
+<Python/Figures/xz_msd_comparison.pdf, id=147, 497.94029pt x 224.037pt>
 File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
 <use Python/Figures/xz_msd_comparison.pdf>
 Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 84.
@@ -1089,97 +1097,96 @@ Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input lin
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./Figures/simulations/realization_and_boltzmann.pdf>]
-<Python/Figures/conf_debyelength.pdf, id=170, 497.94029pt x 224.037pt>
+[32 <./Figures/simulations/realization_and_boltzmann.pdf>]
+<Python/Figures/conf_debyelength.pdf, id=167, 497.94029pt x 224.037pt>
 File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
 <use Python/Figures/conf_debyelength.pdf>
 Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 97.
 (pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
-<Python/Figures/diff_debye.pdf, id=171, 439.63855pt x 217.36655pt>
+<Python/Figures/diff_debye.pdf, id=168, 439.63855pt x 217.36655pt>
 File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
 <use Python/Figures/diff_debye.pdf>
 Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 104.
 (pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
-<Python/Figures/conf_zeta_debye.png, id=172, 572.01704pt x 223.91655pt>
+<Python/Figures/conf_zeta_debye.png, id=169, 572.01704pt x 223.91655pt>
 File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
 <use Python/Figures/conf_zeta_debye.png>
 Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 112.
 (pdftex.def)             Requested size: 489.10287pt x 191.4643pt.
- [34 <./Python/Figures/xz_msd_comparison.pdf>] [35 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>]
-<Python/Figures/B_estimation_hist.pdf, id=233, 433.5274pt x 217.9221pt>
+ [33 <./Python/Figures/xz_msd_comparison.pdf>] [34 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>]
+<Python/Figures/B_estimation_hist.pdf, id=230, 433.5274pt x 217.9221pt>
 File: Python/Figures/B_estimation_hist.pdf Graphic file (type pdf)
 <use Python/Figures/B_estimation_hist.pdf>
 Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 123.
 (pdftex.def)             Requested size: 366.82715pt x 184.40335pt.
- [36 <./Python/Figures/conf_zeta_debye.png> <./Python/Figures/B_estimation_hist.pdf>] [37]
+ [35 <./Python/Figures/conf_zeta_debye.png> <./Python/Figures/B_estimation_hist.pdf>] [36]
 Chapter 6.
-<Figures/yikes.png, id=258, 1023.07219pt x 504.38437pt>
+<Figures/yikes.png, id=255, 1023.07219pt x 504.38437pt>
 File: Figures/yikes.png Graphic file (type png)
 <use Figures/yikes.png>
 Package pdftex.def Info: Figures/yikes.png  used on input line 145.
 (pdftex.def)             Requested size: 366.82715pt x 180.84708pt.
-[38
+[37
 
- <./Figures/yikes.png>] [39] [40] [41] [42] [43]
-<Python/Figures/sim_ipsf.pdf, id=281, 687.70567pt x 246.92203pt>
+ <./Figures/yikes.png>] [38] [39] [40] [41] [42]
+<Python/Figures/sim_ipsf.pdf, id=278, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
 Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 545.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
- [44 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=318, 563.70598pt x 274.626pt>
+ [43 <./Python/Figures/sim_ipsf.pdf>]
+<Python/Figures/nuisance_param.pdf, id=315, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
 Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 566.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=319, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=316, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
 Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 577.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
-) [45 <./Python/Figures/nuisance_param.pdf>] [46 <./Python/Figures/simulation_fit_residual.pdf>]
+) [44 <./Python/Figures/nuisance_param.pdf>] [45 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 7.
-(C2.tex [47
+(C2.tex [46
 
 ]
 File: Figures/schematic.png Graphic file (type png)
 <use Figures/schematic.png>
-Package pdftex.def Info: Figures/schematic.png  used on input line 24.
+Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 489.10287pt x 312.16916pt.
- [48]
-<Figures/Chapter7/CLiC_figure.png, id=362, 682.80093pt x 242.40562pt>
+ [47]
+<Figures/Chapter7/CLiC_figure.png, id=358, 682.80093pt x 242.40562pt>
 File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
 <use Figures/Chapter7/CLiC_figure.png>
-Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 41.
+Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 38.
 (pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
-<Figures/Chapter7/Figure_2_v8.pdf, id=363, 758.79701pt x 160.56116pt>
+<Figures/Chapter7/Figure_2_v8.pdf, id=359, 758.79701pt x 160.56116pt>
 File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
 <use Figures/Chapter7/Figure_2_v8.pdf>
-Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 57.
+Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 54.
 (pdftex.def)             Requested size: 489.10287pt x 103.49376pt.
- [49 <./Figures/Chapter7/CLiC_figure.png>]
-<Figures/Chapter7/c7_fig3.png, id=368, 901.86937pt x 506.6428pt>
+ [48 <./Figures/Chapter7/CLiC_figure.png>]
+<Figures/Chapter7/c7_fig3.png, id=365, 901.86937pt x 506.6428pt>
 File: Figures/Chapter7/c7_fig3.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig3.png>
-Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 77.
+Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 74.
 (pdftex.def)             Requested size: 391.28378pt x 219.81577pt.
- [50 <./Figures/Chapter7/Figure_2_v8.pdf> <./Figures/Chapter7/c7_fig3.png>]
-<Figures/Chapter7/c7_fig4.png, id=421, 900.36375pt x 505.89pt>
+<Figures/Chapter7/c7_fig4.png, id=366, 900.36375pt x 505.89pt>
 File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig4.png>
-Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 88.
+Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 85.
 (pdftex.def)             Requested size: 489.10287pt x 274.813pt.
- [51 <./Figures/Chapter7/c7_fig4.png>]) [52]
+ [49 <./Figures/Chapter7/Figure_2_v8.pdf> <./Figures/Chapter7/c7_fig3.png>] [50 <./Figures/Chapter7/c7_fig4.png>]) [51]
 Chapter 8.
-(CONC.tex) [53
+(CONC.tex) [52
 
-] [54
+] [53
 
-] [55] (A1.tex [56]
+] [54] (A1.tex [55]
 Appendix A.
-[57
+[56
 
-]) [58] (main.aux)
+]) [57] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -1189,17 +1196,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52659 strings out of 467871
- 1283396 string characters out of 5416924
- 2393143 words of memory out of 5000000
- 80745 multiletter control sequences out of 15000+600000
- 656137 words of font info for 232 fonts, out of 8000000 for 9000
+ 52736 strings out of 467871
+ 1285712 string characters out of 5416924
+ 2396288 words of memory out of 5000000
+ 80821 multiletter control sequences out of 15000+600000
+ 656028 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,23n,121p,2021b,1536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,23n,121p,2022b,1538s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (59 pages, 4560256 bytes).
+Output written on main.pdf (58 pages, 4561049 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
+ 535 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  54897 words of extra memory for PDF output out of 61914 (max. 10000000)
 

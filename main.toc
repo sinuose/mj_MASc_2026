@@ -1,57 +1,56 @@
-\contentsline {chapter}{Nomenclature}{6}{}%
-\contentsline {chapter}{\numberline {1}Introduction}{8}{}%
-\contentsline {chapter}{\numberline {2}Brownian Motion}{11}{}%
-\contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{11}{}%
-\contentsline {section}{\numberline {2.2}Langevin Dynamics}{13}{}%
-\contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{14}{}%
-\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{15}{}%
-\contentsline {section}{\numberline {2.5}Electrostatic Potentials}{15}{}%
-\contentsline {section}{\numberline {2.6}Equilibrium Distributions for Confined Systems}{17}{}%
-\contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{19}{}%
-\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{20}{}%
-\contentsline {section}{\numberline {3.2}Scattering Microscopy}{22}{}%
-\contentsline {section}{\numberline {3.3}Interferometric Light Scattering (iSCAT)}{23}{}%
-\contentsline {section}{\numberline {3.4}Resolution limits of optical microscopy}{23}{}%
-\contentsline {section}{\numberline {3.5}Sources of noise in imaging}{25}{}%
-\contentsline {chapter}{\numberline {4}Biological Application}{28}{}%
-\contentsline {section}{\numberline {4.1}Diffusion in cells}{28}{}%
-\contentsline {section}{\numberline {4.2}Brownian motion as a method for measurements of size in biology}{29}{}%
-\contentsline {section}{\numberline {4.3}Lipid Nanoparticles}{29}{}%
-\contentsline {subsection}{\numberline {4.3.1}LNP topology types}{30}{}%
-\contentsline {chapter}{\numberline {5}Langevin Simulations}{31}{}%
-\contentsline {section}{\numberline {5.1}Simulation Equations}{31}{}%
-\contentsline {section}{\numberline {5.2}Surface Charge Estimator}{32}{}%
-\contentsline {section}{\numberline {5.3}Results}{33}{}%
-\contentsline {subsection}{\numberline {5.3.1}Mean-Squared Displacement in Confinement}{33}{}%
-\contentsline {subsection}{\numberline {5.3.2}Surface Charge estimation}{36}{}%
-\contentsline {section}{\numberline {5.4}Conclusion}{37}{}%
-\contentsline {chapter}{\numberline {6}iSCAT z-estimation Simulations}{38}{}%
-\contentsline {section}{\numberline {6.1}Method Overview}{38}{}%
-\contentsline {subsection}{\numberline {6.1.1}Image Background Subtraction and Noise Consideration}{38}{}%
-\contentsline {subsection}{\numberline {6.1.2}iSCAT $(x, y)$ Tracking}{40}{}%
-\contentsline {subsection}{\numberline {6.1.3}Radial Integral}{41}{}%
-\contentsline {subsection}{\numberline {6.1.4}Nuisance parameter Estimation}{42}{}%
-\contentsline {subsection}{\numberline {6.1.5}2D Chain-link}{43}{}%
-\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{44}{}%
-\contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{44}{}%
-\contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{45}{}%
-\contentsline {section}{\numberline {6.3}Conclusions}{45}{}%
-\contentsline {chapter}{\numberline {7}3D confinement with iSCAT}{47}{}%
-\contentsline {section}{\numberline {7.1}Summary}{47}{}%
-\contentsline {section}{\numberline {7.2}Methods}{47}{}%
-\contentsline {subsection}{\numberline {7.2.1}Aparatus schematic}{48}{}%
-\contentsline {subsection}{\numberline {7.2.2}Cover-Glass}{48}{}%
-\contentsline {subsection}{\numberline {7.2.3}Convex-lens induced confinement}{49}{}%
-\contentsline {subsection}{\numberline {7.2.4}Sample Details}{49}{}%
-\contentsline {subsection}{\numberline {7.2.5}Analysis Method}{49}{}%
-\contentsline {section}{\numberline {7.3}Results}{50}{}%
-\contentsline {subsection}{\numberline {7.3.1}Polystyrene PBS series}{50}{}%
-\contentsline {subsection}{\numberline {7.3.2}Axial Diffusivity}{51}{}%
-\contentsline {subsection}{\numberline {7.3.3}LNP Diffusivity}{51}{}%
-\contentsline {section}{\numberline {7.4}Discussion of Results}{52}{}%
-\contentsline {chapter}{\numberline {8}Conclusion}{53}{}%
-\contentsline {section}{\numberline {8.1}Conclusion}{53}{}%
-\contentsline {section}{\numberline {8.2}Future outlook}{53}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{57}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{57}{}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{58}{}%
+\contentsline {chapter}{Nomenclature}{5}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{7}{}%
+\contentsline {chapter}{\numberline {2}Brownian Motion}{10}{}%
+\contentsline {section}{\numberline {2.1}Classical Description of Einstein's Brownian Motion}{10}{}%
+\contentsline {section}{\numberline {2.2}Langevin Dynamics}{12}{}%
+\contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{13}{}%
+\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{14}{}%
+\contentsline {section}{\numberline {2.5}Electrostatic Potentials}{14}{}%
+\contentsline {section}{\numberline {2.6}Equilibrium Distributions for Confined Systems}{16}{}%
+\contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{18}{}%
+\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{19}{}%
+\contentsline {section}{\numberline {3.2}Scattering Microscopy}{21}{}%
+\contentsline {section}{\numberline {3.3}Interferometric Light Scattering (iSCAT)}{22}{}%
+\contentsline {section}{\numberline {3.4}Resolution limits of optical microscopy}{22}{}%
+\contentsline {section}{\numberline {3.5}Sources of noise in imaging}{24}{}%
+\contentsline {chapter}{\numberline {4}Biological Application}{27}{}%
+\contentsline {section}{\numberline {4.1}Diffusion in cells}{27}{}%
+\contentsline {section}{\numberline {4.2}Brownian motion as a method for measurements of size in biology}{28}{}%
+\contentsline {section}{\numberline {4.3}Lipid Nanoparticles}{28}{}%
+\contentsline {section}{\numberline {4.4}LNP topology types}{29}{}%
+\contentsline {chapter}{\numberline {5}Langevin Simulations}{30}{}%
+\contentsline {section}{\numberline {5.1}Simulation Equations}{30}{}%
+\contentsline {section}{\numberline {5.2}Surface Charge Estimator}{31}{}%
+\contentsline {section}{\numberline {5.3}Results}{32}{}%
+\contentsline {subsection}{\numberline {5.3.1}Mean-Squared Displacement in Confinement}{32}{}%
+\contentsline {subsection}{\numberline {5.3.2}Surface Charge estimation}{35}{}%
+\contentsline {section}{\numberline {5.4}Conclusion}{36}{}%
+\contentsline {chapter}{\numberline {6}iSCAT z-estimation Simulations}{37}{}%
+\contentsline {section}{\numberline {6.1}Method Overview}{37}{}%
+\contentsline {subsection}{\numberline {6.1.1}Image Background Subtraction and Noise Consideration}{37}{}%
+\contentsline {subsection}{\numberline {6.1.2}iSCAT $(x, y)$ Tracking}{39}{}%
+\contentsline {subsection}{\numberline {6.1.3}Radial Integral}{40}{}%
+\contentsline {subsection}{\numberline {6.1.4}Nuisance parameter Estimation}{41}{}%
+\contentsline {subsection}{\numberline {6.1.5}2D Chain-link}{42}{}%
+\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{43}{}%
+\contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{43}{}%
+\contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{44}{}%
+\contentsline {section}{\numberline {6.3}Conclusions}{44}{}%
+\contentsline {chapter}{\numberline {7}3D confinement with iSCAT}{46}{}%
+\contentsline {section}{\numberline {7.1}Methods}{46}{}%
+\contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{46}{}%
+\contentsline {subsection}{\numberline {7.1.2}Cover-Glass}{47}{}%
+\contentsline {subsection}{\numberline {7.1.3}Convex-lens induced confinement}{47}{}%
+\contentsline {subsection}{\numberline {7.1.4}Sample Details}{48}{}%
+\contentsline {subsection}{\numberline {7.1.5}Analysis Method}{48}{}%
+\contentsline {section}{\numberline {7.2}Results}{48}{}%
+\contentsline {subsection}{\numberline {7.2.1}Polystyrene PBS series}{49}{}%
+\contentsline {subsection}{\numberline {7.2.2}Axial Diffusivity}{49}{}%
+\contentsline {subsection}{\numberline {7.2.3}LNP Diffusivity}{50}{}%
+\contentsline {section}{\numberline {7.3}Discussion of Results}{51}{}%
+\contentsline {chapter}{\numberline {8}Conclusion}{52}{}%
+\contentsline {section}{\numberline {8.1}Conclusion}{52}{}%
+\contentsline {section}{\numberline {8.2}Future outlook}{52}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{56}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{56}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{57}{}%

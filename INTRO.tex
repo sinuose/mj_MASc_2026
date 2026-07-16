@@ -9,9 +9,24 @@
 
 % In much of nature, the idea of size scales is widely discussed and investigated. From a basic understanding of physics, one understands that the forces an object feels are directly linked to their mass or volume and mass density. For example, we can easily understand what will happen to a basketball if we throw it up into the air as we are sitting on planet earth. However, when we leave the familar size scale, such as having a basketball the size of planet earth, or the size of a gas molecule, our intuition begins to show its cracks. 
 
-Objects that exist in nature can be divided into macroscopic and microscopic entities. Macroscopic objects can be directly measured with a ruler or a photograph. However, as microscopic objects become smaller than the wavelength of light, they become un-resolveable by the light alone. Thus, one must resort to other methods to recover their size. 
 
-At the nanoscale, thermal energy, $k_bT$, is comparable to, or larger than the gravitational and inertial energy scales that typical govern macroscopic dynamics. In the case of liquids, the thermal energy emerges into a motion in Reynold's numbers $\Re \ll 1$, where the viscous drag dominates ver the inertia. The result is a stochastic, thermal motion that governs particle transport. 
+In nature, the size of properties of objects are often related to their relative size. In biological systems, the size of molecules are directly related to how a cell reacts to them. 
+
+% Lipid nanoparticle formulation processes generate populations of heterogenous LNPs \cite{ma_mrna_2025}. Bulk measurement methods alone cannot resolve these heterogeneities, which single-molecule methods are required \cite{ma_mrna_2025}.
+
+% Objects that exist in nature can be divided into macroscopic and microscopic entities. Macroscopic objects can be directly measured with a ruler or a photograph.
+
+Knowing an object's size is paramount to characterizing it's properties in nature. One such example is that of the lipid nanoparticle (LNP) based medicines. LNP-based drugs are dependent on a size-selective process in cells known as endosomal escape \cite{Sahay2013, Gilleron2013}. This process is highly sensitive to particle size, making it a very important characteristic to keep track of \cite{Rejman2004, Zhang2009, Banerjee2016}.  
+
+In the limit of microscopic objects  smaller than the wavelength of light, the size become un-resolvable by the light alone \cite{Steck2021, Born1999}. In order to measure the size, one must use other approaches to obtain size.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/size-comp.png}
+    \caption{Size comparison of various nanoparticles. Nanoparticles are defined as particles where the largest dimension is at most $\SI{1000}{\nm}$.}
+\end{figure}
+
+One universal property that sub-micron particles undergo is an apparent size-related stochastic motion when suspended in media. At the nano-scale, thermal energy, $k_bT$, is comparable to, or larger than the gravitational and inertial energy scales that typical govern macroscopic dynamics. In the case of liquids, the thermal energy emerges into a motion in Reynold's numbers $\Re \ll 1$, where the viscous drag dominates ver the inertia. 
 
 The relation between the particle's size and its motion is explained in Einstein's seminal paper \cite{einstein1956investigations} where the rate of transport, or diffusion is related to the particle's size,
 \begin{equation}
@@ -20,21 +35,21 @@ The relation between the particle's size and its motion is explained in Einstein
 
 where $\gamma(\vec{x}, a)$ is the viscous drag at the position $\vec{x}$ of a particle of hydrodynamic radius $a$. In the case of a spherical paricle in an incompressible fluid, $\gamma(a) = 6\pi \eta a$, where $\eta$ is the fluid viscosity. 
 
-In typical measurements of particle motion, it is most tractable when the particle is confined within the microscope's field of view for an extended period of time. This is best achieved using spatial confinement. For instance, convex-lens induced confinement (CLiC) measurements typically use micro-apertures of volume $\SI{1.5}{\micro \meter^3}$ to confine single molecules for extended temporal measurements via fluorescence microscopy \cite{kamanziSimultaneousSingleParticleMeasurements2021,kamanzi_single-particle_2026,graves_direct_2026}. Nanoparticle tracking analysis (NTA) measurements follow the same principles where a flow is applied to particles confined between two plates in a flow-cell and are imaged using scattering microscopy \cite{filipeCriticalEvaluationNanoparticle2010}. The confinement is performed as microscope images consist of 2D slices of a focal plane, which is typically on the order of a few hundred nanometers. Without this axial confinements, particles rapidly diffuse out of the focal plane. 
+In order for size estimate obtained from stochastic particle trajecories to be statistically relevant the number of data points must be sufficiently long. Since the statistical uncertainty of the diffusion coefficient scales as $\sim\sqrt{N}$, higher number of particle locations yield a more precise size inference \cite{vestergaardOptimalEstimationDiffusion2014}. In optical measurements, this requirement favors the use of a scattering microscopy over fluorescence as fluorescent fluorophores have a finite lifetime before photobleaching, rendering localization of them inert \cite{taylor_interferometric_2018}. In addition, fluorescent microscopes, although possible to obtain z-information, have lower content than compared to scattering techniques \textcolor{red}{REF}. 
 
-Although experimentally convienient, the viscous drag relation is a function of position. In turn, size-diffusivity relation in confinement is intrinsically non-trivial. This non-trivial behavior can been shown to alter the diffusivity of a particle by a significant amount \cite{swanParticleMotionParallel2010,bian111YearsBrownian2016}. 
+In order to obtain large number of particle positions, which maintaining particle specificity, particles are spatially confined within the field of view of an optical imaging system for an extended period of time. For instance, convex-lens induced confinement (CLiC) measurements typically use micro-apertures of volume $\SI{1.5}{\micro \meter^3}$ to confine single molecules for extended temporal measurements via fluorescence microscopy \cite{kamanziSimultaneousSingleParticleMeasurements2021,kamanzi_single-particle_2026,graves_direct_2026}. Nanoparticle tracking analysis (NTA) measurements follow the same principles where a flow is applied to particles confined between two plates in a flow-cell and are imaged using scattering microscopy \cite{filipeCriticalEvaluationNanoparticle2010}.
 
-Since the diffusivity of a particle in confinement is a function of position, in order to recover the true size of a particle diffusing, it is necessary to have the full spatial trajectory of the particle's motion with respect to the confinement barriers. Inverting the size-diffusivity relation demands the full three-dimensional trajectory, in particular the axial distance to the wall. As such, two dimensional tracking alone is insufficient; without the axial dimensions the spatially dependent correction cannot be inferred.
+Although experimentally more feasible, confinement intrisicaly modifies the size-diffusivity relation, rendering it non-trivial by introducing a position dependent viscous drag. This non-trivial behavior can been shown to alter the diffusivity of a particle by a significant amount \cite{swanParticleMotionParallel2010,bian111YearsBrownian2016}. 
 
-For the size estimate to be statistically relevant the trajectory must be sufficiently long. Since teh statistical uncertainty scales as $\sim\sqrt{N}$, more frames yield a more precise size inference \cite{vestergaardOptimalEstimationDiffusion2014}. This requirement favors the use of a scattering microscopy over fluorescence as fluorescent fluorophores have a finite lifetime before photobleaching, rendering localization of them inert \cite{taylor_interferometric_2018}. 
+Since the diffusivity of a particle in confinement is a function of position, in order to recover the true size of a particle diffusing, it is necessary to have the full spatial trajectory of the particle's motion with respect to the confinement barriers. As such, two dimensional tracking alone is insufficient; without the axial dimensions the spatially dependent correction cannot be inferred.Inverting the size-diffusivity relation demands the full three-dimensional trajectory, in particular the axial distance to the wall. 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/size-comp.png}
-    \caption{Size comparison of various nanoparticles. Nanoparticles are defined as particles where the largest dimension is at most $\SI{1000}{\nm}$.}
-\end{figure}
+In order to obtain an optical trace of three-dimensional scattering, interference methods, such as interferometric light-scattering microscopy, are highly favored as typical fluroescence measurements lack an extended temporal measurement of three-dimensional position.In addition, many commonly used  optical methods are limited to only two-dimensional slices of a focal plane, which is typically on the order of a few hundred nanometers. Without this axial confinements, particles rapidly diffuse out of the focal plane. 
 
-In the realm of biological applications, there are many such examples where such a measurement is of interest. One such case is that of the lipid nanoparticle (LNP). Lipid nanoparticle formulation processes generate populations of heterogenous LNPs \cite{ma_mrna_2025}. Bulk measurement methods alone cannot resolve these heterogeneities, which single-molecule methods are required \cite{ma_mrna_2025}. However, without proper correction for confinement effects, these single molecule measurements will not be accurate. 
+Thus, this thesis establishes a three-dimensional tracking method of confined diffusion and builds on applications of measurement of the size-diffusivity relationship.
+
+
+
+
 
 The thesis consists of 8 chapters. Chapter 2 provides a description of the literature of confined brownian motion over the last century. Chapter 3 describes the theoretical description of interferometric scattering microscopy (iSCAT) and physical limits that apply in optical theory. Chapter 4 discusses the application of Brownian motion and iSCAT in a biological context, which details regarding lipid-nanoparticles and why they need to be studied on the single-molecule level. Chapter 5 consists of investigations of confined diffusion using Langevin simulations. A simulated system was developed and the size-diffusivity relation in an electrostatically screened system was investigated. Chapter 6 describes the 3D iSCAT tracking technique developed during this work. The method overview and validation and explicitly developed and validated Chapter 7 describes the method applied to experimental data and utilizes various nanoparticle species, highlighting their varied diffusions. Chapter 8 concludes the world and provides a future outlook on the topic and steps which need to be advanced.
 

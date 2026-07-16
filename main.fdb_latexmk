@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber main"] 1784148501.78718 "main.bcf" "main.bbl" "main" 1784157525.2974 0
-  "main.bcf" 1784157525 111216 00c07ef1a7453f7bf535d0823262dfc2 "pdflatex"
-  "references.bib" 1784148494 56642 6833aed76d889ba72b9de6a34d3b3086 ""
+["biber main"] 1784233030.54807 "main.bcf" "main.bbl" "main" 1784233245.1664 0
+  "main.bcf" 1784233244 110827 46c7acbc376b15340f7d7fb8bdfd46ff "pdflatex"
+  "references.bib" 1784233023 59532 656501539322fd3645e0119056e5a25d ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784157521.96708 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784157525.29793 0
+["pdflatex"] 1784233241.63773 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784233245.167 0
   "A1.tex" 1783971561 2774 5a96520d555e708835269a0e3f31bf9b ""
-  "ABSTRACT.tex" 1783971561 4434 8903af78a0fa6ec3cfaec210e256fba5 ""
-  "C1.tex" 1784157517 44939 15111847c070b46c3424820ec7d05725 ""
-  "C2.tex" 1784053423 7407 a72e27bcd31cc91883d3fb7c3f8d81cf ""
+  "ABSTRACT.tex" 1784227780 4765 80b569df63355315529e0ed54b4ce178 ""
+  "C1.tex" 1784228719 44945 67e4257c27fe9f1f8a6d99ecf2401510 ""
+  "C2.tex" 1784228719 7325 c193936eb8639bc28378f75cc3504167 ""
   "C3.tex" 1784053715 36236 6df0994b4774271cda67965497adf1f4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784136745 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -185,6 +185,7 @@
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/base/bk12.clo" 1761900684 8285 eb2e07a9e456f2e445aaaabcc61b0d24 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/base/book.cls" 1761900684 23268 0045640547c14751e547e94fe4a0e0a8 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/base/ifthen.sty" 1761900684 5525 1593ca62a2554dd7423fc8a4e5a82125 ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/numeric-comp.bbx" 1752408733 92 7cdbb04a1e32fba0fbb91b6e6d123497 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/numeric.bbx" 1752408733 1818 9ed166ac0a9204a8ebe450ca09db5dde ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/bbx/standard.bbx" 1752408733 25680 409c3f3d570418bc545e8065bebd0688 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/biblatex.cfg" 1752408733 69 249fa6df04d948e51b6d5c67bea30c42 ""
@@ -193,7 +194,7 @@
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-case-expl3.sty" 1752408733 9961 107fdb78f652fccae7bce0d23bdc19cd ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-compat.def" 1752408733 13919 5426dbe90e723f089052b4e908b56ef9 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/blx-dm.def" 1752408733 32761 18d14e3b502c120f79b2184de4e21d14 ""
-  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/numeric.cbx" 1752408733 4676 d3f90f6377ee43f043262aa587deb6de ""
+  "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/cbx/numeric-comp.cbx" 1752408733 10471 d3365bfc5d9cef61d7f71b547790fc66 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/biblatex/lbx/english.lbx" 1752408733 40021 daa5a82ed0967f3ac4b77cb8384cac55 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
@@ -277,7 +278,7 @@
   "Figures/simulations/realization_and_boltzmann.pdf" 1783379649 703793 0068ca6fa2f8254c9c74545da3dc8405 ""
   "Figures/size-comp.png" 1782768669 195926 3a9489d27de6f7980d44a424af0334a6 ""
   "Figures/yikes.png" 1783983574 70197 8242693b0f76bd4ad4ae78008d847b3c ""
-  "INTRO.tex" 1784141444 6297 984387bc9d6d4ad432fe508a937dd26d ""
+  "INTRO.tex" 1784233241 7524 2700e14f85133cc3162e19aec4932276 ""
   "Python/Figures/B_estimation_hist.pdf" 1783973251 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
   "Python/Figures/conf_debyelength.pdf" 1783541315 51052 97e65a42bd76a408ca4dfd91cfc700c6 ""
   "Python/Figures/conf_zeta_debye.png" 1783620391 443847 252a0afd645e523bd55b13b77185746a ""
@@ -286,12 +287,12 @@
   "Python/Figures/sim_ipsf.pdf" 1783464170 223410 71686008cd59aa2eb15b2f086a541895 ""
   "Python/Figures/simulation_fit_residual.pdf" 1783464887 71236 3fa5b9bab854402bd319310435021689 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
-  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784137831 5279 b5582696684404213eb286266ab931fb ""
-  "main.aux" 1784157525 21893 4a8fb1de532a26e22aeefad2b6a00789 "pdflatex"
-  "main.bbl" 1784148503 68715 725b5de14d3e1ef4ab7834c546517f9f "biber main"
-  "main.run.xml" 1784157525 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
-  "main.tex" 1784137831 5279 b5582696684404213eb286266ab931fb ""
-  "main.toc" 1784157525 4219 1397983b8b61afb38ff27e37291e41f1 "pdflatex"
+  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784229953 5315 4015cf5c3472f5a2d6c24a72af7cba05 ""
+  "main.aux" 1784233244 22427 71ad6a1a8b7ea8e7f42f627fbb3af357 "pdflatex"
+  "main.bbl" 1784233032 83458 82920713fd9ec5eaa1eb1449c76b9cfc "biber main"
+  "main.run.xml" 1784233244 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.tex" 1784229953 5315 4015cf5c3472f5a2d6c24a72af7cba05 ""
+  "main.toc" 1784233244 4157 5bd3c09e3219e79ea97ef615024a67e5 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
