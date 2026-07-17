@@ -27,11 +27,11 @@ Appendix 4.
 \chapter{Brownian Motion}
 \label{chap:brownianmotion}
 
-In cases where particles are smaller than that of the diffraction limit, which is in of itself discussed in \ref{chap:iscatprinciples}, one must resort to using thermal motion as a physical ruler of sorts. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion is known as \textit{Brownian Motion} and is invertibly related to the size of the particle.
+For particles smaller than the diffraction limit, where optical theory is discussed in  \ref{chap:iscatprinciples}, thermal motion can be used as a physical \textit{ruler}. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion is known as \textit{Brownian Motion} and is invertibly related to the size of the particle.
 
-This chapter aims to establish the background knowledge of the relationships between the diffusivity, size, and spatial coordinate. This process requires sufficient mathematical detail as no sinlge displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
+This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
 
-In this chapter we discuss the process of Brownian motion and Diffusion-type processes. We begin with Einstein's diffusion- equation argument and Langevin's stochastic equation of motion, and then show, through the Fokker-Planck, or Smoluchowski, formalism, that the two are equivalent descriptions of the same process. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility, and to the electrostatic (Debye-Huckel) potentials that govern particle-wall interactions in ionic solution, extra care is made. Lastly, the subject of equilibrium distributions with regards to the probability distributions of positions in confined diffusion processes. 
+This chapter introduces the mathematics of Brownian motion and diffusion-type processes. Einstein's diffusion- equation argument and Langevin's stochastic equation of motion are discussed and shown to be equivalent through the Fokker-Planck formalism. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility and electrostatic interactions, described by the Debye-Hückle interactions, govern particle-wall interactions in ionic solution. Finally, the subject of equilibrium distributions  are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
 
 
 \iffalse
@@ -90,16 +90,16 @@ where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the s
 
 \section{Langevin Dynamics}
 
-In typical experiments, such as that of Robert Brown's pollen molecules, the observed Brownian particle moves around in a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than that of the equipartion at times. This implies something is missing.
+In typical experiments, such as Robert Brown's particulates or diffusing lipid-nanoparticles, the observed Brownian particle move within a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \red{REF}.
 
-This missing component of motion can be described by the bombardment of the surrounding particles around it. In particular, the system experiences a \textit{random} force on it at every time step. 
+This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
 	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
 \end{equation}
 
-where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and non-trivial to calculate. Here, $x(t)$ is a stochastic process, which has a unique realization for each realization of $F(t)$.
+where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
 
-The statistical content of $\vec F(t)$ is fixed by the moments and auto-correlation. Notably, this relation is physically associated with the fluctuation-dissipation theory which relates the drag force to the random force. In Brownian motion, this takes the form
+The statistical content of $\vec F(t)$ is determined by the moments and auto-correlation. Notably, this relation is physically described by the fluctuation-dissipation theory, which relates the drag force to the random force. In Brownian motion, this takes the form
 \begin{equation}
 	\langle \vec F(t)\rangle = 0, \quad \langle \vec{F}_i(t) \vec{F}_j(t')\rangle = \Gamma\delta_{ij}\delta(t-t')
 \end{equation}
@@ -251,19 +251,21 @@ This equation defines the equilibrium distribution of the brownian diffusion aft
 \chapter{Interferometric Scattering Principles}
 \label{chap:iscatprinciples}
 
-To precisely locate particles of the nano-scale in order to size them, it is important to be able to obtain long, accurate positional traces. To do this, the signal of the particle locations must be relatively constant over time. One method that allows localization of particle traces over time like this is the method of interferometric scattering microscopy \cite{taylor_interferometric_2018}. 
+To precisely determine the size of nanoscale particles,it is essential to obtain long and procise positional trajectories. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy (iSCAT) \cite{taylor_interferometric_2018}. 
 
-Interferometric light scattering microscopy (iSCAT) is a relatively modern technique that utilizes light scattering to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images the relative axial distance can be measured. Thus, the 3D positional information is encoded in the scattering pattern in iSCAT. Thus, this technique is paramount to being able to measure the diffusivity in confinement, which is why we should talk about it.  
+iSCAT is a relatively modern optical imaging technique that utilizes light scattering contrast to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images the relative axial distance can be measured. Thus, the 3D positional information is encoded in the scattering pattern in iSCAT. 
 
-We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field. 
+The phase information stored in iSCAT images contain relative axial position which is more consistent and reliable relative to other techniques \ref{REF}. 
+
+We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations. We continue discussing the scattering of a various size range of spheres, which is the approximation we take in this thesis. We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field.  Finally, the electromagnetic theory of scattering off spheres, discussion of general optical scattering microscopy theory, and principle of iSCAT will be discussed.
+
+\section{Light as a casual field}
 
 In order to discuss the spatial distribution of light scattering, it is necessary to use a framework to develop the fundamental properties.  On the quantum level, electromagnetic wave field consist of photons \cite{weinberg_quantum_1995}. This fact motivates the use of the theory of electromagnetic waves, in particular Maxwell's equations, to be applied to optical field. The optical field is defined with respect to light intensity, which is defined as the modulus of itself,
 \begin{equation}
     I = |\vec E(\vec x, t)|^2,
 \end{equation}
 where $\vec E(\vec x, t)$ is defined as the optical field\footnote{As opposed to an electric field, where $\vec E_{\text{optic}}(\vec x, t) = \sqrt{\varepsilon_0 n_m c/2}\vec E_{\text{elec}}(\vec x, t)$. The normalization constant affects how the fields relate to the measured light intensity \cite{garciarodriguezOpticalLabelfreeMicroscopy2025}}. This principle relation allows us to form models using electromagnetic theory to map out how the optical fields behave.
-
-This chapter will discuss the electromagnetic scattering theory of spheres, discussion of general optical scattering microscopy theory, then discuss the principle of iSCAT and its limitations.
 
 
 \iffalse
@@ -303,59 +305,60 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 
 \section{Electromagnetic Scattering of of Homogenous Spheres}
 
-To As mentioned, we are tasked with getting the light from the scattered molecules. We approximate them as spheres. Thus, we need to solve the solutions of scattered light from spheres.
+In iSCAT, the light collected at the camera is originated from light scattering off of sphere-like particles and mapped directly to axial position. To simplify the mathematics and obtain positional information from such scattering fields, the scattering dynamics can be modelled as spheres. 
 
-
-
-We start by using the wave equation for the Electric and Magnetic Fields
+The optical theory of light will obey the Maxwell's equations, which motivates solutions to obey the wave equation for the electric and magnetic Fields
 \begin{equation}
-    \nabla^2 \vec E + k^2 \vec E = 0, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E
+    \nabla^2 \vec E + k^2 \vec E = 0, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E.
 \end{equation}
 
-The solutions of these quantities will be harmonics of the laplacian in the coordinate basis that we choose. For isotropic scattering, the spherical basis is the one of choice. The solutions to this are known as the Vector Spherical Harmonics. Let $\psi$ be a solution to the scalar wave equation
+The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis. For isotropic scattering, radial scattering, the spherical basis has been used in literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
+
+Let $\psi$ be a solution to the scalar wave equation,
 \begin{equation}
-    \nabla^2 \psi + k^2 \psi = 0
-\end{equation}, then we can form a generator of the general solution by taking the simplest form of solutions and summing all components. Citing Jackson, we find that the solution to this form is given by the separable form;
+    \nabla^2 \psi + k^2 \psi = 0,
+\end{equation} then the generator of the general solution is taken by sum of components. This the solution  is given by the separable form\cite{jackson_classical_1999},
 \begin{equation}
     \begin{aligned}
-        \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r) \\
-        \Phi(\phi) & \in \{\cos(m\phi), \sin(m\phi)\} \\
-        \Theta(\theta) &= P^m_n(\cos\theta)\\
-        R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\} \\
+        \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r), \\
+        \Phi(\phi) & \in \{\cos(m\phi), \sin(m\phi)\}, \\
+        \Theta(\theta) &= P^m_n(\cos\theta),\\
+        R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\}. \\
     \end{aligned}
 \end{equation}
-Where $j_n, y_n$ are the spherical Bessel functions, and their complex additions are the hankel functions. Thus, the vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. 
+Here, the symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively, found in Eqns 4.17 to 4.20 in Bohren \cite{bohren1983absorption}.  
 \begin{equation}
     \begin{aligned}
-        \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}) \\
-        \vec{N}_{emn} = \frac{1}{k}\vec \nabla \times \vec{M}_{emn}, \quad \vec{N}_{omn} = \frac{1}{k}\vec \nabla \times \vec{M}_{omn} \\
+        \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}), \\
+        \vec{N}_{emn} = \frac{1}{k}\vec \nabla \times \vec{M}_{emn}, \quad \vec{N}_{omn} = \frac{1}{k}\vec \nabla \times \vec{M}_{omn.} \\
     \end{aligned}
 \end{equation}
-These are found in Eqns 4.17 to 4.20 in Bohren. 
 
-The incident light can be assumed to be polarized along the x axis without loss of generality. The general form of these equation will then be the sum of each of the spherical vector harmonics (SVH). subject to the energy conservation boundary condition
+A scattering solution will consist of incident and scattering light. Here, Tte incident light can be assumed to be a polarized plane wave along the $x$ axis without loss of generality. The general form of these equation are then the sum of the spherical vector harmonics. When subject to the energy conservation boundary condition,
 \begin{equation}
-    (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0
+    (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0,
 \end{equation}
 
-Citing Bohren, and stating that using orthogonality of the SVHs, we have that the exact solution, which is known as the Mie Theory form of scattering off of a sphere, is given below;
+Utilizing the orthogonality of the spherical vector harmonics, one arrives are the exact solution known as the Mie Theory form of scattering off of a sphere \cite{bohren1983absorption},
 
 \begin{equation}\label{eqn:lorenzmie}
     \begin{aligned}
      \vec E_i &= E_0 e^{ikr\cos \theta}\hat x \\    
-     \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n})\\
-     \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})     
+     \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n}),\\
+     \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n}).     
     \end{aligned}
 \end{equation}
 
-Since we are only interested in the scattered field, the constants that we care about are written below;
+In this thesis, only the scattering field is of importance. The amplitude factors of interest are,
 \begin{equation}
     \begin{aligned}
-        a_n &= \frac{m\Psi(mx)\Psi'(x) - \Psi(x)\Psi'(mx)}{m\Psi(mx)\xi'(x) -\xi(x) \Psi'(mx)}\\
-        b_n &= \frac{\Psi(mx)\Psi'(x) - m\Psi(x)\Psi'(mx)}{\Psi(mx)\xi'(x) - m \xi(x) \Psi'(mx)}\\
+        a_n &= \frac{m\Psi(mx)\Psi'(x) - \Psi(x)\Psi'(mx)}{m\Psi(mx)\xi'(x) -\xi(x) \Psi'(mx)},\\
+        b_n &= \frac{\Psi(mx)\Psi'(x) - m\Psi(x)\Psi'(mx)}{\Psi(mx)\xi'(x) - m \xi(x) \Psi'(mx)},\\
     \end{aligned}
 \end{equation}
-where $\Psi, \xi$ are the Riccatti-Bessel functions. 
+where $\Psi, \xi$ are the Riccatti-Bessel functions \cite{bohren1983absorption}. 
+
+\section{Rayleigh Scattering}
 
 In the limit of a small particle from far away, we can mae some cancellations in these constants to simplify the work. Notably, the Hankel function approaches the limit of a spherical wave,
 \begin{equation}
@@ -370,24 +373,24 @@ In this length-scale, we have that $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1
     \end{aligned}
 \end{equation}
 
-can be written in the Rayleigh approximation simply and in the form of the full scattering field;
+can be written in the Rayleigh approximation in the form of the full scattering field,
 
 \begin{equation}
-    \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}
+    \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}.
 \end{equation}
 
-Spoiling the suprise, after plugging in the terms for $n=1$ we have the following simplification;
+After subtituting the terms for $n=1$, there is a neat simplification,
 
 \begin{equation}
     \begin{aligned}
-            \vec E_{s, \perp} &=  \vec E_{i, \perp} \frac{k^2 \alpha e^{ikr}}{r}\\
-            \vec E_{s, \parallel} &=  \vec E_{i, \parallel} \frac{k^2 \alpha e^{ikr}}{r} \cos \theta\\
+            \vec E_{s, \perp} &=  \vec E_{i, \perp} \frac{k^2 \alpha e^{ikr}}{r},\\
+            \vec E_{s, \parallel} &=  \vec E_{i, \parallel} \frac{k^2 \alpha e^{ikr}}{r} \cos \theta.\\
     \end{aligned}
 \end{equation}
 
-Then, to find the scattering intensity field, and noting $k = \frac{2\pi}{\lambda/n}$, we have the final scattering field in the Rayleigh length-scale;
+Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, one finds the final scattering field of spheres on the order of the length of the wavelength of the incident light,
 \begin{equation}
-    \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}
+    \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}.
 \end{equation}
 \iffalse
 - Draw some of the iPSFs for Mie theory, from all angles.

@@ -8,11 +8,13 @@
 \contentsline {section}{\numberline {2.5}Electrostatic Potentials}{14}{}%
 \contentsline {section}{\numberline {2.6}Equilibrium Distributions for Confined Systems}{16}{}%
 \contentsline {chapter}{\numberline {3}Interferometric Scattering Principles}{18}{}%
-\contentsline {section}{\numberline {3.1}Electromagnetic Scattering of of Homogenous Spheres}{19}{}%
-\contentsline {section}{\numberline {3.2}Scattering Microscopy}{21}{}%
-\contentsline {section}{\numberline {3.3}Interferometric Light Scattering (iSCAT)}{22}{}%
-\contentsline {section}{\numberline {3.4}Resolution limits of optical microscopy}{22}{}%
-\contentsline {section}{\numberline {3.5}Sources of noise in imaging}{24}{}%
+\contentsline {section}{\numberline {3.1}Light as a casual field}{18}{}%
+\contentsline {section}{\numberline {3.2}Electromagnetic Scattering of of Homogenous Spheres}{19}{}%
+\contentsline {section}{\numberline {3.3}Rayleigh Scattering}{20}{}%
+\contentsline {section}{\numberline {3.4}Scattering Microscopy}{21}{}%
+\contentsline {section}{\numberline {3.5}Interferometric Light Scattering (iSCAT)}{22}{}%
+\contentsline {section}{\numberline {3.6}Resolution limits of optical microscopy}{23}{}%
+\contentsline {section}{\numberline {3.7}Sources of noise in imaging}{24}{}%
 \contentsline {chapter}{\numberline {4}Biological Application}{27}{}%
 \contentsline {section}{\numberline {4.1}Diffusion in cells}{27}{}%
 \contentsline {section}{\numberline {4.2}Brownian motion as a method for measurements of size in biology}{28}{}%
