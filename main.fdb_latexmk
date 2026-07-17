@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1784250027.85252 "main.bcf" "main.bbl" "main" 1784250145.93664 0
-  "main.bcf" 1784250145.80425 111147 1e74f671031e231a1c4a67417ec6e723 "pdflatex"
+["biber main"] 1784313630.18848 "main.bcf" "main.bbl" "main" 1784320744.23908 0
+  "main.bcf" 1784320744.10045 111551 56d49629db7f619a1188b27a11d06a50 "pdflatex"
   "references.bib" 1784249695.49084 59110 6fa0e5c25235de3d872681e013feda04 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784250142.2497 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1784250145.93695 0
-  "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1784245787.14727 5175 1754b5056722f72242f82eb9196714b4 ""
+["pdflatex"] 1784320740.55605 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1784320744.23936 0
+  "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1784313520.8572 5207 bf001ce5111127a463dfaa3fce69c276 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -79,6 +79,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1248133631 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex" 1736550187 46557 9adcccd6eb69fb5553fe8449b51f7543 ""
@@ -264,10 +265,10 @@
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "A1.tex" 1783968532.63554 2712 5a96520d555e708835269a0e3f31bf9b ""
-  "ABSTRACT.tex" 1784235389.90132 4725 80b569df63355315529e0ed54b4ce178 ""
-  "C1.tex" 1784250141.97772 44854 13afcef081ad942c88431084872c2200 ""
+  "ABSTRACT.tex" 1784320740.23851 5099 30878198ffc37055913a373efb0c177f ""
+  "C1.tex" 1784314357.87589 44854 36d7638d8ffd87b021baa9bad19a7bc9 ""
   "C2.tex" 1784235389.90259 7230 c193936eb8639bc28378f75cc3504167 ""
-  "C3.tex" 1784073194.86426 35649 6df0994b4774271cda67965497adf1f4 ""
+  "C3.tex" 1784317076.3589 38050 f3344ab198e982061f8d629d86438ca1 ""
   "CONC.tex" 1781830520.37875 46 7f6d75627a266a38fcb70d012f03b37d ""
   "Figures/Chapter7/CLiC_figure.png" 1784073194.86456 38002 494b90d7c46b06102eff0538a3c84688 ""
   "Figures/Chapter7/Figure_2_v8.pdf" 1784073194.86498 106594 dd7bdfc3601783e0bd49db059d3566f8 ""
@@ -280,9 +281,9 @@
   "Figures/schematic.png" 1782352118.82688 40575 e0d391acb20d303097c4a9c2a4604922 ""
   "Figures/simulations/realization_and_boltzmann.pdf" 1783384396.73485 703793 5f055a86e1823e4b6ba2df4cd74e67de ""
   "Figures/size-comp.png" 1782761897.4234 195926 6cb0641223326530b032e8abeb056754 ""
-  "Figures/yikes.png" 1784045701.39201 70197 1dbd79631da05116005a5f584a289382 ""
-  "INTRO.tex" 1784246624.72158 7348 62c808fa57e983b0ab5b2aafa922ead2 ""
+  "INTRO.tex" 1784313993.30759 7923 f40fe853e6b3d325a44e8f8304c89f5d ""
   "Python/Figures/B_estimation_hist.pdf" 1784045701.39344 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
+  "Python/Figures/NormalizationPipeline.pdf" 1784315528.50373 3155489 01815e1f0834423a31a3e428163f3580 ""
   "Python/Figures/conf_debyelength.pdf" 1783707502.83123 51052 c47dc9ad596d664c6020650d4b6a781b ""
   "Python/Figures/conf_zeta_debye.png" 1783707502.83373 443847 c5de7feb0a4a312fe39b21c98053237d ""
   "Python/Figures/diff_debye.pdf" 1783707502.83415 42290 5a15c6432eefcced79f07b48b5a55ec1 ""
@@ -290,11 +291,11 @@
   "Python/Figures/sim_ipsf.pdf" 1783468542.60849 223410 758efeac0c43ed1c8d2b4741aa3a9b4d ""
   "Python/Figures/simulation_fit_residual.pdf" 1783468542.61247 71236 9f8189d044a2b171abe8a6839b49b04a ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1784250145.79984 23171 e718a9d24ef4a897a31c7057ba1e4ea3 "pdflatex"
-  "main.bbl" 1784250029.57788 83117 93b624078ae25b1d24b9417b164932c6 "biber main"
-  "main.run.xml" 1784250145.80489 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
-  "main.tex" 1784245787.14727 5175 1754b5056722f72242f82eb9196714b4 ""
-  "main.toc" 1784250145.80495 4299 b0461e11e90dfa23dc65c59588b24804 "pdflatex"
+  "main.aux" 1784320744.09565 23887 275543aab4d3af0ab7f1c941d58f4953 "pdflatex"
+  "main.bbl" 1784313632.07026 83117 421950b9af5ae5690286ca5ef4e48ecd "biber main"
+  "main.run.xml" 1784320744.10115 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.tex" 1784313520.8572 5207 bf001ce5111127a463dfaa3fce69c276 ""
+  "main.toc" 1784320744.10121 4273 308a70f8d430c91a1e99a8c8a9c550c9 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

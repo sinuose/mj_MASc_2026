@@ -23,10 +23,20 @@
 \abx@aux@segm{0}{0}{Steck2021}
 \abx@aux@cite{0}{Born1999}
 \abx@aux@segm{0}{0}{Born1999}
+\abx@aux@cite{0}{brownXXVIIBriefAccount1828}
+\abx@aux@segm{0}{0}{brownXXVIIBriefAccount1828}
+\abx@aux@cite{0}{einstein1956investigations}
+\abx@aux@segm{0}{0}{einstein1956investigations}
+\abx@aux@cite{0}{bian111YearsBrownian2016}
+\abx@aux@segm{0}{0}{bian111YearsBrownian2016}
+\abx@aux@cite{0}{bian111YearsBrownian2016}
+\abx@aux@segm{0}{0}{bian111YearsBrownian2016}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{7}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Size comparison of various particles. Nanoparticles are defined as particles where the largest dimension is at most $\sim \SI {200}{\nm }$ \textcolor {red}{REF}.}}{7}{}\protected@file@percent }
+\abx@aux@cite{0}{bian111YearsBrownian2016}
+\abx@aux@segm{0}{0}{bian111YearsBrownian2016}
 \abx@aux@cite{0}{einstein1956investigations}
 \abx@aux@segm{0}{0}{einstein1956investigations}
 \abx@aux@cite{0}{vestergaardOptimalEstimationDiffusion2014}
@@ -141,80 +151,82 @@
 \@writefile{toc}{\contentsline {section}{\numberline {6.1}Method Overview}{37}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Background subtraction outline. }}{37}{}\protected@file@percent }
 \newlabel{fig:method_outline}{{6.1}{37}{}{figure.6.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Image Background Subtraction and Noise Consideration}{37}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Raw image backgroud subtraction}{38}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis.}}{38}{}\protected@file@percent }
+\newlabel{fig:raw2iscat}{{6.2}{38}{}{figure.6.2}{}}
 \abx@aux@cite{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@segm{0}{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@cite{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@segm{0}{0}{kashkanovaPrecisionSingleparticleLocalization2021}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Raw image stack $\rightarrow $ iSCAT contrast stack}}{38}{}\protected@file@percent }
-\newlabel{alg:raw2iscat}{{1}{38}{}{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Raw image stack $\rightarrow $ iSCAT contrast stack}}{39}{}\protected@file@percent }
+\newlabel{alg:raw2iscat}{{1}{39}{}{algorithm.1}{}}
 \abx@aux@cite{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@segm{0}{0}{parthasarathyRapidAccurateParticle2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}iSCAT $(x, y)$ Tracking}{39}{}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Transverse Localization algorithm}}{39}{}\protected@file@percent }
-\newlabel{alg:2d_track}{{2}{39}{}{algorithm.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}Radial Integral}{40}{}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Discrete radial profile (angular average over a wedge)}}{40}{}\protected@file@percent }
-\newlabel{alg:rad_int}{{3}{40}{}{algorithm.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Nuisance parameter Estimation}{41}{}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Nuisance-parameter estimation by profiled grid search + local refinement}}{41}{}\protected@file@percent }
-\newlabel{alg:nuisance_est}{{4}{41}{}{algorithm.4}{}}
-\newlabel{ln:E0}{{13}{41}{}{algorithm.4}{}}
-\newlabel{ln:L}{{14}{41}{}{algorithm.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.5}2D Chain-link}{42}{}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}}{42}{}\protected@file@percent }
-\newlabel{alg:best_chain_2d}{{5}{42}{}{algorithm.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text  {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$.}}{43}{}\protected@file@percent }
-\newlabel{fig:ipsf_sim}{{6.2}{43}{}{figure.6.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Simulated iPSF localization}{43}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}3-parameter Estimation}{43}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}}{44}{}\protected@file@percent }
-\newlabel{fig:nuisance_fit}{{6.3}{44}{}{figure.6.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Grid-Search Estimation}{44}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Conclusions}{44}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}}{45}{}\protected@file@percent }
-\newlabel{fig:fit_residuals}{{6.4}{45}{}{figure.6.4}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}3D confinement with iSCAT}{46}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}iSCAT $(x, y)$ Tracking}{40}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Transverse Localization algorithm}}{40}{}\protected@file@percent }
+\newlabel{alg:2d_track}{{2}{40}{}{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Radial Integral}{41}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Discrete radial profile (angular average over a wedge)}}{41}{}\protected@file@percent }
+\newlabel{alg:rad_int}{{3}{41}{}{algorithm.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.3}Nuisance parameter Estimation}{42}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Nuisance-parameter estimation by profiled grid search + local refinement}}{42}{}\protected@file@percent }
+\newlabel{alg:nuisance_est}{{4}{42}{}{algorithm.4}{}}
+\newlabel{ln:E0}{{13}{42}{}{algorithm.4}{}}
+\newlabel{ln:L}{{14}{42}{}{algorithm.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.4}2D Chain-link}{43}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}}{43}{}\protected@file@percent }
+\newlabel{alg:best_chain_2d}{{5}{43}{}{algorithm.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text  {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$.}}{44}{}\protected@file@percent }
+\newlabel{fig:ipsf_sim}{{6.3}{44}{}{figure.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Simulated iPSF localization}{44}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}3-parameter Estimation}{44}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}}{45}{}\protected@file@percent }
+\newlabel{fig:nuisance_fit}{{6.4}{45}{}{figure.6.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Grid-Search Estimation}{45}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Conclusions}{45}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}}{46}{}\protected@file@percent }
+\newlabel{fig:fit_residuals}{{6.5}{46}{}{figure.6.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}3D confinement with iSCAT}{47}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Methods}{46}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{46}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Methods}{47}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{47}{}\protected@file@percent }
 \abx@aux@cite{0}{berardPrecisionPlatformConvex2013}
 \abx@aux@segm{0}{0}{berardPrecisionPlatformConvex2013}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces  iSCAT Schematic. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scattered light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format.}}{47}{}\protected@file@percent }
-\newlabel{fig:re_schematic}{{7.1}{47}{}{figure.7.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Cover-Glass}{47}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}Convex-lens induced confinement}{47}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Figure Caption.}}{48}{}\protected@file@percent }
-\newlabel{fig:c7_fig1}{{7.2}{48}{}{figure.7.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.4}Sample Details}{48}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.5}Analysis Method}{48}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Results}{48}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces  iSCAT Schematic. A 405 nm laser is sent through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scattered light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format.}}{48}{}\protected@file@percent }
+\newlabel{fig:re_schematic}{{7.1}{48}{}{figure.7.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.2}Cover-Glass}{48}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.3}Convex-lens induced confinement}{48}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Figure Caption.}}{49}{}\protected@file@percent }
+\newlabel{fig:c7_fig1}{{7.2}{49}{}{figure.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.4}Sample Details}{49}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.5}Analysis Method}{49}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Results}{49}{}\protected@file@percent }
 \abx@aux@cite{0}{millanNumericalSimulationsConfined2023}
 \abx@aux@segm{0}{0}{millanNumericalSimulationsConfined2023}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces method overview.}}{49}{}\protected@file@percent }
-\newlabel{fig:c7_fig2}{{7.3}{49}{}{figure.7.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Polystyrene PBS series}{49}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Figures Description}}{49}{}\protected@file@percent }
-\newlabel{fig:c7_fig3}{{7.4}{49}{}{figure.7.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Axial Diffusivity}{49}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Figures Description}}{50}{}\protected@file@percent }
-\newlabel{fig:c7_fig4}{{7.5}{50}{}{figure.7.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.3}LNP Diffusivity}{50}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}Discussion of Results}{51}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{52}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces method overview.}}{50}{}\protected@file@percent }
+\newlabel{fig:c7_fig2}{{7.3}{50}{}{figure.7.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Polystyrene PBS series}{50}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Figures Description}}{50}{}\protected@file@percent }
+\newlabel{fig:c7_fig3}{{7.4}{50}{}{figure.7.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Axial Diffusivity}{50}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Figures Description}}{51}{}\protected@file@percent }
+\newlabel{fig:c7_fig4}{{7.5}{51}{}{figure.7.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.3}LNP Diffusivity}{51}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Discussion of Results}{52}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Conclusion}{53}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Conclusion}{52}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future outlook}{52}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{56}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Conclusion}{53}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Future outlook}{53}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{57}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{app:1}{{A}{56}{}{chapter.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}$\hat  B$ MLE}{56}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}$\mathbb  {V}[\hat  {B}]$}{57}{}\protected@file@percent }
+\newlabel{app:1}{{A}{57}{}{chapter.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}$\hat  B$ MLE}{57}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}$\mathbb  {V}[\hat  {B}]$}{58}{}\protected@file@percent }
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
-\abx@aux@read@bbl@mdfivesum{93B624078AE25B1D24B9417B164932C6}
+\abx@aux@read@bbl@mdfivesum{421950B9AF5AE5690286CA5EF4E48ECD}
 \abx@aux@defaultrefcontext{0}{millanNumericalSimulationsConfined2023}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{dewitPreciseCharacterizationNanometerscale2023}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Sahay2013}{none/global//global/global/global}
@@ -224,7 +236,9 @@
 \abx@aux@defaultrefcontext{0}{Banerjee2016}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Steck2021}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Born1999}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{brownXXVIIBriefAccount1828}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{einstein1956investigations}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{bian111YearsBrownian2016}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{vestergaardOptimalEstimationDiffusion2014}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{taylor_interferometric_2018}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{kamanziSimultaneousSingleParticleMeasurements2021}{none/global//global/global/global}
@@ -232,8 +246,6 @@
 \abx@aux@defaultrefcontext{0}{graves_direct_2026}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{filipeCriticalEvaluationNanoparticle2010}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{swanParticleMotionParallel2010}{none/global//global/global/global}
-\abx@aux@defaultrefcontext{0}{bian111YearsBrownian2016}{none/global//global/global/global}
-\abx@aux@defaultrefcontext{0}{brownXXVIIBriefAccount1828}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{pathriaStatisticalMechanics2011}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{israelachviliIntermolecularSurfaceForces}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{weinberg_quantum_1995}{none/global//global/global/global}
@@ -243,4 +255,4 @@
 \abx@aux@defaultrefcontext{0}{kashkanovaPrecisionSingleparticleLocalization2021}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{parthasarathyRapidAccurateParticle2012}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{berardPrecisionPlatformConvex2013}{none/global//global/global/global}
-\gdef \@abspage@last{58}
+\gdef \@abspage@last{59}

@@ -133,25 +133,50 @@ With regards of surface charge estimation, we have introduced a new MLE for the 
 
 \chapter{iSCAT z-estimation Simulations}
 
-Here we discuss the estimation of z-estimation on rayleigh length diffraction. To obtain a 3D track, it is paramount that we have a scope of how accurate the detection of the z-axis is. This section aims to rigorously test and investigate the z-localization method in order to have an accurate representation of the performance of the method.
+This section presents a computational method for determining the axial position of a nanoparticle from iSCAT imaging data.The results obtained are used to evaluate the accuracy and performance of the proposed method for determining the nanoparticle's $z$-axis position. The precision and limitatinos are discussed in the context of recovering three-dimensional particle trajectories.
 
+Before describing the method, the raw data is described for context of iSCAT image processing. The raw images are captured on a CMOS camera as per the microscope schematic shown in Fig. \ref{fig:schematic} and Fig. \ref{fig:re_schematic}. The images consist of 2D interference images acquired at some $z_\mathrm{focus}$, which is the distance between the objective's focal distance and the objects in the field of view. 
 
 \section{Method Overview}
 
-The Axial inference pipeline is described in order of operation on image data. 
+The method descirbed in this section is based on computational image processing on images acquired using a CMOS camera. The camera has an array of $512 \times 512$ pixels. The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each cooridnate position.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/yikes.png}
+    \begin{minipage}{0.6\textwidth}
+        \centering
+        \begin{enumerate}
+            \item Raw image captured on camera.
+            \item Backgroud subtraction to convert to iSCAT image.
+            \item iSCAT $(x,y)$ Tracking
+            \item Radial Integral to obtain scattering data.
+            \item Nuisance parameter estimation to ensure physical stability.
+            \item Particle axial position Linking with 2D chain-link algorithm.
+            \item Axial position Extraction
+            \item Three-dimensional trajectory is recovered.
+        \end{enumerate}
+    \end{minipage}
     \caption{Background subtraction outline. }
     \label{fig:method_outline}
 \end{figure}
 
 
-\subsection{Image Background Subtraction and Noise Consideration}
+\section{Raw image backgroud subtraction}
 
-To obtain iSCAT images from raw CMOS data, it is important to perform noise subtraction and convert the image into contrast units. To illustrate this, a sketch of a diagram is shown, and pseudocode is provided. These equations follow the theoretical outline, with experimentally selected parameters. 
+To obtain high-contrast interference signal from raw camera data, a post-processing background subtraction routine is introduced. This background subtraction measured a temporally averaged background using a window-filter and foruier filtering. An example of this process is shown in Fig.\ref{fig:raw2iscat}.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/NormalizationPipeline.pdf}
+    \caption{Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis.}
+    \label{fig:raw2iscat}
+\end{figure}
+
+The full algorithm is preseted in Alg. \ref{alg:raw2iscat}. The overview of the algortihm is to subtract the background noise in order to minimize Poisson, and electronic noise. 
+
+Poisson noise subtraction is performed by subtracting off the mean backgrond fluctutations. A Poisson background has a constant mean, which is reduced when subtracted away. 
+
+In order to remove electronic noise from data-trasnfer, a row-wise averaging scheme is implemented. Row-wise means are taken and normalzed with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normaliztion methods by the Sandoghar lab \red{Vahid's github should be here.}
 
 \begin{algorithm}[H]
 \caption{Raw image stack $\rightarrow$ iSCAT contrast stack}

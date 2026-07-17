@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 JUL 2026 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 JUL 2026 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -869,26 +869,26 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 \c@theorem=\count488
 \c@definition=\count489
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 59.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 60.
 \@quotelevel=\count490
 \@quotereset=\count491
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count492
@@ -920,21 +920,21 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 59.
-LaTeX Info: Redefining \microtypecontext on input line 59.
-Package microtype Info: Applying patch `item' on input line 59.
-Package microtype Info: Applying patch `toc' on input line 59.
-Package microtype Info: Applying patch `eqnum' on input line 59.
-Package microtype Info: Applying patch `footnote' on input line 59.
-Package microtype Info: Applying patch `verbatim' on input line 59.
-LaTeX Info: Redefining \microtypesetup on input line 59.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 60.
+LaTeX Info: Redefining \microtypecontext on input line 60.
+Package microtype Info: Applying patch `item' on input line 60.
+Package microtype Info: Applying patch `toc' on input line 60.
+Package microtype Info: Applying patch `eqnum' on input line 60.
+Package microtype Info: Applying patch `footnote' on input line 60.
+Package microtype Info: Applying patch `verbatim' on input line 60.
+LaTeX Info: Redefining \microtypesetup on input line 60.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 59.
+LaTeX Info: Redefining \showhyphens on input line 60.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -988,8 +988,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 59.
-Package biblatex Info: Reference segment=0 on input line 59.
+Package biblatex Info: Reference section=0 on input line 60.
+Package biblatex Info: Reference segment=0 on input line 60.
 
 
 [1
@@ -1067,9 +1067,6 @@ Chapter 2.
 
 [17]
 Chapter 3.
-
-LaTeX Warning: Reference `REF' on page 18 undefined on input line 258.
-
 
 
 [18
@@ -1185,58 +1182,61 @@ Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input lin
 
 [36]
 Chapter 6.
-<Figures/yikes.png, id=257, 1023.07219pt x 504.38437pt>
-File: Figures/yikes.png Graphic file (type png)
-<use Figures/yikes.png>
-Package pdftex.def Info: Figures/yikes.png  used on input line 145.
-(pdftex.def)             Requested size: 366.82715pt x 180.84708pt.
 
 
 [37
 
- <./Figures/yikes.png>]
+]
+<Python/Figures/NormalizationPipeline.pdf, id=260, 697.85118pt x 219.30954pt>
+File: Python/Figures/NormalizationPipeline.pdf Graphic file (type pdf)
+<use Python/Figures/NormalizationPipeline.pdf>
+Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 170.
+(pdftex.def)             Requested size: 489.10287pt x 153.70638pt.
 
-[38]
+
+[38 <./Python/Figures/NormalizationPipeline.pdf>]
 
 [39]
 
 [40]
+
+[41]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[41]
-
 [42]
-<Python/Figures/sim_ipsf.pdf, id=280, 687.70567pt x 246.92203pt>
+
+[43]
+<Python/Figures/sim_ipsf.pdf, id=302, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 545.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 570.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
 
 
-[43 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=317, 563.70598pt x 274.626pt>
+[44 <./Python/Figures/sim_ipsf.pdf>]
+<Python/Figures/nuisance_param.pdf, id=338, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 566.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 591.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=318, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=339, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 577.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 602.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
 )
 
-[44 <./Python/Figures/nuisance_param.pdf>]
+[45 <./Python/Figures/nuisance_param.pdf>]
 
-[45 <./Python/Figures/simulation_fit_residual.pdf>]
+[46 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 7.
 (./C2.tex
 
-[46
+[47
 
 ]
 File: Figures/schematic.png Graphic file (type png)
@@ -1245,84 +1245,80 @@ Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 (pdftex.def)             Requested size: 489.10287pt x 312.16916pt.
 
 
-[47]
-<Figures/Chapter7/CLiC_figure.png, id=361, 682.80093pt x 242.40562pt>
+[48]
+<Figures/Chapter7/CLiC_figure.png, id=382, 682.80093pt x 242.40562pt>
 File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
 <use Figures/Chapter7/CLiC_figure.png>
 Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 38.
 (pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
-<Figures/Chapter7/Figure_2_v8.pdf, id=362, 758.79701pt x 160.56116pt>
+<Figures/Chapter7/Figure_2_v8.pdf, id=383, 758.79701pt x 160.56116pt>
 File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
 <use Figures/Chapter7/Figure_2_v8.pdf>
 Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 54.
 (pdftex.def)             Requested size: 489.10287pt x 103.49376pt.
 
 
-[48 <./Figures/Chapter7/CLiC_figure.png>]
-<Figures/Chapter7/c7_fig3.png, id=368, 901.86937pt x 506.6428pt>
+[49 <./Figures/Chapter7/CLiC_figure.png>]
+<Figures/Chapter7/c7_fig3.png, id=388, 901.86937pt x 506.6428pt>
 File: Figures/Chapter7/c7_fig3.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig3.png>
 Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 74.
 (pdftex.def)             Requested size: 391.28378pt x 219.81577pt.
-<Figures/Chapter7/c7_fig4.png, id=369, 900.36375pt x 505.89pt>
+<Figures/Chapter7/c7_fig4.png, id=389, 900.36375pt x 505.89pt>
 File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig4.png>
 Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 85.
 (pdftex.def)             Requested size: 489.10287pt x 274.813pt.
 
 
-[49 <./Figures/Chapter7/Figure_2_v8.pdf> <./Figures/Chapter7/c7_fig3.png>]
+[50 <./Figures/Chapter7/Figure_2_v8.pdf> <./Figures/Chapter7/c7_fig3.png>]
 
-[50 <./Figures/Chapter7/c7_fig4.png>])
+[51 <./Figures/Chapter7/c7_fig4.png>])
 
-[51]
+[52]
 Chapter 8.
 (./CONC.tex)
-
-[52
-
-]
 
 [53
 
 ]
 
-[54] (./A1.tex
+[54
 
-[55]
+]
+
+[55] (./A1.tex
+
+[56]
 Appendix A.
 
 
-[56
+[57
 
 ])
 
-[57] (./main.aux)
+[58] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51847 strings out of 473190
- 1250992 string characters out of 5715801
- 2333140 words of memory out of 5000000
- 74306 multiletter control sequences out of 15000+600000
+ 51851 strings out of 473190
+ 1251309 string characters out of 5715801
+ 2333174 words of memory out of 5000000
+ 74310 multiletter control sequences out of 15000+600000
  587362 words of font info for 229 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2004b,1532s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (58 pages, 4496956 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (59 pages, 7588883 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
+ 561 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  54897 words of extra memory for PDF output out of 61914 (max. 10000000)
 
