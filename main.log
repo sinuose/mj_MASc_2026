@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 JUL 2026 13:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  18 JUL 2026 13:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1190,43 +1190,62 @@ Chapter 6.
 <Python/Figures/NormalizationPipeline.pdf, id=260, 697.85118pt x 219.30954pt>
 File: Python/Figures/NormalizationPipeline.pdf Graphic file (type pdf)
 <use Python/Figures/NormalizationPipeline.pdf>
-Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 170.
+Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 171.
 (pdftex.def)             Requested size: 489.10287pt x 153.70638pt.
 
 
 [38 <./Python/Figures/NormalizationPipeline.pdf>]
+<Python/Figures/Raw2RVT.pdf, id=285, 305.78642pt x 161.27858pt>
+File: Python/Figures/Raw2RVT.pdf Graphic file (type pdf)
+<use Python/Figures/Raw2RVT.pdf>
+Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 200.
+(pdftex.def)             Requested size: 489.10287pt x 257.9673pt.
 
-[39]
 
-[40]
+[39 <./Python/Figures/Raw2RVT.pdf>]
+<Python/Figures/RadialSymExample.pdf, id=303, 372.44862pt x 242.22061pt>
+File: Python/Figures/RadialSymExample.pdf Graphic file (type pdf)
+<use Python/Figures/RadialSymExample.pdf>
+Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 217.
+(pdftex.def)             Requested size: 489.10287pt x 318.09485pt.
 
-[41]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
+[40 <./Python/Figures/RadialSymExample.pdf>]
+<Python/Figures/AngularInt.pdf, id=313, 346.89601pt x 202.356pt>
+File: Python/Figures/AngularInt.pdf Graphic file (type pdf)
+<use Python/Figures/AngularInt.pdf>
+Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 240.
+(pdftex.def)             Requested size: 489.10287pt x 285.32507pt.
+
+
+[41 <./Python/Figures/AngularInt.pdf>]
 
 [42]
+<Python/Figures/viterbi_toy.pdf, id=342, 419.166pt x 274.626pt>
+File: Python/Figures/viterbi_toy.pdf Graphic file (type pdf)
+<use Python/Figures/viterbi_toy.pdf>
+Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 295.
+(pdftex.def)             Requested size: 391.28378pt x 256.36333pt.
 
-[43]
-<Python/Figures/sim_ipsf.pdf, id=302, 687.70567pt x 246.92203pt>
+
+[43 <./Python/Figures/viterbi_toy.pdf>]
+<Python/Figures/sim_ipsf.pdf, id=374, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 570.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 370.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
 
 
 [44 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=338, 563.70598pt x 274.626pt>
+<Python/Figures/nuisance_param.pdf, id=407, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 591.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 391.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=339, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=408, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 602.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 402.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
 )
 
@@ -1246,12 +1265,12 @@ Package pdftex.def Info: Figures/schematic.png  used on input line 21.
 
 
 [48]
-<Figures/Chapter7/CLiC_figure.png, id=382, 682.80093pt x 242.40562pt>
+<Figures/Chapter7/CLiC_figure.png, id=451, 682.80093pt x 242.40562pt>
 File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
 <use Figures/Chapter7/CLiC_figure.png>
 Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 38.
 (pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
-<Figures/Chapter7/Figure_2_v8.pdf, id=383, 758.79701pt x 160.56116pt>
+<Figures/Chapter7/Figure_2_v8.pdf, id=452, 758.79701pt x 160.56116pt>
 File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
 <use Figures/Chapter7/Figure_2_v8.pdf>
 Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 54.
@@ -1259,12 +1278,12 @@ Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 54
 
 
 [49 <./Figures/Chapter7/CLiC_figure.png>]
-<Figures/Chapter7/c7_fig3.png, id=388, 901.86937pt x 506.6428pt>
+<Figures/Chapter7/c7_fig3.png, id=457, 901.86937pt x 506.6428pt>
 File: Figures/Chapter7/c7_fig3.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig3.png>
 Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 74.
 (pdftex.def)             Requested size: 391.28378pt x 219.81577pt.
-<Figures/Chapter7/c7_fig4.png, id=389, 900.36375pt x 505.89pt>
+<Figures/Chapter7/c7_fig4.png, id=458, 900.36375pt x 505.89pt>
 File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig4.png>
 Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 85.
@@ -1282,6 +1301,11 @@ Chapter 8.
 [53
 
 ]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 
 [54
 
@@ -1295,9 +1319,40 @@ Appendix A.
 
 [57
 
+]
+
+[58]
+Appendix B.
+
+Underfull \hbox (badness 7595) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/12 (+20) Linking al-go-rithm for ax-ial tra-jec-to-ries.
+ []
+
+
+
+[59
+
+]
+
+[60
+
+]
+
+[61
+
+]
+
+[62
+
+]
+
+[63
+
 ])
 
-[58] (./main.aux)
+[64
+
+] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1307,18 +1362,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51851 strings out of 473190
- 1251309 string characters out of 5715801
- 2333174 words of memory out of 5000000
- 74310 multiletter control sequences out of 15000+600000
- 587362 words of font info for 229 fonts, out of 8000000 for 9000
+ 51887 strings out of 473190
+ 1252623 string characters out of 5715801
+ 2322415 words of memory out of 5000000
+ 74340 multiletter control sequences out of 15000+600000
+ 585521 words of font info for 224 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,23n,121p,2004b,1532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,23n,121p,2004b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (59 pages, 7589044 bytes).
+Output written on main.pdf (65 pages, 7756625 bytes).
 PDF statistics:
- 561 PDF objects out of 1000 (max. 8388607)
- 392 compressed objects within 4 object streams
+ 651 PDF objects out of 1000 (max. 8388607)
+ 449 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 54897 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 54917 words of extra memory for PDF output out of 61914 (max. 10000000)
 

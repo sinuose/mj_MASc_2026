@@ -1670,6 +1670,43 @@
       \verb https://www.nature.com/articles/nmeth.2071
       \endverb
     \endentry
+    \entry{wasserman2010statistics}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6b27f4592197d058b81cb25b0b285942}{%
+           family={Wasserman},
+           familyi={W\bibinitperiod},
+           given={Larry},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{fullhash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{fullhashraw}{6b27f4592197d058b81cb25b0b285942}
+      \strng{bibnamehash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{authorbibnamehash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{authornamehash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{authorfullhash}{6b27f4592197d058b81cb25b0b285942}
+      \strng{authorfullhashraw}{6b27f4592197d058b81cb25b0b285942}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-4419-2322-6}
+      \field{series}{Springer Texts in Statistics}
+      \field{title}{All of Statistics: A Concise Course in Statistical Inference}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb https://link.springer.com/book/10.1007/978-0-387-21736-9
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/book/10.1007/978-0-387-21736-9
+      \endverb
+    \endentry
     \entry{berardPrecisionPlatformConvex2013}{article}{}{}
       \name{author}{6}{}{%
         {{hash=4fcb7320b8ef30facc3adc25a9f9b335}{%

@@ -15,14 +15,14 @@ is first separated into transverse and axial components, where $F$ is the electr
     D(z) = \frac{k_b T}{\gamma(z)}.
 \end{equation}
 
-Then, in overdamped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the equations of motion as
+Then, in over-damped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the equations of motion as
 \begin{equation}
     \begin{aligned}
         \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
         \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\lambda(z)},
     \end{aligned}
 \end{equation}
-as described in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the overdamped regime for many particle materials, such as PMMA or coated polystyrene.
+as described in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the over-damped regime for many particle materials, such as PMMA or coated polystyrene.
 
 To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, we can rewrite the above equations in the Ito form, replacing lowercase variables with their capital, stochastic, equivalents:
 \begin{equation}
@@ -66,7 +66,7 @@ If the amplitude of the electrostatic interactions is known, one can invert the 
 
 \section{Results}
 
-We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the different cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model. For a given simulation, we can generate a realization of the dynamics following  the aforementioned SDEs. These realizations approach the boltzmann limit as $t \gg \tau$. Some such realizations are shown in Fig. \ref{fig:brown_realization}
+We will simulate the priors of a Polystyrene bead diffusing with neutral charged walls, as well as those with varied levels of screening. In turn, we will be able to showcase the different cases of the known confined diffusion theory, as well as establishing prior curves for this work. In addition, the simulated curves will be compared to an effective theoretical model. For a given simulation, we can generate a realization of the dynamics following  the aforementioned SDEs. These realizations approach the Boltzmann limit as $t \gg \tau$. Some such realizations are shown in Fig. \ref{fig:brown_realization}
 
 \begin{figure}[hb]
     \centering
@@ -86,60 +86,61 @@ For a given experiment, one aims to measure something from knowing the trajector
     \label{fig:xz_msd_comparison}
 \end{figure}
 
-The notation of a higher confinement with respect to the zeta-potential is intrinsically linked to the electrostatic potential that the particle feels as it explores the well. This relationship between the effective confinement length can be solved by solving the Green's function for the FP-equation in the presence of an electrostatic potential. However, this happens to be non-analytical in the case of the Poisson-Boltzmann potential approximated in the Debye-Huckle theory. However, using the developed simulation class, this relationship can be directly measured. The same settings were used while fixing the zeta-potential of the particle, and varying the ionic concentration of the solution, which is inversely proportional to the debye-length,
+The notation of a higher confinement with respect to the zeta-potential is intrinsically linked to the electrostatic potential that the particle feels as it explores the well. This relationship between the effective confinement length can be solved by solving the Green's function for the FP-equation in the presence of an electrostatic potential. However, this happens to be non-analytical in the case of the Poisson-Boltzmann potential approximated in the Debye-Huckle theory. However, using the developed simulation class, this relationship can be directly measured. The same settings were used while fixing the zeta-potential of the particle, and varying the ionic concentration of the solution, which is inversely proportional to the Debye-length,
 \begin{equation}
     \lambda_D \propto \frac{1}{\sqrt{C}},
 \end{equation}
-where $C$ is the ionic concentration of a dilute electrolyte compound [CITE]. To model this, the simulation settings are chosen as such $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. The relationship between the effective confinement length and the ionic concentration is shown in Fig. \ref{fig:conf_debyelen}
+where $C$ is the ionic concentration of a dilute electrolyte compound [CITE]. To model this, the simulation settings are chosen as such $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. The relationship between the effective confinement length and the ionic concentration is shown in Fig. \ref{fig:conf_debyelen}
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_debyelength.pdf}
-    \caption{Effective Confinement length plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \caption{Effective Confinement length plotted against the solution's Debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
     \label{fig:conf_debyelen}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/diff_debye.pdf}
-    \caption{Effective diffusion plotted against the solution's debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
+    \caption{Effective diffusion plotted against the solution's Debye length. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. }
     \label{fig:diff_debyelen}
 \end{figure}
 
-The relationship between the effective confinement length, as well as the relationship between relative diffusion and concentration of ions begs the question of if this can be used as a particle filter to distinguish classes of particles. Here we investigate that question regarding the amount of confinement length compared to the zeta-potential of a particle at various debye-lengths. This relationship is described in Fig. \ref{fig:conf_zeta_debye}.
+The relationship between the effective confinement length, as well as the relationship between relative diffusion and concentration of ions begs the question of if this can be used as a particle filter to distinguish classes of particles. Here we investigate that question regarding the amount of confinement length compared to the zeta-potential of a particle at various Debye-lengths. This relationship is described in Fig. \ref{fig:conf_zeta_debye}.
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_zeta_debye.png}
-    \caption{Effective confinement plotted against the particle's zeta-potential. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the debye length is varied. The surface charge of the wall are chosen to resemble glass, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.}
+    \caption{Effective confinement plotted against the particle's zeta-potential. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The surface charge of the wall are chosen to resemble glass, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.}
     \label{fig:conf_zeta_debye}
 \end{figure}
 
 \subsection{Surface Charge estimation}
 
-The particle's exploration demonstrated a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. The langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\micro\second}$. The distribution of the MLE is shown in Fig \ref{fig:B_estimation}.
+The particle's exploration demonstrated a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. The Langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\micro\second}$. The distribution of the MLE is shown in Fig \ref{fig:B_estimation}.
 
 \begin{figure}[hb]
     \centering
     \includegraphics[width=0.75\linewidth]{Python/Figures/B_estimation_hist.pdf}
-    \caption{Distribution of $\hat{B}$ Reparameterized for the surface charge. $\hat{\sigma} = 1/(A\cdot C)^2 \hat{B}$ where $A,C$ are properly defined in \ref{eqn:electrostatic_forces}. In this histogram there are 50 simulations with seeds set to $S_{\text{eed}} = i* 10 + 1$ for $i \in \{0, 49\}$ using the \textit{numpy} seed parameter. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}, \lambda_D = \SI{10}{\nm}$ The surface charge is fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.}
+    \caption{Distribution of $\hat{B}$ Re-parameterized for the surface charge. $\hat{\sigma} = 1/(A\cdot C)^2 \hat{B}$ where $A,C$ are properly defined in \ref{eqn:electrostatic_forces}. In this histogram there are 50 simulations with seeds set to $S_{\text{eed}} = i* 10 + 1$ for $i \in \{0, 49\}$ using the \textit{numpy} seed parameter. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}, \lambda_D = \SI{10}{\nm}$ The surface charge is fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.}
     \label{fig:B_estimation}
 \end{figure}
 
 \section{Conclusion}
 
-In conclusion, we have shown that confined simulations can be readily simulated with physical parameters as per literature. The simulations have shown that there are regions of instability in the debye-surface charge regime where the confined diffusivity of the particles is maximally observed. For the case of polystyrene beads, this appears to be around $\lambda_D \approx \SI{80}{\nm}$. 
+In conclusion, we have shown that confined simulations can be readily simulated with physical parameters as per literature. The simulations have shown that there are regions of instability in the Debye-surface charge regime where the confined diffusivity of the particles is maximally observed. For the case of polystyrene beads, this appears to be around $\lambda_D \approx \SI{80}{\nm}$. 
 
 With regards of surface charge estimation, we have introduced a new MLE for the amplitude based on maximum likelihood estimation. The distribution has a mean centered around the ground truth with a standard deviation of $1/4 \cdot \sigma_\star$. 
 
 \chapter{iSCAT z-estimation Simulations}
+\label{chap:ZEstimation}
 
-This section presents a computational method for determining the axial position of a nanoparticle from iSCAT imaging data.The results obtained are used to evaluate the accuracy and performance of the proposed method for determining the nanoparticle's $z$-axis position. The precision and limitatinos are discussed in the context of recovering three-dimensional particle trajectories.
+This section presents a computational method for determining the axial position of a nanoparticle from iSCAT imaging data.The results obtained are used to evaluate the accuracy and performance of the proposed method for determining the nanoparticle's $z$-axis position. The precision and limitations are discussed in the context of recovering three-dimensional particle trajectories.
 
-Before describing the method, the raw data is described for context of iSCAT image processing. The raw images are captured on a CMOS camera as per the microscope schematic shown in Fig. \ref{fig:schematic} and Fig. \ref{fig:re_schematic}. The images consist of 2D interference images acquired at some $z_\mathrm{focus}$, which is the distance between the objective's focal distance and the objects in the field of view. 
+The raw images are acquired from a CMOS camera as per the optical schematic shown in Fig. \ref{fig:schematic} and Fig. \ref{fig:re_schematic}. The images consist of 2D interference images acquired at some $z_\mathrm{focus}$, which is the distance between the objective's focal distance and the objects in the field of view.
 
 \section{Method Overview}
 
-The method descirbed in this section is based on computational image processing on images acquired using a CMOS camera. The camera has an array of $512 \times 512$ pixels. The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each cooridnate position.
+The method described in this section is based on computational image processing on images acquired using a CMOS camera. The camera has an array of $512 \times 512$ pixels. The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
 
 \begin{figure}[h!]
     \centering
@@ -147,7 +148,7 @@ The method descirbed in this section is based on computational image processing 
         \centering
         \begin{enumerate}
             \item Raw image captured on camera.
-            \item Backgroud subtraction to convert to iSCAT image.
+            \item Background subtraction to convert to iSCAT image.
             \item iSCAT $(x,y)$ Tracking
             \item Radial Integral to obtain scattering data.
             \item Nuisance parameter estimation to ensure physical stability.
@@ -161,9 +162,9 @@ The method descirbed in this section is based on computational image processing 
 \end{figure}
 
 
-\section{Raw image backgroud subtraction}
+\section{Raw image background subtraction}
 
-To obtain high-contrast interference signal from raw camera data, a post-processing background subtraction routine is introduced. This background subtraction measured a temporally averaged background using a window-filter and foruier filtering. An example of this process is shown in Fig.\ref{fig:raw2iscat}.
+To obtain high-contrast interference signal from raw camera data, a post-processing background subtraction routine is introduced. This background subtraction measured a temporally averaged background using a window-filter and Fourier filtering. An example of this process is shown in Fig.\ref{fig:raw2iscat}.
 
 \begin{figure}[h]
     \centering
@@ -172,330 +173,129 @@ To obtain high-contrast interference signal from raw camera data, a post-process
     \label{fig:raw2iscat}
 \end{figure}
 
-The full algorithm is preseted in Alg. \ref{alg:raw2iscat}. The overview of the algortihm is to subtract the background noise in order to minimize Poisson, and electronic noise. 
+The full algorithm is presented in Alg. \ref{alg:raw2iscat}. The overview of the algorithm is to subtract the background noise in order to minimize Poisson, and electronic noise. 
 
-Poisson noise subtraction is performed by subtracting off the mean backgrond fluctutations. A Poisson background has a constant mean, which is reduced when subtracted away. 
+Poisson noise subtraction is performed by subtracting off the mean background fluctuations. A Poisson background has a constant mean, which is reduced when subtracted away. 
 
-In order to remove electronic noise from data-trasnfer, a row-wise averaging scheme is implemented. Row-wise means are taken and normalzed with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normaliztion methods by the Sandoghar lab \red{Vahid's github should be here.}
+In order to remove electronic noise from data-transfer, a row-wise averaging scheme is implemented. Row-wise means are taken and normalized with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normalization methods by the Sandoghar lab \red{Vahid's github should be here.}
 
-\begin{algorithm}[H]
-\caption{Raw image stack $\rightarrow$ iSCAT contrast stack}
-\label{alg:raw2iscat}
-\begin{algorithmic}[1]
- 
-\Require $I_{\mathrm{raw}} \in \mathbb{R}^{F \times H \times W}$ \Comment{$F$ frames of $H \times W$ pixels}
-\Ensure  $I_{\mathrm{iSCAT}} \in \mathbb{R}^{F \times H \times W}$
-\Statex
- 
-\Statex \textbf{Parameters}
-\State $R_1 \gets \max(H,W)/100$, \quad $R_2 \gets \max(H,W)/4$ \Comment{band-pass radii in $k$-space [px]}
-\State $\Delta f \gets 25$, \quad $\Delta L \gets 15$ \Comment{temporal gap; background half-window, empirical for data conditions.}
-\State $N \gets$ border width \Comment{pixels discarded at the edges}
-\Statex
- 
-\Statex \textbf{Pre-computation} (frame independent)
-\State $(k_x, k_y) \gets \textsc{Meshgrid}\!\left(\left[-\tfrac{H}{2}, \tfrac{H}{2}\right), \left[-\tfrac{W}{2}, \tfrac{W}{2}\right)\right)$ \Comment{centred spatial frequencies}
-\State $h \gets \mathbf{1}\!\left[\, R_1^{2} < k_x^{2} + k_y^{2} < R_2^{2} \,\right]$ \Comment{annular band-pass filter}
-\State $M_{pq} \gets \mathbf{1}\!\left[\, N \le p < H-N \;\wedge\; N \le q < W-N \,\right]$ \Comment{edge mask}
-\Statex
- 
-\Function{AmpNorm}{$I, M$} \Comment{row-wise amplitude normalisation of one frame. Row-wise means to avoid readout noise from the camera. Mean over rows to remove line artifacts. (From Vahid's Method)}
-    \State $I^{(1)} \gets I \odot M$ \Comment{$\odot$: element-wise (Hadamard) product}
-    \State $I^{(2)} \gets I^{(1)} / \big\langle I^{(1)} \big\rangle$ \Comment{$\langle\cdot\rangle$: mean over all pixels}
-    \For{each row $p \in \{0,\dots,H-1\}$}
-        \State $a_p \gets \big\langle M_{p,:} \big\rangle \big/ \big\langle I^{(2)}_{p,:} \big\rangle$ \Comment{row means}
-        \State $I^{(3)}_{p,:} \gets I^{(2)}_{p,:} \big/ a_p$
-    \EndFor
-    \State \Return $I^{(3)}$
-\EndFunction
-\Statex
- 
-\Statex \textbf{Main loop}
-\For{$i = 0$ \textbf{to} $F-1$}
-    \State $I_0 \gets \textsc{AmpNorm}\!\left(I_{\mathrm{raw}}[i],\, M\right)$ \Comment{signal frame}
-    \Statex
-    \State $\mathcal{B}_i \gets
-        \big[\, i - \Delta f - \Delta L,\; i - \Delta f \,\big] \;\cup\;
-        \big[\, i + \Delta f,\; i + \Delta f + \Delta L \,\big]$
-        \Comment{background frame indices}
-    \State $\mathcal{B}_i \gets \mathcal{B}_i \cap [\,0, F\,)$ \Comment{clip at the ends of the stack}
-    \State $\bar{B} \gets \dfrac{1}{|\mathcal{B}_i|} \displaystyle\sum_{j \in \mathcal{B}_i}
-        \textsc{AmpNorm}\!\left(I_{\mathrm{raw}}[j],\, M\right)$ \Comment{mean background}
-    \State \textbf{assert} $\bar{B}$ contains no \textsc{NaN}
-    \Statex
-    \State $I_m \gets \left( I_0 \oslash \bar{B} \right) \odot M$ \Comment{$\oslash$: element-wise division}
-    \State $I_{\mathrm{iSCAT}}[i] \gets \mathcal{F}^{-1}\!\left\{ h \odot \mathcal{F}\{ I_m \} \right\}$ \Comment{band-pass filtering}
-\EndFor
-\Statex
-\State \Return $I_{\mathrm{iSCAT}}$
- 
-\end{algorithmic}
-\end{algorithm}
+The set of images, which consist of matrices of pixel-values of shape $F \times H \times W$, or $F$ number of frames, $W$ pixels wide, $H$ pixels tall, are passed as entries into the function. 
+
+Before running the function, a dynamically allocated setting for the Fourier-filtering is determined based on the image dimensions. Specifically, a donuts of radii inner 1\% and outer 25\%, roughly translating to $\max(H,W)/100 - \max(H,W)/4$. 
+
+The edge 20 pixels of the image stack are ignored using a mask filter. On the inner pixels, the mask is set to $1$, while on the pixels less than 20 pixels away from the edge are set to 0. 
+
+For each frame in the stack, the image is first normalized using a row-wise normalization function. The function, titled \textsc{AmpNorm} in Alg. \ref{alg:raw2iscat}, first obtains the masked-image. The global normalized mean is stored. For each row, the mean is taken and the row of the global-mean is adjusted by the row-wise mean. The final image is the global mean divided by the row-mean for each row. 
+
+Once normalized, the background of the image is calculated by taking the forward and backward $\Delta L$ frames spaced by a spacer of $\Delta f$ frames and taking the $\textsc{AmpNorm}$ of these frames. 
+
+The iSCAT image then consists of a background subtraction between the normalized image and the background. Finally, once background subtracted, the image is Fourier-filtered using the pre-allocated band-pass filter. This process is demonstrated in Fig. \ref{fig:raw2iscat}
+
+\section{iSCAT $(x, y)$ Tracking}
+
+To determine the transverse positions of any particles detected in the iSCAT method, the radial variance transform algorithm is used \cite{kashkanovaPrecisionSingleparticleLocalization2021}. The original algorithm is briefly outlined below for completeness. The full code is written by the Sandoghdar group and can be found in Ref \cite{kashkanovaPrecisionSingleparticleLocalization2021}. A demonstration of this method is presented in the Fig. \ref{fig:transLoc}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/Raw2RVT.pdf}
+    \caption{Raw image to RVT. Gaussian fitting of the RVT is shown on both plots.}
+    \label{fig:transLoc}
+\end{figure}
+
+The transverse localization algorithm, referenced as \textsc{TransverseLocalization} in \ref{alg:2d_track} consists of transformations onto the iSCAT image from the previous section. 
+
+The input image stack is first loaded and assumed to consist of radially symmetric interference fringes. The image is first transformed using the Radial Variance Transform \cite{kashkanovaPrecisionSingleparticleLocalization2021}. This function converts a radial-fringe pattern into a point-like delta function when a radial symmetry is acted upon it. 
+
+Before proceeding, a frame-independent parameter for threshold SNR amplitude, number of pixels, and ROI cropping parameters are inputted. for a particle to be detected, the SNR of the RVT should be roughly 90\% of the max iSCAT amplitude. An estimate of particle number is assumed, which acts as a prior for top $n$ detections. Lastly, ROI for sub-pixel estimation is chosen. 
+
+For each frame, the iSCAT image is dilated. Particle positions that are considered maxima if the dilated image is equal to the RVT and the RVT is above the threshold for detection. 
+
+Once candidates are chosen, a NL-LS gaussian fitting to the RVT is performed to acquire higher-accuracy localization. To improve this to sub-pixel, a crop is done around each RVT gaussian fitted point and a radial-symmetry algorithm is performed as per \cite{parthasarathyRapidAccurateParticle2012}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/RadialSymExample.pdf}
+    \caption{Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \cite{parthasarathyRapidAccurateParticle2012}. Figure adapted from \cite{parthasarathyRapidAccurateParticle2012}.  }
+    \label{fig:RadialSym}
+\end{figure}
+
+To ensure accurate linking, an implementation of the \textsc{Munkres} algorithm is used \red{REF}. Briefly, a cost-matrix of distances is constructed and minimized in time to ensure that optimal displacements are chosen. This algorithm has limitations in cases where particles overlap. Ideally, experimental measure are taken to minimize this occurring. One such measure is to lower the concentration of particle in the recorded images. 
 
 
-\subsection{iSCAT $(x, y)$ Tracking}
 
-To determine the transverse positions of any particles detected in the iSCAT method, the radial variance transform algorithm is used \cite{kashkanovaPrecisionSingleparticleLocalization2021}. The original algorithm is briefly outlined below for completeness. The full code is written by the Sandoghdar group and can be found in Ref \cite{kashkanovaPrecisionSingleparticleLocalization2021}.
+\section{Angular Integral}
 
-\begin{algorithm}
-    \caption{Transverse Localization algorithm}
-    \label{alg:2d_track}
-    \begin{algorithmic}
-\Statex \textbf{Inputs} 
-        \State $I_{\mathrm{iSCAT}}$ \Comment from Alg. \ref{alg:raw2iscat}
-        \State $I_{\mathrm{RVT}} \gets \textsc{RVT}[I_\mathrm{iSCAT}]$
-\Statex   
-        \Statex \textbf{Pre-computation} (frame independent)
-        \State $t \gets 0.9 \cdot \max{I_\mathrm{iSCAT}}$ \Comment{threshold}
-        \State $n \gets 30$ \Comment{number of particles per frame to assume, empirical}
-        \State $x_\mathrm{ROI}, y_\mathrm{ROI} \gets 5$ \Comment{ROI cropping for radial symmetry algorithm}
-\Statex \textbf{Fitting Routine}
-        \For{$i=0$ \textbf{to} $F-1$}
-            \State $I_{\mathrm{dil}} \gets \textsc{ImDialate}(I_\mathrm{RVT}[i])$
-            \State $\{x, y\} \gets \textsc{Where}\left[I_\mathrm{dil} == I_\mathrm{RVT} \land I_\mathrm{RVT} > t\right]$ \Comment{Candidate Positions}
-            \State $\{x_1, y_1\}|_{n} = \textsc{GaussianFit}(x,y)$ \Comment{Non-linear least squares fitting, take best $n$ fits}
-            \State $\{x_\star, y_\star\} = \textsc{RadialSymmetry}(x_1,y_1, x_\mathrm{ROI}, y_\mathrm{ROI})$ \Comment from \cite{parthasarathyRapidAccurateParticle2012} 
-        \EndFor
-\Statex \textbf{2D Trace Linking}
-        \State $\mathrm{Traces} \gets \textsc{Munkres}[{x_\star, y_\star}]$ \Comment{Minimization of distance cost-matrix}
-        \State $\mathrm{ROI} = I_\mathrm{iSCAT}[Traces]$ \Comment{Cropping of image around every frame for each trace.}
-    \end{algorithmic}
-\end{algorithm}
+Image data will have background misalignment due to iSCAT hardware setup. To optimize for fitting speed and misalignment property, radial scattering profile are assumed as in the Rayleigh regime model is symmetric. The radial integration method is described in Alg \ref{alg:rad_int}.
 
-\newpage
-\subsection{Radial Integral}
+The discrete angular integral consists of summing angular terms on a radial grid. Mathematically, the output array obtained is described by the relation
+\begin{equation}
+    g_t(\rho) \tilde{-} \frac{1}{\Delta \theta}\int_{\theta_0}^{\theta_0 + \Delta \theta} I_t(\rho, \theta) d\theta,
+\end{equation}
+where $\theta_0$ is a constant, $\Delta \theta$ is the width of integration, $I_t(\rho, \theta)$ is the iSCAT image. 
 
-Image data will have background misalignment due to iSCAT hardware setup. To optimize for fitting speed and misalignment property, radial scattering profile are assumed as in the rayleigh regime model is symmetric. The radial integration method is described in Alg \ref{alg:rad_int}.
+First, the cartesian image is Re-parameterized into polar coordinates using a change of basis transformation on the index grid of the image. Then, for each ring of indices, the image coordinates are summed up on this ring. The final array is an angular average that is indexed at radius $r$ for some upper radial bound. This process is illustrated in Fig. \ref{fig:AngularInt}.
 
-\begin{algorithm}[H]
-\caption{Discrete radial profile (angular average over a wedge)}
-\label{alg:rad_int}
-\begin{algorithmic}[1]
- 
-\Require $I \in \mathbb{R}^{F \times H \times W}$ \Comment{stack of $F$ image ROIs}
-\Require $\mathbf{c} = (c_p, c_q)$ \Comment{ROI centre (may be sub-pixel)}
-\Require $\theta_0$, $\Delta\theta$ \Comment{start angle and angular width of the wedge}
-\Require $R$ \Comment{outer radial bound, in pixels}
-\Ensure  $g \in \mathbb{R}^{F \times R}$, where
-    \[
-        g_t(\rho) \;\simeq\; \frac{1}{\Delta\theta}
-        \int_{\theta_0}^{\theta_0 + \Delta\theta} I_t(\rho, \theta)\, \mathrm{d}\theta
-    \]
-    is the angular mean of frame $t$ over the wedge, as a function of radius.
-\Statex
- 
-\Statex \textbf{Pre-computation} (frame independent)
-\State $\rho_{pq} \gets \big\| (p,q) - \mathbf{c} \big\|_2$, \quad
-       $\theta_{pq} \gets \operatorname{arctan2}\big(p - c_p,\; q - c_q\big) \bmod 2\pi$
-       \Comment{polar coordinates of each pixel}
-\Statex
-\For{$r = 0$ \textbf{to} $R-1$} \Comment{annular-wedge bins}
-    \State $\mathcal{A}_r \gets \big\{\, (p,q) \;:\;
-        r \le \rho_{pq} < r+1
-        \;\wedge\;
-        \big(\theta_{pq} - \theta_0\big) \bmod 2\pi \;<\; \Delta\theta \,\big\}$
-    \State $N_r \gets |\mathcal{A}_r|$ \Comment{$N_r \approx (r + \tfrac{1}{2})\,\Delta\theta$}
-\EndFor
-\Statex
- 
-\Statex \textbf{Main loop}
-\For{$t = 0$ \textbf{to} $F-1$}
-    \For{$r = 0$ \textbf{to} $R-1$}
-        \If{$N_r = 0$}
-            \State $g_t(r) \gets \textsc{NaN}$ \Comment{empty bin: undefined, not zero}
-        \Else
-            \State $g_t(r) \gets \dfrac{1}{N_r} \displaystyle\sum_{(p,q) \in \mathcal{A}_r} I_t[p,q]$
-            \Comment{angular average at radius $r$}
-        \EndIf
-    \EndFor
-\EndFor
-\Statex
-\State \Return $g$
- 
-\end{algorithmic}
-\end{algorithm}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/AngularInt.pdf}
+    \caption{Angular Integral demonstration.}
+    \label{fig:AngularInt}
+\end{figure}
 
-% \begin{algorithm}[H]
-%     \caption{Discrete Radial Integral}
-%     \label{alg:rad_int}
-%     \begin{algorithmic}[1]
-%         \Require $\text{I}\{F, H, W\}$, list of image ROIs\\
-%         $\theta_0$, starting angle
-%         $\Delta \theta$, Angular integration distance
-%         $R$, polar integration bound
-%         \State $\text{rad\_av\_arr}$ = []
-%         \State $m = \text{Disk}[R, \theta_0, \theta_0 + \Delta \theta]$
-%         \For {$t=1$ to $F$}
-%             \State $v = I[m]$
-%             \State $\text{rad\_av\_arr}[t] = \sum_\theta v$ 
-%         \EndFor
-%         \State \Return $\text{rad\_av\_arr}$
-%     \end{algorithmic}
-% \end{algorithm}
-\newpage
 \subsection{Nuisance parameter Estimation}
 
-To obtain accurate estimation of the $z$ position relative to nearby frames, nuisance estimation is done to focus on $z$ fitting. To do this, L-BFGS-B Fitting is performed. alongside amplitude fitting. This is described in the algorithm below. 
+In order to speed up computation and produce a more statistically relevant result, the method aims to fix the model parameters which should theoretically stay constant. These, for example, are the particle mass signal and optical aberration coefficients. These parameters, known as nuisance parameters, should be fixed before fitting to the more sensitive parameter of interest, the relative $z$ position. 
 
-\begin{algorithm}[H]
-\caption{Nuisance-parameter estimation by profiled grid search + local refinement}
-\label{alg:nuisance_est}
-\begin{algorithmic}[1]
- 
-\Require $g \in \mathbb{R}^{M}$ \Comment{radial profile, sampled at radii $r_i$, $i = 1,\dots,M$}
-\Require $r \in \mathbb{R}^{M}$, $w \in \mathbb{R}^{M}_{\ge 0}$ \Comment{radii [nm] and fit weights}
-\Require $k = 2\pi n_0 / \lambda$ \Comment{optical wave-vector in the medium}
-\Require $[z_-, z_+],\; [E_-, E_+],\; [\gamma_-, \gamma_+]$ \Comment{parameter bounds}
-\Require $\Delta_\lambda = 32$ 
-\Statex
-\Statex \textbf{iPSF Model}
-\State $G_i(z,\gamma) \;=\; \frac{q(r_i,z)}{\varrho(r_i,z)^{2}} \cdot \cos\!\big[\, k\,(z + \varrho(r_i,z)) \,\big]\, e^{-r_i/\gamma}, \quad \varrho(r,z) = \sqrt{r^{2} + z^{2}}$
-\State  $ \chi^{2}(E_0, z, \gamma) \;=\; \big\langle\, g - E_0 G,\; g - E_0 G \,\big\rangle_w,
-    \quad
-    \langle a, b\rangle_w \;\equiv\; \sum_{i=1}^{M} w_i\, a_i\, b_i$
-\Statex
- 
-\Statex \textbf{Pre-computation}
-\State $\delta_z \gets 2\pi / (k\,\Delta_\lambda)$ \Comment{$= (\lambda/n_0)/\Delta_\lambda$: fringe period $/\,\Delta_\lambda$}
-\State $\mathcal{Z} \gets \{\, z_- + m\,\delta_z \;:\; m = 0,\dots,N_z - 1 \,\}$, \quad $N_z = \lceil (z_+ - z_-)/\delta_z \rceil$
-\State $\Gamma \gets \{\, \gamma_1, \dots, \gamma_{N_\gamma} \,\} \subset [\gamma_-, \gamma_+]$ \Comment{decay-length grid}
-\State $\langle g, g\rangle_w \gets \sum_i w_i\, g_i^{2}$ 
-\Statex
- 
-\Statex \textbf{Profiled grid search} 
-\For{$\gamma \in \Gamma$}
-    \For{$z \in \mathcal{Z}$}
-        \State $\varrho_i \gets \sqrt{r_i^{2} + z^{2}}$ \quad $\forall\, i$
-        \State $G_i \gets \dfrac{q(r_i, z)}{\varrho_i^{2}}\,
-            \cos\!\big[k(z + \varrho_i)\big]\, e^{-r_i/\gamma}$ \quad $\forall\, i$
-        \Statex
-        \State $\langle G, G\rangle_w \gets \sum_i w_i\, G_i^{2}$,
-               \quad
-               $\langle G, g\rangle_w \gets \sum_i w_i\, G_i\, g_i$
-        \State $\rho(z,\gamma) \gets
-            \dfrac{\langle G, g\rangle_w}
-                  {\sqrt{\langle G, G\rangle_w \,\langle g, g\rangle_w \;+\; \varepsilon}}$
-            \Comment{weighted correlation coefficient}
-        \State $\hat{E}_0(z,\gamma) \gets \textsc{Clip}\!\left[\,
-            \dfrac{\langle G, g\rangle_w}{\langle G, G\rangle_w},\; E_-,\; E_+ \right]$
-            \label{ln:E0}
-            \Comment{profiled amplitude}
-        \State $\mathcal{L}(z,\gamma) \gets 1 - \rho^{2}(z,\gamma)$
-            \label{ln:L}
-            \Comment{$\chi^{2}_{\min} / \langle g,g\rangle_w$}
-    \EndFor
-\EndFor
-\Statex
- 
-\Statex \textbf{Refinement}
-\State $(z^{\star}, \gamma^{\star}) \gets
-    \displaystyle\operatorname*{arg\,min}_{(z,\gamma) \,\in\, \mathcal{Z} \times \Gamma}
-    \mathcal{L}(z, \gamma)$
-    \Comment{coarse global minimum}
-\State $E_0^{\star} \gets \hat{E}_0(z^{\star}, \gamma^{\star})$
-\State $(\hat{E}_0, \hat{z}, \hat{\gamma}) \gets
-    \textsc{L-BFGS-B}\!\left[\,
-    \sum_i \mathcal{H}_\delta\!\big( g_i - E_0 G_i(z,\gamma) \big);\;
-    \text{init } (E_0^{\star}, z^{\star}, \gamma^{\star});\;
-    \text{bounds } [E_\pm],[z_\pm],[\gamma_\pm] \,\right]$
-    \Comment{Huber loss $\mathcal{H}_\delta$}
-\Statex
-\State \Return $(\hat{E}_0,\, \hat{z},\, \hat{\gamma})$
- 
-\end{algorithmic}
-\end{algorithm}
+To obtain accurate estimation of the $z$ position relative to nearby frames, nuisance estimation is done to focus on $z$ fitting. To do this, L-BFGS-B Fitting is performed. alongside amplitude fitting. The theory of nuisance parameter estimation is described in \cite{wasserman2010statistics}.
 
+The nuisance parameter method works on the premise of a model function. The iPSF model described in \ref{chap:iscatprinciples} is used as a weight function to compare to the data. First, bounds are placed for physical values of each parameter.
 
-% \begin{algorithm}
-%     \caption{Nuisance parameter Estimation Algorithm}
-%     \label{alg:nuisance_est}
-%     \begin{algorithmic}
-%         \Require $g \in \R^{F}$ \Comment stack of $F$ radial averages
-%         \Require $r \in \R$ \Comment radii in $\mathrm{rm}$
-%         \Require $r2 \gets r^2$
-%         \Require $k \gets \frac{2\pi}{\lambda/n_0}$ \Comment optical wave-vector
-%         \Require $[z_-, z_+], [E_-, E_+], [\gamma_-, \gamma_+]$ \Comment Parameter Bounds
-%         \Require $w$ \Comment{Weighting Array}
-%         \Statex
-%         \Statex \textbf{Pre-computation} 
-%         \State $\Delta \lambda\gets 32$ \Comment{Number of sub-divisions for wavelength minima matching. Higher gives better resolution, higher time complexity.}
-%         \State $r2''   \gets r2 + z_\mathrm{grid}^2$
-%         \State $r''    \gets \sqrt{r2''}$
-%         \State $q      \gets \sqrt{r2'' + z_\mathrm{grid}^2}$
-%         \State $z_\mathrm{grid} = \{z_-, z_+, \lambda/\Delta \lambda\}$
-%         \Statex
-%         \For{$\gamma_j \in [\gamma_-, \gamma_+]$}
-%             \State $G =2q/(2\cdot r''2) \cdot \cos(-k(z_\mathrm{grid} + r'')) \cdot e^{-r/\gamma}$
-%             \State $wG = G \otimes w$
-%             \State $GG = \sum_{ij}wG_{ij} \cdot G_{ij}$
-%             \State $Gd = wG \cdot g$
-%             \State $wg = w \cdot g$
-%             \State $wgg = wg \cdot g$
-%             \State $\rho = Gd/\sqrt{GG \cdot wgg + \varepsilon}$
-%             \State $E_0^\star = \textsc{clip}\left[\frac{Gd}{GG}, E_-, E_+\right]$ 
-%             \State $\mathcal{L} \gets 1-\rho^2$
-%         \EndFor
-%         \Statex
-%         \State $(E_0^\star, \gamma^\star) = \textsc{Where}[L(E_0^\star, \gamma^\star) < L(E_0^\star \pm \delta_E, \gamma^\star \pm \delta_\gamma)]$
-%         \State $z^\star \gets \textsc{minimize}\left[g, E_0^\star, \gamma^\star\right]$ \Comment{L-BDGS-B minimization with huber-loss.}
-%     \end{algorithmic}
-% \end{algorithm}
+Here, it is important to note that the amplitude of the signal is proportional to the mass. The spatial decay of the aberration is modeled as a decaying exponential.
 
+For each candidate decay parameter, the weighted correlation function is calculated. Let $g$ be the radial profile, and $G$ the theoretical iPSF model. The inner product of these two arrays, weighted in some integral of radiuses, is defined by $\langle G, g \rangle_w$. The correlation function is then written as
+\begin{equation}
+    \rho(z, \gamma) = \frac{\langle G, g \rangle_w}{\sqrt{\langle G, G \rangle _w + \langle g, g \rangle_w + \varepsilon}},
+\end{equation} 
+where $\varepsilon$ is a small number to prevent division by 0. 
 
+The best-fit amplitude function here is analytical, given by the expression
+\begin{equation}
+    \hat{E_0} = \frac{\langle G, g \rangle_w}{\langle G, G \rangle_w}.
+\end{equation}
 
-\subsection{2D Chain-link}
+The loss-function, $\mathcal{L}$, given the correlation, is given by the subtraction of $\rho^2$,
+\begin{equation}
+    \mathcal{L} = 1-\rho^2(z, \gamma).
+\end{equation}
 
-To link consequent positions in space, a dynamic programming algorithm is used. The algorithm is described in Alg. \ref{alg:best_chain_2d}
-\begin{algorithm}[H]
-\caption{Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}
-\label{alg:best_chain_2d}
-\begin{algorithmic}[1]
- 
-\Require Candidate sets $\mathcal{C}_t = \big\{\, \mathbf{p}_t^{(i)} = \big(x_t^{(i)},\, y_t^{(i)}\big) \,\big\}_{i=1}^{n_t}$,\; $t = 0,\dots,F-1$
-    \Statex \hspace{\algorithmicindent} where $x_t^{(i)} \equiv \texttt{min\_idx}[t][i]$ (position) and $y_t^{(i)} \equiv \texttt{min\_vals}[t][i]$ (value)
-\Require Weights $\mathbf{W} = \operatorname{diag}(w_x, w_y)$, default $\mathbf{W} = \mathbf{I}$
-\Require Maximum step $s_{\max} \in (0, \infty]$ \Comment{$s_{\max} = \infty$ $\Rightarrow$ unconstrained}
-\Ensure  Chain $\mathbf{k} = (k_0,\dots,k_{F-1})$, $k_t \in \{1,\dots,n_t\}$, minimizing
-    \[
-        J(\mathbf{k}) \;=\; \sum_{t=1}^{F-1}
-        \big\| \mathbf{W}\big( \mathbf{p}_{t-1}^{(k_{t-1})} - \mathbf{p}_{t}^{(k_{t})} \big) \big\|_2
-        \qquad \text{s.t.}\quad
-        \big\| \mathbf{W}\big( \mathbf{p}_{t-1}^{(k_{t-1})} - \mathbf{p}_{t}^{(k_{t})} \big) \big\|_2 \le s_{\max}
-    \]
-    together with the corresponding $x$- and $y$-chains.
-\Statex
- 
-\Statex \textbf{Forward pass} \Comment{$C_t(j)$: cost of the best chain ending at $\mathbf{p}_t^{(j)}$}
-\State $C_0(i) \gets 0$ \quad $\forall\, i \in \{1,\dots,n_0\}$
-\For{$t = 1$ \textbf{to} $F-1$}
-    \State \Comment{Weighted Euclidean transition cost, $\;n_{t-1} \times n_t$}
-    \State $d_t(i,j) \gets
-        \sqrt{ w_x^2 \big( x_{t-1}^{(i)} - x_t^{(j)} \big)^2
-             + w_y^2 \big( y_{t-1}^{(i)} - y_t^{(j)} \big)^2 }$
-        \quad $\forall\, (i,j)$
-    \State $d_t(i,j) \gets \infty$ \; \textbf{if} \; $d_t(i,j) > s_{\max}$ \Comment{forbid over-long steps}
-    \Statex
-    \State \Comment{Bellman recursion}
-    \State $\pi_t(j) \gets \displaystyle\operatorname*{arg\,min}_{i} \big[\, C_{t-1}(i) + d_t(i,j) \,\big]$
-        \quad $\forall\, j \in \{1,\dots,n_t\}$
-    \State $C_t(j) \gets C_{t-1}\big(\pi_t(j)\big) + d_t\big(\pi_t(j),\, j\big)$
-    \Statex
-    \If{$C_t(j) = \infty \;\; \forall\, j$}
-        \State \Return $\varnothing$ \Comment{no admissible chain survives frame $t$}
-    \EndIf
-\EndFor
-\Statex
- 
-\Statex \textbf{Backtracking}
-\State $k_{F-1} \gets \displaystyle\operatorname*{arg\,min}_{j} \, C_{F-1}(j)$ \Comment{cheapest terminal node}
-\For{$t = F-1$ \textbf{down to} $1$}
-    \State $k_{t-1} \gets \pi_t(k_t)$
-\EndFor
-\Statex
-\State \Return $\big\{ k_t \big\}$, \; $\big\{ x_t^{(k_t)} \big\}$, \; $\big\{ y_t^{(k_t)} \big\}$ \quad for $t = 0,\dots,F-1$
-\end{algorithmic}
-\end{algorithm}
+Once a fitted $\gamma_0, \hat{E_0}$ are chosen, the optimal $z$ for each frame is given by a non-linear bounded least squares which are acquired using the L-BFGS-B method with a Huber Loss ($\delta = 1/2$). 
 
+When computed for each frame in the stack, one has $F$ optimally chosen $\gamma_0, E_0$. To obtain the optimal parameter, a fit to distributions, inferred by \cite{dewitPreciseCharacterizationNanometerscale2023}, is used. These fits include a Gamma distribution for $E_0$ and a LogNorm distribution for $\gamma$. Together, these form nuisance estimation for $E_0, \gamma_0$.
+
+\section{2D Chain-link}
+
+Given an estimation of the nuisance parameters, a grid-search of the optimal $z$ is simple. The physically best $z$ position is a mean-squared error loss minima of the model subtracted with the data. However, due to the periodic nature of the data, there are up to 3 candidates for the optimal $z$ position based on $\lambda/4$ having a high degree of similarity. Thus, to resolve this, a z-linking method was implemented to find the most likely trace based on diffusion probabilities.
+
+To link consequent positions in space, a dynamic programming algorithm is used. The algorithm is known as the Viterbi method and is described in Alg. \ref{alg:best_chain_2d}.
+
+First, all minima for every frame must be collected. These are the candidate positions that trajectories are constructed from. The losses of these positions are also stored to ensure no spurious candidates are chosen. 
+
+For each position, the forward pass compares all chains moving in time. The loss is accumulated by a weighted Euclidean transition cost,
+\begin{equation}
+    d_i(i,j) = \sqrt{w_x^2(x_{t-1}^(i) - x_{t}^(j))^2 + w_y^2(y_{t-1}^(i) - y_{t}^(j))^2},
+\end{equation}
+where $x$ denote $z$ motion, and $y$ denotes the loss difference. This matrix compares all weighted transitions. The optimal transition $\pi_t(j)$ is then chosen to minimize this transition, and any prior transitions. 
+
+For each following forward pass, the cost is accumulated with a memory of 2 frames. The memory is chosen to ensure that an incorrect transition in a given frame is not penalized later on. 
+
+Thus linking method is thus a search algorithm for the shortest math based on the weighted Euclidean method. A short toy-model is shown in Fig. \ref{fig:toyViterbi} to visualize the procedure.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Python/Figures/viterbi_toy.pdf}
+    \caption{Viterbi Search algorithm toy example. Optimal path is chosen based on $z$ similarity and lowest loss.}
+    \label{fig:toyViterbi}
+\end{figure}
 
 % \begin{algorithm}[H]
 % \caption{Dynamic Programming for Best 2D Chain of Points}
@@ -572,7 +372,7 @@ To validate the proposed method, one performs simulated axial-estimation. Simula
     \label{fig:ipsf_sim}
 \end{figure}
 
-As mentioned, the localization pipeline utilizes a weighting scheme to account for objective aberration and misalignments to non-modelled regions of the data, such as the central fringe. This is accounted for by using a binary weighting array, $\mathbf{w}$. In the case of these idealized simulations, we will show the effect of changing the weighting scheme as we proceed. This demonstrates a loss of absolute precision, however, maintains the relative precision, which is that of interest in measurements of axial trajectory. 
+As mentioned, the localization pipeline utilizes a weighting scheme to account for objective aberration and misalignments to non-modeled regions of the data, such as the central fringe. This is accounted for by using a binary weighting array, $\mathbf{w}$. In the case of these idealized simulations, we will show the effect of changing the weighting scheme as we proceed. This demonstrates a loss of absolute precision, however, maintains the relative precision, which is that of interest in measurements of axial trajectory. 
 
 \subsection{3-parameter Estimation}
 

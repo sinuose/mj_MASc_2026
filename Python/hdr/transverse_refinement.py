@@ -57,7 +57,7 @@ def gradientCentroid(xk, yk, Gmag, eps=1e-12):
     yc = np.sum(yk * w)/w_sum
     return xc, yc
 
-def radialSymmetryROI(roi, smooth_slopes = True):
+def radialSymmetryROI(roi, smooth_slopes = True, return_lines = False):
     # given an ROI, need to refine.
     H, W = np.shape(roi)
     if H < 2 or W < 2:
@@ -131,6 +131,9 @@ def radialSymmetryROI(roi, smooth_slopes = True):
     # x = J * r
     xc = -(invM11 * r1 + invM12 * r2)
     yc = -(invM12 * r1 + invM22 * r2)
+
+    if return_lines:
+        return float(xc), float(yc), xk, yk, mk, wk
 
     return float(xc), float(yc)
 
