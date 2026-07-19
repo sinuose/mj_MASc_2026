@@ -32,12 +32,12 @@
 \contentsline {section}{\numberline {6.2}Raw image background subtraction}{38}{}%
 \contentsline {section}{\numberline {6.3}iSCAT $(x, y)$ Tracking}{39}{}%
 \contentsline {section}{\numberline {6.4}Angular Integral}{41}{}%
-\contentsline {subsection}{\numberline {6.4.1}Nuisance parameter Estimation}{41}{}%
-\contentsline {section}{\numberline {6.5}2D Chain-link}{42}{}%
-\contentsline {section}{\numberline {6.6}Simulated iPSF localization}{44}{}%
-\contentsline {subsection}{\numberline {6.6.1}3-parameter Estimation}{44}{}%
-\contentsline {subsection}{\numberline {6.6.2}Grid-Search Estimation}{45}{}%
-\contentsline {section}{\numberline {6.7}Conclusions}{45}{}%
+\contentsline {section}{\numberline {6.5}Nuisance parameter Estimation}{41}{}%
+\contentsline {section}{\numberline {6.6}2D Chain-link}{43}{}%
+\contentsline {section}{\numberline {6.7}Simulated iPSF localization}{44}{}%
+\contentsline {section}{\numberline {6.8}3-parameter Estimation}{45}{}%
+\contentsline {subsection}{\numberline {6.8.1}Grid-Search Estimation}{46}{}%
+\contentsline {section}{\numberline {6.9}Conclusions}{46}{}%
 \contentsline {chapter}{\numberline {7}3D confinement with iSCAT}{47}{}%
 \contentsline {section}{\numberline {7.1}Methods}{47}{}%
 \contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{47}{}%
