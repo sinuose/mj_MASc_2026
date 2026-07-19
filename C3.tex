@@ -75,7 +75,7 @@ We will simulate the priors of a Polystyrene bead diffusing with neutral charged
     \label{fig:brown_realization}
 \end{figure}
 
-\subsection{Mean-Squared Displacement in Confinement}
+\section{Mean-Squared Displacement in Confinement}
 
 For a given experiment, one aims to measure something from knowing the trajectory of the particle. The simplest is an estimate of the size of the particle. One can do this using the transverse and axial trajectories obtained from the Langevin equation as a method to test the variance of the estimator given a known ground truth. In the case of an electrostatic potential, we can directly how measurements which do not account for screening effects change the measurement. 
 
@@ -114,7 +114,7 @@ The relationship between the effective confinement length, as well as the relati
     \label{fig:conf_zeta_debye}
 \end{figure}
 
-\subsection{Surface Charge estimation}
+\section{Surface Charge estimation}
 
 The particle's exploration demonstrated a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator, drift estimator can be extracted into meaningful, physical information. The Langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\micro\second}$. The distribution of the MLE is shown in Fig \ref{fig:B_estimation}.
 
@@ -134,13 +134,19 @@ With regards of surface charge estimation, we have introduced a new MLE for the 
 \chapter{iSCAT z-estimation Simulations}
 \label{chap:ZEstimation}
 
-This section presents a computational method for determining the axial position of a nanoparticle from iSCAT imaging data.The results obtained are used to evaluate the accuracy and performance of the proposed method for determining the nanoparticle's $z$-axis position. The precision and limitations are discussed in the context of recovering three-dimensional particle trajectories.
+This section presents a computational method for determining the axial ($z$-axis) position of a nanoparticle from iSCAT imaging data. The proposed approach is based on principles of light-scattering in the Rayleigh approximation, which govern the inference pattern as the nanoparticle moves along the optical axis. 
 
-The raw images are acquired from a CMOS camera as per the optical schematic shown in Fig. \ref{fig:schematic} and Fig. \ref{fig:re_schematic}. The images consist of 2D interference images acquired at some $z_\mathrm{focus}$, which is the distance between the objective's focal distance and the objects in the field of view.
+In order to evaluate the accuracy and performance of the proposed method, Mie-theory simulations are used for for determining the an ideal nanoparticle's $z$-axis position. The precision and limitations are discussed in the context of recovering three-dimensional particle trajectories.
+
+The raw images are acquired from a CMOS camera according the optical schematic illustrated in Figures \ref{fig:schematic} and \ref{fig:re_schematic}. Each image consists of a two-dimensional interference recorded at a specific focal position $z_\mathrm{focus}$, defined as the distance between the objective's focal distance and the objects in the field of view.
 
 \section{Method Overview}
 
-The method described in this section is based on computational image processing on images acquired using a CMOS camera. The camera has an array of $512 \times 512$ pixels. The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
+The method described in this section is based on computational image processing on images acquired using a CMOS camera. The camera has an array of $2048 \times 2048$ pixels. To acquire images at higher frame rates, only a portion of the CMOS array is used. This is set during the experimental details. Typical sizes used are $600 \times 450$ at $\SI{400}{\fps}$ however, other fields of view can be used for specific experimental purposes. The highest frame-rate possible with this camera is $\SI{1000}{\fps}$ at a FOV of $200 \times 250$.
+
+The object sample is imaged through an oil-immersion objective lens. The optical system provides a magnification of $60 \times$, with a tube lens of magnification $2\times$. The remaining is an digital zoom with a final resolution of $\SI{55}{\nm}$ per pixel. The final magnification is then the ratio of the CMOS array length divided by the pixel size.
+
+The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
 
 \begin{figure}[h!]
     \centering
@@ -168,22 +174,34 @@ To obtain high-contrast interference signal from raw camera data, a post-process
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{Python/Figures/NormalizationPipeline.pdf}
+    \begin{subfigure}[b]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Python/Figures/NormalizationPipeline.pdf}
+    \end{subfigure}
+    
+    \vspace{1em} % Adjust the vertical space between figures
+    % Second (bottom) subfigure
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Python/Figures/NormalizationPipelineThird.pdf}
+    \end{subfigure}
+
     \caption{Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis.}
+    
     \label{fig:raw2iscat}
 \end{figure}
 
 The full algorithm is presented in Alg. \ref{alg:raw2iscat}. The overview of the algorithm is to subtract the background noise in order to minimize Poisson, and electronic noise. 
 
-Poisson noise subtraction is performed by subtracting off the mean background fluctuations. A Poisson background has a constant mean, which is reduced when subtracted away. 
+To reduce the contribution of the static background, the mean background is subtracted from each frame. Since the background illumination originates from the gaussian illumination beam, which has a constant mean intensity over the acquisition period, this stationary background removes the background offset while preserving dynamic iSCAT signal. This just requires a good estimation of the background in order not to remove any iSCAT signal. The remaining shot noise, which follows Poisson statistics is reduced by temporal averaging during background estimation. 
 
-In order to remove electronic noise from data-transfer, a row-wise averaging scheme is implemented. Row-wise means are taken and normalized with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normalization methods by the Sandoghar lab \red{Vahid's github should be here.}
+In order to suppress electronic noise from data-transfer, a row-wise averaging scheme is applied. Row-wise means are taken and normalized with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normalization methods by the Sandoghar laboratory \red{Vahid's github should be here.}
 
-The set of images, which consist of matrices of pixel-values of shape $F \times H \times W$, or $F$ number of frames, $W$ pixels wide, $H$ pixels tall, are passed as entries into the function. 
+The set of images, which consist of matrices of pixel-values of shape $F \times H \times W$, or $F$ number of frames, $W$ pixels wide, $H$ pixels tall. 
 
-Before running the function, a dynamically allocated setting for the Fourier-filtering is determined based on the image dimensions. Specifically, a donuts of radii inner 1\% and outer 25\%, roughly translating to $\max(H,W)/100 - \max(H,W)/4$. 
+Before processing begins, the parameters of the Fourier-band-pass filter are determined from the image dimensions. The filter consists of an annular, donut mask of inner radius equal to 1\% if the larger image dimension and outer radius equal to  25\% of the larger image dimension, corresponding to $r_i = \max(H,W)/100, r_o = \max(H,W)/4$. 
 
-The edge 20 pixels of the image stack are ignored using a mask filter. On the inner pixels, the mask is set to $1$, while on the pixels less than 20 pixels away from the edge are set to 0. 
+To minimize edge artifacts, a binary mask is applied to each frame. Pixels within 20 pixels of the boundary are assigned a value of 0 using a mask filter. On the interior pixels, the mask is set to $1$, while on the pixels less than 20 pixels away from the edge are set to 0. This mask is used during normalization to prevent edge effects from biasing the inner statistics.
 
 For each frame in the stack, the image is first normalized using a row-wise normalization function. The function, titled \textsc{AmpNorm} in Alg. \ref{alg:raw2iscat}, first obtains the masked-image. The global normalized mean is stored. For each row, the mean is taken and the row of the global-mean is adjusted by the row-wise mean. The final image is the global mean divided by the row-mean for each row. 
 
@@ -214,7 +232,7 @@ Once candidates are chosen, a NL-LS gaussian fitting to the RVT is performed to 
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Python/Figures/RadialSymExample.pdf}
+    \includegraphics[width=0.8\textwidth]{Python/Figures/RadialSymExample.pdf}
     \caption{Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \cite{parthasarathyRapidAccurateParticle2012}. Figure adapted from \cite{parthasarathyRapidAccurateParticle2012}.  }
     \label{fig:RadialSym}
 \end{figure}
