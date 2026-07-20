@@ -255,6 +255,53 @@ Setting $j$ to 0, we find that the solution of this equation defines the equilib
 
 This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
 
+
+\chapter{Biological Application}
+
+As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequately understand the confinement effect of diffusion in a given system. 
+
+Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
+
+\section{Diffusion in cells}
+
+The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
+
+This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an overdamped langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate we need that the diffusive timescale is must shorter. Here, we find that since the Peclet number is proportional to the characteristics length $L$, while the reynolds number is $L^2$. for small characteristic lengths, such as those proposed, we see that the diffusive term is clearly shorter. 
+
+\section{Brownian motion as a method for measurements of size in biology}
+
+As previously shown, we can infer the stoke's einstein diffusion relation to directly measure the size of a biological diffusing particle. In particular, this relation can be explicitly formalized for the hydrodynamic radius of a spherical nanoparticle.
+\begin{equation}
+    a = \frac{k_b T}{6\pi \eta D(\vec{x})}
+\end{equation}
+Methods such as nanoparticle-tracking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method. 
+
+However, there are other methods that can be used. As this thesis is not concerned with fluorescent methods, they will not be explained in depth, however, fluorescence correlation spectroscopy (FCS) works on similar ideas of measuring diffusion autocorrelation curves using a fluorescent probe. 
+
+In compliment to single molecule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of molecules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are ill-posed for poly-disperse sample, which is one of the weaknesses of the DLS method. 
+
+\section{Lipid Nanoparticles}
+
+The biological molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
+
+First, it is necessary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
+
+In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
+
+Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties. 
+
+\section{LNP topology types}
+
+One recent investigation of LNP research is within the functional differences based on the LNP topology type. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in the figure below.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Figures/LNP_types.png}
+    \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core.}
+    \label{fig:LNP_types}
+\end{figure}
+
+
 \chapter{Interferometric Scattering Principles}
 \label{chap:iscatprinciples}
 
@@ -556,52 +603,6 @@ In the presence of a background beam, there will be a presence of a background. 
 The camera used will also contain electronic noise associated with it. For CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modelled as Poisson noise from the photon detections and a gaussian for the readout noise. 
 
 In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
-
-\chapter{Biological Application}
-
-As we have described, the diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequately understand the confinement effect of diffusion in a given system. 
-
-Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
-
-\section{Diffusion in cells}
-
-The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
-
-This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an overdamped langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate we need that the diffusive timescale is must shorter. Here, we find that since the Peclet number is proportional to the characteristics length $L$, while the reynolds number is $L^2$. for small characteristic lengths, such as those proposed, we see that the diffusive term is clearly shorter. 
-
-\section{Brownian motion as a method for measurements of size in biology}
-
-As previously shown, we can infer the stoke's einstein diffusion relation to directly measure the size of a biological diffusing particle. In particular, this relation can be explicitly formalized for the hydrodynamic radius of a spherical nanoparticle.
-\begin{equation}
-    a = \frac{k_b T}{6\pi \eta D(\vec{x})}
-\end{equation}
-Methods such as nanoparticle-tracking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method. 
-
-However, there are other methods that can be used. As this thesis is not concerned with fluorescent methods, they will not be explained in depth, however, fluorescence correlation spectroscopy (FCS) works on similar ideas of measuring diffusion autocorrelation curves using a fluorescent probe. 
-
-In compliment to single molecule, there are bulk methods as well. In particular, dynamic light scattering (DLS) allows to measure the size of molecules based on their shape function. In particular, the scattering intensity can be weighting to the inverse of $a^6$, which in turn returns the size of the sample. However, these methods are ill-posed for poly-disperse sample, which is one of the weaknesses of the DLS method. 
-
-\section{Lipid Nanoparticles}
-
-The biological molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
-
-First, it is necessary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
-
-In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
-
-Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties. 
-
-\section{LNP topology types}
-
-One recent investigation of LNP research is within the functional differences based on the LNP topology type. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in the figure below.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{Figures/LNP_types.png}
-    \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core.}
-    \label{fig:LNP_types}
-\end{figure}
-
 
 
 

@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1784569429.36374 "main.bcf" "main.bbl" "main" 1784569439.48887 0
-  "main.bcf" 1784569439 112529 c241c9833310fe094ad55aefee334df5 "pdflatex"
+["biber main"] 1784569724.87755 "main.bcf" "main.bbl" "main" 1784573200.09704 0
+  "main.bcf" 1784573199 112658 c42f1f2f05cfc5ed6c49bb846ed6d85c "pdflatex"
   "references.bib" 1784564158 60221 05c231298e60c6862544777a3cbaa186 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784569436.02182 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784569439.48951 0
+["pdflatex"] 1784573196.03406 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784573200.09766 0
   "A1.tex" 1784564158 19442 f11a1d4dcff6e557c974a4fc42afb1e4 ""
   "ABSTRACT.tex" 1784321236 5890 947e663ca867bede9fbdd15f92376784 ""
-  "C1.tex" 1784321236 45460 36d7638d8ffd87b021baa9bad19a7bc9 ""
+  "C1.tex" 1784569797 45841 5b108b7af22e083977f4bbbcc86cf266 ""
   "C2.tex" 1784569424 7753 4e2329edd3028f1e095c657e26d7021c ""
-  "C3.tex" 1784564158 34855 63317e1ff80582a65dbf48f86754b586 ""
+  "C3.tex" 1784573194 34857 51e17547e614516d2db7d5d2dbd41b34 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784136745 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1781733618 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -294,11 +294,11 @@
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
   "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784564876 5377 f6c5e4c07b95155f20c625380fadbe48 ""
-  "main.aux" 1784569439 26691 9dfec868ceb408641cca75b6769c1f6c "pdflatex"
-  "main.bbl" 1784569432 86352 9a80789e46c1f7c019c0789787773fc4 "biber main"
-  "main.run.xml" 1784569439 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.aux" 1784573199 26807 826a609f4afc48eaa40533d0933b5de3 "pdflatex"
+  "main.bbl" 1784569726 86352 764bf1049ba0c4a027dba72ec5d02799 "biber main"
+  "main.run.xml" 1784573199 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1784564876 5377 f6c5e4c07b95155f20c625380fadbe48 ""
-  "main.toc" 1784569439 4363 0bf7f64c2cdce878d9ddbe0a19d6f516 "pdflatex"
+  "main.toc" 1784573199 4363 b4076ab1c5c9399df4675cc28b8217b7 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  20 JUL 2026 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  20 JUL 2026 11:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -943,4 +943,347 @@ Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltex
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(54.2025pt, 489.10287pt, 54.2025pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=489.10287pt
+* \textheight=700.50687pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-31.8738pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=47.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+ (main.bbl)
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
+ [1
+
+
+{C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (ABSTRACT.tex [1]) [2] (main.toc
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 4.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+ (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [3
+
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [4]
+c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex:161: ignored error: Infinite glue shrinkage found in box being split [5
+
+] [6]
+Chapter 1.
+(INTRO.tex
+<Figures/size-comp.png, id=37, 2007.5pt x 800.9925pt>
+File: Figures/size-comp.png Graphic file (type png)
+<use Figures/size-comp.png>
+Package pdftex.def Info: Figures/size-comp.png  used on input line 22.
+(pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
+ [7
+
+] [8 <./Figures/size-comp.png>]) (C1.tex [9{C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Chapter 2.
+[10
+
+] [11] [12] [13] [14] [15] [16] [17]
+Chapter 3.
+[18
+
+] [19]
+<Figures/LNP_types.png, id=88, 743.77875pt x 310.91156pt>
+File: Figures/LNP_types.png Graphic file (type png)
+<use Figures/LNP_types.png>
+Package pdftex.def Info: Figures/LNP_types.png  used on input line 299.
+(pdftex.def)             Requested size: 489.10287pt x 204.45741pt.
+ [20 <./Figures/LNP_types.png>]
+Chapter 4.
+[21
+
+] [22] [23] [24]
+<Figures/schematic.png, id=108, 326.72063pt x 208.52907pt>
+File: Figures/schematic.png Graphic file (type png)
+<use Figures/schematic.png>
+Package pdftex.def Info: Figures/schematic.png  used on input line 517.
+(pdftex.def)             Requested size: 239.66309pt x 152.96313pt.
+<Figures/iscat_photo.png, id=109, 942.52126pt x 680.5425pt>
+File: Figures/iscat_photo.png Graphic file (type png)
+<use Figures/iscat_photo.png>
+Package pdftex.def Info: Figures/iscat_photo.png  used on input line 520.
+(pdftex.def)             Requested size: 239.66309pt x 173.04279pt.
+ [25] [26 <./Figures/schematic.png> <./Figures/iscat_photo.png>]
+<Figures/imaging_diagram_simple.png, id=118, 327.2225pt x 156.585pt>
+File: Figures/imaging_diagram_simple.png Graphic file (type png)
+<use Figures/imaging_diagram_simple.png>
+Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 574.
+(pdftex.def)             Requested size: 220.09479pt x 105.32236pt.
+<Figures/imaging_diagram.pdf, id=119, 208.78pt x 161.60374pt>
+File: Figures/imaging_diagram.pdf Graphic file (type pdf)
+<use Figures/imaging_diagram.pdf>
+Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 577.
+(pdftex.def)             Requested size: 220.09479pt x 170.37198pt.
+ [27] [28 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>]) (C3.tex [29]
+Chapter 5.
+[30
+
+] [31]
+<Figures/simulations/realization_and_boltzmann.pdf, id=146, 713.53282pt x 255.1245pt>
+File: Figures/simulations/realization_and_boltzmann.pdf Graphic file (type pdf)
+<use Figures/simulations/realization_and_boltzmann.pdf>
+Package pdftex.def Info: Figures/simulations/realization_and_boltzmann.pdf  used on input line 73.
+(pdftex.def)             Requested size: 489.10287pt x 174.88379pt.
+<Python/Figures/xz_msd_comparison.pdf, id=147, 497.94029pt x 224.037pt>
+File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
+<use Python/Figures/xz_msd_comparison.pdf>
+Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 84.
+(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[32 <./Figures/simulations/realization_and_boltzmann.pdf>]
+<Python/Figures/conf_debyelength.pdf, id=167, 497.94029pt x 224.037pt>
+File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
+<use Python/Figures/conf_debyelength.pdf>
+Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 97.
+(pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
+<Python/Figures/diff_debye.pdf, id=168, 439.63855pt x 217.36655pt>
+File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
+<use Python/Figures/diff_debye.pdf>
+Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 104.
+(pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
+<Python/Figures/conf_zeta_debye.png, id=169, 572.01704pt x 223.91655pt>
+File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
+<use Python/Figures/conf_zeta_debye.png>
+Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 112.
+(pdftex.def)             Requested size: 489.10287pt x 191.4643pt.
+ [33 <./Python/Figures/xz_msd_comparison.pdf>] [34 <./Python/Figures/conf_debyelength.pdf> <./Python/Figures/diff_debye.pdf>]
+<Python/Figures/B_estimation_hist.pdf, id=230, 433.5274pt x 217.9221pt>
+File: Python/Figures/B_estimation_hist.pdf Graphic file (type pdf)
+<use Python/Figures/B_estimation_hist.pdf>
+Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 123.
+(pdftex.def)             Requested size: 366.82715pt x 184.40335pt.
+ [35 <./Python/Figures/conf_zeta_debye.png> <./Python/Figures/B_estimation_hist.pdf>] [36]
+Chapter 6.
+[37
+
+]
+<Python/Figures/NormalizationPipeline.pdf, id=258, 455.30101pt x 212.52344pt>
+File: Python/Figures/NormalizationPipeline.pdf Graphic file (type pdf)
+<use Python/Figures/NormalizationPipeline.pdf>
+Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 179.
+(pdftex.def)             Requested size: 391.28378pt x 182.64659pt.
+<Python/Figures/NormalizationPipelineThird.pdf, id=259, 231.26399pt x 231.61751pt>
+File: Python/Figures/NormalizationPipelineThird.pdf Graphic file (type pdf)
+<use Python/Figures/NormalizationPipelineThird.pdf>
+Package pdftex.def Info: Python/Figures/NormalizationPipelineThird.pdf  used on input line 186.
+(pdftex.def)             Requested size: 244.55144pt x 244.9373pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38] [39 <./Python/Figures/NormalizationPipeline.pdf> <./Python/Figures/NormalizationPipelineThird.pdf>]
+<Python/Figures/Raw2RVT.pdf, id=297, 305.78642pt x 161.27858pt>
+File: Python/Figures/Raw2RVT.pdf Graphic file (type pdf)
+<use Python/Figures/Raw2RVT.pdf>
+Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 218.
+(pdftex.def)             Requested size: 489.10287pt x 257.9673pt.
+ [40 <./Python/Figures/Raw2RVT.pdf>]
+<Python/Figures/RadialSymExample.pdf, id=315, 372.44862pt x 242.22061pt>
+File: Python/Figures/RadialSymExample.pdf Graphic file (type pdf)
+<use Python/Figures/RadialSymExample.pdf>
+Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 235.
+(pdftex.def)             Requested size: 391.28378pt x 254.47588pt.
+ [41 <./Python/Figures/RadialSymExample.pdf>]
+<Python/Figures/AngularInt.pdf, id=325, 346.89601pt x 202.356pt>
+File: Python/Figures/AngularInt.pdf Graphic file (type pdf)
+<use Python/Figures/AngularInt.pdf>
+Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 258.
+(pdftex.def)             Requested size: 489.10287pt x 285.32507pt.
+ [42 <./Python/Figures/AngularInt.pdf>] [43]
+<Python/Figures/viterbi_toy.pdf, id=353, 419.166pt x 274.626pt>
+File: Python/Figures/viterbi_toy.pdf Graphic file (type pdf)
+<use Python/Figures/viterbi_toy.pdf>
+Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 313.
+(pdftex.def)             Requested size: 391.28378pt x 256.36333pt.
+<Python/Figures/sim_ipsf.pdf, id=354, 687.70567pt x 246.92203pt>
+File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
+<use Python/Figures/sim_ipsf.pdf>
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 388.
+(pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
+ [44 <./Python/Figures/viterbi_toy.pdf>]
+<Python/Figures/nuisance_param.pdf, id=386, 563.70598pt x 274.626pt>
+File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
+<use Python/Figures/nuisance_param.pdf>
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 409.
+(pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
+ [45 <./Python/Figures/sim_ipsf.pdf>]
+<Python/Figures/simulation_fit_residual.pdf, id=419, 484.49583pt x 284.94914pt>
+File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
+<use Python/Figures/simulation_fit_residual.pdf>
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 420.
+(pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
+) (C2.tex [46 <./Python/Figures/nuisance_param.pdf>] [47 <./Python/Figures/simulation_fit_residual.pdf>]
+Chapter 7.
+File: Figures/schematic.png Graphic file (type png)
+<use Figures/schematic.png>
+Package pdftex.def Info: Figures/schematic.png  used on input line 30.
+(pdftex.def)             Requested size: 489.10287pt x 312.16916pt.
+[48
+
+]
+<Figures/Chapter7/CLiC_figure.png, id=459, 682.80093pt x 242.40562pt>
+File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
+<use Figures/Chapter7/CLiC_figure.png>
+Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 47.
+(pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
+
+Overfull \hbox (43.86984pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 7.  EXPERIMENTAL RESULTS OF DIFFUSION IN CONFINED SPACE USING ISCAT \OT1/cmr/m/n/12 49
+ []
+
+[49]
+<Figures/Chapter7/Figure_2_v8.pdf, id=463, 758.79701pt x 160.56116pt>
+File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
+<use Figures/Chapter7/Figure_2_v8.pdf>
+Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 63.
+(pdftex.def)             Requested size: 489.10287pt x 103.49376pt.
+
+Overfull \hbox (43.86984pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 7.  EXPERIMENTAL RESULTS OF DIFFUSION IN CONFINED SPACE USING ISCAT \OT1/cmr/m/n/12 50
+ []
+
+[50 <./Figures/Chapter7/CLiC_figure.png> <./Figures/Chapter7/Figure_2_v8.pdf>]
+<Figures/Chapter7/c7_fig3.png, id=515, 901.86937pt x 506.6428pt>
+File: Figures/Chapter7/c7_fig3.png Graphic file (type png)
+<use Figures/Chapter7/c7_fig3.png>
+Package pdftex.def Info: Figures/Chapter7/c7_fig3.png  used on input line 86.
+(pdftex.def)             Requested size: 391.28378pt x 219.81577pt.
+<Figures/Chapter7/c7_fig4.png, id=516, 900.36375pt x 505.89pt>
+File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
+<use Figures/Chapter7/c7_fig4.png>
+Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 97.
+(pdftex.def)             Requested size: 489.10287pt x 274.813pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (43.86984pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 7.  EXPERIMENTAL RESULTS OF DIFFUSION IN CONFINED SPACE USING ISCAT \OT1/cmr/m/n/12 51
+ []
+
+[51 <./Figures/Chapter7/c7_fig3.png>])
+Overfull \hbox (43.86984pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 7.  EXPERIMENTAL RESULTS OF DIFFUSION IN CONFINED SPACE USING ISCAT \OT1/cmr/m/n/12 52
+ []
+
+[52 <./Figures/Chapter7/c7_fig4.png>]
+Chapter 8.
+(CONC.tex) [53
+
+] [54
+
+] [55] (A1.tex [56]
+Appendix A.
+[57
+
+] [58]
+Appendix B.
+
+Underfull \hbox (badness 7595) in paragraph at lines 81--81
+[]|\OT1/cmr/m/n/12 (+20) Linking al-go-rithm for ax-ial tra-jec-to-ries.
+ []
+
+[59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+]) [64
+
+] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 52795 strings out of 467871
+ 1287996 string characters out of 5416924
+ 2385705 words of memory out of 5000000
+ 80870 multiletter control sequences out of 15000+600000
+ 654405 words of font info for 228 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 117i,23n,121p,2022b,1536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (65 pages, 8162351 bytes).
+PDF statistics:
+ 655 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 54922 words of extra memory for PDF output out of 61914 (max. 10000000)
+

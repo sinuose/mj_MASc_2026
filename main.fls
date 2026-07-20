@@ -447,6 +447,13 @@ INPUT .\C1.tex
 INPUT C1.tex
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
+INPUT .\Figures\LNP_types.png
 INPUT .\Figures\schematic.png
 INPUT .\Figures\schematic.png
 INPUT .\Figures\schematic.png
@@ -472,13 +479,6 @@ INPUT .\Figures\imaging_diagram.pdf
 INPUT .\Figures\imaging_diagram.pdf
 INPUT .\Figures\imaging_diagram.pdf
 INPUT .\Figures\imaging_diagram.pdf
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
-INPUT .\Figures\LNP_types.png
 INPUT .\C3.tex
 INPUT .\C3.tex
 INPUT .\C3.tex

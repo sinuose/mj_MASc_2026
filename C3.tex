@@ -8,7 +8,7 @@ The goal of this project was to model the diffusion process of confined diffusio
 
 The simulation scheme follows that described in \cite{millanNumericalSimulationsConfined2023}. A brownian particle diffuses between two walls such that $(x,y)$ are perpendicular to the walls, and $z$ is parallel. The electrostatic force that the particle feels is then only in the $z$ direction. The diffusivity of the particle will depend on the distance of the walls. The Langevin equation simulated, 
 \begin{equation}
-    m\ddot{\vec{x}}(t) = - \lambda \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \lambda} \vec{W}(t),
+    m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t),
 \end{equation}
 is first separated into transverse and axial components, where $F$ is the electrostatic force, $\gamma$ is the friction. Here, we can re-write the diffusion coefficient using the Stokes-Einstein relation,
 \begin{equation}
@@ -19,7 +19,7 @@ Then, in over-damped regime, where $m \ddot{\vec{x}} \ll 0$, we can write the eq
 \begin{equation}
     \begin{aligned}
         \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
-        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\lambda(z)},
+        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\gamma(z)},
     \end{aligned}
 \end{equation}
 as described in Eqn. 7 of \cite{millanNumericalSimulationsConfined2023}. This is exceptionally valid for particles between $\SI{10}{\nm} - \SI{100}{\micro \meter}$ as this is exactly the over-damped regime for many particle materials, such as PMMA or coated polystyrene.
@@ -28,7 +28,7 @@ To simulate this equation, we use an Euler-Maruyama scheme. To illustrate this, 
 \begin{equation}
     \begin{aligned}
         dX_t &= \sqrt{2D_x(z)} dW_x \\
-        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\lambda(z)} dt,
+        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\gamma(z)} dt,
     \end{aligned}
 \end{equation}
 
