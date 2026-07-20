@@ -38,22 +38,22 @@
 \contentsline {section}{\numberline {6.8}3-parameter Estimation}{45}{}%
 \contentsline {subsection}{\numberline {6.8.1}Grid-Search Estimation}{46}{}%
 \contentsline {section}{\numberline {6.9}Conclusions}{46}{}%
-\contentsline {chapter}{\numberline {7}Experimental Results of Diffusion in Confined space using iSCAT}{48}{}%
-\contentsline {section}{\numberline {7.1}Methods}{48}{}%
-\contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{48}{}%
-\contentsline {subsection}{\numberline {7.1.2}Cover-Glass}{48}{}%
-\contentsline {subsection}{\numberline {7.1.3}Convex-lens induced confinement}{49}{}%
-\contentsline {subsection}{\numberline {7.1.4}Sample Details}{49}{}%
-\contentsline {subsection}{\numberline {7.1.5}Analysis Method}{50}{}%
-\contentsline {section}{\numberline {7.2}Results}{50}{}%
-\contentsline {subsection}{\numberline {7.2.1}Polystyrene PBS series}{51}{}%
-\contentsline {subsection}{\numberline {7.2.2}Axial Diffusivity}{51}{}%
-\contentsline {subsection}{\numberline {7.2.3}LNP Diffusivity}{51}{}%
-\contentsline {section}{\numberline {7.3}Discussion of Results}{52}{}%
-\contentsline {chapter}{\numberline {8}Conclusion}{53}{}%
-\contentsline {section}{\numberline {8.1}Conclusion}{53}{}%
-\contentsline {section}{\numberline {8.2}Future outlook}{53}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{57}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{57}{}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{58}{}%
-\contentsline {chapter}{\numberline {B}Axial Estimation Algorithm Pseudocode}{59}{}%
+\contentsline {chapter}{\numberline {7}Experimental Results}{48}{}%
+\contentsline {section}{\numberline {7.1}Methods}{49}{}%
+\contentsline {subsection}{\numberline {7.1.1}Aparatus schematic}{49}{}%
+\contentsline {subsection}{\numberline {7.1.2}Cover-Glass}{50}{}%
+\contentsline {subsection}{\numberline {7.1.3}Convex-lens induced confinement}{50}{}%
+\contentsline {subsection}{\numberline {7.1.4}Sample Details}{50}{}%
+\contentsline {subsection}{\numberline {7.1.5}Analysis Method}{51}{}%
+\contentsline {section}{\numberline {7.2}Results}{52}{}%
+\contentsline {subsection}{\numberline {7.2.1}Polystyrene PBS series}{52}{}%
+\contentsline {subsection}{\numberline {7.2.2}Polystyrene Transient Diffusion}{53}{}%
+\contentsline {subsection}{\numberline {7.2.3}Lipid nanoparticle Diffusion}{54}{}%
+\contentsline {section}{\numberline {7.3}Discussion of Results}{55}{}%
+\contentsline {chapter}{\numberline {8}Conclusion}{56}{}%
+\contentsline {section}{\numberline {8.1}Conclusion}{56}{}%
+\contentsline {section}{\numberline {8.2}Future outlook}{56}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{60}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{60}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{61}{}%
+\contentsline {chapter}{\numberline {B}Axial Estimation Algorithm Pseudocode}{62}{}%

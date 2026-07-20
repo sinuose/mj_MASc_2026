@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1784569724.87755 "main.bcf" "main.bbl" "main" 1784573200.09704 0
-  "main.bcf" 1784573199 112658 c42f1f2f05cfc5ed6c49bb846ed6d85c "pdflatex"
+["biber main"] 1784569724.87755 "main.bcf" "main.bbl" "main" 1784580828.34263 0
+  "main.bcf" 1784580828 112658 c42f1f2f05cfc5ed6c49bb846ed6d85c "pdflatex"
   "references.bib" 1784564158 60221 05c231298e60c6862544777a3cbaa186 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784573196.03406 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784573200.09766 0
+["pdflatex"] 1784580824.84443 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784580828.34316 0
   "A1.tex" 1784564158 19442 f11a1d4dcff6e557c974a4fc42afb1e4 ""
   "ABSTRACT.tex" 1784321236 5890 947e663ca867bede9fbdd15f92376784 ""
   "C1.tex" 1784569797 45841 5b108b7af22e083977f4bbbcc86cf266 ""
-  "C2.tex" 1784569424 7753 4e2329edd3028f1e095c657e26d7021c ""
-  "C3.tex" 1784573194 34857 51e17547e614516d2db7d5d2dbd41b34 ""
+  "C2.tex" 1784580819 10136 ce7b1c47dc6ef73ccb9cc4ddad4f8ee7 ""
+  "C3.tex" 1784578079 34891 1e139e32697719c81593ea4471309fac ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784136745 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1781733618 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -269,7 +269,6 @@
   "CONC.tex" 1784569424 593 3cbfc81dcbb2040da8b380514da0329c ""
   "Figures/Chapter7/CLiC_figure.png" 1784051726 38002 7881c3dcace0e95b47cbb123050d8ade ""
   "Figures/Chapter7/Figure_2_v8.pdf" 1784051970 106594 a305862e7f6f531b8a84650ba0606f26 ""
-  "Figures/Chapter7/c7_fig3.png" 1784052363 128724 f01ccb93c20e450ac197643b9df56037 ""
   "Figures/Chapter7/c7_fig4.png" 1784053117 129596 8db120f788b7c80fe624e7b2f54e0028 ""
   "Figures/LNP_types.png" 1784054779 35823 d2325e0126e3f04e60d1a3911e8b5908 ""
   "Figures/imaging_diagram.pdf" 1783971561 9457 fb28050d4baaf014ef2bfae6414a1acb ""
@@ -281,6 +280,7 @@
   "INTRO.tex" 1784569424 9844 5970c9d5b0c51b3f25094f7fdb38b503 ""
   "Python/Figures/AngularInt.pdf" 1784564158 82729 d5eff268cc90fc24663dbcc78828f5d4 ""
   "Python/Figures/B_estimation_hist.pdf" 1783973251 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
+  "Python/Figures/Chapter7/c7_fig3.pdf" 1784580751 47840 5710ae1054a5bbf29a71d41fc561de79 ""
   "Python/Figures/NormalizationPipeline.pdf" 1784564158 2471319 e982a8e04125472535ee57eb2e18a570 ""
   "Python/Figures/NormalizationPipelineThird.pdf" 1784564158 1039840 206f48cbdd680ae39c5c6df7cec95f33 ""
   "Python/Figures/RadialSymExample.pdf" 1784564158 55865 456db9ee95e7bfac1c20046cc3c409a0 ""
@@ -293,12 +293,12 @@
   "Python/Figures/simulation_fit_residual.pdf" 1783464887 71236 3fa5b9bab854402bd319310435021689 ""
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
-  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784564876 5377 f6c5e4c07b95155f20c625380fadbe48 ""
-  "main.aux" 1784573199 26807 826a609f4afc48eaa40533d0933b5de3 "pdflatex"
+  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784578152 5398 d3c3744ddf6cc4f95b18b750f3efc581 ""
+  "main.aux" 1784580828 27231 c083904bbf3324588f652a2ef260b503 "pdflatex"
   "main.bbl" 1784569726 86352 764bf1049ba0c4a027dba72ec5d02799 "biber main"
-  "main.run.xml" 1784573199 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
-  "main.tex" 1784564876 5377 f6c5e4c07b95155f20c625380fadbe48 ""
-  "main.toc" 1784573199 4363 b4076ab1c5c9399df4675cc28b8217b7 "pdflatex"
+  "main.run.xml" 1784580828 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.tex" 1784578152 5398 d3c3744ddf6cc4f95b18b750f3efc581 ""
+  "main.toc" 1784580828 4347 16113e46b29c2aa18aa433b036c9875a "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
