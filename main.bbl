@@ -158,6 +158,71 @@
       \verb https://opg.optica.org/abstract.cfm?URI=ao-62-27-7205
       \endverb
     \endentry
+    \entry{Steck2021}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=a411f1fbd416b5b9ae41109aa1d370f0}{%
+           family={Steck},
+           familyi={S\bibinitperiod},
+           given={Daniel\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{fullhash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{fullhashraw}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{bibnamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{authorbibnamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{authornamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{authorfullhash}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \strng{authorfullhashraw}{a411f1fbd416b5b9ae41109aa1d370f0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{revision 1.8.3, 25}
+      \field{title}{Classical and Modern Optics}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb http://steck.us/teaching
+      \endverb
+      \verb{url}
+      \verb http://steck.us/teaching
+      \endverb
+    \endentry
+    \entry{Born1999}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4f3da79454ab0edb86f37a6038d1998f}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Emil},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{fullhash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{fullhashraw}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{bibnamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authorbibnamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authornamehash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authorfullhash}{b14dea9f75ec6824071689113c5b3d02}
+      \strng{authorfullhashraw}{b14dea9f75ec6824071689113c5b3d02}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{7}
+      \field{title}{Principles of Optics: Electromagnetic Theory of Propagation, Interference and Diffraction of Light.}
+      \field{year}{1999}
+      \verb{doi}
+      \verb 10.1017/CBO9781139644181
+      \endverb
+    \endentry
     \entry{Sahay2013}{article}{}{}
       \name{author}{14}{}{%
         {{hash=6f055b3d47b4a9966c7e902f6f5c9278}{%
@@ -239,8 +304,8 @@
       \strng{authornamehash}{db1f9b1f23d519ba68d9e6cf9587523b}
       \strng{authorfullhash}{8ef2bfd9153a1b58480f18fd1d9d91aa}
       \strng{authorfullhashraw}{8ef2bfd9153a1b58480f18fd1d9d91aa}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Biotechnology}
@@ -365,8 +430,8 @@
       \strng{authornamehash}{9a137482a1b3b4b116f3f83ccaad889f}
       \strng{authorfullhash}{336d6a1cc29cfe820c2f9f0a6d3a37d4}
       \strng{authorfullhashraw}{336d6a1cc29cfe820c2f9f0a6d3a37d4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Biotechnology}
@@ -411,8 +476,8 @@
       \strng{authornamehash}{19d83dbca406fce9722e4346f211dfb8}
       \strng{authorfullhash}{41055c5e92e52d8ed3e69dd72e1be7f8}
       \strng{authorfullhashraw}{41055c5e92e52d8ed3e69dd72e1be7f8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Biochemical Journal}
@@ -462,8 +527,8 @@
       \strng{authornamehash}{6a4dcadf84f0dc26b30d6dcfbfcc22a3}
       \strng{authorfullhash}{76c85625f21555fcce147f1e82b56b83}
       \strng{authorfullhashraw}{76c85625f21555fcce147f1e82b56b83}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advanced Materials}
@@ -503,8 +568,8 @@
       \strng{authornamehash}{baedebe5781b544fb7866de98e63a852}
       \strng{authorfullhash}{baedebe5781b544fb7866de98e63a852}
       \strng{authorfullhashraw}{baedebe5781b544fb7866de98e63a852}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -517,71 +582,6 @@
       \range{pages}{1}
       \verb{eprint}
       \verb 1411.7348
-      \endverb
-    \endentry
-    \entry{Steck2021}{unpublished}{}{}
-      \name{author}{1}{}{%
-        {{hash=a411f1fbd416b5b9ae41109aa1d370f0}{%
-           family={Steck},
-           familyi={S\bibinitperiod},
-           given={Daniel\bibnamedelima A.},
-           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{fullhash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{fullhashraw}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{bibnamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{authorbibnamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{authornamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{authorfullhash}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \strng{authorfullhashraw}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{revision 1.8.3, 25}
-      \field{title}{Classical and Modern Optics}
-      \field{year}{2021}
-      \verb{urlraw}
-      \verb http://steck.us/teaching
-      \endverb
-      \verb{url}
-      \verb http://steck.us/teaching
-      \endverb
-    \endentry
-    \entry{Born1999}{book}{}{}
-      \name{author}{2}{}{%
-        {{hash=f3c12b2ab192a232977c790c202ae18a}{%
-           family={Born},
-           familyi={B\bibinitperiod},
-           given={Max},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4f3da79454ab0edb86f37a6038d1998f}{%
-           family={Wolf},
-           familyi={W\bibinitperiod},
-           given={Emil},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{fullhash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{fullhashraw}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{bibnamehash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{authorbibnamehash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{authornamehash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{authorfullhash}{b14dea9f75ec6824071689113c5b3d02}
-      \strng{authorfullhashraw}{b14dea9f75ec6824071689113c5b3d02}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{7}
-      \field{title}{Principles of Optics: Electromagnetic Theory of Propagation, Interference and Diffraction of Light.}
-      \field{year}{1999}
-      \verb{doi}
-      \verb 10.1017/CBO9781139644181
       \endverb
     \endentry
     \entry{brownXXVIIBriefAccount1828}{article}{}{}
@@ -772,8 +772,8 @@
       \strng{authornamehash}{5bd1b35ae47ec1234b559bc57aabd681}
       \strng{authorfullhash}{5bd1b35ae47ec1234b559bc57aabd681}
       \strng{authorfullhashraw}{5bd1b35ae47ec1234b559bc57aabd681}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1539-3755, 1550-2376}
@@ -1357,8 +1357,8 @@
       \strng{authornamehash}{ca29df22dd26c2e9accbd893b1185453}
       \strng{authorfullhash}{ca29df22dd26c2e9accbd893b1185453}
       \strng{authorfullhashraw}{ca29df22dd26c2e9accbd893b1185453}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Intermolecular and {Surface} {Forces}}
@@ -1692,8 +1692,8 @@
       \strng{authornamehash}{6b27f4592197d058b81cb25b0b285942}
       \strng{authorfullhash}{6b27f4592197d058b81cb25b0b285942}
       \strng{authorfullhashraw}{6b27f4592197d058b81cb25b0b285942}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1-4419-2322-6}
