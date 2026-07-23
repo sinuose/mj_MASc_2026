@@ -1,4 +1,6 @@
 \chapter{Interferometric Scattering Microscope Optical System}
+\chaptermark{iSCAT Optical System}
+
 To observe single nanoparticle diffusion, a microscope system was designed. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. 
 
 \newpage
@@ -47,13 +49,12 @@ The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs 
 
 Imaging was performced with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
 
-The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
-
 The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise framerates. 
 
-\begin{table}[htbp]
+The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
+
+\begin{table}[h!]
     \centering
-    \label{tab:components}
     \begin{tabularx}{\textwidth}{@{}Xll@{}}
         \toprule
         \textbf{Component} & \textbf{Product ID} & \textbf{Manufacturer} \\
@@ -76,15 +77,35 @@ The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of 
         \bottomrule
     \end{tabularx}
     \caption{Optical components of the iSCAT microscope.}
+    \label{tab:components}
 \end{table}
+\clearpage
+\section{System Parameters}
+
+\red{What are the system parameters?}
+
+\red{What is the laser power at the sample plane?}
+
+\red{Is the magnification factor sufficient?}
+
+\red{Is the speed of the camera sufficient?}
+
+\red{Is the framerate ok? Limitations of the hardware.}
 
 
+\section{Alignment Procedure}
 
+\red{Does the system require alignment?}
 
+\section{System Software}
 
-\section{}
+\red{System by itself is useless. i wrote the software that processes the data.}
 
+\red{ Camera data is saved from the thing.}
 
+\red{Computer specification}
+
+\section{Future Improvements}
 
 \newpage
 \chapter{Simulations of Diffusion of Nanoparticles in Double-Layer Walls}
