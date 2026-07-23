@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1784756511.28358 -1
-  "main.bcf" 1784756511 112658 c42f1f2f05cfc5ed6c49bb846ed6d85c "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1784831973.37546 -1
+  "main.bcf" 1784831973 112658 c42f1f2f05cfc5ed6c49bb846ed6d85c "pdflatex"
   "references.bib" 1784564158 60221 05c231298e60c6862544777a3cbaa186 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784756507.79362 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784756511.2841 0
+["pdflatex"] 1784831969.84112 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1784831973.37602 0
   "A1.tex" 1784564158 19442 f11a1d4dcff6e557c974a4fc42afb1e4 ""
   "ABSTRACT.tex" 1784321236 5890 947e663ca867bede9fbdd15f92376784 ""
   "C1.tex" 1784743931 44950 a5d096d20abddebf6ae1d009f5dd4c3f ""
   "C2.tex" 1784742280 10140 963daaa2625e33d3fd622b15b3dea29e ""
-  "C3.tex" 1784756503 49139 ebb928d9553d0a6f0489a0a86ff3202c ""
+  "C3.tex" 1784831965 49468 446a1f4c4d00b146aacaf14e1e876223 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784755907 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1781733618 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -301,11 +301,11 @@
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
   "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1784755902 5446 12c8db1076aeb2e3656d5a9b6bc809c6 ""
-  "main.aux" 1784756511 27290 5dccb8d99a461dc0315955d1c7855149 "pdflatex"
+  "main.aux" 1784831973 27290 7619fb6c8c14a1716d503f5097135f3e "pdflatex"
   "main.bbl" 1784748656 86352 764bf1049ba0c4a027dba72ec5d02799 "biber main"
-  "main.run.xml" 1784756511 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.run.xml" 1784831973 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1784755902 5446 12c8db1076aeb2e3656d5a9b6bc809c6 ""
-  "main.toc" 1784756511 4736 d6c5929221d414b87ada2dd09f363f83 "pdflatex"
+  "main.toc" 1784831973 4736 f686f9c374251e3c08addcfb19f1f402 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

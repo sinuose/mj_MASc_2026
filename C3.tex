@@ -1,34 +1,42 @@
 \chapter{Interferometric Scattering Microscope Optical System}
+To observe single nanoparticle diffusion, a microscope system was designed. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. 
 
-\red{This should talk about the iSCAT and my whole optical system.} 
-
-To observe single nanoparticle diffusion, a microscope system is required. As described in Chap. \ref{chap:iscatprinciples}, the use of a scattering microscope is favored when axial position is a key parameter. 
-
-This chapter describes the experimental setup that was used to perform measurements of images of single nanoparticles. The diagram is first presented and key components are discussed. The physical system is then presented and described. 
-
+\newpage
 \section{Optical System Diagram}
 
-The iSCAT system is designed based on prior work by the Kulkura lab \red{REF}. The microscope system is classified as a wide-field iSCAT system. Wide-field optical systems illuminate the whole field of view to obtain a complete view all at once. This method is temporally optimal.
-
-The iSCAT diagram is shown in Fig. \ref{fig:schematic}. The diagram consists of a $\SI{405}{\nm}$ laser, which is passed through a $4f$ system consisting of a spatial filter, to optimize beam shape, and a beam expander, to enlarge the beam shape. The cleaned beam is passed through an aperture, which is used to adjust for various camera array sizes, and passed into a focusing lens. The focusing lens directs the beam through a polarizing beam splitter, which partially reflects the linearly polarize light. The reflected light passes through a quarter-wave plate and is finally focused on the back plane of the objective. Any scattered light is passed back through the quarter-wave plate, linearizing it, and partially transmits through the beam splitter. The transmitted light is collected on a tube lens, which is enlarged on a CMOS camera.
-
-To control the height of the chamber, the convex-lens induced confinement (CLiC) system is used. The CLiC is controlled manually using a control-box. The control-box connects to the piezo controlled actuator and regulates it with fine precision. 
-
+The iSCAT microscope system was designed based on prior work by the Kulkura lab \red{REF}. The iSCAT microscope is a wife-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\linewidth]{Figures/schematic.pdf}
+    \includegraphics[width=0.75\linewidth]{Figures/schematic.pdf}
     \caption{Isometric iSCAT Schematic.}
     \label{fig:schematic}
 \end{figure}
 
+The laser illumination is provided by a $\SI{405}{\nm}$ laser with a beam-width of $\SI{1}{\mm}$. The laser beam travels through a $4f$-lens system, consisting of a spatial filter, to optimize beam shape, and a beam expander, to enlarge the beam diameter. The shaped beam is then passed through an aperture, which is used to adjust for various camera array sizes. The beam then is passed into a focusing lens, which directs it towards the objective. The beam first passes through a polarizing beam splitter, which partially reflects the linearly polarized light. The reflected light passes through a quarter-wave plate, which circularily polarizes te light. The circularily polarized light is then focused on the back plane of the objective. The objective focuses the light onto the sample plane, and the sample scatters the light back into the objective. The scattered light is then passed back through the quarter-wave plate, linearly polarizing it. The lgiht is then transmitted through the beam splitter and focused onto the CMOS camera.
+
+The sample is contained between two glass cover-slips seperated by a plastic spacer. To control the gap between teh two coverslips, the convex-lens induced confinement (CLiC) system is used. The CLiC device is manually controlled with a control-box, which is not shown on the diagram. The control-box connects to a piezo controlled actuator and regulates the pushing force with fine precision. 
+
 %\newpage
 \section{Experimental Optical Table Overview}
 
+The laboratory implementation shown in Fig. \ref{fig:schematic}, was assembled on an optical table.   Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2} show the lab setup.
 
-The optical system is built to resemble the design diagram. Photographs of the assembled system are shown in Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2}.
+\begin{figure}[h!]
+    \centering	
+    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_1.pdf}
+	\caption{\red{Clean table and retake the photos}}
+    \label{fig:isometrix_annotated_1}
+\end{figure}
 
-The laser is controlled by a Thorlabs Laser driver. The driver is set to $\SI{850}{\milli \watt}$ which outputs an intensity of $\sim \SI{220}{\milli \watt}$ of laser light, as measured by a thorlabs power meter. This driver is shown in Fig. \ref{fig:laser_driver}.
+\begin{figure}[h!]
+    \centering	
+    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_2.pdf}
+	\caption{\red{Clean table and retake the photos}}
+    \label{fig:isometrix_annotated_2}
+\end{figure}
+
+The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs laser driver, which varies the output power. The laser driver was set to $\SI{850}{\milli \watt}$ which outputted a laser light intensity of $\sim \SI{220}{\milli \watt}$.The Thorlabs power meter was able to measure the output light intensity with high accuracy. The laser driver is shown in Fig. \ref{fig:laser_driver}.
 
 \begin{figure}[h!]
     \centering
@@ -37,13 +45,11 @@ The laser is controlled by a Thorlabs Laser driver. The driver is set to $\SI{85
     \label{fig:laser_driver}
 \end{figure}
 
-The objective used is a $60\times$ oil-immersion objective. The oil is used to refractive-index match the light from the objective to the glass. The tube lens is placed such that there is a $2\times$ zoom. In total, The total optical magnification is thus $120 \times$. The final image is digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. The total magnification, given the pixel array is $6.5 \times \SI{6.5}{\um}$, is $118 \times$.
+Imaging was performced with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
 
-The assembled system is presented in Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2}. The optical system was assembled on a NewPort breadboard optical table. The components used were ordered from Thorlabs. The parts list for the iSCAT microscope is shown in Tab. \ref{tab:components}.
+The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
 
-The components list is divided into the the laser head, spatial filter, objective focusing, and camera equipment. All mirrors used are the same and purchased from Thorlabs. 
-
-The camera used is the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The framerate at full field of view is maximum $\SI{40}{\fps}$, however, at smaller fields of view, the camera can reach up to $\SI{1000}{\fps}$. The fps is dynamically saved in the image metadata, where precise framerates are recorded. 
+The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise framerates. 
 
 \begin{table}[htbp]
     \centering
@@ -72,19 +78,7 @@ The camera used is the \textsc{pco.edge 4.2}. This camera has a pixel array of $
     \caption{Optical components of the iSCAT microscope.}
 \end{table}
 
-\begin{figure}[h!]
-    \centering	
-    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_1.pdf}
-	\caption{\red{Clean table and retake the photos}}
-    \label{fig:isometrix_annotated_1}
-\end{figure}
 
-\begin{figure}[h!]
-    \centering	
-    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_2.pdf}
-	\caption{\red{Clean table and retake the photos}}
-    \label{fig:isometrix_annotated_2}
-\end{figure}
 
 
 
