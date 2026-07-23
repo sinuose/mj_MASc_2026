@@ -1,11 +1,105 @@
-\chapter{Diffusion of Nanoparticles in Double-Layer Walls}
+\chapter{Interferometric Scattering Microscope Optical System}
+
+\red{This should talk about the iSCAT and my whole optical system.} 
+
+To observe single nanoparticle diffusion, a microscope system is required. As described in Chap. \ref{chap:iscatprinciples}, the use of a scattering microscope is favored when axial position is a key parameter. 
+
+This chapter describes the experimental setup that was used to perform measurements of images of single nanoparticles. The diagram is first presented and key components are discussed. The physical system is then presented and described. 
+
+\section{Optical System Diagram}
+
+The iSCAT system is designed based on prior work by the Kulkura lab \red{REF}. The microscope system is classified as a wide-field iSCAT system. Wide-field optical systems illuminate the whole field of view to obtain a complete view all at once. This method is temporally optimal.
+
+The iSCAT diagram is shown in Fig. \ref{fig:schematic}. The diagram consists of a $\SI{405}{\nm}$ laser, which is passed through a $4f$ system consisting of a spatial filter, to optimize beam shape, and a beam expander, to enlarge the beam shape. The cleaned beam is passed through an aperture, which is used to adjust for various camera array sizes, and passed into a focusing lens. The focusing lens directs the beam through a polarizing beam splitter, which partially reflects the linearly polarize light. The reflected light passes through a quarter-wave plate and is finally focused on the back plane of the objective. Any scattered light is passed back through the quarter-wave plate, linearizing it, and partially transmits through the beam splitter. The transmitted light is collected on a tube lens, which is enlarged on a CMOS camera.
+
+To control the height of the chamber, the convex-lens induced confinement (CLiC) system is used. The CLiC is controlled manually using a control-box. The control-box connects to the piezo controlled actuator and regulates it with fine precision. 
+
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{Figures/schematic.pdf}
+    \caption{Isometric iSCAT Schematic.}
+    \label{fig:schematic}
+\end{figure}
+
+%\newpage
+\section{Experimental Optical Table Overview}
+
+
+The optical system is built to resemble the design diagram. Photographs of the assembled system are shown in Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2}.
+
+The laser is controlled by a Thorlabs Laser driver. The driver is set to $\SI{850}{\milli \watt}$ which outputs an intensity of $\sim \SI{220}{\milli \watt}$ of laser light, as measured by a thorlabs power meter. This driver is shown in Fig. \ref{fig:laser_driver}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Figures/OpticsImage/laser_driver.pdf}
+    \caption{Laser Driver}
+    \label{fig:laser_driver}
+\end{figure}
+
+The objective used is a $60\times$ oil-immersion objective. The oil is used to refractive-index match the light from the objective to the glass. The tube lens is placed such that there is a $2\times$ zoom. In total, The total optical magnification is thus $120 \times$. The final image is digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. The total magnification, given the pixel array is $6.5 \times \SI{6.5}{\um}$, is $118 \times$.
+
+The assembled system is presented in Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2}. The optical system was assembled on a NewPort breadboard optical table. The components used were ordered from Thorlabs. The parts list for the iSCAT microscope is shown in Tab. \ref{tab:components}.
+
+The components list is divided into the the laser head, spatial filter, objective focusing, and camera equipment. All mirrors used are the same and purchased from Thorlabs. 
+
+The camera used is the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The framerate at full field of view is maximum $\SI{40}{\fps}$, however, at smaller fields of view, the camera can reach up to $\SI{1000}{\fps}$. The fps is dynamically saved in the image metadata, where precise framerates are recorded. 
+
+\begin{table}[htbp]
+    \centering
+    \label{tab:components}
+    \begin{tabularx}{\textwidth}{@{}Xll@{}}
+        \toprule
+        \textbf{Component} & \textbf{Product ID} & \textbf{Manufacturer} \\
+        \midrule
+        Laser head                          & \textemdash              & \textemdash      \\
+        Mirror                              & BB1-E02P         & Thorlabs  \\
+        \addlinespace[8pt]
+        SF Lens 1 ($f = 40$\,mm)               & AC254-040-A-ML   & Thorlabs  \\
+        SF Pinhole ($20\,\mu$m)                & P20K             & Thorlabs  \\
+        SF Lens 2 ($f = 250$\,mm)              & AC508-250-A-ML   & Thorlabs  \\
+        \addlinespace[8pt]
+        Objective focusing lens             & BB1-E02P         & Thorlabs  \\
+        Polarising beam splitter            & 05BC15PH.13      & Newport   \\
+        Beam splitter mount                 & 9411             & New Focus \\
+        Quarter-wave plate                  & WPQ10E-405       & Thorlabs  \\
+        $60\times$ oil-immersion objective  & \textemdash             & Nikon     \\
+        \addlinespace[8pt]
+        Tube lens ($f = 40$\,mm)            & AC254-040-A-ML   & Thorlabs  \\
+        sCMOS camera                        & \textsc{pco.edge 4.2}     & Excelitas \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Optical components of the iSCAT microscope.}
+\end{table}
+
+\begin{figure}[h!]
+    \centering	
+    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_1.pdf}
+	\caption{\red{Clean table and retake the photos}}
+    \label{fig:isometrix_annotated_1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering	
+    \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_2.pdf}
+	\caption{\red{Clean table and retake the photos}}
+    \label{fig:isometrix_annotated_2}
+\end{figure}
+
+
+
+\section{}
+
+
+
+\newpage
+\chapter{Simulations of Diffusion of Nanoparticles in Double-Layer Walls}
+\chaptermark{Sim. of dif. of nanoparticles in double-layer Walls}
 \label{chap:langevinsimulations}
 
 Langevin dynamics are a framework for computational simualations that model the model of particles by accounting for both random thermal fluctuations arising from surrounding environment and deterministic forces such as external fields or interactions with other particles. 
 
 This chapter descirbes a simulation model of nanoparticle brownian motion within a confined space subject to electrostatic field generated by two parallel charged surfaces.
-
-The results of the Langevin simulations ...
 
 Python software was written based on prior Langevin python implementation published on Github \cite{millanNumericalSimulationsConfined2023}. Langevin algorithms were implemented and parameterized to account for physical electrostatic forces and charge quantities.   
 
@@ -59,6 +153,10 @@ where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ i
 
 The software accepts parameters inputted from a generic config file and save results as a \textsc{HDF5} file using the Python library \textsc{h5py}.
 
+\section{Python Simulation Implementation}
+
+\red{Opis software}
+
 \section{Electrostatic Input Parameters}
 
 The deterministic portion of the Langevin equation in the simulations are determined by the electrostatic and grativational forces acting on the particle. In the model of nanoparticles, the grativational forces are negligible, leaving the electrostatic forces as the driving non-spurious drift. A diagram of the simulation geometry is shown in Fig. \ref{fig:langevin_diagram}.
@@ -66,7 +164,7 @@ The deterministic portion of the Langevin equation in the simulations are determ
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/langevin_diagram.pdf}
-    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modelled between two charged parallel plates. \red{add electric field/ions}}
+    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modelled between two charged parallel plates. }
     \label{fig:langevin_diagram}
 \end{figure}
 %
@@ -97,14 +195,12 @@ where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-lay
 
 \section{Mean-Squared Displacement in Confinement}
 
-The simulation results provide three-dimensional trajectories of particles. From the trajectories, the mean-squared displacement can be calculated. 
-
-The typical output of a simulation is shown in Fig. \ref{fig:brown_realization}. The plot on the left depicts the transverse motion, $X(t)$. The plot on the right depicts the axial motion with respect to the confined walls. The plot in Fig. \ref{fig:brown_realization}.
+The simulation results provide three-dimensional trajectories of particles. From the trajectories, the mean-squared displacement can be calculated.  The typical output of a simulation is shown in Fig. \ref{fig:brown_realization}. The plot on the left depicts the transverse motion, $X(t)$. The plot on the right depicts the axial motion with respect to the confined walls. The plot in Fig. \ref{fig:brown_realization}.
 
 \begin{figure}[h!]
     \begin{subfigure}[b]{\textwidth}
         \centering
-        \includegraphics[width=0.8\linewidth]{Python/Figures/realization.pdf}
+        \includegraphics[width=\linewidth]{Python/Figures/realization.pdf}
         \subcaption{Trajectories of transverse and axial motion during single realization of Langevin simulations.}      
     \end{subfigure}
     \begin{subfigure}[b]{0.7\textwidth}
@@ -198,10 +294,14 @@ The surface charge of the confinement walls can be estimated based on the electr
 Although the SDE MLE equation is already known, the solution was specifically applied for the purpose of this thesis in the form presented in Eqn. \ref{eqn:surface_MLE}. A detailed derivation is presented in Appendix. \ref{app:1};
 
 \begin{equation}\label{eqn:surface_MLE}
-     \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}, \quad \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)}.
-\end{equation}  
+     \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}, \quad \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)},
+\end{equation} 
+where $\Delta z$ is the random variable assigned to step displacement, $D(z)$ is the diffusion coefficient, and $\phi(z)$ is the gradient of the potential,
+\begin{equation}
+    \phi(z) = e^{-\frac{H}{\lambda_D}}\sinh\left(\frac{z}{\lambda_D}\right).
+\end{equation}
+This estimator assumes that gravitational contributions are negligible.
 
-\red{define variables.}
 If the amplitude of the electrostatic interactions is known, one can invert the amplitude using relations in Eqn. \ref{eqn:electrostatic_forces}. This inversion requires at least the zeta-potential, $\zeta$, of the particle, the radius, $a$, and Debye-length, $\lambda_D$. 
 
 The particle's exploration, demonstrated in Fig. \ref{fig:brown_realization}, showed a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator function, the drift estimator can be extracted into meaningful, physical information.
@@ -240,22 +340,23 @@ The object sample is imaged through an oil-immersion objective lens. The optical
 
 The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
 
-\begin{figure}[h!]
+% preamble: \usepackage{enumitem}
+\begin{figure}[htbp]
     \centering
-    \begin{minipage}{0.6\textwidth}
-        \centering
-        \begin{enumerate}
-            \item Raw image captured on camera.
-            \item Background subtraction to convert to iSCAT image.
-            \item iSCAT $(x,y)$ Tracking
-            \item Radial Integral to obtain scattering data.
-            \item Nuisance parameter estimation to ensure physical stability.
-            \item Particle axial position Linking with 2D chain-link algorithm.
-            \item Axial position Extraction
-            \item Three-dimensional trajectory is recovered.
+    \begin{minipage}{0.78\textwidth}
+        \rule{\linewidth}{0.8pt}\vspace{4pt}
+        \begin{enumerate}[label=\arabic*., leftmargin=*, labelsep=0.75em, itemsep=2pt, parsep=0pt, topsep=2pt]
+            \item \textbf{Acquisition} --- raw image captured on camera.
+            \item \textbf{Background subtraction} --- conversion of raw image to an iSCAT contrast image.
+            \item \textbf{Lateral tracking} --- transverse particle position, $(x,y)$, located in each frame.
+            \item \textbf{Angular integration} --- extraction of the scattering data per frame.
+            \item \textbf{Nuisance-parameter estimation} --- Fix iSCAT Amplitude, microscope decay parameter.
+            \item \textbf{Linking} --- axial candidates, $z_\mathrm{min}$, joined by the 2D Viterbi algorithm.
+            \item \textbf{Output} --- the three-dimensional trajectory $\bigl[x(t),y(t),z(t)\bigr]$.
         \end{enumerate}
+        \vspace{4pt}\rule{\linewidth}{0.8pt}
     \end{minipage}
-    \caption{Background subtraction outline. }
+    \caption{Outline of the 3D particle-tracking pipeline.}
     \label{fig:method_outline}
 \end{figure}
 
