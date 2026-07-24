@@ -1,12 +1,17 @@
 \section{Conclusion}
 
-% mission statements
-The introduction introduces the topics of Brownian motion in a confined space, because this is an active field of research with direct application to 
+This thesis presents the current state of research in the fields of nanoparticle diffusion and single-particle tracking.
 
+The theory of thermal motion was reviewed based on existing research publications, which provides the theoretical foundation for the topics discussed in this thesis. Particular emphasis is placed on Brownian motion, which describes the random motion of larger particles suspended in a fluid as a result of collisions with thermally moving molecules. Brownian motion forms the basis for the analysis of nanoparticle diffusion, as shown in Chapter \ref{chap:brownianmotion}.
 
+As nanoparticles are present in nature almost everywhere, it is of interest to study their behavior.  Special interest in nanoparticles existing in biological forms was formed in recent years leading to development of vaccines.  Using Brownian motion, properties of biological nanoparticles can be determined as described in Chapter \ref{chap:bioapp}.
 
-This thesis presents the current state of research in the features of nanoparticle diffusion in confinement and single-particle tracking using interferometric light scattering microscopy. The theory of Brownian motion is well described by the Langevin framework. 
+Interferometric Scattering principles for scattering microscopy were presented in Chapter \ref{chap:iscatprinciples} It was demonstrated that scattering microscopy can be used to reconstruct three-dimensional trajectories of nanoparticles from sequences of images.  The trajectories can be used to calculate various properties of nanoparticles like size.
 
-The theory of thermal motion is reviewed based on existing research publications and provides 
+An interferometric scattering (iSCAT) microscope optical system was constructed to observe diffusion of nanoparticles in real time, as described in Chapter \ref{chap:iscatsetup} The system was used to perform nanoparticle tracking under laboratory conditions and to obtain experimental data. Three-dimensional particle trajectories were reconstructed from the iSCAT images for nanoparticles of various sizes and fluid concentrations.  The statistical parameters obtained from the collected data confirmed that the system was able to achieve the desired results and can be fundamental in further study in this field.
 
-\section{Future outlook}
+Mathematical description of Brownian motion was used to develop diffusion simulation of nanoparticles in confined spaces. The simulations were validated against published experimental data, demonstrating its accuracy and reliability. Such a simulation model is a valuable tool for predicting nanoparticle behavior without the need for conducting lengthy and expensive experiments.  The simulation software and results are presented in Chapter \ref{chap:langevinsimulations}  The simulations can be conducted on various confinements with inclusion of external influences like electric field.
+
+Analysis of the reconstructed trajectories in three-dimensions allows extraction of important nanoparticle physical parameters, including the mean squared displacement (MSD), diffusion coefficient, drift velocity, interaction forces, particle size, and confinement effects, as described in Chapter \ref{chap:ZEstimation}  The software developed for this purpose was able to analyze large number of videos autonomically and present results in required form.  The processing time was in order of hours, which is the area of improvement.  Using C++ code instead of Python should be investigated.
+
+Chapter \ref{chap:expresult} presents the experimental results using the iSCAT imaging technique for specific nanoparticles of interests.  Polystyrene Beads of 100nm size were used for the characterization of the system.  The data shows that the developed technique provides confirmation of the hardware and software correct operation and validate the mathematical framework implemented in the image analysis software. The experimental results demonstrated the accuracy and reliability of the proposed methodology for nanoparticle size estimation.

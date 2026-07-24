@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1784915572.94949 "main.bcf" "main.bbl" "main" 1784917480.54794 0
-  "main.bcf" 1784917480.39978 112597 12d9c8f65784fc2e81a36298440a4ae0 "pdflatex"
-  "references.bib" 1784403290.60823 59488 05c231298e60c6862544777a3cbaa186 ""
+["biber main"] 1784918427.79503 "main.bcf" "main.bbl" "main" 1784918456.04856 0
+  "main.bcf" 1784918455.91024 112597 12d9c8f65784fc2e81a36298440a4ae0 "pdflatex"
+  "references.bib" 1784918338.16056 59878 cdd21189e2b541b28fb29cde97c78ec3 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784917476.60514 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1784917480.5483 0
+["pdflatex"] 1784918452.32919 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1784918456.04884 0
   "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1784915452.35808 5258 12c8db1076aeb2e3656d5a9b6bc809c6 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -269,14 +269,15 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "A1.tex" 1784917408.60106 19018 f018c4e5b45d82145dc4402e9db0bfce ""
   "ABSTRACT.tex" 1784915556.01088 7526 34e76c35dd9a7a3ccd61fbf3b6682f81 ""
-  "C1.tex" 1784917264.16767 43804 3933520739369a658e082d25c9cb7b46 ""
-  "C2.tex" 1784917476.11622 9989 bca442e0afe5699aa9075d83560af231 ""
-  "C3.tex" 1784916466.77302 49425 2e46b8dd5f6aae219e6f9a8bf996023f ""
-  "CONC.tex" 1784589453.60125 582 3cbfc81dcbb2040da8b380514da0329c ""
+  "C1.tex" 1784918447.277 44314 75b6cb5e75adfa9598e695970edfa735 ""
+  "C2.tex" 1784917817.92102 10012 ac6b05ddbc7401efe0aec3006b51416b ""
+  "C3.tex" 1784917938.74286 49449 65f687d1d2d8b8cc5a4d8ae3dba2f53a ""
+  "CONC.tex" 1784917857.94916 3677 0229a5e5ec0269ed9806b9a04cf9beae ""
   "Figures/Chapter7/CLiC_figure.png" 1784073194.86456 38002 494b90d7c46b06102eff0538a3c84688 ""
   "Figures/Chapter7/Figure_2_v8.pdf" 1784073194.86498 106594 dd7bdfc3601783e0bd49db059d3566f8 ""
   "Figures/Chapter7/c7_fig4.png" 1784073194.8673 129596 a61dc1e70765fabc8870cb9d359f134d ""
   "Figures/LNP_types.png" 1784073194.86841 35823 8aff29522e4b0b016220bdf24198f0c8 ""
+  "Figures/Mesoporous_Silica_Nanoparticle.jpg" 1784918116.93933 146139 b16e288ba5605306ee44295337d767e9 ""
   "Figures/OpticsImage/isometrix_annotated_1.pdf" 1784915451.85023 9881984 994f439a09f7af3004890b2f46304571 ""
   "Figures/OpticsImage/isometrix_annotated_2.pdf" 1784915451.94428 8377337 b87ce0b40d06bf1870fa6f502e8e57d8 ""
   "Figures/OpticsImage/laser_driver.pdf" 1784915451.98173 8561761 9066f0e8a2db53bd2bd3df145e704428 ""
@@ -303,11 +304,11 @@
   "Python/Figures/simulation_fit_residual.pdf" 1783468542.61247 71236 9f8189d044a2b171abe8a6839b49b04a ""
   "Python/Figures/viterbi_toy.pdf" 1784405191.14894 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1784917480.39323 27587 177f19701944102edd554fdd9abef03d "pdflatex"
-  "main.bbl" 1784915574.6957 84568 764bf1049ba0c4a027dba72ec5d02799 "biber main"
-  "main.run.xml" 1784917480.4006 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.aux" 1784918455.90462 28070 681974104235b89ad848b1af413afc6c "pdflatex"
+  "main.bbl" 1784918429.61393 84568 764bf1049ba0c4a027dba72ec5d02799 "biber main"
+  "main.run.xml" 1784918455.91092 2346 2e72ac235cb454ee1ac1f9d2629a420c "pdflatex"
   "main.tex" 1784915452.35808 5258 12c8db1076aeb2e3656d5a9b6bc809c6 ""
-  "main.toc" 1784917480.4007 4957 f7a380b74bfa78e61d216864580dd9fb "pdflatex"
+  "main.toc" 1784918455.91098 4893 bf9949e49ef1f17e6e8580b5910f7964 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
