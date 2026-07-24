@@ -25,41 +25,41 @@
 \contentsline {section}{\numberline {5.2}Experimental Optical Table Overview}{32}{}%
 \contentsline {section}{\numberline {5.3}System Parameters}{35}{}%
 \contentsline {section}{\numberline {5.4}Alignment Procedure}{35}{}%
-\contentsline {section}{\numberline {5.5}System Software}{35}{}%
-\contentsline {section}{\numberline {5.6}Future Improvements}{35}{}%
-\contentsline {chapter}{\numberline {6}Simulations of Diffusion of Nanoparticles in Double-Layer Walls}{36}{}%
-\contentsline {section}{\numberline {6.1}Simulation Equations}{36}{}%
-\contentsline {section}{\numberline {6.2}Python Simulation Implementation}{38}{}%
-\contentsline {section}{\numberline {6.3}Electrostatic Input Parameters}{38}{}%
-\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{39}{}%
-\contentsline {section}{\numberline {6.5}Simulation Results}{40}{}%
-\contentsline {section}{\numberline {6.6}Surface Charge estimation}{43}{}%
-\contentsline {chapter}{\numberline {7}iSCAT z-estimation Simulations}{46}{}%
-\contentsline {section}{\numberline {7.1}Method Overview}{46}{}%
-\contentsline {section}{\numberline {7.2}Raw image background subtraction}{47}{}%
-\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{49}{}%
-\contentsline {section}{\numberline {7.4}Angular Integral}{50}{}%
-\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{51}{}%
-\contentsline {section}{\numberline {7.6}2D Chain-link}{52}{}%
-\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{54}{}%
-\contentsline {section}{\numberline {7.8}3-parameter Estimation}{54}{}%
-\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{55}{}%
-\contentsline {section}{\numberline {7.9}Conclusions}{55}{}%
-\contentsline {chapter}{\numberline {8}Experimental Results}{57}{}%
-\contentsline {section}{\numberline {8.1}Methods}{58}{}%
-\contentsline {subsection}{\numberline {8.1.1}Apparatus schematic}{58}{}%
-\contentsline {subsection}{\numberline {8.1.2}Cover-Glass}{58}{}%
-\contentsline {subsection}{\numberline {8.1.3}Convex-lens induced confinement}{59}{}%
-\contentsline {subsection}{\numberline {8.1.4}Sample Details}{59}{}%
-\contentsline {subsection}{\numberline {8.1.5}Analysis Method}{59}{}%
-\contentsline {section}{\numberline {8.2}Results}{61}{}%
-\contentsline {subsection}{\numberline {8.2.1}Polystyrene PBS series}{61}{}%
-\contentsline {subsection}{\numberline {8.2.2}Polystyrene Transient Diffusion}{62}{}%
-\contentsline {subsection}{\numberline {8.2.3}Lipid nanoparticle Diffusion}{63}{}%
-\contentsline {section}{\numberline {8.3}Discussion of Results}{64}{}%
-\contentsline {chapter}{\numberline {9}Conclusion}{65}{}%
-\contentsline {section}{\numberline {9.1}Conclusion}{65}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{70}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{70}{}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{71}{}%
-\contentsline {chapter}{\numberline {B}Axial Estimation Algorithm Pseudocode}{72}{}%
+\contentsline {section}{\numberline {5.5}System Software}{36}{}%
+\contentsline {section}{\numberline {5.6}Future Improvements}{36}{}%
+\contentsline {chapter}{\numberline {6}Simulations of Diffusion of Nanoparticles in Double-Layer Walls}{37}{}%
+\contentsline {section}{\numberline {6.1}Simulation Equations}{37}{}%
+\contentsline {section}{\numberline {6.2}Python Simulation Implementation}{39}{}%
+\contentsline {section}{\numberline {6.3}Electrostatic Input Parameters}{39}{}%
+\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{40}{}%
+\contentsline {section}{\numberline {6.5}Simulation Results}{41}{}%
+\contentsline {section}{\numberline {6.6}Surface Charge estimation}{44}{}%
+\contentsline {chapter}{\numberline {7}iSCAT z-estimation Simulations}{47}{}%
+\contentsline {section}{\numberline {7.1}Method Overview}{47}{}%
+\contentsline {section}{\numberline {7.2}Raw image background subtraction}{48}{}%
+\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{50}{}%
+\contentsline {section}{\numberline {7.4}Angular Integral}{51}{}%
+\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{52}{}%
+\contentsline {section}{\numberline {7.6}2D Chain-link}{53}{}%
+\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{55}{}%
+\contentsline {section}{\numberline {7.8}3-parameter Estimation}{55}{}%
+\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{56}{}%
+\contentsline {section}{\numberline {7.9}Conclusions}{56}{}%
+\contentsline {chapter}{\numberline {8}Experimental Results}{58}{}%
+\contentsline {section}{\numberline {8.1}Methods}{59}{}%
+\contentsline {subsection}{\numberline {8.1.1}Apparatus schematic}{59}{}%
+\contentsline {subsection}{\numberline {8.1.2}Cover-Glass}{59}{}%
+\contentsline {subsection}{\numberline {8.1.3}Convex-lens induced confinement}{60}{}%
+\contentsline {subsection}{\numberline {8.1.4}Sample Details}{60}{}%
+\contentsline {subsection}{\numberline {8.1.5}Analysis Method}{60}{}%
+\contentsline {section}{\numberline {8.2}Results}{62}{}%
+\contentsline {subsection}{\numberline {8.2.1}Polystyrene PBS series}{62}{}%
+\contentsline {subsection}{\numberline {8.2.2}Polystyrene Transient Diffusion}{63}{}%
+\contentsline {subsection}{\numberline {8.2.3}Lipid nanoparticle Diffusion}{64}{}%
+\contentsline {section}{\numberline {8.3}Discussion of Results}{65}{}%
+\contentsline {chapter}{\numberline {9}Conclusion}{66}{}%
+\contentsline {section}{\numberline {9.1}Conclusion}{66}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{71}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{71}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{72}{}%
+\contentsline {chapter}{\numberline {B}Axial Estimation Algorithm Pseudocode}{73}{}%

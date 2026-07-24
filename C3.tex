@@ -48,7 +48,7 @@ The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs 
     \label{fig:laser_driver}
 \end{figure}
 
-Imaging was performced with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
+Imaging was performed with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
 
 The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise framerates. 
 
@@ -83,30 +83,60 @@ The table in Tab. \ref{tab:components} shows the iSCAT microscope components lis
 \clearpage
 \section{System Parameters}
 
-\red{What are the system parameters?}
+The optical system parameters consist of technical specifications that are used to compare and contrast optical systems. These parameters are listed in Tab. \ref{tab:system_param}.
 
-\red{What is the laser power at the sample plane?}
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{0.65\textwidth}{@{}Xll@{}}
+        \toprule
+        \textbf{Quantity} & \textbf{Symbol} & \textbf{Value} \\
+        \midrule
+        Wavelength & $\lambda$ & $\SI{405}{\nm}$ \\
+        Power at Source & $I_\mathrm{Input}$ & $\SI{240}{\milli\watt}$ \\
+        Power into QWP & $I_\mathrm{Out}$ & $\SI{120}{\milli\watt}$ \\
+        Illumination Angle & $\theta_\mathrm{ill}$ & $\SI{45}{\degree}$ \\
+        Objective magnification & $M_\mathrm{Obj}$ & $\SI{60}{\times}$ \\
+        Objective numerical aperture & $\mathrm{NA}$ & $1.4$ \\
+        Tube lens focal length & $f_\mathrm{TL}$ & $\SI{40}{\mm}$ \\
+        CMOS camera array length& $l_\mathrm{px}$ & $\SI{6.5}{\micro\meter}$ \\
+        Digital pixel length& $l_\mathrm{dg}$ & $\SI{55}{\nano\meter}$ \\
+        Camera frame-rate & $\mathrm{fps}$ & $40 - \SI{1000}{\fps}$ \\
+        CMOS array type & --- & $\mathrm{sCMOS}$ \\
+        Array ROI & $\mathrm{ROI}$ & $2048 \times 2048$ \\
+        Exposure time & $\tau$ & $\SI{0.0001}{\sec}$ \\
+        Temporal resolution & $\mathrm{fps}\cdot \mathrm{ROI}$ & $(401 \cdot 250) \cdot 1000$ \\
 
-\red{Is the magnification factor sufficient?}
+        \bottomrule        
+    \end{tabularx}
+    \caption{System Parameters for iSCAT Illumination, objective, and camera settings.}
+    \label{tab:system_param}
+\end{table}
 
-\red{Is the speed of the camera sufficient?}
+The laser power measured at the objective is sufficient. The contrast between the background and the particle signal is a function of the exposure time and laser power. The current laser power allows for clear contrast between the particles and background at a low exposure time, allowing for a high frame rate.
 
-\red{Is the framerate ok? Limitations of the hardware.}
+The speed of the camera is sufficient. For a large ROI, $401 \times 450$, the frame-rate is $\SI{400}{\fps}$. For smaller ROI, $201 \times 250$, the frame-rate is $\SI{1000}{\fps}$. The mean step length of a $\SI{200}{\nm}$ particle in water at these conditions is $\sim \SI{100}{\nm}$. For axial explorations, this frame-rate is sufficient. For transient measurements, the viscosity can be added to reduce this step length by a factor of $10-100 \times$. This frame-rate allows for resolutions of $\sim \SI{1}{\nm}$.
 
+The pixel size of this setup is sufficient for scattering data. Since the scattering pattern is much larger than the particle, clear $\mathrm{iPSF}$ images can be recovered. 
 
 \section{Alignment Procedure}
 
-\red{Does the system require alignment?}
+The system's alignment is divided into three portions, the laser input, objective illumination, and the camera detection. 
+
+The alignment of the illumination does not need to be adjusted once aligned. The system is aligned to a spatial filter, which consists of a $\SI{20}{\micro\meter}$ pinhole. This pinhole constrains the position and angle of the laser beam. The alignment is thus easy to diagnose as a misaligned laser beam at this stage would significantly drop the laser power into the objective.
+
+The alignment of the objective is quite stable, however, requires maintenance when significantly altering the objective positions. The mirror directing the laser beam into the objective is fixed with screws and is placed $\SI{1}{\cm}$ from the optical table, minimizing thermal expansion. 
+
+The alignment of the quarter wave-plate is stable and can be regularly altered to adjust for on-the-fly measurements. Specifically, to adjust the reflectance into the camera, the QWP is angularly adjusted and spatially rotated during measurements. Once in place, the QWP does not need to be adjusted. Thus the QWP is often adjusted during the start of measurement to optimize the SNR. 
 
 \section{System Software}
 
-\red{System by itself is useless. i wrote the software that processes the data.}
+The data-collection software, which collects the data from the camera and saves into the computer was written by the Grant Lab \red{REF}. This software collects the camera sCMOS information and saves it as a binary array.
 
-\red{ Camera data is saved from the thing.}
-
-\red{Computer specification}
+The computer used uses an $\mathrm{AMD Ryzen} 7, 9700K$ processor, with $64 \mathrm{gB}$ of RAM memory. 
 
 \section{Future Improvements}
+
+Future additions and improvements can be made to optimize the usability and frame-rate. The camera frame-rate, although sufficient for work done in this thesis, can be improved upon to obtain transient information in water. To do this, the cameras can be replaced to faster frame-rate models. In other methods, more cameras could be added and synced to have a frame-rate offset that allows for sequential image capture. This additional camera acquisition would effectively double the frame-rate, which would significantly improve the effective temporal resolution of the microscope system. 
 
 \newpage
 \chapter{Simulations of Diffusion of Nanoparticles in Double-Layer Walls}
