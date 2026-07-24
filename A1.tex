@@ -5,7 +5,7 @@ This is a section for the derivation of the surface charge estimator used in the
 
 \section{$\hat B$ MLE}
 
-The Force used in the modelling is given by;
+The Force used in the modeling is given by;
 \begin{equation}
     V'(z)= B  \frac{k_b T}{\lambda_D} \cdot \exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))
 \end{equation}
@@ -23,7 +23,7 @@ where $\phi(z) = \frac{k_b T}{\lambda_D}\exp(-H/\lambda_D) \cdot (\exp(-z_n/\lam
     P(z_{n+1}|z_n) = \frac{1}{4D_z\Delta t} \exp\left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right].
 \end{equation} 
 
-To obtain an estimator for $B$, we can take the log-likelihood and differentiate, maximizing it. 
+To obtain an estimator for $B$, take the log-likelihood and differentiate, maximizing it. 
 
 \begin{align*}
 l(B) &= \sum_{n=0}^\infty \left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right] + \text{const} \\
@@ -33,7 +33,7 @@ Define $r_n = \Delta z_n - D_z'(z)$ and $w_n = \frac{1}{2D_z}$. Find the maximum
 \begin{align*}
     l'(B) = -\sum_{n=0}^\infty\frac{w_n}{\Delta t} \left(r_n  + \beta B D(z)\phi(z)\right)\beta D(z) \phi(z) \\
 \end{align*}
-We can set this to 0 and solve for $\hat B$.
+Set this to 0 and solve for $\hat B$.
 \begin{equation}
     \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}
 \end{equation}
@@ -49,7 +49,7 @@ In the univariate case, the variance is proportional to the inverse of the fishe
 \begin{equation}
     \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)}
 \end{equation}
-This is an appication of the delta-method as
+This is an application of the delta-method as
 \begin{equation}
     \begin{aligned}
             W_t &\sim \mathcal{N}(0, 1) \\
@@ -75,8 +75,8 @@ The following algorithms are presented:
         \textsc{Raw2iScat}: &Camera image to iSCAT contrast stack.\\
         \textsc{TransverseLocalization}: & $(x,y)$ localization function with sub-pixel resolution.\\
         \textsc{RadialIntegral}: &Radial integral function.\\
-        \textsc{Nuisance-parameter estimation}:& Search algorithm with a grid-scan and raw-python implemented least-squares for Model.\\
-        \textsc{Axial Chain-Link}: &Linking algorithm for axial trajectories. Analagous to Munkre's algorithm in 2D tracking.\\
+        \textsc{Nuisance-parameter}:& Search algorithm with a grid-scan and raw-python implemented least-squares for Model.\\
+        \textsc{Axial Chain-Link}: &Linking algorithm for axial trajectories. Analogous to Munkre's algorithm in 2D tracking.\\
         \hline
     \end{tabularx}
     
