@@ -16,9 +16,9 @@ The iSCAT microscope system was designed based on prior work by the Kulkura lab 
     \label{fig:schematic}
 \end{figure}
 
-The laser illumination is provided by a $\SI{405}{\nm}$ laser with a beam-width of $\SI{1}{\mm}$. The laser beam travels through a $4f$-lens system, consisting of a spatial filter, to optimize beam shape, and a beam expander, to enlarge the beam diameter. The shaped beam is then passed through an aperture, which is used to adjust for various camera array sizes. The beam then is passed into a focusing lens, which directs it towards the objective. The beam first passes through a polarizing beam splitter, which partially reflects the linearly polarized light. The reflected light passes through a quarter-wave plate, which circularily polarizes te light. The circularily polarized light is then focused on the back plane of the objective. The objective focuses the light onto the sample plane, and the sample scatters the light back into the objective. The scattered light is then passed back through the quarter-wave plate, linearly polarizing it. The lgiht is then transmitted through the beam splitter and focused onto the CMOS camera.
+The laser illumination is provided by a $\SI{405}{\nm}$ laser with a beam-width of $\SI{1}{\mm}$. The laser beam travels through a $4f$-lens system, consisting of a spatial filter, to optimize beam shape, and a beam expander, to enlarge the beam diameter. The shaped beam is then passed through an aperture, which is used to adjust for various camera array sizes. The beam then is passed into a focusing lens, which directs it towards the objective. The beam first passes through a polarizing beam splitter, which partially reflects the linearly polarized light. The reflected light passes through a quarter-wave plate, which circularly polarizes the light. The circularly polarized light is then focused on the back plane of the objective. The objective focuses the light onto the sample plane, and the sample scatters the light back into the objective. The scattered light is then passed back through the quarter-wave plate, linearly polarizing it. The light is then transmitted through the beam splitter and focused onto the CMOS camera.
 
-The sample is contained between two glass cover-slips seperated by a plastic spacer. To control the gap between teh two coverslips, the convex-lens induced confinement (CLiC) system is used. The CLiC device is manually controlled with a control-box, which is not shown on the diagram. The control-box connects to a piezo controlled actuator and regulates the pushing force with fine precision. 
+The sample is contained between two glass cover-slips separated by a plastic spacer. To control the gap between the two coverslips, the convex-lens induced confinement (CLiC) system is used. The CLiC device is manually controlled with a control-box, which is not shown on the diagram. The control-box connects to a piezo controlled actuator and regulates the pushing force with fine precision. 
 
 %\newpage
 \section{Experimental Optical Table Overview}
@@ -50,7 +50,7 @@ The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs 
 
 Imaging was performed with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
 
-The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise framerates. 
+The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise frame-rates. 
 
 The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
 
@@ -68,7 +68,7 @@ The table in Tab. \ref{tab:components} shows the iSCAT microscope components lis
         SF Lens 2 ($f = 250$\,mm)              & AC508-250-A-ML   & Thorlabs  \\
         \addlinespace[8pt]
         Objective focusing lens             & BB1-E02P         & Thorlabs  \\
-        Polarising beam splitter            & 05BC15PH.13      & Newport   \\
+        Polarizing beam splitter            & 05BC15PH.13      & Newport   \\
         Beam splitter mount                 & 9411             & New Focus \\
         Quarter-wave plate                  & WPQ10E-405       & Thorlabs  \\
         $60\times$ oil-immersion objective  & \textemdash             & Nikon     \\
@@ -143,9 +143,9 @@ Future additions and improvements can be made to optimize the usability and fram
 \chaptermark{Sim. of dif. of nanoparticles in double-layer Walls}
 \label{chap:langevinsimulations}
 
-Langevin dynamics are a framework for computational simualations that model the model of particles by accounting for both random thermal fluctuations arising from surrounding environment and deterministic forces such as external fields or interactions with other particles. 
+Langevin dynamics are a framework for computational simulations that model the model of particles by accounting for both random thermal fluctuations arising from surrounding environment and deterministic forces such as external fields or interactions with other particles. 
 
-This chapter descirbes a simulation model of nanoparticle brownian motion within a confined space subject to electrostatic field generated by two parallel charged surfaces.
+This chapter describes a simulation model of nanoparticle brownian motion within a confined space subject to electrostatic field generated by two parallel charged surfaces.
 
 Python software was written based on prior Langevin python implementation published on Github \cite{millanNumericalSimulationsConfined2023}. Langevin algorithms were implemented and parameterized to account for physical electrostatic forces and charge quantities.   
 
@@ -163,7 +163,7 @@ The Langevin equation programmed into the software is described as
 \begin{equation}
     m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t),
 \end{equation}
-where physical magnitudes are implemented; $\gamma(z)$ is an axially dependent hydrodynamic friction depending on how close the particle is to a surface. The diffusion coefficient in an axially dependent friction is writte using the Stokes-Einstein relation,
+where physical magnitudes are implemented; $\gamma(z)$ is an axially dependent hydrodynamic friction depending on how close the particle is to a surface. The diffusion coefficient in an axially dependent friction is written using the Stokes-Einstein relation,
 \begin{equation}
     D(z) = \frac{k_b T}{\gamma(z)}.
 \end{equation}
@@ -199,18 +199,14 @@ where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ i
 
 The software accepts parameters inputted from a generic config file and save results as a \textsc{HDF5} file using the Python library \textsc{h5py}.
 
-\section{Python Simulation Implementation}
-
-\red{Opis software}
-
 \section{Electrostatic Input Parameters}
 
-The deterministic portion of the Langevin equation in the simulations are determined by the electrostatic and grativational forces acting on the particle. In the model of nanoparticles, the grativational forces are negligible, leaving the electrostatic forces as the driving non-spurious drift. A diagram of the simulation geometry is shown in Fig. \ref{fig:langevin_diagram}.
+The deterministic portion of the Langevin equation in the simulations are determined by the electrostatic and gravitational forces acting on the particle. In the model of nanoparticles, the gravitational forces are negligible, leaving the electrostatic forces as the driving non-spurious drift. A diagram of the simulation geometry is shown in Fig. \ref{fig:langevin_diagram}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/langevin_diagram.pdf}
-    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modelled between two charged parallel plates. }
+    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. }
     \label{fig:langevin_diagram}
 \end{figure}
 %
@@ -221,7 +217,7 @@ The electrostatic forces that drive the dynamic motion are described by the foll
 \begin{equation}
     U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right],
 \end{equation}
-where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measureable quantities. The function is described the by the Grahame model,
+where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Grahame model,
 
 \begin{align}\label{eqn:electrostatic_forces}
     B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
@@ -239,6 +235,79 @@ where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-lay
 %     \end{tabularx}
 % \end{table}
 
+\clearpage
+\section{Python Simulation Implementation}
+
+The Langevin equations are implemented using \textsc{Python}. The \textsc{Python} version used for simulations was $3.13.5$. The libraries \textsc{numpy} version $2.4.6$, \textsc{scipy} version $1.18.0$, and \textsc{numba} version $0.99.0$ were used as the main drivers for the simulations. 
+
+Since \textsc{numba} uses a pre-compiled set of functions, it was more CPU efficient to write a parameter class and a simulator class separately.
+
+The parameters class, $\textsc{Param}$ holds the main parameters of the simulation. These parameters are shown in Tab. \ref{tab:sim_params}
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{0.65\textwidth}{@{}Xll@{}}
+        \toprule
+        \textbf{Quantity} & \textbf{Symbol} & \textbf{Default Value}\\
+        \midrule
+        Particle Radius & $a$ & $50 \times 10^{-9}$ m \\
+        Confinement Length & $L$ & $225 \times 10^{-9}$ m \\
+        Debye Length & $\lambda_D$ & $\SI{10}{\nm}$ \\
+        Electrostatic Amplitude & $B$ & $30$ \\
+        Temperature & $T$ & $300$ K \\
+        Viscosity & $\eta$ & $1.0 \times 10^{-3}$ Pa$\cdot$s \\
+        Particle Permittivity & $\varepsilon_r$ & $80$ \\
+        Particle Density Difference & $\Delta\rho$ & $50$ kg/m$^3$ \\
+        Boltzmann Length & $\ell_B$ & None \\
+        Time Step & $\Delta t$ & None \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Variables stored in the \textsc{Param} class.}
+    \label{tab:sim_params}
+\end{table}
+
+This \textsc{Param} class has functions that calculates the current viscosity and forces based on some input $z$. The list of functions is shown in Tab.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{0.8\textwidth}{@{}Xll@{}}
+        \toprule
+        \textbf{Quantity} & \textbf{Symbol} & \textbf{Input parameters}\\
+        \midrule
+        Transverse Viscosity & $\gamma_x$& $a, L, \eta, z$ \\
+        Axial Viscosity & $\gamma_z$& $a, L, \eta, z$ \\
+        Transverse Diffusion coefficient & $D_x$& $T, \gamma_x$  \\
+        Axial Diffusion coefficient & $D_z$& $T, \gamma_z$ \\
+        Derivative of Axial Diffusion coefficient & $D_z'$ & $T, z, \eta, a$\\
+        Gravitational Force & $F_g$ & $z, a, l_B, \Delta \rho$ \\
+        Electrostatic Force & $F_\mathrm{elec}$ & $B, z, \lambda_D, T$ \\ 
+        \bottomrule
+    \end{tabularx}
+    \caption{Methods of the \textsc{Param} class.}
+    \label{tab:sim_params}
+\end{table}
+
+To iterate the simulation in time, a \textsc{StepTraj} function is written that operates on elements of the \textsc{Params} class. This is done to utilize \textsc{numba}'s pre-compiled library of functions. This function, which is written in a \textsc{numba} JIT decorator, takes in elements from \textsc{Params} class, the current axial position $z$, the number of sub-steps and a \textsc{numpy} randomizer seed for reproducibility. The function loops over the number of sub-steps. 
+
+First, the viscosities, spurious forces, and external force magnitudes are calculated in both the transverse and axial directions. The Euler-Maruyama equation is then calculated and the position of the particle is updated in both axises. The returned parameters are the time array and the axial and transverse positions as indexed by the time array.
+
+The time complexity of this function is $\mathcal{O}(n)$, where $n$ is the number of time steps. The number of simultaneous trajectories, $M$, does not affect time-complexity in applications used in this thesis. The time complexity of the model for one single trajectory of length $\tau$ is measured in Fig. \ref{fig:timecomplex1}. To illustrate this further, the case of two parallel trajectories are computed in Fig. \ref{fig:timecomplex2}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/LangevinTimeComplexity.pdf}
+    \caption{Langevin simulation function \textsc{StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal{O}\left(n^1\right)$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor.}
+    \label{fig:timecomplex1}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Figures/LangevinTimeComplexity_mis2.pdf}
+    \caption{Langevin simulation function \textsc{StepTraj} time complexity. Simulation parameters are set as Fig. \ref{fig:timecomplex1} with two parallel simulations.}
+    \label{fig:timecomplex2}
+\end{figure}
+
+
+\clearpage
 \section{Mean-Squared Displacement in Confinement}
 
 The simulation results provide three-dimensional trajectories of particles. From the trajectories, the mean-squared displacement can be calculated.  The typical output of a simulation is shown in Fig. \ref{fig:brown_realization}. The plot on the left depicts the transverse motion, $X(t)$. The plot on the right depicts the axial motion with respect to the confined walls. The plot in Fig. \ref{fig:brown_realization}.

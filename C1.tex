@@ -1,56 +1,17 @@
-\iffalse
-This section has the framework
-
-1. Theory of the Molecular Dynamics 
-2. Optical Physics and How we get signal (iSCAT)
-3. Biological Applications 
-
-Appendix 1.
-- Basic E and M
-- Charged surface potentials
-- Stern Layers, Poisson Boltzmann ( Very short )
-- Rayleigh Scattering Derivation (?)
-
-Appendix 2
-- Stochastic Processes
-- Stationary solutions to the Smoluchowski Equation (Boltzmann Distribution)
-
-Appendix 3.
-- Fitting Methods used here
-- L-BGFS
-
-Appendix 4.
-- Grid Traversal Algorithm
-- Grid Search Method (?)
-\fi
-
 \chapter{Brownian Motion}
 \label{chap:brownianmotion}
 
 
-% For particles smaller than the diffraction limit, where optical theory is discussed in  \ref{chap:iscatprinciples}, thermal motion can be used as a physical \textit{ruler}. 
-
-
 The physical phenomenon of irregular movements of nanoparticles in liquid is known as Brownian motion. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion is known as \textit{Brownian Motion} and is invertibly related to the size of the particle.
 
-For relatively large particles, the optical microscope is a good tool to observe them. However, for particles smaller the nano-scale, the diffraction limit is a property that must be overcome. This was theoretically described by Abbe \cite{Steck2021,Born1999}.
-
+% For relatively large particles, the optical microscope is a good tool to observe them. However, for particles smaller the nano-scale, the diffraction limit is a property that must be overcome. This was theoretically described by Abbe \cite{Steck2021,Born1999}.
 
 This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
 
 This chapter introduces the mathematics of Brownian motion and diffusion-type processes. Einstein's diffusion- equation argument and Langevin's stochastic equation of motion are discussed and shown to be equivalent through the Fokker-Planck formalism. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility and electrostatic interactions, described by the Debye-Hückel interactions, govern particle-wall interactions in ionic solution. Finally, the subject of equilibrium distributions  are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
 
 
-\iffalse
-- Introduce the concept of Brownian Motion
-- Histroy of brownian Motion
-- applications of simple
-
-- discuss an outlook of what has been done since then
-- outline of this section
-\fi
-
-\section{Classical Description of Einstein's Brownian Motion}
+\section{Einstein's Brownian Motion}
 
 The physical phenomenon of diffusion can be rigorously described as the emergent behavior atomic particle undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion, or more colloquially, a diffusive process \cite{brownXXVIIBriefAccount1828}. 
 
@@ -97,7 +58,7 @@ where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the s
 
 \section{Langevin Dynamics}
 
-In typical experiments, such as Robert Brown's particulates or diffusing lipid-nanoparticles, the observed Brownian particle move within a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \red{REF}.
+In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle move within a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \red{REF}.
 
 This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
@@ -158,20 +119,11 @@ where the diffusive and drift terms are parameterized over the transition probab
 	\end{aligned}
 \end{equation}
 
-In the case of zero drift, the form of this equation equates to the diffusion equation of the Langevin formulation. Thus,  the Einstein-ian and Langevin formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems.
-
-%- Since Langevin is kind of convient, how do we acctualy link the two methods?
-
-% Fokker plank introdution motivated from the master equation
-% - ideally summarize van kampen. 
-
-%- arrive at the general Smoluchowski equation for a random walker
-%- simple plots for descriptive purposes.
-%\fi
+In the case of zero drift, the form of this equation equates to the diffusion equation of the Langevin formulation. Thus,  the Einsteinian and Langevin formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems.
 
 \section{Confined Diffusion Processes}
 
-The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxén derived the relations in no-slip boundary conditions near a brownian particle;
+The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxén derived the relations in no-slip boundary conditions near a brownian particle \cite{Faxen1921,bian111YearsBrownian2016}; 
 \begin{equation}
 	\begin{aligned}
 		\mu_\parallel\left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{16} \left(\frac{a}{h}\right)  + \frac{1}{8} \left(\frac{a}{h}\right)^3 - \frac{45}{256} \left(\frac{a}{h}\right)^4 - \frac{1}{16} \left(\frac{a}{h}\right)^5\right]\\
@@ -265,16 +217,22 @@ Application-wise, the confinement of nanoparticles is directly related to fabric
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/Mesoporous_Silica_Nanoparticle.jpg}
-    \caption{TEM (a, b, and c) images of prepared mesoporous silica nanoparticles with mean outer diameter: (a) $\SI{20}{\nm}$, (b) $\SI{45}{\nm}$, and (c) $\SI{80}{\nm}$. SEM (d) image corresponding to (b). The insets are a high magnification of mesoporous silica particle. Taken from Wikipedia Commons by Nandiyanto.}
-    %cite{MesoporousSilicaNanoparticleJpg}
+    \includegraphics[width=0.6\textwidth]{Figures/Mesoporous_Silica_Nanoparticle.jpg}
+    \caption{TEM (a, b, and c) images of prepared mesoporous silica nanoparticles with mean outer diameter: (a) $\SI{20}{\nm}$, (b) $\SI{45}{\nm}$, and (c) $\SI{80}{\nm}$. SEM (d) image corresponding to (b). The insets are a high magnification of mesoporous silica particle. Taken from Wikipedia Commons \cite{MesoporousSilicaNanoparticleJpg}.}
 \end{figure}
 
-\section{Diffusion in cells}
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/lnp_blebs_cryo2.jpg}
+    \caption{Locating encapsulated mRNA in LNPs by cryo-EM. The effect of thionine on mRNA-LNPs of different morphologies reveals that lipid-dissociated mRNA may reside in bleb compartments (a) or may be more lipid-associated in spherical (b) or less prominently blebbed particles (c). The black arrow in (a) indicates the distinctive mottled mass density of mRNA inside the bleb cavity, which itself is distinguished by a thick, dark periphery. The blue arrow indicates the significant contrast enhancement that occurs when thionine dye is present, thereby identifying mRNA within the bleb. (d) Charge-driven migration of mRNA from the bleb into the body of the LNP. When the mRNA-LNP sample of (a) (no dye) was dialyzed into pH 5 buffer, the images of (d) resulted. The mottled density is now associated with the body of the LNP (green arrow), leaving the bleb cavity devoid of mRNA (white arrow). Addition of thionine to this sample produced no notable contrast change (right), indicating that thionine did not displace lipid. Taken directly from Kloczewiak, 2022\cite{Kloczewiak2022}. Creative Commons license.}
+    \
+\end{figure}
 
-The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
+% \section{Diffusion in cells}
 
-This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an over damped Langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate, the diffusive timescale is must shorter. The Peclet number is proportional to the characteristics length $L$, while the Reynold's number is $L^2$. For small characteristic lengths, such as those proposed, the diffusive term is clearly shorter. 
+% The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
+
+% This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an over damped Langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate, the diffusive timescale is must shorter. The Peclet number is proportional to the characteristics length $L$, while the Reynold's number is $L^2$. For small characteristic lengths, such as those proposed, the diffusive term is clearly shorter. 
 
 \section{Brownian motion as a method for measurements of size in biology}
 
@@ -292,28 +250,40 @@ In compliment to single molecule, there are bulk methods as well. In particular,
 
 The biological molecule of choice for this investigation of confinement is a useful one with lots of applications - the lipid nanoparticle (LNP).
 
-First, it is necessary to identify with the liposome. The liposome, as a macroscopic object, is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single submit is on the level of angstroms, however, the final liposome can be between $\SI{1}{\nano \meter}-\SI{10}{\micro \meter}$. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model. 
+The liposome is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single sub-unit is around $\SI{19}{\angstrom}$ \cite{vanmeerMembraneLipidsWhere2008, singh_particle_2019}. Liposomes, however, are found to be between $\SI{20}{\nm}-\SI{3000}{\nm}$ \cite{zhang_lipid_2021}. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model \cite{bangham_diffusion_1965}. 
 
-In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo. These have applications in drug delivery and have been using in the Sars-Covid vaccine in 2020. These molecules are very useful and thus it is important to know how to improve them. 
+In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo \cite{Cullis2018, Pardi2018}.  
+These have applications in drug delivery and have been using in the SARS-Covid vaccine in 2020 \cite{Verbeke2021,Polack2020,Baden2020, hou_lipid_2021}. These molecules are very useful and thus it is important to know how to improve them. 
 
-Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties. 
-
-\section{LNP topology types}
-
-One recent investigation of LNP research is within the functional differences based on the LNP topology type. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in the figure below.
-
-\begin{figure}
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=\linewidth]{Figures/LNP_types.png}
-    \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core.}
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{Figures/lipid_library.pdf}
+    \end{subfigure}
+    \hspace{1cm}
+    \begin{subfigure}[b]{0.35\textwidth}
+        \includegraphics[width=\textwidth]{Python/Figures/mRNA_LNP_NIST.pdf}
+    \end{subfigure}
+    
+    \caption{Lipid nanoparticle diagram and CRYO-EM image. CRYO-EM image obtained from the NIST Segmentation of Lipid Nanoparticles dataset (https://data.nist.gov/od/id/mds2-2753) \cite{NIST2023}. Shown are KC2 LNPs at pH 7, with RNA taken at $\SI{0.223}{\nm}$ per pixel.}
+    \label{fig:LNPDiagram}
+\end{figure}
+
+One recent investigation of LNP research is within the functional differences based on the LNP topology type \cite{Simonsen2024, Kloczewiak2022}. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in Fig. \ref{fig:LNP_types}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Figures/bleb_perspective.png}
+    \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core. Taken from Fig. 2 of Simonsen, 2024 \cite{Simonsen2024}. Creative Commons license.}
     \label{fig:LNP_types}
 \end{figure}
 
+Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays \cite{Ye2022, Roces2022}. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties \cite{kamanzi_single-particle_2026,kamanziSimultaneousSingleParticleMeasurements2021, graves_direct_2026, kamanzi_simultaneous_2021}. CLiC utilizes the confinement of particles to observe their untethered, random motion \cite{berardPrecisionPlatformConvex2013}. 
 
 \chapter{Interferometric Scattering Principles}
 \label{chap:iscatprinciples}
 
-To precisely determine the size of nanoscale particles,it is essential to obtain long and procise positional trajectories. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy (iSCAT) \cite{taylor_interferometric_2018}. 
+To precisely determine the size of nanoscale particles,it is essential to obtain long and precise positional trajectories. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy (iSCAT) \cite{taylor_interferometric_2018}. 
 
 iSCAT is a relatively modern optical imaging technique that utilizes light scattering contrast to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images the relative axial distance can be measured. Thus, the 3D positional information is encoded in the scattering pattern in iSCAT. 
 
@@ -367,7 +337,7 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 
 \section{Electromagnetic Scattering of of Homogenous Spheres}
 
-In iSCAT, the light collected at the camera is originated from light scattering off of sphere-like particles and mapped directly to axial position. To simplify the mathematics and obtain positional information from such scattering fields, the scattering dynamics can be modelled as spheres. 
+In iSCAT, the light collected at the camera is originated from light scattering off of sphere-like particles and mapped directly to axial position. To simplify the mathematics and obtain positional information from such scattering fields, the scattering dynamics can be modeled as spheres. 
 
 The optical theory of light will obey the Maxwell's equations, which motivates solutions to obey the wave equation for the electric and magnetic Fields
 \begin{equation}
@@ -388,7 +358,7 @@ Let $\psi$ be a solution to the scalar wave equation,
         R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\}. \\
     \end{aligned}
 \end{equation}
-Here, the symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively, found in Eqns 4.17 to 4.20 in Bohren \cite{bohren1983absorption}.  
+Here, the symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the hHnkel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively, found in Eqns 4.17 to 4.20 in Bohren \cite{bohren1983absorption}.  
 \begin{equation}
     \begin{aligned}
         \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}), \\
@@ -441,7 +411,7 @@ can be written in the Rayleigh approximation in the form of the full scattering 
     \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}.
 \end{equation}
 
-After subtituting the terms for $n=1$, there is a neat simplification,
+After substituting the terms for $n=1$, there is a neat simplification,
 
 \begin{equation}
     \begin{aligned}
@@ -451,7 +421,7 @@ After subtituting the terms for $n=1$, there is a neat simplification,
 \end{equation}
 
 Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, one finds the final scattering field of spheres on the order of the length of the wavelength of the incident light,
-\begin{equation}
+\begin{equation}\label{eqn:rayleigh_scat}
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}.
 \end{equation}
 \iffalse
@@ -517,7 +487,30 @@ To accurately measure the positions, define the contrast metric. This metric rel
     \end{aligned} 
 \end{equation}
 
-The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Gouy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the de-focus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michelson-interferometer type system. 
+The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Guoy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the de-focus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michelson-interferometer type system. 
+
+\section{3-D Position Information from Optical Signal}
+
+to obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
+
+The interferometric point spread function is defined as the contrast metric of the scattering off of a sub diffraction sized particle. 
+\begin{equation}
+    \mathrm{iPSF} \equiv \frac{2E_r E_s \cos\phi_d}{E_r^2}
+\end{equation}
+
+the Rayleigh scattering pattern has several parameters that have a degenerate effect on the iPSF \cite{dewitPreciseCharacterizationNanometerscale2023}. To avoid such problems in the fitting, the parameterization developed in \cite{dewitPreciseCharacterizationNanometerscale2023} is used. This parameterization redefines the height and phase.
+\begin{align}
+    z'_p &= z_p - z_f\\
+    \phi_0 &= -\phi_\mathrm{ref} + 2n_m k z_f + \arg(\alpha)\\
+    E_0 &= \frac{E_i 4\sqrt{2}\pi^3|\alpha|}{E_r (\lambda/n_m)^3}
+\end{align}
+
+This re-parameterization has shown good agreement to more complex models as demonstrated in \cite{dewitPreciseCharacterizationNanometerscale2023}. The final model is presented as the following equation:
+\begin{equation}
+    \mathrm{iPSF} = 2 E_0 \frac{1}{n_m k r_p}\sqrt{1 + \left(z'_p/r_p\right)^2} \cos \left[-\left(\phi_0 + n_m k z'_p + n_m k r_p\right)\right]
+\end{equation}
+
+This function allows one to obtain the $z$ position of a particle with respect to the objective from image data.
 
 \section{Resolution limits of optical microscopy}
 

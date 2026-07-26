@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  24 JUL 2026 13:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  25 JUL 2026 18:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -899,7 +899,11 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 65.
 \@quotelevel=\count496
 \@quotereset=\count497
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `tab:sim_params' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1064,124 +1068,152 @@ Chapter 1.
 <Figures/size-comp.png, id=41, 2007.5pt x 800.9925pt>
 File: Figures/size-comp.png Graphic file (type png)
 <use Figures/size-comp.png>
-Package pdftex.def Info: Figures/size-comp.png  used on input line 22.
+Package pdftex.def Info: Figures/size-comp.png  used on input line 12.
 (pdftex.def)             Requested size: 489.10287pt x 195.15099pt.
 
 
-[8
+[1
 
 ]
 
-[9 <./Figures/size-comp.png>]) (./C1.tex
+[2 <./Figures/size-comp.png>]) (./C1.tex
 
-[10{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Chapter 2.
+
+
+[4
+
+]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9]
+
+[10]
+Chapter 3.
+<Figures/Mesoporous_Silica_Nanoparticle.jpg, id=82, 557.08125pt x 494.59781pt>
+File: Figures/Mesoporous_Silica_Nanoparticle.jpg Graphic file (type jpg)
+<use Figures/Mesoporous_Silica_Nanoparticle.jpg>
+Package pdftex.def Info: Figures/Mesoporous_Silica_Nanoparticle.jpg  used on input line 220.
+(pdftex.def)             Requested size: 293.4647pt x 260.55072pt.
+<Figures/lnp_blebs_cryo2.jpg, id=83, 106.38144pt x 59.11687pt>
+File: Figures/lnp_blebs_cryo2.jpg Graphic file (type jpg)
+<use Figures/lnp_blebs_cryo2.jpg>
+Package pdftex.def Info: Figures/lnp_blebs_cryo2.jpg  used on input line 226.
+(pdftex.def)             Requested size: 489.10287pt x 271.81276pt.
 
 
 [11
 
 ]
 
-[12]
+Package siunitx Warning: Unit macro \angstrom has been deprecated in this
+(siunitx)                release.
+(siunitx)                
+(siunitx)                The BIPM have removed this unit from the SI Brochure.
+(siunitx)                You should define it yourself using \DeclareSIUnit in
+(siunitx)                your source. The current definition is
+(siunitx)                
+(siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
 
-[13]
-Overfull \vbox (1.03703pt too high) has occurred while \output is active []
+<Figures/lipid_library.pdf, id=88, 1331.97626pt x 800.9925pt>
+File: Figures/lipid_library.pdf Graphic file (type pdf)
+<use Figures/lipid_library.pdf>
+Package pdftex.def Info: Figures/lipid_library.pdf  used on input line 261.
+(pdftex.def)             Requested size: 220.09479pt x 132.3536pt.
+<Python/Figures/mRNA_LNP_NIST.pdf, id=89, 213.81982pt x 190.86507pt>
+File: Python/Figures/mRNA_LNP_NIST.pdf Graphic file (type pdf)
+<use Python/Figures/mRNA_LNP_NIST.pdf>
+Package pdftex.def Info: Python/Figures/mRNA_LNP_NIST.pdf  used on input line 265.
+(pdftex.def)             Requested size: 171.18898pt x 152.81458pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[14]
+[12 <./Figures/Mesoporous_Silica_Nanoparticle.jpg>]
 
-[15]
+[13 <./Figures/lnp_blebs_cryo2.jpg>]
+<Figures/bleb_perspective.png, id=96, 560.0925pt x 202.7575pt>
+File: Figures/bleb_perspective.png Graphic file (type png)
+<use Figures/bleb_perspective.png>
+Package pdftex.def Info: Figures/bleb_perspective.png  used on input line 276.
+(pdftex.def)             Requested size: 440.18959pt x 159.3599pt.
+
+
+[14 <./Figures/lipid_library.pdf> <./Python/Figures/mRNA_LNP_NIST.pdf> <./Figures/bleb_perspective.png>]
+Chapter 4.
+
+
+[15
+
+]
 
 [16]
 
 [17]
-Chapter 3.
-<Figures/Mesoporous_Silica_Nanoparticle.jpg, id=82, 557.08125pt x 494.59781pt>
-File: Figures/Mesoporous_Silica_Nanoparticle.jpg Graphic file (type jpg)
-<use Figures/Mesoporous_Silica_Nanoparticle.jpg>
-Package pdftex.def Info: Figures/Mesoporous_Silica_Nanoparticle.jpg  used on input line 268.
-(pdftex.def)             Requested size: 489.10287pt x 434.2512pt.
 
+[18]
 
-[18
-
-]
-
-[19 <./Figures/Mesoporous_Silica_Nanoparticle.jpg>]
+[19]
 
 [20]
-<Figures/LNP_types.png, id=93, 743.77875pt x 310.91156pt>
-File: Figures/LNP_types.png Graphic file (type png)
-<use Figures/LNP_types.png>
-Package pdftex.def Info: Figures/LNP_types.png  used on input line 307.
-(pdftex.def)             Requested size: 489.10287pt x 204.45741pt.
 
-
-[21 <./Figures/LNP_types.png>]
-Chapter 4.
-
-
-[22
-
-]
-
-[23]
-
-[24]
-
-[25]
-
-[26]
-
-[27]
-<Figures/imaging_diagram_simple.png, id=121, 327.2225pt x 156.585pt>
+[21]
+<Figures/imaging_diagram_simple.png, id=143, 327.2225pt x 156.585pt>
 File: Figures/imaging_diagram_simple.png Graphic file (type png)
 <use Figures/imaging_diagram_simple.png>
-Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 570.
+Package pdftex.def Info: Figures/imaging_diagram_simple.png  used on input line 563.
 (pdftex.def)             Requested size: 220.09479pt x 105.32236pt.
-<Figures/imaging_diagram.pdf, id=122, 208.78pt x 161.60374pt>
+<Figures/imaging_diagram.pdf, id=144, 208.78pt x 161.60374pt>
 File: Figures/imaging_diagram.pdf Graphic file (type pdf)
 <use Figures/imaging_diagram.pdf>
-Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 573.
+Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 566.
 (pdftex.def)             Requested size: 220.09479pt x 170.37198pt.
 
 
-[28 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>]) (./C3.tex
+[22 <./Figures/imaging_diagram_simple.png> <./Figures/imaging_diagram.pdf>]) (./C3.tex
 
-[29]
+[23]
 Chapter 5.
 
 
-[30
+[24
 
 ]
-<Figures/schematic.pdf, id=141, 321.38756pt x 190.2634pt>
+<Figures/schematic.pdf, id=163, 321.38756pt x 190.2634pt>
 File: Figures/schematic.pdf Graphic file (type pdf)
 <use Figures/schematic.pdf>
 Package pdftex.def Info: Figures/schematic.pdf  used on input line 14.
 (pdftex.def)             Requested size: 366.82715pt x 217.1696pt.
-<Figures/OpticsImage/isometrix_annotated_1.pdf, id=142, 1445.4pt x 813.0375pt>
+<Figures/OpticsImage/isometrix_annotated_1.pdf, id=164, 1445.4pt x 813.0375pt>
 File: Figures/OpticsImage/isometrix_annotated_1.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/isometrix_annotated_1.pdf>
 Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_1.pdf  used on input line 30.
 (pdftex.def)             Requested size: 440.18959pt x 247.61009pt.
 
 
-[31 <./Figures/schematic.pdf>]
-<Figures/OpticsImage/isometrix_annotated_2.pdf, id=280, 1445.4pt x 813.0375pt>
+[25 <./Figures/schematic.pdf>]
+<Figures/OpticsImage/isometrix_annotated_2.pdf, id=302, 1445.4pt x 813.0375pt>
 File: Figures/OpticsImage/isometrix_annotated_2.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/isometrix_annotated_2.pdf>
 Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_2.pdf  used on input line 37.
 (pdftex.def)             Requested size: 440.18959pt x 247.61009pt.
-<Figures/OpticsImage/laser_driver.pdf, id=281, 670.04515pt x 363.43515pt>
+<Figures/OpticsImage/laser_driver.pdf, id=303, 670.04515pt x 363.43515pt>
 File: Figures/OpticsImage/laser_driver.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/laser_driver.pdf>
 Package pdftex.def Info: Figures/OpticsImage/laser_driver.pdf  used on input line 46.
 (pdftex.def)             Requested size: 317.91388pt x 172.43938pt.
 
 
-[32 <./Figures/OpticsImage/isometrix_annotated_1.pdf> <./Figures/OpticsImage/isometrix_annotated_2.pdf
+[26 <./Figures/OpticsImage/isometrix_annotated_1.pdf> <./Figures/OpticsImage/isometrix_annotated_2.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/OpticsImage/isometrix_annotated_2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
@@ -1190,118 +1222,124 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[33 <./Figures/OpticsImage/laser_driver.pdf>]
+[27 <./Figures/OpticsImage/laser_driver.pdf>]
+
+[28]
+
+[29
+
+]
+
+[30]
+Chapter 6.
+
+
+[31
+
+]
+
+[32]
+<Python/Figures/langevin_diagram.pdf, id=358, 393.47545pt x 362.20767pt>
+File: Python/Figures/langevin_diagram.pdf Graphic file (type pdf)
+<use Python/Figures/langevin_diagram.pdf>
+Package pdftex.def Info: Python/Figures/langevin_diagram.pdf  used on input line 208.
+(pdftex.def)             Requested size: 391.28378pt x 360.195pt.
+
+
+[33 <./Python/Figures/langevin_diagram.pdf>]
 
 [34]
 
 [35
 
 ]
-
-[36]
-Chapter 6.
-
-
-[37
-
-]
-
-[38]
-<Python/Figures/langevin_diagram.pdf, id=335, 393.47545pt x 362.20767pt>
-File: Python/Figures/langevin_diagram.pdf Graphic file (type pdf)
-<use Python/Figures/langevin_diagram.pdf>
-Package pdftex.def Info: Python/Figures/langevin_diagram.pdf  used on input line 212.
-(pdftex.def)             Requested size: 391.28378pt x 360.195pt.
+<Figures/LangevinTimeComplexity.pdf, id=399, 440.98578pt x 219.45464pt>
+File: Figures/LangevinTimeComplexity.pdf Graphic file (type pdf)
+<use Figures/LangevinTimeComplexity.pdf>
+Package pdftex.def Info: Figures/LangevinTimeComplexity.pdf  used on input line 297.
+(pdftex.def)             Requested size: 366.82715pt x 182.55582pt.
+<Figures/LangevinTimeComplexity_mis2.pdf, id=400, 440.98578pt x 217.36655pt>
+File: Figures/LangevinTimeComplexity_mis2.pdf Graphic file (type pdf)
+<use Figures/LangevinTimeComplexity_mis2.pdf>
+Package pdftex.def Info: Figures/LangevinTimeComplexity_mis2.pdf  used on input line 304.
+(pdftex.def)             Requested size: 366.82715pt x 180.81882pt.
 
 
-[39 <./Python/Figures/langevin_diagram.pdf>]
-<Python/Figures/realization.pdf, id=372, 565.83313pt x 255.1245pt>
+[36 <./Figures/LangevinTimeComplexity.pdf> <./Figures/LangevinTimeComplexity_mis2.pdf>]
+<Python/Figures/realization.pdf, id=446, 565.83313pt x 255.1245pt>
 File: Python/Figures/realization.pdf Graphic file (type pdf)
 <use Python/Figures/realization.pdf>
-Package pdftex.def Info: Python/Figures/realization.pdf  used on input line 249.
+Package pdftex.def Info: Python/Figures/realization.pdf  used on input line 318.
 (pdftex.def)             Requested size: 489.10287pt x 220.5356pt.
-<Python/Figures/boltzmann.pdf, id=373, 412.94841pt x 274.626pt>
+<Python/Figures/boltzmann.pdf, id=447, 412.94841pt x 274.626pt>
 File: Python/Figures/boltzmann.pdf Graphic file (type pdf)
 <use Python/Figures/boltzmann.pdf>
-Package pdftex.def Info: Python/Figures/boltzmann.pdf  used on input line 254.
+Package pdftex.def Info: Python/Figures/boltzmann.pdf  used on input line 323.
 (pdftex.def)             Requested size: 342.37051pt x 227.69228pt.
 
-Overfull \hbox (107.72116pt too wide) in paragraph at lines 253--256
+Overfull \hbox (107.72116pt too wide) in paragraph at lines 322--325
 [] []
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Python/Figures/xz_msd_comparison.pdf, id=374, 497.94029pt x 224.037pt>
+[37
+
+ <./Python/Figures/realization.pdf> <./Python/Figures/boltzmann.pdf>]
+<Python/Figures/xz_msd_comparison.pdf, id=473, 497.94029pt x 224.037pt>
 File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
 <use Python/Figures/xz_msd_comparison.pdf>
-Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 270.
+Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 339.
 (pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-
-[40]
-
-[41 <./Python/Figures/realization.pdf> <./Python/Figures/boltzmann.pdf>]
-<Python/Figures/conf_debyelength.pdf, id=405, 497.94029pt x 224.037pt>
+[38 <./Python/Figures/xz_msd_comparison.pdf>]
+<Python/Figures/conf_debyelength.pdf, id=493, 497.94029pt x 224.037pt>
 File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
 <use Python/Figures/conf_debyelength.pdf>
-Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 293.
+Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 362.
 (pdftex.def)             Requested size: 489.10287pt x 220.06068pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[42 <./Python/Figures/xz_msd_comparison.pdf>]
-<Python/Figures/diff_debye.pdf, id=430, 439.63855pt x 217.36655pt>
+[39 <./Python/Figures/conf_debyelength.pdf>]
+<Python/Figures/diff_debye.pdf, id=516, 439.63855pt x 217.36655pt>
 File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
 <use Python/Figures/diff_debye.pdf>
-Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 310.
+Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 379.
 (pdftex.def)             Requested size: 489.10287pt x 241.82698pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Python/Figures/conf_zeta_debye.png, id=431, 572.01704pt x 223.91655pt>
+<Python/Figures/conf_zeta_debye.png, id=517, 572.01704pt x 223.91655pt>
 File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
 <use Python/Figures/conf_zeta_debye.png>
-Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 324.
+Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 393.
 (pdftex.def)             Requested size: 489.10287pt x 191.4643pt.
 
 
-[43 <./Python/Figures/conf_debyelength.pdf>]
+[40 <./Python/Figures/diff_debye.pdf>]
 
-[44 <./Python/Figures/diff_debye.pdf>]
-<Python/Figures/B_estimation_hist.pdf, id=472, 433.5274pt x 217.9221pt>
+[41 <./Python/Figures/conf_zeta_debye.png>]
+<Python/Figures/B_estimation_hist.pdf, id=540, 433.5274pt x 217.9221pt>
 File: Python/Figures/B_estimation_hist.pdf Graphic file (type pdf)
 <use Python/Figures/B_estimation_hist.pdf>
-Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 361.
+Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 430.
 (pdftex.def)             Requested size: 489.10287pt x 245.87003pt.
 
 
-[45 <./Python/Figures/conf_zeta_debye.png>]
-
-[46 <./Python/Figures/B_estimation_hist.pdf>]
+[42 <./Python/Figures/B_estimation_hist.pdf>]
 Chapter 7.
 
 
-[47
+[43
 
 ]
-<Python/Figures/NormalizationPipeline.pdf, id=500, 455.30101pt x 212.52344pt>
+<Python/Figures/NormalizationPipeline.pdf, id=563, 455.30101pt x 212.52344pt>
 File: Python/Figures/NormalizationPipeline.pdf Graphic file (type pdf)
 <use Python/Figures/NormalizationPipeline.pdf>
-Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 418.
+Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 487.
 (pdftex.def)             Requested size: 391.28378pt x 182.64659pt.
-<Python/Figures/NormalizationPipelineThird.pdf, id=501, 231.26399pt x 231.61751pt>
+<Python/Figures/NormalizationPipelineThird.pdf, id=564, 231.26399pt x 231.61751pt>
 File: Python/Figures/NormalizationPipelineThird.pdf Graphic file (type pdf)
 <use Python/Figures/NormalizationPipelineThird.pdf>
-Package pdftex.def Info: Python/Figures/NormalizationPipelineThird.pdf  used on input line 425.
+Package pdftex.def Info: Python/Figures/NormalizationPipelineThird.pdf  used on input line 494.
 (pdftex.def)             Requested size: 244.55144pt x 244.9373pt.
 
 
@@ -1309,154 +1347,171 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[48]
+[44]
 
-[49 <./Python/Figures/NormalizationPipeline.pdf> <./Python/Figures/NormalizationPipelineThird.pdf>]
-<Python/Figures/Raw2RVT.pdf, id=537, 305.78642pt x 161.27858pt>
+[45 <./Python/Figures/NormalizationPipeline.pdf> <./Python/Figures/NormalizationPipelineThird.pdf>]
+<Python/Figures/Raw2RVT.pdf, id=599, 305.78642pt x 161.27858pt>
 File: Python/Figures/Raw2RVT.pdf Graphic file (type pdf)
 <use Python/Figures/Raw2RVT.pdf>
-Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 457.
+Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 526.
 (pdftex.def)             Requested size: 489.10287pt x 257.9673pt.
 
 
-[50 <./Python/Figures/Raw2RVT.pdf>]
-<Python/Figures/RadialSymExample.pdf, id=555, 372.44862pt x 242.22061pt>
+[46 <./Python/Figures/Raw2RVT.pdf>]
+<Python/Figures/RadialSymExample.pdf, id=617, 372.44862pt x 242.22061pt>
 File: Python/Figures/RadialSymExample.pdf Graphic file (type pdf)
 <use Python/Figures/RadialSymExample.pdf>
-Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 474.
+Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 543.
 (pdftex.def)             Requested size: 391.28378pt x 254.47588pt.
 
 
-[51 <./Python/Figures/RadialSymExample.pdf>]
-<Python/Figures/AngularInt.pdf, id=565, 346.89601pt x 202.356pt>
+[47 <./Python/Figures/RadialSymExample.pdf>]
+<Python/Figures/AngularInt.pdf, id=629, 346.89601pt x 202.356pt>
 File: Python/Figures/AngularInt.pdf Graphic file (type pdf)
 <use Python/Figures/AngularInt.pdf>
-Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 497.
+Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 566.
 (pdftex.def)             Requested size: 489.10287pt x 285.32507pt.
 
 
-[52 <./Python/Figures/AngularInt.pdf>]
+[48 <./Python/Figures/AngularInt.pdf>]
 
-[53]
-<Python/Figures/viterbi_toy.pdf, id=590, 419.166pt x 274.626pt>
+[49]
+<Python/Figures/viterbi_toy.pdf, id=654, 419.166pt x 274.626pt>
 File: Python/Figures/viterbi_toy.pdf Graphic file (type pdf)
 <use Python/Figures/viterbi_toy.pdf>
-Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 552.
+Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 621.
 (pdftex.def)             Requested size: 391.28378pt x 256.36333pt.
 
 
-[54 <./Python/Figures/viterbi_toy.pdf>]
-<Python/Figures/sim_ipsf.pdf, id=623, 687.70567pt x 246.92203pt>
+[50 <./Python/Figures/viterbi_toy.pdf>]
+<Python/Figures/sim_ipsf.pdf, id=686, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 627.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 696.
 (pdftex.def)             Requested size: 489.10287pt x 175.61728pt.
 
 
-[55 <./Python/Figures/sim_ipsf.pdf>]
-<Python/Figures/nuisance_param.pdf, id=657, 563.70598pt x 274.626pt>
+[51 <./Python/Figures/sim_ipsf.pdf>]
+<Python/Figures/nuisance_param.pdf, id=719, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 648.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 717.
 (pdftex.def)             Requested size: 489.10287pt x 238.28574pt.
-<Python/Figures/simulation_fit_residual.pdf, id=658, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=720, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 659.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 728.
 (pdftex.def)             Requested size: 489.10287pt x 287.67026pt.
 ) (./C2.tex
 
-[56 <./Python/Figures/nuisance_param.pdf>]
+[52 <./Python/Figures/nuisance_param.pdf>]
 
-[57 <./Python/Figures/simulation_fit_residual.pdf>]
+[53 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 8.
 
-Underfull \hbox (badness 10000) in alignment at lines 37--37
+Underfull \hbox (badness 10000) in alignment at lines 39--39
 [][][]
  []
 
 
 
-[58
+[54
 
 ]
 File: Figures/schematic.pdf Graphic file (type pdf)
 <use Figures/schematic.pdf>
-Package pdftex.def Info: Figures/schematic.pdf  used on input line 55.
+Package pdftex.def Info: Figures/schematic.pdf  used on input line 57.
 (pdftex.def)             Requested size: 489.10287pt x 289.56044pt.
 
 
-[59
+[55
 
 ]
-<Figures/Chapter7/CLiC_figure.png, id=700, 682.80093pt x 242.40562pt>
+<Figures/Chapter7/CLiC_figure.png, id=763, 682.80093pt x 242.40562pt>
 File: Figures/Chapter7/CLiC_figure.png Graphic file (type png)
 <use Figures/Chapter7/CLiC_figure.png>
-Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 72.
+Package pdftex.def Info: Figures/Chapter7/CLiC_figure.png  used on input line 74.
 (pdftex.def)             Requested size: 489.10287pt x 173.64049pt.
-<Figures/Chapter7/Figure_2_v8.pdf, id=701, 758.79701pt x 160.56116pt>
+<Figures/Chapter7/Figure_2_v8.pdf, id=764, 758.79701pt x 160.56116pt>
 File: Figures/Chapter7/Figure_2_v8.pdf Graphic file (type pdf)
 <use Figures/Chapter7/Figure_2_v8.pdf>
-Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 88.
+Package pdftex.def Info: Figures/Chapter7/Figure_2_v8.pdf  used on input line 90.
 (pdftex.def)             Requested size: 489.10287pt x 103.49376pt.
 
 
-[60 <./Figures/Chapter7/CLiC_figure.png>]
+[56 <./Figures/Chapter7/CLiC_figure.png>]
 
-[61 <./Figures/Chapter7/Figure_2_v8.pdf>]
-<Python/Figures/Chapter7/c7_fig3.pdf, id=758, 419.166pt x 202.35521pt>
+[57 <./Figures/Chapter7/Figure_2_v8.pdf>]
+<Python/Figures/Chapter7/c7_fig3.pdf, id=821, 419.166pt x 202.35521pt>
 File: Python/Figures/Chapter7/c7_fig3.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/c7_fig3.pdf>
-Package pdftex.def Info: Python/Figures/Chapter7/c7_fig3.pdf  used on input line 112.
+Package pdftex.def Info: Python/Figures/Chapter7/c7_fig3.pdf  used on input line 114.
 (pdftex.def)             Requested size: 391.28378pt x 188.89854pt.
 
 
-[62
+[58
 
  <./Python/Figures/Chapter7/c7_fig3.pdf>]
-<Figures/Chapter7/c7_fig4.png, id=772, 900.36375pt x 505.89pt>
+<Figures/Chapter7/c7_fig4.png, id=835, 900.36375pt x 505.89pt>
 File: Figures/Chapter7/c7_fig4.png Graphic file (type png)
 <use Figures/Chapter7/c7_fig4.png>
-Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 139.
+Package pdftex.def Info: Figures/Chapter7/c7_fig4.png  used on input line 141.
 (pdftex.def)             Requested size: 489.10287pt x 274.813pt.
 
 
-[63 <./Figures/Chapter7/c7_fig4.png>]
+[59 <./Figures/Chapter7/c7_fig4.png>]
 
-[64])
+[60])
 
-[65]
+[61]
 Chapter 9.
 (./CONC.tex
 
-[66
+[62
 
 ])
 
-[67]
+[63]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[68
+[64
 
 ]
 
-[69] (./A1.tex
+[65]
+
+[66]
+Overfull \hbox (4.75575pt too wide) in paragraph at lines 184--184
+[]\OT1/cmr/m/n/12 (-20) Zhongyang Ye, Xue-feng Zhuang, Dan Li, et al. ``Char-ac-ter-i-za-tion of lipid-based nanomedicines
+ []
+
+
+
+[67] (./A1.tex
+
+[68]
+Appendix A.
+
+
+[69
+
+]
 
 [70]
-Appendix A.
+Appendix B.
 
 
 [71
 
 ]
 
-[72]
-Appendix B.
+[72
 
+]
 
 [73
 
@@ -1468,40 +1523,36 @@ Appendix B.
 
 [75
 
-]
-
-[76
-
-]
-
-[77
-
 ])
 
-[78
+[76
 
 ] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52354 strings out of 473190
- 1262074 string characters out of 5715801
- 2331365 words of memory out of 5000000
- 74795 multiletter control sequences out of 15000+600000
- 585923 words of font info for 227 fonts, out of 8000000 for 9000
+ 52471 strings out of 473190
+ 1266685 string characters out of 5715801
+ 2332788 words of memory out of 5000000
+ 74898 multiletter control sequences out of 15000+600000
+ 586557 words of font info for 234 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2004b,1530s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (79 pages, 32472793 bytes).
+Output written on main.pdf (84 pages, 35082899 bytes).
 PDF statistics:
- 919 PDF objects out of 1000 (max. 8388607)
- 635 compressed objects within 7 object streams
+ 987 PDF objects out of 1000 (max. 8388607)
+ 688 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
- 56995 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 57020 words of extra memory for PDF output out of 61914 (max. 10000000)
 
