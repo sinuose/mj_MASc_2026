@@ -1,56 +1,43 @@
+\clearpage
 \chapter{Experimental Results}
 \label{chap:expresult}
 
-%What have i actually done in this course of action?
+Using the iSCAT imaging technique and algorithms developed in this thesis, three different investigations were conducted. The effects of electrostatic interaction of nanoparticle diffusion was investigated. The ionic concentration, as discussed in Chap. [5], regulates the particles effective confinement length. The change in confinement length directly effects how size-inferencing is performed. The effects of changing ionic concentration of the size inference from transverse and axial measurements were compared. 
 
-% concentrations (lol)
+The transient behavior and confined mean-squared displacement relations were performed on polystyrene beads. To validate the transient behavior, glycerol was used to effectively slow down the step-length of the particle's motion. Glycerol as the viscosity relation is well defined \cite{cheng_formula_2008}. 
 
-Using iSCAT imaging technique and algorithms developed in this thesis, three different investigations were conducted. 
-
-\red{add new z inference measure}
-
-
-
-%The goal of this work is to investigate and measure the size-diffusivity relationship of single-molecules in a confined environment. The goal of this project was to better understand the biases, variance, and details of size measurements performed by convex-lens induced confinement (CLiC). 
-
-%This study overviews a the dynamics on a model particle, which was chosen as plastic beads. The ionic concentration, as discussed in Chap. [5], is very important in focusing particles into an effective confinement length. This paper tends to evaluate this model experimentally, as the Langevin model, although complete, is not-trivial in fuzzy/applied systems. To show this, the method is applied to 3 species of lipid-nanoparticle sample - liposomal, spherical, and bleb-like topologies.
-
-%During experimental trails, it has been found that these samples tend to stick to negatively charged surfaces, such as negatively charged cover glass, due to Van  Walls forces and electrostatic interactions. Over the last decade, passivization methods were used to alleviate this sticking. This paper aims to measure these interactions to determine the biases on size characterization associated with measuring molecule size in systems with these passivization methods. 
-
-List of Samples
-\begin{enumerate}
-    \item Polystyrene Beads - $\SI{0.1}{\micro \meter}$
-    \begin{enumerate}
-        \item Phosphate Buffer Saline 0.1\% 
-        \item Phosphate Buffer Saline 0.01\%
-        \item Phosphate Buffer Saline 0.001\%
-        \item Phosphate Buffer Saline 0.00001\% - 1 height, 10 videos, 5000 frames each - 61 trajectories
-    \end{enumerate}
-    \item Lipid Nanoparticle - liposomal
-    \item Lipid Nanoparticle - Onpattro - 25mM NaOAc
-    \item Lipid Nanoparticle - Onpattro - 300mM NaOAc
-\end{enumerate}
-
+To apply the theoretical models and statistical tools to a current, applicable biological system, the diffusion of lipid-nanoparticles was conducted within glass flow-cells. The effects of flow-cell poly-ethylene glycol passivation were measured. Size-measurement techniques were compared and contrasted. Transient behavior was measured using glycerol. The list of samples used in this thesis is shown in Tab. \ref{tab:sample_list}
 
 \begin{table}
     \centering
-    \begin{tabularx}{\textwidth}{|l|X|c|}
-        
-    \end{tabularx}
+    List of Samples
+    \begin{enumerate}
+        \item Polystyrene Beads - $\SI{0.1}{\micro \meter}$
+        \begin{enumerate}
+            \item Phosphate Buffer Saline 0.1\% 
+            \item Phosphate Buffer Saline 0.01\%
+            \item Phosphate Buffer Saline 0.001\%
+            \item Phosphate Buffer Saline 0.00001\% - 1 height, 10 videos, 5000 frames each - 61 trajectories
+        \end{enumerate}
+        \item Lipid Nanoparticle - liposomal
+        \item Lipid Nanoparticle - Onpattro - 25mM NaOAc
+        \item Lipid Nanoparticle - Onpattro - 300mM NaOAc
+    \end{enumerate} 
+    \caption{List of samples used in experiments for this thesis.}
+    \label{tab:sample_list}
 \end{table}
-
 
 \clearpage
 \section{Methods}
 \label{sec:methods}
 
-The following section outlines the tools used to collect data for this thesis. 
+The methods used in this study are described. The optics schematic and design of the wide-field microscope is already well described in Chap. \ref{chap:iscatsetup}, however, a brief review is presented. The cover-glass and flow-cell is used. The confinement system, convex-lens induced confinement, is presented and shown. Sample details are built upon and further described.
 
 \subsection{Apparatus schematic}
 
-The schematic of the system is shown in  Fig \ref{fig:schematic} to remind the reader of the system. The optical system used for imaging is an iSCAT microscope. 
+The schematic of the optical system is shown in Fig \ref{fig:schematic} to remind the reader of the system. The optical system used for imaging is a wide-field iSCAT microscope. 
 
-The optical system consisted of a $\SI{405}{\nm}$ excitation laser. The output of the laser was $\SI{240}{\milli \watt}$ pre-spatial filter, with an output of $\SI{120}{\milli \watt}$ post-spatial filter. The objective used was the $100 \times$ oil imaging objective (Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$). The camera used was the (\textcolor{red}{PRODUCT ID}) CMOS camera. Operating software was custom written by (\textcolor{red}{Author}) in LabView. 
+The optical system consisted of a $\SI{405}{\nm}$ excitation laser. The output of the laser was $\SI{240}{\milli \watt}$ before arriving at a spatial filter. The output after the spatial filter was $\SI{120}{\milli \watt}$. The imaging objective used was the $100 \times$ oil imaging objective (Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$). The camera used was the (\textsc{pco.edge 4.2}) sCMOS camera. Operating software was custom written by a lab-member of the Grant lab in the LabView programming language \red{REF}. 
 
 \begin{figure}[t]
 	\centering
@@ -60,9 +47,21 @@ The optical system consisted of a $\SI{405}{\nm}$ excitation laser. The output o
 \end{figure}
 
 
-\subsection{Cover-Glass}
+\subsection{Glass Flow-cell Preparation}
 
-The flow-cell device consisted of two glass substrates (Ted Pella, product no.260372, $145 \pm \SI{15}{\micro \meter}$ thick, $25 \times \SI{25}{\mm}$ cover glass), separated by a 30 um thick double-sided adhesive spacer (Nitto-Denko, product no. 5603). 
+The flow-cell device consisted of two glass substrates (Ted-Pella, product no.260372, $145 \pm \SI{15}{\micro \meter}$ thick, $25 \times \SI{25}{\mm}$ cover glass), separated by a 30 um thick double-sided adhesive spacer (Nitto-Denko, product no. 5603) as shown in Fig. \ref{fig:dia_photo}. The bottom coverslip is blank with no features. The top coverslip contains two $\SI{1}{mm}$ holes at two of the corners for fluidic injection.
+
+The flow-cell is held in place by a metal plate holder and an acrylic chuck. The chuck contains a printed shape which contains fluidic inlets, as well as screw holes that mount overtop the metal chuck. The metal chuck has a groove for the coverslip, as well as tapped holes for the mounted plastic chuck. The flow-cell is assembled using two $\mathrm{M}3$ screws. The assembled system is shown in Fig. \ref{fig:dia_photo}.
+
+\begin{figure}
+    \caption{flow-cell schematic and assembled flow-cell photograph.}
+    \label{fig:dia_photo}
+\end{figure}
+
+Before experimental use, The cover-glass is first cleaned with piranha solution. The solution consisted of a 7:3 sulfuric acid (H2SO4, CAS: 7664-93-9, Thermo Fisher Scientific), hydrogen peroxide (H2O2, CAS: 7722-84-1, Thermo Fisher Scientific) mixture. prior to piranha exposure, the cover-glass was exposed to toluene to rinse off organic compounds. An isopropyl alcohol soak was used to remove excess toluene film. Alternatively, an acetone soak followed by a Hellmanex detergent soak was used in the place of toluene. Before exposure to piranha, the glass was washed with de-ionized water $3\times$, or until the solution was without bubbles from the detergent. The coverglass was soaked in the piranha for 1 hour. For experiments where PEG passivation was not performed, the coverglass was assembled within 12 hours of piranha cleaning and using in imaging.
+
+The passivation technique used in this thesis was the 5 kDa PEG passivation used in \cite{kamanzi_single-particle_2026}. Cover-glass is first piranha cleaned for 1 hour. 
+The cover-glass was etched in 1 M KOH for 30 min at room temperature. The cover-glass was placed into a desicator together with an APTES ((3-aminopropyl)-triethoxysilane, CAS: 919-30-2, ThermoFisher Scientific) solution. The vacuum desiccator was set to 1.5 Torr for 30 min at room temperature. The cover-glass was removed and placed on a hotplate set to $\SI{120}{\degreeCelsius}$. The cover-glass was then exposed to succinimidyl-valerate (SVA) functionalized methoxy-PEG-valeric acid (5K mPEGSVA, Laysan Bio) in a 0.9 M sodium sulfate (Na2SO4, CAS: 7757-82-6, Thermo Fisher Scientific) solution for 30 min. Before imaging, the coverslips were thoroughly rinsed with deionized (DI) water  and dried with high-purity nitrogen gas. Pegylated cover-glass was assembled and stored at $\SI{-80}{\degreeCelsius}$ for up to 2 months. 
 
 \subsection{Convex-lens induced confinement}
 
