@@ -2742,6 +2742,52 @@
       \verb https://link.springer.com/book/10.1007/978-0-387-21736-9
       \endverb
     \endentry
+    \entry{cheng_formula_2008}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=db825a5a357e584a3b0e7297d51c408b}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Nian-Sheng},
+           giveni={N\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{fullhash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{fullhashraw}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{bibnamehash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{authorbibnamehash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{authornamehash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{authorfullhash}{db825a5a357e584a3b0e7297d51c408b}
+      \strng{authorfullhashraw}{db825a5a357e584a3b0e7297d51c408b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0888-5885, 1520-5045}
+      \field{journaltitle}{Industrial \& Engineering Chemistry Research}
+      \field{month}{5}
+      \field{number}{9}
+      \field{title}{Formula for the Viscosity of a Glycerol-Water Mixture}
+      \field{urlday}{27}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{47}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{3285\bibrangedash 3288}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1021/ie071349z
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/ie071349z
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/ie071349z
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

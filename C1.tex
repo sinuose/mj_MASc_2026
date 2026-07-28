@@ -136,6 +136,40 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0] 
 \end{equation}
 
+
+\section{Self-consistent Confinement coefficient}
+
+A consequence of the confined mobility relations presented by Faxén is the diffusion correction, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients.
+\begin{equation}
+    D_0 = \mu_\parallel^{-1} D_\parallel = \mu_\perp^{-1} D_\perp.
+\end{equation}
+The values of the corrections are, however, functions of the particle radius. For the Stokes-Einstein relation and the Faxén mobility corrections to be consistent, the following relation must hold.
+\begin{equation}
+    \frac{k_bT}{6\pi\eta a} = \mu_\parallel^{-1}\left(a, h\right) \hat{D_\parallel} = \mu_\perp^{-1}\left(a, h\right) \hat{D_\perp},
+\end{equation}
+where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known. One useful property of the Faxén functions, as well as the linear-superposition approximations are that they are monotonically decreasing. This is illustrated in Fig. \ref{fig:mob_coef}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{Python/Figures/Mobility_coefficient.pdf}
+    \caption{Linear-superposition mobility curve for linear-superposition and Faxén relations. $h = \SI{225}{\nm}$.}
+    \label{fig:mob_coef}
+\end{figure}
+
+To computationally calculate this relation, the relation equates itself to a simple self-consistency relation:
+\begin{equation}
+    a_* = \arg\min_{a_*}\left|\frac{\hat{a}}{\mu_{\parallel,\perp}} - a_*\right|,
+\end{equation}
+as derived in \ref{app:3}. To demonstrate the self-consistency, the figure of a grid-search over optimal radii is presented in Fig. \ref{fig:diff_self_cons}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Python/Figures/diffusion_self_consistent_example.pdf}
+    \caption{Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI{100}{\nm}$ Polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat{a} = \SI{124.30}{\nm}$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI{64.1}{\nm}$.}
+    \label{fig:diff_self_cons}
+\end{figure}
+
+\clearpage
 \section{Electrostatic Potentials}
 
 A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation

@@ -58,6 +58,27 @@ This is an application of the delta-method as
 \end{equation}
 
 
+\clearpage
+\chapter{Self-Consistent Diffusion Recovery}
+\label{app:3}
+
+The self-consistency relation for confined diffusion assumes that the measured quantity is the confined diffusion in a known height. The measured confined diffusion is self-consistent if the following condition is true,
+\begin{equation}
+    \hat{D_\parallel}(\hat{a}) = \mu_\parallel(a^*,h) D^*_0(a^*).
+\end{equation}
+where $\mu$ is the Faxén mobility coefficient. Rewriting this equation in terms of the radius:
+\begin{align*}
+    \hat{D_\parallel}(\hat{a}) &= \mu_\parallel(a^*,h) D^*_0(a^*), \\
+    \frac{k_b T}{6\pi \eta \hat{a}} &= \mu_\parallel(a^*,h) \frac{k_b T}{6\pi \eta a^*}, \\
+    \frac{1}{\hat{a}} &= \mu_\parallel(a^*,h) \frac{1}{a^*}.
+\end{align*}
+This final relation must be true if $\hat{a} = a^*$. It should be noted here that $\mu$ is a monotonic function. This is shown in Fig. \ref{fig:mob_coef}. The monotonicity of this allows to ensure that a minima exists under mean-squared error. However, since $\mu$ is an infinite series, it is not-analytical. Thus, one can resort to a truncation of terms and a solution via a means of numerical techniques. An example of this is shown in Fig. \ref{fig:diff_self_cons}. This thesis utilizes the Newton-Rhapson method due to its computational availability;
+\begin{equation}
+    a^* = \arg\min_{a^*}\left|\hat{a} \mu_\parallel - a^*\right|.
+\end{equation}
+
+
+\clearpage
 \chapter{Axial Estimation Algorithm Pseudocode}
 
 This section of the appendix lists all detailed algorithms and computational methods presented in the axial-estimation section of this project.
@@ -395,5 +416,4 @@ A \textsc{Python} implementation, written by the author and open-source contribu
 \State \Return $\big\{ k_t \big\}$, \; $\big\{ x_t^{(k_t)} \big\}$, \; $\big\{ y_t^{(k_t)} \big\}$ \quad for $t = 0,\dots,F-1$
 \end{algorithmic}
 \end{algorithm}
-
 

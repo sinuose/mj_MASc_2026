@@ -81,69 +81,102 @@ The samples used in this thesis are listed below. Carboxylate modified polystyre
 
 Lipid-nanoparticles used in this thesis were formulated by the Pieter Cullis lab. The liposomal formulation was used as liposomal (20\% norMC3). The spherical, oil-core LNP, is the Onpattro (50\% norMC3) LNP formulation made with 25 mM NaOAc. The bleb-like LNP is the Onpattro bleb (50\% norMC3) LNP formulation made with 300 mM NaOAc. (Cryo-EM (?)).
 
-\subsection{Analysis Method}
+% \subsection{Analysis Method}
 
-The analysis method is described in detail in prior chapters. The visual pipeline of the method includes the main inputs and outputs. The raw image is converted into a trajectory, which includes sizing information from the MSD. This visual graphic is shown in Fig. \ref{fig:c7_fig2}.
+% The analysis method is described in detail in prior chapters. The visual pipeline of the method includes the main inputs and outputs. The raw image is converted into a trajectory, which includes sizing information from the MSD. This visual graphic is shown in Fig. \ref{fig:c7_fig2}.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/Chapter7/Figure_2_v8.pdf}
-    \caption{method overview.}
-    \label{fig:c7_fig2}
-\end{figure}
+% \begin{figure}[h!]
+%     \centering
+%     \includegraphics[width=\textwidth]{Figures/Chapter7/Figure_2_v8.pdf}
+%     \caption{method overview.}
+%     \label{fig:c7_fig2}
+% \end{figure}
 
 \clearpage
 
-\section{Results}
+\section{Results of iSCAT experiments}
 
 % mission statement
-A series of experiments were conducted to determine the particle size and to validate mathematical framework presented. 
+A series of experiments were conducted to use the mathmatical method presented in the previous section to find the nanoparticle size and compare it to a known value of $100$ nm carboxylate-modified polystyrene beads. Effects of electrostatic interactions were investigated using piranha-cleaned borosilicate glass coverslips and phosphate-buffered saline solution (PBS). The diffusivity profile of transient motion was investgated using glycerol-water solution to modify the viscosity of the media.  A solution of 75\% glycerol with 25\% 1x PBS was used to measure transient-diffusion effects of $\SI{100}{\nm}$ carboxylate-modified polystyrene beads at a frame rate of $\SI{1000}{\fps}$. The effects of confinement on lipid nanoparticles, three formulations of lipid nanoparticle were imaged using iSCAT. To prevent sticking to the glass coverslips, a two-step poly-ethelyene glycol passivation technique was used. 
 
-To investigate effects of varied electrostatic interactions, the electrostatic screening length was varied using three concentrations of phosphate buffered saline solution. The nanoparticle used was $\SI{100}{\nm}$ carboxylate-modified polystyrene beads.  
+\section{Electrostatics Effects on Polystyrene Bead Diffusion in PBS}
+\chaptermark{Elec. Eff. on PS. Bead Diff. in PBS}
 
-To investigate the diffusivity profile of transient motion, the viscosity of the media was increased to obtain high-resolution axial trajectories. A solution of 75\% glycerol with 25\% 1x PBS was used to measure slow-diffusion of $\SI{100}{\nm}$ carboxylate-modified polystyrene beads at a frame rate of $\SI{1000}{\fps}$. 
+The effect of ionic concentration on 100 nm polystyrene beads were performed. The beads were suspended in a series of phosphate-buffered saline (PBS) solutions with varying ionic concentrations. Ten videos were obtained according to the method described in \ref{sec:methods}. The videos are large ($\sim \SI{30}{\gb}$ per video) and are contained in a zip file upon request. 
 
-To investigate the effects of confinement on lipid nanoparticles, three formulations of LNP were imaged using a two-step passivation technique. The three-dimensional position was measured to investigate axial movement in complex media. 
-
-\subsection{Polystyrene PBS series}
-
-The effect of ionic concentration on 100 nm polystyrene beads were performed. The beads were suspended in a series of phosphate-buffered saline (PBS) solutions with varying ionic concentrations. Ten videos were obtained according to the method described in \ref{sec:methods}. The resulting videos allowed to measure the three-dimensional particle position in a confined height of $\SI{220}{\nm}$. The positional probability density of particle motion is  in Fig. \ref{fig:c7_fig3}. 
+For each measurement, $\SI{100}{\nm}$ diameter beads were confined into a $\SI{220}{\nm}$ slit verified using inference fringes. The output from each video was a collection of trajectories. For each concentration, the trajectories were reconstructed in three-dimensional space. The number of particles for each concentration of PBS are listed; $0.1\%, 8$, $0.01\%, 53$, $0.001\%, 13$, $0.00001\%, 62$. To visualize the trajectory density for different ionic concentrations, the trajectories of the diffusion are combined into density plots. 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{Python/Figures/Chapter7/c7_fig3.pdf}
-    \caption{The positional histogram of particle position is plotted for three concentrations of PBS. Violet has a concentration of 0.1\% PBS, green has a concentration of 0.01\% PBS, and blue has a concentration of 0.00001\% PBS. The horizontal axis is the axial ($z$-axis) position of the particle. The vertical axis is the frequency of position measurement.}
+    \includegraphics[width=\textwidth]{Python/Figures/density.pdf}
+    \caption{Spatial density of the average trajectory of particles. }
+    \label{fig:trajectory_ensemble}
+\end{figure}
+
+
+The resulting videos allowed to measure the three-dimensional particle position in a confined height of $\SI{220}{\nm}$. The positional probability density of particle motion is  in Fig. \ref{fig:c7_fig3}. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/Chapter7/c7_fig3.pdf}
+    \caption{Probability density for three different concentrations of PBS. Blue has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the axial ($z$-axis) position of the particle. The vertical axis is the frequency of position measurement.}
     \label{fig:c7_fig3}
 \end{figure}
 
-Trace blue and green have the same distribution. The difference between peaks is normalization artifact. Trace violet does not following the same distribution, but rather is flat. The diffusion in blue and green is screened, where the particle does not explore the full height. In violet the particle does explore the well more. As the concentration of PBS increases, the distribution becomes more uniform, while in the higher concentrations, the particle is focused between the two plates. 
+Trace blue and green have the same distribution. The difference between peaks is normalization artifact. Trace violet does not following the same distribution, but rather is flat. The diffusion in blue and green is screened, where the particle does not explore the full height. In violet the particle does explore the well more. As the concentration of PBS increases, the distribution becomes more uniform, while in the higher concentrations, the particle is focused between the two plates. This experiment agrees with the simulations done as shown in Fig. \ref{fig:brown_realization}. The individual $\mathrm{FWHM}$ of this distribution is plotted compared to the PBS concentration. This is shown in Fig. \ref{fig:FWHM_PBS}. 
 
-This experiment agrees with the simulations done as shown in Fig. \ref{fig:brown_realization}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/FWHM_PBS.pdf}
+    \caption{Relationship FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius.}
+    \label{fig:FWHM_PBS}
+\end{figure}
 
-The videos are large ($\sim \SI{30}{\gb}$ per video) and are contained in a zip file upon request. 
+The sizes recovered from a transverse diffusion MSD method and sizes recovered from the axial traveled distance were recovered and compared. The transverse diffusion measurements were constructed using the MSD of the first 15 points. The confinement coefficient was determined using the self-consistency relation. This is shown in Fig. \ref{fig:radxradz_PBS}.
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/RadxvsRadz_PBS.pdf}
+    \caption{Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations. }
+    \label{fig:radxradz_PBS}
+\end{figure}
 
+\clearpage
+\section{Polystyrene Transient Diffusion}
 
-For each measurement, $\SI{100}{\nm}$ diameter beads were confined into a $\SI{220}{\nm}$ slit verified using inference fringes.
+To investigate if transient diffusion information can be obtained with this method, polystyrene beads were once again used. The beads were suspended in 45\% glycerol and 1x phosphate-buffered saline (PBS) solutions. Ten videos, of length 10000 frames each, were obtained according to the method described in \ref{sec:methods}. The videos are large ($\sim \SI{30}{\gb}$ per video) and are contained in a zip file upon request. 
 
-For each vide
-
-The sizes recovered from a transverse diffusion MSD method and sizes recovered from the axial traveled distance were recovered and compared. 
-
-
-
-\subsection{Polystyrene Transient Diffusion}
-
-For each plot, the theoretical curve predicted by the linear-superposition theory \cite{millanNumericalSimulationsConfined2023} is presented. Measured single-molecule data is presented overtop this. Axial positions are binned into tracks and diffusivity is measured on these tracks. This is plotted for single-molecule data and ensemble averages. These plots are shown in Fig. \ref{fig:c7_fig4}
+The glycerol was adjusted to ensure that the diffusion coefficient was around $10\times$ smaller so that the mean step length was $\sim \SI{10}{\nm}$. This was done using the glycerol-water weight curve. This curve is shown in  Fig. \ref{fig:gly_curve}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{Figures/Chapter7/c7_fig4.png}
-    \caption{Figures Description}
-    \label{fig:c7_fig4}
+    \includegraphics[width=\textwidth]{Python/Figures/glycerol_curve.pdf}
+    \caption{glycerol-water curve. The curve is taken from \cite{cheng_formula_2008}.}
+    \label{fig:gly_curve}
 \end{figure}
 
-\subsection{Lipid nanoparticle Diffusion}
+
+The mean-squared displacement of the transverse and axial motion is plotted in Fig. \ref{fig:gly_msd}. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/glycerol_MSD.pdf}
+    \caption{Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI{50}{\nm}$.}
+    \label{fig:gly_msd}
+\end{figure}
+
+To validate the transient diffusion and to ensure that the model exhibits theoretical relevance, the diffusivity across the channel is compared. For each plot, the theoretical curve predicted by the linear-superposition theory \cite{millanNumericalSimulationsConfined2023} is presented. Measured single-molecule data is presented overtop this. Axial positions are binned into tracks and diffusivity is measured on these tracks. This is plotted for single-molecule data and ensemble averages. These plots are shown in Fig. \ref{fig:c7_fig4}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/glycerol_diffusivity_relation.pdf}
+
+    \caption{Theoretical diffusivity shown in orange. Measured diffusivity measured in blue. }
+    \label{fig:c7_fig4}
+\end{figure}
+ 
+\clearpage
+\section{Lipid nanoparticle Diffusion}
 
 LNP diffusivity is evaluated for various LNP formulations\dots \textcolor{red}{This is a WIP but the data has been taken already}
 
