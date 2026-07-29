@@ -166,6 +166,7 @@ The mean-squared displacement of the transverse and axial motion is plotted in F
 
 To validate the transient diffusion and to ensure that the model exhibits theoretical relevance, the diffusivity across the channel is compared. For each plot, the theoretical curve predicted by the linear-superposition theory \cite{millanNumericalSimulationsConfined2023} is presented. Measured single-molecule data is presented overtop this. Axial positions are binned into tracks and diffusivity is measured on these tracks. This is plotted for single-molecule data and ensemble averages. These plots are shown in Fig. \ref{fig:c7_fig4}
 
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/glycerol_diffusivity_relation.pdf}
@@ -173,7 +174,23 @@ To validate the transient diffusion and to ensure that the model exhibits theore
     \caption{Theoretical diffusivity shown in orange. Measured diffusivity measured in blue. }
     \label{fig:c7_fig4}
 \end{figure}
- 
+
+\clearpage
+\section{Surface Charge Estimation}
+From the particle trajectories and estimated zeta-potential measurements, the charge of the surface walls is estimated by Eqn. \ref{eqn:surface_MLE}. The surface of piranha cleaned glass can thus be investigated. 
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\linewidth]{Python/Figures/surface_charge_estimation_means.pdf}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.49\textwidth}
+        \includegraphics[width=\linewidth]{Python/Figures/surface_charge_estimation_variance.pdf}
+    \end{subfigure}
+    \caption{Surface charge estimation via MLE of $\SI{100}{\nm}$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI{400}{\fps}$. The left plot shows the distribution of charge densitys obtained from the MLE. The right plot shows the distribution of the variances as calculated by the MLE.}
+\end{figure}
+
+
 \clearpage
 \section{LNP Axial Diffusion}
 
@@ -196,7 +213,14 @@ The positional histograms of axial diffusion are measured to understand effectiv
 
 \section{LNP Transient Diffusion}
 
-LNPs were placed in glycerol solution and imaged to obtain the transient diffusion.
+LNPs were placed in glycerol solution and imaged to obtain the transient diffusion. The three samples were images and their ensemble MSD was measured. This is shown in Fig. \ref{lnp_gly_msd}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/LNP_glycerol_MSD.pdf}
+    \caption{Ensemble MSD of LNP. Imaged \red{will be} liposomal, onpattro standard, and bleb-like LNPs.}
+    \label{fig:lnp_gly_msd}
+\end{figure}
 
 
 

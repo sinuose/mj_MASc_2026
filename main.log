@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  28 JUL 2026 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.17)  29 JUL 2026 12:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1346,7 +1346,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Python/Figures/glycerol_diffusivity_relation.pdf, id=882, 434.82402pt x 290.28403pt>
 File: Python/Figures/glycerol_diffusivity_relation.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_diffusivity_relation.pdf>
-Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used on input line 171.
+Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used on input line 172.
 (pdftex.def)             Requested size: 489.10287pt x 326.52443pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1354,39 +1354,62 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [64
 
  <./Python/Figures/glycerol_curve.pdf>] [65 <./Python/Figures/glycerol_MSD.pdf> <./Python/Figures/glycerol_diffusivity_relation.pdf>]
-<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=947, 419.166pt x 274.626pt>
-File: Python/Figures/Chapter7/lnp_pos_hist.pdf Graphic file (type pdf)
-<use Python/Figures/Chapter7/lnp_pos_hist.pdf>
-Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input line 192.
-(pdftex.def)             Requested size: 419.16498pt x 274.62532pt.
+<Python/Figures/surface_charge_estimation_means.pdf, id=947, 265.45885pt x 256.87564pt>
+File: Python/Figures/surface_charge_estimation_means.pdf Graphic file (type pdf)
+<use Python/Figures/surface_charge_estimation_means.pdf>
+Package pdftex.def Info: Python/Figures/surface_charge_estimation_means.pdf  used on input line 185.
+(pdftex.def)             Requested size: 239.66309pt x 231.91498pt.
+<Python/Figures/surface_charge_estimation_variance.pdf, id=948, 265.45885pt x 257.55162pt>
+File: Python/Figures/surface_charge_estimation_variance.pdf Graphic file (type pdf)
+<use Python/Figures/surface_charge_estimation_variance.pdf>
+Package pdftex.def Info: Python/Figures/surface_charge_estimation_variance.pdf  used on input line 188.
+(pdftex.def)             Requested size: 239.66309pt x 232.52527pt.
  [66
 
- <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]) [67]
+ <./Python/Figures/surface_charge_estimation_means.pdf> <./Python/Figures/surface_charge_estimation_variance.pdf>]
+<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=980, 419.166pt x 274.626pt>
+File: Python/Figures/Chapter7/lnp_pos_hist.pdf Graphic file (type pdf)
+<use Python/Figures/Chapter7/lnp_pos_hist.pdf>
+Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input line 209.
+(pdftex.def)             Requested size: 419.16498pt x 274.62532pt.
+
+
+LaTeX Warning: Reference `lnp_gly_msd' on page 67 undefined on input line 216.
+
+<Python/Figures/LNP_glycerol_MSD.pdf, id=981, 419.166pt x 202.356pt>
+File: Python/Figures/LNP_glycerol_MSD.pdf Graphic file (type pdf)
+<use Python/Figures/LNP_glycerol_MSD.pdf>
+Package pdftex.def Info: Python/Figures/LNP_glycerol_MSD.pdf  used on input line 220.
+(pdftex.def)             Requested size: 489.10287pt x 236.12257pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[67
+
+ <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]) [68 <./Python/Figures/LNP_glycerol_MSD.pdf>]
 Chapter 9.
-(CONC.tex [68
+(CONC.tex [69
 
-]) [69] [70
+]) [70] [71
 
-] [71] [72]
+] [72] [73]
 Overfull \hbox (4.75575pt too wide) in paragraph at lines 183--183
 []\OT1/cmr/m/n/12 (-20) Zhongyang Ye, Xue-feng Zhuang, Dan Li, et al. ``Char-ac-ter-i-za-tion of lipid-based nanomedicines
  []
 
-[73] (A1.tex [74]
+[74] (A1.tex [75]
 Appendix A.
-[75
+[76
 
-] [76]
+] [77]
 Appendix B.
-[77
+[78
 
 
 ]
 Appendix C.
-[78
+[79
 
-
-] [79
 
 ] [80
 
@@ -1394,13 +1417,18 @@ Appendix C.
 
 ] [82
 
-]) [83
+] [83
+
+]) [84
 
 ] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1410,17 +1438,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52127 strings out of 467871
- 1285711 string characters out of 5416924
- 2374963 words of memory out of 5000000
- 80178 multiletter control sequences out of 15000+600000
+ 52150 strings out of 467871
+ 1286923 string characters out of 5416924
+ 2374992 words of memory out of 5000000
+ 80201 multiletter control sequences out of 15000+600000
  655632 words of font info for 241 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,2022b,1536s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (91 pages, 38580745 bytes).
+<C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/martinj1/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (92 pages, 38623691 bytes).
 PDF statistics:
- 1105 PDF objects out of 1200 (max. 8388607)
+ 1165 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 57055 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 57070 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -54,13 +54,14 @@
 \contentsline {section}{\numberline {8.2}Results of iSCAT experiments}{60}{}%
 \contentsline {section}{\numberline {8.3}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{60}{}%
 \contentsline {section}{\numberline {8.4}Polystyrene Transient Diffusion}{64}{}%
-\contentsline {section}{\numberline {8.5}LNP Axial Diffusion}{66}{}%
-\contentsline {section}{\numberline {8.6}LNP Transient Diffusion}{66}{}%
-\contentsline {section}{\numberline {8.7}Discussion of Results}{67}{}%
-\contentsline {chapter}{\numberline {9}Conclusion}{68}{}%
-\contentsline {section}{\numberline {9.1}Conclusion}{68}{}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{75}{}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{75}{}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{76}{}%
-\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{77}{}%
-\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{78}{}%
+\contentsline {section}{\numberline {8.5}Surface Charge Estimation}{66}{}%
+\contentsline {section}{\numberline {8.6}LNP Axial Diffusion}{67}{}%
+\contentsline {section}{\numberline {8.7}LNP Transient Diffusion}{67}{}%
+\contentsline {section}{\numberline {8.8}Discussion of Results}{68}{}%
+\contentsline {chapter}{\numberline {9}Conclusion}{69}{}%
+\contentsline {section}{\numberline {9.1}Conclusion}{69}{}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{76}{}%
+\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{76}{}%
+\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{77}{}%
+\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{78}{}%
+\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{79}{}%
