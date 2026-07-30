@@ -4,25 +4,38 @@
 
 Using the iSCAT imaging technique and algorithms developed in this thesis, three different investigations were conducted. The effects of electrostatic interaction of nanoparticle diffusion was investigated. The ionic concentration, as discussed in Chap. [5], regulates the particles effective confinement length. The change in confinement length directly effects how size-inferencing is performed. The effects of changing ionic concentration of the size inference from transverse and axial measurements were compared. 
 
-The transient behavior and confined mean-squared displacement relations were performed on polystyrene beads. To validate the transient behavior, glycerol was used to effectively slow down the step-length of the particle's motion. Glycerol as the viscosity relation is well defined \cite{cheng_formula_2008}. 
+The transient behavior and confined mean-squared displacement relations were performed on polystyrene beads. To validate the transient behavior, glycerol was used to effectively slow down the step-length of the particle's motion. Glycerol was chosen as the viscosity relation is well defined \cite{cheng_formula_2008} and it is an un-interacting bio-molecule. 
 
-To apply the theoretical models and statistical tools to a current, applicable biological system, the diffusion of lipid-nanoparticles was conducted within glass flow-cells. The effects of flow-cell poly-ethylene glycol passivation were measured. Size-measurement techniques were compared and contrasted. Transient behavior was measured using glycerol. The list of samples used in this thesis is shown in Tab. \ref{tab:sample_list}
+To apply the theoretical models and statistical tools to a current, applicable biological system, the diffusion of lipid-nanoparticles was conducted within glass flow-cells. The effects of flow-cell poly-ethylene glycol passivation were measured. Size-measurement techniques were compared and contrasted. Transient behavior was measured using glycerol. The list of samples used, as well as number of video and trajectories were recovered from the data, is shown in Tab. \ref{tab:sample_list}.
+
+% mission statement
+%A series of experiments were conducted to use the mathematical method presented in the previous section to find the nanoparticle size and compare it to a known value of $100$ nm carboxylate-modified polystyrene beads. Effects of electrostatic interactions were investigated using piranha-cleaned borosilicate glass coverslips and phosphate-buffered saline solution (PBS). The diffusivity profile of transient motion was investigated using glycerol-water solution to modify the viscosity of the media.  A solution of 75\% glycerol with 25\% 1x PBS was used to measure transient-diffusion effects of $\SI{100}{\nm}$ carboxylate-modified polystyrene beads at a frame rate of $\SI{1000}{\fps}$. The effects of confinement on lipid nanoparticles, three formulations of lipid nanoparticle were imaged using iSCAT. To prevent sticking to the glass coverslips, a two-step poly-ethylene glycol passivation technique was used. 
 
 \begin{table}
     \centering
-    List of Samples
-    \begin{enumerate}
-        \item Polystyrene Beads - $\SI{0.1}{\micro \meter}$
-        \begin{enumerate}
-            \item Phosphate Buffer Saline 0.1\% 
-            \item Phosphate Buffer Saline 0.01\%
-            \item Phosphate Buffer Saline 0.001\%
-            \item Phosphate Buffer Saline 0.00001\% - 1 height, 10 videos, 5000 frames each - 61 trajectories
-        \end{enumerate}
-        \item Lipid Nanoparticle - liposomal
-        \item Lipid Nanoparticle - Onpattro - 25mM NaOAc
-        \item Lipid Nanoparticle - Onpattro - 300mM NaOAc
-    \end{enumerate} 
+    \begin{tabularx}{\textwidth}{@{}Xlll@{}}
+        \toprule
+        Sample & buffer & $N_\mathrm{vid}$ & $N_\mathrm{traj}$ \\
+        \midrule
+        Polystyrene Beads & PBS 0.1\%  & 10 & 15\\
+        Polystyrene Beads & 45\% Glycerol, PBS 0.1\%  & 10 & 15\\
+         \vspace{2pt}& & \\
+        Polystyrene Beads & PBS 0.01\%  & 10& 62\\
+         \vspace{2pt}& & \\
+        Polystyrene Beads & PBS 0.001\%  & 10 & \\
+         \vspace{2pt}& & \\
+        Polystyrene Beads & PBS 0.00001\%  & 10 & 7\\
+        \vspace{2pt}& & \\
+        LNP - Liposomal & $1\times$ PBS & & \\
+        LNP - Liposomal & 75\% Glycerol, $1\times$ PBS & & \\
+         \vspace{2pt} & & \\
+        LNP - Onpattro - Standard - 25 mM NaOAc & $1\times$ PBS & & \\
+        LNP - Onpattro - Standard - 25 mM NaOAc & 75\% Glycerol, $1\times$ PBS & & \\
+         \vspace{2pt}& & \\
+        LNP - Onpattro - Bleb-like - 300 mM NaOAc & $1\times$ PBS & & \\
+        LNP - Onpattro - Bleb-like - 300 mM NaOAc & 75\% Glycerol, $1\times$ PBS & & \\
+        \bottomrule
+    \end{tabularx}
     \caption{List of samples used in experiments for this thesis.}
     \label{tab:sample_list}
 \end{table}
@@ -71,14 +84,14 @@ The CLiC system was used to achieve nanometer confinement while imaging. This me
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{Figures/clic_very_good.pdf}
-    \caption{Convex-lens induced confinement schematic. Two glass coverslips, seperated by a $\SI{30}{\micro \meter}$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI{50}{\nm}$ pictured for reference.}
+    \caption{Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI{30}{\micro \meter}$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI{50}{\nm}$ pictured for reference.}
     \label{fig:c7_fig1}
 \end{figure}
 
 \subsection{Sample Details}
 The samples used in this thesis are listed below. Carboxylate modified polystyrene beads were purchased from Thermofisher (FluoSpheres\texttrademark carboxylate-modified microspheres, Catalog No. F8799, are $\SI{0.1}{\micro \meter}$ polystyrene beads). Sample consists of $\SI{0.1}{\micro \meter}$ polystyrene beads with $\SI{500}{\micro \meter}$ fluorescent tag attached. The tag is attached as that is what the lab had and has used in prior measurements. The beads were able to be measured in de-ionized water (MilliQ), as well as a concentration series of phosphate-buffered saline. 
 
-Lipid-nanoparticles used in this thesis were formulated by the Pieter Cullis lab. The liposomal formulation was used as liposomal (20\% norMC3). The spherical, oil-core LNP, is the Onpattro (50\% norMC3) LNP formulation made with 25 mM NaOAc. The bleb-like LNP is the Onpattro bleb (50\% norMC3) LNP formulation made with 300 mM NaOAc. (Cryo-EM (?)).
+Lipid-nanoparticles used in this thesis were formulated by the Pieter Cullis lab \red{ref}. The liposomal formulation was used as liposomal (20\% norMC3). The spherical, oil-core LNP, is the Onpattro (50\% norMC3) LNP formulation made with 25 mM NaOAc. The bleb-like LNP is the Onpattro bleb (50\% norMC3) LNP formulation made with 300 mM NaOAc. (Cryo-EM (?)).
 
 % \subsection{Analysis Method}
 
@@ -93,15 +106,44 @@ Lipid-nanoparticles used in this thesis were formulated by the Pieter Cullis lab
 
 \clearpage
 
-\section{Results of iSCAT experiments}
-
-% mission statement
-A series of experiments were conducted to use the mathmatical method presented in the previous section to find the nanoparticle size and compare it to a known value of $100$ nm carboxylate-modified polystyrene beads. Effects of electrostatic interactions were investigated using piranha-cleaned borosilicate glass coverslips and phosphate-buffered saline solution (PBS). The diffusivity profile of transient motion was investgated using glycerol-water solution to modify the viscosity of the media.  A solution of 75\% glycerol with 25\% 1x PBS was used to measure transient-diffusion effects of $\SI{100}{\nm}$ carboxylate-modified polystyrene beads at a frame rate of $\SI{1000}{\fps}$. The effects of confinement on lipid nanoparticles, three formulations of lipid nanoparticle were imaged using iSCAT. To prevent sticking to the glass coverslips, a two-step poly-ethelyene glycol passivation technique was used. 
-
 \section{Electrostatics Effects on Polystyrene Bead Diffusion in PBS}
 \chaptermark{Elec. Eff. on PS. Bead Diff. in PBS}
 
-The effect of ionic concentration on 100 nm polystyrene beads were performed. The beads were suspended in a series of phosphate-buffered saline (PBS) solutions with varying ionic concentrations. Ten videos were obtained according to the method described in \ref{sec:methods}. The videos are large ($\sim \SI{30}{\gb}$ per video) and are contained in a zip file upon request. 
+The effect of ionic concentration on 100 nm polystyrene beads were performed. The beads were suspended in a series of phosphate-buffered saline (PBS) solutions with varying ionic concentrations.
+
+Prior to iSCAT imaging bulk-measurements were acquired using the Malvern DLS \red{ref}. The bulk size and zeta potential was characterized, shown in Fig. \ref{fig:beads_DLS} and Tab. \ref{tab:zeta_beads}.
+
+\begin{figure}[h!]
+    \centering
+    %\includegraphics[width=\textwidth]{path}
+    \caption{This is DLS data for the beads.}
+    \label{fig:beads_DLS}
+\end{figure}
+
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l
+                  S[table-format=-2.3]
+                 S[table-format=1.3]
+                  S[table-format=2.2]
+                  S[table-format=-2.3]
+                  S[table-format=-2.3]}
+    \toprule
+    Sample & {$\bar{\zeta}$ (mV)} & {$s$ (mV)} & {RSD (\%)}
+           & {$\zeta_{\min}$ (mV)} & {$\zeta_{\max}$ (mV)} \\
+    \midrule
+    DLS Standard  -40      & -42.695 & 0.000 &  0.00 & -42.695 & -42.695 \\
+    Polystyrene Beads        & -40.0 & 0.00 &  0.0 & -40 & -40.0 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Electrophoretic zeta-potential statistics from three consecutive measurements per sample.}
+  \label{tab:zeta_beads}
+  
+\end{table}
+
+
+Ten videos were obtained according to the method described in \ref{sec:methods}. The videos are large ($\sim \SI{30}{\gb}$ per video) and are contained in a zip file upon request. 
 
 For each measurement, $\SI{100}{\nm}$ diameter beads were confined into a $\SI{220}{\nm}$ slit verified using inference fringes. The output from each video was a collection of trajectories. For each concentration, the trajectories were reconstructed in three-dimensional space. The number of particles for each concentration of PBS are listed; $0.1\%, 8$, $0.01\%, 53$, $0.001\%, 13$, $0.00001\%, 62$. To visualize the trajectory density for different ionic concentrations, the trajectories of the diffusion are combined into density plots. 
 
@@ -176,7 +218,7 @@ To validate the transient diffusion and to ensure that the model exhibits theore
 \end{figure}
 
 \clearpage
-\section{Surface Charge Estimation}
+\section{Surface Charge Estimation of Charged Glass}
 From the particle trajectories and estimated zeta-potential measurements, the charge of the surface walls is estimated by Eqn. \ref{eqn:surface_MLE}. The surface of piranha cleaned glass can thus be investigated. 
 
 \begin{figure}[h!]
@@ -256,6 +298,38 @@ LNPs were placed in glycerol solution and imaged to obtain the transient diffusi
 \end{figure}
 
 \newpage
-\section{Discussion of Results}
+\chapter{Discussion of Results}
+ 
+\section{Evaluation of z-estimation on experimental data}
 
-The discussion starts here 
+polystyrene data is good, however, there is a lot of sensitivity to the parameters. 
+
+\section{Evaluation of surface charge estimation}
+
+simulations looked good, but it appears as the frame rate is too low for the MLE to work well. Would need to estimate it in some other way.
+
+why does the MLE not work well?
+
+\section{Evaluation of PBS electrostatic exploration}
+
+Looks good, clearly shows that there is a change in exploration as the buffer conditions are changing.
+
+\section{Evaluation of beads data from the axial radius inference and the transverse radius inference}
+
+They are sometimes the same.
+
+\section{Evaluation of beads transient diffusion}
+
+Good resolution, can clearly see the effects of the axial exploration to the trajectories.
+
+\section{Evaluation of LNP electrostatic exploration}
+
+Looks good, clearly shows that there is a change in exploration as the buffer conditions are changing.
+
+\section{Evaluation of LNP data from the axial radius inference and the transverse radius inference}
+
+They are sometimes the same
+
+\section{Evaluation of LNP transient diffusion}
+
+not so good resolution.
