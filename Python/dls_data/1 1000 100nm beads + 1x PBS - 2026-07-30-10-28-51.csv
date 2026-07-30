@@ -1,0 +1,10 @@
+﻿"Sample Name:","Measurement Start Date And time"
+"1:1000 100nm beads + 1x PBS","2026-04-28 12:28:35 PM"
+"1:1000 100nm beads + 1x PBS","2026-04-28 12:30:04 PM"
+"1:1000 100nm beads + 1x PBS","2026-04-28 12:33:19 PM"
+
+"Name","Mean","Standard Deviation","RSD","Minimum","Maximum"
+"Zeta Potential (mV)","-36.863","2.065","5.602","-39.246","-35.612"
+"Conductivity (mS/cm)","15.291","0","0","15.291","15.291"
+"Wall Zeta Potential (mV)","0","0","0","0","0"
+"Quality Factor","1.143","0.174","15.202","1.034","1.343"

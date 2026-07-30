@@ -49,7 +49,7 @@
 \contentsline {section}{\numberline {8.1}Methods}{58}{}%
 \contentsline {subsection}{\numberline {8.1.1}Apparatus schematic}{58}{}%
 \contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{59}{}%
-\contentsline {subsection}{\numberline {8.1.3}Convex-lens induced confinement}{59}{}%
+\contentsline {subsection}{\numberline {8.1.3}Convex-lens induced confinement}{60}{}%
 \contentsline {subsection}{\numberline {8.1.4}Sample Details}{60}{}%
 \contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{61}{}%
 \contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{65}{}%

@@ -223,6 +223,53 @@
       \verb 10.1017/CBO9781139644181
       \endverb
     \endentry
+    \entry{Hou2019MoleculesReview}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7bf432ad38ac9a6d531588c90e7457af}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Shangguo},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6ce17a11f58006dfe1d0572bf8ea2bca}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Courtney},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e00faa47e0c9b298d87d0b405635d4b3}{%
+           family={Welsher},
+           familyi={W\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{fullhash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{fullhashraw}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{bibnamehash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{authorbibnamehash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{authornamehash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{authorfullhash}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \strng{authorfullhashraw}{2ec8f58ea26a2cb59f8f74d48ffcfcd3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Molecules}
+      \field{number}{15}
+      \field{title}{Real-Time 3{D} Single Particle Tracking: Towards Active Feedback Single Molecule Spectroscopy in Live Cells}
+      \field{volume}{24}
+      \field{year}{2019}
+      \field{pages}{2826}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/molecules24152826
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3390/molecules24152826
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3390/molecules24152826
+      \endverb
+    \endentry
     \entry{Sahay2013}{article}{}{}
       \name{author}{14}{}{%
         {{hash=6f055b3d47b4a9966c7e902f6f5c9278}{%
@@ -304,8 +351,8 @@
       \strng{authornamehash}{db1f9b1f23d519ba68d9e6cf9587523b}
       \strng{authorfullhash}{8ef2bfd9153a1b58480f18fd1d9d91aa}
       \strng{authorfullhashraw}{8ef2bfd9153a1b58480f18fd1d9d91aa}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Biotechnology}
@@ -430,8 +477,8 @@
       \strng{authornamehash}{9a137482a1b3b4b116f3f83ccaad889f}
       \strng{authorfullhash}{336d6a1cc29cfe820c2f9f0a6d3a37d4}
       \strng{authorfullhashraw}{336d6a1cc29cfe820c2f9f0a6d3a37d4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Biotechnology}
@@ -476,8 +523,8 @@
       \strng{authornamehash}{19d83dbca406fce9722e4346f211dfb8}
       \strng{authorfullhash}{41055c5e92e52d8ed3e69dd72e1be7f8}
       \strng{authorfullhashraw}{41055c5e92e52d8ed3e69dd72e1be7f8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Biochemical Journal}
@@ -527,8 +574,8 @@
       \strng{authornamehash}{6a4dcadf84f0dc26b30d6dcfbfcc22a3}
       \strng{authorfullhash}{76c85625f21555fcce147f1e82b56b83}
       \strng{authorfullhashraw}{76c85625f21555fcce147f1e82b56b83}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advanced Materials}
@@ -568,8 +615,8 @@
       \strng{authornamehash}{baedebe5781b544fb7866de98e63a852}
       \strng{authorfullhash}{baedebe5781b544fb7866de98e63a852}
       \strng{authorfullhashraw}{baedebe5781b544fb7866de98e63a852}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{arXiv}
@@ -607,8 +654,8 @@
       \strng{authornamehash}{b69a31b579d57c45f87be140aeaa78b2}
       \strng{authorfullhash}{b69a31b579d57c45f87be140aeaa78b2}
       \strng{authorfullhashraw}{b69a31b579d57c45f87be140aeaa78b2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Controlled Release}
@@ -640,8 +687,8 @@
       \strng{authornamehash}{5e20f446d2daa6c87a39214f30e3117d}
       \strng{authorfullhash}{5e20f446d2daa6c87a39214f30e3117d}
       \strng{authorfullhashraw}{5e20f446d2daa6c87a39214f30e3117d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1941-5850, 1941-5869}
@@ -714,8 +761,8 @@
       \strng{translatornamehash}{78119a313fa1951f80ec33944115e93d}
       \strng{translatorfullhash}{78119a313fa1951f80ec33944115e93d}
       \strng{translatorfullhashraw}{78119a313fa1951f80ec33944115e93d}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0486603049}
@@ -751,8 +798,8 @@
       \strng{authornamehash}{6aecb05e3735afbc05e55914b259e045}
       \strng{authorfullhash}{6aecb05e3735afbc05e55914b259e045}
       \strng{authorfullhashraw}{6aecb05e3735afbc05e55914b259e045}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1744-683X, 1744-6848}
@@ -1338,6 +1385,139 @@
       \verb https://pubs.aip.org/pof/article/22/10/103301/900316/Particle-motion-between-parallel-walls
       \endverb
     \endentry
+    \entry{Welsher2025Hydrogels}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7079c72c21415131774625ba1d64f4b0}{%
+           family={Anonymous},
+           familyi={A\bibinitperiod}}}%
+        {{hash=be496fcbf6dfc8e44ac45fccedffe5f5}{%
+           family={{Welsher lab}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{fullhash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{fullhashraw}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{bibnamehash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{authorbibnamehash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{authornamehash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{authorfullhash}{05d61d0e86877e237c1ee9ed7d78e730}
+      \strng{authorfullhashraw}{05d61d0e86877e237c1ee9ed7d78e730}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{bioRxiv}
+      \field{title}{Super-Resolving Particle Diffusion Heterogeneity in Porous Hydrogels via High-Speed {3D} Active-Feedback Single-Particle Tracking Microscopy}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1101/2025.03.13.643103
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/10.1101/2025.03.13.643103
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/10.1101/2025.03.13.643103
+      \endverb
+    \endentry
+    \entry{Caspi2000EnhancedDiffusion}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d20938079c92c303fb5c237eda5e300d}{%
+           family={Caspi},
+           familyi={C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=94cf171fd4545cc662e7de56869f120e}{%
+           family={Granek},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d7068220c56354617a14958977631c67}{%
+           family={Elbaum},
+           familyi={E\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{fullhash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{fullhashraw}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{bibnamehash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{authorbibnamehash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{authornamehash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{authorfullhash}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \strng{authorfullhashraw}{6bfbd66261038c8b3de1a6e7f87d9b0e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review Letters}
+      \field{number}{26}
+      \field{title}{Enhanced Diffusion in Active Intracellular Transport}
+      \field{volume}{85}
+      \field{year}{2000}
+      \field{pages}{5655\bibrangedash 5658}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRevLett.85.5655
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1103/PhysRevLett.85.5655
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1103/PhysRevLett.85.5655
+      \endverb
+    \endentry
+    \entry{Mizuno2007NonequilibriumMechanics}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=058124855612cd27755f819ce293490f}{%
+           family={Mizuno},
+           familyi={M\bibinitperiod},
+           given={Daisuke},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fe43b92419d56af3b57655d9fbb3f363}{%
+           family={Tardin},
+           familyi={T\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a6a0bad5da35625acd91255025d89007}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi F.},
+           giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=376cbd37a50b3cbfe5ace829fca51ee7}{%
+           family={MacKintosh},
+           familyi={M\bibinitperiod},
+           given={F.\bibnamedelimi C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba310248c99daf69107f4e47d7f7a9e0}
+      \strng{fullhash}{d43e114bd0fd4f7ca4a290061f8340c5}
+      \strng{fullhashraw}{d43e114bd0fd4f7ca4a290061f8340c5}
+      \strng{bibnamehash}{ba310248c99daf69107f4e47d7f7a9e0}
+      \strng{authorbibnamehash}{ba310248c99daf69107f4e47d7f7a9e0}
+      \strng{authornamehash}{ba310248c99daf69107f4e47d7f7a9e0}
+      \strng{authorfullhash}{d43e114bd0fd4f7ca4a290061f8340c5}
+      \strng{authorfullhashraw}{d43e114bd0fd4f7ca4a290061f8340c5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{5810}
+      \field{title}{Nonequilibrium Mechanics of Active Cytoskeletal Networks}
+      \field{volume}{315}
+      \field{year}{2007}
+      \field{pages}{370\bibrangedash 373}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1126/science.1134404
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1126/science.1134404
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1126/science.1134404
+      \endverb
+    \endentry
     \entry{pathriaStatisticalMechanics2011}{book}{}{}
       \name{author}{2}{}{%
         {{hash=638a8ce433064bfa79669a531fcda061}{%
@@ -1365,8 +1545,8 @@
       \strng{authornamehash}{448d3ae45af4d3e60f57acfa93c86d8d}
       \strng{authorfullhash}{448d3ae45af4d3e60f57acfa93c86d8d}
       \strng{authorfullhashraw}{448d3ae45af4d3e60f57acfa93c86d8d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd ed}
@@ -1397,8 +1577,8 @@
       \strng{authornamehash}{1636d10c65bdfba786d4bff51e30d9dd}
       \strng{authorfullhash}{1636d10c65bdfba786d4bff51e30d9dd}
       \strng{authorfullhashraw}{1636d10c65bdfba786d4bff51e30d9dd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Einwirkung der {G}efässwände auf den {W}iderstand gegen die {B}ewegung einer kleinen {K}ugel in einer zähen {F}lüssigkeit}
@@ -1670,8 +1850,8 @@
       \strng{authornamehash}{4bd8460ca8e36cc32f54be3b82e2d023}
       \strng{authorfullhash}{4bd8460ca8e36cc32f54be3b82e2d023}
       \strng{authorfullhashraw}{4bd8460ca8e36cc32f54be3b82e2d023}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Liposomes are ubiquitous tools in biomedical applications, such as drug delivery, membrane science and artificial cell. Micro- and nanofabrication techniques have revolutionized the preparation of liposomes on the microscale. State-of-the-art liposomal formation on microfluidic chips and its associated applications are introduced in this review. We attempt to provide a reference for liposomal researchers by comparing various microfluidic techniques for liposomes formation.}
@@ -1730,8 +1910,8 @@
       \strng{authornamehash}{4632e5b33a3154bd355b21654c7f774b}
       \strng{authorfullhash}{4632e5b33a3154bd355b21654c7f774b}
       \strng{authorfullhashraw}{4632e5b33a3154bd355b21654c7f774b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00222836}
@@ -1784,8 +1964,8 @@
       \strng{authornamehash}{61478074c19b6656679d2eaa44528daf}
       \strng{authorfullhash}{61478074c19b6656679d2eaa44528daf}
       \strng{authorfullhashraw}{61478074c19b6656679d2eaa44528daf}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Molecular Therapy}
@@ -1830,8 +2010,8 @@
       \strng{authornamehash}{5157217ae6ae39af0735bfdfe0b3acc4}
       \strng{authorfullhash}{5709bfd7d00dbf2fba3c754d5798607a}
       \strng{authorfullhashraw}{5709bfd7d00dbf2fba3c754d5798607a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Reviews Drug Discovery}
@@ -1873,8 +2053,8 @@
       \strng{authornamehash}{1a4dac264b1269bc817bdeb1ad31a190}
       \strng{authorfullhash}{1a4dac264b1269bc817bdeb1ad31a190}
       \strng{authorfullhashraw}{1a4dac264b1269bc817bdeb1ad31a190}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Current Opinion in Biotechnology}
@@ -1915,8 +2095,8 @@
       \strng{authornamehash}{8863033f9adde9f80448df7e0456191b}
       \strng{authorfullhash}{8863033f9adde9f80448df7e0456191b}
       \strng{authorfullhashraw}{8863033f9adde9f80448df7e0456191b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{New England Journal of Medicine}
@@ -1957,8 +2137,8 @@
       \strng{authornamehash}{d6ac81ee16c89490f701487bcf546fcb}
       \strng{authorfullhash}{d6ac81ee16c89490f701487bcf546fcb}
       \strng{authorfullhashraw}{d6ac81ee16c89490f701487bcf546fcb}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{New England Journal of Medicine}
@@ -2002,8 +2182,8 @@
       \strng{authornamehash}{cf42df7401e16b65263ef062875de89b}
       \strng{authorfullhash}{9e77a12b462548175c1f3b28caa2f39b}
       \strng{authorfullhashraw}{9e77a12b462548175c1f3b28caa2f39b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Messenger {RNA} ({mRNA}) has emerged as a new category of therapeutic agent to prevent and treat various diseases. To function in vivo, {mRNA} requires safe, effective and stable delivery systems that protect the nucleic acid from degradation and that allow cellular uptake and {mRNA} release. Lipid nanoparticles have successfully entered the clinic for the delivery of {mRNA}; in particular, lipid nanoparticle–{mRNA} vaccines are now in clinical use against coronavirus disease 2019 ({COVID}-19), which marks a milestone for {mRNA} therapeutics. In this Review, we discuss the design of lipid nanoparticles for {mRNA} delivery and examine physiological barriers and possible administration routes for lipid nanoparticle–{mRNA} systems. We then consider key points for the clinical translation of lipid nanoparticle–{mRNA} formulations, including good manufacturing practice, stability, storage and safety, and highlight preclinical and clinical studies of lipid nanoparticle–{mRNA} therapeutics for infectious diseases, cancer and genetic disorders. Finally, we give an outlook to future possibilities and remaining challenges for this promising technology.}
@@ -2295,8 +2475,8 @@
       \strng{authorfullhash}{9d58b9650a995aa38b337ad014d19820}
       \strng{authorfullhashraw}{9d58b9650a995aa38b337ad014d19820}
       \field{extraname}{3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nanoparticles are a promising solution for delivery of a wide range of medicines and vaccines. Optimizing their design depends on being able to resolve, understand, and predict biophysical and therapeutic properties, as a function of design parameters. While existing tools have made great progress, gaps in understanding remain because of the inability to make detailed measurements of multiple correlated properties. Typically, an average measurement is made across a heterogeneous population, obscuring potentially important information. In this work, we develop and apply a method for characterizing nanoparticles with single-particle resolution. We use convex lens-induced conﬁnement ({CLiC}) microscopy to isolate and quantify the diﬀusive trajectories and ﬂuorescent intensities of individual nanoparticles trapped in microwells for long times. First, we benchmark detailed measurements of ﬂuorescent polystyrene nanoparticles against prior data to validate our approach. Second, we apply our method to investigate the size and loading properties of lipid nanoparticle ({LNP}) vehicles containing silencing {RNA} ({siRNA}), as a function of lipid formulation, solution {pH}, and drug-loading. By taking a comprehensive look at the correlation between the intensity and size measurements, we gain insights into {LNP} structure and how the {siRNA} is distributed in the {LNP}. Beyond introducing an analytic for size and loading, this work allows for future studies of dynamics with single-particle resolution, such as {LNP} fusion and drug-release kinetics. The prime contribution of this work is to better understand the connections between microscopic and macroscopic properties of drug-delivery vehicles, enabling and accelerating their discovery and development.}
@@ -2371,8 +2551,8 @@
       \strng{authornamehash}{d5b1c4d2c150559748c5a18920837fb6}
       \strng{authorfullhash}{72cd121ff4d12b178be1959f60424947}
       \strng{authorfullhashraw}{72cd121ff4d12b178be1959f60424947}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0034-6748, 1089-7623}
@@ -2420,8 +2600,8 @@
       \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The {Quantum} {Theory} of {Fields}}
