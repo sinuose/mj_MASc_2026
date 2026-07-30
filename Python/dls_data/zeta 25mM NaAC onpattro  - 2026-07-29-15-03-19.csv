@@ -1,0 +1,10 @@
+﻿"Sample Name:","Measurement Start Date And time"
+"25mM NaAC onpattro ","2026-07-09 3:08:50 PM"
+"25mM NaAC onpattro ","2026-07-09 3:13:09 PM"
+"25mM NaAC onpattro ","2026-07-09 3:17:27 PM"
+
+"Name","Mean","Standard Deviation","RSD","Minimum","Maximum"
+"Zeta Potential (mV)","-6.425","0.466","7.253","-6.906","-5.976"
+"Conductivity (mS/cm)","17.949","0","0","17.949","17.949"
+"Wall Zeta Potential (mV)","0","0","0","0","0"
+"Quality Factor","0.765","0.308","40.217","0.446","1.061"

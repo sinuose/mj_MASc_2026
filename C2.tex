@@ -70,8 +70,8 @@ The CLiC system was used to achieve nanometer confinement while imaging. This me
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Figures/Chapter7/CLiC_figure.png}
-    \caption{Figure Caption.}
+    \includegraphics[width=\textwidth]{Figures/clic_very_good.pdf}
+    \caption{Convex-lens induced confinement schematic. Two glass coverslips, seperated by a $\SI{30}{\micro \meter}$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI{50}{\nm}$ pictured for reference.}
     \label{fig:c7_fig1}
 \end{figure}
 
@@ -202,6 +202,39 @@ The investigation of bioparticles was performed on three samples of lipid nanopa
     \item Onpattro bleb (50\% norMC3) LNP formulation made with 300 mM NaOAc
 \end{enumerate}
 
+Before single-molecule imaging, bulk measurements of the size and zeta-potential were conducted. The sizes are shown in Fig. \ref{fig:LNP_DLS}. The zeta measurements are shown in Tab. \ref{tab:zeta}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Python/Figures/DLS_size.pdf}
+    \caption{DLS measurements of LNP}
+    \label{fig:LNP_DLS}
+\end{figure}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{l
+                  S[table-format=-2.3]
+                  S[table-format=1.3]
+                  S[table-format=2.2]
+                  S[table-format=-2.3]
+                  S[table-format=-2.3]}
+    \toprule
+    Sample & {$\bar{\zeta}$ (mV)} & {$s$ (mV)} & {RSD (\%)}
+           & {$\zeta_{\min}$ (mV)} & {$\zeta_{\max}$ (mV)} \\
+    \midrule
+    DLS Standard  -40      & -42.695 & 0.000 &  0.00 & -42.695 & -42.695 \\
+    Liposomal LNP        & -7.739 & 0.089 &  1.153 & -7.816 & -7.642 \\
+    \SI{25}{mM} NaAc Onpattro  & -6.425 & 0.466 &  7.25 & -6.906 & -5.976 \\
+    \SI{300}{mM} NaAc Onpattro & -6.569 & 1.414 &  21.52 & -7.423 & -4.938 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Electrophoretic zeta-potential statistics from three consecutive
+           measurements per sample.}
+  \label{tab:zeta}
+  
+\end{table}
+
 The positional histograms of axial diffusion are measured to understand effective particle diffusion. This is shown in Fig. \ref{fig:lnp_pos_hist}.
 
 \begin{figure}[h!]
@@ -221,8 +254,6 @@ LNPs were placed in glycerol solution and imaged to obtain the transient diffusi
     \caption{Ensemble MSD of LNP. Imaged \red{will be} liposomal, onpattro standard, and bleb-like LNPs.}
     \label{fig:lnp_gly_msd}
 \end{figure}
-
-
 
 \newpage
 \section{Discussion of Results}

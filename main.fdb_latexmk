@@ -1,16 +1,16 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1785352027.3861 -1
-  "main.bcf" 1785352027 115175 b616a2957abcb4d8a40194c45be6bd81 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1785369950.92408 -1
+  "main.bcf" 1785369950 115175 b616a2957abcb4d8a40194c45be6bd81 "pdflatex"
   "references.bib" 1785185859 74083 387535063473236e9fe6abce0f560e5b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1785352022.15343 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1785352027.38697 0
+["pdflatex"] 1785369946.62898 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1785369950.92473 0
   "A1.tex" 1785179085 20839 64427408aa4cc5be73f73f070d3d49a0 ""
   "ABSTRACT.tex" 1785169855 6191 ac33c3a01396f4e6074602510b801da0 ""
   "C1.tex" 1785179493 50122 de4d40534ff8ab4c55cde2e3b1efdf54 ""
-  "C2.tex" 1785352020 18440 a0aefb095d336f7243e3bde976e51d16 ""
+  "C2.tex" 1785369941 19997 d3a7144d8afcb80f8432e0a8cd010b82 ""
   "C3.tex" 1785169855 58934 41cb7a56d7cfc1e8493206829b8f5d6d ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1785176462 318203 ded6def68845cd324d278c83e332d82c ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -268,7 +268,6 @@
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/martinj1/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "CONC.tex" 1785169855 3693 0229a5e5ec0269ed9806b9a04cf9beae ""
-  "Figures/Chapter7/CLiC_figure.png" 1784051726 38002 7881c3dcace0e95b47cbb123050d8ade ""
   "Figures/LangevinTimeComplexity.pdf" 1785169855 51987 788b84925c8c86d94b8880793d50178f ""
   "Figures/LangevinTimeComplexity_mis2.pdf" 1785169855 52070 f56fd31ddedf5e6cdcb317a7fe6c723c ""
   "Figures/Mesoporous_Silica_Nanoparticle.jpg" 1785169855 146139 b16e288ba5605306ee44295337d767e9 ""
@@ -276,6 +275,7 @@
   "Figures/OpticsImage/isometrix_annotated_2.pdf" 1784749491 8377337 05058eab126b5877b099637751f2a582 ""
   "Figures/OpticsImage/laser_driver.pdf" 1784754971 8561761 7e250cdf8f1fbcfe2b866600b861808f ""
   "Figures/bleb_perspective.png" 1785169855 275568 eab0b893bfc35b8077d202c77361b09f ""
+  "Figures/clic_very_good.pdf" 1785369841 17325 96ae3c4e02c9de162f9e0f9676a9977a ""
   "Figures/imaging_diagram.pdf" 1783971561 9457 fb28050d4baaf014ef2bfae6414a1acb ""
   "Figures/imaging_diagram_simple.png" 1783971561 22422 a196a80bc0173d3ecf115acb713bad90 ""
   "Figures/lipid_library.pdf" 1785169855 22003 a978fb8a68220cc234675bf1ee150d65 ""
@@ -286,7 +286,8 @@
   "Python/Figures/AngularInt.pdf" 1784564158 82729 d5eff268cc90fc24663dbcc78828f5d4 ""
   "Python/Figures/B_estimation_hist.pdf" 1783973251 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
   "Python/Figures/Chapter7/c7_fig3.pdf" 1784580751 47840 5710ae1054a5bbf29a71d41fc561de79 ""
-  "Python/Figures/Chapter7/lnp_pos_hist.pdf" 1785279674 39553 208df286cbe89c30e63e2ae8e348c043 ""
+  "Python/Figures/Chapter7/lnp_pos_hist.pdf" 1785363993 43456 f43bd032286f8b931d55aa5dea172355 ""
+  "Python/Figures/DLS_size.pdf" 1785363202 28121 b4b01c36e208d5ed8908a6086aecfe56 ""
   "Python/Figures/FWHM_PBS.pdf" 1785180910 44791 c33c6b1872f9adcbd13fe2be861f4ffc ""
   "Python/Figures/LNP_glycerol_MSD.pdf" 1785351859 90797 4b3331d461a00c61a5c81582e662db9f ""
   "Python/Figures/Mobility_coefficient.pdf" 1785179288 35137 ead6dc4715861c5f24560a67545675d8 ""
@@ -315,11 +316,11 @@
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
   "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1785176780 5446 b3325809562286c816d02f51e1211cc5 ""
-  "main.aux" 1785352027 39710 4e413068cb825c4ef0c2d29e5668c3c6 "pdflatex"
+  "main.aux" 1785369950 40413 a0fb23153f2451c2bf3726c4b9a326b9 "pdflatex"
   "main.bbl" 1785265010 132423 98b7b4abdd1a0761a7b6ddef0fef0969 "biber main"
-  "main.run.xml" 1785352027 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.run.xml" 1785369950 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1785176780 5446 b3325809562286c816d02f51e1211cc5 ""
-  "main.toc" 1785352027 5119 03c652ce65c11b29a7d13ac12e660086 "pdflatex"
+  "main.toc" 1785369950 5119 583e0f714bed50112243e5adf91f13c6 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

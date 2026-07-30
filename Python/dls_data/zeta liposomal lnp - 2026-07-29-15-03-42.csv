@@ -1,0 +1,10 @@
+﻿"Sample Name:","Measurement Start Date And time"
+"liposomal lnp","2026-07-09 2:33:18 PM"
+"liposomal lnp","2026-07-09 2:35:38 PM"
+"liposomal lnp","2026-07-09 2:39:21 PM"
+
+"Name","Mean","Standard Deviation","RSD","Minimum","Maximum"
+"Zeta Potential (mV)","-7.739","0.089","1.153","-7.816","-7.642"
+"Conductivity (mS/cm)","17.558","0","0","17.558","17.558"
+"Wall Zeta Potential (mV)","0","0","0","0","0"
+"Quality Factor","1.018","0.33","32.472","0.693","1.354"
