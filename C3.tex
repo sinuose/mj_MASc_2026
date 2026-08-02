@@ -4,10 +4,39 @@
 
 To observe single nanoparticle diffusion, a microscope system was designed. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. 
 
+The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{@{}Xll@{}}
+        \toprule
+        \textbf{Component} & \textbf{Product ID} & \textbf{Manufacturer} \\
+        \midrule
+        Laser head                          & \textemdash              & \textemdash      \\
+        Mirror                              & BB1-E02P         & Thorlabs  \\
+        \addlinespace[8pt]
+        SF Lens 1 ($f = 40$\,mm)               & AC254-040-A-ML   & Thorlabs  \\
+        SF Pinhole ($20\,\mu$m)                & P20K             & Thorlabs  \\
+        SF Lens 2 ($f = 250$\,mm)              & AC508-250-A-ML   & Thorlabs  \\
+        \addlinespace[8pt]
+        Objective focusing lens             & BB1-E02P         & Thorlabs  \\
+        Polarizing beam splitter            & 05BC15PH.13      & Newport   \\
+        Beam splitter mount                 & 9411             & New Focus \\
+        Quarter-wave plate                  & WPQ10E-405       & Thorlabs  \\
+        $60\times$ oil-immersion objective  & \textemdash             & Nikon     \\
+        \addlinespace[8pt]
+        Tube lens ($f = 40$\,mm)            & AC254-040-A-ML   & Thorlabs  \\
+        sCMOS camera                        & \textsc{pco.edge 4.2}     & Excelitas \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Optical components of the iSCAT microscope.}
+    \label{tab:components}
+\end{table}
+
 \newpage
 \section{Optical System Diagram}
 
-The iSCAT microscope system was designed based on prior work by the Kulkura lab \red{REF}. The iSCAT microscope is a wife-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
+The iSCAT microscope system was designed based on prior work by the Kulkura lab \red{REF}. The iSCAT microscope is a wide-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
 
 \begin{figure}[h!]
     \centering
@@ -52,34 +81,6 @@ Imaging was performed with an oil-immersion objective with magnification factor 
 
 The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise frame-rates. 
 
-The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
-
-\begin{table}[h!]
-    \centering
-    \begin{tabularx}{\textwidth}{@{}Xll@{}}
-        \toprule
-        \textbf{Component} & \textbf{Product ID} & \textbf{Manufacturer} \\
-        \midrule
-        Laser head                          & \textemdash              & \textemdash      \\
-        Mirror                              & BB1-E02P         & Thorlabs  \\
-        \addlinespace[8pt]
-        SF Lens 1 ($f = 40$\,mm)               & AC254-040-A-ML   & Thorlabs  \\
-        SF Pinhole ($20\,\mu$m)                & P20K             & Thorlabs  \\
-        SF Lens 2 ($f = 250$\,mm)              & AC508-250-A-ML   & Thorlabs  \\
-        \addlinespace[8pt]
-        Objective focusing lens             & BB1-E02P         & Thorlabs  \\
-        Polarizing beam splitter            & 05BC15PH.13      & Newport   \\
-        Beam splitter mount                 & 9411             & New Focus \\
-        Quarter-wave plate                  & WPQ10E-405       & Thorlabs  \\
-        $60\times$ oil-immersion objective  & \textemdash             & Nikon     \\
-        \addlinespace[8pt]
-        Tube lens ($f = 40$\,mm)            & AC254-040-A-ML   & Thorlabs  \\
-        sCMOS camera                        & \textsc{pco.edge 4.2}     & Excelitas \\
-        \bottomrule
-    \end{tabularx}
-    \caption{Optical components of the iSCAT microscope.}
-    \label{tab:components}
-\end{table}
 \clearpage
 \section{System Parameters}
 

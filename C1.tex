@@ -317,17 +317,16 @@ Modern tools to image and characterize the LNP are split into single-molecule te
 \chapter{Interferometric Scattering Principles}
 \label{chap:iscatprinciples}
 
-To precisely determine the size of nanoscale particles,it is essential to obtain long and precise positional trajectories. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy (iSCAT) \cite{taylor_interferometric_2018}. 
+To determine the physical properties of nanoparticles suspended in a fluid media, tracking movement of nanoparticles and reconstructing their spatial trajectories must be performed. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy, iSCAT \cite{taylor_interferometric_2018}. 
 
-iSCAT is a relatively modern optical imaging technique that utilizes light scattering contrast to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images the relative axial distance can be measured. Thus, the 3D positional information is encoded in the scattering pattern in iSCAT. 
-
-The phase information stored in iSCAT images contain relative axial position which is more consistent and reliable relative to other techniques \red{REF}. 
+iSCAT is a relatively modern optical imaging technique that utilizes light scattering contrast to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images, the relative axial distance can be measured. The 3D positional information is encoded in the scattering pattern in iSCAT. 
 
 % We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations.  We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field.  Finally, the electromagnetic theory of scattering off spheres, discussion of general optical scattering microscopy theory, and principle of iSCAT will be discussed.
 
-\section{Light as a casual field}
+\section{Light as a Casual field}
 
-In order to discuss the spatial distribution of light scattering, it is necessary to use a framework to develop the fundamental properties.  On the quantum level, electromagnetic wave field consist of photons \cite{weinberg_quantum_1995}. This fact motivates the use of the theory of electromagnetic waves, in particular Maxwell's equations, to be applied to optical field. The optical field is defined with respect to light intensity, which is defined as the modulus of itself,
+%In order to discuss the spatial distribution of light scattering, it is necessary to use a framework to develop the fundamental properties. 
+On the quantum level, electromagnetic wave fields consist of photons \cite{weinberg_quantum_1995}. This fact motivates the use of the theory of electromagnetic waves, in particular Maxwell's equations, to be applied to optical field. The optical field is defined with respect to light intensity, which is defined as the modulus of itself,
 \begin{equation}
     I = |\vec E(\vec x, t)|^2,
 \end{equation}
@@ -369,21 +368,21 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 - General Scattering Transfer Matrices
 \fi
 
-\section{Electromagnetic Scattering of of Homogenous Spheres}
+\section{Electromagnetic Scattering of Homogenous Spheres}
 
-In iSCAT, the light collected at the camera is originated from light scattering off of sphere-like particles and mapped directly to axial position. To simplify the mathematics and obtain positional information from such scattering fields, the scattering dynamics can be modeled as spheres. 
+When a homogenous particle is subjected to light produced by a monochromatic laser, a diffractive pattern is produced upon scattering. These patterns can be captured by a camera, however, to extract positional information from this pattern, a mathematical model is required to describe it. 
 
-The optical theory of light will obey the Maxwell's equations, which motivates solutions to obey the wave equation for the electric and magnetic Fields
+The optical theory of light will obey the Maxwell's equations, which motivates solutions to obey the wave equation for the electric and magnetic fields
 \begin{equation}
     \nabla^2 \vec E + k^2 \vec E = 0, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E.
 \end{equation}
 
-The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis. For isotropic scattering, radial scattering, the spherical basis has been used in literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
+The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis. For isotropic scattering, radial scattering, the spherical basis has been used in the literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
 
 Let $\psi$ be a solution to the scalar wave equation,
 \begin{equation}
     \nabla^2 \psi + k^2 \psi = 0,
-\end{equation} then the generator of the general solution is taken by sum of components. This the solution  is given by the separable form\cite{jackson_classical_1999},
+\end{equation} then the function generator of the general solution is taken by the sum of the components. This solution is given by the separable form \cite{jackson_classical_1999},
 \begin{equation}
     \begin{aligned}
         \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r), \\
@@ -392,7 +391,7 @@ Let $\psi$ be a solution to the scalar wave equation,
         R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\}. \\
     \end{aligned}
 \end{equation}
-Here, the symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the hHnkel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively, found in Eqns 4.17 to 4.20 in Bohren \cite{bohren1983absorption}.  
+The symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the Hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. This is found in Eqns 4.17 to 4.20 in book written by Bohren \cite{bohren1983absorption},
 \begin{equation}
     \begin{aligned}
         \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}), \\
@@ -400,12 +399,11 @@ Here, the symbols $j_n, y_n$ represent the spherical Bessel functions. Their com
     \end{aligned}
 \end{equation}
 
-A scattering solution will consist of incident and scattering light. Here, Tte incident light can be assumed to be a polarized plane wave along the $x$ axis without loss of generality. The general form of these equation are then the sum of the spherical vector harmonics. When subject to the energy conservation boundary condition,
+A scattering solution will consist of incident and scattering light. The incident light is assumed to be a polarized plane wave along the $x$ axis without loss of generality. The general form of these equations are then the sum of the spherical vector harmonics. When subjected to the energy conservation boundary condition written as
 \begin{equation}
     (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0,
 \end{equation}
-
-Utilizing the orthogonality of the spherical vector harmonics, one arrives are the exact solution known as the Mie Theory form of scattering off of a sphere \cite{bohren1983absorption},
+and the orthogonality of the spherical vector harmonics is utilized, the exact solution can be found. This is known as the Mie Theory form of the scattering of light off of a dielectric sphere \cite{bohren1983absorption},
 
 \begin{equation}\label{eqn:lorenzmie}
     \begin{aligned}
@@ -415,7 +413,7 @@ Utilizing the orthogonality of the spherical vector harmonics, one arrives are t
     \end{aligned}
 \end{equation}
 
-In this thesis, only the scattering field is of importance. The amplitude factors of interest are,
+In this thesis, only the scattering field was taken into consideration. The amplitude factors of interest are,
 \begin{equation}
     \begin{aligned}
         a_n &= \frac{m\Psi(mx)\Psi'(x) - \Psi(x)\Psi'(mx)}{m\Psi(mx)\xi'(x) -\xi(x) \Psi'(mx)},\\
@@ -426,26 +424,26 @@ where $\Psi, \xi$ are the Riccatti-Bessel functions \cite{bohren1983absorption}.
 
 \section{Rayleigh Scattering}
 
-In the limit of a small particle from far away, cancellations are taken in order to simplify the work without leaving the length-scale of interest. Notably, the Hankel function approaches the limit of a spherical wave,
+As the particle size decreases and is observed from far away, approximations can be made to simplify the form of the equations. These approximations can be taken without degrading the length-scale of interest. Notably, as the product, $kr \ll 1$, the Hankel function approaches the form of a spherical wave function,
 \begin{equation}
-    h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}
+    h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}.
 \end{equation}
 
-In this length-scale, $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$, $\pi_1 = 1, \tau_1 = \cos \theta$. Thus
+In the length-scale where particles are of comparable size to the wavelength of light, $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$, $\pi_1 = 1, \tau_1 = \cos \theta$. Thus, the vector spherical harmonics are approximated by the spherical wave forms,
 \begin{equation}
     \begin{aligned}
-        M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi} \\
-        N^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi} \\
+        M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}, \\
+        N^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}. \\
     \end{aligned}
 \end{equation}
 
-can be written in the Rayleigh approximation in the form of the full scattering field,
+Using these two equations, the scattering equation, known as the Rayleigh approximation, describes the full scattering field as a simple sum,
 
 \begin{equation}
     \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}.
 \end{equation}
 
-After substituting the terms for $n=1$, there is a neat simplification,
+After substituting the terms for $n=1$, the sum reduces significantly to the equations for transverse and axial scattering fields,
 
 \begin{equation}
     \begin{aligned}
@@ -454,7 +452,7 @@ After substituting the terms for $n=1$, there is a neat simplification,
     \end{aligned}
 \end{equation}
 
-Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, one finds the final scattering field of spheres on the order of the length of the wavelength of the incident light,
+Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, the scattering field of spheres on the order of the length of the wavelength of the incident light is written in the seminal form referenced in literature,
 \begin{equation}\label{eqn:rayleigh_scat}
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}.
 \end{equation}
@@ -481,117 +479,126 @@ Singling out the scattering field and noting the form of the wave-vector, $k = \
 
 \section{Scattering Microscopy}
 
-As shown, the description of the scattered light from a sphere is full described by Eqn.\ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
+As previously shown, the description of the scattered light from a sphere is fully described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
 
-To collect the light, there have been three main schemes used in literature; forward, side, and back-scattering microscopy schemes.
+To collect the light, there have been three main schemes availible; forward, side, and back-scattering microscopy schemes.
 
 As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
 
-In the back-scattering scheme, the light collected is the sum of the incident light and the scattered light.
+In the back-scattering scheme, the light collected is the sum of the incident light and the scattered light,
 
 \begin{equation}
-    I(x,y) = |\vec E_r + \vec E_s|^2 
+    I(x,y) = |\vec E_r + \vec E_s|^2.
 \end{equation}
 
-given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scattered light;
+Given that the incident wave is known as a polarized plane wave, this equation can be rewritten for the scattered light;
 \begin{equation}
     \begin{aligned}
-        I = E_rE_r^* + E_sE_s^* + 2\Re{\left[E_rE_s\right]} \\
+        I = E_rE_r^* + E_sE_s^* + 2\Re{\left[E_rE_s\right]}. \\
     \end{aligned}
 \end{equation}
 
 The incident field will be modulated by a scattering term, which is the Rayleigh scattering amplitude, $S$, as well as the reference term, $R$. Thus, the total intensity will be the sum of the scattering amplitude, reference amplitude, and the phase interference between the two fields; 
 \begin{equation}
-    I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right], \quad \Delta \varphi = \varphi_s \varphi_r
+    I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right], \quad \Delta \varphi = \varphi_s \varphi_r.
 \end{equation}
 
+% The light captured by the objective is collected within a solid angle region. This region is practically defined by the objective's numerical aperture. In practice, it is impossible to capture all of the scattered light which cause 
 
-It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
+% It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
 
 \section{Interferometric Light Scattering (iSCAT)}
 
-The key assumption in iSCAT is the relative magnitude of terms. The reference field is constant. The scattering term $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the inference term scales as the square root of this. Thus, the scattering term is dominated by the two fields which can be ignored. 
+The principle operation in the iSCAT methodology is the relative magnitude of mathematical terms in the optical field. The reference field is constant. The scattering field $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the interference term scales as the square root of of the radius. Thus, the scattering term is dominated by the two terms, background and interference.
 
-To accurately measure the positions, define the contrast metric. This metric relates the total field to that of a reference field;
+To accurately detect the particles if the scattering term is neglected, the contrast metric can be used. This metric relates the total field to that of a reference field;
 \begin{equation}
     \begin{aligned}
         C &= \frac{I - |E_r|^2}{|E_r|^2} \\
-        &= \frac{|S|^2 + 2|R||S|\cos \Delta \varphi}{|R|^2} \\
-        &\xrightarrow{|S| \ll |R|} \frac{2|S|}{|R|}\cos\Delta \varphi
+        &= \frac{|S|^2 + 2|R||S|\cos \Delta \varphi}{|R|^2}, \\
+        &\xrightarrow{|S| \ll |R|} \frac{2|S|}{|R|}\cos\Delta \varphi.
     \end{aligned} 
 \end{equation}
 
-The phase of the interference consists of a sum of terms consisting of phases accumulated through the traversal of the scattered field. The total phase is dominated by the Guoy phase, which consists of phase accumulated when light is passed through a converging and diverging field, the de-focus phase, which can be parameterized to a relative phase shift, as well as the phase accumulated phase difference, which is typical of a Michelson-interferometer type system. 
+The phases in the interference field consists of a sum of optical fields. These fields acquire phase differences as they traverse through space. Aberration effects from optical transformations are also acquired as spatial and phase terms.
 
-\section{3-D Position Information from Optical Signal}
+The total phase is dominated by the Guoy phase, which is the sum of accumulated phase as the light passes through a converging or diverging lens. The de-focusing phase is a relative phase shift due to misalignment in lens position which is described by the imaging condition equation.
 
-to obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
+Lastly, the phase difference from the inference term, which is compared to a Michelson-interferometer type system, is a dominant signal present directly in the iSCAT equation. 
 
-The interferometric point spread function is defined as the contrast metric of the scattering off of a sub diffraction sized particle. 
+The final image consists of the collected phase modulated optical fields and the aberrations from optical misalignment. These parameters must be considered when performing analysis on iSCAT images.
+
+\section{3D Position Information from Optical Signal}
+
+To obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
+
+The interferometric point spread function is defined as the contrast metric of the scattering off of a sub-diffraction sized particle, 
 \begin{equation}
-    \mathrm{iPSF} \equiv \frac{2E_r E_s \cos\phi_d}{E_r^2}
+    \mathrm{iPSF} \equiv \frac{2E_r E_s \cos\phi_d}{E_r^2}.
 \end{equation}
 
-the Rayleigh scattering pattern has several parameters that have a degenerate effect on the iPSF \cite{dewitPreciseCharacterizationNanometerscale2023}. To avoid such problems in the fitting, the parameterization developed in \cite{dewitPreciseCharacterizationNanometerscale2023} is used. This parameterization redefines the height and phase.
+The Rayleigh scattering pattern has several parameters that have a degenerate effect on the iPSF \cite{dewitPreciseCharacterizationNanometerscale2023}. To avoid problems in the image to equation fitting, the parameterization developed in Ref. \cite{dewitPreciseCharacterizationNanometerscale2023} is used. This parameterization redefines the axial height and phase,
 \begin{align}
     z'_p &= z_p - z_f\\
     \phi_0 &= -\phi_\mathrm{ref} + 2n_m k z_f + \arg(\alpha)\\
-    E_0 &= \frac{E_i 4\sqrt{2}\pi^3|\alpha|}{E_r (\lambda/n_m)^3}
+    E_0 &= \frac{E_i 4\sqrt{2}\pi^3|\alpha|}{E_r (\lambda/n_m)^3}.
 \end{align}
 
-This re-parameterization has shown good agreement to more complex models as demonstrated in \cite{dewitPreciseCharacterizationNanometerscale2023}. The final model is presented as the following equation:
+This re-parameterization has been shown to have good agreement to complex models as demonstrated in Ref. \cite{dewitPreciseCharacterizationNanometerscale2023}. The final model is presented as the following equation,
 \begin{equation}
-    \mathrm{iPSF} = 2 E_0 \frac{1}{n_m k r_p}\sqrt{1 + \left(z'_p/r_p\right)^2} \cos \left[-\left(\phi_0 + n_m k z'_p + n_m k r_p\right)\right]
+    \mathrm{iPSF} = 2 E_0 \frac{1}{n_m k r_p}\sqrt{1 + \left(z'_p/r_p\right)^2} \cos \left[-\left(\phi_0 + n_m k z'_p + n_m k r_p\right)\right].
 \end{equation}
 
 This function allows one to obtain the $z$ position of a particle with respect to the objective from image data.
 
-\section{Resolution limits of optical microscopy}
+\section{Resolution Limits of Optical Microscopy}
 
-The last thing to touch upon is understanding how the image that is being enlarged arrives to the camera, which consists of discussion of optical aberrations. 
+There is a limit of resolution that can be achieved through optical methods. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture. 
 
-As mentioned in the formulation for the electric field scatter, any optical field consists of a set of plane waves that construct and deconstruct to form a field. That is, the electric field lies in the basis of a Fourier series of terms of complex exponential functions. This fact allows one to describe the propagation of a wave in throughout z.
+Optical fields consists of a sum of plane waves that construct and deconstruct. The electric field can be decomposed into a Fourier series of exponential harmonics. 
+
+To understand how the optical field modulates as it travels, the propagation equation can be written in a plane-wave basis,
 \begin{equation}
-	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y, \quad \Omega = \{x \in \R : x^2 \leq k^2\} 
+	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y, \quad \Omega = \{x \in \R : x^2 \leq k^2\}.
 \end{equation}
-The energy of the wave is fixed by the trigonometric relation of the transverse wave vectors. Notably, this is fixed by the relation $|k| = \frac{2\pi}{\lambda}$.
+The energy of the wave is fixed by the trigonometric relation of the transverse wave vectors, fixed by the relation $|k| = \frac{2\pi}{\lambda}$.
 
-The propagated wave passes through an objective which can be approximated by a lens. Using the ABCD matrix formulation, the imaging condition must be satisfied:
+The propagated wave passes through an objective which can be modeled by a lens. Using the standard ABCD matrix formulation, the imaging condition must be satisfied,
 \begin{equation}
 	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f},
 \end{equation}
-where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. Thus, the magnification of the lens is defined as $M = z_2/z_1$. However, to understand the aberrations it is necessary to have a field formulation of this problem. The simplest way to do this is described using linear optics theory.
+where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. The magnification of the lens is defined as $M = z_2/z_1$.
  
-Define a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta function through a two lens system. This is given by the Fourier transform of the point source masked by the pupil function;
+To define a field formulation for this system, the propagation equation can be used. The incoming light that passes through the finite area of a lens is defined a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta-function through a two lens system. The measured optical field is given by the Fourier transform of the product of the pupil function and the delta-function.
 \begin{eqnarray}
 	H(x,y) = \iint_\Omega P(x',y')e^{\frac{ik}{2}\left(\frac{1}{z_1} - \frac{1}{f_1} - \frac{1}{f_2} + \frac{1}{z_2}\right)\sqrt{{x'}^2} + {y'}^2}e^{-\frac{ik}{z_2}(xx' + yy')}dx'dy'.
 \end{eqnarray}
-Expanding this, one can use a zero-order Hankel transform to integrate over the radius and find that the point-spread function, $H$, is defined in terms of the NA and the magnification;
+Expanding this field, one can use a zero-order Hankel transform to integrate over the radius and find that the point-spread function, $H$, is defined in terms of the numerical aperture and the magnification;
 \begin{equation}
-	H(r, z) = \int_0^1e^{-\frac{ik}{2}\frac{\text{NA}^2}{n}\rho^2 z}J_0\left(\frac{k\text{NA}}{M}\rho r\right) \rho d\rho
+	H(r, z) = \int_0^1e^{-\frac{ik}{2}\frac{\text{NA}^2}{n}\rho^2 z}J_0\left(\frac{k\text{NA}}{M}\rho r\right) \rho d\rho,
 \end{equation}
 where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$.
 
-In perfect focus, $z=0$. For $z\neq0$ there is a defocusing aberration which is defined as the secondary exponential. For a point source, which is diffraction limited, the following is the limit of the optical microscope,
+In perfect focus, $z=0$, and the image is the point spread function. For $z\neq 0$ there is a defocusing aberration which is defined as the secondary exponential. For a point source, which is diffraction limited, the following is the limit of the optical microscope,
 \begin{equation}
-	H(r,0) = |\frac{J_1(k\text{NA}r)}{k\text{NA} r}|^2 .
+	H(r,0) = \left|\frac{J_1(k\text{NA}r)}{k\text{NA} r}\right|^2 .
 \end{equation}
-Solving the minimum distance between the peak of the PSF and the minimum is solved by $k\text{NA}r = x_0$ where $x_0$ is the first root of $J_1(x)$. This is classical known as the minimum transverse imaging criterion;
+Solving for the minimum distance between the peak of the PSF and the minimum, the realtion $k\text{NA}r = x_0$ defines the minimum transverse imaging condition, where $x_0$ is the first root of $J_1(x)$. This is known as the transverse Abbe diffraction limit, 
 \begin{equation}
-	r_{\text{min}} = 0.61 \frac{\lambda}{\text{NA}}
+	r_{\text{min}} = 0.61 \frac{\lambda}{\text{NA}}.
 \end{equation}
 Similar results are found for the minimum axial imaging criterion by setting $r=0$ and integrating. 
 \begin{equation}
 	z_{\text{min}} = \frac{2\lambda n}{\text{NA}^2}
 \end{equation}
 
- The fact that not all the light that scatters passes through the lens is of interest. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scattering pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
+%  Since a partial amount of light that scatters  through the lens is of interest. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scattering pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
 
- \section{Sources of noise in imaging}
+ \section{Sources of Noise in Optical Imaging}
 
-In imaging, there is a number of sources of aberrations that one must account for. To discuss these sources of noise, a list of noises will be formed as one goes through the process of taking an image.
+In imaging, there is a number of sources of aberrations that one must account for. The sources of noise depend on the optical system used. For a general imaging system, one only requires a single lens for imaging. This simple setup is shown in Fig \ref{fig:imaging_diagram_simple}.
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
         \includegraphics[width=\linewidth]{Figures/imaging_diagram_simple.png}
@@ -603,27 +610,29 @@ In imaging, there is a number of sources of aberrations that one must account fo
     \label{fig:imaging_diagram_simple}
 \end{figure}
 
-The schematic of an iSCAT microscope was already shown in Fig. \ref{fig:schematic}, however, one can use a simplified model system without loss of generality. For a general imaging system, one only requires a single lens for imaging. This simple setup is shown in Fig \ref{fig:imaging_diagram_simple}.
+For such a system, the sources of noise are the point spread function noise, Guoy phase aberrations, background noise, electronic noise, and spherical aberrations. 
 
-The lens will collects light from the object plane, $U_o$ to the imaging plane, $U_i$, or the camera's plane. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread function is 
+The optical point spread noise originates from the transformations of light passing through optical components.
+
+Each lens used in an optical path will collect light from the object plane, $U_o$ to a transformed plane, $U_i$. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread function is given by the equation,  
 \begin{equation}
     U_i(x_i, y_i) = \iint_{\R^2} h(x_i, y_i, x_o, y_o) U_o(x_o, y_o) dx_o dy_o,
 \end{equation} 
-where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the response of a lens to a point-source, modeled as a delta-function. The len's magnification is incorporated into this using the following approximation;
+where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the response of a lens to a point-source. The len's magnification is incorporated into this using the following approximation;
 \begin{equation}
     h(x_i, y_i, x_o, y_o) \approx K \delta(x_i \pm M x_o, y_i \pm M y_o)
 \end{equation}
-where $K$ is a complex constant and $M$ is a real-valued magnification. Because of this, our image is spatially limited by this point-spread, which was earlier shown by the diffraction limit. 
+where $K$ is a complex constant and $M$ is a real-valued magnification. Each lens causes a small amount of aberration and misalignment which spatially limits the final optical field.
 
-In addition to the spatial noise, there is a phase accumulation known as the Guoy phase. As the light, which can be assumed as consisting of an Eigen-expansion of plane waves, passes through a lens, these plane waves will converge to a gaussian beam with a beam-waist around the focal point. As this focusing occurs, there is a phase that is accumulated known as the Guoy phase. This phase accumulation is equal to
+The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens. The plane wave is tightened and forms a beam-waist around the len's focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
 \begin{equation}
     \psi(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
 \end{equation}
-where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, there is a total phase shift of $\pi$. 
+where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, the phase is shift is equal to $\pi$. 
 
-In the presence of a background beam, there will be a presence of a background. This background's source is the illumination beam itself, in the case of scattering microscopy. This background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
+In optical microscopy where a refernence or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
 
-The camera used will also contain electronic noise associated with it. For CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modelled as Poisson noise from the photon detections and a gaussian for the readout noise. 
+The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a gaussian for the readout noise. 
 
 In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
