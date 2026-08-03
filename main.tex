@@ -21,7 +21,7 @@
 \usepackage{siunitx}
 \usepackage{longtable}
 \usepackage{enumitem}
-
+\usepackage{hyperref}
 \usepackage{booktabs}
 
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
@@ -45,8 +45,8 @@
 \usepackage{setspace}
 \onehalfspacing % Or \doublespacing for thesis-level spacing
 
-%\usepackage[style=numeric-comp, sorting=none]{biblatex}
-%\addbibresource{references.bib}
+\usepackage[style=numeric-comp, sorting=none]{biblatex}
+\addbibresource{references.bib}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{definition}{Definition}
@@ -55,7 +55,7 @@
 \newcommand{\R}{\mathbb{R}}
 \renewcommand{\Re}{\mathrm{Re}}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
-\renewcommand{\cite}[1]{[x]}
+%\renewcommand{\cite}[1]{[x]}
 
 \newcommand{\ipw}[2]{\left\langle #1,\, #2 \right\rangle_w}
 \DeclareSIUnit\gb{GB}
@@ -181,7 +181,7 @@
     \input{CONC}
 
 
-	%\printbibliography{}
+    \printbibliography{}
     \appendix
     \input{A1}
     

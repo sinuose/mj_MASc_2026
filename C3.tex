@@ -36,7 +36,7 @@ The table in Tab. \ref{tab:components} shows the iSCAT microscope components lis
 \newpage
 \section{Optical System Diagram}
 
-The iSCAT microscope system was designed based on prior work by the Kulkura lab \red{REF}. The iSCAT microscope is a wide-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
+The iSCAT microscope system was designed based on prior work by the Kukura lab \cite{OrtegaArroyo2016}. The iSCAT microscope is a wide-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
 
 \begin{figure}[h!]
     \centering
@@ -57,14 +57,14 @@ The laboratory implementation shown in Fig. \ref{fig:schematic}, was assembled o
 \begin{figure}[h!]
     \centering	
     \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_1.pdf}
-	\caption{\red{Clean table and retake the photos}}
+	\caption{Optical table for the iSCAT microscope. At the Leslie lab.}
     \label{fig:isometrix_annotated_1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering	
     \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_2.pdf}
-	\caption{\red{Clean table and retake the photos}}
+	\caption{Optical table for the iSCAT microscope. At the Leslie lab.}
     \label{fig:isometrix_annotated_2}
 \end{figure}
 
@@ -131,7 +131,7 @@ The alignment of the quarter wave-plate is stable and can be regularly altered t
 
 \section{System Software}
 
-The data-collection software, which collects the data from the camera and saves into the computer was written by the Grant Lab \red{REF}. This software collects the camera sCMOS information and saves it as a binary array.
+The data-collection software, which collects the data from the camera and saves into the computer was written by the Grant Lab \cite{Brouwer2026}. This software collects the camera sCMOS information and saves it as a binary array.
 
 The computer used uses an $\mathrm{AMD Ryzen} 7, 9700K$ processor, with $64 \mathrm{gB}$ of RAM memory. 
 
@@ -352,7 +352,7 @@ Using the developed software, the relationship between the effective confinement
 \begin{equation}
     \lambda_D \propto \frac{1}{\sqrt{C}},
 \end{equation}
-where $C$ is the ionic concentration of a dilute electrolyte compound \red{REF}.
+where $C$ is the ionic concentration of a dilute electrolyte compound.
 
 The simulation for the geometry described above was conducted for various Debye-lengths. The conditions of the simulation are such that the zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$. 
 
@@ -504,7 +504,7 @@ The full algorithm is presented in Alg. \ref{alg:raw2iscat}. The overview of the
 
 To reduce the contribution of the static background, the mean background is subtracted from each frame. Since the background illumination originates from the gaussian illumination beam, which has a constant mean intensity over the acquisition period, this stationary background removes the background offset while preserving dynamic iSCAT signal. This just requires a good estimation of the background in order not to remove any iSCAT signal. The remaining shot noise, which follows Poisson statistics is reduced by temporal averaging during background estimation. 
 
-In order to suppress electronic noise from data-transfer, a row-wise averaging scheme is applied. Row-wise means are taken and normalized with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normalization methods by the Sandoghar laboratory \red{Vahid's github should be here.}
+In order to suppress electronic noise from data-transfer, a row-wise averaging scheme is applied. Row-wise means are taken and normalized with respect to their row as the data-transfer from CMOS to computer is by horizontal lines. Thus, to ensure all lines are equally weighted, they are normalized with respect to their entire row. This is implemented as per prior iSCAT normalization methods by the \href{https://github.com/SandoghdarLab}{Sandoghar laboratory}\cite{Kashkanova2022}.
 
 The set of images, which consist of matrices of pixel-values of shape $F \times H \times W$, or $F$ number of frames, $W$ pixels wide, $H$ pixels tall. 
 
@@ -546,7 +546,7 @@ Once candidates are chosen, a NL-LS gaussian fitting to the RVT is performed to 
     \label{fig:RadialSym}
 \end{figure}
 
-To ensure accurate linking, an implementation of the \textsc{Munkres} algorithm is used \red{REF}. Briefly, a cost-matrix of distances is constructed and minimized in time to ensure that optimal displacements are chosen. This algorithm has limitations in cases where particles overlap. Ideally, experimental measure are taken to minimize this occurring. One such measure is to lower the concentration of particle in the recorded images. 
+To ensure accurate linking, an implementation of the \textsc{Munkres} algorithm is used. Briefly, a cost-matrix of distances is constructed and minimized in time to ensure that optimal displacements are chosen. This algorithm has limitations in cases where particles overlap. Ideally, experimental measure are taken to minimize this occurring. One such measure is to lower the concentration of particle in the recorded images. 
 
 
 

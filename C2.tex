@@ -7,7 +7,7 @@ To validate the iSCAT imaging technique and computational methods described in p
 %, as discussed in Chap. \ref{chap:brownianmotion} and Chap. \ref{chap:langevinsimulations}.
 The effects of electrostatic interaction of nanoparticle diffusion were investigated in various ionic concentrations. The salt concentration regulates the particle's effective confinement length. The change in confinement length directly affects how size-inferencing is performed. %The effects of changing the ionic concentration on the size inference from transverse and axial measurements were compared. 
 
-The transient behavior and confined mean-squared displacement relations were performed on polystyrene bead diffusion by adding a glycerol solution to slow down the step-length of the particle's motion. Glycerol was chosen as the viscous reagent as the water-glycerol relation is well defined \cite{cheng_formula_2008} and is an un-interacting bio-molecule \red{REF}. 
+The transient behavior and confined mean-squared displacement relations were performed on polystyrene bead diffusion by adding a glycerol solution to slow down the step-length of the particle's motion. Glycerol was chosen as the viscous reagent as the water-glycerol relation is well defined \cite{cheng_formula_2008} and has a lipid-membrane permeability \cite{Orbach1980, Walter1986}. 
 
 To apply the theoretical models and statistical tools to a current, applicable biological system, the diffusion of lipid-nanoparticles was investigated within glass flow-cells. The effects of flow-cell poly-ethylene glycol passivation were measured. LNP size measurement techniques were compared and contrasted. LNP transient behavior was measured using glycerol. The complete list of samples used, as well as number of video and trajectories obtained from the data, is listed in Tab. \ref{tab:sample_list}.
 
@@ -53,7 +53,7 @@ The experiments described in this chapter were conducted using the wide-field iS
 
 The schematic of the optical system used in the laboratory experimentation is shown in Fig. \ref{fig:re_schematic}. To illuminate the samples, an illumination laser with wavelength of $\SI{405}{\nm}$ was used. This wavelength laser was selected to have the lowest cost and provide illumination within the visible light spectrum. The optical power of the laser was $\SI{240}{\milli \watt}$. The optical filter drops after the spatial filter to $\SI{120}{\milli \watt}$ which is $\sim 50\%$ of the initial laser output. 
 
-The microscope objective was oil based with a  $100 \times$ optical magnification\footnote{(Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$)}. The images were captured by a sCMOS camera\footnote{(\textsc{pco.edge 4.2})}. The system was controlled by a computer software written by the Grant lab in the LabView programming language \red{REF}. The complete parts list of the optical system was presented in Tab. \ref{tab:components}.
+The microscope objective was oil based with a  $100 \times$ optical magnification\footnote{(Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$)}. The images were captured by a sCMOS camera\footnote{(\textsc{pco.edge 4.2})}. The system was controlled by a custom computer software written by the Grant lab in the LabView programming language \cite{Brouwer2026}. The complete parts list of the optical system was presented in Tab. \ref{tab:components}.
 
 \begin{figure}[h!]
 	\centering
@@ -102,7 +102,7 @@ A convex pusher lens is used together with a piezo linear actuator to displace t
 \subsection{Sample Preparation Steps}
 To obtain experimental results, samples must be prepared for imaging. In the electrostatic and transient diffusion experiments, carboxylate modified polystyrene beads were used. They were obtained from Thermofisher company\footnote{($\SI{0.1}{\micro \meter}$ FluoSpheres\texttrademark carboxylate-modified microspheres, Catalog No. F8799)}. The polystyrene beads had a bulk-average size estimate of $\SI{0.1}{\micro \meter}$. The polystyrene beads were fluorescently labelled of $\SI{500}{\micro \meter}$. The beads were measured in de-ionized water\footnote{(MilliQ)} as well as a concentration series of phosphate-buffered saline. Fluorescent labelled was not used during the experiments.
 
-The polystyrene bead bulk-size was experimentally verified using dynamic light scattering measurements using the Malvern DLS \red{ref}. The bulk size and zeta potential were characterized, as shown in Fig. \ref{fig:beads_DLS} and Tab. \ref{tab:zeta_beads}.
+The polystyrene bead bulk-size was experimentally verified using dynamic light scattering measurements using the Malvern DLS\footnote(Malvern Panalytical Ltd., Malvern, UK; $\lambda = 633 nm$, $\theta = 173^o$ backscatter). The bulk size and zeta potential were characterized, as shown in Fig. \ref{fig:beads_DLS} and Tab. \ref{tab:zeta_beads}.
 
 \begin{figure}[h!]
     \centering
@@ -134,7 +134,7 @@ The polystyrene bead bulk-size was experimentally verified using dynamic light s
 The figure shows the bulk-average size to be around $2a = \SI{120}{\nm}$ with a log-normal distribution.
 
 
-For the lipid nanoparticle motion experiments, the lipid-nanoparticles were formulated by the Cullis lab as referenced in \red{ref}. The lipid nanoparticle formulations used were of the liposomal type, Onpattro oil-core type, and the Onpattro bleb-like type. The liposomal formulation used contained 20\% norMC3 lipids. The Onpattro formulation consisted of 50\% norMC3 lipids. The standard oil-core was dialyzed with 25 mM NaOAc. The bleb-like was dialyzed with 300 mM NaOAc.
+For the lipid nanoparticle motion experiments, the lipid-nanoparticles were formulated by the Cullis lab as referenced in \cite{kamanzi_simultaneous_2021, Kulkarni2017}. The lipid nanoparticle formulations used were of the liposomal type, Onpattro oil-core type, and the Onpattro bleb-like type. The liposomal formulation used contained 20\% norMC3 lipids. The Onpattro formulation consisted of 50\% norMC3 lipids. The standard oil-core was dialyzed with 25 mM NaOAc. The bleb-like was dialyzed with 300 mM NaOAc.
 
 % \subsection{Analysis Method}
 
@@ -234,7 +234,7 @@ For the case of $0.00001\times$ PBS, the surface charge of the glass was measure
     \label{fig:charge_est}
 \end{figure}
 
-The left plot shows the distribution of charge densities obtained from the MLE. The right plot shows the distribution of the variances as calculated by the MLE. The surface charge appears to be greatly underestimated with a mean around $\SI{-2}{\micro \coulomb/m^2}$. The literature presents the surface charge for piranha-cleaned glass at around $\SI{-2}{\coulomb/m^2}$ \red{ref}. 
+The left plot shows the distribution of charge densities obtained from the MLE. The right plot shows the distribution of the variances as calculated by the MLE. The surface charge appears to be greatly underestimated with a mean around $\SI{-2}{\micro \coulomb/m^2}$. The literature presents the surface charge for piranha-cleaned glass at around $\SI{-2}{\coulomb/m^2}$ \cite{behrensChargeGlassSilica2001}. 
 
 
 \clearpage
@@ -266,7 +266,7 @@ The glycerol solution was adjusted to ensure that the diffusion coefficient was 
     \label{fig:gly_curve}
 \end{figure}
 
-The dotted blue line presents the empirically determined equation for the viscosity of a glycerol-water solution obtained from Ref. \red{ref}. The red dots are the literature values for the viscosities. The inset frame shows the magnified region near 0, where the approximation is very close. 
+The dotted blue line presents the empirically determined equation for the viscosity of a glycerol-water solution obtained from Ref. \cite{cheng_formula_2008}. The red dots are the literature values for the viscosities. The inset frame shows the magnified region near 0, where the approximation is very close. 
 
 \clearpage
 The experiment was performed with the parameters listed in Tab. \ref{tab:2_sample_list} and the video was captured. From the video, a long-range trajectory was obtained. This trajectory is shown in Fig. \ref{fig:long_Range_gly_traj}
