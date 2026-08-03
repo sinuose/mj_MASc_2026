@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  2 AUG 2026 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  3 AUG 2026 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1248,84 +1248,91 @@ Package pdftex.def Info: Python/Figures/glycerol_curve.pdf  used on input line 2
 [66
 
  <./Python/Figures/glycerol_curve.pdf>]
-<Python/Figures/glycerol_MSD.pdf, id=1041, 419.166pt x 202.356pt>
+<Python/Figures/glycerol_sample_trajectory.pdf, id=1041, 250.49966pt x 231.26399pt>
+File: Python/Figures/glycerol_sample_trajectory.pdf Graphic file (type pdf)
+<use Python/Figures/glycerol_sample_trajectory.pdf>
+Package pdftex.def Info: Python/Figures/glycerol_sample_trajectory.pdf  used on input line 276.
+(pdftex.def)             Requested size: 489.10287pt x 451.59813pt.
+<Python/Figures/glycerol_MSD.pdf, id=1042, 419.166pt x 202.356pt>
 File: Python/Figures/glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_MSD.pdf  used on input line 285.
 (pdftex.def)             Requested size: 489.10287pt x 236.12257pt.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
 [67
 
- <./Python/Figures/glycerol_MSD.pdf>]
-<Python/Figures/glycerol_diffusivity_relation.pdf, id=1061, 434.82402pt x 290.28403pt>
+ <./Python/Figures/glycerol_sample_trajectory.pdf>]
+
+[68 <./Python/Figures/glycerol_MSD.pdf>]
+<Python/Figures/glycerol_diffusivity_relation.pdf, id=1084, 434.82402pt x 290.28403pt>
 File: Python/Figures/glycerol_diffusivity_relation.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_diffusivity_relation.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used on input line 297.
 (pdftex.def)             Requested size: 489.10287pt x 326.52443pt.
 
 
-[68
+[69
 
  <./Python/Figures/glycerol_diffusivity_relation.pdf>]
-<Python/Figures/DLS_size.pdf, id=1095, 438.8052pt x 216.17097pt>
+<Python/Figures/DLS_size.pdf, id=1118, 438.8052pt x 216.17097pt>
 File: Python/Figures/DLS_size.pdf Graphic file (type pdf)
 <use Python/Figures/DLS_size.pdf>
 Package pdftex.def Info: Python/Figures/DLS_size.pdf  used on input line 338.
 (pdftex.def)             Requested size: 489.10287pt x 240.95865pt.
 
 
-[69
+[70
 
  <./Python/Figures/DLS_size.pdf>]
-<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=1106, 419.166pt x 274.626pt>
+<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=1129, 419.166pt x 274.626pt>
 File: Python/Figures/Chapter7/lnp_pos_hist.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/lnp_pos_hist.pdf>
 Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input line 373.
 (pdftex.def)             Requested size: 419.16498pt x 274.62532pt.
 
 
-[70 <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]
-<Python/Figures/LNP_glycerol_MSD.pdf, id=1120, 419.166pt x 202.356pt>
+[71 <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]
+<Python/Figures/LNP_glycerol_MSD.pdf, id=1144, 419.166pt x 202.356pt>
 File: Python/Figures/LNP_glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/LNP_glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/LNP_glycerol_MSD.pdf  used on input line 384.
 (pdftex.def)             Requested size: 489.10287pt x 236.12257pt.
 )
 
-[71 <./Python/Figures/LNP_glycerol_MSD.pdf>]
+[72 <./Python/Figures/LNP_glycerol_MSD.pdf>]
 Chapter 9.
 (./CONC.tex
 
-[72
+[73
 
 ]) (./A1.tex
 
-[73]
+[74]
 Appendix A.
 
 
-[74
+[75
 
 ]
 
-[75]
+[76]
 Appendix B.
-
-
-[76
-
-
-]
-Appendix C.
 
 
 [77
 
 
 ]
+Appendix C.
+
 
 [78
+
 
 ]
 
@@ -1340,13 +1347,17 @@ Appendix C.
 [81
 
 ]
+
+[82
+
+]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 )
 
-[82
+[83
 
 ] (./main.aux)
  ***********
@@ -1359,18 +1370,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 43685 strings out of 473190
- 1094213 string characters out of 5715801
+ 43692 strings out of 473190
+ 1094600 string characters out of 5715801
  1734301 words of memory out of 5000000
- 66196 multiletter control sequences out of 15000+600000
+ 66203 multiletter control sequences out of 15000+600000
  586562 words of font info for 228 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,23n,121p,1264b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (90 pages, 45664975 bytes).
+Output written on main.pdf (91 pages, 45682614 bytes).
 PDF statistics:
- 1280 PDF objects out of 1440 (max. 8388607)
- 935 compressed objects within 10 object streams
+ 1304 PDF objects out of 1440 (max. 8388607)
+ 957 compressed objects within 10 object streams
  0 named destinations out of 1000 (max. 500000)
- 65277 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 65282 words of extra memory for PDF output out of 74296 (max. 10000000)
 

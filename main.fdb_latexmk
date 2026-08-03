@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1785695012.07402 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1785695015.37448 0
+["pdflatex"] 1785775483.90682 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1785775487.27278 0
   "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1785628059.98837 5291 ee1690e40a28afcdffe61dd1447807f5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -248,8 +248,8 @@
   "A1.tex" 1785253951.49602 20420 64427408aa4cc5be73f73f070d3d49a0 ""
   "ABSTRACT.tex" 1785018029.23126 6150 ac33c3a01396f4e6074602510b801da0 ""
   "C1.tex" 1785694823.20363 50834 3c294cac14a19f06f126fa2e280279bc ""
-  "C2.tex" 1785634597.14247 32284 0b9bc4b5991366d328eb96977035b50a ""
-  "C3.tex" 1785695007.61144 58197 c551b73fbe2eeabc8b10efc2a0e30578 ""
+  "C2.tex" 1785775479.20631 32297 abe15b339c3a240ccd2fb9101e324f1c ""
+  "C3.tex" 1785695072.56875 58197 c551b73fbe2eeabc8b10efc2a0e30578 ""
   "CONC.tex" 1785689657.56162 4464 92a96ec66b01dad60e7c4b49a5ea47e7 ""
   "Figures/LangevinTimeComplexity.pdf" 1785027683.95015 51987 240debb825f9334b87773303158adf2c ""
   "Figures/LangevinTimeComplexity_mis2.pdf" 1785028166.40119 52070 700e3d36a0e6edb9f2e24b57719d8103 ""
@@ -290,6 +290,7 @@
   "Python/Figures/glycerol_MSD.pdf" 1785253951.60576 59875 bce7fb914f3cd3c67bf3f93f42b7c0ea ""
   "Python/Figures/glycerol_curve.pdf" 1785253951.60835 39046 c38d9aaf5bc572c06b15653003bcc2cc ""
   "Python/Figures/glycerol_diffusivity_relation.pdf" 1785253951.60975 66952 bf7fd515051c502181512b52f339cffd ""
+  "Python/Figures/glycerol_sample_trajectory.pdf" 1785775454.66288 73087 9c8a4ddfa9a617542dde5188c2c2936c ""
   "Python/Figures/langevin_diagram.pdf" 1784915452.18249 310083 ac1ea4fc9b851cee42e33171541289bf ""
   "Python/Figures/mRNA_LNP_NIST.pdf" 1785022783.25102 2124423 b094fbe602b0f5a73ad215cbdbab63f5 ""
   "Python/Figures/nuisance_param.pdf" 1783468542.60471 36943 39d38af2f6524584bf979edf3021e064 ""
@@ -300,9 +301,9 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785355381.48781 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784405191.14894 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1785695015.23869 27825 8d10a6ca81c52feb5b23e8d7392542a7 "pdflatex"
+  "main.aux" 1785775487.13272 27825 24c5e0c00a844d943a0f8b83240e6fb6 "pdflatex"
   "main.tex" 1785628059.98837 5291 ee1690e40a28afcdffe61dd1447807f5 ""
-  "main.toc" 1785695015.24074 4852 cf4e8f813ebd59d2a2b0b726600ce20f "pdflatex"
+  "main.toc" 1785775487.13592 4852 76e8f119a73252c99c3a7024da914973 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
