@@ -81,8 +81,12 @@ One can take the ensemble average of this device, and notably, extract correlati
 	m\dot{\vec{v}} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
 \end{equation}
 This represents a linear differential equation with a solution hat defines the velocity autocorrelation function. This solution is 
+% \begin{equation}
+% 	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}.
+% \end{equation}
+
 \begin{equation}
-	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}.
+	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{1}{mB}e^{-t/(mB)}.
 \end{equation}
 
 Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, the form of the mean-square displacement is found. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$, then the solutions of the position mean-squared displacement are written as
