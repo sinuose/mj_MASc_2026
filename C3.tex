@@ -439,7 +439,7 @@ The Langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\
 
 % With regards of surface charge estimation, we have introduced a new MLE for the amplitude based on maximum likelihood estimation. The distribution has a mean centered around the ground truth with a standard deviation of $1/4 \cdot \sigma_\star$. 
 
-\chapter{iSCAT z-estimation Simulations}
+\chapter{iSCAT Axial Inference}
 \label{chap:ZEstimation}
 
 This section presents a computational method for determining the axial ($z$-axis) position of a nanoparticle from iSCAT imaging data. The proposed approach is based on principles of light-scattering in the Rayleigh approximation, which govern the inference pattern as the nanoparticle moves along the optical axis. 
@@ -454,7 +454,7 @@ The method described in this section is based on computational image processing 
 
 The object sample is imaged through an oil-immersion objective lens. The optical system provides a magnification of $60 \times$, with a tube lens of magnification $2\times$. The remaining is an digital zoom with a final resolution of $\SI{55}{\nm}$ per pixel. The final magnification is then the ratio of the CMOS array length divided by the pixel size.
 
-The image-processing workflow used to determine three-dimensional trajectory is shown in \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
+The image-processing workflow used to determine three-dimensional trajectory is shown in Fig. \ref{fig:method_outline}. The diagram summarized the sequence of image processing steps to extract each coordinate position.
 
 % preamble: \usepackage{enumitem}
 \begin{figure}[htbp]

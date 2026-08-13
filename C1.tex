@@ -176,7 +176,7 @@ as derived in \ref{app:3}. To demonstrate the self-consistency, the figure of a 
 \clearpage
 \section{Electrostatic Potentials}
 
-A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Huckel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
+A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
 \begin{equation}
 	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}
 \end{equation}
@@ -202,7 +202,7 @@ There is a nice approximation that can be linearized to first order,
 	&= -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty \left[C_i e_0 Z_i-\beta C_i Z_i^2 e_0^2\Psi(\vec{x})\right]\\
 	&= -\sum_{i =1}^\infty \left[\frac{C_i e_0 Z_i}{\varepsilon_0 \varepsilon_r}-\kappa_i^2 \Psi(\vec{x})\right].
 \end{align*}
-Where $\kappa_i^2$ is related to the debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
+Where $\kappa_i^2$ is related to the Debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
 
 When the bulk solution is electro-neutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
 \begin{equation}
@@ -253,24 +253,12 @@ The diffusivity of a spherical particle is directly linked to a motion that is t
 
 Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.6\textwidth]{Figures/Mesoporous_Silica_Nanoparticle.jpg}
-    \caption{TEM (a, b, and c) images of prepared mesoporous silica nanoparticles with mean outer diameter: (a) $\SI{20}{\nm}$, (b) $\SI{45}{\nm}$, and (c) $\SI{80}{\nm}$. SEM (d) image corresponding to (b). The insets are a high magnification of mesoporous silica particle. Taken from Wikipedia Commons \cite{MesoporousSilicaNanoparticleJpg}.}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.6\textwidth]{Figures/Mesoporous_Silica_Nanoparticle.jpg}
+%     \caption{TEM (a, b, and c) images of prepared mesoporous silica nanoparticles with mean outer diameter: (a) $\SI{20}{\nm}$, (b) $\SI{45}{\nm}$, and (c) $\SI{80}{\nm}$. SEM (d) image corresponding to (b). The insets are a high magnification of mesoporous silica particle. Taken from Wikipedia Commons \cite{MesoporousSilicaNanoparticleJpg}.}
+% \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{Figures/lnp_blebs_cryo2.jpg}
-    \caption{Locating encapsulated mRNA in LNPs by cryo-EM. The effect of thionine on mRNA-LNPs of different morphologies reveals that lipid-dissociated mRNA may reside in bleb compartments (a) or may be more lipid-associated in spherical (b) or less prominently blebbed particles (c). The black arrow in (a) indicates the distinctive mottled mass density of mRNA inside the bleb cavity, which itself is distinguished by a thick, dark periphery. The blue arrow indicates the significant contrast enhancement that occurs when thionine dye is present, thereby identifying mRNA within the bleb. (d) Charge-driven migration of mRNA from the bleb into the body of the LNP. When the mRNA-LNP sample of (a) (no dye) was dialyzed into pH 5 buffer, the images of (d) resulted. The mottled density is now associated with the body of the LNP (green arrow), leaving the bleb cavity devoid of mRNA (white arrow). Addition of thionine to this sample produced no notable contrast change (right), indicating that thionine did not displace lipid. Taken directly from Kloczewiak, 2022\cite{Kloczewiak2022}. Creative Commons license.}
-    \
-\end{figure}
-
-% \section{Diffusion in cells}
-
-% The cellular system consists of many different components co-existing in the cellular cytoplasm. To get a survey of sizes, the organelles are on the order of $1-\SI{10}{\micro \meter}$. while smaller proteins and enzymes, such as ribosomes, vesicles, and lysosomes are on the order of $10-\SI{100}{\nano \meter}$. 
-
-% This beings said, the motion is directly linked to the fluidic properties of the cytoplasm. In the case of a eukaryotic cell, the Reynold's number is low, which implies an over damped Langevin equation. In addition, the thermal scale is that of high temperature, or $\sim \SI{310}{\kelvin}$. In addition, the comparison between diffusion and advection is important. For diffusion to dominate, the diffusive timescale is must shorter. The Peclet number is proportional to the characteristics length $L$, while the Reynold's number is $L^2$. For small characteristic lengths, such as those proposed, the diffusive term is clearly shorter. 
 
 \section{Brownian motion as a method for measurements of size in biology}
 
@@ -307,13 +295,20 @@ These have applications in drug delivery and have been using in the SARS-Covid v
     \label{fig:LNPDiagram}
 \end{figure}
 
-One recent investigation of LNP research is within the functional differences based on the LNP topology type \cite{Simonsen2024, Kloczewiak2022}. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in Fig. \ref{fig:LNP_types}.
+One recent investigation of LNP research is within the functional differences based on the LNP topology type \cite{Simonsen2024, Kloczewiak2022}. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in Fig. \ref{fig:LNP_types}. and \ref{fig:lnp_cryo}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.9\linewidth]{Figures/bleb_perspective.png}
     \caption{mRNA-LNP types diagram. Black is lipids, grey is hydrophobic region, red is mRNA, orange is oil-core. Taken from Fig. 2 of Simonsen, 2024 \cite{Simonsen2024}. Creative Commons license.}
     \label{fig:LNP_types}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Figures/lnp_blebs_cryo2.jpg}
+    \caption{Locating encapsulated mRNA in LNPs by cryo-EM. Taken directly from Kloczewiak, 2022\cite{Kloczewiak2022}. Creative Commons license.}
+    \label{fig:lnp_cryo}
 \end{figure}
 
 Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays \cite{Ye2022, Roces2022}. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties \cite{kamanzi_single-particle_2026,kamanziSimultaneousSingleParticleMeasurements2021, graves_direct_2026, kamanzi_simultaneous_2021}. CLiC utilizes the confinement of particles to observe their untethered, random motion \cite{berardPrecisionPlatformConvex2013}. 
@@ -343,14 +338,14 @@ where $\vec E(\vec x, t)$ is defined as the optical field\footnote{As opposed to
 
 Thus, it is paramount that we understand how the propagation of the electric fields are described. Luckily for us, this has already been solved in the year 18XX (cite). We present the Maxwell equations in their macroscopic form, which include terms from the material constants.
 \begin{definition}
-    Maxwell's Equations in macroscopic form. Let $\vec x$ be the position vecotr, $t$ the time scalar. The Maxwell equations are defined as the following set of relations; (CITE ZANGWILL, Scattering small particles, Jackson if needed).
+    Maxwell's Equations in macroscopic form. Let $\vec x$ be the position vector, $t$ the time scalar. The Maxwell equations are defined as the following set of relations; (CITE , Scattering small particles, Jackson if needed).
     \begin{align}
         \nabla \cdot \vec D(\vec{x},t) &= \rho_f(\vec{x},t) \\
         \nabla \times \vec E(\vec{x},t) + \frac{\partial \vec B(\vec{x},t)}{\partial t} &= 0 \\
         \nabla \cdot \vec B(\vec{x},t) &= 0 \\
         \nabla \times \vec H(\vec{x},t) - \frac{\partial \vec D(\vec{x},t)}{\partial t} &= \vec J_f(\vec{x},t)
     \end{align}
-    In addition, for ease of access, the definitions for the Auxillary fields, and scalar potentials are written. We also add the guage invariance;
+    In addition, for ease of access, the definitions for the auxiliary fields, and scalar potentials are written. We also add the gauge invariance;
     \begin{align}
         \vec D(\vec{x}, t) &= \varepsilon_0 \vec E(\vec{x},t) + \vec P (\vec{x},t) \\
 \vec H (\vec{x},t) &= \frac{1}{\mu_0} \vec B(\vec{x},t) - \vec M(\vec{x},t)
@@ -364,7 +359,7 @@ Thus, it is paramount that we understand how the propagation of the electric fie
     Where the boldface is reserved for tensor quantities. 
 \end{definition}
 
-- List shit that we need to know before calcualting the Scattering from a sphere.
+- List shit that we need to know before calculating the Scattering from a sphere.
 
 - Helmholtz Equation
 - Fresnel Equations
@@ -395,7 +390,7 @@ Let $\psi$ be a solution to the scalar wave equation,
         R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\}. \\
     \end{aligned}
 \end{equation}
-The symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the Hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. This is found in Eqns 4.17 to 4.20 in book written by Bohren \cite{bohren1983absorption},
+The symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the Hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. This is found in Eqn. 4.17 to 4.20 in book written by Bohren \cite{bohren1983absorption},
 \begin{equation}
     \begin{aligned}
         \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}), \\
@@ -460,32 +455,12 @@ Singling out the scattering field and noting the form of the wave-vector, $k = \
 \begin{equation}\label{eqn:rayleigh_scat}
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}.
 \end{equation}
-\iffalse
-- Draw some of the iPSFs for Mie theory, from all angles.
-- manoharan theory and reparam of the main equation
-
-- Set the stage, what do we need to solve, how are we going to do it
-- Solutions to the wave equation in spherical coordinates 
-- Mie Theory 
--- Examples of Mie spheres
--- What size range ?
-- RDG Theory
--- What size range ?
-
-- Small comparison from far away, medium (mie), and small (RDG), atomic (too small)
-\fi
-
-% \section{Types of Microscopy}
-
-% Dark field - microscopy where the background is not used
-% widefield - microscopy where the full field of view is used
-% holography - microscopy with a reference field (?)
 
 \section{Scattering Microscopy}
 
 As previously shown, the description of the scattered light from a sphere is fully described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
 
-To collect the light, there have been three main schemes availible; forward, side, and back-scattering microscopy schemes.
+To collect the light, there have been three main schemes available; forward, side, and back-scattering microscopy schemes.
 
 As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
 
@@ -587,7 +562,7 @@ In perfect focus, $z=0$, and the image is the point spread function. For $z\neq 
 \begin{equation}
 	H(r,0) = \left|\frac{J_1(k\text{NA}r)}{k\text{NA} r}\right|^2 .
 \end{equation}
-Solving for the minimum distance between the peak of the PSF and the minimum, the realtion $k\text{NA}r = x_0$ defines the minimum transverse imaging condition, where $x_0$ is the first root of $J_1(x)$. This is known as the transverse Abbe diffraction limit, 
+Solving for the minimum distance between the peak of the PSF and the minimum, the relation $k\text{NA}r = x_0$ defines the minimum transverse imaging condition, where $x_0$ is the first root of $J_1(x)$. This is known as the transverse Abbe diffraction limit, 
 \begin{equation}
 	r_{\text{min}} = 0.61 \frac{\lambda}{\text{NA}}.
 \end{equation}
@@ -618,23 +593,23 @@ For such a system, the sources of noise are the point spread function noise, Guo
 
 The optical point spread noise originates from the transformations of light passing through optical components.
 
-Each lens used in an optical path will collect light from the object plane, $U_o$ to a transformed plane, $U_i$. The propagation of that wave will collect aberration from the len's point spread function, as well as phase accumulation. The traversal over the point spread function is given by the equation,  
+Each lens used in an optical path will collect light from the object plane, $U_o$ to a transformed plane, $U_i$. The propagation of that wave will collect aberration from the lens point spread function, as well as phase accumulation. The traversal over the point spread function is given by the equation,  
 \begin{equation}
     U_i(x_i, y_i) = \iint_{\R^2} h(x_i, y_i, x_o, y_o) U_o(x_o, y_o) dx_o dy_o,
 \end{equation} 
-where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the response of a lens to a point-source. The len's magnification is incorporated into this using the following approximation;
+where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the response of a lens to a point-source. The lens magnification is incorporated into this using the following approximation;
 \begin{equation}
     h(x_i, y_i, x_o, y_o) \approx K \delta(x_i \pm M x_o, y_i \pm M y_o)
 \end{equation}
 where $K$ is a complex constant and $M$ is a real-valued magnification. Each lens causes a small amount of aberration and misalignment which spatially limits the final optical field.
 
-The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens. The plane wave is tightened and forms a beam-waist around the len's focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
+The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens. The plane wave is tightened and forms a beam-waist around the lens focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
 \begin{equation}
     \psi(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
 \end{equation}
 where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, the phase is shift is equal to $\pi$. 
 
-In optical microscopy where a refernence or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
+In optical microscopy where a reference or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
 
 The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a gaussian for the readout noise. 
 
