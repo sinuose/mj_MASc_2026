@@ -23,6 +23,7 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{booktabs}
+\usepackage{tabstackengine}
 
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
 %bibliography
@@ -106,10 +107,15 @@
 
     \input{ABSTRACT}
 
+    \input{preface}
+
     \tableofcontents
+
+    \listoftables
+    \listoffigures
     
     % list of symbols
-    \chapter*{Nomenclature}
+    \chapter*{List of Symbols}
     \addcontentsline{toc}{chapter}{Nomenclature}
     \markboth{Nomenclature}{Nomenclature}
 

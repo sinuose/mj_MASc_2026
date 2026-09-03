@@ -1,3 +1,34 @@
+
+\section*{Commitee}
+
+\noindent
+
+\setstacktabulargap{30pt}
+\centerline{\tabularCenterstack{rl}{
+Sabrina R. Leslie, Ph.D.&
+Department of Physics and Astronomy,\\
+\emph{Advisor}&
+University of British Columbia, Vancouver}}
+
+
+\section*{Acknowledgements}
+
+The completion of this study would have not been possible without the help and resources from Dr. Sabrina R. Leslie, the supervisor of my thesis. I would like to thank Dr. Erik Olsén, a post-doc in the Leslie-Lab, who collaborated and provided guidance to me during this project. A debt of gratitude is owed to my dear friends Aiyan Brown, Josh Collesso, and Daniel Currie for aiding in proof-reading and continued support through friendship. Lastly, I would like to thank my father for the unwavering support, interest, and love; without you, this thesis would indeed not be possible. 
+
+\newpage
+\section*{Abstract}
+The understanding of thermal movement of particles within a confined space has been studied extensively in order to understand biological, chemical, and physical processes. Although the theoretical understanding of this confined diffusion is well defined in literature, not much work has been done to understand the effects of electrostatic and hydrodynamic contributions to the size measurements measured from the motion of nanoparticles, as measurements are often intrinsically performed under confinement. This is due to the fact that 3D particle-tracking is not as commonly used as other, higher throughput sizing techniques. By employing developed techniques of nanoparticle tracking in tandem with a full theoretical model, the non-trivial effects of confinement on size-diffusivity were directly investigated and characterized. The work described in the thesis advances the method and tools of 3D nanoparticle analysis both theoretically and in application.
+
+% This thesis provides an understanding and investigation into confined diffusion measurements.
+
+The first section of the thesis describes a theoretical model of Brownian motion based on the confined-Langevin model using a Debye-Hückel electrostatic potential. The model was implemented, based on literature \cite{millanNumericalSimulationsConfined2023}, into a computer-based Python simulation in order to parameterize and create prior distributions of particle motion. 
+
+The second section describes a modified method of 3D tracking to obtain faster calculations of particle position from optical microscopy images. This was based on an algorithm described in literature \cite{dewitPreciseCharacterizationNanometerscale2023}. The validation of the method was done on exact point-spread function simulation data with an accuracy of 1 nm.  
+
+The third section describes the acquisition of  experimental data using a custom interferometric scattering microscope (iSCAT) with image pixel resolution 55 nm acquiring images between 400 and 1000 frames per second. The data consisted of images of scattering fringes from nanoparticle species and was analyzed using the algorithm developed in section 2. The resultant information was accurate 3D particle tracks. The models developed in section 1 were applied to the tracks to obtain infer particle size and charge. 
+
+The thesis presents a method of finding particle size, motion, and electrostatics which can present additional tools to analyze nanoparticle characterization, which was the goal of the thesis. 
+\newpage
 \section*{Layman Summary}
 
 %MARTIN GOOD
@@ -23,20 +54,4 @@ This method has potential application in nanoparticle production. The particle-s
 % intro
 %Particle confinement allows for extended measurements of suspended biomolecules and nanoparticles using optical microscopy as it keeps it within the field of view.
 
-\newpage
-\section*{Abstract}
-The understanding of thermal movement of paricles within a confined space has been studied extensively in order to understand biological, chemical, and physical processes. Although the theoretical understanding of this confined diffusion is well defined in literature, not much work has been done to understand the effects of electrostatic and hydrodynamic contributions to the size measurements measured from the motion of nanoparticles, as measurements are often intrinsically performed under confinement. This is due to the fact that 3D particle-tracking is not as commonly used as other, higher throughput sizing techniques. By employing developed techniques of nanoparticle tracking in tandem with a full theoretical model, the non-trivial effects of confinement on size-diffusivity were directly investigated and characterized. The work described in the thesis advances the method and tools of 3D nanoparticle analysis both theoretically and in application.
 
-% This thesis provides an understanding and investigation into confined diffusion measurements.
-
-The first section of the thesis describes a theoretical model of Brownian motion based on the confined-Langevin model using a Debye-Hückel electrostatic potential. The model was implemented, based on literature \cite{millanNumericalSimulationsConfined2023}, into a computer-based Python simulation in order to parameterize and create prior distributions of particle motion. 
-
-The second section describes a modified method of 3D tracking to obtain faster calculations of particle position from optical microscopy images. This was based on an algorithm described in literature \cite{dewitPreciseCharacterizationNanometerscale2023}. The validation of the method was done on exact point-spread function simulation data with an accuracy of 1 nm.  
-
-The third section describes the acquisition of  experimental data using a custom interferometric scattering microscope (iSCAT) with image pixel resolution 55 nm acquiring images between 400 and 1000 frames per second. The data consisted of images of scattering fringes from nanoparticle species and was analyzed using the algorithm developed in section 2. The resultant information was accurate 3D particle tracks. The models developed in section 1 were applied to the tracks to obtain infer particle size and charge. 
-
-The thesis presents a method of finding particle size, motion, and electrostatics which can present additional tools to analyze nanoparticle characterization, which was the goal of the thesis. 
-
-\section*{Acknowledgements}
-
-I would like to thank for the guidance, help and resources from Dr. Sabrina R. Leslie, who is also my supervisor of thesis. In addition, I would like to thank Dr. Erik Olsén, a post-doc in the Leslie-Lab, who collaborated and provided guidance to me during this project.
