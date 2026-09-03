@@ -4,8 +4,8 @@
 \contentsline {section}{\numberline {2.1}Einstein's Brownian Motion}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Langevin Dynamics}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}From Master Equation to Fokker-Planck}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{9}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Self-consistent Confinement coefficient}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Self-Consistent Confinement coefficient}{10}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Electrostatic Potentials}{12}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Equilibrium Distributions for Confined Systems}{13}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Biological Application}{15}{chapter.3}%

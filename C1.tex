@@ -6,7 +6,7 @@ The physical phenomenon of irregular movements of nanoparticles in liquid is kno
 
 % For relatively large particles, the optical microscope is a good tool to observe them. However, for particles smaller the nano-scale, the diffraction limit is a property that must be overcome. This was theoretically described by Abbe \cite{Steck2021,Born1999}.
 
-This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
+This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate in order to be applied to experimental data analysis in further chapters. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
 
 This chapter introduces the mathematics of Brownian motion and diffusion-type processes. Einstein's diffusion- equation argument and Langevin's stochastic equation of motion are discussed and shown to be equivalent through the Fokker-Planck formalism. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility and electrostatic interactions, described by the Debye-Hückel interactions, govern particle-wall interactions in ionic solution. Finally, the subject of equilibrium distributions  are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
 
@@ -15,24 +15,22 @@ This chapter introduces the mathematics of Brownian motion and diffusion-type pr
 
 The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of atomic length when undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion or a diffusion process \cite{brownXXVIIBriefAccount1828}. 
 
-The classical treatment of Brownian motion describes how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas. Einstein's argument is one of macroscopic motion.  Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
+The classical treatment of Brownian motion describes how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. Einstein's argument is one of macroscopic motion.  Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
 
 \begin{equation}
 	\int \phi(\Delta) d\Delta = 1.
 \end{equation}
 
-Assume that the medium is isotropic such that $\phi$ is even, $\phi(\Delta) = \phi(-\Delta)$. 
-
-Let $f(x,t)$ denote some number of particles at the point $x$. Einstein takes a finite slice of this volume and equates it to a probability space;
+Assuming that the medium is isotropic, such that $\phi$ is even, $\phi(\Delta) = \phi(-\Delta)$. Let $f(x,t)$ denote some number of particles at the point $x$. Einstein takes a finite slice of this volume and equates it to a probability space;
 
 \begin{equation}
-	f(x, t + \tau)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta.
+	f(x, t + \delta t)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta.
 \end{equation}
 
 The argument here is demonstrated by a Taylor-expansion of both sides of this equation,
 
 \begin{equation}
-	f(x, t + \tau) \approx f(x,t) + \tau\frac{\partial f(x,t)}{\partial t}.
+	f(x, t + \delta t) \approx f(x,t) + \delta t\frac{\partial f(x,t)}{\partial t}.
 \end{equation}
 In the spatial dimensions,
 \begin{equation}
@@ -40,11 +38,11 @@ In the spatial dimensions,
 \end{equation}
 Cancelling each of the terms, the classical diffusion equation is shown to nearest order;
 \begin{equation}\label{eqn:diffusionpde}
-	\frac{\partial f(x,t)}{\partial t} = \underbrace{\left[\frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta\right]}_{D} \frac{\partial^2 f(x,t)}{\partial x^2},
+	\frac{\partial f(x,t)}{\partial t} = \underbrace{\left[\frac{1}{\delta t}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta\right]}_{D} \frac{\partial^2 f(x,t)}{\partial x^2},
 \end{equation}
 where the diffusion coefficient is associated with the second moment of the probability distribution
 \begin{equation}
-	D = \frac{1}{\tau}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta.
+	D = \frac{1}{\delta t}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta.
 \end{equation}
 The friction coefficient is physically related to the solution of the Navier-Stokes equations at a low Reynolds number\footnote{Which describes the relative inertial forces to the viscous forces.}. Specifically, when the inertial forces are negligible and $\Re \ll 1$, then the drag force on a particle,
 \begin{equation}
@@ -65,18 +63,19 @@ where $d$ is the number of dimensions, and $\Delta t$ is the difference from a k
     \langle x^2 \rangle_c = 2d D \Delta t.
 \end{equation}
 
-Einstein's theory of diffusion instantiates a partial differential equation that describes how the size of a particle relates to a thermodynamic motion. In addition, the Einstein-Stokes relation directly relates the rate of diffusion to the size of the particle. Paired with the solutions to the diffusion equation, the size of particles can be directly measured from time-series position information, such as concentration maps or particle trajectories. 
+Einstein's theory of diffusion instantiates a partial differential equation that describes how the size of a particle relates to a thermodynamic motion. In addition, the Einstein-Stokes relation directly relates the rate of diffusion to the size of the particle. Paired with the solutions to the diffusion equation \cite{bickel_note_2007}, the size of particles can be directly measured from time-series position information, such as concentration maps or particle trajectories \cite{bian111YearsBrownian2016}. 
 
+% if i have time add in the solutions from my confined diffusion work.
 \section{Langevin Dynamics}
 
 In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle moves within a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}.
 
 This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
-	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{B} + \vec F(t)
+	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{\mu} + \vec F(t)
 \end{equation}
 
-where $B$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{B}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
+where $\mu$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{\mu}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
 
 The statistical content of $\vec F(t)$ is determined by the moments and auto-correlation. Notably, this relation is physically described by the fluctuation-dissipation theory, which relates the drag force to the random force. In Brownian motion, this takes the form
 \begin{equation}
@@ -84,12 +83,12 @@ The statistical content of $\vec F(t)$ is determined by the moments and auto-cor
 \end{equation}
 Which stands in as delta-correlated noise, or that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function (VACF) and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions. This fixes the fluctuation constant to being
 \begin{equation}
-    \Gamma = \frac{2k_bT}{B}.
+    \Gamma = \frac{2k_bT}{\mu}.
 \end{equation}
 
 One can take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity one finds
 \begin{equation}
-	m\dot{\vec{v}} = -\frac{\vec{v}}{B} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
+	m\dot{\vec{v}} = -\frac{\vec{v}}{\mu} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
 \end{equation}
 This represents a linear differential equation with a solution hat defines the velocity autocorrelation function. This solution is 
 % \begin{equation}
@@ -97,20 +96,23 @@ This represents a linear differential equation with a solution hat defines the v
 % \end{equation}
 
 \begin{equation}
-	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{1}{mB}e^{-t/(mB)}.
+	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{1}{m\mu}e^{-t/(m\mu)}.
 \end{equation}
 
 Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, the form of the mean-square displacement is found. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$, then the solutions of the position mean-squared displacement are written as
 \begin{equation}
 	\begin{aligned}
-			\langle x^2\rangle &= 6k_b T m B^2\left[\frac{t}{mB} - (1-e^{-t/(mB)})\right] \\
+			\langle x^2\rangle &= 6k_b T m \mu^2\left[\frac{t}{m\mu} - (1-e^{-t/(mB)})\right] \\
 			&\begin{cases} 
-				\xrightarrow{t \ll mB} \frac{3k_b Tt^2}{m}  &  = \langle v^2\rangle t^2 \\
-				\xrightarrow{t \gg mB} \frac{6k_b TmB}{m}t  &  = (6Bk_b T)t\\
+				\xrightarrow{t \ll m\mu} \frac{3k_b Tt^2}{m}  &  = \langle v^2\rangle t^2 \\
+				\xrightarrow{t \gg m\mu} \frac{6k_b Tm\mu}{m}t  &  = (6\mu k_b T)t\\
 			\end{cases}.
 	\end{aligned}
 \end{equation}
-Letting $D = Bk_b T$, Einstein's relation is recovered. 
+Letting $D = \mu k_b T$, Einstein's relation is recovered where the mobility, being the inverse of the friction, can be substituted by the  Stokes friction, 
+\begin{equation}
+    \mu = \frac{1}{6\pi\eta a}.
+\end{equation}
 
 The unique advantage of the Langevin Formulation is that it is readily simulate-able \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
 
@@ -152,7 +154,7 @@ In the case of a two-wall confinement, the form of the diffusion coefficient has
 \end{equation}
 
 
-\section{Self-consistent Confinement coefficient}
+\section{Self-Consistent Confinement coefficient}
 
 A consequence of the confined mobility relations presented by Faxén is the diffusion correction, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients.
 \begin{equation}
@@ -164,9 +166,9 @@ The values of the corrections are, however, functions of the particle radius. Fo
 \end{equation}
 where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known. One useful property of the Faxén functions, as well as the linear-superposition approximations are that they are monotonically decreasing. This is illustrated in Fig. \ref{fig:mob_coef}.
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Python/Figures/Mobility_coefficient.pdf}
+    \includegraphics[width=\textwidth]{Python/Figures/Mobility_coefficient.pdf}
     \caption{Linear-superposition mobility curve for linear-superposition and Faxén relations. $h = \SI{225}{\nm}$.}
     \label{fig:mob_coef}
 \end{figure}
@@ -179,7 +181,7 @@ as derived in \ref{app:3}. To demonstrate the self-consistency, the figure of a 
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Python/Figures/diffusion_self_consistent_example.pdf}
+    \includegraphics[width=\textwidth]{Python/Figures/diffusion_self_consistent_example.pdf}
     \caption{Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI{100}{\nm}$ Polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat{a} = \SI{124.30}{\nm}$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI{64.1}{\nm}$.}
     \label{fig:diff_self_cons}
 \end{figure}
@@ -233,7 +235,7 @@ In the approximations done in this thesis,  a linear symmetric potential, as wel
 where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle;
 \begin{equation}
     \begin{aligned}
-        C &= \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
+        C_\mathrm{pw} &= \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
         \Gamma_w &= \tanh\left(\frac{e \psi_w}{4k_b T}\right)\\
         \Gamma_p &= \tanh\left(\frac{e \zeta_p}{4k_b T}\right)\\
         \psi_w & = \frac{2 k_b T}{e} \text{asinh}\frac{e\lambda_D \sigma_w}{2 \varepsilon_0 \varepsilon_r k_b T}.

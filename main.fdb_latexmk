@@ -1,15 +1,15 @@
 # Fdb version 4
-["biber main"] 1788469976.7352 "main.bcf" "main.bbl" "main" 1788470304.77036 0
-  "main.bcf" 1788470304 116263 a065eab429f52c93441ed836122d808c "pdflatex"
-  "references.bib" 1788469969 81776 1d5105566fee1c32a8d38adef4d8dd97 ""
+["biber main"] 1788471275.61258 "main.bcf" "main.bbl" "main" 1788471719.4707 0
+  "main.bcf" 1788471719 116584 eb63baaf0d0fe6c4ec2d30a3c661c9b0 "pdflatex"
+  "references.bib" 1788471266 83228 b9856d9170a1e9f3565a7d7b4b17773e ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1788470299.93484 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1788470304.77088 0
+["pdflatex"] 1788471714.45233 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1788471719.47122 0
   "A1.tex" 1785179085 20839 64427408aa4cc5be73f73f070d3d49a0 ""
   "ABSTRACT.tex" 1788469969 7126 a3a97197dadbbbf77f942d96437a24da ""
-  "C1.tex" 1788454040 50277 157545a9af5cc969d9adb90862d26f64 ""
+  "C1.tex" 1788471685 50766 bb751378c117a4925ab7b513a4876f22 ""
   "C2.tex" 1786048681 32925 b7af4dab8d8107883676ca05b5ff86e6 ""
   "C3.tex" 1788449010 58998 e717320a7175168bbc1821d2a5bb8002 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1788449367 318203 ded6def68845cd324d278c83e332d82c ""
@@ -341,15 +341,15 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785345537 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
-  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1788468894 10129 92f16b6f814e41276f79181e4297655f ""
-  "main.aux" 1788470304 51710 6ff6dc4c74ce45591c8f2d38bfccbea1 "pdflatex"
-  "main.bbl" 1788469978 162072 059b4d8b8c424c8ec36ff050385a2380 "biber main"
-  "main.lof" 1788470304 10757 5e4668b6aa04014f3a30cb7120bd88a2 "pdflatex"
-  "main.lot" 1788470304 1688 5252fb7631842c528ad5d945ae5d8f8b "pdflatex"
-  "main.out" 1788470304 12209 51b2cbcb17124a75e1711302505e73a8 "pdflatex"
-  "main.run.xml" 1788470304 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
-  "main.tex" 1788468894 10129 92f16b6f814e41276f79181e4297655f ""
-  "main.toc" 1788470304 5541 51f89068ff986dbdc61766cb9586010e "pdflatex"
+  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1788471714 10241 1e7caf448d5cd26b5d4b0bebed2e3388 ""
+  "main.aux" 1788471719 52152 98bed66aba87c08867324175b15f761b "pdflatex"
+  "main.bbl" 1788471277 164867 59ea9b7dda9301b9dba5682bc024daf2 "biber main"
+  "main.lof" 1788471719 10757 5e4668b6aa04014f3a30cb7120bd88a2 "pdflatex"
+  "main.lot" 1788471719 1688 5252fb7631842c528ad5d945ae5d8f8b "pdflatex"
+  "main.out" 1788471719 12209 90f5eb19c01a1663c4d10f8618b74d74 "pdflatex"
+  "main.run.xml" 1788471719 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.tex" 1788471714 10241 1e7caf448d5cd26b5d4b0bebed2e3388 ""
+  "main.toc" 1788471719 5542 cb47c552d571e8ab1c7cd8ed17c8caba "pdflatex"
   "preface.tex" 1788465261 1922 c5c6ae0ad6ecdc04d3b7e7c541946e13 ""
   (generated)
   "main.aux"
