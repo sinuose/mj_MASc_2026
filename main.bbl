@@ -158,6 +158,242 @@
       \verb https://opg.optica.org/abstract.cfm?URI=ao-62-27-7205
       \endverb
     \endentry
+    \entry{hou_lipid_2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=0897b8e3d83e83cae55c5868edc37877}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Xucheng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1fa97aedbddb615a91f17b7ed21b0934}{%
+           family={Zaks},
+           familyi={Z\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0ed819ebb1c70e579a764bb04b593b17}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=36acbd566fdf8086d405fabbecc7c92e}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Yizhou},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf42df7401e16b65263ef062875de89b}
+      \strng{fullhash}{9e77a12b462548175c1f3b28caa2f39b}
+      \strng{fullhashraw}{9e77a12b462548175c1f3b28caa2f39b}
+      \strng{bibnamehash}{cf42df7401e16b65263ef062875de89b}
+      \strng{authorbibnamehash}{cf42df7401e16b65263ef062875de89b}
+      \strng{authornamehash}{cf42df7401e16b65263ef062875de89b}
+      \strng{authorfullhash}{9e77a12b462548175c1f3b28caa2f39b}
+      \strng{authorfullhashraw}{9e77a12b462548175c1f3b28caa2f39b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Messenger {RNA} ({mRNA}) has emerged as a new category of therapeutic agent to prevent and treat various diseases. To function in vivo, {mRNA} requires safe, effective and stable delivery systems that protect the nucleic acid from degradation and that allow cellular uptake and {mRNA} release. Lipid nanoparticles have successfully entered the clinic for the delivery of {mRNA}; in particular, lipid nanoparticle–{mRNA} vaccines are now in clinical use against coronavirus disease 2019 ({COVID}-19), which marks a milestone for {mRNA} therapeutics. In this Review, we discuss the design of lipid nanoparticles for {mRNA} delivery and examine physiological barriers and possible administration routes for lipid nanoparticle–{mRNA} systems. We then consider key points for the clinical translation of lipid nanoparticle–{mRNA} formulations, including good manufacturing practice, stability, storage and safety, and highlight preclinical and clinical studies of lipid nanoparticle–{mRNA} therapeutics for infectious diseases, cancer and genetic disorders. Finally, we give an outlook to future possibilities and remaining challenges for this promising technology.}
+      \field{day}{10}
+      \field{issn}{2058-8437}
+      \field{journaltitle}{Nature Reviews Materials}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{12}
+      \field{shortjournal}{Nat Rev Mater}
+      \field{title}{Lipid nanoparticles for {mRNA} delivery}
+      \field{urlday}{25}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1078\bibrangedash 1094}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1038/s41578-021-00358-0
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/KY9N8GSV/Hou et al. - 2021 - Lipid nanoparticles for mRNA delivery.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41578-021-00358-0
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41578-021-00358-0
+      \endverb
+    \endentry
+    \entry{akinc_onpattro_2019}{article}{}{}
+      \name{author}{18}{}{%
+        {{hash=baf55b7fe5a27c8b60671d9fc549956f}{%
+           family={Akinc},
+           familyi={A\bibinitperiod},
+           given={Akin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9fa7011bcf1303253a5145daceae3600}{%
+           family={Maier},
+           familyi={M\bibinitperiod},
+           given={Martin\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8f9878cf080cc095eaa84c67443fc0a3}{%
+           family={Manoharan},
+           familyi={M\bibinitperiod},
+           given={Muthiah},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e97b50903e91da2d530d61b31c6e4517}{%
+           family={Fitzgerald},
+           familyi={F\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=78f50de68394aaa92464578aae3662c8}{%
+           family={Jayaraman},
+           familyi={J\bibinitperiod},
+           given={Muthusamy},
+           giveni={M\bibinitperiod}}}%
+        {{hash=69bb4a76e16389072e49aa8756e1ea6c}{%
+           family={Barros},
+           familyi={B\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=20757c6a64186e48a39734952eded689}{%
+           family={Ansell},
+           familyi={A\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=abd2bd34b5e1f2e2721cd2c8aa909d19}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Xinyao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ba946b255c6a5df28eaa8ca129ce6518}{%
+           family={Hope},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ff583f47f2c78df9da8218a9bd7e90ce}{%
+           family={Madden},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima D.},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=d6b277754993c8cddd6ac4da59578479}{%
+           family={Mui},
+           familyi={M\bibinitperiod},
+           given={Barbara\bibnamedelima L.},
+           giveni={B\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=43c27ade233aa2f0afd4296d28246fbd}{%
+           family={Semple},
+           familyi={S\bibinitperiod},
+           given={Sean\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=9bf3b2c90a3c3fea3b53d68ad1d4e091}{%
+           family={Tam},
+           familyi={T\bibinitperiod},
+           given={Ying\bibnamedelima K.},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3eb0be0dfc4e3fa8ebfbb20347901f80}{%
+           family={Ciufolini},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dad4bb633d1ad67d6098cadc1beac79e}{%
+           family={Witzigmann},
+           familyi={W\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f42db1f71f42617b807cbad672817b01}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Jayesh\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=389f983c4ed6ad0b6975d2af3e49c720}{%
+           family={Van\bibnamedelimb Der\bibnamedelima Meel},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Roy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a099450f6a6b03f168444a5050586954}{%
+           family={Cullis},
+           familyi={C\bibinitperiod},
+           given={Pieter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{141bea18f0a55b5b995359f29b0e20a1}
+      \strng{fullhash}{bb31a1d61e66121a56a6894ca4e3b7e9}
+      \strng{fullhashraw}{bb31a1d61e66121a56a6894ca4e3b7e9}
+      \strng{bibnamehash}{141bea18f0a55b5b995359f29b0e20a1}
+      \strng{authorbibnamehash}{141bea18f0a55b5b995359f29b0e20a1}
+      \strng{authornamehash}{141bea18f0a55b5b995359f29b0e20a1}
+      \strng{authorfullhash}{bb31a1d61e66121a56a6894ca4e3b7e9}
+      \strng{authorfullhashraw}{bb31a1d61e66121a56a6894ca4e3b7e9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3387, 1748-3395}
+      \field{journaltitle}{Nature Nanotechnology}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{The {Onpattro} story and the clinical translation of nanomedicines containing nucleic acid-based drugs}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{1084\bibrangedash 1087}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1038/s41565-019-0591-y
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\C9P2LKMS\\Akinc et al. - 2019 - The Onpattro story and the clinical translation of nanomedicines containing nucleic acid-based drugs.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41565-019-0591-y
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41565-019-0591-y
+      \endverb
+    \endentry
+    \entry{noauthor_personalized_2025}{incollection}{}{}
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Biological and societal issues are involved when we refer to a condition as cancer, which connotes loss, complexity, and uncertainty. In recent decades, the number of melanomas has climbed. Cancer treatment vaccines have induced immune responses against tumor-associated but not tumor-specific antigens. Cancer therapy may use mRNA vaccines after COVID-19 pandemic regulation advancements. Therapy mRNA cancer vaccines as advanced immunotherapies gain prominence. Using messenger RNA, the mRNA-4157/V940 cancer vaccine encodes 34 patient-specific tumor euroantigens. mRNA-4157/V940, like the COVID-19 vaccination, instructs the immune system to distinguish healthy and malignant cells using messenger RNA. T cell responses are tailored to a patient’s tumor mutational pattern using this unique immunization. The drug suppresses PD-1, PD-L1, and PD-L2. T lymphocytes activated by pembrolizumab may affect cancer and non-cancerous cells. Early clinical trials suggest pembrolizumab and mRNA-4157/V940 may boost T cell-mediated cancer killing. Knowing the status and problems of melanoma therapeutic mRNA cancer vaccines in clinical trials is critical. In this chapter, we have focused on preclinical and clinical advances that have revealed mRNA melanoma vaccine manufacturing issues and solutions.}
+      \field{booktitle}{Advances in {Immunology}}
+      \field{isbn}{978-0-443-31748-4}
+      \field{shorttitle}{Personalized precision}
+      \field{title}{Personalized precision: {Revolutionizing} cancer treatment with {mRNA}-based vaccines in melanoma therapy}
+      \field{urlday}{3}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{166}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \field{pages}{137\bibrangedash 167}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1016/bs.ai.2024.10.011
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\VZ8ZK4IT\\2025 - Personalized precision Revolutionizing cancer treatment with mRNA-based vaccines in melanoma therap.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S006527762400083X
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S006527762400083X
+      \endverb
+    \endentry
     \entry{Steck2021}{unpublished}{}{}
       \name{author}{1}{}{%
         {{hash=a411f1fbd416b5b9ae41109aa1d370f0}{%
@@ -174,8 +410,8 @@
       \strng{authornamehash}{a411f1fbd416b5b9ae41109aa1d370f0}
       \strng{authorfullhash}{a411f1fbd416b5b9ae41109aa1d370f0}
       \strng{authorfullhashraw}{a411f1fbd416b5b9ae41109aa1d370f0}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{revision 1.8.3, 25}
@@ -212,8 +448,8 @@
       \strng{authornamehash}{b14dea9f75ec6824071689113c5b3d02}
       \strng{authorfullhash}{b14dea9f75ec6824071689113c5b3d02}
       \strng{authorfullhashraw}{b14dea9f75ec6824071689113c5b3d02}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{7}
@@ -856,8 +1092,8 @@
       \strng{authornamehash}{5bd1b35ae47ec1234b559bc57aabd681}
       \strng{authorfullhash}{5bd1b35ae47ec1234b559bc57aabd681}
       \strng{authorfullhashraw}{5bd1b35ae47ec1234b559bc57aabd681}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1539-3755, 1550-2376}
@@ -913,8 +1149,8 @@
       \strng{authornamehash}{ce6c644347fa15163c047e62dcfe3b94}
       \strng{authorfullhash}{ce6c644347fa15163c047e62dcfe3b94}
       \strng{authorfullhashraw}{ce6c644347fa15163c047e62dcfe3b94}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Interferometric scattering (iSCAT) microscopy is a powerful tool for label-free sensitive detection and imaging of nanoparticles to high spatio-temporal resolution. As it was born out of detection principles central to conventional microscopy, we begin by surveying the historical development of the microscope to examine how the exciting possibility for interferometric scattering microscopy with sensitivities suﬃcient to observe single molecules has become a reality. We discuss the theory of interferometric detection and also issues relevant to achieving a high detection sensitivity and speed. A showcase of numerous applications and avenues of novel research across various disciplines that iSCAT microscopy has opened up is also presented.}
@@ -1545,8 +1781,8 @@
       \strng{authornamehash}{448d3ae45af4d3e60f57acfa93c86d8d}
       \strng{authorfullhash}{448d3ae45af4d3e60f57acfa93c86d8d}
       \strng{authorfullhashraw}{448d3ae45af4d3e60f57acfa93c86d8d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{3rd ed}
@@ -1577,8 +1813,8 @@
       \strng{authornamehash}{1636d10c65bdfba786d4bff51e30d9dd}
       \strng{authorfullhash}{1636d10c65bdfba786d4bff51e30d9dd}
       \strng{authorfullhashraw}{1636d10c65bdfba786d4bff51e30d9dd}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Einwirkung der {G}efässwände auf den {W}iderstand gegen die {B}ewegung einer kleinen {K}ugel in einer zähen {F}lüssigkeit}
@@ -2074,72 +2310,6 @@
       \verb 10.1056/NEJMoa2035389
       \endverb
     \endentry
-    \entry{hou_lipid_2021}{article}{}{}
-      \name{author}{4}{}{%
-        {{hash=0897b8e3d83e83cae55c5868edc37877}{%
-           family={Hou},
-           familyi={H\bibinitperiod},
-           given={Xucheng},
-           giveni={X\bibinitperiod}}}%
-        {{hash=1fa97aedbddb615a91f17b7ed21b0934}{%
-           family={Zaks},
-           familyi={Z\bibinitperiod},
-           given={Tal},
-           giveni={T\bibinitperiod}}}%
-        {{hash=0ed819ebb1c70e579a764bb04b593b17}{%
-           family={Langer},
-           familyi={L\bibinitperiod},
-           given={Robert},
-           giveni={R\bibinitperiod}}}%
-        {{hash=36acbd566fdf8086d405fabbecc7c92e}{%
-           family={Dong},
-           familyi={D\bibinitperiod},
-           given={Yizhou},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{cf42df7401e16b65263ef062875de89b}
-      \strng{fullhash}{9e77a12b462548175c1f3b28caa2f39b}
-      \strng{fullhashraw}{9e77a12b462548175c1f3b28caa2f39b}
-      \strng{bibnamehash}{cf42df7401e16b65263ef062875de89b}
-      \strng{authorbibnamehash}{cf42df7401e16b65263ef062875de89b}
-      \strng{authornamehash}{cf42df7401e16b65263ef062875de89b}
-      \strng{authorfullhash}{9e77a12b462548175c1f3b28caa2f39b}
-      \strng{authorfullhashraw}{9e77a12b462548175c1f3b28caa2f39b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Messenger {RNA} ({mRNA}) has emerged as a new category of therapeutic agent to prevent and treat various diseases. To function in vivo, {mRNA} requires safe, effective and stable delivery systems that protect the nucleic acid from degradation and that allow cellular uptake and {mRNA} release. Lipid nanoparticles have successfully entered the clinic for the delivery of {mRNA}; in particular, lipid nanoparticle–{mRNA} vaccines are now in clinical use against coronavirus disease 2019 ({COVID}-19), which marks a milestone for {mRNA} therapeutics. In this Review, we discuss the design of lipid nanoparticles for {mRNA} delivery and examine physiological barriers and possible administration routes for lipid nanoparticle–{mRNA} systems. We then consider key points for the clinical translation of lipid nanoparticle–{mRNA} formulations, including good manufacturing practice, stability, storage and safety, and highlight preclinical and clinical studies of lipid nanoparticle–{mRNA} therapeutics for infectious diseases, cancer and genetic disorders. Finally, we give an outlook to future possibilities and remaining challenges for this promising technology.}
-      \field{day}{10}
-      \field{issn}{2058-8437}
-      \field{journaltitle}{Nature Reviews Materials}
-      \field{langid}{english}
-      \field{month}{8}
-      \field{number}{12}
-      \field{shortjournal}{Nat Rev Mater}
-      \field{title}{Lipid nanoparticles for {mRNA} delivery}
-      \field{urlday}{25}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{volume}{6}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1078\bibrangedash 1094}
-      \range{pages}{17}
-      \verb{doi}
-      \verb 10.1038/s41578-021-00358-0
-      \endverb
-      \verb{file}
-      \verb PDF:/Users/korsk/Zotero/storage/KY9N8GSV/Hou et al. - 2021 - Lipid nanoparticles for mRNA delivery.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/s41578-021-00358-0
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/s41578-021-00358-0
-      \endverb
-    \endentry
     \entry{NIST2023}{dataset}{}{}
       \name{author}{3}{}{%
         {{hash=9a12a2ec587fedb9b9c9d37d68974946}{%
@@ -2200,8 +2370,8 @@
       \strng{authornamehash}{7a6606eab31c4dfac5e2745ea51e71ab}
       \strng{authorfullhash}{7a6606eab31c4dfac5e2745ea51e71ab}
       \strng{authorfullhashraw}{7a6606eab31c4dfac5e2745ea51e71ab}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Controlled Release}
@@ -2242,8 +2412,8 @@
       \strng{authornamehash}{b4176f616f0e2e6816dbca72bfb048df}
       \strng{authorfullhash}{b4176f616f0e2e6816dbca72bfb048df}
       \strng{authorfullhashraw}{b4176f616f0e2e6816dbca72bfb048df}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Communications}
@@ -2565,8 +2735,8 @@
       \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The {Quantum} {Theory} of {Fields}}
@@ -2619,8 +2789,8 @@
       \strng{authornamehash}{6aba19dc1f19248cc99bf48458706845}
       \strng{authorfullhash}{0f5445997099854d8e457390a25db7e1}
       \strng{authorfullhashraw}{0f5445997099854d8e457390a25db7e1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Different optical microscopy methods provide different but related single particle information. This tutorial reviews how optical microscopy images can be related to particle properties, including optical theory and strategies for image analysis. , In order to relate nanoparticle properties to function, fast and detailed particle characterization is needed. The ability to characterize nanoparticle samples using optical microscopy techniques has drastically improved over the past few decades; consequently, there are now numerous microscopy methods available for detailed characterization of particles with nanometric size. However, there is currently no “one size fits all” solution to the problem of nanoparticle characterization. Instead, since the available techniques have different detection limits and deliver related but different quantitative information, the measurement and analysis approaches need to be selected and adapted for the sample at hand. In this tutorial, we review the optical theory of single particle scattering and how it relates to the differences and similarities in the quantitative particle information obtained from commonly used label-free microscopy techniques, with an emphasis on nanometric (submicron) sized dielectric particles. Particular emphasis is placed on how the optical signal relates to mass, size, structure, and material properties of the detected particles and to its combination with diffusivity-based particle sizing. We also discuss emerging opportunities in the wake of new technology development, including examples of adaptable python notebooks for deep learning image analysis, with the ambition to guide the choice of measurement strategy based on various challenges related to different types of nanoparticle samples and associated analytical demands.}
@@ -2676,8 +2846,8 @@
       \strng{authornamehash}{bc195ae617c294f75772b703d297e316}
       \strng{authorfullhash}{bc195ae617c294f75772b703d297e316}
       \strng{authorfullhashraw}{bc195ae617c294f75772b703d297e316}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0-471-05772-X}
@@ -2747,8 +2917,8 @@
       \strng{authornamehash}{bbdcd235222db2f66fbad3ea1645889a}
       \strng{authorfullhash}{bbdcd235222db2f66fbad3ea1645889a}
       \strng{authorfullhashraw}{bbdcd235222db2f66fbad3ea1645889a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{pubmed}
@@ -2809,8 +2979,8 @@
       \strng{authornamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
       \strng{authorfullhash}{00128a4e8ce9ac3a65289c4446737486}
       \strng{authorfullhashraw}{00128a4e8ce9ac3a65289c4446737486}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
@@ -3221,8 +3391,8 @@
       \strng{authornamehash}{132a6f4858bb9fd56c9a510144fe491b}
       \strng{authorfullhash}{fd16c203452f5debb707c1cc5410183d}
       \strng{authorfullhashraw}{fd16c203452f5debb707c1cc5410183d}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2040-3364}
@@ -3263,8 +3433,8 @@
       \strng{authornamehash}{121b014aa774dffb6ad9bff595fcc15a}
       \strng{authorfullhash}{121b014aa774dffb6ad9bff595fcc15a}
       \strng{authorfullhashraw}{121b014aa774dffb6ad9bff595fcc15a}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a method of calculating the electric charge density of glass and silica surfaces in contact with aqueous electrolytes for two cases of practical relevance that are not amenable to standard techniques: surfaces of low specific area at low ionic strength and surfaces interacting strongly with a second anionic surface.}

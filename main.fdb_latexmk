@@ -1,15 +1,15 @@
 # Fdb version 4
-["biber main"] 1788453799.21505 "main.bcf" "main.bbl" "main" 1788453965.84251 0
-  "main.bcf" 1788453965 116037 134bb3d6c5c74bc8f6a4a1c252d6f6d8 "pdflatex"
-  "references.bib" 1786048682 78634 2178c91ec1e398252162cd54788bdab2 ""
+["biber main"] 1788469976.7352 "main.bcf" "main.bbl" "main" 1788470304.77036 0
+  "main.bcf" 1788470304 116263 a065eab429f52c93441ed836122d808c "pdflatex"
+  "references.bib" 1788469969 81776 1d5105566fee1c32a8d38adef4d8dd97 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1788453961.07333 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1788453965.84303 0
+["pdflatex"] 1788470299.93484 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1788470304.77088 0
   "A1.tex" 1785179085 20839 64427408aa4cc5be73f73f070d3d49a0 ""
-  "ABSTRACT.tex" 1788452094 6910 35616d2f670e94b67052cbe82ef78fc6 ""
-  "C1.tex" 1788449010 49007 aa184c518835e89e341cd5cba7795095 ""
+  "ABSTRACT.tex" 1788469969 7126 a3a97197dadbbbf77f942d96437a24da ""
+  "C1.tex" 1788454040 50277 157545a9af5cc969d9adb90862d26f64 ""
   "C2.tex" 1786048681 32925 b7af4dab8d8107883676ca05b5ff86e6 ""
   "C3.tex" 1788449010 58998 e717320a7175168bbc1821d2a5bb8002 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1788449367 318203 ded6def68845cd324d278c83e332d82c ""
@@ -306,7 +306,7 @@
   "Figures/lnp_blebs_cryo2.jpg" 1785169855 278108 8aacba5da10ddc298c542f8f8d174255 ""
   "Figures/schematic.pdf" 1784742716 57652 a014f429d16a93d58d88755a97488c7c ""
   "Figures/size-comp.jpg" 1788453769 2481750 e74bcaf5c1b742b190f4bd82091b1084 ""
-  "INTRO.tex" 1788453955 9787 de3a2e76386318edef37f6a6ec713836 ""
+  "INTRO.tex" 1788470299 9815 21cbe1db2f58d57789290ee73bff4b8d ""
   "Python/Figures/AngularInt.pdf" 1784564158 82729 d5eff268cc90fc24663dbcc78828f5d4 ""
   "Python/Figures/B_estimation_hist.pdf" 1783973251 50438 119a20c5be0e09bcfc1d32bc9c4fcb4c ""
   "Python/Figures/Chapter7/c7_fig3.pdf" 1785446895 47840 b59f6b0e59d1082c103bee94fdd6a3d8 ""
@@ -341,16 +341,16 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785345537 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
-  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1788453632 5597 13638ba2f65d8dba18e2bdce9593a899 ""
-  "main.aux" 1788453965 51207 59d8caca6e9b264210db5d68a3e22184 "pdflatex"
-  "main.bbl" 1788453809 153730 63bf388a5f4b222f2ea979ed763447d4 "biber main"
-  "main.lof" 1788453965 10757 281bc3cf6e44693d5c89e67f3a82bd00 "pdflatex"
-  "main.lot" 1788453965 1688 5252fb7631842c528ad5d945ae5d8f8b "pdflatex"
-  "main.out" 1788453965 12209 51b2cbcb17124a75e1711302505e73a8 "pdflatex"
-  "main.run.xml" 1788453965 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
-  "main.tex" 1788453632 5597 13638ba2f65d8dba18e2bdce9593a899 ""
-  "main.toc" 1788453965 5540 77a966eff003e1ab7721d912b14a60ad "pdflatex"
-  "preface.tex" 1788452109 1935 1806d1df727df37836e3c07761fa323a ""
+  "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1788468894 10129 92f16b6f814e41276f79181e4297655f ""
+  "main.aux" 1788470304 51710 6ff6dc4c74ce45591c8f2d38bfccbea1 "pdflatex"
+  "main.bbl" 1788469978 162072 059b4d8b8c424c8ec36ff050385a2380 "biber main"
+  "main.lof" 1788470304 10757 5e4668b6aa04014f3a30cb7120bd88a2 "pdflatex"
+  "main.lot" 1788470304 1688 5252fb7631842c528ad5d945ae5d8f8b "pdflatex"
+  "main.out" 1788470304 12209 51b2cbcb17124a75e1711302505e73a8 "pdflatex"
+  "main.run.xml" 1788470304 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.tex" 1788468894 10129 92f16b6f814e41276f79181e4297655f ""
+  "main.toc" 1788470304 5541 51f89068ff986dbdc61766cb9586010e "pdflatex"
+  "preface.tex" 1788465261 1922 c5c6ae0ad6ecdc04d3b7e7c541946e13 ""
   (generated)
   "main.aux"
   "main.bcf"

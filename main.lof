@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Size comparison of various particles. Nanoparticles are defined as particles where the largest dimension is at most $\sim \SI {200}{\nm }$. Figures taken from "Comparison of nanomaterials sizes" by Sureshbup, available under CC BY-SA 3.0 at \href {https://commons.wikimedia.org/wiki/File:Comparison_of_nanomaterials_sizes.jpg}{URL}}}{2}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Linear-superposition mobility curve for linear-superposition and Faxén relations. $h = \SI {225}{\nm }$.}}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Linear-superposition mobility curve for linear-superposition and Faxén relations. $h = \SI {225}{\nm }$.}}{11}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI {100}{\nm }$ Polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat {a} = \SI {124.30}{\nm }$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI {64.1}{\nm }$.}}{11}{figure.caption.12}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Lipid nanoparticle diagram and CRYO-EM image. CRYO-EM image obtained from the NIST Segmentation of Lipid Nanoparticles dataset (https://data.nist.gov/od/id/mds2-2753) \blx@tocontentsinit {0}\cite {NIST2023}. Shown are KC2 LNPs at pH 7, with RNA taken at $\SI {0.223}{\nm }$ per pixel.}}{16}{figure.caption.13}%
