@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1786660838.43642 "main.bcf" "main.bbl" "main" 1786661123.27719 0
-  "main.bcf" 1786661123.10507 115964 4c14284aec5ea5d3f7658c0fffbaa241 "pdflatex"
+["biber main"] 1786660838.43642 "main.bcf" "main.bbl" "main" 1787207771.09827 0
+  "main.bcf" 1787207770.93341 115964 4c14284aec5ea5d3f7658c0fffbaa241 "pdflatex"
   "references.bib" 1786393558.01423 77513 2178c91ec1e398252162cd54788bdab2 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1786661117.85661 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1786661123.27752 0
+["pdflatex"] 1787207766.1111 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1787207771.09856 0
   "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1786393558.01102 5313 573783579474aae3adb8b58a086a7e22 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -290,7 +290,7 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "A1.tex" 1785253951.49602 20420 64427408aa4cc5be73f73f070d3d49a0 ""
   "ABSTRACT.tex" 1786660469.82898 6302 b452df47e61deeb3dd5a04bc9b38c9f6 ""
-  "C1.tex" 1786661116.94874 48382 aa184c518835e89e341cd5cba7795095 ""
+  "C1.tex" 1787207765.22926 49641 157545a9af5cc969d9adb90862d26f64 ""
   "C2.tex" 1786659499.17085 32500 b7af4dab8d8107883676ca05b5ff86e6 ""
   "C3.tex" 1786659738.50538 58259 e717320a7175168bbc1821d2a5bb8002 ""
   "CONC.tex" 1785689657.56162 4464 92a96ec66b01dad60e7c4b49a5ea47e7 ""
@@ -343,12 +343,12 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785355381.48781 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784405191.14894 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1786661123.09296 51003 925b93006f13fc26a1f852fc9a11b504 "pdflatex"
+  "main.aux" 1787207770.9219 51087 b3b129999ed836c1e19e7e1dc66d3ab4 "pdflatex"
   "main.bbl" 1786660840.35626 150427 cf07e24c8f1d0e413d5902fe2c4ca6cc "biber main"
-  "main.out" 1786661123.10404 12209 7ef001a91e0bfade87480cc8898bce24 "pdflatex"
-  "main.run.xml" 1786661123.10627 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.out" 1787207770.93251 12209 7ef001a91e0bfade87480cc8898bce24 "pdflatex"
+  "main.run.xml" 1787207770.93427 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1786393558.01102 5313 573783579474aae3adb8b58a086a7e22 ""
-  "main.toc" 1786661123.10633 5539 5bab4bfc12e6e9abf937ddbb128af010 "pdflatex"
+  "main.toc" 1787207770.93433 5539 de3911de048254de691ee8e7c7ae6c95 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
