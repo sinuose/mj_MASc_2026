@@ -9,11 +9,11 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Locating encapsulated mRNA in LNPs by cryo-EM. Taken directly from Kloczewiak, 2022\blx@tocontentsinit {0}\cite {Kloczewiak2022}. Creative Commons license.}}{17}{figure.caption.15}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Rayleigh scattering pattern, Eqn. \ref {eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = 405 \mathrm {nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \sim V$. As the particle volume increases, the scattering pattern increases in amplitude.}}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Simplest possible imaging setup. Image consists of a plane wave illumination, a lens, and a camera.}}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Simple imaging setup. Left, a lens is placed before an object. The light focuses on an imaging plane. The schematic consists of a feasible setup. Right, an image consists of a plane wave illumination, a lens, and a camera.}}{26}{figure.caption.17}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Isometric iSCAT Schematic.}}{29}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Optical table for the iSCAT microscope. At the Leslie lab.}}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Optical table for the iSCAT microscope. At the Leslie lab.}}{30}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Optical table for the iSCAT microscope. Photographed at the Leslie lab, UBC.}}{30}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Optical table for the iSCAT microscope. Photographed at the Leslie lab, UBC.}}{30}{figure.caption.21}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Laser Driver}}{31}{figure.caption.22}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. }}{36}{figure.caption.24}%
@@ -37,22 +37,22 @@
 \contentsline {figure}{\numberline {7.9}{\ignorespaces Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}}{56}{figure.caption.43}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {8.1}{\ignorespaces iSCAT Schematic.}}{59}{figure.caption.45}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces cover-glass schematic.}}{60}{figure.caption.46}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Flow cell schematic. Left, diagram of flow-cell with sticker. Right, top and bottom coverslips of the flow cell separated.}}{60}{figure.caption.46}%
 \contentsline {figure}{\numberline {8.3}{\ignorespaces flow-cell schematic and assembled flow-cell photograph.}}{60}{figure.caption.47}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference.}}{61}{figure.caption.48}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference.}}{62}{figure.caption.48}%
 \contentsline {figure}{\numberline {8.5}{\ignorespaces This is DLS data for the beads.}}{62}{figure.caption.49}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Spatial density of the average trajectory of particles. }}{63}{figure.caption.52}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement.}}{64}{figure.caption.53}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius.}}{65}{figure.caption.54}%
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations. }}{66}{figure.caption.55}%
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$.}}{67}{figure.caption.56}%
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Glycerol-water curve. The curve is taken from \blx@tocontentsinit {0}\cite {cheng_formula_2008}.}}{68}{figure.caption.58}%
-\contentsline {figure}{\numberline {8.12}{\ignorespaces trajectories of a bead in glycerol.}}{69}{figure.caption.59}%
-\contentsline {figure}{\numberline {8.13}{\ignorespaces Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$.}}{70}{figure.caption.60}%
-\contentsline {figure}{\numberline {8.14}{\ignorespaces Theoretical diffusivity shown in orange. Measured diffusivity measured in blue. }}{71}{figure.caption.61}%
-\contentsline {figure}{\numberline {8.15}{\ignorespaces DLS measurements of LNP}}{72}{figure.caption.63}%
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Probability histogram of LNP axial position. Imaged are onpattro standard, and bleb-like LNPs. Liposomal LNPs were too small to be tracked over a long-range.}}{73}{figure.caption.65}%
-\contentsline {figure}{\numberline {8.17}{\ignorespaces Ensemble MSD of LNP. Imaged are liposomal, onpattro standard, and bleb-like LNPs.}}{74}{figure.caption.66}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Spatial density of the average trajectory of particles. }}{64}{figure.caption.52}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement.}}{65}{figure.caption.53}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius.}}{66}{figure.caption.54}%
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations. }}{67}{figure.caption.55}%
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$.}}{68}{figure.caption.56}%
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Glycerol-water curve. The curve is taken from \blx@tocontentsinit {0}\cite {cheng_formula_2008}.}}{69}{figure.caption.58}%
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Trajectory of a polystrene bead in glycerol.}}{70}{figure.caption.59}%
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$.}}{71}{figure.caption.60}%
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Theoretical diffusivity shown in orange. Measured diffusivity measured in blue. }}{72}{figure.caption.61}%
+\contentsline {figure}{\numberline {8.15}{\ignorespaces DLS measurements of LNP}}{73}{figure.caption.63}%
+\contentsline {figure}{\numberline {8.16}{\ignorespaces Probability histogram of LNP axial position. Imaged are onpattro standard, and bleb-like LNPs. Liposomal LNPs were too small to be tracked over a long-range.}}{74}{figure.caption.65}%
+\contentsline {figure}{\numberline {8.17}{\ignorespaces Ensemble MSD of LNP. Imaged are liposomal, onpattro standard, and bleb-like LNPs.}}{75}{figure.caption.66}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

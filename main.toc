@@ -49,13 +49,13 @@
 \contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{59}{subsection.8.1.2}%
 \contentsline {subsection}{\numberline {8.1.3}Convex-lens Induced Confinement}{61}{subsection.8.1.3}%
 \contentsline {subsection}{\numberline {8.1.4}Sample Preparation Steps}{61}{subsection.8.1.4}%
-\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{63}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{68}{section.8.3}%
-\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{72}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Conclusion}{75}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusion}{75}{section.9.1}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{85}{appendix.A}%
-\contentsline {section}{\numberline {A.1}$\hat B$ MLE}{85}{section.A.1}%
-\contentsline {section}{\numberline {A.2}$\mathbb {V}[\hat {B}]$}{86}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{87}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{88}{appendix.C}%
+\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{64}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{69}{section.8.3}%
+\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{73}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusion}{76}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusion}{76}{section.9.1}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{87}{appendix.A}%
+\contentsline {section}{\numberline {A.1}$\hat B$ Maximum Likelihood Estimator}{87}{section.A.1}%
+\contentsline {section}{\numberline {A.2}$\hat {B}$ Variance}{89}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{90}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{91}{appendix.C}%

@@ -198,9 +198,9 @@ The development of this relation allows for the size estimate to be calculated u
 \clearpage
 \section{Electrostatic Potentials}
 
-A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
+A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds \cite{debye1923theorie, israelachviliIntermolecularSurfaceForces}. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
 \begin{equation}
-	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}
+	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}.
 \end{equation}
 In a general solution of ions, there will be $j$ species of ions.
 \begin{align*}
@@ -212,9 +212,9 @@ The charge distribution of a single ion concentration is essentially the density
 	\rho_i(\vec{x}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}.
 \end{equation}
 
-Here the energy of the system is defined as the potential energy scaled by the charge defined as $U = qV$. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space.
+Here the energy of the system is defined as the potential energy scaled by the charge defined as $U = qV$. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space \cite{daune1999molecular, jackson2006molecular},
 \begin{equation}
-	\nabla^2 \Psi(\vec{x}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}
+	\nabla^2 \Psi(\vec{x}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}.
 \end{equation}
 
 There is a first-order linearization approximation to this equation where the potential is small,
@@ -237,11 +237,11 @@ This equation has an obvious solution which are the real exponential functions;
 
 The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the pre-factor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
 
-In the approximations done in this thesis,  a linear symmetric potential, as well as a spherical particle between the potential is assumed. The form of this potential is given by 
+In the approximations done in this thesis,  a linear symmetric potential, as well as a spherical particle between the potential is assumed. The form of this potential is chosen as 
 \begin{equation}
     B = C \Gamma_p \Gamma_w,
 \end{equation}
-where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle;
+where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces};
 \begin{equation}
     \begin{aligned}
         C_\mathrm{pw} &= \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
@@ -484,7 +484,7 @@ This equation is the scattering field of an ideal Rayleigh particle. This equati
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Python/Figures/RayleighScatter.pdf}
+    \includegraphics[width=\textwidth]{Python/Figures/RayleighScatter.pdf}
     \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = 405 \mathrm{nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \sim V$. As the particle volume increases, the scattering pattern increases in amplitude.}
     \label{fig:raylieghscatter}
 \end{figure}
@@ -567,11 +567,11 @@ This function allows one to obtain the $z$ position of a particle with respect t
 
 \section{Resolution Limits of Optical Microscopy}
 
-There is a limit of resolution that can be achieved through optical methods. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture. 
+There is a limit of resolution that can be achieved through optical methods. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture \cite{abbe1873beitraege, jonkman_18_2003}. 
 
-Optical fields consists of a sum of plane waves that construct and deconstruct. The electric field can be decomposed into a Fourier series of exponential harmonics. 
+Optical fields consists of a sum of plane waves that construct and deconstruct. The electric field can be decomposed into a Fourier series of exponential harmonics. \cite{Steck2021} 
 
-To understand how the optical field modulates as it travels, the propagation equation can be written in a plane-wave basis,
+To understand how the optical field modulates as it travels, the propagation equation can be written in a plane-wave basis \cite{goodman2017introduction},
 \begin{equation}
 	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y, \quad \Omega = \{x \in \R : x^2 \leq k^2\}.
 \end{equation}
@@ -581,9 +581,9 @@ The propagated wave passes through an objective which can be modeled by a lens. 
 \begin{equation}
 	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f_\mathrm{lens}},
 \end{equation}
-where $z_1, z_2$ are the positions of the observer and the object, and $f_\mathrm{lens}$ is the focal distance of the lens. The magnification of the lens is defined as $M = z_2/z_1$.
+where $z_1, z_2$ are the positions of the observer and the object, and $f_\mathrm{lens}$ is the focal distance of the lens \cite{Steck2021}. The magnification of the lens is defined as $M = z_2/z_1$.
  
-To define a field formulation for this system, the propagation equation can be used. The incoming light that passes through the finite area of a lens is defined a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta-function through a two lens system. The measured optical field is given by the Fourier transform of the product of the pupil function and the delta-function.
+To define a field formulation for this system, the propagation equation can be used. The incoming light that passes through the finite area of a lens is defined a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta-function through a two lens system. The measured optical field is given by the Fourier transform of the product of the pupil function and the delta-function \cite{goodman2017introduction},
 \begin{eqnarray}
 	H(x,y) = \iint_\Omega P(x',y')e^{\frac{ik}{2}\left(\frac{1}{z_1} - \frac{1}{f_1} - \frac{1}{f_2} + \frac{1}{z_2}\right)\sqrt{{x'}^2} + {y'}^2}e^{-\frac{ik}{z_2}(xx' + yy')}dx'dy'.
 \end{eqnarray}
@@ -591,7 +591,7 @@ Expanding this field, one can use a zero-order Hankel transform to integrate ove
 \begin{equation}
 	H(r, z) = \int_0^1e^{-\frac{ik}{2}\frac{\text{NA}^2}{n}\rho^2 z}J_0\left(\frac{k\text{NA}}{M}\rho r\right) \rho d\rho,
 \end{equation}
-where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$.
+where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$ \cite{goodman2017introduction}.
 
 In perfect focus, $z=0$, and the image is the point spread function. For $z\neq 0$ there is a defocusing aberration which is defined as the secondary exponential. For a point source, which is diffraction limited, the following is the limit of the optical microscope,
 \begin{equation}
@@ -606,6 +606,8 @@ Similar results are found for the minimum axial imaging criterion by setting $r=
 	z_{\text{min}} = \frac{2\lambda n}{\text{NA}^2}
 \end{equation}
 
+These equations impose fundamental resolution limitations to general optical microscopes and must be taken into account when interpretting microscopy data.  
+
 %  Since a partial amount of light that scatters  through the lens is of interest. Specifically, the range of $k_x$ and $k_y$ are fundamentally limited by the wavelength. The resolution limit is $\lambda/\text{NA}$. In the case of scattering microscopy, this is not a large problem as the scattering pattern is much larger, however, in the limit of two particle near each other, the spatial resolution limit must be enforced. 
 
  \section{Sources of Noise in Optical Imaging}
@@ -615,16 +617,16 @@ In imaging, there is a number of sources of aberrations that one must account fo
 \begin{figure}[h!]
     \centering
     \begin{subfigure}[t]{0.45\textwidth}
-        \includegraphics[width=\linewidth]{Figures/imaging_diagram_simple.png}
+        \includegraphics[width=\linewidth]{Figures/iimaging_diagram_simple.pdf}
     \end{subfigure}
     \begin{subfigure}[t]{0.45\textwidth}
         \includegraphics[width=\linewidth]{Figures/imaging_diagram.pdf}
     \end{subfigure}
-    \caption{Simplest possible imaging setup. Image consists of a plane wave illumination, a lens, and a camera.}
+    \caption{Simple imaging setup. Left, a lens is placed before an object. The light focuses on an imaging plane. The schematic consists of a feasible setup. Right, an image consists of a plane wave illumination, a lens, and a camera.}
     \label{fig:imaging_diagram_simple}
 \end{figure}
 
-For such a system, the sources of noise are the point spread function noise, Guoy phase aberrations, background noise, electronic noise, and spherical aberrations. 
+For such a system, the sources of noise are the point spread function noise, Guoy phase aberrations, background noise, electronic noise, and spherical aberrations \cite{holst2007cmos, holographic2015aberration}. 
 
 The optical point spread noise originates from the transformations of light passing through optical components.
 
@@ -638,17 +640,17 @@ where $h(x_i, y_i, x_o, y_o)$ is known as the optical transfer function, or the 
 \end{equation}
 where $K$ is a complex constant and $M$ is a real-valued magnification. Each lens causes a small amount of aberration and misalignment which spatially limits the final optical field.
 
-The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens. The plane wave is tightened and forms a beam-waist around the lens focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
+The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens \cite{Steck2021}. The plane wave is tightened and forms a beam-waist around the lens focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
 \begin{equation}
     \psi_g(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
 \end{equation}
 where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, the phase is shift is equal to $\pi$. 
 
-In optical microscopy where a reference or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density. 
+In optical microscopy where a reference or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density \cite{dewitPreciseCharacterizationNanometerscale2023,taylor_interferometric_2018}. 
 
-The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a gaussian for the readout noise. 
+The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a gaussian for the readout noise \cite{holst2007cmos}. 
 
-In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
+In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens \cite{hecht2017optics}. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
 
 

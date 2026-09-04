@@ -3,58 +3,60 @@
 
 This is a section for the derivation of the surface charge estimator used in the axial diffusion estimation.
 
-\section{$\hat B$ MLE}
+\section{$\hat B$ Maximum Likelihood Estimator}
 
 The Force used in the modeling is given by;
 \begin{equation}
-    V'(z)= B  \frac{k_b T}{\lambda_D} \cdot \exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))
+    V'(z_n) = B\phi(z_n)= B  \frac{k_b T}{\lambda_D} \cdot \exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))
 \end{equation}
 
-The dynamics are governed by the equation, written in the Ito convention, 
+The dynamics are governed by the equation, written in the Itô convention \cite{gardiner2009stochastic}, 
 \begin{equation}
-    \Delta z = D'(z) \Delta t - \beta D(z) V'(z) \Delta t + \sqrt{2 D_z} W_t.
+    \Delta z = D'(z) \Delta t - \beta D(z) V'(z) \Delta t + \sqrt{2 D(z)} W_t.
 \end{equation}
 Re-writing in terms of drift and diffusion coefficients;
 \begin{equation}
-    \Delta z = \left[ D_z'(z)  - \beta B D(z) \phi(z)  \right] \Delta t+ \sqrt{2 D_z} W_t.
+    \Delta z = \left[ D'(z)  - \beta B D(z) \phi(z)  \right] \Delta t+ \sqrt{2 D(z)} W_t.
 \end{equation}
-where $\phi(z) = \frac{k_b T}{\lambda_D}\exp(-H/\lambda_D) \cdot (\exp(-z_n/\lambda_D) - \exp(z_n/\lambda_D))$. This is a Markov-process that has a propagator probability from the Onsager-Machlup path integral representation, 
+This is a Markov-process that has a propagator probability from the Onsager-Machlup path integral representation \cite{onsager1953fluctuations1, machlup1953fluctuations2}, 
 \begin{equation}
-    P(z_{n+1}|z_n) = \frac{1}{4D_z\Delta t} \exp\left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right].
+    P(z_{n+1}|z) = \frac{1}{4D(z)\Delta t} \exp\left[-\frac{\left(\Delta z_n - D'(z)\Delta t  + \beta B D(z) \phi(z) \Delta t\right)^2}{4D(z) \Delta t}\right].
 \end{equation} 
 
 To obtain an estimator for $B$, take the log-likelihood and differentiate, maximizing it. 
 
 \begin{align*}
-l(B) &= \sum_{n=0}^\infty \left[-\frac{\left(\Delta z_n - D_z'(z)  + \beta B D(z) \phi(z)\right)^2}{4D_z \Delta t}\right] + \text{const} \\
-&= - \frac{1}{2}\sum_{n=0}^\infty\frac{1}{2D_z \Delta t} \left(\Delta z_n - D_z'(z)  + \beta B D(z)\phi(z)\right)^2 + \text{const}. \\
+l(B) &= \sum_{n=0}^\infty \left[-\frac{\left(\Delta z_n - D'(z) \Delta t  + \beta B D(z) \phi(z) \Delta t\right)^2}{4D(z) \Delta t}\right] + \text{const} \\
+&= - \frac{1}{2}\sum_{n=0}^\infty\frac{1}{2D(z) \Delta t} \left(\Delta z_n - D'(z)\Delta t  + \beta B D(z)\phi(z)\Delta t\right)^2 + \text{const}. \\
 \end{align*}
-Define $r_n = \Delta z_n - D_z'(z)$ and $w_n = \frac{1}{2D_z}$. Find the maximum of the log-likelihood by taking the derivative of $l$ with respect to $B$.
+Define $r_n = \Delta z_n - D'(z) \Delta t$ and $w_n = \frac{1}{2D(z)}$. Find the maximum of the log-likelihood by taking the derivative of $l$ with respect to $B$.
 \begin{align*}
-    l'(B) = -\sum_{n=0}^\infty\frac{w_n}{\Delta t} \left(r_n  + \beta B D(z)\phi(z)\right)\beta D(z) \phi(z) \\
+    l'(B) = -\sum_{n=0}^\infty\frac{w_n}{\Delta t} \left(r_n  + \beta B D(z)\phi(z)\Delta t\right)\beta D(z) \phi(z) \\
 \end{align*}
-Set this to 0 and solve for $\hat B$.
+Setting this to 0 and solving for $\hat B$,
+
+\begin{align*}
+    0 &= -\sum_{n=0}^\infty\frac{w_n}{\Delta t} \left(r_n  + \beta B D(z)\phi(z)\Delta t\right)\beta D(z) \phi(z) \\
+   0 &= \sum_{n=0}^\infty\frac{w_n}{\Delta t} r_n D(z) \phi(z) + \sum_{n=0}^{\infty}\frac{w_n}{\Delta t} \beta B D^2(z)\phi^2(z)\Delta t \\
+    \frac{1}{\Delta t}\sum_{n=0}^\infty w_n r_n D(z) \phi(z)&= -\beta B\sum_{n=0}^{\infty}w_n D^2(z)\phi^2(z) \\
+    B &=\frac{\sum_{n=0}^\infty w_n r_n D(z) \phi(z)}{\sum_{n=0}^{\infty}w_n D^2(z)\phi^2(z) \Delta t}. \\
+\end{align*}
+Simplifying the terms, the estimator is written in the form over a sum of steps $z$;
 \begin{equation}
-    \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}
+    \hat B = \frac{\sum_n \phi(z)\left[\Delta z - D'(z)\Delta t\right]}{\sum_n D(z)\phi^2(z)\Delta t}
 \end{equation}
 
-\section{$\mathbb{V}[\hat{B}]$}
+\section{$\hat{B}$ Variance}
 
 The variance of this can be found using the fisher information matrix;
 \begin{align*}
     \mathcal{I}(B) &= -l''(B) \\
-            &= \sum_{n=0}^\infty\frac{\Delta t \phi^2(z)}{2D(z)}
+            &= \sum_{n=0}^\infty \frac{w_n}{\Delta t} \Delta t \beta^2 D^2(z)\phi^2(z)\\
+            &= \frac{1}{2}\sum_{n=0}^\infty \beta^2 D(z)\phi^2(z)
 \end{align*}
-In the univariate case, the variance is proportional to the inverse of the fisher information, or the denominator of the MLE. 
+In the univariate case, the variance is proportional to the inverse of the fisher information, which is also proportional to the denominator of the MLE. 
 \begin{equation}
-    \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)}
-\end{equation}
-This is an application of the delta-method as
-\begin{equation}
-    \begin{aligned}
-            W_t &\sim \mathcal{N}(0, 1) \\
-            B &= g(W_t).
-    \end{aligned}
+    \mathbb{V}[\hat{B}] = \frac{1}{2}\sum_{n=0}^\infty \beta^2 D(z)\phi^2(z)
 \end{equation}
 
 

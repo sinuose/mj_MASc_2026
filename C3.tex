@@ -55,14 +55,14 @@ The laboratory implementation shown in Fig. \ref{fig:schematic}, was assembled o
 \begin{figure}[h!]
     \centering	
     \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_1.pdf}
-	\caption{Optical table for the iSCAT microscope. At the Leslie lab.}
+	\caption{Optical table for the iSCAT microscope. Photographed at the Leslie lab, UBC.}
     \label{fig:isometrix_annotated_1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering	
     \includegraphics[width=0.9\linewidth]{Figures/OpticsImage/isometrix_annotated_2.pdf}
-	\caption{Optical table for the iSCAT microscope. At the Leslie lab.}
+	\caption{Optical table for the iSCAT microscope. Photographed at the Leslie lab, UBC.}
     \label{fig:isometrix_annotated_2}
 \end{figure}
 
@@ -176,7 +176,7 @@ In over-damped case, where $m \ddot{\vec{x}} \ll 1$, the  the equations of motio
 \end{equation}
 as described in Eqn. 7 of Ref. \cite{millanNumericalSimulationsConfined2023}. This model is especially valid for particles of diameter between $\SI{10}{\nm} - \SI{100}{\micro \meter}$. This model is valid for particle such as PMMA, carboxylate-modified polystyrene, and similar materials. 
 
-Since $\vec{W}(t)$ is a random, non-analytical function, classical ODE methods of time evolution do not apply. To simulate the stochastic portion, the Euler-Maruyama method should be used.
+Since $\vec{W}(t)$ is a random, non-analytical function, classical ODE methods of time evolution do not apply. To simulate the stochastic portion, the Euler-Maruyama method was used.
 
 Eqn. \ref{eqn:EOM} can be written into the Itô form,
 \begin{equation}
@@ -216,7 +216,7 @@ The electrostatic forces that drive the dynamic motion are described by the foll
 \begin{equation}
     U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right],
 \end{equation}
-where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Grahame model,
+where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Guoy-Chapman equations in a linear-superposition approximation of a double-layer potential \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces},
 
 \begin{align}\label{eqn:electrostatic_forces}
     B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
@@ -237,7 +237,7 @@ where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-lay
 \clearpage
 \section{Python Simulation Implementation}
 
-The Langevin equations are implemented using \textsc{Python}. The \textsc{Python} version used for simulations was $3.13.5$. The libraries \textsc{numpy} version $2.4.6$, \textsc{scipy} version $1.18.0$, and \textsc{numba} version $0.99.0$ were used as the main drivers for the simulations. 
+The Langevin equations are implemented using \textsc{Python}. The \textsc{Python} version used for simulations was $3.13.5$. The libraries \textsc{numpy} version $2.4.6$, \textsc{scipy} version $1.18.0$, and \textsc{numba} version $0.99.0$ were used as the main drivers for the simulations \cite{python3, harris2020array, lam2015numba}. 
 
 Since \textsc{numba} uses a pre-compiled set of functions, it was more CPU efficient to write a parameter class and a simulator class separately.
 
@@ -408,7 +408,7 @@ The surface charge of the confinement walls can be estimated based on the electr
 Although the SDE MLE equation is already known, the solution was specifically applied for the purpose of this thesis in the form presented in Eqn. \ref{eqn:surface_MLE}. A detailed derivation is presented in Appendix. \ref{app:1};
 
 \begin{equation}\label{eqn:surface_MLE}
-     \hat B = \frac{\sum_n \frac{\phi(z)}{2D_z}\left[\Delta z - D'(z)\Delta t\right]}{\sum_n \frac{\phi^2(z)\Delta t}{2D_z}}, \quad \mathbb{V}[\hat{B}] = \sum_{n=0}^\infty\frac{ \phi^2(z) \Delta t }{2D(z)},
+     \hat B = \frac{\sum_n \phi(z)\left[\Delta z - D'(z)\Delta t\right]}{\sum_n D(z)\phi^2(z)\Delta t}, \quad \mathbb{V}[\hat{B}] = \frac{1}{2}\sum_{n=0}^\infty \beta^2 D(z)\phi^2(z),
 \end{equation} 
 where $\Delta z$ is the random variable assigned to step displacement, $D(z)$ is the diffusion coefficient, and $\phi(z)$ is the gradient of the potential,
 \begin{equation}
