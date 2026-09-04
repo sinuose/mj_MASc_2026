@@ -65,6 +65,8 @@ where $d$ is the number of dimensions, and $\Delta t$ is the difference from a k
 
 Einstein's theory of diffusion instantiates a partial differential equation that describes how the size of a particle relates to a thermodynamic motion. In addition, the Einstein-Stokes relation directly relates the rate of diffusion to the size of the particle. Paired with the solutions to the diffusion equation \cite{bickel_note_2007}, the size of particles can be directly measured from time-series position information, such as concentration maps or particle trajectories \cite{bian111YearsBrownian2016}. 
 
+Einstein's original paper directly motivated the sizing of particles using statistical estimates of their random motion, specifically with the existence of the mean-squared displacement relation. This relation allows one to utilize motion as an indirect measurement of size, which is one of the cornerstones of single-molecule optical measurements.
+
 % if i have time add in the solutions from my confined diffusion work.
 \section{Langevin Dynamics}
 
@@ -115,7 +117,7 @@ Letting $D = \mu k_b T$, Einstein's relation is recovered where the mobility, be
 \end{equation}
 
 The unique advantage of the Langevin Formulation is that it is readily simulate-able \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
-
+ 
 \section{From Master Equation to Fokker-Planck}
 
 To show that the two methods are equal, the master equation can be shown to validate equilibrium distributions.  Suppose that $f(x,t)dx$ representation that he probability of an arbitrary particle in the ensemble has a displacement between $x$ and $x + dx$. If $f$ is a probability distribution,  the master equation can be represented. Let $W$ represent the traditional probability transition rate, then
@@ -136,7 +138,9 @@ where the diffusive and drift terms are parameterized over the transition probab
 	\end{aligned}
 \end{equation}
 
-In the case of zero drift, the form of this equation equates to the diffusion equation of the Langevin formulation. Thus,  the Einsteinian and Langevin formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems.
+In the case of zero drift, the form of this equation equates to the diffusion equation of the Langevin formulation. Thus, the Einsteinian and Langevin formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems. 
+
+Additionally, the results from either formulation are intrinsically the same, which implies that the probabilistic distributions of the Einsteinian formulation can be recovered from running Langevin simulations over a long time-course. Thus, non-analytical systems, such as non-homogenous cases of the diffusion equation, can be investigated in this context using simulations without a loss of applicability. 
 
 \section{Confined Diffusion Processes}
 
@@ -148,13 +152,16 @@ The effect of diffusion near an interface on a nearby particle is quite particul
 	\end{aligned}
 \end{equation}
 
-In the case of a two-wall confinement, the form of the diffusion coefficient has a lot of depth in wealth. In application, it has been shown that the form of the Onseen drag in terms of mobility coefficients.
+In the case of a two-wall confinement, the form of the diffusion coefficient has a lot of depth in wealth. There is much theoretical discussion on the confinement coefficient in hydrodynamic boundary conditions \cite{lin_diffusion_2000, dufresne_brownian_2001, swan_particle_2010}. In application, it has been shown that the form of the Onseen drag shows the best experimental agreement \cite{dufresneBrownianDynamicsSphere2001} can be expressed in a linear superposition of linear mobility coefficients,
 \begin{equation}
-	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0] 
+	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0].
 \end{equation}
 
+In context of single-particle sizing measurements, the distance between the particle and nearby surfaces is often small \cite{kamanzi_simultaneous_2021,graves_direct_2026, kamanzi_single-particle_2026}. Thus, this correction term must be applied in confinement-based methods in order for sizing estimations to be considered valid with respect to the true size. 
 
-\section{Self-Consistent Confinement coefficient}
+Additionally, confined diffusion processes are one such example of non-trivial diffusion equations. It has been shown in literature this form of a system is easier simulated rather than calculated \cite{millanNumericalSimulationsConfined2023}.
+
+\section{Self-Consistent Confinement Coefficient}
 
 A consequence of the confined mobility relations presented by Faxén is the diffusion correction, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients.
 \begin{equation}
@@ -173,7 +180,7 @@ where the $\hat{\cdot}$ indicates measured values. This condition is self-consis
     \label{fig:mob_coef}
 \end{figure}
 
-To computationally calculate this relation, the relation equates itself to a simple self-consistency relation:
+To computationally calculate this relation, the relation equates itself to a recursive equation:
 \begin{equation}
     a_* = \arg\min_{a_*}\left|\frac{\hat{a}}{\mu_{\parallel,\perp}} - a_*\right|,
 \end{equation}
@@ -185,6 +192,8 @@ as derived in \ref{app:3}. To demonstrate the self-consistency, the figure of a 
     \caption{Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI{100}{\nm}$ Polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat{a} = \SI{124.30}{\nm}$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI{64.1}{\nm}$.}
     \label{fig:diff_self_cons}
 \end{figure}
+
+The development of this relation allows for the size estimate to be calculated using an estimator of the mobility coefficient as well as the radius. This relation has been previously used in  analytical single-molecule measurements for size measurements in a confined environment \cite{kamanzi_single-particle_2026}. 
 
 \clearpage
 \section{Electrostatic Potentials}
@@ -243,26 +252,27 @@ where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamm
 \end{equation}
 Note that $\psi_w$ is the Stern layer of the wall related to the surface charge density of the wall \cite{israelachviliIntermolecularSurfaceForces}. This is chosen for a more intuitive measurable of a wall-like structure. 
 
+These electrostatic potentials are important for estimation and simulation of confined Langevin dynamics in environments with highly charged particles and boundaries. For instance, the system containing a negatively charged diffusing particle in between two negatively charged glass surfaces. Given the hyperbolic form of the drift, estimation of the surface charge and particle charge can be discussed. These equations are necessary for extraction of more information from three-dimensional particle tracking information.  
 
-\section{Equilibrium Distributions for Confined Systems}
+% \section{Equilibrium Distributions for Confined Systems}
 
-In the case of interfaces, the boundary conditions state that the must particle reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Thus, the adjusted Fokker-Plank equation must be solved,
-\begin{equation}
-	j = -\frac{\partial}{\partial x}\left[D(x)f(x)\right] - \nabla V(x) f(x).
-\end{equation}
+% In the case of interfaces, the boundary conditions state that the must particle reflect off of the sides. Notably, the probability flux is set to 0. This implies that $\partial_x j = 0$ as well. Thus, the adjusted Fokker-Plank equation must be solved,
+% \begin{equation}
+% 	j = -\frac{\partial}{\partial x}\left[D(x)f(x)\right] - \nabla V(x) f(x).
+% \end{equation}
 
-Setting $j$ to 0, the solution of this equation defines the equilibrium distribution after a long time. 
-\begin{equation}
-	f(x) = \frac{\exp \left[-\beta\int_0^x (\frac{\nabla V(y)}{D(y)}) dy \right]}{\exp \left[-\beta \int_{-H}^{H}(\frac{\nabla V(y)}{D(y)}) dy \right]}
-\end{equation}
+% Setting $j$ to 0, the solution of this equation defines the equilibrium distribution after a long time. 
+% \begin{equation}
+% 	f(x) = \frac{\exp \left[-\beta\int_0^x (\frac{\nabla V(y)}{D(y)}) dy \right]}{\exp \left[-\beta \int_{-H}^{H}(\frac{\nabla V(y)}{D(y)}) dy \right]}
+% \end{equation}
 
-This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
+% This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
 
 
 \chapter{Biological Application}
 \label{chap:bioapp}
 
-The diffusivity of a spherical particle is directly linked to a motion that is thermally driven. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding. Thus, it is of utmost importance to adequately understand the confinement effect of diffusion in a given system. 
+The diffusivity of a spherical particle is directly linked to a motion that is thermally driven \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding \cite{Phillips2013, Bialek2012Biophysics}. Thus, it is of utmost importance to adequately understand the confinement effects on diffusion in a given system. 
 
 Application-wise, the confinement of nanoparticles is directly related to fabrication and development research. Notably, since nanoparticle fabrication involves methods of quality control, these methods must be able to quantify between different measures of noise impending their measurement. In the case of confinement effects, these effects often hinder diffusion, as described, which can indirectly bias the final reported measurement. 
 
@@ -279,7 +289,7 @@ As previously shown, the Stokes-Einstein diffusion relation is inferred to direc
 \begin{equation}
     a = \frac{k_b T}{6\pi \eta D(\vec{x})}
 \end{equation}
-Methods such as nanoparticle-tracking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method. 
+Methods such as nanoparticle-tracking analysis (NTA) or single-molecule particle tracking (SPT) are based on this method \cite{midtvedtSizeRefractiveIndex2020, filipeCriticalEvaluationNanoparticle2010}. 
 
 However, there are other methods that can be used. As this thesis is not concerned with fluorescent methods, they will not be explained in depth, however, fluorescence correlation spectroscopy (FCS) works on similar ideas of measuring diffusion autocorrelation curves using a fluorescent probe. 
 
@@ -308,7 +318,7 @@ These have applications in drug delivery and have been using in the SARS-Covid v
     \label{fig:LNPDiagram}
 \end{figure}
 
-One recent investigation of LNP research is within the functional differences based on the LNP topology type \cite{Simonsen2024, Kloczewiak2022}. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in Fig. \ref{fig:LNP_types}. and \ref{fig:lnp_cryo}.
+One recent investigation of LNP research is within the functional differences based on the LNP topology type \cite{Simonsen2024, Kloczewiak2022}. These topologies have many different types, but typically the topologies are grouped into three main types - liposomal, spherical, and bleb-like. These three topologies not only have different structures, but also different length scales. The topologies are visualized in Fig. \ref{fig:LNP_types}. and \ref{fig:lnp_cryo}. 
 
 \begin{figure}[h!]
     \centering
@@ -317,9 +327,9 @@ One recent investigation of LNP research is within the functional differences ba
     \label{fig:LNP_types}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{Figures/lnp_blebs_cryo2.jpg}
+    \includegraphics[width=0.9\textwidth]{Figures/lnp_blebs_cryo2.jpg}
     \caption{Locating encapsulated mRNA in LNPs by cryo-EM. Taken directly from Kloczewiak, 2022\cite{Kloczewiak2022}. Creative Commons license.}
     \label{fig:lnp_cryo}
 \end{figure}
@@ -331,7 +341,7 @@ Modern tools to image and characterize the LNP are split into single-molecule te
 
 To determine the physical properties of nanoparticles suspended in a fluid media, tracking movement of nanoparticles and reconstructing their spatial trajectories must be performed. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy, iSCAT \cite{taylor_interferometric_2018}. 
 
-iSCAT is a relatively modern optical imaging technique that utilizes light scattering contrast to localize particle signal. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry. Similarly, utilizing the phase difference in the scattering pattern between series of images, the relative axial distance can be measured. The 3D positional information is encoded in the scattering pattern in iSCAT. 
+iSCAT is an optical imaging technique that utilizes light scattering contrast to localize particle signal\cite{taylor_interferometric_2018}. The particle's transverse position can be directly rendered by utilizing the scattering pattern's angular symmetry \cite{midtvedt_single-shot_2022, leeCharacterizingTrackingSingle2007, dewitPreciseCharacterizationNanometerscale2023, taylor_interferometric_2018}. Similarly, utilizing the phase difference in the scattering pattern between series of images, the relative axial distance can be measured\cite{kasaianLongRangeThreeDimensionalTracking2024}. The 3D positional information is encoded in the scattering pattern in iSCAT. 
 
 % We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations.  We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field.  Finally, the electromagnetic theory of scattering off spheres, discussion of general optical scattering microscopy theory, and principle of iSCAT will be discussed.
 
@@ -389,7 +399,7 @@ The optical theory of light will obey the Maxwell's equations, which motivates s
     \nabla^2 \vec E + k^2 \vec E = 0, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E.
 \end{equation}
 
-The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis. For isotropic scattering, radial scattering, the spherical basis has been used in the literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
+The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis \cite{jackson_classical_1999, strauss2007pde, zangwill2013modern}. For isotropic scattering, radial scattering, the spherical basis has been used in the literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
 
 Let $\psi$ be a solution to the scalar wave equation,
 \begin{equation}
@@ -434,9 +444,11 @@ In this thesis, only the scattering field was taken into consideration. The ampl
 \end{equation}
 where $\Psi, \xi$ are the Riccatti-Bessel functions \cite{bohren1983absorption}. 
 
+The formulation of such a system allows for discussion of scattering in full generality. However, due to computational and time limitations, Mie theory is often not the most optimal choice unless necessary. In the context of iSCAT microscopy, the size of the particle can be compared to that of the size of the wavelength of light. However, Mie theory is the most utilized theory in the literature \cite{leeCharacterizingTrackingSingle2007, lindfors2004PRL, Dastjerdi2022}. 
+\newpage
 \section{Rayleigh Scattering}
 
-As the particle size decreases and is observed from far away, approximations can be made to simplify the form of the equations. These approximations can be taken without degrading the length-scale of interest. Notably, as the product, $kr \ll 1$, the Hankel function approaches the form of a spherical wave function,
+As particle size decreases and is observed from far away, approximations can be made to simplify the form of the scattering equations. As commonly done in theoretical physics, approximations can be taken without degrading the quality of approximation in the length-scale of interest \cite{jackson_classical_1999, zangwill2013modern}. Notably, as the product, $kr \ll 1$, the Hankel function in Eqn. \ref{eqn:lorenzmie} approaches the form of a spherical wave function,
 \begin{equation}
     h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}.
 \end{equation}
@@ -456,7 +468,6 @@ Using these two equations, the scattering equation, known as the Rayleigh approx
 \end{equation}
 
 After substituting the terms for $n=1$, the sum reduces significantly to the equations for transverse and axial scattering fields,
-
 \begin{equation}
     \begin{aligned}
             \vec E_{s, \perp} &=  \vec E_{i, \perp} \frac{k^2 \alpha e^{ikr}}{r},\\
@@ -464,10 +475,21 @@ After substituting the terms for $n=1$, the sum reduces significantly to the equ
     \end{aligned}
 \end{equation}
 
-Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, the scattering field of spheres on the order of the length of the wavelength of the incident light is written in the seminal form referenced in literature,
+Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, the scattering field of spheres on the order of the length of the wavelength of the incident light is written in the commonly referenced form,
 \begin{equation}\label{eqn:rayleigh_scat}
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}.
 \end{equation}
+
+This equation is the scattering field of an ideal Rayleigh particle. This equation has been used in the literature for axial estimation of iSCAT particles \cite{dewitPreciseCharacterizationNanometerscale2023}. In addition, this equation provides a easily computable form of the scattering pattern for a general Rayleigh scatterer. This equation is plotted for a various set of conditions as shown in Fig. \ref{fig:raylieghscatter}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Python/Figures/RayleighScatter.pdf}
+    \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = 405 \mathrm{nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \sim V$. As the particle volume increases, the scattering pattern increases in amplitude.}
+    \label{fig:raylieghscatter}
+\end{figure}
+
+
 
 \section{Scattering Microscopy}
 
@@ -557,9 +579,9 @@ The energy of the wave is fixed by the trigonometric relation of the transverse 
 
 The propagated wave passes through an objective which can be modeled by a lens. Using the standard ABCD matrix formulation, the imaging condition must be satisfied,
 \begin{equation}
-	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f},
+	\frac{1}{z_1} + \frac{1}{z_2} = \frac{1}{f_\mathrm{lens}},
 \end{equation}
-where $z_1, z_2$ are the positions of the observer and the object, and $f$ is the focal distance of the lens. The magnification of the lens is defined as $M = z_2/z_1$.
+where $z_1, z_2$ are the positions of the observer and the object, and $f_\mathrm{lens}$ is the focal distance of the lens. The magnification of the lens is defined as $M = z_2/z_1$.
  
 To define a field formulation for this system, the propagation equation can be used. The incoming light that passes through the finite area of a lens is defined a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta-function through a two lens system. The measured optical field is given by the Fourier transform of the product of the pupil function and the delta-function.
 \begin{eqnarray}
@@ -618,7 +640,7 @@ where $K$ is a complex constant and $M$ is a real-valued magnification. Each len
 
 The phase accumulation, known as the Guoy phase, originates from plane waves converging to a gaussian beams when passed through a lens. The plane wave is tightened and forms a beam-waist around the lens focal point. As this focusing occurs, there is a phase that is accumulated and  equal to
 \begin{equation}
-    \psi(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
+    \psi_g(z) = \arctan\left(\frac{z}{z_R}\right), \quad z_r = \frac{\pi w_0^2 n}{\lambda},
 \end{equation}
 where $w_0$ is the waist of the final beam, $n$ is the refractive index, and $\lambda$ is the wavelength of light. In imaging, as long as the refractive index is constant, the phase is shift is equal to $\pi$. 
 

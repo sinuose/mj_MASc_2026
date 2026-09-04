@@ -2,9 +2,7 @@
 \chaptermark{iSCAT Optical System}
 \label{chap:iscatsetup}
 
-To observe single nanoparticle diffusion, a microscope system was designed. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. 
-
-The table in Tab. \ref{tab:components} shows the iSCAT microscope components list. The components list are divided into components for the laser head, spatial filter, objective focusing, and camera equipment. All mirrors have the same part number and manufactured by Thorlabs. 
+To observe single nanoparticle diffusion, an iSCAT microscope system was developed\footnote{The iSCAT microscope was built as a collaborative effort as part of two CFI grants before the start of the author's thesis period. The first CFI grant was written in 2020 and awarded in 2021. The second was written in 2022 and awarded in 2023. The microscope parts were ordered by Dr. Eric Boateng as based on Ref. \cite{young_interferometric_2019, ortega-arroyoInterferometricScatteringMicroscopy2012, OrtegaArroyo2016}. The assembly and software was completed by Dr. Erik Olsén with assistance from the Grant lab at UBC. Schematics and figures in this thesis were all written by the author.}. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. The table in Tab. \ref{tab:components} shows the iSCAT microscope component list.
 
 \begin{table}[h!]
     \centering
@@ -36,7 +34,7 @@ The table in Tab. \ref{tab:components} shows the iSCAT microscope components lis
 \newpage
 \section{Optical System Diagram}
 
-The iSCAT microscope system was designed based on prior work by the Kukura lab \cite{OrtegaArroyo2016}. The iSCAT microscope is a wide-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
+The iSCAT microscope system was designed based on prior work by the Kukura lab \cite{OrtegaArroyo2016, ortega-arroyoInterferometricScatteringMicroscopy2012}. The iSCAT microscope is a wide-field optical system that illuminates the whole field of view with a coherent laser light. The iSCAT diagram was shown in Fig. \ref{fig:schematic}. 
 
 \begin{figure}[h!]
     \centering
@@ -129,11 +127,11 @@ The alignment of the objective is quite stable, however, requires maintenance wh
 
 The alignment of the quarter wave-plate is stable and can be regularly altered to adjust for on-the-fly measurements. Specifically, to adjust the reflectance into the camera, the QWP is angularly adjusted and spatially rotated during measurements. Once in place, the QWP does not need to be adjusted. Thus the QWP is often adjusted during the start of measurement to optimize the SNR. 
 
-\section{System Software}
+% \section{System Software}
 
-The data-collection software, which collects the data from the camera and saves into the computer was written by the Grant Lab \cite{Brouwer2026}. This software collects the camera sCMOS information and saves it as a binary array.
+% The data-collection software, which collects the data from the camera and saves into the computer was written by the Grant Lab \cite{Brouwer2026}. This software collects the camera sCMOS information and saves it as a binary array.
 
-The computer used uses an $\mathrm{AMD Ryzen} 7, 9700K$ processor, with $64 \mathrm{gB}$ of RAM memory. 
+% The computer used uses an $\mathrm{AMD Ryzen} 7, 9700K$ processor, with $64 \mathrm{gB}$ of RAM memory. 
 
 \section{Future Improvements}
 

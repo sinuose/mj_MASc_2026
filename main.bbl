@@ -1589,6 +1589,7 @@
       \strng{authornamehash}{84d3d817f736bf34159b849b0829fc5c}
       \strng{authorfullhash}{84d3d817f736bf34159b849b0829fc5c}
       \strng{authorfullhashraw}{84d3d817f736bf34159b849b0829fc5c}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
@@ -1874,6 +1875,372 @@
       \field{type}{phdthesis}
       \field{year}{1921}
     \endentry
+    \entry{lin_diffusion_2000}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=18be51c5ac44183714a2e560745073de}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Binhua},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2d83ae0c98a42d858f429c800e624a4f}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=99182057c51d40b75e53cc3242478890}{%
+           family={Rice},
+           familyi={R\bibinitperiod},
+           given={Stuart\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{fullhash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{fullhashraw}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{bibnamehash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{authorbibnamehash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{authornamehash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{authorfullhash}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \strng{authorfullhashraw}{e57c328b8e7ed9b4cd3ac41a23296afb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Constrained diffusion of an isolated uncharged {PMMA} sphere ( 1 mm diameter) conﬁned between two parallel ﬂat walls was studied using video microscopy in combination with optical tweezers. This technique allows us to measure directly the hindered diffusive motion of the sphere as an explicit function of the distance of the sphere from a wall without interference of electrostatic interaction between the sphere and the walls, nor interference from sedimentation. The measured diffusion coefﬁcients are used to test the predictions of the wall drag effect predicted by several approximate theoretical analyses. We ﬁnd quantitative agreement with the behavior predicted using a hydrodynamic analysis that independently superposes the wall drag effects arising from each wall. © 2000 Elsevier Science B.V. All rights reserved.}
+      \field{issn}{09277757}
+      \field{journaltitle}{Colloids and Surfaces A: Physicochemical and Engineering Aspects}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{1}
+      \field{shortjournal}{Colloids and Surfaces A: Physicochemical and Engineering Aspects}
+      \field{title}{Diffusion of an isolated colloidal sphere confined between flat plates}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{174}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{121\bibrangedash 131}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/S0927-7757(00)00540-9
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/ENK5E5CK/Lin et al. - 2000 - Diffusion of an isolated colloidal sphere confined between flat plates.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0927775700005409
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0927775700005409
+      \endverb
+    \endentry
+    \entry{dufresne_brownian_2001}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0f944d1593cefa30432030f0ee1e2891}{%
+           family={Dufresne},
+           familyi={D\bibinitperiod},
+           given={E.\bibnamedelimi R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=1fd0be04522999e4319ce0e08b6d4d6a}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2287c9de77251cabc9b523adea2f4b88}{%
+           family={Grier},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi G},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{fullhash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{fullhashraw}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{bibnamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorbibnamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authornamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorfullhash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorfullhashraw}{7bef35fc05da69137b8ac21c53f7be8c}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe direct imaging measurements of a colloidal sphere’s diﬀusion between two parallel surfaces. The dynamics of this deceptively simple hydrodynamically coupled system have proved diﬃcult to analyze. Comparison with approximate formulations of a conﬁned sphere’s hydrodynamic mobility reveals good agreement with both a leading-order superposition approximation as well as a more general all-images stokeslet analysis.}
+      \field{issn}{0295-5075, 1286-4854}
+      \field{journaltitle}{Europhysics Letters ({EPL})}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{2}
+      \field{shortjournal}{Europhys. Lett.}
+      \field{title}{Brownian dynamics of a sphere between parallel walls}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{53}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{264\bibrangedash 270}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1209/epl/i2001-00147-6
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/6GDKSB3A/Dufresne et al. - 2001 - Brownian dynamics of a sphere between parallel walls.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i2001-00147-6
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i2001-00147-6
+      \endverb
+    \endentry
+    \entry{swan_particle_2010}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=07798b4902b0eb362fe3f243945bc683}{%
+           family={Swan},
+           familyi={S\bibinitperiod},
+           given={James\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b22b8a50ca4efcc176f69f216ef1864f}{%
+           family={Brady},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{fullhash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{fullhashraw}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{bibnamehash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{authorbibnamehash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{authornamehash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{authorfullhash}{84d3d817f736bf34159b849b0829fc5c}
+      \strng{authorfullhashraw}{84d3d817f736bf34159b849b0829fc5c}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The low-Reynolds-number motion of a single spherical particle between parallel walls is determined from the exact reflection of the velocity field generated by multipoles of the force density on the particle’s surface. A grand mobility tensor is constructed and couples these force multipoles to moments of the velocity field in the fluid surrounding the particle. Every element of the grand mobility tensor is a finite, ordered sum of inverse powers of the distance between the walls. These new expressions are used in a set of Stokesian dynamics simulations to calculate the translational and rotational velocities of a particle settling between parallel walls and the Brownian drift force on a particle diffusing between the walls. The Einstein correction to the Newtonian viscosity of a dilute suspension that accounts for the change in stress distribution due to the presence of the channel walls is determined. It is proposed how the method and results can be extended to computations involving many particles and periodic simulations of suspensions in confined geometries.}
+      \field{day}{1}
+      \field{issn}{1070-6631, 1089-7666}
+      \field{journaltitle}{Physics of Fluids}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shorttitle}{Particle motion between parallel walls}
+      \field{title}{Particle motion between parallel walls: Hydrodynamics and simulation}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{22}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{103301}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.3487748
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/IZGFDEHR/Swan and Brady - 2010 - Particle motion between parallel walls Hydrodynamics and simulation.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/pof/article/22/10/103301/900316/Particle-motion-between-parallel-walls
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/pof/article/22/10/103301/900316/Particle-motion-between-parallel-walls
+      \endverb
+    \endentry
+    \entry{dufresneBrownianDynamicsSphere2001}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0f944d1593cefa30432030f0ee1e2891}{%
+           family={Dufresne},
+           familyi={D\bibinitperiod},
+           given={E.\bibnamedelimi R},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=1fd0be04522999e4319ce0e08b6d4d6a}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2287c9de77251cabc9b523adea2f4b88}{%
+           family={Grier},
+           familyi={G\bibinitperiod},
+           given={D.\bibnamedelimi G},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{fullhash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{fullhashraw}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{bibnamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorbibnamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authornamehash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorfullhash}{7bef35fc05da69137b8ac21c53f7be8c}
+      \strng{authorfullhashraw}{7bef35fc05da69137b8ac21c53f7be8c}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe direct imaging measurements of a colloidal sphere’s diﬀusion between two parallel surfaces. The dynamics of this deceptively simple hydrodynamically coupled system have proved diﬃcult to analyze. Comparison with approximate formulations of a conﬁned sphere’s hydrodynamic mobility reveals good agreement with both a leading-order superposition approximation as well as a more general all-images stokeslet analysis.}
+      \field{issn}{0295-5075, 1286-4854}
+      \field{journaltitle}{Europhysics Letters (EPL)}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Brownian dynamics of a sphere between parallel walls}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{53}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{264\bibrangedash 270}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1209/epl/i2001-00147-6
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\NXT3WYFY\\Dufresne et al. - 2001 - Brownian dynamics of a sphere between parallel walls.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i2001-00147-6
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1209/epl/i2001-00147-6
+      \endverb
+    \endentry
+    \entry{kamanzi_simultaneous_2021}{article}{}{}
+      \name{author}{16}{}{%
+        {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
+           family={Kamanzi},
+           familyi={K\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f2e801f71a1a5301e2cb1c6d0fcfab5c}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Yifei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d99beb39b9d1826ab1f2f90f2d90c227}{%
+           family={Tahvildari},
+           familyi={T\bibinitperiod},
+           given={Radin},
+           giveni={R\bibinitperiod}}}%
+        {{hash=ad52ab6ddebb9fe36effee986fe4cf98}{%
+           family={Friedenberger},
+           familyi={F\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f3a1c4cd701e4cc756552e0b85a6a1a3}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Xingqi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=818787a94ebf2914bfec9f575f58a9d6}{%
+           family={Berti},
+           familyi={B\bibinitperiod},
+           given={Romain},
+           giveni={R\bibinitperiod}}}%
+        {{hash=80333528c6351b552e796ccc87fe9f80}{%
+           family={Kurylowicz},
+           familyi={K\bibinitperiod},
+           given={Marty},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dad4bb633d1ad67d6098cadc1beac79e}{%
+           family={Witzigmann},
+           familyi={W\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f42db1f71f42617b807cbad672817b01}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Jayesh\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=882652527e662ac234ac6214b4e66955}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ed5a8e56b4f861b081461c1531a7cdc0}{%
+           family={Andersson},
+           familyi={A\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8984dcba661ad9a1b29ed8ae4d75fba0}{%
+           family={Dahlin},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=123f4ecdd19af0a4298d1188791105af}{%
+           family={Höök},
+           familyi={H\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7cf8b198e245599736e4f3d24b84efac}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a099450f6a6b03f168444a5050586954}{%
+           family={Cullis},
+           familyi={C\bibinitperiod},
+           given={Pieter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=fef62eaf34e139fc495954494ef2c2cf}{%
+           family={Leslie},
+           familyi={L\bibinitperiod},
+           given={Sabrina},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{fullhash}{9d58b9650a995aa38b337ad014d19820}
+      \strng{fullhashraw}{9d58b9650a995aa38b337ad014d19820}
+      \strng{bibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorbibnamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authornamehash}{9109ecd63d01db760120df53bc5e55b8}
+      \strng{authorfullhash}{9d58b9650a995aa38b337ad014d19820}
+      \strng{authorfullhashraw}{9d58b9650a995aa38b337ad014d19820}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nanoparticles are a promising solution for delivery of a wide range of medicines and vaccines. Optimizing their design depends on being able to resolve, understand, and predict biophysical and therapeutic properties, as a function of design parameters. While existing tools have made great progress, gaps in understanding remain because of the inability to make detailed measurements of multiple correlated properties. Typically, an average measurement is made across a heterogeneous population, obscuring potentially important information. In this work, we develop and apply a method for characterizing nanoparticles with single-particle resolution. We use convex lens-induced conﬁnement ({CLiC}) microscopy to isolate and quantify the diﬀusive trajectories and ﬂuorescent intensities of individual nanoparticles trapped in microwells for long times. First, we benchmark detailed measurements of ﬂuorescent polystyrene nanoparticles against prior data to validate our approach. Second, we apply our method to investigate the size and loading properties of lipid nanoparticle ({LNP}) vehicles containing silencing {RNA} ({siRNA}), as a function of lipid formulation, solution {pH}, and drug-loading. By taking a comprehensive look at the correlation between the intensity and size measurements, we gain insights into {LNP} structure and how the {siRNA} is distributed in the {LNP}. Beyond introducing an analytic for size and loading, this work allows for future studies of dynamics with single-particle resolution, such as {LNP} fusion and drug-release kinetics. The prime contribution of this work is to better understand the connections between microscopic and macroscopic properties of drug-delivery vehicles, enabling and accelerating their discovery and development.}
+      \field{day}{28}
+      \field{issn}{1936-0851, 1936-086X}
+      \field{journaltitle}{{ACS} Nano}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{{ACS} Nano}
+      \field{title}{Simultaneous, Single-Particle Measurements of Size and Loading Give Insights into the Structure of Drug-Delivery Nanoparticles}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{19244\bibrangedash 19255}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1021/acsnano.1c04862
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/93QV2HWQ/Kamanzi et al. - 2021 - Simultaneous, Single-Particle Measurements of Size and Loading Give Insights into the Structure of D.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
+      \endverb
+    \endentry
     \entry{israelachviliIntermolecularSurfaceForces}{article}{}{}
       \name{author}{1}{}{%
         {{hash=ca29df22dd26c2e9accbd893b1185453}{%
@@ -1893,13 +2260,165 @@
       \strng{authornamehash}{ca29df22dd26c2e9accbd893b1185453}
       \strng{authorfullhash}{ca29df22dd26c2e9accbd893b1185453}
       \strng{authorfullhashraw}{ca29df22dd26c2e9accbd893b1185453}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Intermolecular and {Surface} {Forces}}
       \verb{file}
       \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\BGA8DQDX\\Israelachvili - Intermolecular and Surface Forces.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Phillips2013}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=db7f39acd822484a5ceba469cc4e3b88}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=714abb902c5eb54bb42fb1497ef6b137}{%
+           family={Kondev},
+           familyi={K\bibinitperiod},
+           given={Jane},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c72345ecf2ea65b1a0753e577471eff4}{%
+           family={Theriot},
+           familyi={T\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=796f1db1da561755964128f5cd825cda}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Hernan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Garland Science}%
+      }
+      \strng{namehash}{d832efb041ee3f673101a773a940ec4e}
+      \strng{fullhash}{75c8dd3354cfc272f1778acc6130b7a3}
+      \strng{fullhashraw}{75c8dd3354cfc272f1778acc6130b7a3}
+      \strng{bibnamehash}{d832efb041ee3f673101a773a940ec4e}
+      \strng{authorbibnamehash}{d832efb041ee3f673101a773a940ec4e}
+      \strng{authornamehash}{d832efb041ee3f673101a773a940ec4e}
+      \strng{authorfullhash}{75c8dd3354cfc272f1778acc6130b7a3}
+      \strng{authorfullhashraw}{75c8dd3354cfc272f1778acc6130b7a3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{9780815344506}
+      \field{title}{Physical Biology of the Cell}
+      \field{year}{2013}
+    \endentry
+    \entry{Bialek2012Biophysics}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=10a2fcf9b4d2afe92cf7da76b25fc462}{%
+           family={Bialek},
+           familyi={B\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{fullhash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{fullhashraw}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{bibnamehash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{authorbibnamehash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{authornamehash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{authorfullhash}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \strng{authorfullhashraw}{10a2fcf9b4d2afe92cf7da76b25fc462}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-691-13891-6}
+      \field{title}{Biophysics: Searching for Principles}
+      \field{year}{2012}
+    \endentry
+    \entry{midtvedtSizeRefractiveIndex2020}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=b09910867deea807ed6c2b476661394f}{%
+           family={Midtvedt},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=54dabf73ac852822c03b10c80743b68a}{%
+           family={Eklund},
+           familyi={E\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7352c6203cfd781fce4562cf174d1656}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=9d05e4b0e80fe0dc02061b19866d7c2d}{%
+           family={Midtvedt},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7f30878bdf54a3427557c16c3d395483}{%
+           family={Swenson},
+           familyi={S\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=123f4ecdd19af0a4298d1188791105af}{%
+           family={Höök},
+           familyi={H\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e00f1a7360cf3148b4d65188bfb54c02}
+      \strng{fullhash}{6f1e6332aaf6bef6dd66282b6a7e1834}
+      \strng{fullhashraw}{6f1e6332aaf6bef6dd66282b6a7e1834}
+      \strng{bibnamehash}{e00f1a7360cf3148b4d65188bfb54c02}
+      \strng{authorbibnamehash}{e00f1a7360cf3148b4d65188bfb54c02}
+      \strng{authornamehash}{e00f1a7360cf3148b4d65188bfb54c02}
+      \strng{authorfullhash}{6f1e6332aaf6bef6dd66282b6a7e1834}
+      \strng{authorfullhashraw}{6f1e6332aaf6bef6dd66282b6a7e1834}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Determination of size and refractive index (RI) of dispersed unlabeled subwavelength particles is of growing interest in several ﬁelds, including biotechnology, wastewater monitoring, and nanobubble preparations. Conventionally, the size distribution of such samples is determined via the Brownian motion of the particles, but simultaneous determination of their RI remains challenging. This work demonstrates nanoparticle tracking analysis (NTA) in an oﬀ-axis digital holographic microscope (DHM) enabling determination of both particle size and RI of individual subwavelength particles from the combined information about size and optical phase shift. The potential of the method to separate particle populations is demonstrated by analyzing a mixture of three types of dielectric particles within a narrow size range, where conventional NTA methods based on Brownian motion alone would fail. Using this approach, the phase shift allowed individual populations of dielectric beads overlapping in either size or RI to be clearly distinguished and quantiﬁed with respect to these properties. The method was furthermore applied for analysis of surfactantstabilized micro- and nanobubbles, with RI lower than that of water. Since bubbles induce a phase shift of opposite sign to that of solid particles, they were easily distinguished from similarly sized solid particles made up of undissolved surfactant. Surprisingly, the dependence of the phase shift on bubble size indicates that only those with 0.15−0.20 μm radius were individual bubbles, whereas larger bubbles were actually clusters of bubbles. This label-free means to quantify multiple parameters of suspended individual submicrometer particles oﬀers a crucial complement to current characterization strategies, suggesting broad applicability for a wide range of nanoparticle systems.}
+      \field{issn}{0003-2700, 1520-6882}
+      \field{journaltitle}{Analytical Chemistry}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Size and {Refractive} {Index} {Determination} of {Subwavelength} {Particles} and {Air} {Bubbles} by {Holographic} {Nanoparticle} {Tracking} {Analysis}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{92}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{1908\bibrangedash 1915}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/acs.analchem.9b04101
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\U5TD55DV\\Midtvedt et al. - 2020 - Size and Refractive Index Determination of Subwavelength Particles and Air Bubbles by Holographic Na.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acs.analchem.9b04101
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acs.analchem.9b04101
       \endverb
     \endentry
     \entry{vanmeerMembraneLipidsWhere2008}{article}{}{}
@@ -1928,8 +2447,8 @@
       \strng{authornamehash}{67757bdbf1bfbd7232eb1f4f5d32d918}
       \strng{authorfullhash}{67757bdbf1bfbd7232eb1f4f5d32d918}
       \strng{authorfullhashraw}{67757bdbf1bfbd7232eb1f4f5d32d918}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1471-0072, 1471-0080}
@@ -2008,8 +2527,8 @@
       \strng{authornamehash}{093c123fc5c922b295a46f7082f6ee43}
       \strng{authorfullhash}{c1a9423f686215a83d3d85f53b94c701}
       \strng{authorfullhashraw}{c1a9423f686215a83d3d85f53b94c701}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Liposomes are potent adjuvant constituents for licensed vaccines and vaccine candidates and carriers for drug delivery. Depending on the method of preparation, liposomes vary in size distribution, either forming uniform small size vesicles or a heterogeneous mixture of small to large vesicles. Importantly, diﬀerences in liposomal size have been demonstrated to induce diﬀerential immune responses. Determination of particle size distribution could therefore be crucial for the eﬃcacy and stability of vaccine formulations.}
@@ -2062,8 +2581,8 @@
       \strng{authornamehash}{4bd8460ca8e36cc32f54be3b82e2d023}
       \strng{authorfullhash}{4bd8460ca8e36cc32f54be3b82e2d023}
       \strng{authorfullhashraw}{4bd8460ca8e36cc32f54be3b82e2d023}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Liposomes are ubiquitous tools in biomedical applications, such as drug delivery, membrane science and artificial cell. Micro- and nanofabrication techniques have revolutionized the preparation of liposomes on the microscale. State-of-the-art liposomal formation on microfluidic chips and its associated applications are introduced in this review. We attempt to provide a reference for liposomal researchers by comparing various microfluidic techniques for liposomes formation.}
@@ -2122,8 +2641,8 @@
       \strng{authornamehash}{4632e5b33a3154bd355b21654c7f774b}
       \strng{authorfullhash}{4632e5b33a3154bd355b21654c7f774b}
       \strng{authorfullhashraw}{4632e5b33a3154bd355b21654c7f774b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{00222836}
@@ -2393,8 +2912,8 @@
       \strng{authornamehash}{4a20aaa13c00abfb4751a61a80fe3b49}
       \strng{authorfullhash}{4a20aaa13c00abfb4751a61a80fe3b49}
       \strng{authorfullhashraw}{4a20aaa13c00abfb4751a61a80fe3b49}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Dataset last updated August 18, 2022}
@@ -2423,8 +2942,8 @@
       \strng{authornamehash}{7a6606eab31c4dfac5e2745ea51e71ab}
       \strng{authorfullhash}{7a6606eab31c4dfac5e2745ea51e71ab}
       \strng{authorfullhashraw}{7a6606eab31c4dfac5e2745ea51e71ab}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Controlled Release}
@@ -2465,8 +2984,8 @@
       \strng{authornamehash}{b4176f616f0e2e6816dbca72bfb048df}
       \strng{authorfullhash}{b4176f616f0e2e6816dbca72bfb048df}
       \strng{authorfullhashraw}{b4176f616f0e2e6816dbca72bfb048df}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Communications}
@@ -2507,8 +3026,8 @@
       \strng{authornamehash}{4c10591e7483211073dddc7c45db737b}
       \strng{authorfullhash}{4c10591e7483211073dddc7c45db737b}
       \strng{authorfullhashraw}{4c10591e7483211073dddc7c45db737b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nano Today}
@@ -2557,8 +3076,8 @@
       \strng{authornamehash}{20f23bf4e121bbad908f341d8042aeec}
       \strng{authorfullhash}{4af0ef74649e33c6372e6c5c2a110120}
       \strng{authorfullhashraw}{4af0ef74649e33c6372e6c5c2a110120}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Pharmaceutical and Biomedical Analysis}
@@ -2569,133 +3088,6 @@
       \range{pages}{1}
       \verb{doi}
       \verb 10.1016/j.jpba.2021.114509
-      \endverb
-    \endentry
-    \entry{kamanzi_simultaneous_2021}{article}{}{}
-      \name{author}{16}{}{%
-        {{hash=5f2c26515213d5e8ba7644e550ed5b02}{%
-           family={Kamanzi},
-           familyi={K\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-        {{hash=f2e801f71a1a5301e2cb1c6d0fcfab5c}{%
-           family={Gu},
-           familyi={G\bibinitperiod},
-           given={Yifei},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=d99beb39b9d1826ab1f2f90f2d90c227}{%
-           family={Tahvildari},
-           familyi={T\bibinitperiod},
-           given={Radin},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ad52ab6ddebb9fe36effee986fe4cf98}{%
-           family={Friedenberger},
-           familyi={F\bibinitperiod},
-           given={Zachary},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=f3a1c4cd701e4cc756552e0b85a6a1a3}{%
-           family={Zhu},
-           familyi={Z\bibinitperiod},
-           given={Xingqi},
-           giveni={X\bibinitperiod}}}%
-        {{hash=818787a94ebf2914bfec9f575f58a9d6}{%
-           family={Berti},
-           familyi={B\bibinitperiod},
-           given={Romain},
-           giveni={R\bibinitperiod}}}%
-        {{hash=80333528c6351b552e796ccc87fe9f80}{%
-           family={Kurylowicz},
-           familyi={K\bibinitperiod},
-           given={Marty},
-           giveni={M\bibinitperiod}}}%
-        {{hash=dad4bb633d1ad67d6098cadc1beac79e}{%
-           family={Witzigmann},
-           familyi={W\bibinitperiod},
-           given={Dominik},
-           giveni={D\bibinitperiod}}}%
-        {{hash=f42db1f71f42617b807cbad672817b01}{%
-           family={Kulkarni},
-           familyi={K\bibinitperiod},
-           given={Jayesh\bibnamedelima A.},
-           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=882652527e662ac234ac6214b4e66955}{%
-           family={Leung},
-           familyi={L\bibinitperiod},
-           given={Jerry},
-           giveni={J\bibinitperiod}}}%
-        {{hash=ed5a8e56b4f861b081461c1531a7cdc0}{%
-           family={Andersson},
-           familyi={A\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=8984dcba661ad9a1b29ed8ae4d75fba0}{%
-           family={Dahlin},
-           familyi={D\bibinitperiod},
-           given={Andreas},
-           giveni={A\bibinitperiod}}}%
-        {{hash=123f4ecdd19af0a4298d1188791105af}{%
-           family={Höök},
-           familyi={H\bibinitperiod},
-           given={Fredrik},
-           giveni={F\bibinitperiod}}}%
-        {{hash=7cf8b198e245599736e4f3d24b84efac}{%
-           family={Sutton},
-           familyi={S\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=a099450f6a6b03f168444a5050586954}{%
-           family={Cullis},
-           familyi={C\bibinitperiod},
-           given={Pieter\bibnamedelima R.},
-           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=fef62eaf34e139fc495954494ef2c2cf}{%
-           family={Leslie},
-           familyi={L\bibinitperiod},
-           given={Sabrina},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{9109ecd63d01db760120df53bc5e55b8}
-      \strng{fullhash}{9d58b9650a995aa38b337ad014d19820}
-      \strng{fullhashraw}{9d58b9650a995aa38b337ad014d19820}
-      \strng{bibnamehash}{9109ecd63d01db760120df53bc5e55b8}
-      \strng{authorbibnamehash}{9109ecd63d01db760120df53bc5e55b8}
-      \strng{authornamehash}{9109ecd63d01db760120df53bc5e55b8}
-      \strng{authorfullhash}{9d58b9650a995aa38b337ad014d19820}
-      \strng{authorfullhashraw}{9d58b9650a995aa38b337ad014d19820}
-      \field{extraname}{3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Nanoparticles are a promising solution for delivery of a wide range of medicines and vaccines. Optimizing their design depends on being able to resolve, understand, and predict biophysical and therapeutic properties, as a function of design parameters. While existing tools have made great progress, gaps in understanding remain because of the inability to make detailed measurements of multiple correlated properties. Typically, an average measurement is made across a heterogeneous population, obscuring potentially important information. In this work, we develop and apply a method for characterizing nanoparticles with single-particle resolution. We use convex lens-induced conﬁnement ({CLiC}) microscopy to isolate and quantify the diﬀusive trajectories and ﬂuorescent intensities of individual nanoparticles trapped in microwells for long times. First, we benchmark detailed measurements of ﬂuorescent polystyrene nanoparticles against prior data to validate our approach. Second, we apply our method to investigate the size and loading properties of lipid nanoparticle ({LNP}) vehicles containing silencing {RNA} ({siRNA}), as a function of lipid formulation, solution {pH}, and drug-loading. By taking a comprehensive look at the correlation between the intensity and size measurements, we gain insights into {LNP} structure and how the {siRNA} is distributed in the {LNP}. Beyond introducing an analytic for size and loading, this work allows for future studies of dynamics with single-particle resolution, such as {LNP} fusion and drug-release kinetics. The prime contribution of this work is to better understand the connections between microscopic and macroscopic properties of drug-delivery vehicles, enabling and accelerating their discovery and development.}
-      \field{day}{28}
-      \field{issn}{1936-0851, 1936-086X}
-      \field{journaltitle}{{ACS} Nano}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{12}
-      \field{shortjournal}{{ACS} Nano}
-      \field{title}{Simultaneous, Single-Particle Measurements of Size and Loading Give Insights into the Structure of Drug-Delivery Nanoparticles}
-      \field{urlday}{18}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{volume}{15}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{19244\bibrangedash 19255}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1021/acsnano.1c04862
-      \endverb
-      \verb{file}
-      \verb PDF:/Users/korsk/Zotero/storage/93QV2HWQ/Kamanzi et al. - 2021 - Simultaneous, Single-Particle Measurements of Size and Loading Give Insights into the Structure of D.pdf:application/pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
-      \endverb
-      \verb{url}
-      \verb https://pubs.acs.org/doi/10.1021/acsnano.1c04862
       \endverb
     \endentry
     \entry{berardPrecisionPlatformConvex2013}{article}{}{}
@@ -2769,6 +3161,253 @@
       \verb http://aip.scitation.org/doi/10.1063/1.4822276
       \endverb
     \endentry
+    \entry{midtvedt_single-shot_2022}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=9d05e4b0e80fe0dc02061b19866d7c2d}{%
+           family={Midtvedt},
+           familyi={M\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6b5e64d38a4ccc3ee6e029de103ec2e0}{%
+           family={Pineda},
+           familyi={P\bibinitperiod},
+           given={Jesús},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a2dc2bede35f9d6ee0857ab51413fa32}{%
+           family={Skärberg},
+           familyi={S\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7352c6203cfd781fce4562cf174d1656}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0a74a469fd7dc8e1c49bfb8a11755ff9}{%
+           family={Bachimanchi},
+           familyi={B\bibinitperiod},
+           given={Harshith},
+           giveni={H\bibinitperiod}}}%
+        {{hash=51800cefa47fba3ccc32354645fbb571}{%
+           family={Wesén},
+           familyi={W\bibinitperiod},
+           given={Emelie},
+           giveni={E\bibinitperiod}}}%
+        {{hash=a8f8b2cb199922d72eeadbcf72e4fec7}{%
+           family={Esbjörner},
+           familyi={E\bibinitperiod},
+           given={Elin\bibnamedelima K.},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=f80111d83d8e6518196cb1e84f4850fc}{%
+           family={Selander},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=123f4ecdd19af0a4298d1188791105af}{%
+           family={Höök},
+           familyi={H\bibinitperiod},
+           given={Fredrik},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b09910867deea807ed6c2b476661394f}{%
+           family={Midtvedt},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1428577017aa20ae5b57b5c7895e901d}{%
+           family={Volpe},
+           familyi={V\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0319aa5ab0398edf1ec7995ce32dbdc1}
+      \strng{fullhash}{e0c244612578286ef935d577aba45739}
+      \strng{fullhashraw}{e0c244612578286ef935d577aba45739}
+      \strng{bibnamehash}{0319aa5ab0398edf1ec7995ce32dbdc1}
+      \strng{authorbibnamehash}{0319aa5ab0398edf1ec7995ce32dbdc1}
+      \strng{authornamehash}{0319aa5ab0398edf1ec7995ce32dbdc1}
+      \strng{authorfullhash}{e0c244612578286ef935d577aba45739}
+      \strng{authorfullhashraw}{e0c244612578286ef935d577aba45739}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Abstract Object detection is a fundamental task in digital microscopy, where machine learning has made great strides in overcoming the limitations of classical approaches. The training of state-of-the-art machine-learning methods almost universally relies on vast amounts of labeled experimental data or the ability to numerically simulate realistic datasets. However, experimental data are often challenging to label and cannot be easily reproduced numerically. Here, we propose a deep-learning method, named {LodeSTAR} (Localization and detection from Symmetries, Translations And Rotations), that learns to detect microscopic objects with sub-pixel accuracy from a single unlabeled experimental image by exploiting the inherent roto-translational symmetries of this task. We demonstrate that {LodeSTAR} outperforms traditional methods in terms of accuracy, also when analyzing challenging experimental data containing densely packed cells or noisy backgrounds. Furthermore, by exploiting additional symmetries we show that {LodeSTAR} can measure other properties, e.g., vertical position and polarizability in holographic microscopy.}
+      \field{day}{5}
+      \field{issn}{2041-1723}
+      \field{journaltitle}{Nature Communications}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Nat Commun}
+      \field{title}{Single-shot self-supervised object detection in microscopy}
+      \field{urlday}{4}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{7492}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1038/s41467-022-35004-y
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/WYSVWYNJ/Midtvedt et al. - 2022 - Single-shot self-supervised object detection in microscopy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41467-022-35004-y
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41467-022-35004-y
+      \endverb
+    \endentry
+    \entry{leeCharacterizingTrackingSingle2007}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=7412540fedfb6595d8c4bd80398edb95}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sang-Hyuk},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=8574aadd1203f6c72ee90b479e037715}{%
+           family={Roichman},
+           familyi={R\bibinitperiod},
+           given={Yohai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cd27b493e3d9f6e66f26b43583b02b66}{%
+           family={Yi},
+           familyi={Y\bibinitperiod},
+           given={Gi-Ra},
+           giveni={G\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=9b5b3ebfa99cfa3a06658a80a5c4affc}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Shin-Hyun},
+           giveni={S\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=2f4c8b85100a53e5ffa78cf604d27918}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Seung-Man},
+           giveni={S\bibinithyphendelim M\bibinitperiod}}}%
+        {{hash=f600f57925ab21d069a15a400c22c8af}{%
+           family={Blaaderen},
+           familyi={B\bibinitperiod},
+           given={Alfons\bibnamedelima Van},
+           giveni={A\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=03ae17930652344e4e2722fbd67f06a2}{%
+           family={Oostrum},
+           familyi={O\bibinitperiod},
+           given={Peter\bibnamedelima Van},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=38e1bb8b010ced5c82b43be2661a35d2}{%
+           family={Grier},
+           familyi={G\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ad2753d0da21261918c8b0470b61c144}
+      \strng{fullhash}{e90bc20012c48d6ab32c92d342ae08b4}
+      \strng{fullhashraw}{e90bc20012c48d6ab32c92d342ae08b4}
+      \strng{bibnamehash}{ad2753d0da21261918c8b0470b61c144}
+      \strng{authorbibnamehash}{ad2753d0da21261918c8b0470b61c144}
+      \strng{authornamehash}{ad2753d0da21261918c8b0470b61c144}
+      \strng{authorfullhash}{e90bc20012c48d6ab32c92d342ae08b4}
+      \strng{authorfullhashraw}{e90bc20012c48d6ab32c92d342ae08b4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We use digital holographic microscopy and Mie scattering theory to simultaneously characterize and track individual colloidal particles. Each holographic snapshot provides enough information to measure a colloidal sphere’s radius and refractive index to within 1\%, and simultaneously to measure its three-dimensional position with nanometer in-plane precision and 10 nanometer axial resolution.}
+      \field{issn}{1094-4087}
+      \field{journaltitle}{Optics Express}
+      \field{month}{12}
+      \field{number}{26}
+      \field{title}{Characterizing and tracking single colloidal particles with video holographic microscopy}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{15}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{18275}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1364/OE.15.018275
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\LZKTYSPS\\Lee et al. - 2007 - Characterizing and tracking single colloidal particles with video holographic microscopy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-15-26-18275
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/abstract.cfm?URI=oe-15-26-18275
+      \endverb
+    \endentry
+    \entry{kasaianLongRangeThreeDimensionalTracking2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0e524b54dc7a55e03712c961485b062c}{%
+           family={Kasaian},
+           familyi={K\bibinitperiod},
+           given={Kiarash},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c52b2e3ce31301f0c16791f07a48a834}{%
+           family={Mazaheri},
+           familyi={M\bibinitperiod},
+           given={Mahdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad287b767cb31b0532f34e8f962e0792}{%
+           family={Sandoghdar},
+           familyi={S\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{fullhash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{fullhashraw}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{bibnamehash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{authorbibnamehash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{authornamehash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{authorfullhash}{72cff4bde5185a9b32fd8c486962d90c}
+      \strng{authorfullhashraw}{72cff4bde5185a9b32fd8c486962d90c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Tracking nanoparticle movement is highly desirable in many scientific areas, and various imaging methods have been employed to achieve this goal. Interferometric scattering (iSCAT) microscopy has been particularly successful in combining very high spatial and temporal resolution for tracking small nanoparticles in all three dimensions. However, previous works have been limited to an axial range of only a few hundred nanometers. Here, we present a robust and efficient measurement and analysis strategy for three-dimensional tracking of nanoparticles at high speed and with nanometer precision. After discussing the principle of our approach using synthetic data, we showcase the performance of the method by tracking gold nanoparticles with diameters ranging from 10 to 80 nm in water, demonstrating an axial tracking range from 4 μm for the smallest particles up to over 30 μm for the larger ones. We point out the limitations and robustness of our system across various noise levels and discuss its promise for applications in cell biology and material science, where the three-dimensional motion of nanoparticles in complex media is of interest.}
+      \field{issn}{1936-0851, 1936-086X}
+      \field{journaltitle}{ACS Nano}
+      \field{month}{11}
+      \field{number}{44}
+      \field{title}{Long-{Range} {Three}-{Dimensional} {Tracking} of {Nanoparticles} {Using} {Interferometric} {Scattering} {Microscopy}}
+      \field{urlday}{18}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{30463\bibrangedash 30472}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1021/acsnano.4c08435
+      \endverb
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\CJZCWSFJ\\Kasaian et al. - 2024 - Long-Range Three-Dimensional Tracking of Nanoparticles Using Interferometric Scattering Microscopy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.4c08435
+      \endverb
+      \verb{url}
+      \verb https://pubs.acs.org/doi/10.1021/acsnano.4c08435
+      \endverb
+    \endentry
     \entry{weinberg_quantum_1995}{article}{}{}
       \name{author}{1}{}{%
         {{hash=15e144c72b0b9d10db00ddc6d37a19e6}{%
@@ -2788,8 +3427,8 @@
       \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The {Quantum} {Theory} of {Fields}}
@@ -2842,8 +3481,8 @@
       \strng{authornamehash}{6aba19dc1f19248cc99bf48458706845}
       \strng{authorfullhash}{0f5445997099854d8e457390a25db7e1}
       \strng{authorfullhashraw}{0f5445997099854d8e457390a25db7e1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Different optical microscopy methods provide different but related single particle information. This tutorial reviews how optical microscopy images can be related to particle properties, including optical theory and strategies for image analysis. , In order to relate nanoparticle properties to function, fast and detailed particle characterization is needed. The ability to characterize nanoparticle samples using optical microscopy techniques has drastically improved over the past few decades; consequently, there are now numerous microscopy methods available for detailed characterization of particles with nanometric size. However, there is currently no “one size fits all” solution to the problem of nanoparticle characterization. Instead, since the available techniques have different detection limits and deliver related but different quantitative information, the measurement and analysis approaches need to be selected and adapted for the sample at hand. In this tutorial, we review the optical theory of single particle scattering and how it relates to the differences and similarities in the quantitative particle information obtained from commonly used label-free microscopy techniques, with an emphasis on nanometric (submicron) sized dielectric particles. Particular emphasis is placed on how the optical signal relates to mass, size, structure, and material properties of the detected particles and to its combination with diffusivity-based particle sizing. We also discuss emerging opportunities in the wake of new technology development, including examples of adaptable python notebooks for deep learning image analysis, with the ambition to guide the choice of measurement strategy based on various challenges related to different types of nanoparticle samples and associated analytical demands.}
@@ -2872,6 +3511,102 @@
       \verb https://xlink.rsc.org/?DOI=D4NR03860F
       \endverb
     \endentry
+    \entry{jackson_classical_1999}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=bc51fc62aec5c2fb2968eb631d48cf2a}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={John\bibnamedelima David},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{fullhash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{fullhashraw}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{bibnamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{authorbibnamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{authornamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{authorfullhash}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \strng{authorfullhashraw}{bc51fc62aec5c2fb2968eb631d48cf2a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3rd}
+      \field{isbn}{978-0-471-30932-1}
+      \field{title}{Classical Electrodynamics}
+      \field{year}{1999}
+      \verb{urlraw}
+      \verb https://wiley.com
+      \endverb
+      \verb{url}
+      \verb https://wiley.com
+      \endverb
+    \endentry
+    \entry{strauss2007pde}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=8819214a02a7c1229851331bbcb1ae59}{%
+           family={Strauss},
+           familyi={S\bibinitperiod},
+           given={Walter\bibnamedelima A.},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{fullhash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{fullhashraw}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{bibnamehash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{authorbibnamehash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{authornamehash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{authorfullhash}{8819214a02a7c1229851331bbcb1ae59}
+      \strng{authorfullhashraw}{8819214a02a7c1229851331bbcb1ae59}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-0470054567}
+      \field{title}{Partial Differential Equations: An Introduction}
+      \field{year}{2007}
+      \keyw{wave equation,eigenfunctions,separation of variables}
+    \endentry
+    \entry{zangwill2013modern}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=0af3221ab096b39212832c8247bf8151}{%
+           family={Zangwill},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, UK}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0af3221ab096b39212832c8247bf8151}
+      \strng{fullhash}{0af3221ab096b39212832c8247bf8151}
+      \strng{fullhashraw}{0af3221ab096b39212832c8247bf8151}
+      \strng{bibnamehash}{0af3221ab096b39212832c8247bf8151}
+      \strng{authorbibnamehash}{0af3221ab096b39212832c8247bf8151}
+      \strng{authornamehash}{0af3221ab096b39212832c8247bf8151}
+      \strng{authorfullhash}{0af3221ab096b39212832c8247bf8151}
+      \strng{authorfullhashraw}{0af3221ab096b39212832c8247bf8151}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-521-89697-9}
+      \field{title}{Modern Electrodynamics}
+      \field{year}{2013}
+    \endentry
     \entry{bohren1983absorption}{book}{}{}
       \name{author}{2}{}{%
         {{hash=33233e3e3b3a1b37257c460202afa1e4}{%
@@ -2899,49 +3634,225 @@
       \strng{authornamehash}{bc195ae617c294f75772b703d297e316}
       \strng{authorfullhash}{bc195ae617c294f75772b703d297e316}
       \strng{authorfullhashraw}{bc195ae617c294f75772b703d297e316}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{0-471-05772-X}
       \field{title}{Absorption and Scattering of Light by Small Particles}
       \field{year}{1983}
     \endentry
-    \entry{jackson_classical_1999}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=bc51fc62aec5c2fb2968eb631d48cf2a}{%
-           family={Jackson},
-           familyi={J\bibinitperiod},
-           given={John\bibnamedelima David},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+    \entry{lindfors2004PRL}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=46595d138cfcd2ebcff208a147891eae}{%
+           family={Lindfors},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2cb3008fbca2bdd5e7d2c99ee912a66d}{%
+           family={Kalkbrenner},
+           familyi={K\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=251fc336f3200e6e8e0c30c73d4d1a83}{%
+           family={Stoller},
+           familyi={S\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=28e0df09b5ac717ab04a94d373c096e0}{%
+           family={Sandoghdar},
+           familyi={S\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {New York, NY}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons}%
-      }
-      \strng{namehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{fullhash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{fullhashraw}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{bibnamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{authorbibnamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{authornamehash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{authorfullhash}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \strng{authorfullhashraw}{bc51fc62aec5c2fb2968eb631d48cf2a}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \strng{namehash}{15079dcaef1f3f9ae991aa280e5398ac}
+      \strng{fullhash}{539fa6cf2c8c0949f50b4faa06f2a9a1}
+      \strng{fullhashraw}{539fa6cf2c8c0949f50b4faa06f2a9a1}
+      \strng{bibnamehash}{15079dcaef1f3f9ae991aa280e5398ac}
+      \strng{authorbibnamehash}{15079dcaef1f3f9ae991aa280e5398ac}
+      \strng{authornamehash}{15079dcaef1f3f9ae991aa280e5398ac}
+      \strng{authorfullhash}{539fa6cf2c8c0949f50b4faa06f2a9a1}
+      \strng{authorfullhashraw}{539fa6cf2c8c0949f50b4faa06f2a9a1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{3rd}
-      \field{isbn}{978-0-471-30932-1}
-      \field{title}{Classical Electrodynamics}
-      \field{year}{1999}
+      \field{issue}{3}
+      \field{journaltitle}{Phys. Rev. Lett.}
+      \field{title}{Detection and Spectroscopy of Gold Nanoparticles Using Supercontinuum White Light Confocal Microscopy}
+      \field{volume}{93}
+      \field{year}{2004}
+      \field{pages}{037401}
+      \range{pages}{1}
+    \endentry
+    \entry{Dastjerdi2022}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=f19d72d6037ecb629f346d731d9e2ac9}{%
+           family={Dastjerdi},
+           familyi={D\bibinitperiod},
+           given={Houman\bibnamedelima Mirzaalian},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9a4d3c6b71e75bcb037f603c5cc6ad3a}{%
+           family={Mahmoodabadi},
+           familyi={M\bibinitperiod},
+           given={Reza\bibnamedelima Gholami},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=510637321d5868f67a8ab78fe8d0db5c}{%
+           family={Bär},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad287b767cb31b0532f34e8f962e0792}{%
+           family={Sandoghdar},
+           familyi={S\bibinitperiod},
+           given={Vahid},
+           giveni={V\bibinitperiod}}}%
+        {{hash=bbb519fae815972b2b0fcd238ea9665c}{%
+           family={Köstler},
+           familyi={K\bibinitperiod},
+           given={Harald},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Open Journal}%
+      }
+      \strng{namehash}{80229b516149867a58795365a83e8c09}
+      \strng{fullhash}{732920bdffe2ff5409edc66c308303ac}
+      \strng{fullhashraw}{732920bdffe2ff5409edc66c308303ac}
+      \strng{bibnamehash}{80229b516149867a58795365a83e8c09}
+      \strng{authorbibnamehash}{80229b516149867a58795365a83e8c09}
+      \strng{authornamehash}{80229b516149867a58795365a83e8c09}
+      \strng{authorfullhash}{732920bdffe2ff5409edc66c308303ac}
+      \strng{authorfullhashraw}{732920bdffe2ff5409edc66c308303ac}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Open Source Software}
+      \field{number}{71}
+      \field{title}{PiSCAT: A Python Package for Interferometric Scattering Microscopy}
+      \field{volume}{7}
+      \field{year}{2022}
+      \field{pages}{4024}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.21105/joss.04024
+      \endverb
       \verb{urlraw}
-      \verb https://wiley.com
+      \verb https://doi.org/10.21105/joss.04024
       \endverb
       \verb{url}
-      \verb https://wiley.com
+      \verb https://doi.org/10.21105/joss.04024
+      \endverb
+    \endentry
+    \entry{young_interferometric_2019}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7e2983a891c4d4c6508065d608d8423f}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fab419cdaa00d874f3e9471c78e14335}{%
+           family={Kukura},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{fullhash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{fullhashraw}{1deec2f204897189e3f45430d77b58cc}
+      \strng{bibnamehash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{authorbibnamehash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{authornamehash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{authorfullhash}{1deec2f204897189e3f45430d77b58cc}
+      \strng{authorfullhashraw}{1deec2f204897189e3f45430d77b58cc}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Interferometric scattering microscopy ({iSCAT}) is an extremely sensitive imaging method based on the efficient detection of light scattered by nanoscopic objects. The ability to, at least in principle, maintain high imaging contrast independent of the exposure time or the scattering cross section of the object allows for unique applications in single-particle tracking, label-free imaging of nanoscopic (dis)assembly, and quantitative single-molecule characterization. We illustrate these capabilities in areas as diverse as mechanistic studies of motor protein function, viral capsid assembly, and single-molecule mass measurement in solution. We anticipate that {iSCAT} will become a widely used approach to unravel previously hidden details of biomolecular dynamics and interactions.}
+      \field{day}{14}
+      \field{issn}{0066-426X, 1545-1593}
+      \field{journaltitle}{Annual Review of Physical Chemistry}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Phys. Chem.}
+      \field{title}{Interferometric Scattering Microscopy}
+      \field{urlday}{4}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{volume}{70}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{301\bibrangedash 322}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1146/annurev-physchem-050317-021247
+      \endverb
+      \verb{file}
+      \verb PDF:/Users/korsk/Zotero/storage/F9EWEY7S/Young and Kukura - 2019 - Interferometric Scattering Microscopy.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-physchem-050317-021247
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev-physchem-050317-021247
+      \endverb
+    \endentry
+    \entry{ortega-arroyoInterferometricScatteringMicroscopy2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=05afef3596be7bb1aa6a20d82315b26e}{%
+           family={Ortega-Arroyo},
+           familyi={O\bibinithyphendelim A\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fab419cdaa00d874f3e9471c78e14335}{%
+           family={Kukura},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{fullhash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{fullhashraw}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{bibnamehash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{authorbibnamehash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{authornamehash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{authorfullhash}{089b1b860646bcf510efca71e32e2ac7}
+      \strng{authorfullhashraw}{089b1b860646bcf510efca71e32e2ac7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1463-9076, 1463-9084}
+      \field{journaltitle}{Physical Chemistry Chemical Physics}
+      \field{langid}{english}
+      \field{number}{45}
+      \field{shortjournal}{Phys. Chem. Chem. Phys.}
+      \field{shorttitle}{Interferometric scattering microscopy ({iSCAT})}
+      \field{title}{Interferometric scattering microscopy ({iSCAT}): new frontiers in ultrafast and ultrasensitive optical microscopy}
+      \field{urlday}{7}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{volume}{14}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15625}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1039/c2cp41013c
+      \endverb
+      \verb{file}
+      \verb Ortega-Arroyo and Kukura - 2012 - Interferometric scattering microscopy (iSCAT) new.pdf:/Users/korsk/Zotero/storage/8TQ5PRDF/Ortega-Arroyo and Kukura - 2012 - Interferometric scattering microscopy (iSCAT) new.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://xlink.rsc.org/?DOI=c2cp41013c
+      \endverb
+      \verb{url}
+      \verb http://xlink.rsc.org/?DOI=c2cp41013c
       \endverb
     \endentry
     \entry{OrtegaArroyo2016}{article}{}{}
@@ -2970,8 +3881,8 @@
       \strng{authornamehash}{bbdcd235222db2f66fbad3ea1645889a}
       \strng{authorfullhash}{bbdcd235222db2f66fbad3ea1645889a}
       \strng{authorfullhashraw}{bbdcd235222db2f66fbad3ea1645889a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprinttype}{pubmed}
@@ -2989,75 +3900,6 @@
       \endverb
       \verb{eprint}
       \verb 26938114
-      \endverb
-    \endentry
-    \entry{Brouwer2026}{article}{}{}
-      \name{author}{6}{}{%
-        {{hash=6122d5ea26b55662542f2f2bf060022d}{%
-           family={Brouwer},
-           familyi={B\bibinitperiod},
-           given={Carraugh\bibnamedelima C.},
-           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-        {{hash=032e87ae01bbe78e188734beb82803c6}{%
-           family={Muratori},
-           familyi={M\bibinitperiod},
-           given={Flaminia\bibnamedelima M.},
-           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=f1627391081d8426cc1dd0b365c7d98b}{%
-           family={Melo},
-           familyi={M\bibinitperiod},
-           given={Luke},
-           giveni={L\bibinitperiod}}}%
-        {{hash=45b078f1a46b019a843606bacc1f4e2d}{%
-           family={Anastasia},
-           familyi={A\bibinitperiod},
-           given={Luigi},
-           giveni={L\bibinitperiod}}}%
-        {{hash=3257679482d3803fa047c06eb5fe88a9}{%
-           family={Pappone},
-           familyi={P\bibinitperiod},
-           given={Carlo},
-           giveni={C\bibinitperiod}}}%
-        {{hash=b1d176833e606713973a4617ef10e618}{%
-           family={Grant},
-           familyi={G\bibinitperiod},
-           given={Edward},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{7313c6eb85d8d9975a4062e4d45bd76b}
-      \strng{fullhash}{00128a4e8ce9ac3a65289c4446737486}
-      \strng{fullhashraw}{00128a4e8ce9ac3a65289c4446737486}
-      \strng{bibnamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
-      \strng{authorbibnamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
-      \strng{authornamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
-      \strng{authorfullhash}{00128a4e8ce9ac3a65289c4446737486}
-      \strng{authorfullhashraw}{00128a4e8ce9ac3a65289c4446737486}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{25}
-      \field{issn}{2045-2322}
-      \field{journaltitle}{Scientific Reports}
-      \field{month}{5}
-      \field{note}{Advance online publication}
-      \field{pubstate}{prepublish}
-      \field{shortjournal}{Sci. Rep.}
-      \field{title}{Interferometric Scattering Microscopy Supports Real-Time Mass-Resolved Label-Free Single-Molecule Immunoassay}
-      \field{urlday}{3}
-      \field{urlmonth}{8}
-      \field{urlyear}{2026}
-      \field{year}{2026}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.1038/s41598-026-53440-4
-      \endverb
-      \verb{urlraw}
-      \verb https://www.nature.com/articles/s41598-026-53440-4
-      \endverb
-      \verb{url}
-      \verb https://www.nature.com/articles/s41598-026-53440-4
       \endverb
     \endentry
     \entry{Kashkanova2022}{article}{}{}
@@ -3097,8 +3939,8 @@
       \strng{authorfullhash}{ac0bff118f82fe3df84ca241dba9f305}
       \strng{authorfullhashraw}{ac0bff118f82fe3df84ca241dba9f305}
       \field{extraname}{1}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Nature Methods}
@@ -3163,8 +4005,8 @@
       \strng{authorfullhash}{42ed6d159ee983b15a2d3c044fbc28e7}
       \strng{authorfullhashraw}{42ed6d159ee983b15a2d3c044fbc28e7}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We introduce an image transform designed to highlight features with high degree of radial symmetry for identification and subpixel localization of particles in microscopy images. The transform is based on analyzing pixel value variations in radial and angular directions. We compare the subpixel localization performance of this algorithm to other common methods based on radial or mirror symmetry (such as fast radial symmetry transform, orientation alignment transform, XCorr, and quadrant interpolation), using both synthetic and experimentally obtained data. We find that in all cases it achieves the same or lower localization error, frequently reaching the theoretical limit.}
@@ -3213,8 +4055,8 @@
       \strng{authornamehash}{5a6d5ac2d0c4265d8660d01e0628cc90}
       \strng{authorfullhash}{5a6d5ac2d0c4265d8660d01e0628cc90}
       \strng{authorfullhashraw}{5a6d5ac2d0c4265d8660d01e0628cc90}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1548-7091, 1548-7105}
@@ -3265,8 +4107,8 @@
       \strng{authornamehash}{6b27f4592197d058b81cb25b0b285942}
       \strng{authorfullhash}{6b27f4592197d058b81cb25b0b285942}
       \strng{authorfullhashraw}{6b27f4592197d058b81cb25b0b285942}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-1-4419-2322-6}
@@ -3299,8 +4141,8 @@
       \strng{authornamehash}{db825a5a357e584a3b0e7297d51c408b}
       \strng{authorfullhash}{db825a5a357e584a3b0e7297d51c408b}
       \strng{authorfullhashraw}{db825a5a357e584a3b0e7297d51c408b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0888-5885, 1520-5045}
@@ -3347,8 +4189,8 @@
       \strng{authornamehash}{387eb449e10e7300b3ae97f7a15838f3}
       \strng{authorfullhash}{387eb449e10e7300b3ae97f7a15838f3}
       \strng{authorfullhashraw}{387eb449e10e7300b3ae97f7a15838f3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of General Physiology}
@@ -3383,8 +4225,8 @@
       \strng{authornamehash}{c170a0589ef3be15e838154242491b24}
       \strng{authorfullhash}{c170a0589ef3be15e838154242491b24}
       \strng{authorfullhashraw}{c170a0589ef3be15e838154242491b24}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The Journal of Membrane Biology}
@@ -3396,6 +4238,75 @@
       \range{pages}{11}
       \verb{doi}
       \verb 10.1007/BF01870127
+      \endverb
+    \endentry
+    \entry{Brouwer2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=6122d5ea26b55662542f2f2bf060022d}{%
+           family={Brouwer},
+           familyi={B\bibinitperiod},
+           given={Carraugh\bibnamedelima C.},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=032e87ae01bbe78e188734beb82803c6}{%
+           family={Muratori},
+           familyi={M\bibinitperiod},
+           given={Flaminia\bibnamedelima M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f1627391081d8426cc1dd0b365c7d98b}{%
+           family={Melo},
+           familyi={M\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=45b078f1a46b019a843606bacc1f4e2d}{%
+           family={Anastasia},
+           familyi={A\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3257679482d3803fa047c06eb5fe88a9}{%
+           family={Pappone},
+           familyi={P\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b1d176833e606713973a4617ef10e618}{%
+           family={Grant},
+           familyi={G\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{7313c6eb85d8d9975a4062e4d45bd76b}
+      \strng{fullhash}{00128a4e8ce9ac3a65289c4446737486}
+      \strng{fullhashraw}{00128a4e8ce9ac3a65289c4446737486}
+      \strng{bibnamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
+      \strng{authorbibnamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
+      \strng{authornamehash}{7313c6eb85d8d9975a4062e4d45bd76b}
+      \strng{authorfullhash}{00128a4e8ce9ac3a65289c4446737486}
+      \strng{authorfullhashraw}{00128a4e8ce9ac3a65289c4446737486}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{5}
+      \field{note}{Advance online publication}
+      \field{pubstate}{prepublish}
+      \field{shortjournal}{Sci. Rep.}
+      \field{title}{Interferometric Scattering Microscopy Supports Real-Time Mass-Resolved Label-Free Single-Molecule Immunoassay}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1038/s41598-026-53440-4
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41598-026-53440-4
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41598-026-53440-4
       \endverb
     \endentry
     \entry{Kulkarni2017}{article}{}{}
@@ -3444,8 +4355,8 @@
       \strng{authornamehash}{132a6f4858bb9fd56c9a510144fe491b}
       \strng{authorfullhash}{fd16c203452f5debb707c1cc5410183d}
       \strng{authorfullhashraw}{fd16c203452f5debb707c1cc5410183d}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{2040-3364}
@@ -3486,8 +4397,8 @@
       \strng{authornamehash}{121b014aa774dffb6ad9bff595fcc15a}
       \strng{authorfullhash}{121b014aa774dffb6ad9bff595fcc15a}
       \strng{authorfullhashraw}{121b014aa774dffb6ad9bff595fcc15a}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{We present a method of calculating the electric charge density of glass and silica surfaces in contact with aqueous electrolytes for two cases of practical relevance that are not amenable to standard techniques: surfaces of low specific area at low ionic strength and surfaces interacting strongly with a second anionic surface.}
