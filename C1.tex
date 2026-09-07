@@ -2,7 +2,7 @@
 \label{chap:brownianmotion}
 
 
-The physical phenomenon of irregular movements of nanoparticles in liquid is known as Brownian motion. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion is known as \textit{Brownian Motion} and is invertibly related to the size of the particle.
+The physical phenomenon of irregular movements of nanoparticles in liquid is known as Brownian motion. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion, coined as \textit{Brownian Motion}, was discovered to be invertibly related to the size of the particle by Albert Einstein in 1926\cite{einstein1956investigations}.
 
 % For relatively large particles, the optical microscope is a good tool to observe them. However, for particles smaller the nano-scale, the diffraction limit is a property that must be overcome. This was theoretically described by Abbe \cite{Steck2021,Born1999}.
 
@@ -13,7 +13,7 @@ This chapter introduces the mathematics of Brownian motion and diffusion-type pr
 
 \section{Einstein's Brownian Motion}
 
-The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of atomic length when undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of a particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion or a diffusion process \cite{brownXXVIIBriefAccount1828}. 
+The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of atomic length when undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of an approximately spherical particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion or a diffusion process \cite{brownXXVIIBriefAccount1828}. 
 
 The classical treatment of Brownian motion describes how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. Einstein's argument is one of macroscopic motion.  Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
 
@@ -21,7 +21,7 @@ The classical treatment of Brownian motion describes how the molecular-kinetic t
 	\int \phi(\Delta) d\Delta = 1.
 \end{equation}
 
-Assuming that the medium is isotropic, such that $\phi$ is even, $\phi(\Delta) = \phi(-\Delta)$. Let $f(x,t)$ denote some number of particles at the point $x$. Einstein takes a finite slice of this volume and equates it to a probability space;
+Einstein then assumes that the medium is isotropic, such that $\phi$ is an even function, $\phi(\Delta) = \phi(-\Delta)$ and a function $f(x,t)$ denotes some number of particles at the point $x$. Einstein then takes a finite slice of this volume and equates it to a probability space;
 
 \begin{equation}
 	f(x, t + \delta t)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta.
@@ -32,11 +32,11 @@ The argument here is demonstrated by a Taylor-expansion of both sides of this eq
 \begin{equation}
 	f(x, t + \delta t) \approx f(x,t) + \delta t\frac{\partial f(x,t)}{\partial t}.
 \end{equation}
-In the spatial dimensions,
+Similarly in the spatial dimensions;
 \begin{equation}
 	f(x + \Delta, t) \approx f(x,t) + \Delta \frac{\partial f(x,t)}{\partial x}  + \frac{\Delta^2}{2}\frac{\partial^2 f(x,t)}{\partial x^2}.
 \end{equation}
-Cancelling each of the terms, the classical diffusion equation is shown to nearest order;
+Adding together these terms and cancelling out the opposites, the resultant equation is known as the classical diffusion equation, and is shown to nearest order;
 \begin{equation}\label{eqn:diffusionpde}
 	\frac{\partial f(x,t)}{\partial t} = \underbrace{\left[\frac{1}{\delta t}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta\right]}_{D} \frac{\partial^2 f(x,t)}{\partial x^2},
 \end{equation}
@@ -65,25 +65,25 @@ where $d$ is the number of dimensions, and $\Delta t$ is the difference from a k
 
 Einstein's theory of diffusion instantiates a partial differential equation that describes how the size of a particle relates to a thermodynamic motion. In addition, the Einstein-Stokes relation directly relates the rate of diffusion to the size of the particle. Paired with the solutions to the diffusion equation \cite{bickel_note_2007}, the size of particles can be directly measured from time-series position information, such as concentration maps or particle trajectories \cite{bian111YearsBrownian2016}. 
 
-Einstein's original paper directly motivated the sizing of particles using statistical estimates of their random motion, specifically with the existence of the mean-squared displacement relation. This relation allows one to utilize motion as an indirect measurement of size, which is one of the cornerstones of single-molecule optical measurements.
+Einstein's original paper directly motivated the sizing of particles using statistical estimates of their random motion, specifically with the existence of the mean-squared displacement relation. This relation allows one to utilize a particle trajectory, or single-particle motion as an indirect measurement of size; one of the cornerstone concepts of single-molecule optical measurement.
 
 % if i have time add in the solutions from my confined diffusion work.
 \section{Langevin Dynamics}
 
-In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle moves within a fluid volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}.
+In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle typically within a fluid\footnote{This thesis assumes Newtonian fluids as they are experimentally relevant.} volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem \cite{schroeder2021thermal, pathriaStatisticalMechanics2011}. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}.
 
 This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
 	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{\mu} + \vec F(t)
 \end{equation}
 
-where $\mu$ is the mobility (drag term is $-\frac{\dot{\vec{x}}}{\mu}$), which is represented in a viscous friction term, and $\vec F(t)$ is a stochastic force term, meaning it takes a random value from some distribution $f$ for every time step $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
+where $\mu$ is the fluid mobility which is represented in the viscous friction term, $-\frac{\dot{\vec{x}}}{\mu}$. Lastly, $\vec F(t)$ is the stochastic force term, which strictly speaking is a random function, taking a random value from a distribution, $p_F$ for each time step, $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
 
-The statistical content of $\vec F(t)$ is determined by the moments and auto-correlation. Notably, this relation is physically described by the fluctuation-dissipation theory, which relates the drag force to the random force. In Brownian motion, this takes the form
+The statistical content of $\vec F(t)$ is determined by the moments and auto-correlation. Notably, this relation is physically described by the fluctuation-dissipation theory, which relates the drag force to the random force \cite{pathriaStatisticalMechanics2011}. In Brownian motion, this takes the form
 \begin{equation}
 	\langle \vec F(t)\rangle = 0, \quad \langle \vec{F}_i(t) \vec{F}_j(t')\rangle = \Gamma\delta_{ij}\delta(t-t')
 \end{equation}
-Which stands in as delta-correlated noise, or that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function (VACF) and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions. This fixes the fluctuation constant to being
+Which stands in as delta-correlated noise, or that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions \cite{pathriaStatisticalMechanics2011}. This fixes the fluctuation constant to being
 \begin{equation}
     \Gamma = \frac{2k_bT}{\mu}.
 \end{equation}
@@ -111,21 +111,22 @@ Furthermore, when one averages the product of the above equation with $\vec x$ a
 			\end{cases}.
 	\end{aligned}
 \end{equation}
+
 Letting $D = \mu k_b T$, Einstein's relation is recovered where the mobility, being the inverse of the friction, can be substituted by the  Stokes friction, 
 \begin{equation}
     \mu = \frac{1}{6\pi\eta a}.
 \end{equation}
 
-The unique advantage of the Langevin Formulation is that it is readily simulate-able \cite{millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{pathriaStatisticalMechanics2011}.
+The unique advantage of the Langevin formulation is that it is relatively easy to simulate \cite{geyer_many-particle_2011,millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme\footnote{The EM scheme is chosen due to relevance in Ref. \cite{millanNumericalSimulationsConfined2023}.}, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{millanNumericalSimulationsConfined2023}.
  
 \section{From Master Equation to Fokker-Planck}
 
-To show that the two methods are equal, the master equation can be shown to validate equilibrium distributions.  Suppose that $f(x,t)dx$ representation that he probability of an arbitrary particle in the ensemble has a displacement between $x$ and $x + dx$. If $f$ is a probability distribution,  the master equation can be represented. Let $W$ represent the traditional probability transition rate, then
+To show that the Langevin formulation and Einstein's formulation are equivalent, the master equation can be shown to validate equilibrium probability distributions of particle motion. Suppose that $f(x,t)dx$ represents the probability of an arbitrary particle in the ensemble that has a displacement between $x$ and $x + dx$. Let $W$ represent the traditional probability transition rate between positions, then the master equation is written as
 \begin{equation}
 	\frac{\partial f(x,t)}{\partial t} = \int_{-\infty}^\infty \left[ f(x', t)W(x'|x) - f(x, t)W(x|x')\right] dx'.
 \end{equation}
 
-This structure is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation.,
+This equation is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation \cite{vankampen2007stochastic};
 \begin{equation}
 	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right],
 \end{equation}
@@ -134,7 +135,7 @@ where the diffusive and drift terms are parameterized over the transition probab
 \begin{equation}
 	\begin{aligned}
 		\sigma(x) &= \int_{-\infty}^\infty \xi W(x| \xi)d\xi\\
-		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi.\\
+		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi.
 	\end{aligned}
 \end{equation}
 
@@ -144,7 +145,7 @@ Additionally, the results from either formulation are intrinsically the same, wh
 
 \section{Confined Diffusion Processes}
 
-The effect of diffusion near an interface on a nearby particle is quite particular. The effect on confinement can be first imagined as the effects from the fluid friction flow. Notably, the particle being immersed in fluid invites a stokes friction which effects the perpendicular and parallel flows. Hiding Faxén derived the relations in no-slip boundary conditions near a brownian particle \cite{Faxen1921,bian111YearsBrownian2016}; 
+The effect of diffusion near an interface on a nearby particle is non-negligible \cite{bian111YearsBrownian2016}. The effect on confinement can be first imagined as the effect from frictional fluid flow. Notably, the particle being immersed in a fluid invites a Stokes friction which affects the perpendicular and parallel motion. Swedish physicist Hilding Faxén derived the relations in no-slip boundary conditions near a brownian particle \cite{Faxen1921,bian111YearsBrownian2016}; 
 \begin{equation}
 	\begin{aligned}
 		\mu_\parallel\left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{16} \left(\frac{a}{h}\right)  + \frac{1}{8} \left(\frac{a}{h}\right)^3 - \frac{45}{256} \left(\frac{a}{h}\right)^4 - \frac{1}{16} \left(\frac{a}{h}\right)^5\right]\\
@@ -152,14 +153,14 @@ The effect of diffusion near an interface on a nearby particle is quite particul
 	\end{aligned}
 \end{equation}
 
-In the case of a two-wall confinement, the form of the diffusion coefficient has a lot of depth in wealth. There is much theoretical discussion on the confinement coefficient in hydrodynamic boundary conditions \cite{lin_diffusion_2000, dufresne_brownian_2001, swan_particle_2010}. In application, it has been shown that the form of the Onseen drag shows the best experimental agreement \cite{dufresneBrownianDynamicsSphere2001} can be expressed in a linear superposition of linear mobility coefficients,
+In the case of a two-wall confinement, there is much theoretical discussion on the confinement coefficient in hydrodynamic boundary conditions \cite{lin_diffusion_2000, dufresne_brownian_2001, swan_particle_2010}. In application, it has been shown that the form of the Onseen drag shows experimental agreement \cite{dufresneBrownianDynamicsSphere2001} and can be expressed in a linear-superposition of linear mobility coefficients,
 \begin{equation}
 	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0].
 \end{equation}
 
 In context of single-particle sizing measurements, the distance between the particle and nearby surfaces is often small \cite{kamanzi_simultaneous_2021,graves_direct_2026, kamanzi_single-particle_2026}. Thus, this correction term must be applied in confinement-based methods in order for sizing estimations to be considered valid with respect to the true size. 
 
-Additionally, confined diffusion processes are one such example of non-trivial diffusion equations. It has been shown in literature this form of a system is easier simulated rather than calculated \cite{millanNumericalSimulationsConfined2023}.
+Additionally, confined diffusion processes are one such example of non-trivial diffusion equations \cite{vankampen2007stochastic}. It has been shown in literature this form of a system can be simulated using a Langevin equation \cite{millanNumericalSimulationsConfined2023}.
 
 \section{Self-Consistent Confinement Coefficient}
 
@@ -171,7 +172,7 @@ The values of the corrections are, however, functions of the particle radius. Fo
 \begin{equation}
     \frac{k_bT}{6\pi\eta a} = \mu_\parallel^{-1}\left(a, h\right) \hat{D_\parallel} = \mu_\perp^{-1}\left(a, h\right) \hat{D_\perp},
 \end{equation}
-where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known. One useful property of the Faxén functions, as well as the linear-superposition approximations are that they are monotonically decreasing. This is illustrated in Fig. \ref{fig:mob_coef}.
+where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known\footnote{As was applied in Ref. \cite{kamanzi_single-particle_2026}}. One useful property of the Faxén relations, as well as the linear-superposition approximations are that they are monotonically decreasing, illustrated in Fig. \ref{fig:mob_coef}.
 
 \begin{figure}[h!]
     \centering
@@ -198,7 +199,7 @@ The development of this relation allows for the size estimate to be calculated u
 \clearpage
 \section{Electrostatic Potentials}
 
-A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds \cite{debye1923theorie, israelachviliIntermolecularSurfaceForces}. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation
+A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds \cite{debye1923theorie, israelachviliIntermolecularSurfaceForces}. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation \cite{jackson_classical_1999}
 \begin{equation}
 	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}.
 \end{equation}
@@ -269,7 +270,7 @@ These electrostatic potentials are important for estimation and simulation of co
 % This equation defines the equilibrium distribution of the brownian diffusion after a long time. 
 
 
-\chapter{Biological Application}
+\chapter{Sizing of Biological Particles}
 \label{chap:bioapp}
 
 The diffusivity of a spherical particle is directly linked to a motion that is thermally driven \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. It happens that in the nature of biological cells, this diffusive motion is a driver for many reactions, such as enzyme-protein coupling, protein-protein coupling, and vesicle binding \cite{Phillips2013, Bialek2012Biophysics}. Thus, it is of utmost importance to adequately understand the confinement effects on diffusion in a given system. 
@@ -302,7 +303,7 @@ The biological molecule of choice for this investigation of confinement is a use
 The liposome is a spherical membrane of lipid subunit, each carrying a charge and hydrophobicity. The size of a single sub-unit is around $\SI{19}{\angstrom}$ \cite{vanmeerMembraneLipidsWhere2008, singh_particle_2019}. Liposomes, however, are found to be between $\SI{20}{\nm}-\SI{3000}{\nm}$ \cite{zhang_lipid_2021}. Liposomes and cellular vesicles are very similar, which naturally posed the question of drug delivery using a liposome model \cite{bangham_diffusion_1965}. 
 
 In recent years, the LNP was formulated - a collection of lipid based walls that are used to encapsulate a drug or cargo \cite{Cullis2018, Pardi2018}.  
-These have applications in drug delivery and have been using in the SARS-Covid vaccine in 2020 \cite{Verbeke2021,Polack2020,Baden2020, hou_lipid_2021}. These molecules are very useful and thus it is important to know how to improve them. 
+These have applications in drug delivery and have been using in the SARS-Covid vaccine in 2020 \cite{Verbeke2021,Polack2020,Baden2020, hou_lipid_2021}. A diagram of a standard LNP, as well as CRYO-EM photographs are shown in Fig. \ref{fig:LNPDiagram} and Fig. \ref{lnp_cryo}.
 
 \begin{figure}[h!]
     \centering
@@ -336,7 +337,7 @@ One recent investigation of LNP research is within the functional differences ba
 
 Modern tools to image and characterize the LNP are split into single-molecule techniques and bulk assays \cite{Ye2022, Roces2022}. In the realm of single-molecule methods, CLiC has been shown to be a high-throughput, accurate, and reliable method to characterize these particle's properties \cite{kamanzi_single-particle_2026,kamanziSimultaneousSingleParticleMeasurements2021, graves_direct_2026, kamanzi_simultaneous_2021}. CLiC utilizes the confinement of particles to observe their untethered, random motion \cite{berardPrecisionPlatformConvex2013}. 
 
-\chapter{Interferometric Scattering Principles}
+\chapter{Interferometric Scattering Microscopy Principles}
 \label{chap:iscatprinciples}
 
 To determine the physical properties of nanoparticles suspended in a fluid media, tracking movement of nanoparticles and reconstructing their spatial trajectories must be performed. To achieve this, a particle localization method that maintains a consistent signal over extended measurement periods is required. One method that enables such localization of particle traces is interferometric scattering microscopy, iSCAT \cite{taylor_interferometric_2018}. 
@@ -392,7 +393,7 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 
 \section{Electromagnetic Scattering of Homogenous Spheres}
 
-When a homogenous particle is subjected to light produced by a monochromatic laser, a diffractive pattern is produced upon scattering. These patterns can be captured by a camera, however, to extract positional information from this pattern, a mathematical model is required to describe it. 
+When a homogenous particle is subjected to light produced by a monochromatic laser, a diffractive pattern is produced upon scattering \cite{bohren1983absorption,Steck2021,jackson_classical_1999}. These patterns can be captured by a camera, however, to extract positional information from this pattern, a mathematical model is required to describe it. 
 
 The optical theory of light will obey the Maxwell's equations, which motivates solutions to obey the wave equation for the electric and magnetic fields
 \begin{equation}
@@ -485,10 +486,9 @@ This equation is the scattering field of an ideal Rayleigh particle. This equati
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/RayleighScatter.pdf}
-    \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = 405 \mathrm{nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \sim V$. As the particle volume increases, the scattering pattern increases in amplitude.}
+    \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = \SI{405}{\nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \propto V$. As the particle volume increases, the scattering pattern increases in amplitude.}
     \label{fig:raylieghscatter}
 \end{figure}
-
 
 
 \section{Scattering Microscopy}
@@ -517,15 +517,17 @@ The incident field will be modulated by a scattering term, which is the Rayleigh
     I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right], \quad \Delta \varphi = \varphi_s \varphi_r.
 \end{equation}
 
+Thus, the raw signal obtained by a camera is the total of the reference and scattered light. If this equation can be inverted to isolate the phase interference patterns of the scattered light, images of scatterers are able to be resolved.
+
 % The light captured by the objective is collected within a solid angle region. This region is practically defined by the objective's numerical aperture. In practice, it is impossible to capture all of the scattered light which cause 
 
 % It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
 
 \section{Interferometric Light Scattering (iSCAT)}
 
-The principle operation in the iSCAT methodology is the relative magnitude of mathematical terms in the optical field. The reference field is constant. The scattering field $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the interference term scales as the square root of of the radius. Thus, the scattering term is dominated by the two terms, background and interference.
+The principle operation in the iSCAT methodology is the relative magnitude of mathematical terms in the optical field \cite{dewitPreciseCharacterizationNanometerscale2023,taylor_interferometric_2018}. Here, the reference field can be assumed to be constant. The scattering field $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the interference term scales as the square root of of the radius. Thus, the scattering term is dominated by the two terms, background and interference.
 
-To accurately detect the particles if the scattering term is neglected, the contrast metric can be used. This metric relates the total field to that of a reference field;
+To accurately detect the particles, implying that the scattering term is neglected, the contrast metric can be used. This metric relates the total field to that of a reference field;
 \begin{equation}
     \begin{aligned}
         C &= \frac{I - |E_r|^2}{|E_r|^2} \\
@@ -536,15 +538,15 @@ To accurately detect the particles if the scattering term is neglected, the cont
 
 The phases in the interference field consists of a sum of optical fields. These fields acquire phase differences as they traverse through space. Aberration effects from optical transformations are also acquired as spatial and phase terms.
 
-The total phase is dominated by the Guoy phase, which is the sum of accumulated phase as the light passes through a converging or diverging lens. The de-focusing phase is a relative phase shift due to misalignment in lens position which is described by the imaging condition equation.
+The total phase is dominated by the Guoy phase, which is the sum of accumulated phase as the light passes through a converging or diverging lens \cite{taylor_interferometric_2018}. The de-focusing phase is a relative phase shift due to misalignment in lens position which is described by the imaging condition equation \cite{Steck2021}.
 
-Lastly, the phase difference from the inference term, which is compared to a Michelson-interferometer type system, is a dominant signal present directly in the iSCAT equation. 
+Lastly, the phase difference from the inference term, which is compared to a Michelson-interferometer type system, is a dominant signal present directly in the iSCAT equation \cite{taylor_interferometric_2018}. 
 
 The final image consists of the collected phase modulated optical fields and the aberrations from optical misalignment. These parameters must be considered when performing analysis on iSCAT images.
 
 \section{3D Position Information from Optical Signal}
 
-To obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
+To obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation \cite{dewitPreciseCharacterizationNanometerscale2023}. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
 
 The interferometric point spread function is defined as the contrast metric of the scattering off of a sub-diffraction sized particle, 
 \begin{equation}
@@ -567,7 +569,7 @@ This function allows one to obtain the $z$ position of a particle with respect t
 
 \section{Resolution Limits of Optical Microscopy}
 
-There is a limit of resolution that can be achieved through optical methods. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture \cite{abbe1873beitraege, jonkman_18_2003}. 
+There is a limit of resolution that can be achieved through optical methods \cite{abbe1873beitraege}. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture \cite{abbe1873beitraege, jonkman_18_2003}. 
 
 Optical fields consists of a sum of plane waves that construct and deconstruct. The electric field can be decomposed into a Fourier series of exponential harmonics. \cite{Steck2021} 
 

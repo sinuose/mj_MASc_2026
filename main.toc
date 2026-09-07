@@ -7,16 +7,16 @@
 \contentsline {section}{\numberline {2.4}Confined Diffusion Processes}{10}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Self-Consistent Confinement Coefficient}{11}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Electrostatic Potentials}{13}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Biological Application}{15}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Sizing of Biological Particles}{15}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Brownian motion as a method for measurements of size in biology}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Lipid Nanoparticles}{16}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Interferometric Scattering Principles}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Interferometric Scattering Microscopy Principles}{18}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Light as a Casual field}{18}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Electromagnetic Scattering of Homogenous Spheres}{19}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Rayleigh Scattering}{21}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Scattering Microscopy}{22}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Interferometric Light Scattering (iSCAT)}{23}{section.4.5}%
-\contentsline {section}{\numberline {4.6}3D Position Information from Optical Signal}{23}{section.4.6}%
+\contentsline {section}{\numberline {4.6}3D Position Information from Optical Signal}{24}{section.4.6}%
 \contentsline {section}{\numberline {4.7}Resolution Limits of Optical Microscopy}{24}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Sources of Noise in Optical Imaging}{26}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Interferometric Scattering Microscope Optical System}{28}{chapter.5}%
