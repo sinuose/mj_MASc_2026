@@ -2,7 +2,7 @@
 \chaptermark{iSCAT Optical System}
 \label{chap:iscatsetup}
 
-To observe single nanoparticle diffusion, an iSCAT microscope system was developed\footnote{The iSCAT microscope was built as a collaborative effort as part of two CFI grants before the start of the author's thesis period. The first CFI grant was written in 2020 and awarded in 2021. The second was written in 2022 and awarded in 2023. The microscope parts were ordered by Dr. Eric Boateng as based on Ref. \cite{young_interferometric_2019, ortega-arroyoInterferometricScatteringMicroscopy2012, OrtegaArroyo2016}. The assembly and software was completed by Dr. Erik Olsén with assistance from the Grant lab at UBC. Schematics and figures in this thesis were all written by the author.}. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. The table in Tab. \ref{tab:components} shows the iSCAT microscope component list.
+To observe single nanoparticle diffusion, an iSCAT microscope system was developed\footnote{The iSCAT microscope was built as a collaborative effort as part of two CFI grants before the start of the author's thesis period. The first CFI grant was written in 2020 and awarded in 2021. The second was written in 2022 and awarded in 2023. The microscope parts were ordered by Dr. Eric Boateng as based on Ref. \cite{young_interferometric_2019, ortega-arroyoInterferometricScatteringMicroscopy2012, OrtegaArroyo2016}. The assembly and software was completed by Dr. Erik Olsén with assistance from the Grant lab at UBC. Schematics and figures in this thesis were developed by the author.}. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. The table in Tab. \ref{tab:components} shows the iSCAT microscope component list.
 
 \begin{table}[h!]
     \centering
@@ -10,7 +10,7 @@ To observe single nanoparticle diffusion, an iSCAT microscope system was develop
         \toprule
         \textbf{Component} & \textbf{Product ID} & \textbf{Manufacturer} \\
         \midrule
-        Laser head                          & \textemdash              & \textemdash      \\
+        Laser head                          & LDM-405-500-C             & Lasertack GMBH      \\
         Mirror                              & BB1-E02P         & Thorlabs  \\
         \addlinespace[8pt]
         SF Lens 1 ($f = 40$\,mm)               & AC254-040-A-ML   & Thorlabs  \\
@@ -21,7 +21,7 @@ To observe single nanoparticle diffusion, an iSCAT microscope system was develop
         Polarizing beam splitter            & 05BC15PH.13      & Newport   \\
         Beam splitter mount                 & 9411             & New Focus \\
         Quarter-wave plate                  & WPQ10E-405       & Thorlabs  \\
-        $60\times$ oil-immersion objective  & \textemdash             & Nikon     \\
+        $60\times$/1.42 Oil-immersion objective  & MRD71670             & Nikon     \\
         \addlinespace[8pt]
         Tube lens ($f = 40$\,mm)            & AC254-040-A-ML   & Thorlabs  \\
         sCMOS camera                        & \textsc{pco.edge 4.2}     & Excelitas \\
@@ -38,8 +38,8 @@ The iSCAT microscope system was designed based on prior work by the Kukura lab \
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\linewidth]{Figures/schematic.pdf}
-    \caption{Isometric iSCAT Schematic.}
+    \includegraphics[width=\linewidth]{Figures/schematic.pdf}
+    \caption{Isometric iSCAT Schematic. A laser is first shaped using a spatial filter for a gaussian beam profile. The gaussian beam is sized by an aperture and focused into the back-plane of an objective. During the focusing, the light is circularily polarized. At the sample plane, two coverslips are placed for sample containment. To control the gap between the two coverslips, the convex-lens induced confinement (CLiC) system is used. The scattered and reflected light is collected through a polarizing beam-splitter and the final image is focused on a CMOS camera array.}
     \label{fig:schematic}
 \end{figure}
 
@@ -51,6 +51,12 @@ The sample is contained between two glass cover-slips separated by a plastic spa
 \section{Experimental Optical Table Overview}
 
 The laboratory implementation shown in Fig. \ref{fig:schematic}, was assembled on an optical table.   Fig. \ref{fig:isometrix_annotated_1} and \ref{fig:isometrix_annotated_2} show the lab setup.
+
+The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs laser driver, which varies the output power. The laser driver was set to $\SI{850}{\milli \watt}$ which outputted a laser light intensity of $\sim \SI{220}{\milli \watt}$.The Thorlabs power meter was able to measure the output light intensity with high accuracy. The laser driver is shown in Fig. \ref{fig:laser_driver}.
+
+Imaging was performed with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
+
+The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise frame-rates. 
 
 \begin{figure}[h!]
     \centering	
@@ -66,18 +72,12 @@ The laboratory implementation shown in Fig. \ref{fig:schematic}, was assembled o
     \label{fig:isometrix_annotated_2}
 \end{figure}
 
-The $\SI{405}{\nm}$ laser, fabricated by Coherent, was controlled by a Thorlabs laser driver, which varies the output power. The laser driver was set to $\SI{850}{\milli \watt}$ which outputted a laser light intensity of $\sim \SI{220}{\milli \watt}$.The Thorlabs power meter was able to measure the output light intensity with high accuracy. The laser driver is shown in Fig. \ref{fig:laser_driver}.
-
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.65\textwidth]{Figures/OpticsImage/laser_driver.pdf}
-    \caption{Laser Driver}
+    \includegraphics[width=0.8\textwidth]{Figures/OpticsImage/laser_driver.pdf}
+    \caption{Laser Driver for the $\SI{405}{\nm}$ }
     \label{fig:laser_driver}
 \end{figure}
-
-Imaging was performed with an oil-immersion objective with magnification factor $60\times$ and numerical aperture $\mathrm{NA} = 1.4$. The immersion oil was used required to match the refractive-index of the coverglass to the objective. The tube lens, located in front of the CMOS camera, was selected with a magnification factor of $2\times$. The total optical magnification factor was $120 \times$. The final image was digitally zoomed such that each pixel represents $55 \times \SI{55}{\nm}$. Since the camera pixel array is $\SI{6.5}{\um}$ in size, it produces a total magnification of $118\times$.
-
-The camera used was the \textsc{pco.edge 4.2}. This camera has a pixel array of $2048 \times 2048$ with pixel size $6.5 \times \SI{6.5}{\um}$. The camera can produce images of the  full field of view at a maximum rate of $\SI{40}{\fps}$. When a smaller field of view is used, the camera can reach up to $\SI{1000}{\fps}$. The camera saves the images with the timestamps to provide precise frame-rates. 
 
 \clearpage
 \section{System Parameters}
@@ -205,7 +205,7 @@ The deterministic portion of the Langevin equation in the simulations are determ
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/langevin_diagram.pdf}
-    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. }
+    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modelled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient.}
     \label{fig:langevin_diagram}
 \end{figure}
 %
@@ -234,7 +234,6 @@ where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-lay
 %     \end{tabularx}
 % \end{table}
 
-\clearpage
 \section{Python Simulation Implementation}
 
 The Langevin equations are implemented using \textsc{Python}. The \textsc{Python} version used for simulations was $3.13.5$. The libraries \textsc{numpy} version $2.4.6$, \textsc{scipy} version $1.18.0$, and \textsc{numba} version $0.99.0$ were used as the main drivers for the simulations \cite{python3, harris2020array, lam2015numba}. 
@@ -264,7 +263,7 @@ The parameters class, $\textsc{Param}$ holds the main parameters of the simulati
     \label{tab:sim_params}
 \end{table}
 
-This \textsc{Param} class has functions that calculates the current viscosity and forces based on some input $z$. The list of functions is shown in Tab.
+This \textsc{Param} class has functions that calculates the current viscosity and forces based on some input $z$. These functions are described by the confined mobility relations and Debye-Hückel electrostatic forces in Chap \ref{chap:brownianmotion}.
 
 \begin{table}[h!]
     \centering
@@ -293,14 +292,14 @@ The time complexity of this function is $\mathcal{O}(n)$, where $n$ is the numbe
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/LangevinTimeComplexity.pdf}
+    \includegraphics[width=\textwidth]{Figures/LangevinTimeComplexity.pdf}
     \caption{Langevin simulation function \textsc{StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal{O}\left(n^1\right)$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor.}
     \label{fig:timecomplex1}
 \end{figure}
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.75\textwidth]{Figures/LangevinTimeComplexity_mis2.pdf}
+    \includegraphics[width=\textwidth]{Figures/LangevinTimeComplexity_mis2.pdf}
     \caption{Langevin simulation function \textsc{StepTraj} time complexity. Simulation parameters are set as Fig. \ref{fig:timecomplex1} with two parallel simulations.}
     \label{fig:timecomplex2}
 \end{figure}
@@ -336,7 +335,7 @@ To quantify the confinement length changes as a function of the electrostatic fi
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/xz_msd_comparison.pdf}
-    \caption{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI{26000}{\nm^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI{15000}{\nm^2}$. The chart on the right shows the transverse MSD of the two particles. Exposure time $\tau = \SI{200}{\micro \second}$, $\lambda_D = \SI{10}{\nm}$. }
+    \caption{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI{26000}{\nm^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI{15000}{\nm^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau$ consists of on exposure time of $\SI{200}{\micro \second}$. The debye-length was fixed to $\lambda_D = \SI{10}{\nm}$. }
     \label{fig:xz_msd_comparison}
 \end{figure} 
 
@@ -352,14 +351,12 @@ Using the developed software, the relationship between the effective confinement
 \end{equation}
 where $C$ is the ionic concentration of a dilute electrolyte compound.
 
-The simulation for the geometry described above was conducted for various Debye-lengths. The conditions of the simulation are such that the zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$. 
-
-The simulation results are shown in Fig. \ref{fig:conf_debyelen}
+The simulation for the geometry described above was conducted for various Debye-lengths. The conditions of the simulation are such that the zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$. The simulation results are shown in Fig. \ref{fig:conf_debyelen}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_debyelength.pdf}
-    \caption{Effective Confinement length plotted against the solution's Debye-length.}
+    \caption{Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted against the solution's debye-length $\lambda_D$ and expressed in terms of ion concentration $C$.}
     \label{fig:conf_debyelen}
 \end{figure}
 
@@ -376,7 +373,7 @@ Using the simulated trajectories in Fig. \ref{fig:conf_debyelen}, the diffusion 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/diff_debye.pdf}
-    \caption{Effective diffusion plotted against the solution's Debye length. }
+    \caption{Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. }
     \label{fig:diff_debyelen}
 \end{figure}
 
@@ -554,7 +551,7 @@ Image data will have background misalignment due to iSCAT hardware setup. To opt
 
 The discrete angular integral consists of summing angular terms on a radial grid. Mathematically, the output array obtained is described by the relation
 \begin{equation}
-    g_t(\rho) \tilde{-} \frac{1}{\Delta \theta}\int_{\theta_0}^{\theta_0 + \Delta \theta} I_t(\rho, \theta) d\theta,
+    g_t(\rho) \cong \frac{1}{\Delta \theta}\int_{\theta_0}^{\theta_0 + \Delta \theta} I_t(\rho, \theta) d\theta,
 \end{equation}
 where $\theta_0$ is a constant, $\Delta \theta$ is the width of integration, $I_t(\rho, \theta)$ is the iSCAT image. 
 
@@ -563,7 +560,7 @@ First, the cartesian image is Re-parameterized into polar coordinates using a ch
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/AngularInt.pdf}
-    \caption{Angular Integral demonstration.}
+    \caption{Angular Integral demonstration on experimental polystyrene image. The polar distance, $\rho$ is plotted here where the red $\times$ symbol denotes the center of the image.}
     \label{fig:AngularInt}
 \end{figure}
 
@@ -607,7 +604,7 @@ First, all minima for every frame must be collected. These are the candidate pos
 
 For each position, the forward pass compares all chains moving in time. The loss is accumulated by a weighted Euclidean transition cost,
 \begin{equation}
-    d_i(i,j) = \sqrt{w_x^2(x_{t-1}^(i) - x_{t}^(j))^2 + w_y^2(y_{t-1}^(i) - y_{t}^(j))^2},
+    d_i(i,j) = \sqrt{w_x^2(x_{t-1}^{i} - x_{t}^{j})^2 + w_y^2(y_{t-1}^{i} - y_{t}^{j})^2},
 \end{equation}
 where $x$ denote $z$ motion, and $y$ denotes the loss difference. This matrix compares all weighted transitions. The optimal transition $\pi_t(j)$ is then chosen to minimize this transition, and any prior transitions. 
 

@@ -48,6 +48,10 @@
 \onehalfspacing % Or \doublespacing for thesis-level spacing
 
 \usepackage[style=numeric-comp, sorting=none]{biblatex}
+\AtEveryBibitem{
+    \clearfield{urlyear}
+    \clearfield{urlmonth}
+}
 \addbibresource{references.bib}
 
 \newtheorem{theorem}{Theorem}
@@ -55,7 +59,8 @@
 \newcommand{\sbracket}[1]{\left[ #1\right]}
 \newcommand{\bracket}[1]{\left( #1\right)}
 \newcommand{\R}{\mathbb{R}}
-\renewcommand{\Re}{\mathrm{Re}}
+\newcommand{\real}{\Re}
+\renewcommand{\Re}{\mathchar"023C}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 %\renewcommand{\cite}[1]{[x]}
 
@@ -70,35 +75,38 @@
         \begin{center}
 
         % University name
-        {\Large\textbf{THE UNIVERSITY OF BRITISH COLUMBIA}}\\[2cm]
+        \vspace*{2cm}
+        %{\Large\textbf{THE UNIVERSITY OF BRITISH COLUMBIA}}\\[0.5cm]
 
         % Thesis title
-        {\Large \bfseries STUDIES OF NANOPARTICLE CONFINED DIFFUSION USING iSCAT MICROSCOPY}\\[2cm]
-
-
+        {\huge \bfseries Confined Nanoparticle Diffusion Imaging via iSCAT Microscopy}\\[0.5cm]
         % Author
         by\\[0.5cm]
-        {\Large Martin Jasinski}\\[2cm]
+        {\normalsize Martin Jasinski}\\[0.5cm]
+        B.Sc., The University of British Columbia, 2024
+        \\[1cm]
 
         % Submission line
         A THESIS SUBMITTED IN PARTIAL FULFILLMENT OF\\
-        THE REQUIREMENTS FOR THE DEGREE OF\\[0.5cm]
+        THE REQUIREMENTS FOR THE DEGREE OF\\[0.2cm]
 
         % Degree type
-        {\Large Master of Applied Science}\\[0.5cm]
+        {\normalsize MASTER OF APPLIED SCIENCE}\\[0.5cm]
 
         % Program
         in\\[0.5cm]
-        {\Large (Engineering Physics)}\\[0.5cm]
+          % Submission line
+        The Faculty of Graduate and Postdoctoral Studies \\[0.2cm]
+        {\normalsize (Engineering Physics)}\\[1cm]
 
         % Institution
-        {\Large THE UNIVERSITY OF BRITISH COLUMBIA}\\[0.5cm]
-
-        % Campus (if applicable)
-        {\Large Department of Physics}\\[1cm]
-
+        {\normalsize THE UNIVERSITY OF BRITISH COLUMBIA}\\[0.2cm]
+% Campus (if applicable)
+        {\normalsize (Vancouver)}\\[0.2cm]
         % Date (month and year only)
-        {\Large \today}
+        {\normalsize \today}\\[0.2cm]
+        % Campus (if applicable)
+        {\normalsize \copyright Martin Jasinski 2026}\
 
         \vfill
 
@@ -208,6 +216,7 @@
     $h$                  & Length \\
     $H_\mathrm{PSF}$     & Point spread function \\
     $h_l$                & Optical transfer function \\
+    $\Im$                & Imaginary part \\
     $j$                  & Probability current \\
     $k$                  & Wave vector \\
     $k_b$                & Boltzmann constant \\
@@ -216,6 +225,7 @@
     $N$                  & Number \\
     $n_m$                & Refractive index\\
     $r$                  & Polar distance\\
+    $\real$                & Real part \\
     $R_l$                & Lens radius \\
     $\mathrm{Re}$        & Reynolds number \\
     $t$                  & Time \\

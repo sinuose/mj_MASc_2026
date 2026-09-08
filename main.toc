@@ -1,4 +1,4 @@
-\contentsline {chapter}{Nomenclature}{12}{chapter*.9}%
+\contentsline {chapter}{Nomenclature}{13}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Brownian Motion}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Einstein's Brownian Motion}{5}{section.2.1}%
@@ -22,40 +22,40 @@
 \contentsline {chapter}{\numberline {5}Interferometric Scattering Microscope Optical System}{28}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Optical System Diagram}{29}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Experimental Optical Table Overview}{30}{section.5.2}%
-\contentsline {section}{\numberline {5.3}System Parameters}{32}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Alignment Procedure}{32}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Future Improvements}{33}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Simulations of Diffusion of Nanoparticles in Double-Layer Walls}{34}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Simulation Equations}{34}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Electrostatic Input Parameters}{36}{section.6.2}%
+\contentsline {section}{\numberline {5.3}System Parameters}{33}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Alignment Procedure}{33}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Future Improvements}{34}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Simulations of Diffusion of Nanoparticles in Double-Layer Walls}{35}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Simulation Equations}{35}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Electrostatic Input Parameters}{37}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Python Simulation Implementation}{38}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{40}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Simulation Results}{41}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Surface Charge estimation}{44}{section.6.6}%
-\contentsline {chapter}{\numberline {7}iSCAT Axial Inference}{46}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Method Overview}{46}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Raw image background subtraction}{47}{section.7.2}%
-\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{49}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Angular Integral}{50}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{51}{section.7.5}%
-\contentsline {section}{\numberline {7.6}2D Chain-link}{52}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{54}{section.7.7}%
-\contentsline {section}{\numberline {7.8}3-parameter Estimation}{54}{section.7.8}%
-\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{55}{subsection.7.8.1}%
-\contentsline {section}{\numberline {7.9}Conclusions}{55}{section.7.9}%
-\contentsline {chapter}{\numberline {8}Experimental Results}{57}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Experimental Setup}{59}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Optical System Schematic}{59}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{59}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Convex-lens Induced Confinement}{61}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Sample Preparation Steps}{61}{subsection.8.1.4}%
-\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{64}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{69}{section.8.3}%
-\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{73}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Conclusion}{76}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusion}{76}{section.9.1}%
-\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{87}{appendix.A}%
-\contentsline {section}{\numberline {A.1}$\hat B$ Maximum Likelihood Estimator}{87}{section.A.1}%
-\contentsline {section}{\numberline {A.2}$\hat {B}$ Variance}{89}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{90}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{91}{appendix.C}%
+\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{41}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Simulation Results}{43}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Surface Charge estimation}{45}{section.6.6}%
+\contentsline {chapter}{\numberline {7}iSCAT Axial Inference}{47}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Method Overview}{47}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Raw image background subtraction}{48}{section.7.2}%
+\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{50}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Angular Integral}{51}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{52}{section.7.5}%
+\contentsline {section}{\numberline {7.6}2D Chain-link}{53}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{55}{section.7.7}%
+\contentsline {section}{\numberline {7.8}3-parameter Estimation}{55}{section.7.8}%
+\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{56}{subsection.7.8.1}%
+\contentsline {section}{\numberline {7.9}Conclusions}{56}{section.7.9}%
+\contentsline {chapter}{\numberline {8}Experimental Results}{58}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Experimental Setup}{60}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Optical System Schematic}{60}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{61}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Convex-lens Induced Confinement}{62}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Sample Preparation Steps}{62}{subsection.8.1.4}%
+\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{65}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{70}{section.8.3}%
+\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{74}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusion}{78}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusion}{78}{section.9.1}%
+\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{89}{appendix.A}%
+\contentsline {section}{\numberline {A.1}$\hat B$ Maximum Likelihood Estimator}{89}{section.A.1}%
+\contentsline {section}{\numberline {A.2}$\hat {B}$ Variance}{91}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{92}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{93}{appendix.C}%

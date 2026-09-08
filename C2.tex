@@ -2,10 +2,10 @@
 \chapter{Experimental Results}
 \label{chap:expresult}
 
-To validate the iSCAT imaging technique and computational methods described in previous sections, three major groups of experiments were conducted. One group focused on performing validation of confined diffusion of electrostatic motion of polystyrene beads. The second was investigating the transient mean-squared displacement behavior. The third one was done using lipid-nanoparticles in a PEG-passivated environment to look at diffusion in biological conditions. 
+To validate the iSCAT imaging technique and computational methods described in previous sections, three major groups of experiments were conducted. One group focused on performing validation of confined diffusion of electrostatic motion of polystyrene beads. The second was investigating the transient mean-squared displacement behavior. The third was done using lipid-nanoparticles in a PEG-passivated environment to observe diffusion in biologically-relevant conditions. 
 
 %, as discussed in Chap. \ref{chap:brownianmotion} and Chap. \ref{chap:langevinsimulations}.
-The effects of electrostatic interaction of nanoparticle diffusion were investigated in various ionic concentrations. The salt concentration regulates the particle's effective confinement length. The change in confinement length directly affects how size-inferencing is performed. %The effects of changing the ionic concentration on the size inference from transverse and axial measurements were compared. 
+The effects of electrostatic interaction of nanoparticle diffusion were investigated in various ionic concentrations. The salt concentration regulates the particle's effective confinement length\footnote{As shown in Chap. \ref{chap:langevinsimulations}.}. The change in confinement length directly affects how size-inferencing is performed due to the change in particle mobility near confinement boundaries \cite{bian111YearsBrownian2016}. %The effects of changing the ionic concentration on the size inference from transverse and axial measurements were compared. 
 
 The transient behavior and confined mean-squared displacement relations were performed on polystyrene bead diffusion by adding a glycerol solution to slow down the step-length of the particle's motion. Glycerol was chosen as the viscous reagent as the water-glycerol relation is well defined \cite{cheng_formula_2008} and has a lipid-membrane permeability \cite{Orbach1980, Walter1986}. 
 
@@ -47,18 +47,18 @@ To apply the theoretical models and statistical tools to a current, applicable b
 \section{Experimental Setup}
 \label{sec:methods}
 
-The experiments described in this chapter were conducted using the wide-field iSCAT optical system as described in Chap. \ref{chap:iscatsetup}. The samples were placed within a cover-glass to create a flow-cell. The confinement system, convex-lens induced confinement, is presented below.
+The experiments described in this chapter were conducted using the wide-field iSCAT optical system as described in Chap. \ref{chap:iscatsetup}. The samples were placed within two planar glass coverslips to create a flow-cell. The confinement system, convex-lens induced confinement, was used to control the height between the two coverslips. The experimental schematics and apparatuses  are described below.
 
 \subsection{Optical System Schematic}
 
-The schematic of the optical system used in the laboratory experimentation is shown in Fig. \ref{fig:re_schematic}. To illuminate the samples, an illumination laser with wavelength of $\SI{405}{\nm}$ was used. This wavelength laser was selected to have the lowest cost and provide illumination within the visible light spectrum. The optical power of the laser was $\SI{240}{\milli \watt}$. The optical filter drops after the spatial filter to $\SI{120}{\milli \watt}$ which is $\sim 50\%$ of the initial laser output. 
+The schematic of the optical system used in the laboratory experimentation is shown in Fig. \ref{fig:re_schematic}. To illuminate the samples, an illumination laser with wavelength of $\SI{405}{\nm}$ was used. This wavelength laser was selected to have the lowest cost and provide illumination within the visible light spectrum. The optical power of the laser was $\SI{240}{\milli \watt}$. The optical filter drops after the spatial filter to $\SI{120}{\milli \watt}$ which is $\sim\!\!50\%$ of the initial laser output. 
 
-The microscope objective was oil based with a  $100 \times$ optical magnification\footnote{(Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$)}. The images were captured by a sCMOS camera\footnote{(\textsc{pco.edge 4.2})}. The system was controlled by a custom computer software written by the Grant lab in the LabView programming language \cite{Brouwer2026}. The complete parts list of the optical system was presented in Tab. \ref{tab:components}.
+The microscope objective was oil based with a  $100 \times$ optical magnification\footnote{(Nikon, Apochromat TIRF $100 \times$ oil immersion objective N.A. 1.49, W.D. $\SI{0.12}{\mm}$, F.O.V $\SI{22}{\mm}$)}. The images were captured by a sCMOS camera\footnote{(\textsc{pco.edge 4.2})}. The system was controlled by a custom computer software written in the LabView programming language. The complete parts list of the optical system was presented in Tab. \ref{tab:components}.
 
 \begin{figure}[h!]
 	\centering
     \includegraphics[width=0.8\linewidth]{Figures/schematic.pdf}
-    \caption{ iSCAT Schematic.}%A 405 nm laser beam is passes through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scattered light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format.}
+    \caption{Schematic of iSCAT system from Chap. \ref{chap:iscatsetup}. See \ref{fig:schematic} for details.}%A 405 nm laser beam is passes through a spatial filter, passes through an aperture. The beam is sent through a focusing lens which is reflected off a polarizing beam splitter, polarized through a QWP focused on the back plane of the objective. The scattered light is then polarized again, passing through the polarizing beam splitter and is focused on the CMOS camera. The final image is collected via the CMOS and saved in binary format.}
 	\label{fig:re_schematic}
 \end{figure}
 
@@ -89,7 +89,7 @@ The passivation technique used for lipid-nanoparticle measurements was the 5 kDa
 
 To confine the nanoparticles within the field of view of the objective, a convex-lens induced confinement, referred to as CLiC, was used. This method was developed by the Leslie Lab,  described in detail in the seminal publication referenced as per  \cite{berardPrecisionPlatformConvex2013}. 
 
-A convex pusher lens is used together with a piezo linear actuator to displace the top coverslip of the flow-cell in a parabolic displacement. The piezo actuator is manually controlled during imaging and set to a specific, controlled height. The height is determined using the inference fringes of Newton's rings. The full method outline is visualized in Fig. \ref{fig:c7_fig1}
+A convex pusher lens is used together with a piezo linear actuator to displace the top coverslip of the flow-cell in a parabolic displacement. The piezo actuator is manually controlled during imaging and set to a specific, controlled height. The height is determined using the inference fringes of Newton's rings. The full method outline is visualized in Fig. \ref{fig:c7_fig1}.
 
 
 \begin{figure}[h!]
@@ -102,12 +102,12 @@ A convex pusher lens is used together with a piezo linear actuator to displace t
 \subsection{Sample Preparation Steps}
 To obtain experimental results, samples must be prepared for imaging. In the electrostatic and transient diffusion experiments, carboxylate modified polystyrene beads were used. They were obtained from Thermofisher company\footnote{($\SI{0.1}{\micro \meter}$ FluoSpheres\texttrademark carboxylate-modified microspheres, Catalog No. F8799)}. The polystyrene beads had a bulk-average size estimate of $\SI{0.1}{\micro \meter}$. The polystyrene beads were fluorescently labelled of $\SI{500}{\micro \meter}$. The beads were measured in de-ionized water\footnote{(MilliQ)} as well as a concentration series of phosphate-buffered saline. Fluorescent labelled was not used during the experiments.
 
-The polystyrene bead bulk-size was experimentally verified using dynamic light scattering measurements using the Malvern DLS\footnote(Malvern Panalytical Ltd., Malvern, UK; $\lambda = 633 nm$, $\theta = 173^o$ backscatter). The bulk size and zeta potential were characterized, as shown in Fig. \ref{fig:beads_DLS} and Tab. \ref{tab:zeta_beads}.
+The polystyrene bead bulk-size was experimentally verified using dynamic light scattering measurements using the Malvern DLS\footnote{(Malvern Panalytical Ltd., Malvern, UK; $\lambda = \SI{633}{\nm}$, $\theta = 173^\mathrm{o}$ backscatter)}. The bulk size and zeta potential were characterized, as shown in Fig. \ref{fig:beads_DLS} and Tab. \ref{tab:zeta_beads}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/beads_DLS_size.pdf}
-    \caption{This is DLS data for the beads.}
+    \caption{DLS results for Polystyrene beads in MilliQ water.}
     \label{fig:beads_DLS}
 \end{figure}
 \vspace{1pt}
@@ -120,14 +120,14 @@ The polystyrene bead bulk-size was experimentally verified using dynamic light s
                   S[table-format=-2.3]
                   S[table-format=-2.3]}
     \toprule
-    Sample & {$\bar{\zeta}$ (mV)} & {$s$ (mV)} & {RSD (\%)}
+    Sample & {$\langle\zeta \rangle$ (mV)} & {$\sigma_\zeta$ (mV)} & {RSD (\%)}
            & {$\zeta_{\min}$ (mV)} & {$\zeta_{\max}$ (mV)} \\
     \midrule
     DLS Standard  -40      & -42.695 & 0.000 &  0.00 & -42.695 & -42.695 \\
     Polystyrene Beads        & -36.863 & 2.065 &  5.602 & -39.246 & -35.612 \\
     \bottomrule
   \end{tabular}
-  \caption{Electrophoretic zeta-potential statistics from three consecutive measurements per sample.}
+  \caption{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle$, standard deviation $\sigma_\zeta$, relative standard deviation $\mathrm{RSD}$, minimum $\zeta_{\min}$, and maximum values  $\zeta_{\max}$ are displayed for each sample.}
   \label{tab:zeta_beads}
 \end{table}
 
@@ -262,7 +262,7 @@ The glycerol solution was adjusted to ensure that the diffusion coefficient was 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/glycerol_curve.pdf}
-    \caption{Glycerol-water curve. The curve is taken from \cite{cheng_formula_2008}.}
+    \caption{Glycerol-water curve. The theoretical line plotted is used from Cheng et al. \cite{cheng_formula_2008}.}
     \label{fig:gly_curve}
 \end{figure}
 
@@ -270,12 +270,12 @@ The dotted blue line presents the empirically determined equation for the viscos
 
 \clearpage
 The experiment was performed with the parameters listed in Tab. \ref{tab:2_sample_list} and the video was captured. From the video, a long-range trajectory was obtained. This trajectory is shown in Fig. \ref{fig:long_Range_gly_traj}
-
+\vspace{-1.8cm}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth]{Python/Figures/glycerol_sample_trajectory.pdf}
+    \includegraphics[width=0.75\textwidth]{Python/Figures/glycerol_sample_trajectory.pdf}
     %\includesvg[width=\textwidth]{Python/Figures/glycerol_sample_trajectory}
-    \caption{Trajectory of a polystrene bead in glycerol.}
+    \caption{Trajectory of a polystrene bead in glycerol. The red dot and blue square show the initial and final position respectfully.}
     \label{fig:long_Range_gly_traj}
 \end{figure}
 
@@ -284,11 +284,11 @@ From this trajectory, the mean-squared displacement of the transverse and axial 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/glycerol_MSD.pdf}
-    \caption{Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI{50}{\nm}$.}
+    \caption{Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI{50}{\nm}$. The lag time, $\tau$ is plotted in frame indices. Each unit of $\tau$ represents one frame at $\SI{580}{\fps}$.}
     \label{fig:gly_msd}
 \end{figure}
 
-The figure on the left shows the transverse mean squared displacement as a function of the lag-time between frames. The dotted line is the ensemble mean MSD between the 7 trajectories, while the filled area is the standard deviation. The figure on the right shows the axial mean squared displacement as a function of the lag-time between frames. The dotted green line shows the ensemble mean, while the filled green shows the standard deviation. THe horizontal red lines show the theoretical plateau values for confined diffusion of various radii, $a$, particles between a $220$ nm slit. The MSD of both trajectories appear within a narrow range of each other. 
+The figure on the left shows the transverse mean squared displacement as a function of the lag-time between frames. The dotted line is the ensemble mean MSD between the 7 trajectories, while the filled area is the standard deviation. The figure on the right shows the axial mean squared displacement as a function of the lag-time between frames. The dotted green line shows the ensemble mean, while the filled green shows the standard deviation. The horizontal red lines show the theoretical plateau values for confined diffusion of various radii, $a$, particles between a $220$ nm slit. The MSD of both trajectories appear within a narrow range of each other. 
  
 \clearpage
 In addition to these curves, the diffusivity across the confinement channel can be recovered by partitioning the trajectory into axially separated slices. The trajectory was converted into diffusivity values utilizing the first two points of the MSD and was plotted as a function of the axial position, as shown in Fig. \ref{fig:c7_fig4}.
@@ -297,7 +297,7 @@ In addition to these curves, the diffusivity across the confinement channel can 
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/glycerol_diffusivity_relation.pdf}
 
-    \caption{Theoretical diffusivity shown in orange. Measured diffusivity measured in blue. }
+    \caption{Theoretical diffusivity shown in orange using the linear-superposition theory (LST). Measured diffusivity of $7$ particle traces are plotted in blue. Each point is a portion of a single trajectory. The ensemble distribution is plotted in light blue.}
     \label{fig:c7_fig4}
 \end{figure}
 
@@ -309,7 +309,7 @@ The left hand side plot follows the theoretical expected value, while the data o
 \clearpage
 \section{LNP Axial Diffusion}
 
-The lab experiments to characterize the diffusion of lipid nanoparticles were conducted for three LNP species to evaluate the electrostatic and transient motion. The electrostatic motion was obtained using a setup as described previously with the exception of utilizing a PEG-passivation. The test conditions are listed in the Tab. \ref{tab:3_sample_list} 
+The lab experiments to characterize the diffusion of lipid nanoparticles were conducted for three LNP species to evaluate the electrostatic and transient motion. The electrostatic motion was obtained using a setup as described previously with the exception of utilizing a PEG-passivation. The test conditions are listed in the Tab. \ref{tab:3_sample_list}.
 
 
 \begin{table}[h!]
@@ -337,7 +337,7 @@ For each LNP species, the bulk-average size and zeta-potential were characterize
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/DLS_size.pdf}
-    \caption{DLS measurements of LNP}
+    \caption{DLS measurements of LNP samples. The blue, green and orange plot denote the liposomal, $25\mathrm{ mM}$ NaAC, and $300\mathrm{ mM}$ NaAC LNP formulations respectfully.}
     \label{fig:LNP_DLS}
 \end{figure}
 
@@ -352,7 +352,7 @@ The liposomal and oil-core LNPs, shown in the blue and green solid lines, have s
                   S[table-format=-2.3]
                   S[table-format=-2.3]}
     \toprule
-    Sample & {$\bar{\zeta}$ (mV)} & {$s$ (mV)} & {RSD (\%)}
+    Sample & {$\langle\zeta\rangle$ (mV)} & {$\sigma_\zeta$ (mV)} & {RSD (\%)}
            & {$\zeta_{\min}$ (mV)} & {$\zeta_{\max}$ (mV)} \\
     \midrule
     DLS Standard  -40      & -42.695 & 0.000 &  0.00 & -42.695 & -42.695 \\
@@ -361,7 +361,7 @@ The liposomal and oil-core LNPs, shown in the blue and green solid lines, have s
     \SI{300}{mM} NaAc Onpattro & -6.569 & 1.414 &  21.52 & -7.423 & -4.938 \\
     \bottomrule
   \end{tabular}
-  \caption{Electrophoretic zeta-potential statistics from three consecutive measurements per sample.}
+  \caption{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle$, standard deviation $\sigma_\zeta$, relative standard deviation $\mathrm{RSD}$, minimum $\zeta_{\min}$, and maximum values  $\zeta_{\max}$ are displayed for each sample.}
   \label{tab:zeta}
 \end{table}
 
@@ -372,7 +372,7 @@ The experimental data consisted of videos of LNPs diffusing in a $\SI{220}{\nm}$
 \begin{figure}[h!]
     \centering
     \includegraphics[width]{Python/Figures/Chapter7/lnp_pos_hist.pdf}
-    \caption{Probability histogram of LNP axial position. Imaged are onpattro standard, and bleb-like LNPs. Liposomal LNPs were too small to be tracked over a long-range.}
+    \caption{Probability histogram of LNP axial position. Plotted in green and orange are the $25\mathrm{ mM}$ NaAC, and $300\mathrm{ mM}$ NaAC LNP formulations respectfully. The liposomal, LNPs were too small to be tracked over a long-range and are hence omitted.}
     \label{fig:lnp_pos_hist}
 \end{figure}
 
@@ -383,11 +383,11 @@ To characterize the transient behavior, the LNPs were suspended in a 75\% glycer
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/LNP_glycerol_MSD.pdf}
-    \caption{Ensemble MSD of LNP. Imaged are liposomal, onpattro standard, and bleb-like LNPs.}
+    \caption{Ensemble MSD of LNP formalations. Plotted in blue and green are the $25\mathrm{ mM}$ NaAC, and $300\mathrm{ mM}$ NaAC LNP formulations respectfully. The lag time, $\tau$ is plotted in frame indices. Each unit of $\tau$ represents one frame at $\SI{400}{\fps}$. The red line in the right-plot display the expected MSD plateaus for particles of radius $20, 50\mathrm{ nm}$ in order of increasing boldness. The $25\mathrm{ mM}$ NaAC traces contain ensemble information of 3 traces. The $300\mathrm{ mM}$ NaAC traces contain ensemble information of 2 traces.}
     \label{fig:lnp_gly_msd}
 \end{figure}
 
-The left plot depicts the transverse MSD of the oil-core and bleb-like LNPs. The dotted blue line shows the oil-core LNP transverse diffusion. The solid light blue indicates the standard deviation. The dotted green line shows the bleb-like LNP transverse diffusion. The solid light green indicates the standard deviation. The right plot depicts the axial MSD of the oil-core and bleb-like LNPs. The dotted blue line shows the oil-core LNP axial diffusion. The solid light blue indicates the standard deviation. The dotted green line shows the bleb-like LNP axial diffusion. The solid light green indicates the standard deviation. The dotted red lines show the theoretical plateau values for particles of radius, $a$, in a $\SI{220}{\nm}$ slit. The transverse MSD is acceptable as it has a linear form near the first 20 lag-times. THe axial MSD, however, contains non-linear behavior and sporadic jumps. This noise indicates non-accurate axial tracking due to poor image data.
+The left plot depicts the transverse MSD of the oil-core and bleb-like LNPs. The dotted blue line shows the oil-core LNP transverse diffusion. The solid light blue indicates the standard deviation. The dotted green line shows the bleb-like LNP transverse diffusion. The solid light green indicates the standard deviation. The right plot depicts the axial MSD of the oil-core and bleb-like LNPs. The dotted blue line shows the oil-core LNP axial diffusion. The solid light blue indicates the standard deviation. The dotted green line shows the bleb-like LNP axial diffusion. The solid light green indicates the standard deviation. The dotted red lines show the theoretical plateau values for particles of radius, $a$, in a $\SI{220}{\nm}$ slit. The transverse MSD is acceptable as it has a linear form near the first 20 lag-times. The axial MSD, however, contains non-linear behavior and sporadic jumps. This noise indicates non-accurate axial tracking due to poor image data.
 
 % \newpage
 % \chapter{Discussion of Results}
