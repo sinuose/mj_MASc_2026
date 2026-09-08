@@ -1,6 +1,10 @@
 \documentclass[12pt, oneside]{book}
 %\documentclass[12pt]{book}
 
+%\usepackage{mathpazo}
+%\renewcommand{\familydefault}{\sfdefault}
+%\usepackage{sansmathfonts}
+
 \usepackage{ circuitikz }
 \usepackage{subcaption}
 \usepackage{tabularx}
@@ -23,8 +27,15 @@
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue},
+    urlcolor={blue}
+}
 \usepackage{booktabs}
 \usepackage{tabstackengine}
+\usepackage{textcomp}
 
 \usetikzlibrary{calc, shapes.geometric, arrows.meta, positioning}
 %bibliography
@@ -33,11 +44,12 @@
 \usepackage{microtype} % Subtle font spacing adjustments
 \usepackage
 [
-        a4paper,% other options: a3paper, a5paper, etc
-        left=0.75in,
-        right=0.75in,
-        top=1in,
-        bottom=1in
+        a4paper,
+        margin = 1in,% other options: a3paper, a5paper, etc
+        %left=1in,
+        %right=1in,
+        %top=1in,
+        %bottom=1in
         % use vmargin=2cm to make vertical margins equal to 2cm.
         % us  hmargin=3cm to make horizontal margins equal to 3cm.
         % use margin=3cm to make all margins  equal to 3cm.
@@ -45,7 +57,9 @@
 {geometry}
 
 \usepackage{setspace}
-\onehalfspacing % Or \doublespacing for thesis-level spacing
+\linespread{1.25}
+%\onehalfspacing % Or \doublespacing for thesis-level spacing
+%\doublespacing
 
 \usepackage[style=numeric-comp, sorting=none]{biblatex}
 \AtEveryBibitem{
@@ -106,23 +120,29 @@
         % Date (month and year only)
         {\normalsize \today}\\[0.2cm]
         % Campus (if applicable)
-        {\normalsize \copyright Martin Jasinski 2026}\
+        {\normalsize \textcopyright \space Martin Jasinski 2026}\
 
         \vfill
 
         \end{center}
     \end{titlepage}
     
-
+    \pagenumbering{roman}
+    \setcounter{page}{2}
     \input{ABSTRACT}
 
     \input{preface}
 
+    \renewcommand{\contentsname}{Table of Contents}
     \tableofcontents
+    \addcontentsline{toc}{chapter}{Table of Contents}
 
     \listoftables
+    \addcontentsline{toc}{chapter}{List of Tables}
+
     \listoffigures
-    
+    \addcontentsline{toc}{chapter}{List of Figures}
+
     % list of symbols
     \chapter*{List of Symbols}
     \addcontentsline{toc}{chapter}{Nomenclature}
@@ -261,9 +281,9 @@
     $\rho$               & Volumetric charge density \\
     $\sigma$             & Drift coefficient\\
     $\sigma_w$           & Surface charge density \\
-    $\tau$               & Camera exposure time \\
+    $\tau$               & Camera exposure and lag-time \\
     $\phi(\Delta)$        & Probability of particle in space $\Delta$ \\
-    $\psi_g(z)$          & Guoy Phase \\
+    $\psi_g(z)$          & Gouy Phase \\
     $\psi_w$             & Wall zeta potential \\
     $\omega$             & Angular Frequency\\
     $\Gamma$             & Fluctuation--dissipation magnitude \\
@@ -278,6 +298,15 @@
     \end{longtable}
     \endgroup
     
+
+    \newpage
+    \chapter*{Acknowledgements}
+    \addcontentsline{toc}{chapter}{Acknowledgements}
+
+
+
+    The completion of this study would have not been possible without the help and resources from Dr. Sabrina R. Leslie, the supervisor of my thesis. I would like to thank Dr. Erik Olsén, a post-doc in the Leslie-Lab, who collaborated and provided guidance to me during this project. I would like to thank Yao Zhang for aiding in sample preparation with lipid-nanoparticles. A debt of gratitude is owed to my dear friends Aiyan Brown, Josh Collesso, and Daniel Currie for aiding in proof-reading and continued support through friendship. Lastly, I would like to thank my father for the unwavering support and interest.
+
     % start document
     \chapter{Introduction}
     \input{INTRO}
