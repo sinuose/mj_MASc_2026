@@ -130,7 +130,7 @@ To show that the Langevin formulation and Einstein's formulation are equivalent,
 \end{equation}
 
 This equation is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.}\cite{vankampen2007stochastic}. The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation \cite{vankampen2007stochastic}
-\begin{equation}
+\begin{equation}\label{eqn:fokkerplank}
 	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right]
 \end{equation}
 
@@ -142,23 +142,23 @@ where the diffusive and drift terms are parameterized over the transition probab
 	\end{aligned}
 \end{equation}
 
-In the case of zero drift, the form of this equation equates to the diffusion equation of the Langevin formulation. Thus, the Einsteinian and Langevin formulation are the same. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems. 
+In the case of zero drift, the form of Eqn \ref{eqn:fokkerplank} is equal to the diffusion equation of the Einsteinian formulation. Thus, the Einsteinian and Langevin formulation are equivalent \cite{walter_fokker-planck}. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. In particular, relating expected results from simulation-based behavior of Langevin problems. 
 
 Additionally, the results from either formulation are intrinsically the same, which implies that the probabilistic distributions of the Einsteinian formulation can be recovered from running Langevin simulations over a long time-course. Thus, non-analytical systems, such as non-homogenous cases of the diffusion equation, can be investigated in this context using simulations without a loss of applicability. 
 
 \section{Confined Diffusion Processes}
 
-The effect of diffusion near an interface on a nearby particle is non-negligible \cite{bian111YearsBrownian2016}. The effect on confinement can be first imagined as the effect from frictional fluid flow. Notably, the particle being immersed in a fluid invites a Stokes friction which affects the perpendicular and parallel motion. Swedish physicist Hilding Faxén derived the relations in no-slip boundary conditions near a brownian particle \cite{Faxen1921,bian111YearsBrownian2016}; 
+The effect of diffusion near an interface with a nearby particle is non-negligible \cite{bian111YearsBrownian2016}. The effect on confinement can be first imagined as the effect from friction from fluid flow. Notably, the particle being immersed in a fluid invites a Stokes friction which affects the perpendicular and parallel motion. Swedish physicist Hilding Faxén derived the mobility relations with a no-slip boundary conditions near a brownian particle \cite{Faxen1921,bian111YearsBrownian2016};
 \begin{equation}
 	\begin{aligned}
 		\mu_\parallel\left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{16} \left(\frac{a}{h}\right)  + \frac{1}{8} \left(\frac{a}{h}\right)^3 - \frac{45}{256} \left(\frac{a}{h}\right)^4 - \frac{1}{16} \left(\frac{a}{h}\right)^5\right]\\
-		\mu_\perp \left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{8} \left(\frac{a}{h}\right)  + \frac{1}{2} \left(\frac{a}{h}\right)^3  \right]\\
+		\mu_\perp \left(\frac{a}{h}\right) &\approx \mu_\infty \left[1 - \frac{9}{8} \left(\frac{a}{h}\right)  + \frac{1}{2} \left(\frac{a}{h}\right)^3  \right]\,.\\
 	\end{aligned}
 \end{equation}
 
-In the case of a two-wall confinement, there is much theoretical discussion on the confinement coefficient in hydrodynamic boundary conditions \cite{lin_diffusion_2000, dufresne_brownian_2001, swan_particle_2010}. In application, it has been shown that the form of the Onseen drag shows experimental agreement \cite{dufresneBrownianDynamicsSphere2001} and can be expressed in a linear-superposition of linear mobility coefficients,
+In the case of a two-wall confinement, there is much theoretical discussion on the confinement coefficient in hydrodynamic boundary conditions \cite{lin_diffusion_2000, dufresne_brownian_2001, swan_particle_2010}. In application, it has been shown that the form of the Onseen drag shows experimental agreement \cite{dufresneBrownianDynamicsSphere2001} and can be expressed in a linear-superposition of linear mobility coefficients
 \begin{equation}
-	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0].
+	\gamma_2(z) \approx \gamma_0 + [\gamma_1(z) - \gamma_0] + [\gamma_1(H-z) - \gamma_0]\,.
 \end{equation}
 
 In context of single-particle sizing measurements, the distance between the particle and nearby surfaces is often small \cite{kamanzi_simultaneous_2021,graves_direct_2026, kamanzi_single-particle_2026}. Thus, this correction term must be applied in confinement-based methods in order for sizing estimations to be considered valid with respect to the true size. 
@@ -167,33 +167,33 @@ Additionally, confined diffusion processes are one such example of non-trivial d
 
 \section{Self-Consistent Confinement Coefficient}
 
-A consequence of the confined mobility relations presented by Faxén is the diffusion correction, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients.
+A consequence of the confined mobility relations presented by Faxén is the diffusion correction, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients
 \begin{equation}
-    D_0 = \mu_\parallel^{-1} D_\parallel = \mu_\perp^{-1} D_\perp.
+    D_0 = \mu_\parallel^{-1} D_\parallel = \mu_\perp^{-1} D_\perp \,.
 \end{equation}
 The values of the corrections are, however, functions of the particle radius. For the Stokes-Einstein relation and the Faxén mobility corrections to be consistent, the following relation must hold.
 \begin{equation}
-    \frac{k_bT}{6\pi\eta a} = \mu_\parallel^{-1}\left(a, h\right) \hat{D_\parallel} = \mu_\perp^{-1}\left(a, h\right) \hat{D_\perp},
+    \frac{k_bT}{6\pi\eta a} = \mu_\parallel^{-1}\left(a, h\right) \hat D_\parallel = \mu_\perp^{-1}\left(a, h\right) \hat D_\perp,
 \end{equation}
-where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known\footnote{As was applied in Ref. \cite{kamanzi_single-particle_2026}}. One useful property of the Faxén relations, as well as the linear-superposition approximations are that they are monotonically decreasing, illustrated in Fig. \ref{fig:mob_coef}.
+where the $\hat{\cdot}$ indicates measured values. This condition is self-consistent with a general mobility that is dependent on the particle radius if the particle height is known\footnote{As was applied in Ref. \cite{kamanzi_single-particle_2026}}. One useful property of the Faxén relations, as well as the linear-superposition approximations, is that they are monotonically decreasing, illustrated in Fig. \ref{fig:mob_coef}. 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/Mobility_coefficient.pdf}
-    \caption{Linear-superposition mobility curve for linear-superposition and Faxén relations. $h = \SI{225}{\nm}$.}
+    \caption{Linear-superposition mobility curve for linear-superposition and Faxén relations with $h = \SI{225}{\nm}$.}
     \label{fig:mob_coef}
 \end{figure}
 
-To computationally calculate this relation, the relation equates itself to a recursive equation:
+In order to compute this relation, we construct a self-consistency metric,
 \begin{equation}
-    a_* = \arg\min_{a_*}\left|\frac{\hat{a}}{\mu_{\parallel,\perp}} - a_*\right|,
+    a^* = \arg\min_{a^*}\left|\frac{\hat{a}}{\mu_{\parallel,\perp}} - a^*\right|\,,
 \end{equation}
-as derived in \ref{app:3}. To demonstrate the self-consistency, the figure of a grid-search over optimal radii is presented in Fig. \ref{fig:diff_self_cons}.
+as derived in App. \ref{app:3}. To demonstrate self-consistency, a grid search was performed as illustrated in Fig. \ref{fig:diff_self_cons}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/diffusion_self_consistent_example.pdf}
-    \caption{Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI{100}{\nm}$ Polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat{a} = \SI{124.30}{\nm}$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI{64.1}{\nm}$.}
+    \caption{Cost-vector for self-consistent diffusion estimation in confinement. Here, a $\sim \SI{100}{\nm}$ polystyrene bead was imaged and tracked in the transverse plane. The initial size estimate before confinement analysis was $\hat{a} = \SI{124.30}{\nm}$. Post self-consistency, applying a linear superposition theory estimate of the confinement effects, $a^* = \SI{64.1}{\nm}$.}
     \label{fig:diff_self_cons}
 \end{figure}
 
@@ -202,23 +202,23 @@ The development of this relation allows for the size estimate to be calculated u
 \clearpage
 \section{Electrostatic Potentials}
 
-A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds \cite{debye1923theorie, israelachviliIntermolecularSurfaceForces}. The potential in a field of ions must be solved in terms of electrostatics in a media. This is described by Poisson's equation \cite{jackson_classical_1999}
+A particle diffusing near a charged wall in an electrolyte will feel a screened electrostatic interaction. The Debye-Hückel theory is a description of the electromagnetic interactions between ions in a solution of ionic compounds \cite{debye1923theorie, israelachviliIntermolecularSurfaceForces}. The potential in a field of ions must be solved in terms of electrostatics in a medium. This is described by Poisson's equation \cite{jackson_classical_1999}
 \begin{equation}
-	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}.
+	\nabla^2 \Psi(\vec{x}) = - \frac{\rho(\vec{x})}{\varepsilon_0 \varepsilon_r}
 \end{equation}
-In a general solution of ions, there will be $j$ species of ions.
+where $\rho(\vec{x})$ denotes the volumetric charge density of the system, and $\varepsilon$ are the standard permittivity of space notation. In a general solution of ions, there will be $i$ species of ions. This allows one to write the Poisson equation as a sum of charge densities:
 \begin{align*}
-	\nabla^2 \Psi(\vec{x}) &=- 4 \pi \frac{\rho_j(\vec{x})}{\varepsilon}
+	\nabla^2 \Psi(\vec{x}) &= \frac{1}{\varepsilon_0 \varepsilon_r}\sum_i\rho_i(\vec{x})\,.
 \end{align*}
-The charge distribution of a single ion concentration is essentially the density of the ionic positions. Rather than counting all ionic positions, a canonical ensemble is used,
+The spatial concentration distribution of the ions in a single-ion solution can be thought of as the solution's ionic charge distribution. Instead of counting all ionic positions, a canonical ensemble can be used,
 
 \begin{equation}
-	\rho_i(\vec{x}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}.
+	\rho_i(\vec{x}) = \sum_i C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}\,.
 \end{equation}
 
-Here the energy of the system is defined as the potential energy scaled by the charge defined as $U = qV$. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space \cite{daune1999molecular, jackson2006molecular},
+Here the energy of the system $U=qV$ is defined as the potential energy scaled by the charge. The full equation is known as the Poisson-Boltzmann equation, where $\Psi(\mathbf{r})$ is the potential for all space \cite{daune1999molecular, jackson2006molecular},
 \begin{equation}
-	\nabla^2 \Psi(\vec{x}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}.
+	\nabla^2 \Psi(\vec{x}) = -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \exp{\left[-\beta Z_i e_0\Psi(\vec{x})\right]}\,.
 \end{equation}
 
 There is a first-order linearization approximation to this equation where the potential is small,
@@ -226,26 +226,26 @@ There is a first-order linearization approximation to this equation where the po
 \begin{align*}
 	\nabla^2 \Psi(\vec{x}) &\approx -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty C_i e_0 Z_i \left[1-\beta Z_i e_0\Psi(\vec{x})\right] \\
 	&= -\frac{1}{\varepsilon_0 \varepsilon_r}\sum_{i =1}^\infty \left[C_i e_0 Z_i-\beta C_i Z_i^2 e_0^2\Psi(\vec{x})\right]\\
-	&= -\sum_{i =1}^\infty \left[\frac{C_i e_0 Z_i}{\varepsilon_0 \varepsilon_r}-\kappa_i^2 \Psi(\vec{x})\right].
+	&= -\sum_{i =1}^\infty \left[\frac{C_i e_0 Z_i}{\varepsilon_0 \varepsilon_r}-\kappa_i^2 \Psi(\vec{x})\right]
 \end{align*}
-Where $\kappa_i^2$ is related to the Debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
+where $\kappa_i^2$ is related to the Debye-length, a unit of the electrostatic screening caused by the ionic interactions. The Debye length is defined as $\lambda_D = \kappa^{-1}$.
 
-When the bulk solution is electro-neutral, $\sum_i C_i Z_i = 0$, then the zeroth therm can cleanly drop out, leaving only the approximation;
+When the bulk solution is electro-neutral, $\sum_i C_i Z_i = 0$, then the zeroth term can cleanly drop out, leaving only the approximation;
 \begin{equation}
 	\nabla^2 \Psi(\vec{x}) = \kappa^2 \Psi(\vec{x}), \quad \kappa_i^2 = \frac{\beta e_0^2}{\varepsilon_0 \varepsilon_r} \sum_i C_i Z_i^2.
 \end{equation}
 This equation has an obvious solution which are the real exponential functions;
 \begin{equation}
-	\Psi(\vec{x}) = A e^{-\kappa\vec{x}} + B e^{\kappa\vec{x}}.
+	\Psi(\vec{x}) = A e^{-\kappa\vec{x}} + B e^{\kappa\vec{x}}\,.
 \end{equation}
 
-The pre-factor $A,B$ is the strength of the electric potential. In the case of ionic potentials, the strength of the pre-factor is a number of the number of ions and their charge density surrounding the surface. Thus, one can parameterize this pre-factor based on the geometry. 
+The pre-factors $A$ and $B$ are specified by the strength of the electric potential. In the case of ionic potentials, the strength of the pre-factor is a measure of the number of ions and their charge density near the surface. Thus, one can parameterize this pre-factor based on the geometry of a particular system. 
 
-In the approximations done in this thesis,  a linear symmetric potential, as well as a spherical particle between the potential is assumed. The form of this potential is chosen as 
+In the approximations done in this thesis, a linear symmetric potential, as well as a spherical particle within the potential is assumed. The form of this potential is chosen as 
 \begin{equation}
     B = C \Gamma_p \Gamma_w,
 \end{equation}
-where  $|\psi|$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces};
+where  $C$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layers of the wall and the particle \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces};
 \begin{equation}
     \begin{aligned}
         C_\mathrm{pw} &= \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\

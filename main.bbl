@@ -2051,6 +2051,44 @@
       \field{title}{Stochastic Processes in Physics and Chemistry}
       \field{year}{2007}
     \endentry
+    \entry{walter_fokker-planck}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1cd6c9f5c5bc074556c6e33d686805b8}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f083d3ab86fd01467e36afbca2e6c241}{%
+           family={Wolschin},
+           familyi={W\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{fullhash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{fullhashraw}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{bibnamehash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{authorbibnamehash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{authornamehash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{authorfullhash}{9d57c8afa1e63623025947d7325e4e01}
+      \strng{authorfullhashraw}{9d57c8afa1e63623025947d7325e4e01}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This report is associated with a presentation that I gave in the statistical physics seminar of Prof. Georg Wolschin at Heidelberg University in November 2021. It provides some background and derivations that were not presented in the talk and tries to give a basic introduction into the topic of Fokker-Planck- and Langevin equations.}
+      \field{day}{10}
+      \field{month}{12}
+      \field{title}{{FOKKER}-{PLANCK}- {AND} {LANGEVIN} {EQUATION}}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\2W45M2MY\\Walter and Wolschin - FOKKER-PLANCK- AND LANGEVIN EQUATION.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{Faxen1921}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=1636d10c65bdfba786d4bff51e30d9dd}{%
@@ -2701,8 +2739,8 @@
       \strng{authornamehash}{d832efb041ee3f673101a773a940ec4e}
       \strng{authorfullhash}{75c8dd3354cfc272f1778acc6130b7a3}
       \strng{authorfullhashraw}{75c8dd3354cfc272f1778acc6130b7a3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2nd}
@@ -2732,8 +2770,8 @@
       \strng{authornamehash}{10a2fcf9b4d2afe92cf7da76b25fc462}
       \strng{authorfullhash}{10a2fcf9b4d2afe92cf7da76b25fc462}
       \strng{authorfullhashraw}{10a2fcf9b4d2afe92cf7da76b25fc462}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-691-13891-6}
@@ -3772,8 +3810,8 @@
       \strng{authornamehash}{72cff4bde5185a9b32fd8c486962d90c}
       \strng{authorfullhash}{72cff4bde5185a9b32fd8c486962d90c}
       \strng{authorfullhashraw}{72cff4bde5185a9b32fd8c486962d90c}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Tracking nanoparticle movement is highly desirable in many scientific areas, and various imaging methods have been employed to achieve this goal. Interferometric scattering (iSCAT) microscopy has been particularly successful in combining very high spatial and temporal resolution for tracking small nanoparticles in all three dimensions. However, previous works have been limited to an axial range of only a few hundred nanometers. Here, we present a robust and efficient measurement and analysis strategy for three-dimensional tracking of nanoparticles at high speed and with nanometer precision. After discussing the principle of our approach using synthetic data, we showcase the performance of the method by tracking gold nanoparticles with diameters ranging from 10 to 80 nm in water, demonstrating an axial tracking range from 4 μm for the smallest particles up to over 30 μm for the larger ones. We point out the limitations and robustness of our system across various noise levels and discuss its promise for applications in cell biology and material science, where the three-dimensional motion of nanoparticles in complex media is of interest.}
@@ -4031,8 +4069,8 @@
       \strng{authornamehash}{15079dcaef1f3f9ae991aa280e5398ac}
       \strng{authorfullhash}{539fa6cf2c8c0949f50b4faa06f2a9a1}
       \strng{authorfullhashraw}{539fa6cf2c8c0949f50b4faa06f2a9a1}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{3}
@@ -4082,8 +4120,8 @@
       \strng{authornamehash}{80229b516149867a58795365a83e8c09}
       \strng{authorfullhash}{732920bdffe2ff5409edc66c308303ac}
       \strng{authorfullhashraw}{732920bdffe2ff5409edc66c308303ac}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Open Source Software}
