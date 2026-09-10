@@ -2785,8 +2785,8 @@
       \strng{authorfullhash}{6f1e6332aaf6bef6dd66282b6a7e1834}
       \strng{authorfullhashraw}{6f1e6332aaf6bef6dd66282b6a7e1834}
       \field{extraname}{1}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Determination of size and refractive index (RI) of dispersed unlabeled subwavelength particles is of growing interest in several ﬁelds, including biotechnology, wastewater monitoring, and nanobubble preparations. Conventionally, the size distribution of such samples is determined via the Brownian motion of the particles, but simultaneous determination of their RI remains challenging. This work demonstrates nanoparticle tracking analysis (NTA) in an oﬀ-axis digital holographic microscope (DHM) enabling determination of both particle size and RI of individual subwavelength particles from the combined information about size and optical phase shift. The potential of the method to separate particle populations is demonstrated by analyzing a mixture of three types of dielectric particles within a narrow size range, where conventional NTA methods based on Brownian motion alone would fail. Using this approach, the phase shift allowed individual populations of dielectric beads overlapping in either size or RI to be clearly distinguished and quantiﬁed with respect to these properties. The method was furthermore applied for analysis of surfactantstabilized micro- and nanobubbles, with RI lower than that of water. Since bubbles induce a phase shift of opposite sign to that of solid particles, they were easily distinguished from similarly sized solid particles made up of undissolved surfactant. Surprisingly, the dependence of the phase shift on bubble size indicates that only those with 0.15−0.20 μm radius were individual bubbles, whereas larger bubbles were actually clusters of bubbles. This label-free means to quantify multiple parameters of suspended individual submicrometer particles oﬀers a crucial complement to current characterization strategies, suggesting broad applicability for a wide range of nanoparticle systems.}
@@ -2842,8 +2842,8 @@
       \strng{authornamehash}{67757bdbf1bfbd7232eb1f4f5d32d918}
       \strng{authorfullhash}{67757bdbf1bfbd7232eb1f4f5d32d918}
       \strng{authorfullhashraw}{67757bdbf1bfbd7232eb1f4f5d32d918}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{issn}{1471-0072, 1471-0080}
@@ -2922,8 +2922,8 @@
       \strng{authornamehash}{093c123fc5c922b295a46f7082f6ee43}
       \strng{authorfullhash}{c1a9423f686215a83d3d85f53b94c701}
       \strng{authorfullhashraw}{c1a9423f686215a83d3d85f53b94c701}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Liposomes are potent adjuvant constituents for licensed vaccines and vaccine candidates and carriers for drug delivery. Depending on the method of preparation, liposomes vary in size distribution, either forming uniform small size vesicles or a heterogeneous mixture of small to large vesicles. Importantly, diﬀerences in liposomal size have been demonstrated to induce diﬀerential immune responses. Determination of particle size distribution could therefore be crucial for the eﬃcacy and stability of vaccine formulations.}
@@ -3822,8 +3822,8 @@
       \strng{authornamehash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhash}{15e144c72b0b9d10db00ddc6d37a19e6}
       \strng{authorfullhashraw}{15e144c72b0b9d10db00ddc6d37a19e6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The {Quantum} {Theory} of {Fields}}
@@ -3876,8 +3876,8 @@
       \strng{authornamehash}{6aba19dc1f19248cc99bf48458706845}
       \strng{authorfullhash}{0f5445997099854d8e457390a25db7e1}
       \strng{authorfullhashraw}{0f5445997099854d8e457390a25db7e1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Different optical microscopy methods provide different but related single particle information. This tutorial reviews how optical microscopy images can be related to particle properties, including optical theory and strategies for image analysis. , In order to relate nanoparticle properties to function, fast and detailed particle characterization is needed. The ability to characterize nanoparticle samples using optical microscopy techniques has drastically improved over the past few decades; consequently, there are now numerous microscopy methods available for detailed characterization of particles with nanometric size. However, there is currently no “one size fits all” solution to the problem of nanoparticle characterization. Instead, since the available techniques have different detection limits and deliver related but different quantitative information, the measurement and analysis approaches need to be selected and adapted for the sample at hand. In this tutorial, we review the optical theory of single particle scattering and how it relates to the differences and similarities in the quantitative particle information obtained from commonly used label-free microscopy techniques, with an emphasis on nanometric (submicron) sized dielectric particles. Particular emphasis is placed on how the optical signal relates to mass, size, structure, and material properties of the detected particles and to its combination with diffusivity-based particle sizing. We also discuss emerging opportunities in the wake of new technology development, including examples of adaptable python notebooks for deep learning image analysis, with the ambition to guide the choice of measurement strategy based on various challenges related to different types of nanoparticle samples and associated analytical demands.}
@@ -4122,8 +4122,8 @@
       \strng{authornamehash}{26e3c8b2aa253b31b213d5216963366e}
       \strng{authorfullhash}{26e3c8b2aa253b31b213d5216963366e}
       \strng{authorfullhashraw}{26e3c8b2aa253b31b213d5216963366e}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Archiv für mikroskopische Anatomie}

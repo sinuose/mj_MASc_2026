@@ -3,21 +3,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Optical components of the iSCAT microscope.}}{30}{table.caption.18}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces System Parameters for iSCAT Illumination, objective, and camera settings.}}{34}{table.caption.23}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Optical components of the iSCAT microscope.}}{31}{table.caption.18}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces System Parameters for iSCAT Illumination, objective, and camera settings.}}{35}{table.caption.23}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Variables stored in the \textsc {Param} class.}}{39}{table.caption.25}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Methods of the \textsc {Param} class.}}{40}{table.caption.26}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces List of samples used in experiments for this thesis.}}{60}{table.caption.44}%
-\contentsline {table}{\numberline {8.2}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{65}{table.caption.50}%
-\contentsline {table}{\numberline {8.3}{\ignorespaces List of experiments.}}{66}{table.caption.51}%
-\contentsline {table}{\numberline {8.4}{\ignorespaces List of samples.}}{71}{table.caption.57}%
-\contentsline {table}{\numberline {8.5}{\ignorespaces List of LNP species}}{75}{table.caption.62}%
-\contentsline {table}{\numberline {8.6}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{76}{table.caption.64}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Variables stored in the \textsc {Param} class.}}{40}{table.caption.25}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Methods of the \textsc {Param} class.}}{41}{table.caption.26}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {8.1}{\ignorespaces List of samples used in experiments for this thesis.}}{61}{table.caption.44}%
+\contentsline {table}{\numberline {8.2}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{66}{table.caption.50}%
+\contentsline {table}{\numberline {8.3}{\ignorespaces List of experiments.}}{67}{table.caption.51}%
+\contentsline {table}{\numberline {8.4}{\ignorespaces List of samples.}}{72}{table.caption.57}%
+\contentsline {table}{\numberline {8.5}{\ignorespaces List of LNP species}}{76}{table.caption.62}%
+\contentsline {table}{\numberline {8.6}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{77}{table.caption.64}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces List of functions presented in appendix. Function names and descriptions are listed.}}{94}{table.caption.68}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces List of functions presented in appendix. Function names and descriptions are listed.}}{95}{table.caption.68}%

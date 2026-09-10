@@ -2,39 +2,38 @@
 \label{chap:brownianmotion}
 
 
-The physical phenomenon of irregular movements of nanoparticles in liquid is known as Brownian motion. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion, coined as \textit{Brownian Motion}, was discovered to be invertibly related to the size of the particle by Albert Einstein in 1926\cite{einstein1956investigations}.
+The physical phenomenon of irregular movements of nanoparticles in liquid is known as Brownian motion. The observation of this motion originated around the year 1827 when Robert Brown observed a stochastic motion of clay particles originating from plant pollen under his microscope \cite{brownXXVIIBriefAccount1828}. This stochastic motion, coined as \textit{Brownian Motion}, was discovered to be inversely related to the size of the particle by Albert Einstein in 1926 \cite{einstein1956investigations}.
 
 % For relatively large particles, the optical microscope is a good tool to observe them. However, for particles smaller the nano-scale, the diffraction limit is a property that must be overcome. This was theoretically described by Abbe \cite{Steck2021,Born1999}.
 
-This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate in order to be applied to experimental data analysis in further chapters. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge to a lawful, physical origin. 
+This chapter aims to establish the theoretical background underlying the relationships between the diffusivity, particle size, and spatial coordinate in order to be applied to experimental data analysis in further chapters. This process requires sufficient mathematical detail as no single displacement carries enough information to define the whole trace, however, as one observes this motion for a longer period of time, the randomness tends to converge such that it conforms to some physical laws. 
 
-This chapter introduces the mathematics of Brownian motion and diffusion-type processes. Einstein's diffusion- equation argument and Langevin's stochastic equation of motion are discussed and shown to be equivalent through the Fokker-Planck formalism. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility and electrostatic interactions, described by the Debye-Hückel interactions, govern particle-wall interactions in ionic solution. Finally, the subject of equilibrium distributions  are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
+This chapter introduces the mathematics of Brownian motion and diffusion-type processes. Einstein's diffusion equation argument and Langevin's stochastic equation of motion are discussed and shown to be equivalent through the Fokker-Planck formalism. In the case of diffusion under confinement, where hydrodynamic wall effects modify the mobility and electrostatic interactions, described by the Debye-Hückel interactions, govern particle-wall interactions in ionic solution. Finally, equilibrium distributions are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
 
 
 \section{Einstein's Brownian Motion}
 
-The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of atomic length when undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of an approximately spherical particle is sufficiently small and thermal fluctuations dominate its dynamics, this erratic motion is referred to as Brownian motion or a diffusion process \cite{brownXXVIIBriefAccount1828}. 
+The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of microscopic length when undergoing random collisions with members of the surrounding environment. In the microscopic limit, where the radius of an approximately spherical particle is sufficiently small and thermal fluctuations dominate particle dynamics. This erratic motion is referred to as Brownian motion or a diffusion process \cite{brownXXVIIBriefAccount1828}. 
 
-The classical treatment of Brownian motion describes how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. Einstein's argument is one of macroscopic motion.  Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle in some space $\Delta$ subject to the normalization
+The classical treatment of Brownian motion describes how the molecular-kinetic theory of heat relates with microscopic particle suspensions in liquid or gas \cite{einstein1956investigations,pathriaStatisticalMechanics2011}. Einstein's argument is one of macroscopic motion.  Using Einstein's original notation, suppose that $\phi(\Delta)$ denotes the probability to find a particle a volumetric space $\Delta$ subject to the normalization
 
 \begin{equation}
 	\int \phi(\Delta) d\Delta = 1.
 \end{equation}
 
-Einstein then assumes that the medium is isotropic, such that $\phi$ is an even function, $\phi(\Delta) = \phi(-\Delta)$ and a function $f(x,t)$ denotes some number of particles at the point $x$. Einstein then takes a finite slice of this volume and equates it to a probability space;
+Einstein then assumes that the medium is isotropic, such that $\phi(\Delta) = \phi(-\Delta)$ is even and a function $f(x,t)$ denoting some number of particles at the point $x$. Einstein then takes a finite slice of this volume and equates it to a probability space;
 
 \begin{equation}
-	f(x, t + \delta t)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta.
+	f(x, t + \delta t)  = \int f(x + \Delta, t)\phi(\Delta) d\Delta \,,
 \end{equation}
-
-The argument here is demonstrated by a Taylor-expansion of both sides of this equation,
+where $\delta t$ is an infinitesimal increment in time. By utilizing a taylor-expansion of both sides of this equation, dominant terms of the dynamics can be approximated;
 
 \begin{equation}
-	f(x, t + \delta t) \approx f(x,t) + \delta t\frac{\partial f(x,t)}{\partial t}.
+	f(x, t + \delta t) \approx f(x,t) + \delta t\frac{\partial f(x,t)}{\partial t} \,.
 \end{equation}
 Similarly in the spatial dimensions;
 \begin{equation}
-	f(x + \Delta, t) \approx f(x,t) + \Delta \frac{\partial f(x,t)}{\partial x}  + \frac{\Delta^2}{2}\frac{\partial^2 f(x,t)}{\partial x^2}.
+	f(x + \Delta, t) \approx f(x,t) + \Delta \frac{\partial f(x,t)}{\partial x}  + \frac{\Delta^2}{2}\frac{\partial^2 f(x,t)}{\partial x^2} \,.
 \end{equation}
 Adding together these terms and cancelling out the opposites, the resultant equation is known as the classical diffusion equation, and is shown to nearest order;
 \begin{equation}\label{eqn:diffusionpde}
@@ -42,16 +41,20 @@ Adding together these terms and cancelling out the opposites, the resultant equa
 \end{equation}
 where the diffusion coefficient is associated with the second moment of the probability distribution
 \begin{equation}
-	D = \frac{1}{\delta t}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta.
+	D = \frac{1}{\delta t}\int \frac{\Delta^2}{2} \phi(\Delta) d\Delta \,.
 \end{equation}
-The friction coefficient is physically related to the solution of the Navier-Stokes equations at a low Reynolds number\footnote{Which describes the relative inertial forces to the viscous forces.}. Specifically, when the inertial forces are negligible and $\Re \ll 1$, then the drag force on a particle,
+Additionally, Einstein had shown, by describing the osmotic pressure ascribed to suspended particles in fluids, that the diffusion coefficient was shown to be inversely proportional to the friction coefficient, $\gamma$ \cite{einstein1956investigations};
+\begin{equation}
+D = \frac{k_b T}{\gamma}\,.
+\end{equation}
+The friction coefficient is physically related to the solution of the Navier-Stokes equations at a low Reynolds number\footnote{Which describes the relative inertial forces to the viscous forces.} $\Re \ll 1$.. Specifically, when the inertial forces are negligible and $\Re \ll 1$, then the drag force on a particle,
 \begin{equation}
     \vec F_d = 6\pi \eta a v,
 \end{equation}
-where $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the spherical particle's radius. This relation can be directly applied to the form of the diffusion coefficient to recover Einstein's famous formula;
+where one lets $\gamma_0 = 6 \pi \eta a$, $\eta$ is the fluid viscosity, and $a$ is the spherical particle's radius. This relation substituted can be directly applied to the diffusion coefficient relation to recover Einstein's famous formula;
  
 \begin{equation}
-	D = \frac{k_bT}{6 \pi \eta a}.
+	D = \frac{k_bT}{6 \pi \eta a} \,.
 \end{equation}
 
 Additionally, solutions to Eqn. \ref{eqn:diffusionpde} describe the probabilistic time evolution of given particles. Given one knows the solution to this equation, a diffusive process can be statistically estimated completely by the rate of diffusion. In certain boundary conditions, such as the free-space example, the solution is described by a gaussian distribution with zero mean and finite variance;
@@ -70,38 +73,38 @@ Einstein's original paper directly motivated the sizing of particles using stati
 % if i have time add in the solutions from my confined diffusion work.
 \section{Langevin Dynamics}
 
-In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle typically within a fluid\footnote{This thesis assumes Newtonian fluids as they are experimentally relevant.} volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem \cite{schroeder2021thermal, pathriaStatisticalMechanics2011}. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}.
+In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle moves within a fluid\footnote{This thesis assumes Newtonian fluids as they are experimentally relevant.} volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem \cite{schroeder2021thermal, pathriaStatisticalMechanics2011}. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}.
 
 This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a \textit{random} force on it at every time step. 
 \begin{equation}
 	m\ddot{\vec{x}} = -\frac{\dot{\vec{x}}}{\mu} + \vec F(t)
 \end{equation}
 
-where $\mu$ is the fluid mobility which is represented in the viscous friction term, $-\frac{\dot{\vec{x}}}{\mu}$. Lastly, $\vec F(t)$ is the stochastic force term, which strictly speaking is a random function, taking a random value from a distribution, $p_F$ for each time step, $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory of $x(t)$.
+where $\mu$ is the fluid mobility represented as a viscous friction term, $-\frac{\dot{\vec{x}}}{\mu}$. Lastly, $\vec F(t)$ is the stochastic force term, which strictly speaking is a random function, taking a random value from a distribution, $p_F$ for each time step, $t$. This model, although easily written, is quite profound and its analytical treatment is non-trivial. Here, $x(t)$ is a stochastic process, where each realization of $F(t)$ produces a unique trajectory $x(t)$.
 
 The statistical content of $\vec F(t)$ is determined by the moments and auto-correlation. Notably, this relation is physically described by the fluctuation-dissipation theory, which relates the drag force to the random force \cite{pathriaStatisticalMechanics2011}. In Brownian motion, this takes the form
 \begin{equation}
 	\langle \vec F(t)\rangle = 0, \quad \langle \vec{F}_i(t) \vec{F}_j(t')\rangle = \Gamma\delta_{ij}\delta(t-t')
 \end{equation}
-Which stands in as delta-correlated noise, or that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions \cite{pathriaStatisticalMechanics2011}. This fixes the fluctuation constant to being
+which stands in as delta-correlated noise; in particular, that of a Wiener process. Notably, $\Gamma$ is constrained by the equipartion theorem. This can be shown by calculating the velocity autocorrelation function and choosing the large $t$ limit to agree with the equipartion theorem in 3-dimensions \cite{pathriaStatisticalMechanics2011}. This fixes the fluctuation constant as
 \begin{equation}
-    \Gamma = \frac{2k_bT}{\mu}.
+    \Gamma = \frac{2k_bT}{\mu}\,.
 \end{equation}
 
-One can take the ensemble average of this device, and notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity one finds
+One can take the ensemble average of this device and, notably, extract correlation information. Rewriting in terms of velocity, and assuming zero drift velocity one finds
 \begin{equation}
 	m\dot{\vec{v}} = -\frac{\vec{v}}{\mu} + \vec A(t), \quad \int_{-\infty}^\infty A(t) dt = 0.
 \end{equation}
-This represents a linear differential equation with a solution hat defines the velocity autocorrelation function. This solution is 
+This represents a linear differential equation with a solution that defines the velocity autocorrelation function. This solution is 
 % \begin{equation}
 % 	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{3k_bT}{m}e^{-t/(mB)}.
 % \end{equation}
 
 \begin{equation}
-	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{1}{m\mu}e^{-t/(m\mu)}.
+	\langle \vec v(0)\cdot \vec v(t)\rangle = \frac{1}{m\mu}e^{-t/(m\mu)} \,.
 \end{equation}
 
-Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, the form of the mean-square displacement is found. Note that $\langle v^2\rangle = \frac{3k_b T}{m}$, then the solutions of the position mean-squared displacement are written as
+Furthermore, when one averages the product of the above equation with $\vec x$ and integrates over time, the form of the mean-square displacement is found. Then, noting that $\langle v^2\rangle = \frac{3k_b T}{m}$, then the solutions of the position mean-squared displacement are written as
 \begin{equation}
 	\begin{aligned}
 			\langle x^2\rangle &= 6k_b T m \mu^2\left[\frac{t}{m\mu} - (1-e^{-t/(mB)})\right] \\
@@ -117,7 +120,7 @@ Letting $D = \mu k_b T$, Einstein's relation is recovered where the mobility, be
     \mu = \frac{1}{6\pi\eta a}.
 \end{equation}
 
-The unique advantage of the Langevin formulation is that it is relatively easy to simulate \cite{geyer_many-particle_2011,millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme\footnote{The EM scheme is chosen due to relevance in Ref. \cite{millanNumericalSimulationsConfined2023}.}, the stochastic differential equation can be integrated over realizations of $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{millanNumericalSimulationsConfined2023}.
+The unique advantage of the Langevin formulation is that it can be readily simulated. \cite{geyer_many-particle_2011,millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme\footnote{The EM scheme is chosen due to relevance in Ref. \cite{millanNumericalSimulationsConfined2023}.}, the stochastic differential equation can be integrated over realizations of the stochastic force $F(t)$ using a random number generator, recovering the dynamics of an ideal brownian system \cite{millanNumericalSimulationsConfined2023}.
  
 \section{From Master Equation to Fokker-Planck}
 
@@ -126,16 +129,16 @@ To show that the Langevin formulation and Einstein's formulation are equivalent,
 	\frac{\partial f(x,t)}{\partial t} = \int_{-\infty}^\infty \left[ f(x', t)W(x'|x) - f(x, t)W(x|x')\right] dx'.
 \end{equation}
 
-This equation is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.} The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation \cite{vankampen2007stochastic};
+This equation is a statement about the probability of positional transitions, which is fundamentally equivalent to the Langevin equation\footnote{Given a Markovian system.}\cite{vankampen2007stochastic}. The right hand side can be expanded using the Kramer-Moyal expansion and truncated at second order, yielding the Fokker-Planck Equation \cite{vankampen2007stochastic}
 \begin{equation}
-	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right],
+	\frac{\partial f(x,t)}{\partial t} = - \frac{\partial }{\partial x}\left[\sigma(x) f(x,t)\right] + \frac{1}{2}\frac{\partial^2 }{\partial x^2}\left[D(x) f(x,t)\right]
 \end{equation}
 
-where the diffusive and drift terms are parameterized over the transition probabilities,
+where the diffusive and drift terms are parameterized over the transition probabilities
 \begin{equation}
 	\begin{aligned}
 		\sigma(x) &= \int_{-\infty}^\infty \xi W(x| \xi)d\xi\\
-		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi.
+		D(x) & = \int_{-\infty}^\infty \xi^2 W(x| \xi)d\xi \,.
 	\end{aligned}
 \end{equation}
 

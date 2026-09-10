@@ -294,6 +294,8 @@ INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\base\textcomp.sty
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
@@ -458,6 +460,7 @@ INPUT .\preface.tex
 INPUT .\preface.tex
 INPUT preface.tex
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
@@ -478,6 +481,7 @@ INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0700.tfm
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc
@@ -489,7 +493,6 @@ OUTPUT main.lot
 INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
-INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
 OUTPUT main.lof
 INPUT .\INTRO.tex
@@ -733,7 +736,6 @@ INPUT .\Figures\schematic.pdf
 INPUT .\Figures\schematic.pdf
 INPUT .\Figures\schematic.pdf
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
-INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0700.tfm
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0500.tfm
 INPUT .\Figures\clic_flowcell_okay.pdf
 INPUT .\Figures\clic_flowcell_okay.pdf
@@ -903,6 +905,10 @@ INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfont
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm0700.pfb
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm0700.pfb
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm0800.pfb
+INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm0800.pfb
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1000.pfb
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1000.pfb
 INPUT C:\Users\martinj1\AppData\Local\Programs\MiKTeX\fonts\type1\public\cm-super\sfrm1200.pfb
