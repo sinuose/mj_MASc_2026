@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1789074514.39019 "main.bcf" "main.bbl" "main" 1789074527.72625 0
-  "main.bcf" 1789074527 123811 de938b12d2faace465e6707ea0e6eb43 "pdflatex"
+["biber main"] 1789074514.39019 "main.bcf" "main.bbl" "main" 1789079385.25624 0
+  "main.bcf" 1789079384 123811 de938b12d2faace465e6707ea0e6eb43 "pdflatex"
   "references.bib" 1789065428 105382 7dfadf143f1398aadb32bef4405f40c9 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1789074522.0739 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1789074527.72685 0
+["pdflatex"] 1789079379.71093 "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" "main.pdf" "main" 1789079385.25682 0
   "A1.tex" 1788559951 21425 c5d0484472d68dd450868aec2028a693 ""
   "ABSTRACT.tex" 1788907592 7307 777ae08f6055e055fec22160679b0188 ""
-  "C1.tex" 1789074493 58381 1fe6d927bfb4b630c97b6ed08b9a671a ""
+  "C1.tex" 1789079379 58393 efcca089f6ae42786bc3198238cf4637 ""
   "C2.tex" 1788903035 35080 dab4f26ec16c8d4efa89e723af604bfe ""
-  "C3.tex" 1788908217 60874 791b8002ac8e753ab6e630fb14f1e910 ""
+  "C3.tex" 1789077296 60877 87f3ceece6332f1932a846de5e4d1ef5 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1789065003 329151 3b71fa564afc407c150e11b1eb036114 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1781733617 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/martinj1/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1781733618 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -348,14 +348,14 @@
   "Python/Figures/viterbi_toy.pdf" 1784564158 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783530499 76066 a14aaa8bd8df672fa412aef349582fda ""
   "c:/Users/martinj1/Documents/GitHub/mj_MASc_2026/mj_MASc_2026/main.tex" 1789064997 12112 3acd26cf91a478c770ec6d58944636bc ""
-  "main.aux" 1789074527 71038 226180b59629a8bc8f1cb17e3c88c8a6 "pdflatex"
+  "main.aux" 1789079384 71053 201f1687186400dd999e0d654a6e71ef "pdflatex"
   "main.bbl" 1789074516 249200 ab9ee11d4477d070ee9347828f0f3ca5 "biber main"
-  "main.lof" 1789074527 13801 db46ccdb7659a93a8c6a9152bb87bf60 "pdflatex"
-  "main.lot" 1789074527 2144 d1b622b0705a0ddb1cfb4f82668d38c7 "pdflatex"
-  "main.out" 1789074527 12823 86cc5181d8680979a0dae53681f709b6 "pdflatex"
-  "main.run.xml" 1789074527 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.lof" 1789079384 13808 ee7e1103b062a1037e6fe16abb5ccc80 "pdflatex"
+  "main.lot" 1789079384 2144 d1b622b0705a0ddb1cfb4f82668d38c7 "pdflatex"
+  "main.out" 1789079384 12823 86cc5181d8680979a0dae53681f709b6 "pdflatex"
+  "main.run.xml" 1789079384 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1789064997 12112 3acd26cf91a478c770ec6d58944636bc ""
-  "main.toc" 1789074527 5795 d5a6e980f672884e278868f5105b8a64 "pdflatex"
+  "main.toc" 1789079384 5795 d5a6e980f672884e278868f5105b8a64 "pdflatex"
   "preface.tex" 1789065077 2502 eec9d68f014385cae69506624d78a03a ""
   (generated)
   "main.aux"
