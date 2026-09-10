@@ -2521,4 +2521,77 @@
     <bcf:citekey order="101" intorder="1">dewitPreciseCharacterizationNanometerscale2023</bcf:citekey>
     <bcf:citekey order="102" intorder="1">abbe1873beitraege</bcf:citekey>
     <bcf:citekey order="103" intorder="1">abbe1873beitraege</bcf:citekey>
-    <bcf:citekey order="103" i
+    <bcf:citekey order="103" intorder="2">jonkman_18_2003</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">Steck2021</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">goodman2017introduction</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">Steck2021</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">goodman2017introduction</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">goodman2017introduction</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">holst2007cmos</bcf:citekey>
+    <bcf:citekey order="109" intorder="2">holographic2015aberration</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">Steck2021</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">dewitPreciseCharacterizationNanometerscale2023</bcf:citekey>
+    <bcf:citekey order="111" intorder="2">taylor_interferometric_2018</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">holst2007cmos</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">hecht2017optics</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">young_interferometric_2019</bcf:citekey>
+    <bcf:citekey order="114" intorder="2">ortega-arroyoInterferometricScatteringMicroscopy2012</bcf:citekey>
+    <bcf:citekey order="114" intorder="3">OrtegaArroyo2016</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">OrtegaArroyo2016</bcf:citekey>
+    <bcf:citekey order="115" intorder="2">ortega-arroyoInterferometricScatteringMicroscopy2012</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">millanNumericalSimulationsConfined2023</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">millanNumericalSimulationsConfined2023</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">lin_exact_2010</bcf:citekey>
+    <bcf:citekey order="118" intorder="2">israelachviliIntermolecularSurfaceForces</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">python3</bcf:citekey>
+    <bcf:citekey order="119" intorder="2">harris2020array</bcf:citekey>
+    <bcf:citekey order="119" intorder="3">lam2015numba</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">Kashkanova2022</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">kashkanovaPrecisionSingleparticleLocalization2021</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">kashkanovaPrecisionSingleparticleLocalization2021</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">kashkanovaPrecisionSingleparticleLocalization2021</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">wasserman2010statistics</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">dewitPreciseCharacterizationNanometerscale2023</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">bian111YearsBrownian2016</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">cheng_formula_2008</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">Orbach1980</bcf:citekey>
+    <bcf:citekey order="133" intorder="2">Walter1986</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">kamanzi_single-particle_2026</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">berardPrecisionPlatformConvex2013</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">kamanzi_simultaneous_2021</bcf:citekey>
+    <bcf:citekey order="136" intorder="2">Kulkarni2017</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">behrensChargeGlassSilica2001</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">cheng_formula_2008</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">cheng_formula_2008</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">cheng_formula_2008</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">gardiner2009stochastic</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">onsager1953fluctuations1</bcf:citekey>
+    <bcf:citekey order="142" intorder="2">machlup1953fluctuations2</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">parthasarathyRapidAccurateParticle2012</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2">
+      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
