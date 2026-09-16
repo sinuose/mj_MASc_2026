@@ -2,7 +2,7 @@
 \chaptermark{iSCAT Optical System}
 \label{chap:iscatsetup}
 
-To observe single nanoparticle diffusion, an iSCAT microscope system was developed\footnote{The iSCAT microscope was built as a collaborative effort as part of two CFI grants before the start of the author's thesis period. The first CFI grant was written in 2020 and awarded in 2021. The second was written in 2022 and awarded in 2023. The microscope parts were ordered by Dr. Eric Boateng as based on Ref. \cite{young_interferometric_2019, ortega-arroyoInterferometricScatteringMicroscopy2012, OrtegaArroyo2016}. The assembly and software was completed by Dr. Erik Olsén with assistance from the Grant lab at UBC. Schematics and figures in this thesis were developed by the author.}. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The presented microscope optical system is able to track nanoparticles in three-dimensions by capturing a series of interference images with a CMOS camera. The table in Tab. \ref{tab:components} shows the iSCAT microscope component list.
+To observe single nanoparticle diffusion, an iSCAT microscope system was developed\footnote{The iSCAT microscope was built as a collaborative effort as part of two CFI grants before the start of the author's thesis period. The first CFI grant was written in 2020 and awarded in 2021. The second was written in 2022 and awarded in 2023. The microscope parts were ordered by Dr. Eric Boateng as based on Ref. \cite{young_interferometric_2019, ortega-arroyoInterferometricScatteringMicroscopy2012, OrtegaArroyo2016}. The assembly and software was completed by Dr. Erik Olsén with assistance from the Grant lab at UBC. Schematics and figures in this thesis were developed by the author.}. A scattering microscope is able to resolve nanoparticle three-dimensional position without a loss of signal over time, as presented in Chap. \ref{chap:iscatprinciples}. The table in Tab. \ref{tab:components} shows the iSCAT microscope component list.
 
 \begin{table}[h!]
     \centering
@@ -39,7 +39,7 @@ The iSCAT microscope system was designed based on prior work by the Kukura lab \
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{Figures/schematic.pdf}
-    \caption{Isometric iSCAT Schematic. A laser is first shaped using a spatial filter for a gaussian beam profile. The gaussian beam is sized by an aperture and focused into the back-plane of an objective. During the focusing, the light is circularily polarized. At the sample plane, two coverslips are placed for sample containment. To control the gap between the two coverslips, the convex-lens induced confinement (CLiC) system is used. The scattered and reflected light is collected through a polarizing beam-splitter and the final image is focused on a CMOS camera array.}
+    \caption{Isometric iSCAT Schematic. A laser is first shaped using a spatial filter for a gaussian beam profile. The gaussian beam is sized by an aperture and focused into the back-plane of an objective. During the focusing, the light is circularly polarized. At the sample plane, two coverslips are placed for sample containment. To control the gap between the two coverslips, the convex-lens induced confinement (CLiC) system is used. The scattered and reflected light is collected through a polarizing beam-splitter and the final image is focused on a CMOS camera array.}
     \label{fig:schematic}
 \end{figure}
 
@@ -154,24 +154,24 @@ Using the software, statistical averages of the particle motion was calculating 
 
 The general Langevin equation is generally written as
 \begin{equation}
-    m \ddot{\vec{x}}(t) = -\lambda \dot{\vec{x}}(t) + \vec{F}(t) + \Gamma \vec{W}(t),
+    m \ddot{\vec{x}}(t) = -\lambda \dot{\vec{x}}(t) + \vec{F}(t) + \Gamma \vec{W}(t)\,,
 \end{equation}
 where $\lambda$ is a velocity dependent friction coefficient, $\Gamma$ is the magnitude of fluctuation, $\vec{F}(t)$ is a deterministic force, and $\vec{W}(t)$ is a vector random variable. 
 
 The Langevin equation programmed into the software is described as 
 \begin{equation}
-    m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t),
+    m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t)\,,
 \end{equation}
 where physical magnitudes are implemented; $\gamma(z)$ is an axially dependent hydrodynamic friction depending on how close the particle is to a surface. The diffusion coefficient in an axially dependent friction is written using the Stokes-Einstein relation,
 \begin{equation}
-    D(z) = \frac{k_b T}{\gamma(z)}.
+    D(z) = \frac{k_b T}{\gamma(z)}\,.
 \end{equation}
 
 In over-damped case, where $m \ddot{\vec{x}} \ll 1$, the  the equations of motion can be written as
 \begin{equation} \label{eqn:EOM}
     \begin{aligned}
         \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
-        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\gamma(z)},
+        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\gamma(z)}\,,
     \end{aligned}
 \end{equation}
 as described in Eqn. 7 of Ref. \cite{millanNumericalSimulationsConfined2023}. This model is especially valid for particles of diameter between $\SI{10}{\nm} - \SI{100}{\micro \meter}$. This model is valid for particle such as PMMA, carboxylate-modified polystyrene, and similar materials. 
@@ -181,8 +181,8 @@ Since $\vec{W}(t)$ is a random, non-analytical function, classical ODE methods o
 Eqn. \ref{eqn:EOM} can be written into the Itô form,
 \begin{equation}
     \begin{aligned}
-        dX_t &= \sqrt{2D_x(z)} dW_x \\
-        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\gamma(z)} dt,
+        dX_t &= \sqrt{2D_x(z)} dW_x \,,\\
+        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\gamma(z)} dt\,,
     \end{aligned}
 \end{equation}
 where stochastic quantities are indicated in capital letters. 
@@ -190,8 +190,8 @@ where stochastic quantities are indicated in capital letters.
 In the Itô form, the Euler-Maruyama equations are written as a pair of discrete time-step evolutions. Each equation described a random realization of the position, $\vec{x}(t)$, that depends on the random function, $\vec{W}(t)$. The equations are programmed into the software, referenced to as \textsc{mj\_LangevinSimulations},
 \begin{equation}
     \begin{aligned}
-        x_{n+1} &= x_n + \sqrt{2D_x(z_n)} W_{x,n}\Delta t\\
-        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} W_{x,n}\right]\Delta t,\\
+        x_{n+1} &= x_n + \sqrt{2D_x(z_n)} W_{x,n}\Delta t\,,\\
+        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} W_{x,n}\right]\Delta t\,,\\
     \end{aligned}
 \end{equation}
 where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ is the discretized time. 
@@ -205,7 +205,7 @@ The deterministic portion of the Langevin equation in the simulations are determ
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/langevin_diagram.pdf}
-    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modelled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient.}
+    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modeled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient.}
     \label{fig:langevin_diagram}
 \end{figure}
 %
@@ -214,14 +214,14 @@ The deterministic portion of the Langevin equation in the simulations are determ
 The electrostatic forces that drive the dynamic motion are described by the following equations,
 
 \begin{equation}
-    U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right],
+    U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right]\,,
 \end{equation}
 where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Gouy-Chapman equations in a linear-superposition approximation of a double-layer potential \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces},
 
 \begin{align}\label{eqn:electrostatic_forces}
     B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
     C & = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
-    \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right],
+    \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right]\,,
 \end{align}
 where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potential for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the Debye-length of the solution. These equations are physically constrain the electrostatic field amplitude to ensure physical motion during the simulation process. 
 
