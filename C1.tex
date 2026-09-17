@@ -11,7 +11,7 @@ This chapter aims to establish the theoretical background underlying the relatio
 %This chapter introduces the mathematics of Brownian motion and diffusion-type processes.
 Einstein's diffusion equation argument and Langevin's stochastic equation of motion are discussed and shown to have implication\footnote{Meaning that the Langevin formulation converges to the Einsteinian formulation.} through the Fokker-Planck formalism. In the case of diffusion under confinement, the hydrodynamic wall effects modify the mobility. In addition, electrostatic interactions, described by the Debye-Hückel potential, govern the particle-wall dynamics in the presence of an ionic solution. Finally, equilibrium distributions are discussed with regards to  spatial probability distributions arising in confined diffusion processes. 
 
-
+\clearpage
 \section{Einstein's Brownian Motion}
 
 The physical phenomenon of diffusion can be rigorously described by the emergent behavior that occurs in particles of microscopic length when undergoing random collisions with members of the surrounding environment when the particles are large relative to their surroundings. In the microscopic limit, where the radius of an approximately spherical particle is sufficiently small causing the gravitational and surface drag contributions to be negligible,the thermal fluctuations of nearby fluid collection dominate the particle dynamics. This erratic motion is referred to as Brownian motion \cite{brownXXVIIBriefAccount1828}. 
@@ -82,6 +82,7 @@ Einstein's theory of diffusion instantiates a partial differential equation that
 Einstein's original paper directly motivated the sizing of particles using statistical estimates of their random motion, specifically with the existence of the mean-squared displacement relation. This relation allows one to utilize a particle trajectory, or single-particle motion as an indirect measurement of size; one of the cornerstone concepts of single-molecule optical measurement.
 
 % if i have time add in the solutions from my confined diffusion work.
+\clearpage
 \section{Langevin Dynamics}
 
 In single-particle movement-based experiments, such as observations of Robert Brown's particulates or tracking of diffusing lipid-nanoparticles, the observed Brownian particle moves within a fluid\footnote{This thesis assumes Newtonian fluids as they are experimentally relevant.} volume. If one assumes that this particle exists in the thermodynamic equilibrium, it should obey the equipartion theorem \cite{schroeder2021thermal, pathriaStatisticalMechanics2011}. However, the observed motion appears to have more energy than predicted by the equipartion at certain times, indicating that an additional contribution to the dynamics must be considered \cite{Caspi2000EnhancedDiffusion, Mizuno2007NonequilibriumMechanics}. This missing component of motion can be described by the bombardment of the surrounding particles in the liquid. In particular, the system experiences a random force on it at every time step,
@@ -147,7 +148,8 @@ Noting Eqn. \ref{eqn:stokes-einstein}, Einstein's relation is recovered where th
 \end{equation}
 
 The unique advantage of the Langevin formulation is that it can be readily simulated. \cite{geyer_many-particle_2011,millanNumericalSimulationsConfined2023}. It can be shown that using an Euler-Maruyama scheme\footnote{The EM scheme is chosen due to relevance in Ref. \cite{millanNumericalSimulationsConfined2023}.}, a mathematical technique used to iterate stochastic differential equations in time-steps, the stochastic differential equation can be integrated over realizations of the stochastic force $F(t)$ using a random number generator, recovering the dynamics of an ideal Brownian system \cite{millanNumericalSimulationsConfined2023}.
- 
+
+\clearpage
 \section{From Master Equation to Fokker-Planck}
 
 To show that the Langevin formulation implies the Einstein's formulation, the master equation can be shown that the Langevin equation has the same equilibrium probability distribution as the Einsteinian formulation. Suppose that $f(x,t)dx$ represents the probability of an arbitrary particle in the ensemble making a displacement between $x$ and $x + dx$. Let $W$ represent the traditional probability transition rate between positions, then the master equation is written as
@@ -170,6 +172,7 @@ where the diffusive and drift terms are parameterized over the transition probab
 
 In the case of zero drift and homogenous diffusivity, the form of Eqn \ref{eqn:fokkerplank} is equal to the diffusion equation, Eqn \ref{eqn:diffusionpde}, of the Einsteinian formulation. Thus, the  Langevin formulation implies the Einsteinian formulation in the long-time limit \cite{walter_fokker-planck}. This important property allows us to investigate solutions and dynamics of the two systems interchangeably. Additionally, the results from either formulation are intrinsically the same, which implies that the probabilistic distributions of the Einsteinian formulation can be recovered from running Langevin simulations over a long time-course for an equilibrium Markovian chain. Thus, non-analytical systems, such as non-homogenous cases of the diffusion equation, can be investigated in this context using simulations without a loss of applicability. 
 
+\clearpage
 \section{Confined Diffusion Processes}
 
 The effect of diffusion near an interface with a nearby particle is non-negligible \cite{bian111YearsBrownian2016}. The effect of confinement can be first understood through the lens of the effects due to from friction from fluid flow. Notably, the particle being immersed in a fluid invites a Stokes friction which affects the perpendicular and parallel motion. Swedish physicist Hilding Faxén derived the mobility relations with a no-slip boundary conditions near a Brownian particle \cite{Faxen1921,bian111YearsBrownian2016}:
@@ -190,6 +193,7 @@ where $\gamma_2$ is the overall drag, which is inverse to the mobility coefficie
 
 In context of single-particle sizing measurements, the distance between the particle and nearby surfaces is often small \cite{kamanzi_simultaneous_2021,graves_direct_2026, kamanzi_single-particle_2026}. Thus, in applications of confinement-based particle sizing, the confined particle friction term must be applied in order to obtain a non-biased estimate. It has been shown in literature this form of a system can be simulated using a Langevin equation \cite{millanNumericalSimulationsConfined2023}.
 
+\clearpage
 \section{Self-Consistent Confinement Coefficient}
 
 Particle sizing measurements in confinement will be biased due to the non-homogenous nature of their diffusion coefficient in a confined environment. To correct for this and obtain an approximation of the bulk diffusion coefficient of such measurements, the mobility relations presented in Eqn. \ref{eqn:faxen}, which relates the bulk diffusivity to the confined axial or transverse diffusion coefficients, must be used. By substituting $\gamma_0 = \mu_\infty^{-1}$ and substituting it into Eqn \ref{eqn:stokes-einstein}, the bulk diffusion coefficient can be related to the confined diffusion coefficient by a scalar value,
@@ -327,7 +331,7 @@ In addition to the nature of cellular biology, the confinement of nanoparticles 
 %     \caption{TEM (a, b, and c) images of prepared mesoporous silica nanoparticles with mean outer diameter: (a) $\SI{20}{\nm}$, (b) $\SI{45}{\nm}$, and (c) $\SI{80}{\nm}$. SEM (d) image corresponding to (b). The insets are a high magnification of mesoporous silica particle. Taken from Wikipedia Commons \cite{MesoporousSilicaNanoparticleJpg}.}
 % \end{figure}
 
-
+\clearpage
 \section{Size Measurement Techniques for Biological Particles}
 
 As previously shown in Chap. \ref{chap:brownianmotion}, the Stokes-Einstein diffusion relation is used to directly infer the size of a biological diffusing particle. In particular, this relation can be explicitly formalized for the hydrodynamic radius of a spherical nanoparticle. Using Eqn. \ref{eqn:stokes-einstein} and inverting the relation to calculate the particle radius;
@@ -344,6 +348,7 @@ In compliment to single-particle techniques, bulk methods, such as dynamic light
 
 Lastly, to address label-free, extended temporal based size measurements, one can turn their attention to interferometric light scattering microscopy, iSCAT. The iSCAT technique, discussed extensively in Chap. \ref{chap:iscatprinciples}, allows for extended observation of a general class of nanoparticles without the use of labels. This is done by scattering light onto a sample and mathematically calculating the three-dimensional position of the particle using the scattering pattern \cite{taylor_interferometric_2018,leeCharacterizingTrackingSingle2007}. In addition, iSCAT can be paired with an artificial confinement system, such as convex-lens induced confinement, which uses two coverslips to create a chamber of nano-volume, to trap particles and observe them for long periods of time \cite{berardPrecisionPlatformConvex2013}. However, since iSCAT uses scattering as it's main signal, two particles of the same shape and mass are very difficult to distinguish. For example, two proteins with different amino acid sequences would look identical on the camera of an iSCAT system. Thus, this limitation poses experimental design challenges regarding applicability. 
 
+\clearpage
 \section{Lipid Nanoparticles}
 
 One of the seminal discoveries of nanoparticles in biology were the liposome in 1958 \cite{bangham_charged_1958}. The liposome is a spherical particle composed of lipid subunits, each carrying a charge. Due to the hydrophobic nature of the subunits, the liposome self-assembles itself into spherical shapes when in the presence of water. The size of a single sub-unit is around $\SI{19}{\angstrom}$ \cite{vanmeerMembraneLipidsWhere2008, singh_particle_2019}. Liposomes, however, are found to be between $\SI{20}{\nm}-\SI{3000}{\nm}$ \cite{zhang_lipid_2021}. Naturally, seeing as liposomes and cellular vesicles, which are used in the cell to carry material, are very similar chemical molecules, posed the question of if one can engineer these particle to be able to carry drugs into a living system \cite{bangham_diffusion_1965}. The liposome was a semi-successful particle used to carry drugs into the body \cite{liu_review_2022}, however, ultimately were succeeded due to storage stability problems caused by lipid oxidation and hydrolysis, drug leakage from the vesicle, rapid clearance during blood circulation, and the absence of cancer cell-specific targeting \cite{kimLiposomesBiomedicalApplications2021}. 
@@ -391,6 +396,7 @@ To determine the physical properties of nanoparticles suspended in a fluid media
 
 % We begin with the basics of relating light to electromagnetism, starting with the Maxwell and Helmholtz relations.  We then discuss the various aberrations and Considerations before introducing iSCAT microscopy. We tease the experimental apparatus used in this work and compare the method to other methods currently used in the field.  Finally, the electromagnetic theory of scattering off spheres, discussion of general optical scattering microscopy theory, and principle of iSCAT will be discussed.
 
+\clearpage
 \section{Light as a Casual Field}
 
 %In order to discuss the spatial distribution of light scattering, it is necessary to use a framework to develop the fundamental properties. 
@@ -440,84 +446,105 @@ Thus, it is paramount that we understand how the propagation of the electric fie
 - General Scattering Transfer Matrices
 \fi
 
+\clearpage
 \section{Electromagnetic Scattering of Spheres}
 
-When a homogenous particle is subjected to light produced by a monochromatic laser, a diffractive pattern is produced upon scattering \cite{bohren1983absorption,Steck2021,jackson_classical_1999}. These patterns can be captured CMOS detectors, however, to extract positional information from this pattern, a mathematical model is required to first describe it. 
+When a homogenous particle is subjected to light produced by a monochromatic laser, a diffractive pattern is produced upon scattering \cite{bohren1983absorption,Steck2021,jackson_classical_1999}. These patterns can be captured CMOS detectors to extract positional information from this pattern. However, to correctly relate the detected signal to a quantifiable, three-dimensional position, it is necessary to first mathematically describe it. 
 
-The optical theory of light will obey the Maxwell's equations, which motivate solutions that obey the wave equation for the electric and magnetic fields,
+To solve for the expected field that is produced when light is scattered off of a particle, such as a sphere, the Maxwell equations must be solved. The electromagnetic wave solutions must obey the wave equation,
 \begin{equation}
     \nabla^2 \vec E + k^2 \vec E = 0\,, \quad \vec H = \frac{1}{i \omega \mu_0} \nabla \times \vec E \,.
 \end{equation}
+where $k = 2\pi/\lambda$ is defined as the wave-vector, $\lambda$ being the wavelength of the wave. Here, $\omega$ is defined as the angular frequency of the wave and $\mu_0$ is the magnetic permeability of free space. The electric field is defined as $\vec E$ and the magnetic field is defined as $\vec H$.
 
-The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis \cite{jackson_classical_1999, strauss2007pde, zangwill2013modern}. For isotropic scattering, radial scattering, the spherical basis has been used in the literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics. 
-
-Let $\psi$ be a solution to the scalar wave equation,
+The eigenfunctions of the wave equation are the harmonics of the Laplacian operator, $\nabla^2$, in an arbitrary coordinate basis \cite{jackson_classical_1999, strauss2007pde, zangwill2013modern}. For isotropic, radial scattering, the spherical basis has been used in the literature \cite{bohren1983absorption}. The solutions of the vector-wave equation are known as the vector spherical harmonics which are derived by first solving the scalar wave equation and taking vectorial derivatives to form an orthogonal basis. Let $\psi$ be a solution to the scalar wave equation,
 \begin{equation}
     \nabla^2 \psi + k^2 \psi = 0\,,
-\end{equation} then the function generator of the general solution is taken by the sum of the components. This solution is given by the separable form \cite{jackson_classical_1999},
+\end{equation} where $\nabla^2$ is the three-dimensional Laplacian and $k$ is the wave-vector. Using the method of separation, $\psi$ can be rewritten in spherical coordinates,
+\begin{equation}
+    \psi(r, \theta, \phi) = \Phi(\phi) \Theta(\theta) R(r)\,,
+\end{equation}
+where $\Phi$ represents the azimuthal component, $\Theta$ the angular, and $R$ the radial component. The solutions of each of these functions can be found in Ref. \cite{jackson_classical_1999},
 \begin{equation}
     \begin{aligned}
-        \psi(r, \theta, \phi) &= \Phi(\phi) \Theta(\theta) R(r)\,, \\
         \Phi(\phi) & \in \{\cos(m\phi), \sin(m\phi)\}\,, \\
         \Theta(\theta) &= P^m_n(\cos\theta),\\
         R(r) &\in \{j_n, y_n, j_n + i y_n, j_n - i y_n\}\,. \\
     \end{aligned}
 \end{equation}
-The symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$,  are the Hankel functions. The vector spherical harmonics are best described by separating these solutions into even and odd solutions as their pre-factor will be $\cos$ or $\sin$ respectively. This is found in Eqn. 4.17 to 4.20 in book written by Bohren \cite{bohren1983absorption},
+where the indices $m,n$ represent indices for appropriate sums.
+The symbols $j_n, y_n$ represent the spherical Bessel functions. Their complex sums, $j_n \pm i y_n$, are the Hankel functions, $h_n$ which are not written. Lastly, $P^m_n$ represents the associated Legendre functions of the first kind. 
+
+These separable solutions are then used to form generating functions that satisfy the scalar wave equation in the spherical basis. These are forms such that the subscript $o$ defines an odd function, and $e$ defines an even function;
 \begin{equation}
     \begin{aligned}
+            \psi_{emn} &= \cos(m\phi) P^m_n(\cos(\theta))z_n(kr)\,, \\
+            \psi_{omn} &= \sin(m\phi) P^m_n(\cos(\theta))z_n(kr)\,, \\
+    \end{aligned}
+\end{equation}
+where $z_n(kr)$ is any one of the four solutions of the radial solution $R(r)$, $j_n, y_n, j_n + iy_n$, or $j_n - iy_n$.
+
+The vector spherical harmonics can then be generated from $\psi_{emn}$ and $\psi_{omn}$ as written in Eqn. 4.17-4.20 of Ref. \cite{bohren1983absorption},
+\begin{equation}\label{eqn:VSH}
+    \begin{aligned}
         \vec{M}_{emn} = \vec \nabla \times (\vec r \psi_{emn}), \quad \vec{M}_{omn} = \vec \nabla \times (\vec r \psi_{omn}), \\
-        \vec{N}_{emn} = \frac{1}{k}\vec \nabla \times \vec{M}_{emn}, \quad \vec{N}_{omn} = \frac{1}{k}\vec \nabla \times \vec{M}_{omn.} \\
+        \vec{N}_{emn} = \frac{1}{k}\vec \nabla \times \vec{M}_{emn}, \quad \vec{N}_{omn} = \frac{1}{k}\vec \nabla \times \vec{M}_{omn.}\,. \\
     \end{aligned}
 \end{equation}
 
-A scattering solution will consist of incident and scattering light. The incident light is assumed to be a polarized plane wave along the $x$ axis without loss of generality. The general form of these equations are then the sum of the spherical vector harmonics. When subjected to the energy conservation boundary condition written as
+These equations are a complete basis for solutions of scattered waves off of spheres. In physical terms, all combinations of possible scattered waves will consist of a sum of these equations. This is an incredible achievement as scattered optical fields can be decomposed into a set of vector spherical harmonics, fully describing the position and shape of the particle that it had scattered off of in the process.
+
+However, to calculate the scattered pattern that the camera would measure, it is wise to first calculate what such a scattering field will be in principle. Although the solution will consist of a sum of Eqns. \ref{eqn:VSH}, it is still unknown which ones, and how much. To solve this, the scattering problem can be stated and solved.
+
+A scattering event will consist of incident light hitting a spherical particle and scattering off in many directions. The incident light, $\vec{E}_i$, is assumed to be a polarized plane wave along the $x$-axis without loss of generality. The scattered light, $\vec{E}_s$, exists as a solution of the spherical vectorial wave equation as a sum of Eqns. \ref{eqn:VSH}. As the scattered light hits the surface of the sphere, there is a portion which can transmit through it, forming an electric field inside of the sphere, $\vec{E}_1$.  One can assume that each of the fields, being the scattered light when subjected to the energy conservation boundary condition written as
 \begin{equation}
     (\vec E_i + \vec E_s - \vec E_1) \times \hat r = (\vec H_i + \vec H_s - \vec H_1) \times \hat r = 0\,,
 \end{equation}
-and the orthogonality of the spherical vector harmonics is utilized, the exact solution can be found. This is known as the Mie Theory form of the scattering of light off of a dielectric sphere \cite{bohren1983absorption},
+where $\hat{r}$ denotes the radial unit vector. The exact solution of these conservation equations can be found in Chapter 4 of Ref. \cite{bohren1983absorption}. The resulting solutions, known as the Mie theory of scattering, is written as 
 
 \begin{equation}\label{eqn:lorenzmie}
     \begin{aligned}
      \vec E_i &= E_0 e^{ikr\cos \theta}\hat x\,,\\    
-     \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(1)}}_{e1n} - b_n \vec{M^{(1)}}_{o1n})\,,\\
-     \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})\,.     
+     \vec E_s &= \sum_{n=1}^\infty E_n(i a_n \vec{N^{(3)}}_{e1n} - b_n \vec{M^{(3)}}_{o1n})\,,\\
+     \vec E_1 &= \sum_{n=1}^\infty E_n(i c_n \vec{M^{(1)}}_{o1n} - d_n \vec{N^{(1)}}_{e1n})\,,    
     \end{aligned}
 \end{equation}
+where the constants $a_n, b_n, c_n$ and $d_n$ are amplitude factors and the superscript $(1)$ labels the use of the radial function $j_n$, and the superscript (3) labels the use of the Hankel function $j_n + iy_n$, meaning that $z_n(kr) = j_n(kr)$ and $j_n + iy_n$ respectfully. Intuitively, the scattering field consists of an outward radial scattering with a phase that modulates. This is represented in the difference between the even solution, $\vec{N}_{e1n}$ and the odd solution $\vec{M}_{o1n}$. 
 
-In this thesis, only the scattering field was taken into consideration. The amplitude factors of interest are
+The amplitude factors $a_n$ and $b_n$ represent the scattering amplitudes that must be solved for a set of boundary conditions. For scattering in free-space, a full derivation of these is offered in Ref. \cite{bohren1983absorption}. The amplitude factors of interest are
 \begin{equation}
     \begin{aligned}
         a_n &= \frac{m\Psi(mx)\Psi'(x) - \Psi(x)\Psi'(mx)}{m\Psi(mx)\xi'(x) -\xi(x) \Psi'(mx)}\,,\\
         b_n &= \frac{\Psi(mx)\Psi'(x) - m\Psi(x)\Psi'(mx)}{\Psi(mx)\xi'(x) - m \xi(x) \Psi'(mx)}\,,\\
     \end{aligned}
 \end{equation}
-where $\Psi$ and $\xi$ are the Riccatti-Bessel functions \cite{bohren1983absorption}. 
+where $\Psi$ and $\xi$ are the Riccatti-Bessel functions \cite{bohren1983absorption}. These are largely unintuitive solutions and written for the sake of clarity. 
 
-The formulation of such a system allows for discussion of scattering in full generality. However, due to computational and time limitations, Mie theory is often not the most optimal choice unless necessary. In the context of iSCAT microscopy, the size of the particle can be compared to that of the size of the wavelength of light. However, Mie theory is the most utilized theory in the literature \cite{leeCharacterizingTrackingSingle2007, lindfors2004PRL, Dastjerdi2022}. 
-\newpage
+The formulation of the scattering of light off of a sphere allows for projected solutions in any dimension one chooses. Theoretically, Mie theory can solve for the analytical scattering of large spheres, where $kr > 1$. For instance, a $\SI{1}{\micro \meter}$ polystyrene bead can be fully tracked in three dimensions which high accuracy using Mie theory \cite{leeCharacterizingTrackingSingle2007,Dastjerdi2022, lindfors2004PRL}. However, as written in Eqn. \ref{eqn:lorenzmie}, these solutions require the computation of an infinite sum, which is very computationally expensive. Thus, there is a need to simplify the mathematics by applying approximations. 
+
+% In the context of iSCAT microscopy, the size of the particle can be compared to that of the size of the wavelength of light. However, Mie theory is the most utilized theory in the literature \cite{leeCharacterizingTrackingSingle2007, lindfors2004PRL, Dastjerdi2022}. 
+% \clearpage
+\clearpage
 \section{Rayleigh Scattering}
 
-As particle size decreases and is observed from far away, approximations can be made to simplify the form of the scattering equations. As commonly done in theoretical physics, approximations can be taken without degrading the quality of approximation in the length-scale of interest \cite{jackson_classical_1999, zangwill2013modern}. Notably, as the product, $kr \ll 1$, the Hankel function in Eqn. \ref{eqn:lorenzmie} approaches the form of a spherical wave function,
+As particle size decreases and is observed from far away, approximations can be made to simplify the form of the scattering equations. As commonly done in theoretical physics, approximations can be taken without degrading the quality of approximation in the length-scale of interest \cite{jackson_classical_1999, zangwill2013modern}. Notably, as the product, $kr \ll 1$, the Hankel function, previously denoted $h_n = j_n + iy_n$, approach the form of a spherical wave function as shown in Eqn. 4.42 and 4.43 in Ref. \cite{bohren1983absorption},
 \begin{equation}
-    h_n(kr) \xrightarrow{kr \gg 1} (-i)^{n+1}\frac{e^{ikr}}{kr}.
-\end{equation}
+    h_n(kr) \xrightarrow{kr \ll 1} (-i)^{n+1}\frac{e^{ikr}}{kr}\,.
+\end{equation}  
 
-In the length-scale where particles are of comparable size to the wavelength of light, $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus for $n=1$, $\pi_1 = 1, \tau_1 = \cos \theta$. Thus, the vector spherical harmonics are approximated by the spherical wave forms,
+% In the length-scale where particles are of comparable size to the wavelength of light, $a_1 \approx \frac{-2i}{3}(ka)^3 \frac{m^2 -1 }{m^2 + 2}$, and $b_1 \approx 0$. Thus, the vector spherical harmonics are approximated by equations,
+% \begin{equation}
+%     \begin{aligned}
+%         M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}\,, \\
+%         N^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}\,. \\
+%     \end{aligned}
+% \end{equation}
+
+This approximation allows one to re-write the scattered field in terms of angle-dependent functions $\pi_n$ and $\tau_n$.  A full derivation is offered in Ref. \cite{bohren1983absorption} as well as the supplementary information of Ref. \cite{dewitPreciseCharacterizationNanometerscale2023}. Letting $\pi_n = P^1_n/\sin(\theta)$ and $\tau_n = dP^1_n/d\theta$, the scattering field is 
 \begin{equation}
-    \begin{aligned}
-        M^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}\,, \\
-        N^{(3)} &\approx (-i)^{n+1}\frac{e^{ikr}}{kr} \bracket{\cos\phi \pi_n \hat \theta - \sin\phi \tau_n \hat \phi}\,. \\
-    \end{aligned}
+    \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}\,,
 \end{equation}
-
-Using these two equations, the scattering equation, known as the Rayleigh approximation, describes the full scattering field as a simple sum,
-
-\begin{equation}
-    \vec E_s = \frac{i E_0 e^{ikr}}{kr}\sbracket{\hat \theta \cos \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \tau_n + b_n \pi_n) + \hat \phi \sin \phi \sum_{n=1}^\infty \frac{2n +1}{n(n+1)}(a_n \pi_n + b_n \tau_n)}\,.
-\end{equation}
-
-After substituting the terms for $n=1$, the sum reduces significantly to the equations for transverse and axial scattering fields,
+where $a_n$ and $b_n$ are the scattering amplitudes and is $k$ is the wave vector of the scattered light. After substituting the dominant terms, represented as a far-field approximation, the sum reduces significantly to the equations for transverse and axial scattering fields,
 \begin{equation}
     \begin{aligned}
             \vec E_{s, \perp} &=  \vec E_{i, \perp} \frac{k^2 \alpha e^{ikr}}{r},\\
@@ -525,28 +552,45 @@ After substituting the terms for $n=1$, the sum reduces significantly to the equ
     \end{aligned}
 \end{equation}
 
-Singling out the scattering field and noting the form of the wave-vector, $k = \frac{2\pi}{\lambda/n}$, the scattering field of spheres on the order of the length of the wavelength of the incident light is written in the commonly referenced form,
+Using that the wave vector $k$ of a wave of wavelength $\lambda$ passing through a medium of refractive index $n$ can be expressed as $k = \frac{2\pi}{\lambda/n}$, the scattering field of spheres on the order of the length of the wavelength of the incident light is written in the commonly referenced form,
 \begin{equation}\label{eqn:rayleigh_scat}
     \vec E_s = \vec E_0 e^{ikr}\frac{\sqrt{8}\alpha \pi^2 n^2_m}{\lambda^2 r} \sqrt{1 + \cos \theta}\,.
 \end{equation}
 
-This equation is the scattering field of an ideal Rayleigh particle. This equation has been used in the literature for axial estimation of iSCAT particles \cite{dewitPreciseCharacterizationNanometerscale2023}. In addition, this equation provides a easily computable form of the scattering pattern for a general Rayleigh scatterer. This equation is plotted for a various set of conditions as shown in Fig. \ref{fig:raylieghscatter}.
+This equation is the scattering field of an ideal Rayleigh particle and has  been used in the literature for axial estimation of iSCAT particles \cite{dewitPreciseCharacterizationNanometerscale2023}. In addition, it provides a easily computable form of the scattering pattern for a general Rayleigh scatterer, plotted for a various set of conditions as shown in Fig. \ref{fig:raylieghscatter}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth]{Python/Figures/RayleighScatter.pdf}
-    \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. Parameters fixed such that $\lambda = \SI{405}{\nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \propto V$. As the particle volume increases, the scattering pattern increases in amplitude.}
+    \caption{Rayleigh scattering pattern, Eqn. \ref{eqn:rayleigh_scat}, plotted for various sized particles. The $y$-axis, plotted in units of optical intensity, denotes the amplitude of the modulus of the scattered field. The $x$-axis plots the distance from the center of the scatterer in $\mathrm{nm}$.Parameters fixed such that $\lambda = \SI{405}{\nm}, n_m = 1.33, E_0 = 1, \theta = 0$. Particle parameters set as $n_p = 1.59, \alpha \propto V$. As the particle volume increases, the scattering pattern increases in amplitude.}
     \label{fig:raylieghscatter}
 \end{figure}
 
 
-\section{Scattering Microscopy}
+% \clearpage
+% \section{Scattering Microscopy}
 
-As previously shown, the description of the scattered light from a sphere is fully described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, equivalent method derived from Mie theory. 
+% As previously shown, the description of the scattered light from a sphere is fully described by Eqn. \ref{eqn:lorenzmie}, known as the Lorenz-Mie scattering theory \cite{bohren1983absorption}. In the limit of particles on the order of the size of the wavelength of light, the Rayleigh model is an easier, approximate method derived from Mie theory. 
 
-To collect the light, there have been three main schemes available; forward, side, and back-scattering microscopy schemes.
+% To collect the light, there have been three main schemes available; forward, side, and back-scattering microscopy schemes.
 
-As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
+% As shown in Fig. \ref{fig:ipsf_sim}, the scattering distribution taken at different projections widely varies. In addition, the amount of light that gets collected in each of these length-scales also varies.
+
+
+% Thus, the raw signal obtained by a camera is the total of the reference and scattered light. If this equation can be inverted to isolate the phase interference patterns of the scattered light, images of scatterers are able to be resolved.
+
+% The light captured by the objective is collected within a solid angle region. This region is practically defined by the objective's numerical aperture. In practice, it is impossible to capture all of the scattered light which cause 
+
+% It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
+
+\clearpage
+\section{Interferometric Light Scattering}
+
+In application, the scattered light can be collected from a variety of angles. In literature, these are referred to as scattering schemes and include the forward scattering, side-scattering, and back scattering schemes \cite{olsenBridgingSingleParticleCharacterisation}. The forward scattering scheme works best for large particles, in the range of $a=250$-$\SI{500}{\nm}$, as it collects a weak amount of scattered light, which is dominated by the reference beam. The side-scattering scheme has been used in NTA and can resolve position, however, it has not been favored as the the main method in three dimensional tracking due to experimental challenges with small volumes. Lastly, back-scattering allows for the viewing of small particles with a high SNR due to only reflected laser light being collected. 
+
+
+
+% The principle operation in the iSCAT methodology is the relative magnitude of mathematical terms in the optical field \cite{dewitPreciseCharacterizationNanometerscale2023,taylor_interferometric_2018}. Here, the reference field can be assumed to be constant. The scattering field $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the interference term scales as the square root of of the radius. Thus, the scattering term is dominated by the two terms, background and interference.
 
 In the back-scattering scheme, the light collected is the sum of the incident light and the scattered light,
 
@@ -561,48 +605,36 @@ Given that the incident wave is known as a polarized plane wave, this equation c
     \end{aligned}
 \end{equation}
 
-The incident field will be modulated by a scattering term, which is the Rayleigh scattering amplitude, $S$, as well as the reference term, $R$. Thus, the total intensity will be the sum of the scattering amplitude, reference amplitude, and the phase interference between the two fields; 
+The incident field will be modulated by a scattering term, which is the Rayleigh scattering amplitude, $|\vec{E}_s| = S$, as well as the reference term, $|\vec{E}_r| = R$. Thus, the total intensity will be the sum of the scattering amplitude, reference amplitude, and the phase interference between the two fields, $\Delta \varphi = \varphi_s \varphi_r$; 
 \begin{equation}
-    I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right]\,, \quad \Delta \varphi = \varphi_s \varphi_r\,.
+    I = |E_i|^2\left[|R|^2 + |S|^2 + 2|R||S|\cos \Delta \varphi\right]\,.
 \end{equation}
 
-Thus, the raw signal obtained by a camera is the total of the reference and scattered light. If this equation can be inverted to isolate the phase interference patterns of the scattered light, images of scatterers are able to be resolved.
-
-% The light captured by the objective is collected within a solid angle region. This region is practically defined by the objective's numerical aperture. In practice, it is impossible to capture all of the scattered light which cause 
-
-% It should now be noted that the angle of image formation has not been specified. This is of importance as it allows to discuss the various methods of scattering microscopy without loss of generality between methods. Notably, the main difference is the angular content which is obtained from the various scattering models. In the case of spheres, this means using the various angular slices of the resultant scattered field. 
-
-\section{Interferometric Light Scattering}
-
-The principle operation in the iSCAT methodology is the relative magnitude of mathematical terms in the optical field \cite{dewitPreciseCharacterizationNanometerscale2023,taylor_interferometric_2018}. Here, the reference field can be assumed to be constant. The scattering field $R \approx k^4\alpha^2 = \frac{V^2}{\lambda^4}$. Similarly, the interference term scales as the square root of of the radius. Thus, the scattering term is dominated by the two terms, background and interference.
-
-To accurately detect the particles, implying that the scattering term is neglected, the contrast metric can be used. This metric relates the total field to that of a reference field;
+To accurately detect the particles, implying that the scattering term is neglected, the contrast metric can be used. This metric relates the total field to that of a reference field; 
 \begin{equation}
     \begin{aligned}
-        C &= \frac{I - |E_r|^2}{|E_r|^2} \\
+        C &= \frac{I - |R|^2}{|R|^2} \\
         &= \frac{|S|^2 + 2|R||S|\cos \Delta \varphi}{|R|^2}\,, \\
-        &\xrightarrow{|S| \ll |R|} \frac{2|S|}{|R|}\cos\Delta \varphi\,.
     \end{aligned} 
 \end{equation}
-
-The phases in the interference field consists of a sum of optical fields. These fields acquire phase differences as they traverse through space. Aberration effects from optical transformations are also acquired as spatial and phase terms.
-
-The total phase is dominated by the Gouy phase, which is the sum of accumulated phase as the light passes through a converging or diverging lens \cite{taylor_interferometric_2018}. The de-focusing phase is a relative phase shift due to misalignment in lens position which is described by the imaging condition equation \cite{Steck2021}.
-
-Lastly, the phase difference from the inference term, which is compared to a Michelson-interferometer type system, is a dominant signal present directly in the iSCAT equation \cite{taylor_interferometric_2018}. 
+where $I$ is the total intensity. In the limit where the the scattered field is much smaller than the reference field, the asymptotic
+\begin{equation}
+    C \xrightarrow{|S| \ll |R|} \frac{2|S|}{|R|}\cos\Delta \varphi\,,
+\end{equation}
+can be taken, which relates the contrast metric to a phase difference between the two signals. The phases in the interference field consists of a sum of optical fields. These fields acquire phase differences as they traverse through space. Aberration effects from optical transformations are also acquired as spatial and phase terms. The total phase is dominated by the Gouy phase, which is the sum of accumulated phase as the light passes through a converging or diverging lens \cite{taylor_interferometric_2018}. The de-focusing phase is a relative phase shift due to misalignment in lens position which is described by the imaging condition equation \cite{Steck2021}. Lastly, the phase difference from the inference term, which is compared to a Michelson-interferometer type system, is a dominant signal present directly in the iSCAT equation \cite{taylor_interferometric_2018}. 
 
 The final image consists of the collected phase modulated optical fields and the aberrations from optical misalignment. These parameters must be considered when performing analysis on iSCAT images.
 
+\clearpage
 \section{3D Position Information from Optical Signal}
 
-To obtain information from the iSCAT technique, the holographic images obtained by from the iSCAT metric must be related to the theoretical scattering pattern from Maxwell's relation \cite{dewitPreciseCharacterizationNanometerscale2023}. Specifically, this involves approximating the image captured on the camera to Eqn. \ref{eqn:rayleigh_scat}.
-
-The interferometric point spread function is defined as the contrast metric of the scattering off of a sub-diffraction sized particle, 
+To obtain information from the iSCAT technique, the holographic images obtained from the contrast metric $C$ must be related to the theoretical scattering pattern derived in Eqn. \ref{eqn:rayleigh_scat}. To do this, the raw CMOS image is first converted into the contrast metric. The interferometric point spread function is defined as the contrast metric of the scattering off of a sub-diffraction sized particle, 
 \begin{equation}
-    \mathrm{iPSF} \equiv \frac{2E_r E_s \cos\phi_d}{E_r^2}\,.
+    \mathrm{iPSF} \equiv \frac{2R S \cos\phi_d}{R^2}\,.
 \end{equation}
+The naming convention is a bit tricky, however, the iPSF is essentially what a particle is viewed as when a raw image of it is converted by the contrast metric. 
 
-The Rayleigh scattering pattern has several parameters that have a degenerate effect on the iPSF \cite{dewitPreciseCharacterizationNanometerscale2023}. To avoid problems in the image to equation fitting, the parameterization developed in Ref. \cite{dewitPreciseCharacterizationNanometerscale2023} is used. This parameterization redefines the axial height and phase,
+The Rayleigh scattering pattern has several parameters that have a degenerate effect on the iPSF, including the phase, axial position, light wavelength, and polarizability which cause the pattern to become more or less dense. To avoid problems in model fitting, the parameterization developed in Ref. \cite{dewitPreciseCharacterizationNanometerscale2023} is used. This parameterization redefines the axial height and phase,
 \begin{align}
     z'_p &= z_p - z_f\,,\\
     \phi_0 &= -\phi_\mathrm{ref} + 2n_m k z_f + \arg(\alpha)\,,\\
@@ -614,6 +646,7 @@ The Rayleigh scattering pattern has several parameters that have a degenerate ef
 
 This function allows one to obtain the $z$ position of a particle with respect to the objective from image data.
 
+\clearpage
 \section{Resolution Limits of Optical Microscopy}
 
 There is a limit of resolution that can be achieved through optical methods \cite{abbe1873beitraege}. The limit is described by the Abbe diffraction limit which states that the minimum distance between two resolvable particle is fixed by the light wavelength and objective's numerical aperture \cite{abbe1873beitraege, jonkman_18_2003}. 
@@ -622,7 +655,7 @@ Optical fields consists of a sum of plane waves that construct and deconstruct. 
 
 To understand how the optical field modulates as it travels, the propagation equation can be written in a plane-wave basis \cite{goodman2017introduction},
 \begin{equation}
-	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y\,, \quad \Omega = \{x \in \R : x^2 \leq k^2\}\,.
+	\vec E(x,y,z) = \iint_{\Omega} \vec E_0(k_x, k_y) e^{-i\left(x k_x + y k_y + z \sqrt{k^2 - k_x^2 - k_y^2} \right)}dk_x dk_y\,, \quad \Omega = \{x \in \R : x^2 \leq k^2\}\,.
 \end{equation}
 The energy of the wave is fixed by the trigonometric relation of the transverse wave vectors, fixed by the relation $|k| = \frac{2\pi}{\lambda}$.
 
@@ -634,13 +667,13 @@ where $z_1$ and $z_2$ are the positions of the observer and the object, and $f_\
  
 To define a field formulation for this system, the propagation equation can be used. The incoming light that passes through the finite area of a lens is defined a pupil function $P(x,y)$ which is unitary if $r\leq R$, where $R$ is the radius of lens. The point spread function of the object is then defined as a delta-function through a two lens system. The measured optical field is given by the Fourier transform of the product of the pupil function and the delta-function \cite{goodman2017introduction},
 \begin{eqnarray}
-	H(x,y) = \iint_\Omega P(x',y')e^{\frac{ik}{2}\left(\frac{1}{z_1} - \frac{1}{f_1} - \frac{1}{f_2} + \frac{1}{z_2}\right)\sqrt{{x'}^2} + {y'}^2}e^{-\frac{ik}{z_2}(xx' + yy')}dx'dy'\,.
+	H(x,y) = \iint_\Omega P(x',y')e^{\frac{ik}{2}\left(\frac{1}{z_1} - \frac{1}{f_1} - \frac{1}{f_2} + \frac{1}{z_2}\right)\sqrt{{x'}^2 + {y'}^2}}e^{-\frac{ik}{z_2}(xx' + yy')}dx'dy'\,.
 \end{eqnarray}
 Expanding this field, one can use a zero-order Hankel transform to integrate over the radius and find that the point-spread function, $H$, is defined in terms of the numerical aperture and the magnification;
 \begin{equation}
 	H(r, z) = \int_0^1e^{-\frac{ik}{2}\frac{\text{NA}^2}{n}\rho^2 z}J_0\left(\frac{k\text{NA}}{M}\rho r\right) \rho d\rho\,,
 \end{equation}
-where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$ \cite{goodman2017introduction}.
+where $\rho$ is the rescaled radial vector $\rho= r'/R$, $\text{NA} = nR/f_1$, and $M = nf_2/f_1$ \cite{goodman2017introduction}. Here, $z$ is the axial position which defines the position of the image with respect to the plane of focus defined by the lens. 
 
 In perfect focus, $z=0$, and the image is the point spread function. For $z\neq 0$ there is a defocusing aberration which is defined as the secondary exponential. For a point source, which is diffraction limited, the following is the limit of the optical microscope,
 \begin{equation}
@@ -677,9 +710,7 @@ In imaging, there is a number of sources of aberrations that one must account fo
 
 For such a system, the sources of noise are the point spread function noise, Gouy phase aberrations, background noise, electronic noise, and spherical aberrations \cite{holst2007cmos, holographic2015aberration}. 
 
-The optical point spread noise originates from the transformations of light passing through optical components.
-
-Each lens used in an optical path will collect light from the object plane, $U_o$ to a transformed plane, $U_i$. The propagation of that wave will collect aberration from the lens point spread function, as well as phase accumulation. The traversal over the point spread function is given by the equation,  
+The optical point spread noise originates from the transformations of light passing through optical components. Each lens used in an optical path will collect light from the object plane, $U_o$ to a transformed plane, $U_i$. The propagation of that wave will collect aberration from the lens point spread function, as well as phase accumulation. The traversal over the point spread function is given by the equation,  
 \begin{equation}
     U_i(x_i, y_i) = \iint_{\R^2} h(x_i, y_i, x_o, y_o) U_o(x_o, y_o) dx_o dy_o,
 \end{equation} 
@@ -697,11 +728,12 @@ where $w_0$ is the waist of the final beam, $n_m$ is the refractive index, and $
 
 In optical microscopy where a reference or excitation field is used, a background beam or illumination is present. The background noise profile will take the shape of the illumination profile alongside the intensity of the power density \cite{dewitPreciseCharacterizationNanometerscale2023,taylor_interferometric_2018}. 
 
-The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a gaussian for the readout noise \cite{holst2007cmos}. 
+The camera noise consists of electronic noise associated with the model and electronic design. For general CMOS cameras, the noise present will consist of photon noise from the detectors and readout noise from the data-transfer. These noises can be modeled as Poisson noise from the photon detections and a Gaussian for the readout noise \cite{holst2007cmos}. 
 
-In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens \cite{hecht2017optics}. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
+In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. Additionally, this can be caused by having a beam waist too large for the lens, where the approximations that lead to a Gaussian beam break down. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens \cite{hecht2017optics}. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
 
+can also be caused by having a beam too large for the lens, whence the approximations which lead to the aforementioned Gaussian beam break down
 
 
 

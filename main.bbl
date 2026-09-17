@@ -4902,6 +4902,35 @@
       \field{pages}{037401}
       \range{pages}{1}
     \endentry
+    \entry{olsenBridgingSingleParticleCharacterisation}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c61ab85f7e42e52632099149b54f86a3}{%
+           family={Olsén},
+           familyi={O\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{fullhash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{fullhashraw}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{bibnamehash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{authorbibnamehash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{authornamehash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{authorfullhash}{c61ab85f7e42e52632099149b54f86a3}
+      \strng{authorfullhashraw}{c61ab85f7e42e52632099149b54f86a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As the practical importance of particles in the nano-submicron size regime continues to increase in both biomedical applications and industrial processes, so does the need for accurate and versatile characterisation methods. Optical scattering microscopy methods are commonly used for single-particle characterisation as they provide quick measurements at physiologically relevant conditions with detection limits reaching down to individual biomolecules. However, quantitative particle characterisation using optical microscopy often rely on assumptions about the surrounding media and the particle, including solution viscosity, boundary conditions, as well as particle shape and material. Since these assumptions are difficult to evaluate, particle characterisation beyond hydrodynamic radius and/or mass remains challenging.}
+      \field{title}{Bridging {Single}-{Particle} {Characterisation} {Gaps} of {Optical} {Microscopy} in the {Nano}-{Submicron} {Regime}}
+      \verb{file}
+      \verb PDF:C\:\\Users\\martinj1\\Zotero\\storage\\87ASUALH\\Olsén - Bridging Single-Particle Characterisation Gaps of Optical Microscopy in the Nano-Submicron Regime.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{jonkman_18_2003}{incollection}{}{}
       \name{author}{5}{}{%
         {{hash=3f10de186c46fc4f25747c37482a9a7a}{%
