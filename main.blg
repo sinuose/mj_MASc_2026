@@ -1,18 +1,18 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[87] biber-darwin:340> INFO - === Thu Sep 17, 2026, 11:31:39
-[98] Biber.pm:420> INFO - Reading 'main.bcf'
-[177] Biber.pm:994> INFO - Found 113 citekeys in bib section 0
-[186] Biber.pm:4463> INFO - Processing section 0
-[193] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[202] bibtex.pm:1713> INFO - LaTeX decoding ...
-[320] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[828] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[828] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[828] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[828] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[871] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[909] bbl.pm:779> INFO - Output to main.bbl
-[909] Biber.pm:131> WARN - legacy year field '{2025}' in entry '9195130' is not an integer - this will probably not sort properly.
-[909] Biber.pm:131> WARN - ISBN '978-3-030-28246-2 978-3-030-28247-9' in entry 'pereira_dynamic_2019' is invalid - run biber with '--validate_datamodel' for details.
-[909] Biber.pm:133> INFO - WARNINGS: 2
+[56] biber-darwin:340> INFO - === Thu Sep 17, 2026, 13:58:40
+[70] Biber.pm:420> INFO - Reading 'main.bcf'
+[160] Biber.pm:994> INFO - Found 113 citekeys in bib section 0
+[168] Biber.pm:4463> INFO - Processing section 0
+[174] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[182] bibtex.pm:1713> INFO - LaTeX decoding ...
+[298] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[788] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[788] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[788] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[789] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[833] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[873] bbl.pm:779> INFO - Output to main.bbl
+[873] Biber.pm:131> WARN - legacy year field '{2025}' in entry '9195130' is not an integer - this will probably not sort properly.
+[873] Biber.pm:131> WARN - ISBN '978-3-030-28246-2 978-3-030-28247-9' in entry 'pereira_dynamic_2019' is invalid - run biber with '--validate_datamodel' for details.
+[873] Biber.pm:133> INFO - WARNINGS: 2

@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1789669896.93122 "main.bcf" "main.bbl" "main" 1789671760.44158 0
-  "main.bcf" 1789671760.22293 126454 0f0e641675a9fadc00aa7b15112d7c56 "pdflatex"
+["biber main"] 1789678718.8388 "main.bcf" "main.bbl" "main" 1789678741.24561 0
+  "main.bcf" 1789678741.02487 126554 5640b05a0259dcdee196db817f46467c "pdflatex"
   "references.bib" 1789668467.81346 122080 c96b95aacba9b40228964c155c914942 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1789671753.6033 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1789671760.44191 0
+["pdflatex"] 1789678733.91402 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1789678741.24598 0
   "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1789602287.02898 11796 1267a6c0137aa7cc3275a839ed943a7b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -300,7 +300,7 @@
   "ABSTRACT.tex" 1789425779.07228 7496 55175c1ac19d95d65b76f99a2cb69723 ""
   "C1.tex" 1789667188.70864 81503 de584a8bb362f8f5059ef31fe634e3cd ""
   "C2.tex" 1788909586.04946 34654 dab4f26ec16c8d4efa89e723af604bfe ""
-  "C3.tex" 1789671752.42154 67809 63e8bcad227e3faea4784f9e2aec8144 ""
+  "C3.tex" 1789678732.7936 68007 c5c0f927ba2641eadc64173a4a5db438 ""
   "CONC.tex" 1785689657.56162 4464 92a96ec66b01dad60e7c4b49a5ea47e7 ""
   "Figures/LangevinTimeComplexity.pdf" 1788811028.37864 40954 df1547054ca2ec356b2dadc04b4d77ec ""
   "Figures/LangevinTimeComplexity_mis2.pdf" 1788811028.37957 40910 55cec5d6cdae1ef9cb8571e15e0d19aa ""
@@ -353,14 +353,14 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785355381.48781 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784405191.14894 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1789671760.17144 82707 c9d1abbccaf90f934fcbca0ffc35e7c4 "pdflatex"
-  "main.bbl" 1789669899.87597 286322 fc867bf1d7991b9fed898393ef0fcdff "biber main"
-  "main.lof" 1789671760.22375 16750 b2bf9be0e9037bc97860cd9c2971a9cb "pdflatex"
-  "main.lot" 1789671760.22372 2145 a6a430d65bef34ff92e08bc29426bcc5 "pdflatex"
-  "main.out" 1789671760.22192 12483 5b76d4b88a7300c8c11b4cc4443f7b02 "pdflatex"
-  "main.run.xml" 1789671760.22361 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.aux" 1789678740.96976 82834 99d809d95add5c4cc5fe8490a493cc3f "pdflatex"
+  "main.bbl" 1789678721.4632 286322 fc867bf1d7991b9fed898393ef0fcdff "biber main"
+  "main.lof" 1789678741.02587 16750 b2bf9be0e9037bc97860cd9c2971a9cb "pdflatex"
+  "main.lot" 1789678741.02584 2145 a6a430d65bef34ff92e08bc29426bcc5 "pdflatex"
+  "main.out" 1789678741.0236 12483 5b76d4b88a7300c8c11b4cc4443f7b02 "pdflatex"
+  "main.run.xml" 1789678741.02571 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1789602287.02898 11796 1267a6c0137aa7cc3275a839ed943a7b ""
-  "main.toc" 1789671760.22369 5689 e768cb603afd0d3d765b51ef4f344f4c "pdflatex"
+  "main.toc" 1789678741.02581 5689 4c2ec571c0b0df333beedd24ea0114b6 "pdflatex"
   "preface.tex" 1789406241.4644 2482 eec9d68f014385cae69506624d78a03a ""
   (generated)
   "main.aux"

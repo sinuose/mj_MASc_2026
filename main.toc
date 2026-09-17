@@ -43,7 +43,7 @@
 \contentsline {section}{\numberline {7.2}Raw image background subtraction}{63}{section.7.2}%
 \contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{65}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Angular Integral}{67}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{67}{section.7.5}%
+\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{68}{section.7.5}%
 \contentsline {section}{\numberline {7.6}2D Chain-link}{69}{section.7.6}%
 \contentsline {section}{\numberline {7.7}Simulated iPSF localization}{70}{section.7.7}%
 \contentsline {section}{\numberline {7.8}3-parameter Estimation}{71}{section.7.8}%

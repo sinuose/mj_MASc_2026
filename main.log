@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 SEP 2026 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 SEP 2026 13:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1658,49 +1658,49 @@ Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 521.
 <Python/Figures/RadialSymExample.pdf, id=3047, 372.44862pt x 242.22061pt>
 File: Python/Figures/RadialSymExample.pdf Graphic file (type pdf)
 <use Python/Figures/RadialSymExample.pdf>
-Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 538.
+Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 536.
 (pdftex.def)             Requested size: 362.37569pt x 235.67441pt.
 
 
 [66 <./Python/Figures/RadialSymExample.pdf>]
-<Python/Figures/AngularInt.pdf, id=3064, 346.89601pt x 202.356pt>
+<Python/Figures/AngularInt.pdf, id=3065, 346.89601pt x 202.356pt>
 File: Python/Figures/AngularInt.pdf Graphic file (type pdf)
 <use Python/Figures/AngularInt.pdf>
-Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 561.
+Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 557.
 (pdftex.def)             Requested size: 452.9679pt x 264.24535pt.
 
 
 [67 <./Python/Figures/AngularInt.pdf>]
 
 [68]
-<Python/Figures/viterbi_toy.pdf, id=3104, 419.166pt x 274.626pt>
+<Python/Figures/viterbi_toy.pdf, id=3105, 419.166pt x 274.626pt>
 File: Python/Figures/viterbi_toy.pdf Graphic file (type pdf)
 <use Python/Figures/viterbi_toy.pdf>
-Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 616.
+Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 612.
 (pdftex.def)             Requested size: 362.37569pt x 237.4225pt.
 
 
 [69]
-<Python/Figures/sim_ipsf.pdf, id=3112, 687.70567pt x 246.92203pt>
+<Python/Figures/sim_ipsf.pdf, id=3113, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 691.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 687.
 (pdftex.def)             Requested size: 452.9679pt x 162.64124pt.
 
 
 [70 <./Python/Figures/sim_ipsf.pdf> <./Python/Figures/viterbi_toy.pdf>]
-<Python/Figures/nuisance_param.pdf, id=3175, 563.70598pt x 274.626pt>
+<Python/Figures/nuisance_param.pdf, id=3176, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 712.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 708.
 (pdftex.def)             Requested size: 452.9679pt x 220.68166pt.
 
 
 [71 <./Python/Figures/nuisance_param.pdf>]
-<Python/Figures/simulation_fit_residual.pdf, id=3192, 484.49583pt x 284.94914pt>
+<Python/Figures/simulation_fit_residual.pdf, id=3193, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 723.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 719.
 (pdftex.def)             Requested size: 452.9679pt x 266.41739pt.
 ) (./C2.tex
 
@@ -1723,12 +1723,12 @@ Package pdftex.def Info: Figures/schematic.pdf  used on input line 60.
 [75
 
 ]
-<Figures/clic_flowcell_okay.pdf, id=3255, 5258.97267pt x 1779.13376pt>
+<Figures/clic_flowcell_okay.pdf, id=3256, 5258.97267pt x 1779.13376pt>
 File: Figures/clic_flowcell_okay.pdf Graphic file (type pdf)
 <use Figures/clic_flowcell_okay.pdf>
 Package pdftex.def Info: Figures/clic_flowcell_okay.pdf  used on input line 71.
 (pdftex.def)             Requested size: 452.9679pt x 153.2197pt.
-<Figures/clic_chuck_very_good.pdf, id=3257, 637.04497pt x 211.4415pt>
+<Figures/clic_chuck_very_good.pdf, id=3258, 637.04497pt x 211.4415pt>
 File: Figures/clic_chuck_very_good.pdf Graphic file (type pdf)
 <use Figures/clic_chuck_very_good.pdf>
 Package pdftex.def Info: Figures/clic_chuck_very_good.pdf  used on input line 79.
@@ -1739,7 +1739,7 @@ Package pdftex.def Info: Figures/clic_chuck_very_good.pdf  used on input line 79
 
 pdfTeX warning: pdflatex (file ./Figures/clic_chuck_very_good.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Figures/clic_very_good.pdf, id=3332, 812.8681pt x 289.33673pt>
+<Figures/clic_very_good.pdf, id=3333, 812.8681pt x 289.33673pt>
 File: Figures/clic_very_good.pdf Graphic file (type pdf)
 <use Figures/clic_very_good.pdf>
 Package pdftex.def Info: Figures/clic_very_good.pdf  used on input line 97.
@@ -1751,7 +1751,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [77]
-<Python/Figures/beads_DLS_size.pdf, id=3346, 438.8052pt x 216.17097pt>
+<Python/Figures/beads_DLS_size.pdf, id=3347, 438.8052pt x 216.17097pt>
 File: Python/Figures/beads_DLS_size.pdf Graphic file (type pdf)
 <use Python/Figures/beads_DLS_size.pdf>
 Package pdftex.def Info: Python/Figures/beads_DLS_size.pdf  used on input line 109.
@@ -1761,12 +1761,12 @@ Package pdftex.def Info: Python/Figures/beads_DLS_size.pdf  used on input line 1
 [78 <./Figures/clic_very_good.pdf> <./Python/Figures/beads_DLS_size.pdf>]
 
 [79]
-<Python/Figures/density.pdf, id=3431, 580.35172pt x 215.29555pt>
+<Python/Figures/density.pdf, id=3432, 580.35172pt x 215.29555pt>
 File: Python/Figures/density.pdf Graphic file (type pdf)
 <use Python/Figures/density.pdf>
 Package pdftex.def Info: Python/Figures/density.pdf  used on input line 180.
 (pdftex.def)             Requested size: 452.9679pt x 168.03825pt.
-<Python/Figures/Chapter7/c7_fig3.pdf, id=3433, 419.166pt x 202.35521pt>
+<Python/Figures/Chapter7/c7_fig3.pdf, id=3434, 419.166pt x 202.35521pt>
 File: Python/Figures/Chapter7/c7_fig3.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/c7_fig3.pdf>
 Package pdftex.def Info: Python/Figures/Chapter7/c7_fig3.pdf  used on input line 191.
@@ -1785,7 +1785,7 @@ LaTeX Warning: Reference `fig:brown_realization' on page 80 undefined on input l
  <./Python/Figures/density.pdf>]
 
 [81 <./Python/Figures/Chapter7/c7_fig3.pdf>]
-<Python/Figures/FWHM_PBS.pdf, id=3478, 318.69032pt x 311.68904pt>
+<Python/Figures/FWHM_PBS.pdf, id=3479, 318.69032pt x 311.68904pt>
 File: Python/Figures/FWHM_PBS.pdf Graphic file (type pdf)
 <use Python/Figures/FWHM_PBS.pdf>
 Package pdftex.def Info: Python/Figures/FWHM_PBS.pdf  used on input line 202.
@@ -1795,7 +1795,7 @@ Package pdftex.def Info: Python/Figures/FWHM_PBS.pdf  used on input line 202.
 [82
 
  <./Python/Figures/FWHM_PBS.pdf>]
-<Python/Figures/RadxvsRadz_PBS.pdf, id=3501, 318.69032pt x 311.68904pt>
+<Python/Figures/RadxvsRadz_PBS.pdf, id=3502, 318.69032pt x 311.68904pt>
 File: Python/Figures/RadxvsRadz_PBS.pdf Graphic file (type pdf)
 <use Python/Figures/RadxvsRadz_PBS.pdf>
 Package pdftex.def Info: Python/Figures/RadxvsRadz_PBS.pdf  used on input line 215.
@@ -1803,12 +1803,12 @@ Package pdftex.def Info: Python/Figures/RadxvsRadz_PBS.pdf  used on input line 2
 
 
 [83 <./Python/Figures/RadxvsRadz_PBS.pdf>]
-<Python/Figures/surface_charge_estimation_means.pdf, id=3527, 265.45885pt x 256.87564pt>
+<Python/Figures/surface_charge_estimation_means.pdf, id=3528, 265.45885pt x 256.87564pt>
 File: Python/Figures/surface_charge_estimation_means.pdf Graphic file (type pdf)
 <use Python/Figures/surface_charge_estimation_means.pdf>
 Package pdftex.def Info: Python/Figures/surface_charge_estimation_means.pdf  used on input line 228.
 (pdftex.def)             Requested size: 221.95676pt x 214.7824pt.
-<Python/Figures/surface_charge_estimation_variance.pdf, id=3528, 265.45885pt x 257.55162pt>
+<Python/Figures/surface_charge_estimation_variance.pdf, id=3529, 265.45885pt x 257.55162pt>
 File: Python/Figures/surface_charge_estimation_variance.pdf Graphic file (type pdf)
 <use Python/Figures/surface_charge_estimation_variance.pdf>
 Package pdftex.def Info: Python/Figures/surface_charge_estimation_variance.pdf  used on input line 231.
@@ -1818,7 +1818,7 @@ Package pdftex.def Info: Python/Figures/surface_charge_estimation_variance.pdf  
 [84
 
  <./Python/Figures/surface_charge_estimation_means.pdf> <./Python/Figures/surface_charge_estimation_variance.pdf>]
-<Python/Figures/glycerol_curve.pdf, id=3565, 379.69955pt x 255.68005pt>
+<Python/Figures/glycerol_curve.pdf, id=3566, 379.69955pt x 255.68005pt>
 File: Python/Figures/glycerol_curve.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_curve.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_curve.pdf  used on input line 264.
@@ -1828,12 +1828,12 @@ Package pdftex.def Info: Python/Figures/glycerol_curve.pdf  used on input line 2
 [85
 
  <./Python/Figures/glycerol_curve.pdf>]
-<Python/Figures/glycerol_sample_trajectory.pdf, id=3587, 250.9375pt x 231.86626pt>
+<Python/Figures/glycerol_sample_trajectory.pdf, id=3588, 250.9375pt x 231.86626pt>
 File: Python/Figures/glycerol_sample_trajectory.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_sample_trajectory.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_sample_trajectory.pdf  used on input line 276.
 (pdftex.def)             Requested size: 339.72592pt x 313.94348pt.
-<Python/Figures/glycerol_MSD.pdf, id=3589, 419.166pt x 202.356pt>
+<Python/Figures/glycerol_MSD.pdf, id=3590, 419.166pt x 202.356pt>
 File: Python/Figures/glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_MSD.pdf  used on input line 286.
@@ -1849,7 +1849,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  <./Python/Figures/glycerol_sample_trajectory.pdf>]
 
 [87 <./Python/Figures/glycerol_MSD.pdf>]
-<Python/Figures/glycerol_diffusivity_relation.pdf, id=6641, 434.82402pt x 290.28403pt>
+<Python/Figures/glycerol_diffusivity_relation.pdf, id=6642, 434.82402pt x 290.28403pt>
 File: Python/Figures/glycerol_diffusivity_relation.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_diffusivity_relation.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used on input line 298.
@@ -1859,7 +1859,7 @@ Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used 
 [88
 
  <./Python/Figures/glycerol_diffusivity_relation.pdf>]
-<Python/Figures/DLS_size.pdf, id=6679, 438.8052pt x 216.17097pt>
+<Python/Figures/DLS_size.pdf, id=6680, 438.8052pt x 216.17097pt>
 File: Python/Figures/DLS_size.pdf Graphic file (type pdf)
 <use Python/Figures/DLS_size.pdf>
 Package pdftex.def Info: Python/Figures/DLS_size.pdf  used on input line 339.
@@ -1869,7 +1869,7 @@ Package pdftex.def Info: Python/Figures/DLS_size.pdf  used on input line 339.
 [89
 
  <./Python/Figures/DLS_size.pdf>]
-<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=6692, 419.166pt x 274.626pt>
+<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=6693, 419.166pt x 274.626pt>
 File: Python/Figures/Chapter7/lnp_pos_hist.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/lnp_pos_hist.pdf>
 Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input line 374.
@@ -1877,7 +1877,7 @@ Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input
 
 
 [90 <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]
-<Python/Figures/LNP_glycerol_MSD.pdf, id=6708, 419.166pt x 202.356pt>
+<Python/Figures/LNP_glycerol_MSD.pdf, id=6709, 419.166pt x 202.356pt>
 File: Python/Figures/LNP_glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/LNP_glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/LNP_glycerol_MSD.pdf  used on input line 385.
@@ -2110,10 +2110,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (133 pages, 50013441 bytes).
+Output written on main.pdf (133 pages, 50013577 bytes).
 PDF statistics:
- 7278 PDF objects out of 7423 (max. 8388607)
- 5448 compressed objects within 55 object streams
+ 7279 PDF objects out of 7423 (max. 8388607)
+ 5449 compressed objects within 55 object streams
  519 named destinations out of 1000 (max. 500000)
  63775 words of extra memory for PDF output out of 74296 (max. 10000000)
 
