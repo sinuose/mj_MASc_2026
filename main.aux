@@ -231,6 +231,8 @@
 \abx@aux@segm{0}{0}{israelachviliIntermolecularSurfaceForces}
 \abx@aux@cite{0}{israelachviliIntermolecularSurfaceForces}
 \abx@aux@segm{0}{0}{israelachviliIntermolecularSurfaceForces}
+\newlabel{eqn:amp1}{{2.39}{19}{Electrostatic Potentials}{equation.2.39}{}}
+\newlabel{eqn:amp2}{{2.40}{19}{Electrostatic Potentials}{equation.2.40}{}}
 \abx@aux@cite{0}{einstein1956investigations}
 \abx@aux@segm{0}{0}{einstein1956investigations}
 \abx@aux@cite{0}{pathriaStatisticalMechanics2011}
@@ -489,67 +491,82 @@
 \@writefile{toc}{\contentsline {section}{\numberline {6.1}Simulation Equations}{47}{section.6.1}\protected@file@percent }
 \abx@aux@cite{0}{millanNumericalSimulationsConfined2023}
 \abx@aux@segm{0}{0}{millanNumericalSimulationsConfined2023}
+\abx@aux@cite{0}{millanNumericalSimulationsConfined2023}
+\abx@aux@segm{0}{0}{millanNumericalSimulationsConfined2023}
+\newlabel{eqn:stokes2}{{6.3}{48}{Simulation Equations}{equation.6.3}{}}
 \newlabel{eqn:EOM}{{6.4}{48}{Simulation Equations}{equation.6.4}{}}
+\abx@aux@cite{0}{millanNumericalSimulationsConfined2023}
+\abx@aux@segm{0}{0}{millanNumericalSimulationsConfined2023}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Electrostatic Input Parameters}{50}{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Model diagram of simulation geometry. A spherical particle of $\zeta $-potential $\SI {25}{\milli \volt 4}$ and radius $a=\SI {50}{\nm }$ is modeled between two charged parallel plates spaced by $L = \SI {300}{\nm }$. The electrostatic potential, modeled by the Debye-Hückel potential, are drawn in a blue gradient and fixed at a Debye-length of $\SI {40}{\nm }$. The values are chosen to model a semi-realistic system, such as a plastic bead in a salt solution while still providing an artistic rendering for intuition.}}{50}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:langevin_diagram}{{6.1}{50}{Model diagram of simulation geometry. A spherical particle of $\zeta $-potential $\SI {25}{\milli \volt 4}$ and radius $a=\SI {50}{\nm }$ is modeled between two charged parallel plates spaced by $L = \SI {300}{\nm }$. The electrostatic potential, modeled by the Debye-Hückel potential, are drawn in a blue gradient and fixed at a Debye-length of $\SI {40}{\nm }$. The values are chosen to model a semi-realistic system, such as a plastic bead in a salt solution while still providing an artistic rendering for intuition}{figure.caption.24}{}}
 \abx@aux@cite{0}{lin_exact_2010}
 \abx@aux@segm{0}{0}{lin_exact_2010}
 \abx@aux@cite{0}{israelachviliIntermolecularSurfaceForces}
 \abx@aux@segm{0}{0}{israelachviliIntermolecularSurfaceForces}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Electrostatic Input Parameters}{49}{section.6.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modeled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient.}}{49}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:langevin_diagram}{{6.1}{49}{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modeled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient}{figure.caption.24}{}}
 \abx@aux@cite{0}{python3}
 \abx@aux@segm{0}{0}{python3}
 \abx@aux@cite{0}{harris2020array}
 \abx@aux@segm{0}{0}{harris2020array}
 \abx@aux@cite{0}{lam2015numba}
 \abx@aux@segm{0}{0}{lam2015numba}
-\newlabel{eqn:electrostatic_forces}{{6.8}{50}{Electrostatic Input Parameters}{equation.6.8}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}Python Simulation Implementation}{50}{section.6.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Variables stored in the \textsc  {Param} class.}}{50}{table.caption.25}\protected@file@percent }
-\newlabel{tab:sim_params}{{6.1}{50}{Variables stored in the \textsc {Param} class}{table.caption.25}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Methods of the \textsc  {Param} class.}}{51}{table.caption.26}\protected@file@percent }
-\newlabel{tab:sim_params}{{6.2}{51}{Methods of the \textsc {Param} class}{table.caption.26}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Langevin simulation function \textsc  {StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal  {O}\left (n^1\right )$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor.}}{52}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:timecomplex1}{{6.2}{52}{Langevin simulation function \textsc {StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal {O}\left (n^1\right )$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor}{figure.caption.27}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Langevin simulation function \textsc  {StepTraj} time complexity. Simulation parameters are set as Fig. \ref {fig:timecomplex1} with two parallel simulations.}}{52}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:timecomplex2}{{6.3}{52}{Langevin simulation function \textsc {StepTraj} time complexity. Simulation parameters are set as Fig. \ref {fig:timecomplex1} with two parallel simulations}{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{53}{section.6.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Confined Brownian Particle realization of $z$ diffusion in electrostatic potential. The step-histogram is plotted in green. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$.}}{53}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:brown_realization}{{6.4}{53}{Confined Brownian Particle realization of $z$ diffusion in electrostatic potential. The step-histogram is plotted in green. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$}{figure.caption.29}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI {26000}{\nm ^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI {15000}{\nm ^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau $ consists of on exposure time of $\SI {200}{\micro \second }$. The debye-length was fixed to $\lambda _D = \SI {10}{\nm }$. }}{54}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:xz_msd_comparison}{{6.5}{54}{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI {26000}{\nm ^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI {15000}{\nm ^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau $ consists of on exposure time of $\SI {200}{\micro \second }$. The debye-length was fixed to $\lambda _D = \SI {10}{\nm }$}{figure.caption.30}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.5}Simulation Results}{55}{section.6.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted against the solution's debye-length $\lambda _D$ and expressed in terms of ion concentration $C$.}}{55}{figure.caption.31}\protected@file@percent }
-\newlabel{fig:conf_debyelen}{{6.6}{55}{Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted against the solution's debye-length $\lambda _D$ and expressed in terms of ion concentration $C$}{figure.caption.31}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. }}{56}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:diff_debyelen}{{6.7}{56}{Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions}{figure.caption.32}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces Effective confinement plotted against the particle's zeta-potential.}}{57}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:conf_zeta_debye}{{6.8}{57}{Effective confinement plotted against the particle's zeta-potential}{figure.caption.33}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.6}Surface Charge estimation}{57}{section.6.6}\protected@file@percent }
-\newlabel{eqn:surface_MLE}{{6.12}{57}{Surface Charge estimation}{equation.6.12}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces Distribution of $\hat  {B}$ Re-parameterized for the surface charge. $\hat  {\sigma } = 1/(A\cdot C)^2 \hat  {B}$ where $A,C$ are properly defined in \ref {eqn:electrostatic_forces}.}}{58}{figure.caption.34}\protected@file@percent }
-\newlabel{fig:B_estimation}{{6.9}{58}{Distribution of $\hat {B}$ Re-parameterized for the surface charge. $\hat {\sigma } = 1/(A\cdot C)^2 \hat {B}$ where $A,C$ are properly defined in \ref {eqn:electrostatic_forces}}{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}iSCAT Axial Inference}{59}{chapter.7}\protected@file@percent }
+\newlabel{eqn:67}{{6.8}{51}{Electrostatic Input Parameters}{equation.6.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Python Simulation Implementation}{51}{section.6.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Variables stored in the \textsc  {Param} class.}}{51}{table.caption.25}\protected@file@percent }
+\newlabel{tab:sim_params}{{6.1}{51}{Variables stored in the \textsc {Param} class}{table.caption.25}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces Methods of the \textsc  {Param} class.}}{52}{table.caption.26}\protected@file@percent }
+\newlabel{tab:sim_params}{{6.2}{52}{Methods of the \textsc {Param} class}{table.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Langevin simulation function \textsc  {StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal  {O}\left (n^1\right )$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor.}}{53}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:timecomplex1}{{6.2}{53}{Langevin simulation function \textsc {StepTraj} time complexity. Simulation parameters are set as default with $dt = 2\cdot 10^{-7}$. The number of simultaneous particles is $1$, and the number of recorded positions consists of all of the points in the trajectory. In big-O notation, the time complexity is $\mathcal {O}\left (n^1\right )$. Simulations performed on a 2020 MacBook Pro with ARM M1 processor}{figure.caption.27}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Langevin simulation function \textsc  {StepTraj} time complexity. Simulation parameters are set as Fig. \ref {fig:timecomplex1} with two parallel simulations.}}{53}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:timecomplex2}{{6.3}{53}{Langevin simulation function \textsc {StepTraj} time complexity. Simulation parameters are set as Fig. \ref {fig:timecomplex1} with two parallel simulations}{figure.caption.28}{}}
+\abx@aux@cite{0}{polyanin2017handbook}
+\abx@aux@segm{0}{0}{polyanin2017handbook}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Mean-Squared Displacement in Confinement}{54}{section.6.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Confined Brownian Particle realization of $z$ diffusion in electrostatic potential. The step-histogram is plotted in green. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$.}}{54}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:brown_realization1}{{6.4}{54}{Confined Brownian Particle realization of $z$ diffusion in electrostatic potential. The step-histogram is plotted in green. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$}{figure.caption.29}{}}
+\abx@aux@cite{0}{bickel_note_2007}
+\abx@aux@segm{0}{0}{bickel_note_2007}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Gibbs-Boltzmann equilibrium of a confined Brownian particle. The green histogram is the experimentally measured distribution while the blue line is the theoretical distribution. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$.}}{55}{figure.caption.30}\protected@file@percent }
+\newlabel{fig:brown_realization2}{{6.5}{55}{Gibbs-Boltzmann equilibrium of a confined Brownian particle. The green histogram is the experimentally measured distribution while the blue line is the theoretical distribution. Simulation input parameters are $a = \SI {50}{\nm }, \zeta _p = \SI {-3.5}{\milli \volt }, \sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {225}{\nm }, \lambda _D = \SI {100}{\nm }, T = \SI {300}{\kelvin }, \eta = \SI {1}{\milli \pascal \second }$}{figure.caption.30}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI {26000}{\nm ^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI {15000}{\nm ^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau $ consists of on exposure time of $\SI {200}{\micro \second }$. The Debye-length was fixed to $\lambda _D = \SI {10}{\nm }$. }}{56}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:xz_msd_comparison}{{6.6}{56}{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI {26000}{\nm ^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI {15000}{\nm ^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau $ consists of on exposure time of $\SI {200}{\micro \second }$. The Debye-length was fixed to $\lambda _D = \SI {10}{\nm }$}{figure.caption.31}{}}
+\abx@aux@cite{0}{israelachviliIntermolecularSurfaceForces}
+\abx@aux@segm{0}{0}{israelachviliIntermolecularSurfaceForces}
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Simulation Results}{57}{section.6.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted (left) against the solution's Debye-length $\lambda _D$ and (right) expressed in terms of ion concentration $C$. The blue dotted line represents the confinement lengths inferred from the average plateau values of 1000 simulated confined diffusions. The green dashed line represents the theoretical $L-2a$ confinement length, which results from the total length subtracted by the diameter of the particle. The particle parameters were chosen to be $a = \SI {50}{\nm }, \zeta = \SI {-30}{\milli \volt }$. The geometric conditions are: $\sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {500}{\nm }, T = \SI {300}{\kelvin }, \Delta t_i = \SI {0.2}{\micro \second }, \tau = \SI {200}{\micro \second }, \eta = \SI {1}{\milli \pascal \second }$.}}{57}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:conf_debyelen}{{6.7}{57}{Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted (left) against the solution's Debye-length $\lambda _D$ and (right) expressed in terms of ion concentration $C$. The blue dotted line represents the confinement lengths inferred from the average plateau values of 1000 simulated confined diffusions. The green dashed line represents the theoretical $L-2a$ confinement length, which results from the total length subtracted by the diameter of the particle. The particle parameters were chosen to be $a = \SI {50}{\nm }, \zeta = \SI {-30}{\milli \volt }$. The geometric conditions are: $\sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {500}{\nm }, T = \SI {300}{\kelvin }, \Delta t_i = \SI {0.2}{\micro \second }, \tau = \SI {200}{\micro \second }, \eta = \SI {1}{\milli \pascal \second }$}{figure.caption.32}{}}
+\abx@aux@cite{0}{vestergaardOptimalEstimationDiffusion2014}
+\abx@aux@segm{0}{0}{vestergaardOptimalEstimationDiffusion2014}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. The red dashed line represents the equality that the diffusion coefficient measured is the same as that input into the simulation. The blue dotted lines represent the ratio of diffusion coefficients measured using line-fitting of the first 3 points of the $\mathrm  {MSD}_x$. The particle parameters were chosen to be $a = \SI {50}{\nm }, \zeta = \SI {-30}{\milli \volt }$. The geometric conditions are: $\sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {500}{\nm }, T = \SI {300}{\kelvin }, \Delta t_i = \SI {0.2}{\micro \second }, \tau = \SI {200}{\micro \second }, \eta = \SI {1}{\milli \pascal \second }$.}}{58}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:diff_debyelen}{{6.8}{58}{Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. The red dashed line represents the equality that the diffusion coefficient measured is the same as that input into the simulation. The blue dotted lines represent the ratio of diffusion coefficients measured using line-fitting of the first 3 points of the $\mathrm {MSD}_x$. The particle parameters were chosen to be $a = \SI {50}{\nm }, \zeta = \SI {-30}{\milli \volt }$. The geometric conditions are: $\sigma _w = \SI {-2}{\milli \coulomb / \meter ^2}, L = \SI {500}{\nm }, T = \SI {300}{\kelvin }, \Delta t_i = \SI {0.2}{\micro \second }, \tau = \SI {200}{\micro \second }, \eta = \SI {1}{\milli \pascal \second }$}{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces Effective confinement plotted against the particle's zeta-potential. Each curve represents one Debye-length labelled on the right-hand side. The zeta-potential of the particle is varied on the $x$-axis, while the recovered confinement length is plotted on the $y$-axis. Simulation parameters are identical to that of Fig. \ref {fig:conf_debyelen}.}}{59}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:conf_zeta_debye}{{6.9}{59}{Effective confinement plotted against the particle's zeta-potential. Each curve represents one Debye-length labelled on the right-hand side. The zeta-potential of the particle is varied on the $x$-axis, while the recovered confinement length is plotted on the $y$-axis. Simulation parameters are identical to that of Fig. \ref {fig:conf_debyelen}}{figure.caption.34}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.6}Surface Charge estimation}{60}{section.6.6}\protected@file@percent }
+\newlabel{eqn:surface_MLE}{{6.12}{60}{Surface Charge estimation}{equation.6.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.10}{\ignorespaces Distribution of $\hat  {B}$ Re-parameterized for the surface charge. $\hat  {\sigma } = 1/(A\cdot C)^2 \hat  {B}$ where $A,C$ are properly defined in Eqn. \ref {eqn:amp1} and Eqn. \ref {eqn:amp2} .}}{61}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:B_estimation}{{6.10}{61}{Distribution of $\hat {B}$ Re-parameterized for the surface charge. $\hat {\sigma } = 1/(A\cdot C)^2 \hat {B}$ where $A,C$ are properly defined in Eqn. \ref {eqn:amp1} and Eqn. \ref {eqn:amp2} }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}iSCAT Axial Inference}{62}{chapter.7}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:ZEstimation}{{7}{59}{iSCAT Axial Inference}{chapter.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Method Overview}{59}{section.7.1}\protected@file@percent }
+\newlabel{chap:ZEstimation}{{7}{62}{iSCAT Axial Inference}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Method Overview}{62}{section.7.1}\protected@file@percent }
 \abx@aux@cite{0}{Kashkanova2022}
 \abx@aux@segm{0}{0}{Kashkanova2022}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Outline of the 3D particle-tracking pipeline.}}{60}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:method_outline}{{7.1}{60}{Outline of the 3D particle-tracking pipeline}{figure.caption.35}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Raw image background subtraction}{60}{section.7.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis.}}{61}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:raw2iscat}{{7.2}{61}{Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis}{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Outline of the 3D particle-tracking pipeline.}}{63}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:method_outline}{{7.1}{63}{Outline of the 3D particle-tracking pipeline}{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Raw image background subtraction}{63}{section.7.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis.}}{64}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:raw2iscat}{{7.2}{64}{Raw image captured on camera to background subtracted iSCAT image. Single particles are tracked and extracted for further analysis}{figure.caption.37}{}}
 \abx@aux@cite{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@segm{0}{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@cite{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@segm{0}{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@cite{0}{kashkanovaPrecisionSingleparticleLocalization2021}
 \abx@aux@segm{0}{0}{kashkanovaPrecisionSingleparticleLocalization2021}
-\@writefile{toc}{\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{62}{section.7.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Raw image to RVT. Gaussian fitting of the RVT is shown on both plots.}}{62}{figure.caption.37}\protected@file@percent }
-\newlabel{fig:transLoc}{{7.3}{62}{Raw image to RVT. Gaussian fitting of the RVT is shown on both plots}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}iSCAT $(x, y)$ Tracking}{65}{section.7.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Raw image to RVT. Gaussian fitting of the RVT is shown on both plots.}}{65}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:transLoc}{{7.3}{65}{Raw image to RVT. Gaussian fitting of the RVT is shown on both plots}{figure.caption.38}{}}
 \abx@aux@cite{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@segm{0}{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@cite{0}{parthasarathyRapidAccurateParticle2012}
@@ -560,29 +577,29 @@
 \abx@aux@segm{0}{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@cite{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@segm{0}{0}{parthasarathyRapidAccurateParticle2012}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \blx@tocontentsinit {0}\cite {parthasarathyRapidAccurateParticle2012}. Figure adapted from \blx@tocontentsinit {0}\cite {parthasarathyRapidAccurateParticle2012}. }}{63}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:RadialSym}{{7.4}{63}{Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \cite {parthasarathyRapidAccurateParticle2012}. Figure adapted from \cite {parthasarathyRapidAccurateParticle2012}}{figure.caption.38}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.4}Angular Integral}{64}{section.7.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Angular Integral demonstration on experimental polystyrene image. The polar distance, $\rho $ is plotted here where the red $\times $ symbol denotes the center of the image.}}{64}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:AngularInt}{{7.5}{64}{Angular Integral demonstration on experimental polystyrene image. The polar distance, $\rho $ is plotted here where the red $\times $ symbol denotes the center of the image}{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{64}{section.7.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \blx@tocontentsinit {0}\cite {parthasarathyRapidAccurateParticle2012}. Figure adapted from \blx@tocontentsinit {0}\cite {parthasarathyRapidAccurateParticle2012}. }}{66}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:RadialSym}{{7.4}{66}{Demonstration of the Radial Symmetry method applied onto RVT of iSCAT data. Implemented from \cite {parthasarathyRapidAccurateParticle2012}. Figure adapted from \cite {parthasarathyRapidAccurateParticle2012}}{figure.caption.39}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Angular Integral}{67}{section.7.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Angular Integral demonstration on experimental polystyrene image. The polar distance, $\rho $ is plotted here where the red $\times $ symbol denotes the center of the image.}}{67}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:AngularInt}{{7.5}{67}{Angular Integral demonstration on experimental polystyrene image. The polar distance, $\rho $ is plotted here where the red $\times $ symbol denotes the center of the image}{figure.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Nuisance parameter Estimation}{67}{section.7.5}\protected@file@percent }
 \abx@aux@cite{0}{wasserman2010statistics}
 \abx@aux@segm{0}{0}{wasserman2010statistics}
 \abx@aux@cite{0}{dewitPreciseCharacterizationNanometerscale2023}
 \abx@aux@segm{0}{0}{dewitPreciseCharacterizationNanometerscale2023}
-\@writefile{toc}{\contentsline {section}{\numberline {7.6}2D Chain-link}{66}{section.7.6}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text  {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$.}}{67}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:ipsf_sim}{{7.7}{67}{Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$}{figure.caption.41}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Viterbi Search algorithm toy example. Optimal path is chosen based on $z$ similarity and lowest loss.}}{67}{figure.caption.40}\protected@file@percent }
-\newlabel{fig:toyViterbi}{{7.6}{67}{Viterbi Search algorithm toy example. Optimal path is chosen based on $z$ similarity and lowest loss}{figure.caption.40}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{67}{section.7.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}}{68}{figure.caption.42}\protected@file@percent }
-\newlabel{fig:nuisance_fit}{{7.8}{68}{Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes}{figure.caption.42}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.8}3-parameter Estimation}{68}{section.7.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}}{69}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:fit_residuals}{{7.9}{69}{Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers}{figure.caption.43}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{69}{subsection.7.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.9}Conclusions}{69}{section.7.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}2D Chain-link}{69}{section.7.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text  {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$.}}{70}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:ipsf_sim}{{7.7}{70}{Simulated iPSF. Left. Projection of in-focus plane. Middle. $x,z$ projection. Right. $y,z$ projection. Focal scan is over $\SI {400}{\nm }$. pixel size is $\SI {55}{\nm }/\text {pixel}$. $\lambda = \SI {405}{\nm }$. Assumed particle radius $a = \SI {50}{\nm }$}{figure.caption.42}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Viterbi Search algorithm toy example. Optimal path is chosen based on $z$ similarity and lowest loss.}}{70}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:toyViterbi}{{7.6}{70}{Viterbi Search algorithm toy example. Optimal path is chosen based on $z$ similarity and lowest loss}{figure.caption.41}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.7}Simulated iPSF localization}{70}{section.7.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes.}}{71}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:nuisance_fit}{{7.8}{71}{Nuisance Parameter estimation for iPSF fits. Left. Amplitude factor. right. exponential decay factor. The exponential decay is not of utmost importance as it often is very small. it is kept for stability purposes}{figure.caption.43}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.8}3-parameter Estimation}{71}{section.7.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers.}}{72}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:fit_residuals}{{7.9}{72}{Fit residuals using no weighting scheme. reporting an absolute bias of 1 nm with variance of 2 nanometers}{figure.caption.44}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.8.1}Grid-Search Estimation}{72}{subsection.7.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.9}Conclusions}{72}{section.7.9}\protected@file@percent }
 \abx@aux@cite{0}{bian111YearsBrownian2016}
 \abx@aux@segm{0}{0}{bian111YearsBrownian2016}
 \abx@aux@cite{0}{cheng_formula_2008}
@@ -591,122 +608,122 @@
 \abx@aux@segm{0}{0}{Orbach1980}
 \abx@aux@cite{0}{Walter1986}
 \abx@aux@segm{0}{0}{Walter1986}
-\@writefile{toc}{\contentsline {chapter}{\numberline {8}Experimental Results}{70}{chapter.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Experimental Results}{73}{chapter.8}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:expresult}{{8}{70}{Experimental Results}{chapter.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces List of samples used in experiments for this thesis.}}{71}{table.caption.44}\protected@file@percent }
-\newlabel{tab:sample_list}{{8.1}{71}{List of samples used in experiments for this thesis}{table.caption.44}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.1}Experimental Setup}{72}{section.8.1}\protected@file@percent }
-\newlabel{sec:methods}{{8.1}{72}{Experimental Setup}{section.8.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}Optical System Schematic}{72}{subsection.8.1.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Schematic of iSCAT system from Chap. \ref {chap:iscatsetup}. See \ref {fig:schematic} for details.}}{72}{figure.caption.45}\protected@file@percent }
-\newlabel{fig:re_schematic}{{8.1}{72}{Schematic of iSCAT system from Chap. \ref {chap:iscatsetup}. See \ref {fig:schematic} for details}{figure.caption.45}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{73}{subsection.8.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Flow cell schematic. Left, diagram of flow-cell with sticker. Right, top and bottom coverslips of the flow cell separated.}}{73}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:cg_photo}{{8.2}{73}{Flow cell schematic. Left, diagram of flow-cell with sticker. Right, top and bottom coverslips of the flow cell separated}{figure.caption.46}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces flow-cell schematic and assembled flow-cell photograph.}}{73}{figure.caption.47}\protected@file@percent }
-\newlabel{fig:dia_photo}{{8.3}{73}{flow-cell schematic and assembled flow-cell photograph}{figure.caption.47}{}}
+\newlabel{chap:expresult}{{8}{73}{Experimental Results}{chapter.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8.1}{\ignorespaces List of samples used in experiments for this thesis.}}{74}{table.caption.45}\protected@file@percent }
+\newlabel{tab:sample_list}{{8.1}{74}{List of samples used in experiments for this thesis}{table.caption.45}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.1}Experimental Setup}{75}{section.8.1}\protected@file@percent }
+\newlabel{sec:methods}{{8.1}{75}{Experimental Setup}{section.8.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.1}Optical System Schematic}{75}{subsection.8.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8.1}{\ignorespaces Schematic of iSCAT system from Chap. \ref {chap:iscatsetup}. See \ref {fig:schematic} for details.}}{75}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:re_schematic}{{8.1}{75}{Schematic of iSCAT system from Chap. \ref {chap:iscatsetup}. See \ref {fig:schematic} for details}{figure.caption.46}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.2}Glass Flow-cell Preparation}{76}{subsection.8.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8.2}{\ignorespaces Flow cell schematic. Left, diagram of flow-cell with sticker. Right, top and bottom coverslips of the flow cell separated.}}{76}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:cg_photo}{{8.2}{76}{Flow cell schematic. Left, diagram of flow-cell with sticker. Right, top and bottom coverslips of the flow cell separated}{figure.caption.47}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.3}{\ignorespaces flow-cell schematic and assembled flow-cell photograph.}}{76}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:dia_photo}{{8.3}{76}{flow-cell schematic and assembled flow-cell photograph}{figure.caption.48}{}}
 \abx@aux@cite{0}{kamanzi_single-particle_2026}
 \abx@aux@segm{0}{0}{kamanzi_single-particle_2026}
 \abx@aux@cite{0}{berardPrecisionPlatformConvex2013}
 \abx@aux@segm{0}{0}{berardPrecisionPlatformConvex2013}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}Convex-lens Induced Confinement}{74}{subsection.8.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Sample Preparation Steps}{74}{subsection.8.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.3}Convex-lens Induced Confinement}{77}{subsection.8.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1.4}Sample Preparation Steps}{77}{subsection.8.1.4}\protected@file@percent }
 \abx@aux@cite{0}{kamanzi_simultaneous_2021}
 \abx@aux@segm{0}{0}{kamanzi_simultaneous_2021}
 \abx@aux@cite{0}{Kulkarni2017}
 \abx@aux@segm{0}{0}{Kulkarni2017}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference.}}{75}{figure.caption.48}\protected@file@percent }
-\newlabel{fig:c7_fig1}{{8.4}{75}{Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference}{figure.caption.48}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces DLS results for Polystyrene beads in MilliQ water.}}{75}{figure.caption.49}\protected@file@percent }
-\newlabel{fig:beads_DLS}{{8.5}{75}{DLS results for Polystyrene beads in MilliQ water}{figure.caption.49}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8.2}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm  {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{76}{table.caption.50}\protected@file@percent }
-\newlabel{tab:zeta_beads}{{8.2}{76}{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample}{table.caption.50}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{77}{section.8.2}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8.3}{\ignorespaces List of experiments.}}{77}{table.caption.51}\protected@file@percent }
-\newlabel{tab:1_sample_list}{{8.3}{77}{List of experiments}{table.caption.51}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces Spatial density of the average trajectory of particles. }}{77}{figure.caption.52}\protected@file@percent }
-\newlabel{fig:trajectory_ensemble}{{8.6}{77}{Spatial density of the average trajectory of particles}{figure.caption.52}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement.}}{78}{figure.caption.53}\protected@file@percent }
-\newlabel{fig:c7_fig3}{{8.7}{78}{Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement}{figure.caption.53}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius.}}{79}{figure.caption.54}\protected@file@percent }
-\newlabel{fig:FWHM_PBS}{{8.8}{79}{Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius}{figure.caption.54}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations. }}{80}{figure.caption.55}\protected@file@percent }
-\newlabel{fig:radxradz_PBS}{{8.9}{80}{Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations}{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.4}{\ignorespaces Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference.}}{78}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:c7_fig1}{{8.4}{78}{Convex-lens induced confinement schematic. Two glass coverslips, separated by a $\SI {30}{\micro \meter }$ spacer are confined with a convex-lens pusher. The height between the coverslips is voltage-regulated to nanometer precision. Nanoparticle of radius $\SI {50}{\nm }$ pictured for reference}{figure.caption.49}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.5}{\ignorespaces DLS results for Polystyrene beads in MilliQ water.}}{78}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:beads_DLS}{{8.5}{78}{DLS results for Polystyrene beads in MilliQ water}{figure.caption.50}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8.2}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm  {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{79}{table.caption.51}\protected@file@percent }
+\newlabel{tab:zeta_beads}{{8.2}{79}{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample}{table.caption.51}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.2}Electrostatics Effects on Polystyrene Bead Diffusion in PBS}{80}{section.8.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8.3}{\ignorespaces List of experiments.}}{80}{table.caption.52}\protected@file@percent }
+\newlabel{tab:1_sample_list}{{8.3}{80}{List of experiments}{table.caption.52}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.6}{\ignorespaces Spatial density of the average trajectory of particles. }}{80}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:trajectory_ensemble}{{8.6}{80}{Spatial density of the average trajectory of particles}{figure.caption.53}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.7}{\ignorespaces Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement.}}{81}{figure.caption.54}\protected@file@percent }
+\newlabel{fig:c7_fig3}{{8.7}{81}{Probability density for three different concentrations of PBS. The blue line has a concentration of $0.1\%$ PBS, green has a concentration of $0.01\%$ PBS, and orange has a concentration of $0.00001\%$ PBS. The horizontal axis is the $z$-axis position of the particle. The vertical axis is the frequency of position measurement}{figure.caption.54}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.8}{\ignorespaces Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius.}}{82}{figure.caption.55}\protected@file@percent }
+\newlabel{fig:FWHM_PBS}{{8.8}{82}{Relationship between the FWHM and $a_{xy}$, where FWHM is the full-width half maximum of the positional histogram, and $a_{xy}$ is the particle radius}{figure.caption.55}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.9}{\ignorespaces Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations. }}{83}{figure.caption.56}\protected@file@percent }
+\newlabel{fig:radxradz_PBS}{{8.9}{83}{Plotted is the radius estimated by axial exploration compared to inferred transverse size of particles for various ionic concentrations}{figure.caption.56}{}}
 \abx@aux@cite{0}{behrensChargeGlassSilica2001}
 \abx@aux@segm{0}{0}{behrensChargeGlassSilica2001}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$.}}{81}{figure.caption.56}\protected@file@percent }
-\newlabel{fig:charge_est}{{8.10}{81}{Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$}{figure.caption.56}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.10}{\ignorespaces Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$.}}{84}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:charge_est}{{8.10}{84}{Surface charge estimation via MLE of $\SI {100}{\nm }$ polystyrene beads in 0.00001\% PBS solution. Imaging conducted at $\SI {400}{\fps }$}{figure.caption.57}{}}
 \abx@aux@cite{0}{cheng_formula_2008}
 \abx@aux@segm{0}{0}{cheng_formula_2008}
 \abx@aux@cite{0}{cheng_formula_2008}
 \abx@aux@segm{0}{0}{cheng_formula_2008}
 \abx@aux@cite{0}{cheng_formula_2008}
 \abx@aux@segm{0}{0}{cheng_formula_2008}
-\@writefile{toc}{\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{82}{section.8.3}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8.4}{\ignorespaces List of samples.}}{82}{table.caption.57}\protected@file@percent }
-\newlabel{tab:2_sample_list}{{8.4}{82}{List of samples}{table.caption.57}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.11}{\ignorespaces Glycerol-water curve. The theoretical line plotted is used from Cheng et al. \blx@tocontentsinit {0}\cite {cheng_formula_2008}.}}{82}{figure.caption.58}\protected@file@percent }
-\newlabel{fig:gly_curve}{{8.11}{82}{Glycerol-water curve. The theoretical line plotted is used from Cheng et al. \cite {cheng_formula_2008}}{figure.caption.58}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.12}{\ignorespaces Trajectory of a polystrene bead in glycerol. The red dot and blue square show the initial and final position respectfully.}}{83}{figure.caption.59}\protected@file@percent }
-\newlabel{fig:long_Range_gly_traj}{{8.12}{83}{Trajectory of a polystrene bead in glycerol. The red dot and blue square show the initial and final position respectfully}{figure.caption.59}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.13}{\ignorespaces Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {580}{\fps }$.}}{84}{figure.caption.60}\protected@file@percent }
-\newlabel{fig:gly_msd}{{8.13}{84}{Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {580}{\fps }$}{figure.caption.60}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.14}{\ignorespaces Theoretical diffusivity shown in orange using the linear-superposition theory (LST). Measured diffusivity of $7$ particle traces are plotted in blue. Each point is a portion of a single trajectory. The ensemble distribution is plotted in light blue.}}{85}{figure.caption.61}\protected@file@percent }
-\newlabel{fig:c7_fig4}{{8.14}{85}{Theoretical diffusivity shown in orange using the linear-superposition theory (LST). Measured diffusivity of $7$ particle traces are plotted in blue. Each point is a portion of a single trajectory. The ensemble distribution is plotted in light blue}{figure.caption.61}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{86}{section.8.4}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {8.5}{\ignorespaces List of LNP species}}{86}{table.caption.62}\protected@file@percent }
-\newlabel{tab:3_sample_list}{{8.5}{86}{List of LNP species}{table.caption.62}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.15}{\ignorespaces DLS measurements of LNP samples. The blue, green and orange plot denote the liposomal, $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully.}}{86}{figure.caption.63}\protected@file@percent }
-\newlabel{fig:LNP_DLS}{{8.15}{86}{DLS measurements of LNP samples. The blue, green and orange plot denote the liposomal, $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully}{figure.caption.63}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {8.6}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm  {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{87}{table.caption.64}\protected@file@percent }
-\newlabel{tab:zeta}{{8.6}{87}{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample}{table.caption.64}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.16}{\ignorespaces Probability histogram of LNP axial position. Plotted in green and orange are the $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully. The liposomal, LNPs were too small to be tracked over a long-range and are hence omitted.}}{87}{figure.caption.65}\protected@file@percent }
-\newlabel{fig:lnp_pos_hist}{{8.16}{87}{Probability histogram of LNP axial position. Plotted in green and orange are the $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully. The liposomal, LNPs were too small to be tracked over a long-range and are hence omitted}{figure.caption.65}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8.17}{\ignorespaces Ensemble MSD of LNP formalations. Plotted in blue and green are the $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {400}{\fps }$. The red line in the right-plot display the expected MSD plateaus for particles of radius $20, 50\mathrm  { nm}$ in order of increasing boldness. The $25\mathrm  { mM}$ NaAC traces contain ensemble information of 3 traces. The $300\mathrm  { mM}$ NaAC traces contain ensemble information of 2 traces.}}{88}{figure.caption.66}\protected@file@percent }
-\newlabel{fig:lnp_gly_msd}{{8.17}{88}{Ensemble MSD of LNP formalations. Plotted in blue and green are the $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {400}{\fps }$. The red line in the right-plot display the expected MSD plateaus for particles of radius $20, 50\mathrm { nm}$ in order of increasing boldness. The $25\mathrm { mM}$ NaAC traces contain ensemble information of 3 traces. The $300\mathrm { mM}$ NaAC traces contain ensemble information of 2 traces}{figure.caption.66}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion}{90}{chapter.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8.3}Polystyrene Transient Diffusion}{85}{section.8.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8.4}{\ignorespaces List of samples.}}{85}{table.caption.58}\protected@file@percent }
+\newlabel{tab:2_sample_list}{{8.4}{85}{List of samples}{table.caption.58}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.11}{\ignorespaces Glycerol-water curve. The theoretical line plotted is used from Cheng et al. \blx@tocontentsinit {0}\cite {cheng_formula_2008}.}}{85}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:gly_curve}{{8.11}{85}{Glycerol-water curve. The theoretical line plotted is used from Cheng et al. \cite {cheng_formula_2008}}{figure.caption.59}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.12}{\ignorespaces Trajectory of a polystrene bead in glycerol. The red dot and blue square show the initial and final position respectfully.}}{86}{figure.caption.60}\protected@file@percent }
+\newlabel{fig:long_Range_gly_traj}{{8.12}{86}{Trajectory of a polystrene bead in glycerol. The red dot and blue square show the initial and final position respectfully}{figure.caption.60}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.13}{\ignorespaces Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {580}{\fps }$.}}{87}{figure.caption.61}\protected@file@percent }
+\newlabel{fig:gly_msd}{{8.13}{87}{Mean-squared displacement of glycerol-slowed polystyrene beads. Axial MSD is clearly convergent to the confinement length. The confinement length is fixed at $225$ nm and the particle's estimated size is $a=\SI {50}{\nm }$. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {580}{\fps }$}{figure.caption.61}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.14}{\ignorespaces Theoretical diffusivity shown in orange using the linear-superposition theory (LST). Measured diffusivity of $7$ particle traces are plotted in blue. Each point is a portion of a single trajectory. The ensemble distribution is plotted in light blue.}}{88}{figure.caption.62}\protected@file@percent }
+\newlabel{fig:c7_fig4}{{8.14}{88}{Theoretical diffusivity shown in orange using the linear-superposition theory (LST). Measured diffusivity of $7$ particle traces are plotted in blue. Each point is a portion of a single trajectory. The ensemble distribution is plotted in light blue}{figure.caption.62}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8.4}LNP Axial Diffusion}{89}{section.8.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {8.5}{\ignorespaces List of LNP species}}{89}{table.caption.63}\protected@file@percent }
+\newlabel{tab:3_sample_list}{{8.5}{89}{List of LNP species}{table.caption.63}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.15}{\ignorespaces DLS measurements of LNP samples. The blue, green and orange plot denote the liposomal, $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully.}}{89}{figure.caption.64}\protected@file@percent }
+\newlabel{fig:LNP_DLS}{{8.15}{89}{DLS measurements of LNP samples. The blue, green and orange plot denote the liposomal, $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully}{figure.caption.64}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8.6}{\ignorespaces Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm  {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample.}}{90}{table.caption.65}\protected@file@percent }
+\newlabel{tab:zeta}{{8.6}{90}{Electrophoretic zeta-potential statistics from three consecutive measurements per sample. The average zeta-potential $\langle \zeta \rangle $, standard deviation $\sigma _\zeta $, relative standard deviation $\mathrm {RSD}$, minimum $\zeta _{\min }$, and maximum values $\zeta _{\max }$ are displayed for each sample}{table.caption.65}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.16}{\ignorespaces Probability histogram of LNP axial position. Plotted in green and orange are the $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully. The liposomal, LNPs were too small to be tracked over a long-range and are hence omitted.}}{90}{figure.caption.66}\protected@file@percent }
+\newlabel{fig:lnp_pos_hist}{{8.16}{90}{Probability histogram of LNP axial position. Plotted in green and orange are the $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully. The liposomal, LNPs were too small to be tracked over a long-range and are hence omitted}{figure.caption.66}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8.17}{\ignorespaces Ensemble MSD of LNP formalations. Plotted in blue and green are the $25\mathrm  { mM}$ NaAC, and $300\mathrm  { mM}$ NaAC LNP formulations respectfully. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {400}{\fps }$. The red line in the right-plot display the expected MSD plateaus for particles of radius $20, 50\mathrm  { nm}$ in order of increasing boldness. The $25\mathrm  { mM}$ NaAC traces contain ensemble information of 3 traces. The $300\mathrm  { mM}$ NaAC traces contain ensemble information of 2 traces.}}{91}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:lnp_gly_msd}{{8.17}{91}{Ensemble MSD of LNP formalations. Plotted in blue and green are the $25\mathrm { mM}$ NaAC, and $300\mathrm { mM}$ NaAC LNP formulations respectfully. The lag time, $\tau $ is plotted in frame indices. Each unit of $\tau $ represents one frame at $\SI {400}{\fps }$. The red line in the right-plot display the expected MSD plateaus for particles of radius $20, 50\mathrm { nm}$ in order of increasing boldness. The $25\mathrm { mM}$ NaAC traces contain ensemble information of 3 traces. The $300\mathrm { mM}$ NaAC traces contain ensemble information of 2 traces}{figure.caption.67}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusion}{93}{chapter.9}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {9.1}Conclusion}{90}{section.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9.1}Conclusion}{93}{section.9.1}\protected@file@percent }
 \abx@aux@cite{0}{gardiner2009stochastic}
 \abx@aux@segm{0}{0}{gardiner2009stochastic}
 \abx@aux@cite{0}{onsager1953fluctuations1}
 \abx@aux@segm{0}{0}{onsager1953fluctuations1}
 \abx@aux@cite{0}{machlup1953fluctuations2}
 \abx@aux@segm{0}{0}{machlup1953fluctuations2}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{103}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Surface Charge Estimator Derivation}{106}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{app:1}{{A}{103}{Surface Charge Estimator Derivation}{appendix.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}$\hat  B$ Maximum Likelihood Estimator}{103}{section.A.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}$\hat  {B}$ Variance}{105}{section.A.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{106}{appendix.B}\protected@file@percent }
+\newlabel{app:1}{{A}{106}{Surface Charge Estimator Derivation}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}$\hat  B$ Maximum Likelihood Estimator}{106}{section.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}$\hat  {B}$ Variance}{108}{section.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Self-Consistent Diffusion Recovery}{109}{appendix.B}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{app:3}{{B}{106}{Self-Consistent Diffusion Recovery}{appendix.B}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{107}{appendix.C}\protected@file@percent }
+\newlabel{app:3}{{B}{109}{Self-Consistent Diffusion Recovery}{appendix.B}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Axial Estimation Algorithm Pseudocode}{110}{appendix.C}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces List of functions presented in appendix. Function names and descriptions are listed.}}{107}{table.caption.68}\protected@file@percent }
-\newlabel{app:funclist}{{C.1}{107}{List of functions presented in appendix. Function names and descriptions are listed}{table.caption.68}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Raw image stack $\rightarrow $ iSCAT contrast stack}}{108}{algorithm.1}\protected@file@percent }
-\newlabel{alg:raw2iscat}{{1}{108}{Raw image stack $\rightarrow $ iSCAT contrast stack}{algorithm.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {C.1}{\ignorespaces List of functions presented in appendix. Function names and descriptions are listed.}}{110}{table.caption.69}\protected@file@percent }
+\newlabel{app:funclist}{{C.1}{110}{List of functions presented in appendix. Function names and descriptions are listed}{table.caption.69}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Raw image stack $\rightarrow $ iSCAT contrast stack}}{111}{algorithm.1}\protected@file@percent }
+\newlabel{alg:raw2iscat}{{1}{111}{Raw image stack $\rightarrow $ iSCAT contrast stack}{algorithm.1}{}}
 \abx@aux@cite{0}{parthasarathyRapidAccurateParticle2012}
 \abx@aux@segm{0}{0}{parthasarathyRapidAccurateParticle2012}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Transverse Localization algorithm}}{109}{algorithm.2}\protected@file@percent }
-\newlabel{alg:2d_track}{{2}{109}{Transverse Localization algorithm}{algorithm.2}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Discrete radial profile (angular average over a wedge)}}{110}{algorithm.3}\protected@file@percent }
-\newlabel{alg:rad_int}{{3}{110}{Discrete radial profile (angular average over a wedge)}{algorithm.3}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Nuisance-parameter estimation by profiled grid search + local refinement}}{111}{algorithm.4}\protected@file@percent }
-\newlabel{alg:nuisance_est}{{4}{111}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
-\newlabel{ln:E0}{{13}{111}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
-\newlabel{ln:L}{{14}{111}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
-\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}}{112}{algorithm.5}\protected@file@percent }
-\newlabel{alg:best_chain_2d}{{5}{112}{Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}{algorithm.5}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Transverse Localization algorithm}}{112}{algorithm.2}\protected@file@percent }
+\newlabel{alg:2d_track}{{2}{112}{Transverse Localization algorithm}{algorithm.2}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Discrete radial profile (angular average over a wedge)}}{113}{algorithm.3}\protected@file@percent }
+\newlabel{alg:rad_int}{{3}{113}{Discrete radial profile (angular average over a wedge)}{algorithm.3}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Nuisance-parameter estimation by profiled grid search + local refinement}}{114}{algorithm.4}\protected@file@percent }
+\newlabel{alg:nuisance_est}{{4}{114}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
+\newlabel{ln:E0}{{13}{114}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
+\newlabel{ln:L}{{14}{114}{Nuisance-parameter estimation by profiled grid search + local refinement}{algorithm.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}}{115}{algorithm.5}\protected@file@percent }
+\newlabel{alg:best_chain_2d}{{5}{115}{Dynamic program for the optimal 2D chain of candidate points, Viterbi Algorithm}{algorithm.5}{}}
 \gdef\svg@ink@ver@settings{{\m@ne }{inkscape}{\m@ne }}
-\abx@aux@read@bbl@mdfivesum{0A777FFA5AFC2EC14A3C938BF5CC8F2C}
+\abx@aux@read@bbl@mdfivesum{FC867BF1D7991B9FED898393EF0FCDFF}
 \abx@aux@defaultrefcontext{0}{fujiwara_confined_2016}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{gu_design_2026}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{millanNumericalSimulationsConfined2023}{none/global//global/global/global}
@@ -807,6 +824,7 @@
 \abx@aux@defaultrefcontext{0}{OrtegaArroyo2016}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{harris2020array}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{lam2015numba}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{polyanin2017handbook}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Kashkanova2022}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{kashkanovaPrecisionSingleparticleLocalization2021}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{parthasarathyRapidAccurateParticle2012}{none/global//global/global/global}
@@ -819,4 +837,4 @@
 \abx@aux@defaultrefcontext{0}{gardiner2009stochastic}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{onsager1953fluctuations1}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{machlup1953fluctuations2}{none/global//global/global/global}
-\gdef \@abspage@last{130}
+\gdef \@abspage@last{133}

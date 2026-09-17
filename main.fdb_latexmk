@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1789605824.70618 "main.bcf" "main.bbl" "main" 1789606030.19268 0
-  "main.bcf" 1789606029.9747 125919 35778cbfd082b18e6079b040c3db8a83 "pdflatex"
-  "references.bib" 1789588757.25595 121721 ce9fe6e86bf1b7c7b08fd0e97a057c9f ""
+["biber main"] 1789669896.93122 "main.bcf" "main.bbl" "main" 1789671760.44158 0
+  "main.bcf" 1789671760.22293 126454 0f0e641675a9fadc00aa7b15112d7c56 "pdflatex"
+  "references.bib" 1789668467.81346 122080 c96b95aacba9b40228964c155c914942 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1789606023.28524 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1789606030.19306 0
+["pdflatex"] 1789671753.6033 "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" "main.pdf" "main" 1789671760.44191 0
   "/Users/korsk/Documents/Github/mj_MASc_2026/main.tex" 1789602287.02898 11796 1267a6c0137aa7cc3275a839ed943a7b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -45,7 +45,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm" 1136768653 1524 554068197b70979a55370e6c6495f441 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
@@ -299,9 +298,9 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "A1.tex" 1788811028.3749 21004 c5d0484472d68dd450868aec2028a693 ""
   "ABSTRACT.tex" 1789425779.07228 7496 55175c1ac19d95d65b76f99a2cb69723 ""
-  "C1.tex" 1789606021.72019 81469 23593b73716b83616c1a21211368880c ""
+  "C1.tex" 1789667188.70864 81503 de584a8bb362f8f5059ef31fe634e3cd ""
   "C2.tex" 1788909586.04946 34654 dab4f26ec16c8d4efa89e723af604bfe ""
-  "C3.tex" 1789416279.04337 60007 1c36b70a3fd4b030db44f751c05e8b10 ""
+  "C3.tex" 1789671752.42154 67809 63e8bcad227e3faea4784f9e2aec8144 ""
   "CONC.tex" 1785689657.56162 4464 92a96ec66b01dad60e7c4b49a5ea47e7 ""
   "Figures/LangevinTimeComplexity.pdf" 1788811028.37864 40954 df1547054ca2ec356b2dadc04b4d77ec ""
   "Figures/LangevinTimeComplexity_mis2.pdf" 1788811028.37957 40910 55cec5d6cdae1ef9cb8571e15e0d19aa ""
@@ -354,14 +353,14 @@
   "Python/Figures/surface_charge_estimation_variance.pdf" 1785355381.48781 43526 6964251568674f608f7f453de6513160 ""
   "Python/Figures/viterbi_toy.pdf" 1784405191.14894 43902 3fabfc612d2b95991cce473909f1a376 ""
   "Python/Figures/xz_msd_comparison.pdf" 1783707502.83493 76066 b727ccedcdf52f2758f8227cfc8b980f ""
-  "main.aux" 1789606029.92422 77037 045453d654758327a7d998db42d823bc "pdflatex"
-  "main.bbl" 1789605826.91244 284743 0a777ffa5afc2ec14a3c938bf5cc8f2c "biber main"
-  "main.lof" 1789606029.97557 14391 79dfe984d7151cae32d2a7ead12b1ad0 "pdflatex"
-  "main.lot" 1789606029.97554 2145 95ab7e9d7e7d61923e02b188cff7e10a "pdflatex"
-  "main.out" 1789606029.97349 12483 5b76d4b88a7300c8c11b4cc4443f7b02 "pdflatex"
-  "main.run.xml" 1789606029.97543 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
+  "main.aux" 1789671760.17144 82707 c9d1abbccaf90f934fcbca0ffc35e7c4 "pdflatex"
+  "main.bbl" 1789669899.87597 286322 fc867bf1d7991b9fed898393ef0fcdff "biber main"
+  "main.lof" 1789671760.22375 16750 b2bf9be0e9037bc97860cd9c2971a9cb "pdflatex"
+  "main.lot" 1789671760.22372 2145 a6a430d65bef34ff92e08bc29426bcc5 "pdflatex"
+  "main.out" 1789671760.22192 12483 5b76d4b88a7300c8c11b4cc4443f7b02 "pdflatex"
+  "main.run.xml" 1789671760.22361 2346 fa9a0d6f2a763d80363dbecf9de71ca1 "pdflatex"
   "main.tex" 1789602287.02898 11796 1267a6c0137aa7cc3275a839ed943a7b ""
-  "main.toc" 1789606029.9755 5689 c00a5c024cdee18f5b7781c6b7c3efd1 "pdflatex"
+  "main.toc" 1789671760.22369 5689 e768cb603afd0d3d765b51ef4f344f4c "pdflatex"
   "preface.tex" 1789406241.4644 2482 eec9d68f014385cae69506624d78a03a ""
   (generated)
   "main.aux"

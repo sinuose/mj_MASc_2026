@@ -608,7 +608,6 @@ INPUT ./Python/Figures/realization.pdf
 INPUT ./Python/Figures/realization.pdf
 INPUT ./Python/Figures/realization.pdf
 INPUT ./Python/Figures/realization.pdf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./Python/Figures/boltzmann.pdf
 INPUT ./Python/Figures/boltzmann.pdf
 INPUT ./Python/Figures/boltzmann.pdf

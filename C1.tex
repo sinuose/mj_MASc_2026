@@ -284,7 +284,7 @@ In this thesis, a double-electric potential for a sphere-plate system was assume
     B = C_{pw} \Gamma_p \Gamma_w\,,
 \end{equation}
 where  $C$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ are terms associated with the Stern layer, the layer of ions closest to the surface of the geometry, of the wall and the particle \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces}. The values of the amplitudes are chosen based on literature. Firstly, the amplitudes $\Gamma$ are shown as the plate-plate interactions between two plates at a fixed zeta-potential, which is the potential at the Stern layer. This is written for the ionic strength of the sphere and wall 
-\begin{equation}
+\begin{equation}\label{eqn:amp1}
     \begin{aligned}
         \Gamma_w &= \tanh\left(\frac{e \psi_w}{4k_b T}\right)\\
         \Gamma_p &= \tanh\left(\frac{e \zeta_p}{4k_b T}\right)\\
@@ -293,7 +293,7 @@ where  $C$ is a fixed amplitude due to charge density, and $\Gamma_w, \Gamma_p$ 
 \end{equation}
 where $\Gamma_w$ is related to walls zeta-potential $\psi_w$. The zeta-potential is taken from Ref. \cite{israelachviliIntermolecularSurfaceForces} and is chosen to be related to the surface charge density of the wall for a more intuitive measurable of a wall-like structure. Here $\Gamma_p$ is the amplitude from the particle, where $\zeta_p$ is the measured zeta-potential from an experimental device\footnote{See Chap. \ref{chap:expresult} for device discussion.}. The charge density amplitude, written as $C$, is approximated by the Grahame equation written on a sphere which describes the potential of an isolated charged surfaced in the presence of ions \cite{israelachviliIntermolecularSurfaceForces};
 
-\begin{equation}
+\begin{equation}\label{eqn:amp2}
     C_\mathrm{pw} = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}
 \end{equation}
 
@@ -733,7 +733,7 @@ The camera noise consists of electronic noise associated with the model and elec
 In the case of using an imperfect lens, or a set of lenses as one has with an objective as one does in high magnification microscopy, there is a risk of spherical aberration. Spherical aberrations are caused by imperfections and misalignments in the lens itself. Additionally, this can be caused by having a beam waist too large for the lens, where the approximations that lead to a Gaussian beam break down. This cases the focal point of the lens to be slightly different depending on which area the light is focused by lens \cite{hecht2017optics}. For imaging purposes, spherical aberrations cause various parts of the image to be out of focus, while others are in focus, creating non-uniform images.
 
 
-can also be caused by having a beam too large for the lens, whence the approximations which lead to the aforementioned Gaussian beam break down
+% can also be caused by having a beam too large for the lens, whence the approximations which lead to the aforementioned Gaussian beam break down
 
 
 

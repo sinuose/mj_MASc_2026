@@ -5518,6 +5518,45 @@
       \endverb
       \keyw{LLVM,Python,compiler,JIT}
     \endentry
+    \entry{polyanin2017handbook}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=3840c0aee864c4ba3a78b479e2167ec2}{%
+           family={Polyanin},
+           familyi={P\bibinitperiod},
+           given={Andrei\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=84677336d4a4a557c88603e145cf499f}{%
+           family={Zaitsev},
+           familyi={Z\bibinitperiod},
+           given={Valentin\bibnamedelima F.},
+           giveni={V\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{fullhash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{fullhashraw}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{bibnamehash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{authorbibnamehash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{authornamehash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{authorfullhash}{7160661ce3dd91f9e78a2f3897f8725d}
+      \strng{authorfullhashraw}{7160661ce3dd91f9e78a2f3897f8725d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{isbn}{9781466569379}
+      \field{title}{Handbook of Ordinary Differential Equations: Exact Solutions, Methods, and Problems}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1201/9781315117638
+      \endverb
+    \endentry
     \entry{Kashkanova2022}{article}{}{}
       \name{author}{5}{}{%
         {{hash=f6ad9870aeabd2fced16ed32bef1352f}{%

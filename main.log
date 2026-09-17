@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 SEP 2026 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  17 SEP 2026 12:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1212,13 +1212,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [11]
 
-[12])
+[12]
+
+[13])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
 
-
-[13]
 
 [14] [15
 
@@ -1240,7 +1240,7 @@ l.10
       [1
 
 ]
-<Figures/size-comp.jpg, id=728, 942.4008pt x 869.1672pt>
+<Figures/size-comp.jpg, id=756, 942.4008pt x 869.1672pt>
 File: Figures/size-comp.jpg Graphic file (type jpg)
 <use Figures/size-comp.jpg>
 Package pdftex.def Info: Figures/size-comp.jpg  used on input line 17.
@@ -1284,12 +1284,12 @@ Chapter 2.
 [14
 
 ]
-<Python/Figures/Mobility_coefficient.pdf, id=936, 435.13855pt x 219.64319pt>
+<Python/Figures/Mobility_coefficient.pdf, id=964, 435.13855pt x 219.64319pt>
 File: Python/Figures/Mobility_coefficient.pdf Graphic file (type pdf)
 <use Python/Figures/Mobility_coefficient.pdf>
 Package pdftex.def Info: Python/Figures/Mobility_coefficient.pdf  used on input line 211.
 (pdftex.def)             Requested size: 407.66833pt x 205.78091pt.
-<Python/Figures/diffusion_self_consistent_example.pdf, id=941, 435.74963pt x 216.17097pt>
+<Python/Figures/diffusion_self_consistent_example.pdf, id=969, 435.74963pt x 216.17097pt>
 File: Python/Figures/diffusion_self_consistent_example.pdf Graphic file (type pdf)
 <use Python/Figures/diffusion_self_consistent_example.pdf>
 Package pdftex.def Info: Python/Figures/diffusion_self_consistent_example.pdf  used on input line 224.
@@ -1331,17 +1331,17 @@ Package siunitx Warning: Unit macro \angstrom has been deprecated in this
 (siunitx)                
 (siunitx)                \DeclareSIUnit\angstrom{\text {Å}}
 
-<Figures/lipid_library_no_circ.pdf, id=1095, 1331.97626pt x 801.99625pt>
+<Figures/lipid_library_no_circ.pdf, id=1121, 1331.97626pt x 801.99625pt>
 File: Figures/lipid_library_no_circ.pdf Graphic file (type pdf)
 <use Figures/lipid_library_no_circ.pdf>
 Package pdftex.def Info: Figures/lipid_library_no_circ.pdf  used on input line 361.
 (pdftex.def)             Requested size: 203.83417pt x 122.72949pt.
-<Python/Figures/mRNA_LNP_NIST.pdf, id=1096, 213.81982pt x 190.86507pt>
+<Python/Figures/mRNA_LNP_NIST.pdf, id=1122, 213.81982pt x 190.86507pt>
 File: Python/Figures/mRNA_LNP_NIST.pdf Graphic file (type pdf)
 <use Python/Figures/mRNA_LNP_NIST.pdf>
 Package pdftex.def Info: Python/Figures/mRNA_LNP_NIST.pdf  used on input line 365.
 (pdftex.def)             Requested size: 158.54152pt x 141.52335pt.
-<Figures/bleb_perspective.png, id=1105, 560.0925pt x 202.7575pt>
+<Figures/bleb_perspective.png, id=1131, 560.0925pt x 202.7575pt>
 File: Figures/bleb_perspective.png Graphic file (type png)
 <use Figures/bleb_perspective.png>
 Package pdftex.def Info: Figures/bleb_perspective.png  used on input line 376.
@@ -1351,7 +1351,7 @@ Package pdftex.def Info: Figures/bleb_perspective.png  used on input line 376.
 [23
 
  <./Figures/lipid_library_no_circ.pdf> <./Python/Figures/mRNA_LNP_NIST.pdf>]
-<Figures/lnp_blebs_cryo2.jpg, id=1142, 106.38144pt x 59.11687pt>
+<Figures/lnp_blebs_cryo2.jpg, id=1168, 106.38144pt x 59.11687pt>
 File: Figures/lnp_blebs_cryo2.jpg Graphic file (type jpg)
 <use Figures/lnp_blebs_cryo2.jpg>
 Package pdftex.def Info: Figures/lnp_blebs_cryo2.jpg  used on input line 385.
@@ -1383,7 +1383,7 @@ Chapter 4.
 [29]
 
 [30]
-<Python/Figures/RayleighScatter.pdf, id=1229, 440.27858pt x 216.17097pt>
+<Python/Figures/RayleighScatter.pdf, id=1255, 440.27858pt x 216.17097pt>
 File: Python/Figures/RayleighScatter.pdf Graphic file (type pdf)
 <use Python/Figures/RayleighScatter.pdf>
 Package pdftex.def Info: Python/Figures/RayleighScatter.pdf  used on input line 564.
@@ -1413,12 +1413,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [36
 
 ]
-<Figures/iimaging_diagram_simple.pdf, id=1316, 543.97644pt x 396.43439pt>
+<Figures/iimaging_diagram_simple.pdf, id=1342, 543.97644pt x 396.43439pt>
 File: Figures/iimaging_diagram_simple.pdf Graphic file (type pdf)
 <use Figures/iimaging_diagram_simple.pdf>
 Package pdftex.def Info: Figures/iimaging_diagram_simple.pdf  used on input line 702.
 (pdftex.def)             Requested size: 163.06795pt x 118.84048pt.
-<Figures/imaging_diagram.pdf, id=1317, 208.78pt x 161.60374pt>
+<Figures/imaging_diagram.pdf, id=1343, 208.78pt x 161.60374pt>
 File: Figures/imaging_diagram.pdf Graphic file (type pdf)
 <use Figures/imaging_diagram.pdf>
 Package pdftex.def Info: Figures/imaging_diagram.pdf  used on input line 705.
@@ -1443,7 +1443,7 @@ Chapter 5.
 [40
 
 ]
-<Figures/schematic.pdf, id=1371, 321.38756pt x 190.2634pt>
+<Figures/schematic.pdf, id=1397, 321.38756pt x 190.2634pt>
 File: Figures/schematic.pdf Graphic file (type pdf)
 <use Figures/schematic.pdf>
 Package pdftex.def Info: Figures/schematic.pdf  used on input line 41.
@@ -1451,7 +1451,7 @@ Package pdftex.def Info: Figures/schematic.pdf  used on input line 41.
 
 
 [41 <./Figures/schematic.pdf>]
-<Figures/OpticsImage/isometrix_annotated_1.pdf, id=1515, 1445.4pt x 813.0375pt>
+<Figures/OpticsImage/isometrix_annotated_1.pdf, id=1541, 1445.4pt x 813.0375pt>
 File: Figures/OpticsImage/isometrix_annotated_1.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/isometrix_annotated_1.pdf>
 Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_1.pdf  used on input line 63.
@@ -1460,7 +1460,7 @@ Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_1.pdf  used on 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/OpticsImage/isometrix_annotated_2.pdf, id=1516, 1445.4pt x 813.0375pt>
+<Figures/OpticsImage/isometrix_annotated_2.pdf, id=1542, 1445.4pt x 813.0375pt>
 File: Figures/OpticsImage/isometrix_annotated_2.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/isometrix_annotated_2.pdf>
 Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_2.pdf  used on input line 70.
@@ -1468,7 +1468,7 @@ Package pdftex.def Info: Figures/OpticsImage/isometrix_annotated_2.pdf  used on 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/OpticsImage/laser_driver.pdf, id=1517, 670.04515pt x 363.43515pt>
+<Figures/OpticsImage/laser_driver.pdf, id=1543, 670.04515pt x 363.43515pt>
 File: Figures/OpticsImage/laser_driver.pdf Graphic file (type pdf)
 <use Figures/OpticsImage/laser_driver.pdf>
 Package pdftex.def Info: Figures/OpticsImage/laser_driver.pdf  used on input line 77.
@@ -1500,119 +1500,135 @@ Chapter 6.
 ]
 
 [48]
-<Python/Figures/langevin_diagram.pdf, id=1589, 393.47545pt x 362.20767pt>
+
+[49]
+<Python/Figures/langevin_diagram.pdf, id=1627, 393.47545pt x 362.20767pt>
 File: Python/Figures/langevin_diagram.pdf Graphic file (type pdf)
 <use Python/Figures/langevin_diagram.pdf>
-Package pdftex.def Info: Python/Figures/langevin_diagram.pdf  used on input line 207.
+Package pdftex.def Info: Python/Figures/langevin_diagram.pdf  used on input line 214.
 (pdftex.def)             Requested size: 362.37569pt x 333.5833pt.
 
 
-[49 <./Python/Figures/langevin_diagram.pdf>]
+[50
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[50]
-<Figures/LangevinTimeComplexity.pdf, id=1644, 441.65pt x 219.82124pt>
-File: Figures/LangevinTimeComplexity.pdf Graphic file (type pdf)
-<use Figures/LangevinTimeComplexity.pdf>
-Package pdftex.def Info: Figures/LangevinTimeComplexity.pdf  used on input line 295.
-(pdftex.def)             Requested size: 452.9679pt x 225.4658pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/LangevinTimeComplexity_mis2.pdf, id=1645, 441.65pt x 217.81375pt>
-File: Figures/LangevinTimeComplexity_mis2.pdf Graphic file (type pdf)
-<use Figures/LangevinTimeComplexity_mis2.pdf>
-Package pdftex.def Info: Figures/LangevinTimeComplexity_mis2.pdf  used on input line 302.
-(pdftex.def)             Requested size: 452.9679pt x 223.40675pt.
+ <./Python/Figures/langevin_diagram.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [51]
+<Figures/LangevinTimeComplexity.pdf, id=1683, 441.65pt x 219.82124pt>
+File: Figures/LangevinTimeComplexity.pdf Graphic file (type pdf)
+<use Figures/LangevinTimeComplexity.pdf>
+Package pdftex.def Info: Figures/LangevinTimeComplexity.pdf  used on input line 301.
+(pdftex.def)             Requested size: 452.9679pt x 225.4658pt.
 
-[52 <./Figures/LangevinTimeComplexity.pdf> <./Figures/LangevinTimeComplexity_mis2.pdf
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Figures/LangevinTimeComplexity_mis2.pdf, id=1684, 441.65pt x 217.81375pt>
+File: Figures/LangevinTimeComplexity_mis2.pdf Graphic file (type pdf)
+<use Figures/LangevinTimeComplexity_mis2.pdf>
+Package pdftex.def Info: Figures/LangevinTimeComplexity_mis2.pdf  used on input line 308.
+(pdftex.def)             Requested size: 452.9679pt x 223.40675pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[52]
+
+[53 <./Figures/LangevinTimeComplexity.pdf> <./Figures/LangevinTimeComplexity_mis2.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/LangevinTimeComplexity_mis2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Python/Figures/realization.pdf, id=1897, 565.83313pt x 255.1245pt>
+<Python/Figures/realization.pdf, id=1936, 565.83313pt x 255.1245pt>
 File: Python/Figures/realization.pdf Graphic file (type pdf)
 <use Python/Figures/realization.pdf>
-Package pdftex.def Info: Python/Figures/realization.pdf  used on input line 316.
+Package pdftex.def Info: Python/Figures/realization.pdf  used on input line 325.
 (pdftex.def)             Requested size: 452.9679pt x 204.24pt.
-<Python/Figures/boltzmann.pdf, id=1898, 412.94841pt x 274.626pt>
+<Python/Figures/boltzmann.pdf, id=1937, 412.94841pt x 274.626pt>
 File: Python/Figures/boltzmann.pdf Graphic file (type pdf)
 <use Python/Figures/boltzmann.pdf>
-Package pdftex.def Info: Python/Figures/boltzmann.pdf  used on input line 321.
+Package pdftex.def Info: Python/Figures/boltzmann.pdf  used on input line 333.
 (pdftex.def)             Requested size: 317.07614pt x 210.87181pt.
 
-Overfull \hbox (99.95561pt too wide) in paragraph at lines 320--323
-[] []
- []
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[53
+[54
 
- <./Python/Figures/realization.pdf> <./Python/Figures/boltzmann.pdf>]
-<Python/Figures/xz_msd_comparison.pdf, id=1924, 497.94029pt x 224.037pt>
+ <./Python/Figures/realization.pdf>]
+<Python/Figures/xz_msd_comparison.pdf, id=1957, 497.94029pt x 224.037pt>
 File: Python/Figures/xz_msd_comparison.pdf Graphic file (type pdf)
 <use Python/Figures/xz_msd_comparison.pdf>
-Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 337.
+Package pdftex.def Info: Python/Figures/xz_msd_comparison.pdf  used on input line 348.
 (pdftex.def)             Requested size: 452.9679pt x 203.80219pt.
 
 
-[54 <./Python/Figures/xz_msd_comparison.pdf>]
-<Python/Figures/conf_debyelength.pdf, id=1947, 498.86375pt x 224.84pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[55 <./Python/Figures/boltzmann.pdf>]
+
+[56 <./Python/Figures/xz_msd_comparison.pdf>]
+<Python/Figures/conf_debyelength.pdf, id=1998, 498.86375pt x 224.84pt>
 File: Python/Figures/conf_debyelength.pdf Graphic file (type pdf)
 <use Python/Figures/conf_debyelength.pdf>
-Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 358.
+Package pdftex.def Info: Python/Figures/conf_debyelength.pdf  used on input line 370.
 (pdftex.def)             Requested size: 452.9679pt x 204.16214pt.
 
 
-[55 <./Python/Figures/conf_debyelength.pdf>]
-<Python/Figures/diff_debye.pdf, id=2266, 439.6425pt x 217.81375pt>
+[57
+
+ <./Python/Figures/conf_debyelength.pdf>]
+<Python/Figures/diff_debye.pdf, id=2317, 439.6425pt x 217.81375pt>
 File: Python/Figures/diff_debye.pdf Graphic file (type pdf)
 <use Python/Figures/diff_debye.pdf>
-Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 375.
+Package pdftex.def Info: Python/Figures/diff_debye.pdf  used on input line 385.
 (pdftex.def)             Requested size: 452.9679pt x 224.42377pt.
-<Python/Figures/conf_zeta_debye.png, id=2269, 572.01704pt x 223.91655pt>
+
+
+[58 <./Python/Figures/diff_debye.pdf>]
+<Python/Figures/conf_zeta_debye.png, id=2910, 572.01704pt x 223.91655pt>
 File: Python/Figures/conf_zeta_debye.png Graphic file (type png)
 <use Python/Figures/conf_zeta_debye.png>
-Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 389.
+Package pdftex.def Info: Python/Figures/conf_zeta_debye.png  used on input line 397.
 (pdftex.def)             Requested size: 452.9679pt x 177.31921pt.
 
 
-[56 <./Python/Figures/diff_debye.pdf>]
-
-[57 <./Python/Figures/conf_zeta_debye.png>]
-<Python/Figures/B_estimation_hist.pdf, id=2872, 433.5274pt x 217.9221pt>
+[59 <./Python/Figures/conf_zeta_debye.png>]
+<Python/Figures/B_estimation_hist.pdf, id=2926, 433.5274pt x 217.9221pt>
 File: Python/Figures/B_estimation_hist.pdf Graphic file (type pdf)
 <use Python/Figures/B_estimation_hist.pdf>
-Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 426.
+Package pdftex.def Info: Python/Figures/B_estimation_hist.pdf  used on input line 425.
 (pdftex.def)             Requested size: 452.9679pt x 227.70769pt.
 
 
-[58 <./Python/Figures/B_estimation_hist.pdf>]
+[60
+
+]
+
+[61 <./Python/Figures/B_estimation_hist.pdf>]
 Chapter 7.
 
 
-[59
+[62
 
 ]
-<Python/Figures/NormalizationPipeline.pdf, id=2904, 455.30101pt x 212.52344pt>
+<Python/Figures/NormalizationPipeline.pdf, id=2966, 455.30101pt x 212.52344pt>
 File: Python/Figures/NormalizationPipeline.pdf Graphic file (type pdf)
 <use Python/Figures/NormalizationPipeline.pdf>
-Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 483.
+Package pdftex.def Info: Python/Figures/NormalizationPipeline.pdf  used on input line 482.
 (pdftex.def)             Requested size: 362.37569pt x 169.15312pt.
-<Python/Figures/NormalizationPipelineThird.pdf, id=2905, 231.26399pt x 231.61751pt>
+<Python/Figures/NormalizationPipelineThird.pdf, id=2967, 231.26399pt x 231.61751pt>
 File: Python/Figures/NormalizationPipelineThird.pdf Graphic file (type pdf)
 <use Python/Figures/NormalizationPipelineThird.pdf>
-Package pdftex.def Info: Python/Figures/NormalizationPipelineThird.pdf  used on input line 490.
+Package pdftex.def Info: Python/Figures/NormalizationPipelineThird.pdf  used on input line 489.
 (pdftex.def)             Requested size: 226.48395pt x 226.84222pt.
 
 
@@ -1620,110 +1636,110 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[60]
+[63]
 
-[61 <./Python/Figures/NormalizationPipeline.pdf> <./Python/Figures/NormalizationPipelineThird.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 516.
-
+[64 <./Python/Figures/NormalizationPipeline.pdf> <./Python/Figures/NormalizationPipelineThird.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 516.
+(hyperref)                removing `math shift' on input line 515.
 
-<Python/Figures/Raw2RVT.pdf, id=2960, 305.78642pt x 161.27858pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 515.
+
+<Python/Figures/Raw2RVT.pdf, id=3022, 305.78642pt x 161.27858pt>
 File: Python/Figures/Raw2RVT.pdf Graphic file (type pdf)
 <use Python/Figures/Raw2RVT.pdf>
-Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 522.
+Package pdftex.def Info: Python/Figures/Raw2RVT.pdf  used on input line 521.
 (pdftex.def)             Requested size: 452.9679pt x 238.90755pt.
 
 
-[62 <./Python/Figures/Raw2RVT.pdf>]
-<Python/Figures/RadialSymExample.pdf, id=2986, 372.44862pt x 242.22061pt>
+[65 <./Python/Figures/Raw2RVT.pdf>]
+<Python/Figures/RadialSymExample.pdf, id=3047, 372.44862pt x 242.22061pt>
 File: Python/Figures/RadialSymExample.pdf Graphic file (type pdf)
 <use Python/Figures/RadialSymExample.pdf>
-Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 539.
+Package pdftex.def Info: Python/Figures/RadialSymExample.pdf  used on input line 538.
 (pdftex.def)             Requested size: 362.37569pt x 235.67441pt.
 
 
-[63 <./Python/Figures/RadialSymExample.pdf>]
-<Python/Figures/AngularInt.pdf, id=3003, 346.89601pt x 202.356pt>
+[66 <./Python/Figures/RadialSymExample.pdf>]
+<Python/Figures/AngularInt.pdf, id=3064, 346.89601pt x 202.356pt>
 File: Python/Figures/AngularInt.pdf Graphic file (type pdf)
 <use Python/Figures/AngularInt.pdf>
-Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 562.
+Package pdftex.def Info: Python/Figures/AngularInt.pdf  used on input line 561.
 (pdftex.def)             Requested size: 452.9679pt x 264.24535pt.
 
 
-[64 <./Python/Figures/AngularInt.pdf>]
+[67 <./Python/Figures/AngularInt.pdf>]
 
-[65]
-<Python/Figures/viterbi_toy.pdf, id=3041, 419.166pt x 274.626pt>
+[68]
+<Python/Figures/viterbi_toy.pdf, id=3104, 419.166pt x 274.626pt>
 File: Python/Figures/viterbi_toy.pdf Graphic file (type pdf)
 <use Python/Figures/viterbi_toy.pdf>
-Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 617.
+Package pdftex.def Info: Python/Figures/viterbi_toy.pdf  used on input line 616.
 (pdftex.def)             Requested size: 362.37569pt x 237.4225pt.
 
 
-[66]
-<Python/Figures/sim_ipsf.pdf, id=3049, 687.70567pt x 246.92203pt>
+[69]
+<Python/Figures/sim_ipsf.pdf, id=3112, 687.70567pt x 246.92203pt>
 File: Python/Figures/sim_ipsf.pdf Graphic file (type pdf)
 <use Python/Figures/sim_ipsf.pdf>
-Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 692.
+Package pdftex.def Info: Python/Figures/sim_ipsf.pdf  used on input line 691.
 (pdftex.def)             Requested size: 452.9679pt x 162.64124pt.
 
 
-[67 <./Python/Figures/sim_ipsf.pdf> <./Python/Figures/viterbi_toy.pdf>]
-<Python/Figures/nuisance_param.pdf, id=3113, 563.70598pt x 274.626pt>
+[70 <./Python/Figures/sim_ipsf.pdf> <./Python/Figures/viterbi_toy.pdf>]
+<Python/Figures/nuisance_param.pdf, id=3175, 563.70598pt x 274.626pt>
 File: Python/Figures/nuisance_param.pdf Graphic file (type pdf)
 <use Python/Figures/nuisance_param.pdf>
-Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 713.
+Package pdftex.def Info: Python/Figures/nuisance_param.pdf  used on input line 712.
 (pdftex.def)             Requested size: 452.9679pt x 220.68166pt.
 
 
-[68 <./Python/Figures/nuisance_param.pdf>]
-<Python/Figures/simulation_fit_residual.pdf, id=3131, 484.49583pt x 284.94914pt>
+[71 <./Python/Figures/nuisance_param.pdf>]
+<Python/Figures/simulation_fit_residual.pdf, id=3192, 484.49583pt x 284.94914pt>
 File: Python/Figures/simulation_fit_residual.pdf Graphic file (type pdf)
 <use Python/Figures/simulation_fit_residual.pdf>
-Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 724.
+Package pdftex.def Info: Python/Figures/simulation_fit_residual.pdf  used on input line 723.
 (pdftex.def)             Requested size: 452.9679pt x 266.41739pt.
 ) (./C2.tex
 
-[69 <./Python/Figures/simulation_fit_residual.pdf>]
+[72 <./Python/Figures/simulation_fit_residual.pdf>]
 Chapter 8.
 
 
-[70
+[73
 
 
 ]
 
-[71]
+[74]
 File: Figures/schematic.pdf Graphic file (type pdf)
 <use Figures/schematic.pdf>
 Package pdftex.def Info: Figures/schematic.pdf  used on input line 60.
 (pdftex.def)             Requested size: 362.37569pt x 214.53642pt.
 
 
-[72
+[75
 
 ]
-<Figures/clic_flowcell_okay.pdf, id=3192, 5258.97267pt x 1779.13376pt>
+<Figures/clic_flowcell_okay.pdf, id=3255, 5258.97267pt x 1779.13376pt>
 File: Figures/clic_flowcell_okay.pdf Graphic file (type pdf)
 <use Figures/clic_flowcell_okay.pdf>
 Package pdftex.def Info: Figures/clic_flowcell_okay.pdf  used on input line 71.
 (pdftex.def)             Requested size: 452.9679pt x 153.2197pt.
-<Figures/clic_chuck_very_good.pdf, id=3194, 637.04497pt x 211.4415pt>
+<Figures/clic_chuck_very_good.pdf, id=3257, 637.04497pt x 211.4415pt>
 File: Figures/clic_chuck_very_good.pdf Graphic file (type pdf)
 <use Figures/clic_chuck_very_good.pdf>
 Package pdftex.def Info: Figures/clic_chuck_very_good.pdf  used on input line 79.
 (pdftex.def)             Requested size: 452.9679pt x 150.3471pt.
 
 
-[73 <./Figures/clic_flowcell_okay.pdf> <./Figures/clic_chuck_very_good.pdf
+[76 <./Figures/clic_flowcell_okay.pdf> <./Figures/clic_chuck_very_good.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/clic_chuck_very_good.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<Figures/clic_very_good.pdf, id=3271, 812.8681pt x 289.33673pt>
+<Figures/clic_very_good.pdf, id=3332, 812.8681pt x 289.33673pt>
 File: Figures/clic_very_good.pdf Graphic file (type pdf)
 <use Figures/clic_very_good.pdf>
 Package pdftex.def Info: Figures/clic_very_good.pdf  used on input line 97.
@@ -1734,23 +1750,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[74]
-<Python/Figures/beads_DLS_size.pdf, id=3285, 438.8052pt x 216.17097pt>
+[77]
+<Python/Figures/beads_DLS_size.pdf, id=3346, 438.8052pt x 216.17097pt>
 File: Python/Figures/beads_DLS_size.pdf Graphic file (type pdf)
 <use Python/Figures/beads_DLS_size.pdf>
 Package pdftex.def Info: Python/Figures/beads_DLS_size.pdf  used on input line 109.
 (pdftex.def)             Requested size: 452.9679pt x 223.15665pt.
 
 
-[75 <./Figures/clic_very_good.pdf> <./Python/Figures/beads_DLS_size.pdf>]
+[78 <./Figures/clic_very_good.pdf> <./Python/Figures/beads_DLS_size.pdf>]
 
-[76]
-<Python/Figures/density.pdf, id=3369, 580.35172pt x 215.29555pt>
+[79]
+<Python/Figures/density.pdf, id=3431, 580.35172pt x 215.29555pt>
 File: Python/Figures/density.pdf Graphic file (type pdf)
 <use Python/Figures/density.pdf>
 Package pdftex.def Info: Python/Figures/density.pdf  used on input line 180.
 (pdftex.def)             Requested size: 452.9679pt x 168.03825pt.
-<Python/Figures/Chapter7/c7_fig3.pdf, id=3371, 419.166pt x 202.35521pt>
+<Python/Figures/Chapter7/c7_fig3.pdf, id=3433, 419.166pt x 202.35521pt>
 File: Python/Figures/Chapter7/c7_fig3.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/c7_fig3.pdf>
 Package pdftex.def Info: Python/Figures/Chapter7/c7_fig3.pdf  used on input line 191.
@@ -1760,61 +1776,64 @@ Package pdftex.def Info: Python/Figures/Chapter7/c7_fig3.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: Reference `fig:brown_realization' on page 80 undefined on input line 196.
 
-[77
+
+
+[80
 
  <./Python/Figures/density.pdf>]
 
-[78 <./Python/Figures/Chapter7/c7_fig3.pdf>]
-<Python/Figures/FWHM_PBS.pdf, id=3416, 318.69032pt x 311.68904pt>
+[81 <./Python/Figures/Chapter7/c7_fig3.pdf>]
+<Python/Figures/FWHM_PBS.pdf, id=3478, 318.69032pt x 311.68904pt>
 File: Python/Figures/FWHM_PBS.pdf Graphic file (type pdf)
 <use Python/Figures/FWHM_PBS.pdf>
 Package pdftex.def Info: Python/Figures/FWHM_PBS.pdf  used on input line 202.
 (pdftex.def)             Requested size: 452.9679pt x 443.0153pt.
 
 
-[79
+[82
 
  <./Python/Figures/FWHM_PBS.pdf>]
-<Python/Figures/RadxvsRadz_PBS.pdf, id=3440, 318.69032pt x 311.68904pt>
+<Python/Figures/RadxvsRadz_PBS.pdf, id=3501, 318.69032pt x 311.68904pt>
 File: Python/Figures/RadxvsRadz_PBS.pdf Graphic file (type pdf)
 <use Python/Figures/RadxvsRadz_PBS.pdf>
 Package pdftex.def Info: Python/Figures/RadxvsRadz_PBS.pdf  used on input line 215.
 (pdftex.def)             Requested size: 452.9679pt x 443.0153pt.
 
 
-[80 <./Python/Figures/RadxvsRadz_PBS.pdf>]
-<Python/Figures/surface_charge_estimation_means.pdf, id=3466, 265.45885pt x 256.87564pt>
+[83 <./Python/Figures/RadxvsRadz_PBS.pdf>]
+<Python/Figures/surface_charge_estimation_means.pdf, id=3527, 265.45885pt x 256.87564pt>
 File: Python/Figures/surface_charge_estimation_means.pdf Graphic file (type pdf)
 <use Python/Figures/surface_charge_estimation_means.pdf>
 Package pdftex.def Info: Python/Figures/surface_charge_estimation_means.pdf  used on input line 228.
 (pdftex.def)             Requested size: 221.95676pt x 214.7824pt.
-<Python/Figures/surface_charge_estimation_variance.pdf, id=3467, 265.45885pt x 257.55162pt>
+<Python/Figures/surface_charge_estimation_variance.pdf, id=3528, 265.45885pt x 257.55162pt>
 File: Python/Figures/surface_charge_estimation_variance.pdf Graphic file (type pdf)
 <use Python/Figures/surface_charge_estimation_variance.pdf>
 Package pdftex.def Info: Python/Figures/surface_charge_estimation_variance.pdf  used on input line 231.
 (pdftex.def)             Requested size: 221.95676pt x 215.34761pt.
 
 
-[81
+[84
 
  <./Python/Figures/surface_charge_estimation_means.pdf> <./Python/Figures/surface_charge_estimation_variance.pdf>]
-<Python/Figures/glycerol_curve.pdf, id=3505, 379.69955pt x 255.68005pt>
+<Python/Figures/glycerol_curve.pdf, id=3565, 379.69955pt x 255.68005pt>
 File: Python/Figures/glycerol_curve.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_curve.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_curve.pdf  used on input line 264.
 (pdftex.def)             Requested size: 362.37569pt x 244.01826pt.
 
 
-[82
+[85
 
  <./Python/Figures/glycerol_curve.pdf>]
-<Python/Figures/glycerol_sample_trajectory.pdf, id=3526, 250.9375pt x 231.86626pt>
+<Python/Figures/glycerol_sample_trajectory.pdf, id=3587, 250.9375pt x 231.86626pt>
 File: Python/Figures/glycerol_sample_trajectory.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_sample_trajectory.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_sample_trajectory.pdf  used on input line 276.
 (pdftex.def)             Requested size: 339.72592pt x 313.94348pt.
-<Python/Figures/glycerol_MSD.pdf, id=3528, 419.166pt x 202.356pt>
+<Python/Figures/glycerol_MSD.pdf, id=3589, 419.166pt x 202.356pt>
 File: Python/Figures/glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_MSD.pdf  used on input line 286.
@@ -1825,91 +1844,91 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[83
+[86
 
  <./Python/Figures/glycerol_sample_trajectory.pdf>]
 
-[84 <./Python/Figures/glycerol_MSD.pdf>]
-<Python/Figures/glycerol_diffusivity_relation.pdf, id=6579, 434.82402pt x 290.28403pt>
+[87 <./Python/Figures/glycerol_MSD.pdf>]
+<Python/Figures/glycerol_diffusivity_relation.pdf, id=6641, 434.82402pt x 290.28403pt>
 File: Python/Figures/glycerol_diffusivity_relation.pdf Graphic file (type pdf)
 <use Python/Figures/glycerol_diffusivity_relation.pdf>
 Package pdftex.def Info: Python/Figures/glycerol_diffusivity_relation.pdf  used on input line 298.
 (pdftex.def)             Requested size: 452.9679pt x 302.40207pt.
 
 
-[85
+[88
 
  <./Python/Figures/glycerol_diffusivity_relation.pdf>]
-<Python/Figures/DLS_size.pdf, id=6618, 438.8052pt x 216.17097pt>
+<Python/Figures/DLS_size.pdf, id=6679, 438.8052pt x 216.17097pt>
 File: Python/Figures/DLS_size.pdf Graphic file (type pdf)
 <use Python/Figures/DLS_size.pdf>
 Package pdftex.def Info: Python/Figures/DLS_size.pdf  used on input line 339.
 (pdftex.def)             Requested size: 452.9679pt x 223.15665pt.
 
 
-[86
+[89
 
  <./Python/Figures/DLS_size.pdf>]
-<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=6632, 419.166pt x 274.626pt>
+<Python/Figures/Chapter7/lnp_pos_hist.pdf, id=6692, 419.166pt x 274.626pt>
 File: Python/Figures/Chapter7/lnp_pos_hist.pdf Graphic file (type pdf)
 <use Python/Figures/Chapter7/lnp_pos_hist.pdf>
 Package pdftex.def Info: Python/Figures/Chapter7/lnp_pos_hist.pdf  used on input line 374.
 (pdftex.def)             Requested size: 419.16498pt x 274.62532pt.
 
 
-[87 <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]
-<Python/Figures/LNP_glycerol_MSD.pdf, id=6648, 419.166pt x 202.356pt>
+[90 <./Python/Figures/Chapter7/lnp_pos_hist.pdf>]
+<Python/Figures/LNP_glycerol_MSD.pdf, id=6708, 419.166pt x 202.356pt>
 File: Python/Figures/LNP_glycerol_MSD.pdf Graphic file (type pdf)
 <use Python/Figures/LNP_glycerol_MSD.pdf>
 Package pdftex.def Info: Python/Figures/LNP_glycerol_MSD.pdf  used on input line 385.
 (pdftex.def)             Requested size: 452.9679pt x 218.67708pt.
 )
 
-[88 <./Python/Figures/LNP_glycerol_MSD.pdf>]
+[91 <./Python/Figures/LNP_glycerol_MSD.pdf>]
 
-[89]
+[92]
 Chapter 9.
 (./CONC.tex
 
-[90
+[93
 
 ])
 
-[91]
+[94]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
 
-[92
+[95
 
 ]
-
-[93]
-
-[94]
-
-[95]
 
 [96]
 
 [97]
 
 [98]
+
+[99]
+
+[100]
+
+[101]
 Overfull \hbox (3.27136pt too wide) in paragraph at lines 330--330
 \OT1/cmr/m/n/12 (-20) Dimensional Track-ing of Nanopar-ti-cles Us-ing In-ter-fer-o-met-ric Scat-ter-ing Mi-croscopy''.
  []
 
 
 
-[99]
-
-[100]
-
-[101] (./A1.tex
-
 [102]
+
+[103]
+
+[104] (./A1.tex
+
+[105]
 Appendix A.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1921,7 +1940,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[103
+[106
 
 ]
 
@@ -1934,35 +1953,35 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[104]
+[107]
 
-[105]
+[108]
 Appendix B.
 
 
-[106
+[109
 
 
 ]
 Appendix C.
 
 
-[107
+[110
 
 
 ]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 118.
 
 
-[108
+[111
 
 ]
 
-[109
+[112
 
 ]
 
-[110
+[113
 
 ]
 Overfull \hbox (32.91022pt too wide) in paragraph at lines 322--328
@@ -1971,17 +1990,20 @@ Overfull \hbox (32.91022pt too wide) in paragraph at lines 322--328
 
 
 
-[111
+[114
 
 ])
 
-[112
+[115
 
 ] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1993,13 +2015,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 59078 strings out of 473190
- 1382616 string characters out of 5715801
- 2454458 words of memory out of 5000000
- 80826 multiletter control sequences out of 15000+600000
- 590490 words of font info for 272 fonts, out of 8000000 for 9000
+ 59086 strings out of 473190
+ 1382827 string characters out of 5715801
+ 2458565 words of memory out of 5000000
+ 80830 multiletter control sequences out of 15000+600000
+ 590096 words of font info for 270 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,13n,121p,2066b,2098s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.29} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{Hfootnote.28} has been referenced but does not exist, replaced by a fixed one
 
@@ -2085,10 +2110,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (130 pages, 50002150 bytes).
+Output written on main.pdf (133 pages, 50013441 bytes).
 PDF statistics:
- 7214 PDF objects out of 7423 (max. 8388607)
- 5390 compressed objects within 54 object streams
- 513 named destinations out of 1000 (max. 500000)
- 65823 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 7278 PDF objects out of 7423 (max. 8388607)
+ 5448 compressed objects within 55 object streams
+ 519 named destinations out of 1000 (max. 500000)
+ 63775 words of extra memory for PDF output out of 74296 (max. 10000000)
 

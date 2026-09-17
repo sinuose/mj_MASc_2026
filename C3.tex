@@ -152,78 +152,84 @@ Using the software, statistical averages of the particle motion was calculating 
 
 \section{Simulation Equations}
 
-The general Langevin equation is generally written as
+The general Langevin equation, discussed in Chap. \ref{chap:brownianmotion}, consists of a classical equation of motion with a stochastic form term. In a general system, the equation is written as
 \begin{equation}
-    m \ddot{\vec{x}}(t) = -\lambda \dot{\vec{x}}(t) + \vec{F}(t) + \Gamma \vec{W}(t)\,,
+    m \ddot{\vec{x}}(t) = -\gamma \dot{\vec{x}}(t) + \vec{F}(t) + \Gamma \vec{W}(t)\,,
 \end{equation}
-where $\lambda$ is a velocity dependent friction coefficient, $\Gamma$ is the magnitude of fluctuation, $\vec{F}(t)$ is a deterministic force, and $\vec{W}(t)$ is a vector random variable. 
+where $\gamma$ is the drag coefficient, $\Gamma$ is the magnitude of fluctuation, $\vec{F}(t)$ is a deterministic force, and $\vec{W}(t)$ is a vector random variable. 
 
-The Langevin equation programmed into the software is described as 
+The Langevin equation programmed into the software is parameterized in terms of the position dependent friction coefficient, $\gamma(z)$; specifically an axially dependent hydrodynamic friction depending on how close the particle is to a surface. Additionally the stochastic magnitude, $\Gamma$, is substituted with a relation associated by the fluctuation-dissipation theorem. The equation is written as
 \begin{equation}
-    m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t)\,,
+    m\ddot{\vec{x}}(t) = - \gamma(z) \dot{\vec{x}}(t) + \vec F(\vec{x}(t)) + \sqrt{2k_b T \gamma(z)} \vec{W}(t)\,.
 \end{equation}
-where physical magnitudes are implemented; $\gamma(z)$ is an axially dependent hydrodynamic friction depending on how close the particle is to a surface. The diffusion coefficient in an axially dependent friction is written using the Stokes-Einstein relation,
-\begin{equation}
+In this form, the diffusion coefficient becomes axially dependent due to the axially dependent friction. The Stokes-Einstein relation then reads as,
+\begin{equation}\label{eqn:stokes2}
     D(z) = \frac{k_b T}{\gamma(z)}\,.
 \end{equation}
 
-In over-damped case, where $m \ddot{\vec{x}} \ll 1$, the  the equations of motion can be written as
+In over-damped case, where $m \ddot{\vec{x}} \ll 1$, the  the equations of motion can split into the transverse and axial motion as they are independent, coupled solely by the diffusion. Here, we assume that the inertia term is negligible, meaning the velocity does not affect dynamics. The transverse motion will have no external forces, only being modulated by the diffusion coefficient.
 \begin{equation} \label{eqn:EOM}
     \begin{aligned}
-        \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t) \\
-        \frac{dz}{dt} &= \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\gamma(z)}\,,
+        \frac{dx}{dt} &= \sqrt{2D_x(z)} W_x(t)\,,
     \end{aligned}
 \end{equation}
-as described in Eqn. 7 of Ref. \cite{millanNumericalSimulationsConfined2023}. This model is especially valid for particles of diameter between $\SI{10}{\nm} - \SI{100}{\micro \meter}$. This model is valid for particle such as PMMA, carboxylate-modified polystyrene, and similar materials. 
+where the diffusion coefficient, from Eqn. \ref{eqn:stokes2}, is substituted inside of the magnitude of stochastic force. The axial equation of motion is modulated by the external force associated with the electrostatics and hydrodynamics of approaching any given surfaces. Without defining boundary conditions, this is written as
+\begin{equation}
+    \frac{dz}{dt} = \sqrt{2D_z(z)} W_z(t) + \frac{F_z(z)}{\gamma(z)}\,,
+\end{equation}
+as described in Eqn. 7 of Ref. \cite{millanNumericalSimulationsConfined2023}. The validity of this model 
+% This model is especially valid for particles of diameter between $\SI{10}{\nm} - \SI{100}{\micro \meter}$. This model is valid for particle such as PMMA, carboxylate-modified polystyrene, and similar materials. 
 
-Since $\vec{W}(t)$ is a random, non-analytical function, classical ODE methods of time evolution do not apply. To simulate the stochastic portion, the Euler-Maruyama method was used.
+Since $\vec{W}(t)$ is a random, non-analytical function, classical ODE methods of time evolution do not apply. To simulate the stochastic portion, the Euler-Maruyama method was used.\footnote{The Euler-Maruyama method was chosen due to use in prior publications such as Ref. \cite{millanNumericalSimulationsConfined2023} and a lack of time during laboratory work. Further considerations should be made towards higher order techniques such as the Milstein or Itô-Taylor approach, however, these only dictate convergence rates, which was not of concern in this work. } 
 
-Eqn. \ref{eqn:EOM} can be written into the Itô form,
+The Langevin form of an SDE can be expressed in terms of differential increments known as the Itô form. This convention is preferred due to the Itô form being more computationally reasonable as it allows for calculation based on the current time-step. The Langevin approach, assuming a midpoint approximation of time-derivatives, requires back calculation, which is not computationally preferred as stability issues can arise. 
+
+The equations in Eqn. \ref{eqn:EOM} can be written into the Itô form by converting the derivatives into differentials,
 \begin{equation}
     \begin{aligned}
-        dX_t &= \sqrt{2D_x(z)} dW_x \,,\\
-        dZ_t &= \sqrt{2D_z(z)} dW_z + \frac{F_z(z)}{\gamma(z)} dt\,,
+        dX_t &= \sqrt{2D_x(z)} dw_x \,,\\
+        dZ_t &= \sqrt{2D_z(z)} dw_z + \frac{F_z(z)}{\gamma(z)} dt\,,
     \end{aligned}
 \end{equation}
-where stochastic quantities are indicated in capital letters. 
+where $dw$ denotes the Wiener increment, $dX_t$ denotes the transverse positional increment, $dZ_t$ the axial positional increment.
 
-In the Itô form, the Euler-Maruyama equations are written as a pair of discrete time-step evolutions. Each equation described a random realization of the position, $\vec{x}(t)$, that depends on the random function, $\vec{W}(t)$. The equations are programmed into the software, referenced to as \textsc{mj\_LangevinSimulations},
+In the Itô form, the Euler-Maruyama equations are written as a pair of discrete time-step evolutions as the differentials can be expressed by a finite-difference scheme. This scheme then leads to the Euler-Maruyama approximation. The equations, written in terms of their finite-differences, are expressed as
 \begin{equation}
     \begin{aligned}
-        x_{n+1} &= x_n + \sqrt{2D_x(z_n)} W_{x,n}\Delta t\,,\\
-        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} W_{x,n}\right]\Delta t\,,\\
+        x_{n+1} &= x_n + \sqrt{2D_x(z_n)\Delta t} w_{x,n}\,,\\
+        z_{n+1} &= z_n + \left[D'_z(z_n) - \beta D_z(z_n) V'(z_n) + \sqrt{2D_z(z_n)} w_{z,n}\right]\Delta t\,,\\
     \end{aligned}
 \end{equation}
-where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ is the discretized time. 
+where $V(z)$ is the electrostatic potential, $\beta = 1/k_b T$, and $\Delta t$ is the discretized time. For clarity, $\Delta t$ is an incremental time step, $w_{x,n}$ and $w_{z,n}$ are independent Gaussian noises with zero mean and $1/\Delta t$ variance. It should be noted directly that there exists a convention-dependent spurious drift term, $D'(z)$ originates from the conversion from the Langevin approach to the Itô forward time convention. This correction is directly applied such that the simulated $z_t$ positions satisfy the Gibbs-Boltzmann distribution in the equilibrium limit \cite{millanNumericalSimulationsConfined2023}. The equations are programmed into \textsc{python} software, and are referenced to as \textsc{mj\_LangevinSimulations}. 
 
-The software accepts parameters inputted from a generic config file and save results as a \textsc{HDF5} file using the Python library \textsc{h5py}.
-
+\clearpage
 \section{Electrostatic Input Parameters}
+
+The simulation electrostatic conditions can be chosen to mirror those found in the laboratory. The laboratory conditions are defined by the salt concentration, which is directly related to the ionic concentration. This motivates the formulation of electrostatic contributions in simulation to accurately mirror that which will be observed in experiment. 
 
 The deterministic portion of the Langevin equation in the simulations are determined by the electrostatic and gravitational forces acting on the particle. In the model of nanoparticles, the gravitational forces are negligible, leaving the electrostatic forces as the driving non-spurious drift. A diagram of the simulation geometry is shown in Fig. \ref{fig:langevin_diagram}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{Python/Figures/langevin_diagram.pdf}
-    \caption{Model diagram of simulation geometry. A spherical particle of radius $a$ is modeled between two charged parallel plates. The electrostatic potential, modeled by the Debye-Hückel screened electrostatic interactions, are drawn in a blue gradient.}
+    \caption{Model diagram of simulation geometry. A spherical particle of $\zeta$-potential $\SI{25}{\milli\volt4}$ and radius $a=\SI{50}{\nm}$ is modeled between two charged parallel plates spaced by $L = \SI{300}{\nm}$. The electrostatic potential, modeled by the Debye-Hückel potential, are drawn in a blue gradient and fixed at a Debye-length of $\SI{40}{\nm}$. The values are chosen to model a semi-realistic system, such as a plastic bead in a salt solution while still providing an artistic rendering for intuition.}
     \label{fig:langevin_diagram}
 \end{figure}
 %
 %The particle's center is at position $H$. In the software, $H_+$ is the distance from the left, or top plate. $H_-$ is the distance from the bottom plate. In the center, as shown in the diagram, $H_+=H_- = H = L/2$.
 
-The electrostatic forces that drive the dynamic motion are described by the following equations,
+The electrostatic forces that drive the dynamic motion are described by the Debye-Hückel potential, as described by Eqn. \ref{eqn:debye_huckel}:
 
-\begin{equation}
+\begin{equation}\label{eqn:67}
     U(z) = B\left[e^{-(H - z)/\lambda_D} - e^{-(H + z)/\lambda_D}\right]\,,
 \end{equation}
-where the pre-factor, $B$, is described by the function $f: (\zeta_p, \sigma_w, a, \lambda_D, T)$. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Gouy-Chapman equations in a linear-superposition approximation of a double-layer potential \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces},
-
-\begin{align}\label{eqn:electrostatic_forces}
-    B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
-    C & = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
-    \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right]\,,
-\end{align}
-where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potential for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the Debye-length of the solution. These equations are physically constrain the electrostatic field amplitude to ensure physical motion during the simulation process. 
+where the amplitude term, $B$, is described by the electrostatic contributions due to the charges present in the solution and on the surfaces of the geometries, recalled as the Stern layers. The electrostatics of this system are described in depth in Chap. \ref{chap:brownianmotion}. To ensure that the equations represents the sample of interest, the electrostatic amplitude is calculated from laboratory measurable quantities. The function is described the by the Gouy-Chapman equations in a linear-superposition approximation of a double-layer potential described by Eqn. \ref{eqn:amp1} and Eqn. \ref{eqn:amp2} \cite{lin_exact_2010, israelachviliIntermolecularSurfaceForces}. These equations are physically constrain the electrostatic field amplitude to ensure physical motion during the simulation process. 
+% \begin{align}\label{eqn:electrostatic_forces}
+%     B &= C \cdot \tanh\left(\frac{e_0 \zeta_p}{4k_b T}\right) \cdot \tanh\left(\frac{e_0 \psi_w}{4k_b T}\right) \\
+%     C & = \frac{64 \pi \varepsilon_0 \varepsilon_r a k_b T}{e_0^2}\\
+%     \psi_w &= \frac{2k_b T}{e_0}\text{asinh}\left[\frac{\sigma_w e_0 \lambda_D}{2 \varepsilon_0 \varepsilon_r k_b T}\right]\,,
+% % \end{align}
+% where $\zeta_p$ is the zeta-potential of the particle, $\psi_w$ is the stern-layer potential for the surface walls, $a$ is the particle radius, $e_0$ is the elementary charge value, and $\lambda_D$ is the Debye-length of the solution. 
 
 % For a generic particle at temperature $\SI{300}{K}$ the following table illustrates the magnitude of forces compared to the particle size.
 
@@ -308,123 +314,116 @@ The time complexity of this function is $\mathcal{O}(n)$, where $n$ is the numbe
 \clearpage
 \section{Mean-Squared Displacement in Confinement}
 
-The simulation results provide three-dimensional trajectories of particles. From the trajectories, the mean-squared displacement can be calculated.  The typical output of a simulation is shown in Fig. \ref{fig:brown_realization}. The plot on the left depicts the transverse motion, $X(t)$. The plot on the right depicts the axial motion with respect to the confined walls. The plot in Fig. \ref{fig:brown_realization}.
+ From the trajectories, the mean-squared displacement, MSD, can be calculated. The simulation results provide three-dimensional trajectories of particles. An example of this simulation can be found in Fig. \ref{fig:brown_realization1} and Fig. \ref{fig:brown_realization2}. Mathematically, the MSD is written in terms of the sample variance of the displacements of the transverse and axial displacements for a given time lag $j$:
+\begin{equation}
+    \mathrm{MSD}[j] = \frac{1}{N-1}\sum_{n=1}^N|x_{i+j} - x_i|^2\,,
+\end{equation}
+where $1\leq j < N$ denotes. Here, $\mathrm{MSD}[j]$, also labelled as $\langle x \rangle_c$ and $\langle z \rangle_c$ for consistency of notation for the transverse and axial MSD, denotes the MSD with a time lag for $j$ steps. Intuitively, this is the variance of displacement after waiting $j \Delta t$ time after starting a clock and observing the particle diffusion. 
 
 \begin{figure}[h!]
-    \begin{subfigure}[b]{\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{Python/Figures/realization.pdf}
-        \subcaption{Trajectories of transverse and axial motion during single realization of Langevin simulations.}      
-    \end{subfigure}
-    \begin{subfigure}[b]{0.7\textwidth}
-        \noindent\hbox to 0.307\textwidth{}
-        \includegraphics[width=\linewidth]{Python/Figures/boltzmann.pdf}
-        \noindent\hbox to 0.40\textwidth{}\small{(b) Histogram of position over time.}
-    \end{subfigure}
+    \centering
+    \includegraphics[width=\linewidth]{Python/Figures/realization.pdf}
     \caption{Confined Brownian Particle realization of $z$ diffusion in electrostatic potential. The step-histogram is plotted in green. Simulation input parameters are $a = \SI{50}{\nm}, \zeta_p = \SI{-3.5}{\milli \volt}, \sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{225}{\nm}, \lambda_D = \SI{100}{\nm}, T = \SI{300}{\kelvin}, \eta = \SI{1}{\milli \pascal \second}$.}
-    \label{fig:brown_realization}
+    \label{fig:brown_realization1}
 \end{figure}
 
+\begin{figure}[h!]
+    \hspace*{2.5cm}% Moves the figure 1 cm to the right
+    \centering
+    \includegraphics[width=0.7\linewidth]{Python/Figures/boltzmann.pdf}
+    \caption{Gibbs-Boltzmann equilibrium of a confined Brownian particle. The green histogram is the experimentally measured distribution while the blue line is the theoretical distribution. Simulation input parameters are $a = \SI{50}{\nm}, \zeta_p = \SI{-3.5}{\milli \volt}, \sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{225}{\nm}, \lambda_D = \SI{100}{\nm}, T = \SI{300}{\kelvin}, \eta = \SI{1}{\milli \pascal \second}$.}
+    \label{fig:brown_realization2}
+\end{figure}
 
-For each simulated particle trajectory, the MSD can be found. The results are statistically inferred parameters that can be compared to the baseline inputs.
+For each simulated particle trajectory, the MSD can be found. The results are statistically inferred parameters that can be compared to the baseline inputs. The size of a particle can be measured from the mean-squared displacement. In confinement, an addition correction must be applied due to the axial friction. In the case an electrostatic field, the electrostatics will add an additional confinement if the walls repel the particle further. Analytically, this is not solvable as the equilibrium solution is non-analytical. Specifically this involves solving the one dimensional diffusion equation with a hyperbolic sin external force, which originates from the derivative of the Debye-Hückel potential;
+\begin{equation}
+    \frac{d^2p(x)}{dx^2} = - \sinh(x)p(x)\,,
+\end{equation}
+which has no analytical solutions \cite{polyanin2017handbook}. 
 
-The size of a particle can be measured from the mean-squared displacement. In confinement, an addition correction must be applied due to the axial friction. In the case an electrostatic field,  this correction is not applicable due to the fact that the not known.
-
-To quantify the confinement length changes as a function of the electrostatic field, the MSD of the axial and transverse trajectories are compared in two cases. One case is a highly negatively charged paricle, and the second for a neutrally charged particle. This is shown in Fig. \ref{fig:xz_msd_comparison}.
+To quantify if effective confinement length $L$, which is the asymptotic plateau of the MSD in a confined environment, changes as a function of the electrostatic field, the MSD of the axial and transverse trajectories are compared in two cases. In the electrostatic ally neutral case, this asymptotic is equal to $L^2/6$ in a one dimensional, linear confinement \cite{bickel_note_2007}. The simulation of a highly negatively charged particle and the second for a neutrally charged particle was performed, shown in Fig. \ref{fig:xz_msd_comparison}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/xz_msd_comparison.pdf}
-    \caption{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI{26000}{\nm^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI{15000}{\nm^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau$ consists of on exposure time of $\SI{200}{\micro \second}$. The debye-length was fixed to $\lambda_D = \SI{10}{\nm}$. }
+    \caption{Comparison between MSD curves of two different charged particles. The green trace represents a neutrally charged particle with a maximal MSD of $\sim \SI{26000}{\nm^2}$. The blue trace represents a negatively charged particle with a maximal MSD of $\sim \SI{15000}{\nm^2}$. The chart on the right shows the transverse MSD of the two particles. Each unit of $\tau$ consists of on exposure time of $\SI{200}{\micro \second}$. The Debye-length was fixed to $\lambda_D = \SI{10}{\nm}$. }
     \label{fig:xz_msd_comparison}
 \end{figure} 
 
 The simulations demonstrated that as the particle charge becomes greater in magnitude, there is a large apparent change in the MSD plateau. This phenomena is expected, as the electrostatic field focuses the particle into the center of the two plates. This relationship is a function of the zeta-potential of the particle and can be explained using Coulomb's law as explained in Chap. \ref{chap:brownianmotion}. 
 
-The effects of the electrostatic field interaction on the confinement length can be investigated by solving the mathematical relations analytically, or explored using simulations developed for this purpose. The theoretical MSD function can be mathematically determined if one solves the Fokker-Planck equation in the presence of a Debye-Hückel potential. This combination of equations in confinement does not have an analytical solution. Thus, simulation approaches must be taken. 
+% The effects of the electrostatic field interaction on the confinement length can be investigated by solving the mathematical relations analytically, or explored using simulations developed for this purpose. The theoretical MSD function can be mathematically determined if one solves the Fokker-Planck equation in the presence of a Debye-Hückel potential. This combination of equations in confinement does not have an analytical solution. Thus, simulation approaches must be taken. 
 
+\clearpage
 \section{Simulation Results}
 
-Using the developed software, the relationship between the effective confinement length can be numerically determined as the software numerically approximates the system. In order to find correlation to laboratory experiment, the electrostatic field must be varied as the zeta-potential of the particle is constant. In the simulation, the electrostatic field can be easily manipulated and in the laboratory experiment, same can be achieved by varying the ionic concentration of the solution. Changing the electrostatic amplitude in laboratory experiments is possible as changing the Debye-length is inversely proportional to the changing, ionic concentration;
+Using the developed software, the relationship between the effective confinement length $L$, which as mentioned is the horizontal asymptote of the mean-squared displacement, $\mathrm{MSD}$,  can be numerically determined as the software numerically approximates the system. To mirror laboratory experiment, the electrostatic field must be varied as the zeta-potential of the particle is constant. In the simulation, the electrostatic field can be easily manipulated and, as previously discussed, the laboratory experiment can achieve similar conditions by varying the ionic concentration of the solution. Changing the electrostatic amplitude in laboratory experiments is possible as changing the Debye-length is inversely proportional to the changing, ionic concentration \cite{israelachviliIntermolecularSurfaceForces};
 \begin{equation}
     \lambda_D \propto \frac{1}{\sqrt{C}},
 \end{equation}
 where $C$ is the ionic concentration of a dilute electrolyte compound.
 
-The simulation for the geometry described above was conducted for various Debye-lengths. The conditions of the simulation are such that the zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$. The simulation results are shown in Fig. \ref{fig:conf_debyelen}
+The simulation for the geometry described above was conducted for various Debye-lengths. The conditions of the simulation are such that the zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead.  The simulation results are shown in Fig. \ref{fig:conf_debyelen}
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_debyelength.pdf}
-    \caption{Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted against the solution's debye-length $\lambda_D$ and expressed in terms of ion concentration $C$.}
+    \caption{Effective confinement length $L$, or the minimum and maximum trajectory axial position, plotted (left) against the solution's Debye-length $\lambda_D$ and (right) expressed in terms of ion concentration $C$. The blue dotted line represents the confinement lengths inferred from the average plateau values of 1000 simulated confined diffusions. The green dashed line represents the theoretical $L-2a$ confinement length, which results from the total length subtracted by the diameter of the particle. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$.}
     \label{fig:conf_debyelen}
 \end{figure}
 
 %$a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$. 
 
-The figure obtained from the simulation shows that as the Debye-length increases, the confinement length decreases. When the ion concentration increases, the particle is less screened which allows it to move closer to the walls. With increased concentration of the ions, the particles can more easily explore the volume. Once the concentration reaches a sufficient saturation, the particle move from wall to wall, or a distance of $L$. As the ionic concentration approaches 0, the confinement length approaches a minimum of $\sim\SI{50}{\nm}$. Theoretically, this should reach $\SI{0}{\nm}$, however, due to simulation artifacts it doesn't. The extra motion is attributed to having a finite time-step during the evolution of the Langevin equation, adding extra force. In the limit of an infinite time step, the minimum confinement should approach $\SI{0}{\nm}$.
+The figure obtained from the simulation shows that as the Debye-length increases, the confinement length decreases. When the ion concentration increases, the particle is less screened which allows it to move closer to the walls. With increased concentration of the ions, the particles can more easily explore the volume. Once the concentration reaches a sufficient saturation, the particle move from wall to wall. As the ionic concentration approaches 0, the confinement length approaches a minimum of $\sim\SI{50}{\nm}$. Classically, without fluctuations, this should reach $\SI{0}{\nm}$. Due to the stochastic force and simulation integration artifacts, the minimum confinement appears to plateau at around $1a$ of diffusion volume. This extra motion is attributed to having a finite time-step during the evolution of the Langevin equation, adding extra force. 
+% In the limit of an infinitesimal time step, the minimum confinement should approach $\SI{0}{\nm}$.
+
+As a result from the changing effective confinement length, the diffusion coefficient changes as a function of ionic concentration. Since diffusion is dependent on the axial position of the particle with respect to the wall, there is a relative diffusion decrease with addition of ions. The exact relationship can be investigated using the developed simulations.Using the simulated trajectories in Fig. \ref{fig:conf_debyelen}, the diffusion coefficient of the particle is be measured from the first 15 points of the MSD slope by fitting to a line as performed in optical experiments. This appears to be a lot of loss, however, the approximation being made, in the presence of no drift and perfect localization, is negligible \cite{vestergaardOptimalEstimationDiffusion2014}. The resulting diffusion coefficient is then compared to the baseline input parameter, plotted in Fig. \ref{fig:diff_debyelen}.
 
 
-As a result from the changing effective confinement length, the diffusion coefficient changes as a function of ionic concentration. Since diffusion is dependent on the axial position of the particle with respect to the wall, there is a relative diffusion decrease with addition of ions. The exact relationship can be investigated using the developed simulations.
-
-Using the simulated trajectories in Fig. \ref{fig:conf_debyelen}, the diffusion coefficient of the particle is be measured from the first 15 points of the MSD slope by fitting to a line as performed in optical experiments. The resulting diffusion coefficient is then compared to the baseline input parameter. This is plotted in Fig. \ref{fig:diff_debyelen}.
-
-
-\begin{figure}[h!]
+\begin{figure}[ht!]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/diff_debye.pdf}
-    \caption{Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. }
+    \caption{Effective diffusion $D/D_0$, or the measure diffusion coefficient compared to the input diffusion, plotted against the solution's Debye length expressed as concentration $C$ of ions. The red dashed line represents the equality that the diffusion coefficient measured is the same as that input into the simulation. The blue dotted lines represent the ratio of diffusion coefficients measured using line-fitting of the first 3 points of the $\mathrm{MSD}_x$. The particle parameters were chosen to be $a = \SI{50}{\nm}, \zeta = \SI{-30}{\milli \volt}$. The geometric conditions are: $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$.}
     \label{fig:diff_debyelen}
 \end{figure}
 
 %$a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The zeta potential of the particle and glass are chosen to resemble glass and a polystyrene bead, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}, \zeta = \SI{-30}{\milli \volt}$
+The above shows that the presented simulations can be used to distinguish between classes of particles. The relationship between the particle's diffusion coefficient as a function of the particle charge and ion concentration is described by the curve in Fig. \ref{fig:diff_debyelen}, allowing one to hypothetically distinguish particles based on where they lie. For instance, if a particle of the same charge, but different shape is measured, their diffusion coefficient and confinement length would theoretically differ from that same particle but at a different charge. This relationship offers future insights into how multi-labelled data can be used for particle identification. The scale of this difference notable at a 10\% drop in the diffusion coefficient at high concentrations of ions. This is attributed to the particle being closer to the walls for a longer period of time due to the electrostatics having less effect. Intuitively, a larger diffusion volume would have larger contributions in frictional force due to the distance from the walls being smaller. This is contrast to  highly electrostatically focused particles, which feel less drag as they are focused in the center of the double layer, maximizing their distance from the walls. By doing more simulations and testing for various particle types this relationship can be further investigated. 
 
-The above results that the presented simulations can be used to distinguish between classes of particles. This is because the relationship between the effective confinement length and the relationship between diffusion and ion concentration is established. There is a notable 10\% drop in the diffusion coefficient at high concentrations of ions. This is attributed to the particle being closer to the walls for a longer peroid of time.
+The effective confinement length compared to the zeta-potential of a particle at various Debye-lengths is simulated in the same geometric conditions as Fig. \ref{fig:conf_debyelen} and is plotted in Fig. \ref{fig:conf_zeta_debye}. The figure presents the relationship between $L, \zeta$, and the Debye-length, $\lambda_D$. Each curve shows the relationship between the values for a different ionic concentration. At high concentration, there is little to no effect on the confinement length, while at low concentration, there is a steep dependency near $\zeta \rightarrow 0$. As the particle becomes more negatively charged, the confinement length decreases towards the confinement length minima. When the particle becomes more neutral, the confinement length approaches the gap length between the two walls. 
 
-By doing more simulation cases, this relationship can be further investigated. 
-
-The effective confinement length compared to the zeta-potential of a particle at various Debye-lengths is simulated in the same geometric conditions as Fig. \ref{fig:conf_debyelen}. This is plotted in Fig. \ref{fig:conf_zeta_debye}.
-\begin{figure}
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/conf_zeta_debye.png}
-    \caption{Effective confinement plotted against the particle's zeta-potential.}
+    \caption{Effective confinement plotted against the particle's zeta-potential. Each curve represents one Debye-length labelled on the right-hand side. The zeta-potential of the particle is varied on the $x$-axis, while the recovered confinement length is plotted on the $y$-axis. Simulation parameters are identical to that of  Fig. \ref{fig:conf_debyelen}.}
     \label{fig:conf_zeta_debye}
 \end{figure}
 % $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}$ and the Debye length is varied. The surface charge of the wall are chosen to resemble glass, fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$.
 
-Fig. \ref{fig:conf_zeta_debye} presents the relationship between $L, \zeta$, and the Debye-length, $\lambda_D$. Each curve shows the relationship between the values for a different ionic concentration. 
-
-At high concentration, there is little to no effect on the confinement length, while at low concentration, there is a steep dependency near $\zeta \rightarrow 0$. As the particle becomes more negatively charged, the confinement length decreases towards the confinement length minima. When the particle becomes more neutral, the confinement length approaches the gap length between the two walls. 
-
-%\clearpage
-
+\clearpage
 \section{Surface Charge estimation}
 
-The surface charge of the confinement walls can be estimated based on the electrostatic potential. Since the electrostatic force determines the drift coefficient, the drift amplitude can be statistically recovered using a maximum likelihood estimator function.
+The surface charge of the confinement walls can be estimated based on the electrostatic potential. It can be first explicitly stated that by using the equivalence between a spatially varying diffusivity in the Langevin form and a drift in Itô form a drift amplitude can be statistically recovered using a maximum likelihood estimator function, or MLE of the Itô form.
 
-Although the SDE MLE equation is already known, the solution was specifically applied for the purpose of this thesis in the form presented in Eqn. \ref{eqn:surface_MLE}. A detailed derivation is presented in Appendix. \ref{app:1};
+Although the stochastic differential was defined in terms of a Langevin equation, the solution for the MLE was derived for the purpose of this thesis in the form and is presented in Eqn. \ref{eqn:surface_MLE}. A detailed derivation is presented in Appendix. \ref{app:1}. Recall Eqn. \ref{eqn:67} as the form of the electrostatic potential. Defining the decoration $\hat{\cdot}$ as that of a statistical estimator, and $\phi(z)$ as the gradient of the electrostatic potential, the MLE can be defined as; 
 
 \begin{equation}\label{eqn:surface_MLE}
      \hat B = \frac{\sum_n \phi(z)\left[\Delta z - D'(z)\Delta t\right]}{\sum_n D(z)\phi^2(z)\Delta t}, \quad \mathbb{V}[\hat{B}] = \frac{1}{2}\sum_{n=0}^\infty \beta^2 D(z)\phi^2(z),
 \end{equation} 
-where $\Delta z$ is the random variable assigned to step displacement, $D(z)$ is the diffusion coefficient, and $\phi(z)$ is the gradient of the potential,
+where $\Delta z$ is the random variable assigned to step displacement, $D(z)$ is the diffusion coefficient. Here, the gradient of the potential, $\phi(z)$ can be explicitly written out,
 \begin{equation}
-    \phi(z) = e^{-\frac{H}{\lambda_D}}\sinh\left(\frac{z}{\lambda_D}\right).
+    \phi(z) = e^{-\frac{H}{\lambda_D}}\sinh\left(\frac{z}{\lambda_D}\right)\,.
 \end{equation}
-This estimator assumes that gravitational contributions are negligible.
+where $\lambda_D$ is the Debye-length and $H$ is half of the width of the chamber. This estimator assumes that gravitational contributions are negligible. If the amplitude of the electrostatic interactions is known, one can invert the amplitude using relations in Eqn. \ref{eqn:amp1} and Eqn. \ref{eqn:amp2}. This inversion requires at least the zeta-potential, $\zeta$, of the particle, the radius, $a$, and Debye-length, $\lambda_D$. 
 
-If the amplitude of the electrostatic interactions is known, one can invert the amplitude using relations in Eqn. \ref{eqn:electrostatic_forces}. This inversion requires at least the zeta-potential, $\zeta$, of the particle, the radius, $a$, and Debye-length, $\lambda_D$. 
+The particle's exploration, demonstrated in Fig. \ref{fig:brown_realization1} and Fig. \ref{fig:brown_realization2}, showed a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator function, the drift estimator can be extracted into meaningful, physical information.
 
-The particle's exploration, demonstrated in Fig. \ref{fig:brown_realization}, showed a clear dependence on a drift due to the electrostatics. This drift is a useful estimator of the particle-wall charge relationship. Using the aforementioned amplitude maximum-likelihood estimator function, the drift estimator can be extracted into meaningful, physical information.
-
-To determine the effective accuracy of the MLE function, simulations are performed using the developed software.
-
-The Langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\micro\second}$. In this histogram there are 50 simulations with seeds set to $S_{\text{eed}} = i* 10 + 1$ for $i \in \{0, 49\}$ using the \textit{numpy} seed parameter. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}, \lambda_D = \SI{10}{\nm}$ The surface charge is fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$. The distribution of the MLE is shown in Fig \ref{fig:B_estimation}.
+To determine the effective accuracy of the MLE function, simulations are performed using the developed software. The Langevin simulation was ran for $\SI{20}{\ms}$ with time-step of $\SI{0.2}{\micro\second}$. In this histogram there are 50 simulations with seeds set to $S_{\text{eed}} = i* 10 + 1$ for $i \in \{0, 49\}$ using the \textit{numpy} seed parameter. $a = \SI{50}{\nm}, L = \SI{500}{\nm}, T = \SI{300}{\kelvin}, \Delta t_i = \SI{0.2}{\micro \second}, \tau = \SI{200}{\micro \second}, \eta = \SI{1}{\milli \pascal \second}, \lambda_D = \SI{10}{\nm}$ The surface charge is fixed at $\sigma_w = \SI{-2}{\milli \coulomb / \meter^2}$. The distribution of the MLE is shown in Fig \ref{fig:B_estimation}.
 
 \begin{figure}[hb]
     \centering
     \includegraphics[width=\linewidth]{Python/Figures/B_estimation_hist.pdf}
-    \caption{Distribution of $\hat{B}$ Re-parameterized for the surface charge. $\hat{\sigma} = 1/(A\cdot C)^2 \hat{B}$ where $A,C$ are properly defined in \ref{eqn:electrostatic_forces}.}
+    \caption{Distribution of $\hat{B}$ Re-parameterized for the surface charge. $\hat{\sigma} = 1/(A\cdot C)^2 \hat{B}$ where $A,C$ are properly defined in Eqn. \ref{eqn:amp1} and Eqn. \ref{eqn:amp2} .}
     \label{fig:B_estimation}
 \end{figure}
 
